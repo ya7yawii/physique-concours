@@ -2,7 +2,6 @@
 tags:
   - type/livre
   - thème/mécanique
-aliases: 
 titre: Mécanique
 auteurs: Jean-Marie BRÉBEC, Thierry DESMARAIS, Marc MÉNÉTRIER, Bruno NOËL, Régine NOËL, Claude ORSINI
 classe: 1re année MPSI-PCSI-PTSI
