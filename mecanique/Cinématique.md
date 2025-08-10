@@ -1,0 +1,133 @@
+---
+titre: "[[Cinématique]]"
+tags:
+  - position
+  - vitesse
+  - accélération
+crée: 08-08-2025, 17:08
+---
+# Formules
+**Vecteur position en coordonnées cartésiennes** :  $\overrightarrow{r} = \overrightarrow{OM} = x\overrightarrow{e_{x}} + y\overrightarrow{e_{y}} + z\overrightarrow{e_{z}}$
+
+**Vecteur position en coordonnées cylindriques** :  $\overrightarrow{OM} = r\overrightarrow{e_{r}} + z\overrightarrow{e_{z}}$  ([[#^figure2]])
+
+**Relations entre les coordonnées cylindriques et cartésiennes** :
+![[Pasted image 20250808181451.png]]
+
+**Vecteur position en coordonnées sphériques** :  $\overrightarrow{OM} = r\overrightarrow{e_{r}}$  ([[#^figure3]])
+
+> [!note]
+> La dérivée d’une grandeur vectorielle dépend du référentiel.
+
+> [!note]
+> La dérivation de produit entre un scalaire et un vecteur, de produit scalaire et de <mark style="color: red">produit vectoriel</mark> se fait comme la dérivation entre deux fonctions.
+
+> [!warning]
+>  Un vecteur de norme constante n’est pas pour autant constant, car son orientation peut varier.
+
+> [!note]
+> La dérivée d’un vecteur de norme constante est orthogonale à ce vecteur ou nulle. C’est le cas des vecteurs unitaires.
+
+En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\theta$ :
+![[Pasted image 20250809085756.png]]
+
+**Vecteur vitesse en coordonnées cartésiennes** : $\overrightarrow{v}(M)_{\mathcal{R}} = \dot{x}\overrightarrow{e_{x}} + \dot{y}\overrightarrow{e_{y}} + \dot{z}\overrightarrow{e_{z}}$
+
+**Vecteur vitesse en coordonnées cylindriques** : $\overrightarrow{v}(M)_{\mathcal{R}} = \dot{r}\overrightarrow{e_{r}} + r\dot{\theta}\overrightarrow{e_{\theta}} + \dot{z}\overrightarrow{e_{z}}$
+> [!warning]
+> Le terme $r\dot{\theta}\overrightarrow{e_{\theta}}$ vient du fait que $\overrightarrow{e_{r}}$ est fonction de $\theta$, et $\theta$ est fonction du temps.
+
+> [!note]
+> Le vecteur vitesse de M est égal à la somme des vecteurs vitesse que l’on obtient en ne faisant varier successivement qu’une seule de ses coordonnées. Cette propriété ne sera pas applicable à l’accélération.
+> Exemple : composition des vitesses en coordonnées cylindriques
+> - Si r varie seul, le mobile décrit une droite, soit : $\overrightarrow{v}(M)_{\mathcal{R}} = \overrightarrow{v}_{r} = \dot{r}\overrightarrow{e_{r}}$
+> - Si $\theta$ varie seul, le mobile décrit un cercle avec la vitesse $r\dot{\theta}$ orientée selon $\overrightarrow{e_{\theta}}$, soit : $\overrightarrow{v}(M)_{\mathcal{R}} = \overrightarrow{v}_{\theta} = r\dot{\theta}\overrightarrow{e_{\theta}}$
+> -  Si z varie seul, le mobile décrit une droite, soit : $\overrightarrow{v}(M)_{\mathcal{R}} = \overrightarrow{v}_{z} = \dot{z}\overrightarrow{e_{z}}$
+> L’expression générale du vecteur vitesse permet de vérifier que : $\overrightarrow{v}(M)_{\mathcal{R}} = \overrightarrow{v}_{r} + \overrightarrow{v}_{\theta} + \overrightarrow{v}_{z}$
+
+> [!warning]
+> Seul un mouvement à la fois rectiligne et uniforme est non accéléré. Un mouvement uniforme (vitesse constante), mais non rectiligne est accéléré, car la direction du vecteur vitesse est variable.
+
+**Vecteur accélération en coordonnées cartésiennes** : $\overrightarrow{a}(M)_{\mathcal{R}} = \ddot{x}\overrightarrow{e_{x}} + \ddot{y}\overrightarrow{e_{y}} + \ddot{z}\overrightarrow{e_{z}}$
+
+**Vecteur accélération en coordonnées cylindriques** : $\overrightarrow{a}(M)_{\mathcal{R}} = (\ddot{r} - r\dot{\theta}^{2})\overrightarrow{e_{r}} + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\overrightarrow{e_{\theta}} + \ddot{z}\overrightarrow{e_{z}}$
+
+> [!note]
+> ![[Pasted image 20250809094009.png]]
+# Définitions
+> [!note]
+> En mécanique classique, le mouvement observé dépend de l’observateur. Par postulat, la durée des événements n’en dépend pas.
+
+==**Référentiel d’observation**== :
+L’ensemble rigide des points fixes pour un observateur, associé à une horloge, est par définition le référentiel de cet observateur
+
+==**Trajectoire dans un référentiel**== :
+$\mathcal{R}$ étant un référentiel et M un point mobile, il existe à chaque instant un point fixe de $\mathcal{R}$ dont la position coïncide avec celle de M. L’ensemble de ces points coïncidents forme dans une ligne continue appelée la trajectoire de M.
+> [!note]
+> La trajectoire n’est définie que pour un référentiel déterminé.
+
+==**Espace des positions, trajectoire**== :
+La trajectoire est constituée par l’ensemble des positions successives $\overrightarrow{OM}(t)$ du point mobile M étudié. Le vecteur vitesse est tangent à la trajectoire en chacun de ses points ([[#^figure4]]).
+
+==**Espace des vitesses, hodographe**== :
+L’hodographe du mouvement est constitué par l'ensemble des positions du point N défini
+par : $\overrightarrow{ON} = \overrightarrow{v}(M)_{\mathcal{R}}$. L’accélération, qui peut être qualifiée de « vitesse de la vitesse », est tangente à l’hodographe en chacun de ses points ([[#^figure5]]). 
+> [!warning]
+> La courbe de la vitesse en fonction du temps est appelée elle aussi hodographe du mouvement.
+
+==**Espace des phases, trajectoire de phase**== :
+La trajectoire de phase est constituée par l'ensemble des des positions successives $\overrightarrow{OP} = (\overrightarrow{r} , \overrightarrow{v})$. Le point P est appelé ==point de phase== du système. Par souci de simplicité,  nous restreindrons les représentations des trajectoires de phase pour des systèmes à un degré de liberté, noté x. La trajectoire de phase est alors une courbe que nous tracerons dans le ==plan de phase== (O ; x , $v_{x}$) ([[#^figure6]]).
+> [!note]
+> Une trajectoire de phase fermée est la signature d’un mouvement périodique (elle est décrite en tournant dans le sens des aiguilles d’une montre).
+# Diagrammes
+![[figure1.png]]
+> [!note]
+> Pratiquement, retenons qu’une base orthonormée est directe s’il est possible de superposer les vecteurs $e_{1}$ , $e_{2}$ et $e_{3}$ respectivement au pouce, à l’index et au majeur de la main droite.
+# Graphiques
+Coordonnées cylindriques :
+![[figure2.png]] ^figure2
+
+Coordonnées sphériques :
+![[figure3.png]]^figure3
+
+Trajectoire dans l’espace des positions :
+![[figure4.png]]^figure4
+
+Hodographe dans l’espace des vitesses $\overrightarrow{ON}_{i} = \overrightarrow{v}_{i}$ :
+![[figure5.png]]^figure5
+
+Orientation des trajectoires dans le plan de phase :
+![[figure6.png]]^figure6
+Dans le demi-plan de phase $v_{x} > 0$ , l’abscisse x augmente lorsque le temps t croît, et dans le demi-plan $v_{x} < 0$, celle-ci diminue. Ceci nous permet de prévoir une orientation qualitative simple des trajectoires de phase dans ces deux demi-plans.
+# Expériences
+## Etude d’un mouvement rectiligne
+> [!warning]
+> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf). 
+
+![[Pasted image 20250809111108.png]]
+Il faut procéder comme suit :
+- faites coulisser la bande de papier à l’intérieur de l’enregistreur sous le marteau et attachez-la au chariot à l’aide du ruban adhésif ;
+- placez le chariot maintenu immobile prés de l’enregistreur ; mettez en marche l’enregistreur en le branchant à la source, puis lâchez le chariot (un étudiant du binôme doit se tenir prêt à recueillir le chariot en fin de parcours pour éviter sa chute). Le mouvement de chariot est ainsi enregistré ;
+- tracer d’abord le graphe x(t) de la position du mobile par rapport à la position initiale en fonction du temps ;![[Pasted image 20250809112808.png]]
+- pour déterminer la vitesse en fonction du temps :
+	- soit mesurer la pente de la tangente au graphe x(t) à chaque instant;
+	- soit mesurer la vitesse moyenne $V_{m} = \Delta x / \Delta t$ sur un certain intervalle de temps, puis l’assimiler à la vitesse instantanée au centre de l’intervalle.
+- tracer le graphe v(t) de la vitesse instantanée en fonction du temps ;
+- à partir du graphe v(t), tracer le graphe de l’accélération en fonction du temps ;
+- écrire alors l’équation du mouvement du chariot et en préciser sa nature.
+## Etude d'un mouvement circulaire
+> [!warning]
+> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://fr.scribd.com/document/323990738/Polycopie-TP-Mecanique). 
+
+![[Pasted image 20250809115608.png]]
+La manipulation à faire est la suivante :
+- un mobile se déplaçant sur une table horizontale à coussin d'air pour minimiser les frottements. Il est maintenu par un fil inextensible à un point fixe puis lancé perpendiculairement au rayon joignant l'origine au centre. L'enregistrement du mouvement de ce mobile peut se faire par l'enregistrement d'une vidéo avec une camera (webcam) placée en haut en aplomb de la table pour ensuite en tirer les positions avec un logiciel spécialisé à intervalles de temps réguliers $\Delta t$ ;
+- à partir des positions, on doit tracer les vecteurs déplacements et déduire les vitesses puis tracer les vecteurs vitesses correspondants en un point sur deux ($M_{1}$, $M_{3}$,...) avec un choix de l'échelle. A partir de ces vecteurs vitesses, on doit ensuite tracer les vecteurs accélérations avec la même procédure basée sur l'approximation centrale, voir figure ci-dessous pour la construction géométrique ;![[figure7.png]]
+- mesurer les angles $\theta(t)$ et la dérivée $\frac{d\theta}{dt}$.
+# Autres notes
+Les limites de la mécanique classique : 
+- La mécanique classique ne permet pas d’expliquer et de prévoir les mouvements des très petits systèmes matériels, à l’échelle atomique.
+- Elle postule que le repère de temps est le même pour tous les référentiels et que le temps s’écoule de la même manière dans des référentiels en mouvement les uns par rapport aux autres. Ce principe d’universalité du temps n’est plus applicable dans le cadre de la mécanique relativiste.
+
+==**portrait de phase**== :
+L’ensemble des trajectoires de phase (pour différentes conditions initiales du mouvement) constitue le portrait de phase.
