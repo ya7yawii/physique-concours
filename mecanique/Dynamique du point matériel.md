@@ -1,7 +1,10 @@
 ---
 titre: "[[Dynamique du point matériel]]"
-tags: 
-aliases: 
+tags:
+  - inertie
+  - force
+  - action
+  - réaction
 crée: 11-08-2025, 11:17
 ---
 # Formules

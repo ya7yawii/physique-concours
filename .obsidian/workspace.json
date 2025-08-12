@@ -15,7 +15,7 @@
               "state": {
                 "file": "mecanique/Cinématique.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Cinématique"
@@ -28,8 +28,8 @@
               "type": "markdown",
               "state": {
                 "file": "mecanique/Dynamique du point matériel.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Dynamique du point matériel"
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:l’action",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,7 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 274.5
+    "width": 267.5
   },
   "left-ribbon": {
     "hiddenItems": {
