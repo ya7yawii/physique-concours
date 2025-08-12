@@ -16,7 +16,7 @@ Réaction d’un support : $\overrightarrow{F}_{S \rightarrow M} = \overrightarr
 
 Tension d’un fil : $\overrightarrow{F}_{S_{1} \rightarrow S_{2}} = -T \overrightarrow{t}_{12}$ ou $\overrightarrow{F}_{S_{2} \rightarrow S_{1}} = T \overrightarrow{t}_{12}$ ([[#^figure1]])
 
-Force de rappel élastique (ou loi de Hooke) : $T = -k(l - l_{0})$ où k est la constante de **raideur du ressort**.
+Force de rappel élastique (ou loi de Hooke) : $T = -k(l - l_{0})$ où k est la constante de **raideur du ressort**. 
 
 > [!note] Relation fondamentale de la dynamique (deuxième loi de newton) :
 > $\mathcal{R}_{g}$ étant un référentiel galiléen, M un point matériel de masse m et $\mathcal{E}$ l’ensemble de l’univers à l’exception de M, les forces appliquées à M et son mouvement sont liées par la loi :
@@ -29,10 +29,18 @@ $\overrightarrow{F}_{M_{1} \rightarrow M_{2}} = -\overrightarrow{F}_{M_{2} \righ
 
 Équation d'évolution d'un système mécanique : $\dfrac{d\overrightarrow{v}}{dt} = \frac{\overrightarrow{f}}{m}$
 > [!warning]
-> A partir de cet équation on peut obtenir la vitesse, la position et la trajectoire de phase.
+> A partir de cet équation, on peut obtenir la vitesse, la position et la trajectoire de phase.
 
 > [!note] Déterminisme mécanique :
 > Les systèmes mécaniques ont une évolution unique pour des conditions initiales données.
+
+Champ des forces : $\overrightarrow{f} = m\dfrac{d\overrightarrow{v}}{dt}$
+> [!warning]
+> A partir de cet équation, il est possible d’analyser le champ de forces auquel est soumis le mobile en observant son mouvement.
+
+ Force dirigée selon (Ox) subie par l’oscillateur harmonique : $f_{x} = -m\omega_{0}^{2}(x-x_{e})$ [[#^figure2]]
+ > [!note]
+ > Cet équation peut être déduite de l'équation d'évolution : $\dfrac{d^{2}x}{dt^{2}} = -\omega_{0}^{2}(x-x_{e})$
 # Définitions
 ==**Point matériel**== :
 un objet ponctuel dont le repérage ne nécessite que la connaissance des trois coordonnées de sa position.
@@ -87,13 +95,14 @@ Pour un système autonome, la nature des trajectoires de phase est donc une cara
 > Pour un système autonome, deux trajectoires de phase ne se coupent jamais.
 # Diagrammes
 Force de tension :
-![[figure8.png]]^figure1
+![[figure10.png]]^figure1
 > [!note]
 > Un fil souple tendu se sépare en deux parties $S_{1}$ et $S_{2}$ s’il est coupé en un point P. Il existe donc une force qui assure en chaque point la cohésion du fil.
 > Si le fil est tendu, la tension T est positive.
 > La tension T est relative à un point et, dans le cas général, varie le long du fil.
 # Graphiques
-
+Sens de parcours sur la trajectoire de phase :
+![[figure11.png]]^figure2
 # Expériences
 
 # Autres notes

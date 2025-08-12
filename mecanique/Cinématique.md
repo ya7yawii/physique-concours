@@ -54,6 +54,10 @@ En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\the
 
 > [!note]
 > ![[Pasted image 20250809094009.png]]
+
+Équation de la trajectoire de phase du mobile en mouvement uniformément accéléré : $x = x_{0} + \frac{1}{2a}(v^{2} - v_{0}^{2})$ [[#^figure7]] 
+
+Équation de la trajectoire de phase du mobile en mouvement oscillant : $(x - x_{e})^{2} + \left(\frac{v}{\omega_{0}}\right)^{2} = A^{2}$[[#^figure8]]
 # Définitions
 > [!note]
 > En mécanique classique, le mouvement observé dépend de l’observateur. Par postulat, la durée des événements n’en dépend pas.
@@ -99,6 +103,13 @@ Hodographe dans l’espace des vitesses $\overrightarrow{ON}_{i} = \overrightarr
 Orientation des trajectoires dans le plan de phase :
 ![[figure6.png]]^figure6
 Dans le demi-plan de phase $v_{x} > 0$ , l’abscisse x augmente lorsque le temps t croît, et dans le demi-plan $v_{x} < 0$, celle-ci diminue. Ceci nous permet de prévoir une orientation qualitative simple des trajectoires de phase dans ces deux demi-plans.
+
+Trajectoires de phase pour des mouvements uniformément accélérés :
+![[figure7.png]]^figure7
+Ces trajectoires de phase, qui  décrivent une branche de parabole, sont obtenues pour les conditions initiales suivantes : $x_{0} = 0$ et $v_{0} = 0$ dans le cas ➀, $v_{0} = 0$ mais $x_{0} > 0$ pour le cas ➁, $x_{0} > 0$ et $v_{0} > 0$ pour le cas ➂, et enfin $x_{0} < 0$ et $x_{0} < 0$ dans le cas ➃.
+
+Portrait de phase d'un oscillateur harmonique :
+![[figure8.png]]^figure8
 # Expériences
 ## Etude d’un mouvement rectiligne
 > [!warning]
@@ -122,7 +133,7 @@ Il faut procéder comme suit :
 ![[Pasted image 20250809115608.png]]
 La manipulation à faire est la suivante :
 - un mobile se déplaçant sur une table horizontale à coussin d'air pour minimiser les frottements. Il est maintenu par un fil inextensible à un point fixe puis lancé perpendiculairement au rayon joignant l'origine au centre. L'enregistrement du mouvement de ce mobile peut se faire par l'enregistrement d'une vidéo avec une camera (webcam) placée en haut en aplomb de la table pour ensuite en tirer les positions avec un logiciel spécialisé à intervalles de temps réguliers $\Delta t$ ;
-- à partir des positions, on doit tracer les vecteurs déplacements et déduire les vitesses puis tracer les vecteurs vitesses correspondants en un point sur deux ($M_{1}$, $M_{3}$,...) avec un choix de l'échelle. A partir de ces vecteurs vitesses, on doit ensuite tracer les vecteurs accélérations avec la même procédure basée sur l'approximation centrale, voir figure ci-dessous pour la construction géométrique ;![[figure7.png]]
+- à partir des positions, on doit tracer les vecteurs déplacements et déduire les vitesses puis tracer les vecteurs vitesses correspondants en un point sur deux ($M_{1}$, $M_{3}$,...) avec un choix de l'échelle. A partir de ces vecteurs vitesses, on doit ensuite tracer les vecteurs accélérations avec la même procédure basée sur l'approximation centrale, voir figure ci-dessous pour la construction géométrique ;![[figure9.png]]
 - mesurer les angles $\theta(t)$ et la dérivée $\frac{d\theta}{dt}$.
 # Autres notes
 Les limites de la mécanique classique : 

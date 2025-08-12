@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "mecanique/Cinématique.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
@@ -182,7 +182,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 267.5
+    "width": 268.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,9 +197,14 @@
   },
   "active": "b550bdf051279a25",
   "lastOpenFiles": [
-    "mecanique/Cinématique.md",
+    "mecanique/attachments/figure11.png",
     "mecanique/Dynamique du point matériel.md",
+    "mecanique/Cinématique.md",
+    "mecanique/attachments/figure9.png",
+    "mecanique/attachments/figure10.png",
     "mecanique/attachments/figure8.png",
+    "mecanique/attachments/figure7.png",
+    "mecanique/attachments/figure6.png",
     "Réaction d’un support.md",
     "mecanique/sommaire.md",
     "Cinématique.md"
