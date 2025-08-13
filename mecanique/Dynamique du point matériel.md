@@ -104,7 +104,30 @@ Force de tension :
 Sens de parcours sur la trajectoire de phase :
 ![[figure11.png]]^figure2
 # Expériences
+## Détermination de l'accélération terrestre
+> [!warning]
+> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf).
 
+### Détermination de g à partir de la période du pendule simple
+![[Pasted image 20250813091936.png]]
+Il faut procéder comme suit :
+- Écarter le pendule simple de sa position d’équilibre (qques degrés).
+- A l’aide du chronomètre, déterminer la durée $t_1$ de 20 oscillations pour longueur du fil $l_1 = 100 \ cm$.
+- Refaire les mêmes mesures en utilisant un pendule de longueur $l_2 = 75 \ cm$, puis un pendule de longueur $l_3 = 50 \ cm$.
+- Compléter le tableau suivant en utilisant la formule $g = 4\pi^{2}\frac{1}{T^{2}}$ et en faisant un calcul d’erreurs sur g.
+	>[!warning]
+	>la formule de g est obtenue à partir de théorème du moment cinétique à voir dans la note [[sommaire#^e7d531]].
+
+![[Pasted image 20250813095213.png]]
+
+### Détermination de g à partir de la chute libre
+![[Pasted image 20250813095602.png]]
+Ce dispositif permet de mesurer le temps de chute d'une bille emprisonnée puis libérée par un déclencheur. Cette mesure du temps est effectuée à l'aide d'un compteur digital relié au déclencheur (qui l'actionne au départ de la bille) et au réceptacle, qui arrête le compteur dés que la bille tombe sur l'assiette du réceptacle.
+Il faut procéder comme suit :
+- Pour différentes hauteurs du déclencheur supportant la bille métallique (à faire varier de 60 cm à 20 cm, par pas de 5 cm), déterminer le temps de chute donné par le compteur digital électronique.
+- Dresser le tableau de mesures $z = f(t)$ et $z = f(t^2)$.
+- Tracer alors les graphes caractéristiques $z = f(t)$ et $z = f(t^2)$. En déduire l’accélération de la pesanteur g à partir de la pente du droite d'équation $z = f(t^2)$.
+- Comparer les résultats de g obtenus par les 2 méthodes. Quelle méthode convient le mieux?
 # Autres notes
 ==**Point attracteur**== : 
 Le système est toujours rappelé ("attiré") vers cette position.
@@ -113,3 +136,7 @@ Le système est toujours rappelé ("attiré") vers cette position.
 Pour un degré de liberté x, à ces points, la trajectoire de phase coupe l’axe (Ox). En ces points, la vitesse de système s’annule et change de signe. Nous voyons qu’en ces points, le système rebrousse chemin.
 > [!note]
 > Pour certains systèmes, la force, et donc l’accélération, pourrait s’annuler en ces points. Autrement dit : le système vient s’arrêter en ces points, qui ne sont plus des points de rebroussement mais des points d’arrêt.
+
+> [!note] Validité de modèle du point matériel :
+> Ce modèle est valable si les dimensions du corps physique sont faibles par rapport à la distance d’observation (de celui qui observe le mouvement).
+> Par exemple, la navette spatiale peut-être assimilée à un point matériel pour un observateur terrestre mais pas pour son commandant de bord. En effet pour ce dernier, la navette a des dimensions spatiales, elle peut tourner sur elle-même etc…

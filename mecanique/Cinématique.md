@@ -52,6 +52,9 @@ En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\the
 
 **Vecteur accélération en coordonnées cylindriques** : $\overrightarrow{a}(M)_{\mathcal{R}} = (\ddot{r} - r\dot{\theta}^{2})\overrightarrow{e_{r}} + (r\ddot{\theta} + 2\dot{r}\dot{\theta})\overrightarrow{e_{\theta}} + \ddot{z}\overrightarrow{e_{z}}$
 
+> [!warning]
+> L’orientation de $\overrightarrow a$ pointe en permanence dans la concavité de la trajectoire.
+
 > [!note]
 > ![[Pasted image 20250809094009.png]]
 
