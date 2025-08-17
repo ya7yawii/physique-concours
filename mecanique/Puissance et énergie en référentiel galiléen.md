@@ -52,6 +52,8 @@ Pour l’exemple étudié ([[#^figure1]]), Les abscisses $x_0$ et $x_1$ correspo
 > [!note] Domaines accessibles à la trajectoire :
 > Dans un champ de forces conservatives, l’évolution d’un point matériel est limitée aux zones où l’énergie potentielle reste inférieure à son énergie mécanique : $\mathcal{E}_P(x) \leqslant \mathcal{E}_M$ ([[#^figure2]]).
 
+> [!note]
+> La trajectoire de phase d’un système conservatif à une dimension est une courbe à énergie mécanique constante ([[#^figure3]]).
 # Diagrammes
 
 # Graphiques
@@ -60,10 +62,32 @@ Graphe des variations de l’énergie potentielle $\mathcal{E}_P(x)$ :
 
 Évolution du mobile pour quelques valeurs significatives de son énergie mécanique :
 ![[figure13.png]]^figure2
-- Cas ➀: état d’énergie mécanique $\mathcal{E}_{P_{0}}(x) \leqslant \mathcal{E}_{M_1} \leqslant 0$ : le point matériel ne peut s’échapper de la cuvette d’énergie potentielle, à proximité de l’abscisse d’équilibre $x_0$ : c’est un ==état lié==.
-- Cas ➁: état d’énergie mécanique $0 \leqslant \mathcal{E}_{M_2} \leqslant \mathcal{E}_{P_{1}}$ : C’est encore un ==état lié==.
-- Cas ➂: état d’énergie mécanique $0 \leqslant \mathcal{E}_{M_3} \leqslant \mathcal{E}_{P_{1}}$ : initialement, la particule est en dehors de la cuvette d’énergie potentielle. Le point matériel peut atteindre ici une abscisse minimale (point $A_3$). S’il est envoyé initialement vers $A_3$, nous voyons qu’il ne peut pas franchir la barrière de potentiel : après avoir atteint $A_3$, où il "rebondit", le point matériel repart à l’infini : c’est un ==état de diffusion==.
-- Cas ➃: état d’énergie mécanique $\mathcal{E}_{M_4} \leqslant \mathcal{E}_{P_{1}}$ : C’est encore un ==état de diffusion==.
+- Cas ➀: état d’énergie mécanique $0 \leqslant \mathcal{E}_{M_1} \leqslant \mathcal{E}_{P_{0}}(x)$ : le point matériel ne peut s’échapper de la cuvette d’énergie potentielle, à proximité de l’abscisse d’équilibre $x_0$ : c’est un ==état lié==.
+- Cas ➁: état d’énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_2} \leqslant 0$ : C’est encore un ==état lié==.
+- Cas ➂: état d’énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_3} \leqslant 0$ : initialement, la particule est en dehors de la cuvette d’énergie potentielle. Le point matériel peut atteindre ici une abscisse minimale (point $A_3$). S’il est envoyé initialement vers $A_3$, nous voyons qu’il ne peut pas franchir la barrière de potentiel : après avoir atteint $A_3$, où il "rebondit", le point matériel repart à l’infini : c’est un ==état de diffusion==.
+- Cas ➃: état d’énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_4}$ : C’est encore un ==état de diffusion==.
+
+>[!warning]
+> Dans le livre, les inégalités sont inversées et je pense que c'est faux. 
+
+Trajectoire de phase d’états liés et d’états de diffusion :
+![[figure14.png]]^figure3
+Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d’équilibre dans le plan de phase.
+- État lié ➀ : La trajectoire de phase est fermée, ce qui caractérise une évolution périodique du mobile qui oscille entre deux abscisses extrêmes accessibles (points $A_1$ et $B_1$). Notons encore que cette trajectoire de phase ressemble à une ellipse, comme pour un oscillateur harmonique.
+>[!note]
+>La trajectoire de phase contourne le point d’équilibre dans le sens horaire.
+
+- État lié ➁ : L’évolution est semblable à celle du cas précédent. Cependant, la trajectoire de phase n’est plus du tout elliptique : les oscillations sont d’amplitude assez importante, et les oscillations ne sont plus harmoniques.
+- État de diffusion ➂ : La trajectoire de phase n’est plus fermée : le mouvement cesse d’être périodique.
+- État de diffusion ➃ : L’évolution correspond encore à un rebroussement simple de la trajectoire de mobile qui finit par s’éloigner pour ne plus revenir. 
+> [!note]
+ > Nous visualisons ici très clairement la conservation de l’énergie mécanique du point matériel : lorsque l’énergie potentielle augmente, ce qui se produit en particulier lorsque l’abscisse approche la valeur $x_1$ , son énergie cinétique diminue. En effet, la trajectoire de phase se rapproche de l’axe $(Ox)$, ce qui met en évidence un ralentissement du mobile.
+
+> [!note] Point attracteur : 
+>  les trajectoires de phase contournent le point $P_0$ dans le sens horaire, tandis qu’elles tendent à éviter le point $P_1$ : le point $P_0$ est un ==centre attracteur==, pas le point $P_1$.
+
+> [!note] Équilibre stable, équilibre instable :
+> Un minimum (respectivement maximum) d’énergie potentielle correspond à une position d’équilibre stable (respectivement instable).
 # Expériences
 
 # Autres notes
