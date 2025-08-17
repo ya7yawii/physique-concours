@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique/Dynamique du point matériel.md",
+                "file": "mecanique/Cinématique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Dynamique du point matériel"
+              "title": "Cinématique"
             }
           },
           {
@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "mecanique/Puissance et énergie en référentiel galiléen.md",
-                "mode": "source",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
@@ -93,7 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 298.5,
     "collapsed": true
   },
   "right": {
@@ -197,10 +197,12 @@
   },
   "active": "b703df4bb73c475c",
   "lastOpenFiles": [
-    "mecanique/sommaire.md",
-    "mecanique/Puissance et énergie en référentiel galiléen.md",
-    "mecanique/Dynamique du point matériel.md",
     "mecanique/Cinématique.md",
+    "mecanique/Puissance et énergie en référentiel galiléen.md",
+    "mecanique/attachments/figure13.png",
+    "mecanique/Dynamique du point matériel.md",
+    "mecanique/attachments/figure12.png",
+    "mecanique/sommaire.md",
     "mecanique/attachments/Pasted image 20250813095602.png",
     "mecanique/attachments/Pasted image 20250813095213.png",
     "mecanique/attachments/Pasted image 20250813091936.png",
@@ -209,7 +211,6 @@
     "mecanique/attachments/figure10.png",
     "mecanique/attachments/figure8.png",
     "mecanique/attachments/figure7.png",
-    "mecanique/attachments/figure6.png",
     "Réaction d’un support.md",
     "Cinématique.md"
   ]

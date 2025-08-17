@@ -16,7 +16,7 @@ Réaction d’un support : $\overrightarrow{F}_{S \rightarrow M} = \overrightarr
 
 Tension d’un fil : $\overrightarrow{F}_{S_{1} \rightarrow S_{2}} = -T \overrightarrow{t}_{12}$ ou $\overrightarrow{F}_{S_{2} \rightarrow S_{1}} = T \overrightarrow{t}_{12}$ ([[#^figure1]])
 
-Force de rappel élastique (ou loi de Hooke) : $T = -k(l - l_{0})$ où k est la constante de **raideur du ressort**. 
+Force de rappel élastique (ou loi de Hooke) : $T = k(l - l_{0})$ où k est la constante de **raideur du ressort**. 
 
 > [!note] Relation fondamentale de la dynamique (deuxième loi de newton) :
 > $\mathcal{R}_{g}$ étant un référentiel galiléen, M un point matériel de masse m et $\mathcal{E}$ l’ensemble de l’univers à l’exception de M, les forces appliquées à M et son mouvement sont liées par la loi :
