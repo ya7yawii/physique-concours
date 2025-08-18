@@ -1,7 +1,9 @@
 ---
 titre: "[[Puissance et énergie en référentiel galiléen]]"
-tags: 
-aliases: 
+tags:
+  - puissance
+  - énergie
+  - travail
 crée: 16-08-2025, 17:14
 ---
 # Formules
@@ -39,6 +41,15 @@ Intégrale première de l'énergie : $\mathcal{E}_M = cte$
 > Si une seule coordonnée suffit à repérer la position de M , cette équation est de la forme : $f(x, \dot{x}) = 0$
 > Une telle situation à énergie mécanique constante est souvent une approximation en pratique, compte tenu de frottements inévitables en cas de liaisons. Elle permet néanmoins une première approche de la résolution des problèmes.
 > Elle est remarquablement vérifiée pour le mouvement des planètes et des satellites.
+
+> [!note] Technique de linéarisation :
+> Essayons d'établir l'équation d'évolution du point matériel au voisinage de la position d'équilibre $x_e$ . Pour cela, développons son énergie potentielle au voisinage de l'équilibre $(x \approx x_e)$ :
+> $$\mathcal{E}_P(x) = \mathcal{E}_P(x_e) + \left(\frac{\partial \mathcal{E}_P}{\partial x}\right)_{(x_e)}(x - x_e) + \frac{1}{2}\left(\frac{\partial^{2} \mathcal{E}_P}{\partial x^{2}}\right)_{(x_e)}(x - x_e)^{2} + \ldots$$
+> La position $x_e$ étant un équilibre : $\left(\frac{\partial \mathcal{E}_P}{\partial x}\right)_{(x_e)} = -F_x(x_e) = 0$
+> Nous supposerons, par la suite, que le terme d'ordre deux du développement n'est pas nul : $k = \left(\frac{\partial^{2} \mathcal{E}_P}{\partial x^{2}}\right)_{(x_e)} \neq 0$
+> ce qui permet d'écrire, au voisinage de l'équilibre : $\mathcal{E}_P(x) \approx \mathcal{E}_P(x_e) + \frac{k}{2}(x - x_e)^{2}$ et $F_x(x) = -\frac{\partial \mathcal{E}_P}{\partial x} \approx -k(x - x_e)$
+> dans ces conditions, l'équation d'évolution au voisinage de la position d'équilibre peut s’écrire : $m\dfrac{d^{2}(x - x_e)}{dt^{2}} = -k(x - x_e)$.
+> La technique de linéarisation, lorsqu'elle est justifiée $(k \neq 0)$, permet de préciser la nature du mouvement au voisinage de la position d'équilibre. En fait, pour $k < 0$, l'équation d'évolution admet une solution qui diverge donc la position d'équilibre est instable et pour $k > 0$, l'équation d'évolution admet une solution sinusoïdale donc la position d'équilibre est stable. 
 # Définitions
 ==**Champ de force**== :
 Une force qui ne dépend que de la position de son point d'application définit un champ de forces. C'est le cas des forces de pesanteur et de rappel.
@@ -46,48 +57,54 @@ Une force qui ne dépend que de la position de son point d'application définit 
 > Il existe des forces n'obéissant pas à une telle définition ; c'est, par exemple, le cas des forces de contact.
 > Si le travail de champ de forces ne dépend pas du chemin suivi ; le champ de force est dit <mark style="color: red">conservatif</mark>. Le travail d'une telle force le long d'une courbe fermée est nul.
 
-La fonction énergie potentielle est dite ==stationnaire== lorsqu'elle passe par un maximum ou un minimum : localement, ces variations sont très lentes. En ces points, la force exercée sur la particule s’annule.
-Pour l’exemple étudié ([[#^figure1]]), Les abscisses $x_0$ et $x_1$ correspondent donc à des ==positions d’équilibre==.
+La fonction énergie potentielle est dite ==stationnaire== lorsqu'elle passe par un maximum ou un minimum : localement, ces variations sont très lentes. En ces points, la force exercée sur la particule s'annule.
+Pour l'exemple étudié ([[#^figure1]]), Les abscisses $x_0$ et $x_1$ correspondent donc à des ==positions d'équilibre==.
 
 > [!note] Domaines accessibles à la trajectoire :
-> Dans un champ de forces conservatives, l’évolution d’un point matériel est limitée aux zones où l’énergie potentielle reste inférieure à son énergie mécanique : $\mathcal{E}_P(x) \leqslant \mathcal{E}_M$ ([[#^figure2]]).
+> Dans un champ de forces conservatives, l'évolution d'un point matériel est limitée aux zones où l'énergie potentielle reste inférieure à son énergie mécanique : $\mathcal{E}_P(x) \leqslant \mathcal{E}_M$ ([[#^figure2]]).
 
 > [!note]
-> La trajectoire de phase d’un système conservatif à une dimension est une courbe à énergie mécanique constante ([[#^figure3]]).
+> La trajectoire de phase d'un système conservatif à une dimension est une courbe à énergie mécanique constante ([[#^figure3]]).
 # Diagrammes
 
 # Graphiques
-Graphe des variations de l’énergie potentielle $\mathcal{E}_P(x)$ :
+Graphe des variations de l'énergie potentielle $\mathcal{E}_P(x)$ :
 ![[figure12.png]]^figure1
 
 Évolution du mobile pour quelques valeurs significatives de son énergie mécanique :
 ![[figure13.png]]^figure2
-- Cas ➀: état d’énergie mécanique $0 \leqslant \mathcal{E}_{M_1} \leqslant \mathcal{E}_{P_{0}}(x)$ : le point matériel ne peut s’échapper de la cuvette d’énergie potentielle, à proximité de l’abscisse d’équilibre $x_0$ : c’est un ==état lié==.
-- Cas ➁: état d’énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_2} \leqslant 0$ : C’est encore un ==état lié==.
-- Cas ➂: état d’énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_3} \leqslant 0$ : initialement, la particule est en dehors de la cuvette d’énergie potentielle. Le point matériel peut atteindre ici une abscisse minimale (point $A_3$). S’il est envoyé initialement vers $A_3$, nous voyons qu’il ne peut pas franchir la barrière de potentiel : après avoir atteint $A_3$, où il "rebondit", le point matériel repart à l’infini : c’est un ==état de diffusion==.
-- Cas ➃: état d’énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_4}$ : C’est encore un ==état de diffusion==.
+- Cas ➀: état d'énergie mécanique $0 \leqslant \mathcal{E}_{M_1} \leqslant \mathcal{E}_{P_{0}}(x)$ : le point matériel ne peut s'échapper de la cuvette d'énergie potentielle, à proximité de l'abscisse d'équilibre $x_0$ : c'est un ==état lié==.
+- Cas ➁: état d'énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_2} \leqslant 0$ : C'est encore un ==état lié==.
+- Cas ➂: état d'énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_3} \leqslant 0$ : initialement, la particule est en dehors de la cuvette d'énergie potentielle. Le point matériel peut atteindre ici une abscisse minimale (point $A_3$). S'il est envoyé initialement vers $A_3$, nous voyons qu'il ne peut pas franchir la barrière de potentiel : après avoir atteint $A_3$, où il "rebondit", le point matériel repart à l'infini : c'est un ==état de diffusion==.
+- Cas ➃: état d'énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_4}$ : C'est encore un ==état de diffusion==.
 
 >[!warning]
 > Dans le livre, les inégalités sont inversées et je pense que c'est faux. 
 
-Trajectoire de phase d’états liés et d’états de diffusion :
+Trajectoire de phase d'états liés et d'états de diffusion :
 ![[figure14.png]]^figure3
-Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d’équilibre dans le plan de phase.
+Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d'équilibre dans le plan de phase.
 - État lié ➀ : La trajectoire de phase est fermée, ce qui caractérise une évolution périodique du mobile qui oscille entre deux abscisses extrêmes accessibles (points $A_1$ et $B_1$). Notons encore que cette trajectoire de phase ressemble à une ellipse, comme pour un oscillateur harmonique.
 >[!note]
->La trajectoire de phase contourne le point d’équilibre dans le sens horaire.
+>La trajectoire de phase contourne le point d'équilibre dans le sens horaire.
 
-- État lié ➁ : L’évolution est semblable à celle du cas précédent. Cependant, la trajectoire de phase n’est plus du tout elliptique : les oscillations sont d’amplitude assez importante, et les oscillations ne sont plus harmoniques.
-- État de diffusion ➂ : La trajectoire de phase n’est plus fermée : le mouvement cesse d’être périodique.
-- État de diffusion ➃ : L’évolution correspond encore à un rebroussement simple de la trajectoire de mobile qui finit par s’éloigner pour ne plus revenir. 
+- État lié ➁ : L'évolution est semblable à celle du cas précédent. Cependant, la trajectoire de phase n'est plus du tout elliptique : les oscillations sont d'amplitude assez importante, et les oscillations ne sont plus harmoniques.
+- État de diffusion ➂ : La trajectoire de phase n'est plus fermée : le mouvement cesse d'être périodique.
+- État de diffusion ➃ : L'évolution correspond encore à un rebroussement simple de la trajectoire de mobile qui finit par s'éloigner pour ne plus revenir. 
 > [!note]
- > Nous visualisons ici très clairement la conservation de l’énergie mécanique du point matériel : lorsque l’énergie potentielle augmente, ce qui se produit en particulier lorsque l’abscisse approche la valeur $x_1$ , son énergie cinétique diminue. En effet, la trajectoire de phase se rapproche de l’axe $(Ox)$, ce qui met en évidence un ralentissement du mobile.
+ > Nous visualisons ici très clairement la conservation de l'énergie mécanique du point matériel : lorsque l'énergie potentielle augmente, ce qui se produit en particulier lorsque l'abscisse approche la valeur $x_1$ , son énergie cinétique diminue. En effet, la trajectoire de phase se rapproche de l'axe $(Ox)$, ce qui met en évidence un ralentissement du mobile.
 
 > [!note] Point attracteur : 
->  les trajectoires de phase contournent le point $P_0$ dans le sens horaire, tandis qu’elles tendent à éviter le point $P_1$ : le point $P_0$ est un ==centre attracteur==, pas le point $P_1$.
+>  les trajectoires de phase contournent le point $P_0$ dans le sens horaire, tandis qu'elles tendent à éviter le point $P_1$ : le point $P_0$ est un ==centre attracteur==, pas le point $P_1$.
 
 > [!note] Équilibre stable, équilibre instable :
-> Un minimum (respectivement maximum) d’énergie potentielle correspond à une position d’équilibre stable (respectivement instable).
+> Un minimum (respectivement maximum) d'énergie potentielle correspond à une position d'équilibre stable (respectivement instable).
 # Expériences
+## Conservation de l'énergie mécanique (Roue de Maxwell)
+> [!warning]
+> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf). 
 
 # Autres notes
+> [!warning]
+> Une force conservative ne dépend pas explicitement du temps car l'énergie n'est pas conservée lorsque la force dépend du temps.
+

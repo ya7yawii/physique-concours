@@ -28,8 +28,8 @@
               "type": "markdown",
               "state": {
                 "file": "mecanique/Puissance et énergie en référentiel galiléen.md",
-                "mode": "source",
-                "source": false
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "Puissance et énergie en référentiel galiléen"
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:l’action",
+                "query": "tag:-puissance",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,20 +197,20 @@
   },
   "active": "b703df4bb73c475c",
   "lastOpenFiles": [
-    "mecanique/attachments/figure14.png",
-    "mecanique/Puissance et énergie en référentiel galiléen.md",
     "mecanique/Cinématique.md",
-    "mecanique/attachments/figure13.png",
-    "mecanique/Dynamique du point matériel.md",
-    "mecanique/attachments/figure12.png",
-    "mecanique/sommaire.md",
-    "mecanique/attachments/Pasted image 20250813095602.png",
-    "mecanique/attachments/Pasted image 20250813095213.png",
+    "mecanique/Puissance et énergie en référentiel galiléen.md",
+    "mecanique/attachments/Pasted image 20250809101356.png",
+    "mecanique/attachments/Pasted image 20250809111108.png",
+    "mecanique/attachments/Pasted image 20250809112808.png",
+    "mecanique/attachments/Pasted image 20250809115608.png",
+    "mecanique/attachments/Pasted image 20250809115846.png",
     "mecanique/attachments/Pasted image 20250813091936.png",
-    "mecanique/attachments/figure11.png",
-    "mecanique/attachments/figure9.png",
-    "mecanique/attachments/figure10.png",
-    "mecanique/attachments/figure8.png",
+    "mecanique/attachments/Pasted image 20250813095213.png",
+    "mecanique/attachments/Pasted image 20250813095602.png",
+    "mecanique/attachments/Pasted image 20250809094009.png",
+    "mecanique/attachments/Pasted image 20250809085756.png",
+    "mecanique/Dynamique du point matériel.md",
+    "mecanique/sommaire.md",
     "Réaction d’un support.md",
     "Cinématique.md"
   ]

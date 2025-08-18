@@ -11,8 +11,7 @@ crée: 08-08-2025, 17:08
 
 **Vecteur position en coordonnées cylindriques** :  $\overrightarrow{OM} = r\overrightarrow{e_{r}} + z\overrightarrow{e_{z}}$  ([[#^figure2]])
 
-**Relations entre les coordonnées cylindriques et cartésiennes** :
-![[Pasted image 20250808181451.png]]
+**Relations entre les coordonnées cylindriques et cartésiennes** : $\overrightarrow{e_r} = \cos\theta\overrightarrow{e_x} + \sin\theta\overrightarrow{e_y}$ ; $\overrightarrow{e_\theta} = -\sin\theta\overrightarrow{e_x} + \cos\theta\overrightarrow{e_y}$ ; $x = r\cos\theta$ ; $y = r\sin\theta$ ; $r = \sqrt{x^{2} + y^{2}}$.
 
 **Vecteur position en coordonnées sphériques** :  $\overrightarrow{OM} = r\overrightarrow{e_{r}}$  ([[#^figure3]])
 
@@ -28,8 +27,7 @@ crée: 08-08-2025, 17:08
 > [!note]
 > La dérivée d’un vecteur de norme constante est orthogonale à ce vecteur ou nulle. C’est le cas des vecteurs unitaires.
 
-En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\theta$ :
-![[Pasted image 20250809085756.png]]
+En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\theta$ : $\left(\dfrac{d\overrightarrow{e_r}}{d\theta}\right)_{\hspace{-0.5em}/\mathcal{R}} = \overrightarrow{e_\theta}$ et $\left(\dfrac{d\overrightarrow{e_\theta}}{d\theta}\right)_{\hspace{-0.5em}/\mathcal{R}} = -\overrightarrow{e_r}$
 
 **Vecteur vitesse en coordonnées cartésiennes** : $\overrightarrow{v}(M)_{\mathcal{R}} = \dot{x}\overrightarrow{e_{x}} + \dot{y}\overrightarrow{e_{y}} + \dot{z}\overrightarrow{e_{z}}$
 
@@ -56,7 +54,8 @@ En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\the
 > L’orientation de $\overrightarrow a$ pointe en permanence dans la concavité de la trajectoire.
 
 > [!note]
-> ![[Pasted image 20250809094009.png]]
+> Pour un mouvement circulaire de centre $O$ et rayon $R$, nous avons, en coordonnées polaires : $\overrightarrow{v}(M)_{/\mathcal{R}} = R\dot{\theta}\overrightarrow{e_\theta}$ et $\overrightarrow{a}(M)_{/\mathcal{R}} = -R\dot{\theta}^{2}\overrightarrow{e_r} + R\ddot{\theta}\overrightarrow{e_\theta}$.
+> Dans les cas du mouvement circulaire uniforme : $v = R\dot{\theta} = cte$ et $\overrightarrow{a}(M)_{/\mathcal{R}} = -R\dot{\theta}^{2}\overrightarrow{e_r} = -\frac{v^{2}}{R}\overrightarrow{e_r}$.
 
 Équation de la trajectoire de phase du mobile en mouvement uniformément accéléré : $x = x_{0} + \frac{1}{2a}(v^{2} - v_{0}^{2})$ [[#^figure7]] 
 
