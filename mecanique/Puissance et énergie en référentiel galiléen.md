@@ -48,7 +48,7 @@ Intégrale première de l'énergie : $\mathcal{E}_M = cte$
 > La position $x_e$ étant un équilibre : $\left(\frac{\partial \mathcal{E}_P}{\partial x}\right)_{(x_e)} = -F_x(x_e) = 0$
 > Nous supposerons, par la suite, que le terme d'ordre deux du développement n'est pas nul : $k = \left(\frac{\partial^{2} \mathcal{E}_P}{\partial x^{2}}\right)_{(x_e)} \neq 0$
 > ce qui permet d'écrire, au voisinage de l'équilibre : $\mathcal{E}_P(x) \approx \mathcal{E}_P(x_e) + \frac{k}{2}(x - x_e)^{2}$ et $F_x(x) = -\frac{\partial \mathcal{E}_P}{\partial x} \approx -k(x - x_e)$
-> dans ces conditions, l'équation d'évolution au voisinage de la position d'équilibre peut s’écrire : $m\dfrac{d^{2}(x - x_e)}{dt^{2}} = -k(x - x_e)$.
+> dans ces conditions, l'équation d'évolution au voisinage de la position d'équilibre peut s'écrire : $m\dfrac{d^{2}(x - x_e)}{dt^{2}} = -k(x - x_e)$.
 > La technique de linéarisation, lorsqu'elle est justifiée $(k \neq 0)$, permet de préciser la nature du mouvement au voisinage de la position d'équilibre. En fait, pour $k < 0$, l'équation d'évolution admet une solution qui diverge donc la position d'équilibre est instable et pour $k > 0$, l'équation d'évolution admet une solution sinusoïdale donc la position d'équilibre est stable. 
 # Définitions
 ==**Champ de force**== :
@@ -102,7 +102,40 @@ Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d'équilibre dans le p
 # Expériences
 ## Conservation de l'énergie mécanique (Roue de Maxwell)
 > [!warning]
-> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf). 
+> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf).
+
+![[Pasted image 20250818171606.png]]
+
+### Détermination du moment d'inertie de la roue de Maxwell
+Afin de déterminer le moment d'inertie de la roue de Maxwell, on étudie le chemin parcouru par le centre de gravité de la roue de Maxwell en fonction du temps. Pour ce faire, on varie la hauteur de chute séparant le point de départ de la roue du faisceau lumineux de la barrière lumineuse à fourchette, en déplaçant la barrière sur la tige (la hauteur est lue sur la règle graduée).
+Il faut procéder comme suit :
+- Remplir le tableau suivant : ![[Pasted image 20250818174001.png]]
+- Tracer le graphe $z = f(t)$ et le graphe $z = g(t^{2})$
+- A partir de ce $2^{ème}$ graphe et en utilisant la relation $z(t) = \frac{1}{2}\frac{mg}{m + \frac{J}{r^{2}}}t^{2}$, déterminer le moment d'inertie de la roue de Maxwell.
+> [!warning]
+> La relation ci-dessus est obtenue en écrivant l'énergie totale E comme la somme de l'énergie potentielle, l'énergie cinétique de translation et l'énergie cinétique de rotation (pour cette dernière voir chapitre théorème du moment cinétique [[sommaire#^e7d531]]) comme suit : $E = m\overrightarrow{g}\overrightarrow{z} + \frac{1}{2}m\overrightarrow{v}^{2} + \frac{1}{2}J\overrightarrow{w}^{2}$
+> En utilisant $\overrightarrow{dz} = \overrightarrow{d\phi} \times \overrightarrow{r}$ et $\overrightarrow{v} = \frac{\overrightarrow{dz}}{dt} = \overrightarrow{w} \times \overrightarrow{r}$, on obtient $E = -mgz(t) + \frac{1}{2}mv^{2}(t) + \frac{1}{2}\frac{J}{r^{2}}v^{2}(t)$
+> Comme l'énergie totale est constante dans le temps, on obtient après différentiation par rapport au temps la formule $z(t)$.
+
+### Énergie potentielle
+En utilisant le tableau ci-dessus, tracer le graphe donnant l'énergie potentielle $E_p$ en fonction du temps.
+
+### Vitesse instantanée de la roue de Maxwell
+Pour déterminer la vitesse instantanée de la roue, il suffit de brancher le compteur en porte électronique.
+La vitesse est obtenue en faisant : $v(t + \frac{\Delta t}{2}) = \frac{\Delta z}{\Delta t}$ où $\Delta z$ est le diamètre de l'axe de la roue et $\Delta t$ (temps d'obscurcissement) le temps de séjour de l'axe de la roue dans le rayon lumineux (voir figure ci-dessous).
+![[Pasted image 20250818183029.png]]
+
+Il faut procéder comme suit :
+- Remplir le tableau suivant : ![[Pasted image 20250818183157.png]]
+- Tracer le graphe $v = f(t)$
+
+### Énergie cinétique de translation
+En utilisant le tableau ci-dessus, tracer le graphe donnant l'énergie cinétique de translation en fonction du temps.
+
+### Énergie cinétique de rotation
+En utilisant le tableau ci-dessus et la relation $v = wr$, tracer le graphe donnant l'énergie cinétique de rotation en fonction du temps.
+
+Quelle est la conclusion que vous déduisez en comparant les 3 tracés de trois derniers graphes?
 
 # Autres notes
 > [!warning]

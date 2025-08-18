@@ -111,12 +111,12 @@ Sens de parcours sur la trajectoire de phase :
 ### Détermination de g à partir de la période du pendule simple
 ![[Pasted image 20250813091936.png]]
 Il faut procéder comme suit :
-- Écarter le pendule simple de sa position d’équilibre (qques degrés).
+- Écarter le pendule simple de sa position d’équilibre (quelques degrés).
 - A l’aide du chronomètre, déterminer la durée $t_1$ de 20 oscillations pour longueur du fil $l_1 = 100 \ cm$.
 - Refaire les mêmes mesures en utilisant un pendule de longueur $l_2 = 75 \ cm$, puis un pendule de longueur $l_3 = 50 \ cm$.
 - Compléter le tableau suivant en utilisant la formule $g = 4\pi^{2}\frac{1}{T^{2}}$ et en faisant un calcul d’erreurs sur g.
-	>[!warning]
-	>la formule de g est obtenue à partir de théorème du moment cinétique à voir dans la note [[sommaire#^e7d531]].
+>[!warning]
+>La formule de g est obtenue à l'aide de théorème du moment cinétique à voir dans la note [[sommaire#^e7d531]].
 
 ![[Pasted image 20250813095213.png]]
 
