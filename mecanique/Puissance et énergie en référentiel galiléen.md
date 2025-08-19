@@ -141,3 +141,5 @@ Quelle est la conclusion que vous déduisez en comparant les 3 tracés de trois 
 > [!warning]
 > Une force conservative ne dépend pas explicitement du temps car l'énergie n'est pas conservée lorsque la force dépend du temps.
 
+> [!warning] Renversement du temps
+>  Le renversement du temps (changement de variable t → – t) provoque le changement de signe de la vitesse. Ceci revient, dans le plan de phase, à effectuer une symétrie par rapport à $(Ox)$.
