@@ -14,7 +14,7 @@ crée: 08-08-2025, 16:56
 1. [[Cinématique]]
 2. [[Dynamique du point matériel]]
 3. [[Puissance et énergie en référentiel galiléen]]
-4. [[Mouvement libre d'un oscillateur harmonique]]
+4. [[Mouvement libre d’un oscillateur harmonique]]
 5. [[Réponse d'un oscillateur à une excitation]]
 6. [[Théorème du moment cinétique]] ^e7d531
 7. [[Force centrale conservative. Mouvement newtonien]]
