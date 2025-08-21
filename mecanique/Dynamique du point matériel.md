@@ -116,7 +116,7 @@ Il faut procéder comme suit :
 - Refaire les mêmes mesures en utilisant un pendule de longueur $l_2 = 75 \ cm$, puis un pendule de longueur $l_3 = 50 \ cm$.
 - Compléter le tableau suivant en utilisant la formule $g = 4\pi^{2}\frac{1}{T^{2}}$ et en faisant un calcul d’erreurs sur g.
 >[!warning]
->La formule de g est obtenue à l'aide de théorème du moment cinétique à voir dans la note [[sommaire#^e7d531]].
+>La formule de g est obtenue à l'aide de théorème du moment cinétique à voir dans la note [[Théorème du moment cinétique]].
 
 ![[Pasted image 20250813095213.png]]
 

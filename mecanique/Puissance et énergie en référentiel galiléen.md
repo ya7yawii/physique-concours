@@ -113,7 +113,7 @@ Il faut procéder comme suit :
 - Tracer le graphe $z = f(t)$ et le graphe $z = g(t^{2})$
 - A partir de ce $2^{ème}$ graphe et en utilisant la relation $z(t) = \frac{1}{2}\frac{mg}{m + \frac{J}{r^{2}}}t^{2}$, déterminer le moment d'inertie de la roue de Maxwell.
 > [!warning]
-> La relation ci-dessus est obtenue en écrivant l'énergie totale E comme la somme de l'énergie potentielle, l'énergie cinétique de translation et l'énergie cinétique de rotation (pour cette dernière voir chapitre théorème du moment cinétique [[sommaire#^e7d531]]) comme suit : $E = m\overrightarrow{g}\overrightarrow{z} + \frac{1}{2}m\overrightarrow{v}^{2} + \frac{1}{2}J\overrightarrow{w}^{2}$
+> La relation ci-dessus est obtenue en écrivant l'énergie totale E comme la somme de l'énergie potentielle, l'énergie cinétique de translation et l'énergie cinétique de rotation (pour cette dernière voir chapitre [[Théorème du moment cinétique]]) comme suit : $E = m\overrightarrow{g}\overrightarrow{z} + \frac{1}{2}m\overrightarrow{v}^{2} + \frac{1}{2}J\overrightarrow{w}^{2}$
 > En utilisant $\overrightarrow{dz} = \overrightarrow{d\phi} \times \overrightarrow{r}$ et $\overrightarrow{v} = \frac{\overrightarrow{dz}}{dt} = \overrightarrow{w} \times \overrightarrow{r}$, on obtient $E = -mgz(t) + \frac{1}{2}mv^{2}(t) + \frac{1}{2}\frac{J}{r^{2}}v^{2}(t)$
 > Comme l'énergie totale est constante dans le temps, on obtient après différentiation par rapport au temps la formule $z(t)$.
 
