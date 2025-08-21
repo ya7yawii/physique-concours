@@ -58,6 +58,18 @@ La solution de cet équation : $\overrightarrow{r} = \overrightarrow{r}_0\cos\om
 > [!note] Régime apériodique : $\mathcal{Q} < \frac{1}{2}$
 > La solution de l’équation du mouvement est de la forme : $x(t) = e^{-\alpha t}(A_1e^{-\omega t} + A_2e^{\omega t})$ avec $\omega = \sqrt{\alpha^{2} - \omega_{0}^{2}}$.
 > L’évolution est à présent purement exponentielle. Comme dans le cas critique, le retour à $x = 0$ se fait sans oscillation, mais dure ici plus longtemps ([[#^figure4]]).
+
+
+> [!note]
+> En multipliant l’équation différentielle de l’oscillateur amorti $m\dot{v} + hv + kx = 0$ par $v = \dot{x}$, on obtient : $\dfrac{d\mathcal{E}_M}{dt} = -hv^{2}$.
+
+
+Le décrément logarithmique d’un oscillateur en régime pseudo-périodique : $\delta = \ln\left[\frac{x(t)}{x(t + T)}\right] = \alpha T = \frac{2\pi\alpha}{\sqrt{\omega_{0}^{2} - \alpha^{2}}} = \frac{\pi}{\sqrt{\mathcal{Q}^{2} - \left(\frac{1}{2}\right)^{2}}}$.
+> [!note]
+> La détermination expérimentale du décrément logarithmique $\delta$ permet d’atteindre le facteur de qualité $\mathcal{Q}$ de l’oscillateur amorti.
+> Entre deux élongations extrémales successives $x(t_0)$ et $x(t_0 + T)$, pour lesquelles la vitesse est nulle, l’énergie mécanique passe de $\mathcal{E}_M$ à $\mathcal{E}_M + \Delta \mathcal{E}_M$ avec : $\frac{\Delta \mathcal{E}_M}{\mathcal{E}_M} = (e^{-2\delta} - 1)$.
+> Pour de faibles amortissements $(\delta\ll1 \hspace{0.5em}\text{ou}\hspace{0.5em} \mathcal{Q}\gg1)$, $\delta \approx \frac{\pi}{\mathcal{Q}}$ puisque $T \approx T_0$.
+> L’expression précédente se simplifie en : $\frac{\Delta \mathcal{E}_M}{\mathcal{E}_M} = -2\delta = -\frac{2\pi}{\mathcal{Q}} =-\frac{T_0}{\tau}$ ou encore $\mathcal{Q} = -2\pi\frac{\mathcal{E}_M}{\Delta \mathcal{E}_M}$.
 # Définitions
 ==**Temps de réponse d’un système physique**== :
 Partant des conditions initiales $x(t = 0) = x_0$ et $x(t = 0) = 0$, il existe un temps $t_p$ tel que pour $t > t_p$ nous avons $|x_{(t > t_p)}| < px_0$ (avec p positif ; $p < 1$).

@@ -28,7 +28,7 @@
               "type": "markdown",
               "state": {
                 "file": "mecanique/Mouvement libre d’un oscillateur harmonique.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -198,12 +198,12 @@
   },
   "active": "674bc6d79919c8e0",
   "lastOpenFiles": [
-    "mecanique/attachments/figure22.png",
+    "mecanique/Puissance et énergie en référentiel galiléen.md",
     "mecanique/Mouvement libre d’un oscillateur harmonique.md",
+    "mecanique/attachments/figure22.png",
     "mecanique/attachments/figure21.png",
     "mecanique/attachments/figure20.png",
     "mecanique/attachments/figure19.png",
-    "mecanique/Puissance et énergie en référentiel galiléen.md",
     "mecanique/attachments/figure18.png",
     "mecanique/attachments/figure17.png",
     "mecanique/Mécanique.md",
