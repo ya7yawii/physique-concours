@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique/Puissance et énergie en référentiel galiléen.md",
+                "file": "mecanique/Dynamique du point matériel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Puissance et énergie en référentiel galiléen"
+              "title": "Dynamique du point matériel"
             }
           },
           {
@@ -198,17 +198,22 @@
   },
   "active": "674bc6d79919c8e0",
   "lastOpenFiles": [
+    "mecanique/attachments/figure36.png",
+    "mecanique/attachments/figure35.png",
+    "mecanique/attachments/figure34.png",
+    "mecanique/Dynamique du point matériel.md",
     "mecanique/Puissance et énergie en référentiel galiléen.md",
     "mecanique/Mouvement libre d’un oscillateur harmonique.md",
+    "mecanique/attachments/figure33.png",
+    "mecanique/attachments/figure24.png",
+    "mecanique/attachments/figure23.png",
     "mecanique/attachments/figure22.png",
+    "mecanique/attachments/Pasted image 20250818172227.png",
     "mecanique/attachments/figure21.png",
-    "mecanique/attachments/figure20.png",
-    "mecanique/attachments/figure19.png",
-    "mecanique/attachments/figure18.png",
     "mecanique/attachments/figure17.png",
-    "mecanique/Mécanique.md",
+    "mecanique/attachments/figure16.png",
     "mecanique/Cinématique.md",
-    "mecanique/Dynamique du point matériel.md",
+    "mecanique/Mécanique.md",
     "mecanique/Théorème du moment cinétique.md",
     "mecanique/Système de deux points matériels.md",
     "mecanique/Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
@@ -218,11 +223,7 @@
     "mecanique/css style.md",
     "CSS style/style.css",
     "CSS style",
-    "mecanique/attachments/figure16.png",
-    "mecanique/attachments/figure15.png",
     "Mouvement libre d'un oscillateur harmonique.md",
-    "mecanique/attachments/Pasted image 20250818183157.png",
-    "mecanique/attachments/Pasted image 20250818183029.png",
     "Réaction d’un support.md",
     "Cinématique.md"
   ]

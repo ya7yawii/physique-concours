@@ -69,10 +69,10 @@ Pour l'exemple étudié ([[#^figure1]]), Les abscisses $x_0$ et $x_1$ correspond
 
 # Graphiques
 Graphe des variations de l'énergie potentielle $\mathcal{E}_P(x)$ :
-![[figure12.png]]^figure1
+![[figure18.png]]^figure1
 
 Évolution du mobile pour quelques valeurs significatives de son énergie mécanique :
-![[figure13.png]]^figure2
+![[figure19.png]]^figure2
 - Cas ➀: état d'énergie mécanique $0 \leqslant \mathcal{E}_{M_1} \leqslant \mathcal{E}_{P_{0}}(x)$ : le point matériel ne peut s'échapper de la cuvette d'énergie potentielle, à proximité de l'abscisse d'équilibre $x_0$ : c'est un ==état lié==.
 - Cas ➁: état d'énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_2} \leqslant 0$ : C'est encore un ==état lié==.
 - Cas ➂: état d'énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_3} \leqslant 0$ : initialement, la particule est en dehors de la cuvette d'énergie potentielle. Le point matériel peut atteindre ici une abscisse minimale (point $A_3$). S'il est envoyé initialement vers $A_3$, nous voyons qu'il ne peut pas franchir la barrière de potentiel : après avoir atteint $A_3$, où il "rebondit", le point matériel repart à l'infini : c'est un ==état de diffusion==.
@@ -82,7 +82,7 @@ Graphe des variations de l'énergie potentielle $\mathcal{E}_P(x)$ :
 > Dans le livre, les inégalités sont inversées et je pense que c'est faux. 
 
 Trajectoire de phase d'états liés et d'états de diffusion :
-![[figure14.png]]^figure3
+![[figure20.png]]^figure3
 Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d'équilibre dans le plan de phase.
 - État lié ➀ : La trajectoire de phase est fermée, ce qui caractérise une évolution périodique du mobile qui oscille entre deux abscisses extrêmes accessibles (points $A_1$ et $B_1$). Notons encore que cette trajectoire de phase ressemble à une ellipse, comme pour un oscillateur harmonique.
 >[!note]
@@ -104,12 +104,12 @@ Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d'équilibre dans le p
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf).
 
-![[Pasted image 20250818171606.png]]
+![[figure21.png]]
 
 ### Détermination du moment d'inertie de la roue de Maxwell
 Afin de déterminer le moment d'inertie de la roue de Maxwell, on étudie le chemin parcouru par le centre de gravité de la roue de Maxwell en fonction du temps. Pour ce faire, on varie la hauteur de chute séparant le point de départ de la roue du faisceau lumineux de la barrière lumineuse à fourchette, en déplaçant la barrière sur la tige (la hauteur est lue sur la règle graduée).
 Il faut procéder comme suit :
-- Remplir le tableau suivant : ![[Pasted image 20250818174001.png]]
+- Remplir le tableau suivant : ![[figure22.png]]
 - Tracer le graphe $z = f(t)$ et le graphe $z = g(t^{2})$
 - A partir de ce $2^{ème}$ graphe et en utilisant la relation $z(t) = \frac{1}{2}\frac{mg}{m + \frac{J}{r^{2}}}t^{2}$, déterminer le moment d'inertie de la roue de Maxwell.
 > [!warning]
@@ -123,10 +123,10 @@ En utilisant le tableau ci-dessus, tracer le graphe donnant l'énergie potentiel
 ### Vitesse instantanée de la roue de Maxwell
 Pour déterminer la vitesse instantanée de la roue, il suffit de brancher le compteur en porte électronique.
 La vitesse est obtenue en faisant : $v(t + \frac{\Delta t}{2}) = \frac{\Delta z}{\Delta t}$ où $\Delta z$ est le diamètre de l'axe de la roue et $\Delta t$ (temps d'obscurcissement) le temps de séjour de l'axe de la roue dans le rayon lumineux (voir figure ci-dessous).
-![[Pasted image 20250818183029.png]]
+![[figure23.png]]
 
 Il faut procéder comme suit :
-- Remplir le tableau suivant : ![[Pasted image 20250818183157.png]]
+- Remplir le tableau suivant : ![[figure24.png]]
 - Tracer le graphe $v = f(t)$
 
 ### Énergie cinétique de translation

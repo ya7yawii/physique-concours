@@ -95,21 +95,21 @@ Pour un système autonome, la nature des trajectoires de phase est donc une cara
 > Pour un système autonome, deux trajectoires de phase ne se coupent jamais.
 # Diagrammes
 Force de tension :
-![[figure10.png]]^figure1
+![[figure13.png]]^figure1
 > [!note]
 > Un fil souple tendu se sépare en deux parties $S_{1}$ et $S_{2}$ s’il est coupé en un point P. Il existe donc une force qui assure en chaque point la cohésion du fil.
 > Si le fil est tendu, la tension T est positive.
 > La tension T est relative à un point et, dans le cas général, varie le long du fil.
 # Graphiques
 Sens de parcours sur la trajectoire de phase :
-![[figure11.png]]^figure2
+![[figure14.png]]^figure2
 # Expériences
 ## Détermination de l'accélération terrestre
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf).
 
 ### Détermination de g à partir de la période du pendule simple
-![[Pasted image 20250813091936.png]]
+![[figure15.png]]
 Il faut procéder comme suit :
 - Écarter le pendule simple de sa position d’équilibre (quelques degrés).
 - A l’aide du chronomètre, déterminer la durée $t_1$ de 20 oscillations pour longueur du fil $l_1 = 100 \ cm$.
@@ -118,10 +118,10 @@ Il faut procéder comme suit :
 >[!warning]
 >La formule de g est obtenue à l'aide de théorème du moment cinétique à voir dans la note [[Théorème du moment cinétique]].
 
-![[Pasted image 20250813095213.png]]
+![[figure16.png]]
 
 ### Détermination de g à partir de la chute libre
-![[Pasted image 20250813095602.png]]
+![[figure17.png]]
 Ce dispositif permet de mesurer le temps de chute d'une bille emprisonnée puis libérée par un déclencheur. Cette mesure du temps est effectuée à l'aide d'un compteur digital relié au déclencheur (qui l'actionne au départ de la bille) et au réceptacle, qui arrête le compteur dés que la bille tombe sur l'assiette du réceptacle.
 Il faut procéder comme suit :
 - Pour différentes hauteurs du déclencheur supportant la bille métallique (à faire varier de 60 cm à 20 cm, par pas de 5 cm), déterminer le temps de chute donné par le compteur digital électronique.
