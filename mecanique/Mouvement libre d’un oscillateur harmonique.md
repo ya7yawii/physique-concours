@@ -4,7 +4,6 @@ tags:
   - oscillateur
   - harmonique
   - amorti
-aliases:
 crée: 20-08-2025, 10:43
 ---
 # Formules
@@ -151,3 +150,16 @@ On mesurera la durée de 10 oscillations et on enclenchera le chronomètre lorsq
 ### Expression de T
 - L'expression de la période propre d'un pendule simple non-amorti est : $T_0 = 2\pi\sqrt{\frac{L}{g}}$. Vérifier, à l'aide des résultats expérimentaux, cette expression.
 # Autres notes
+==**Oscillateur harmonique**== : 
+On appelle oscillateur harmonique tout système dont l'évolution (de la position, de la vitesse ou de l'accélération) est fonction sinusoïdale du temps (sinus ou cosinus). on peut citer les exemples suivants à titre non exhaustif de l'oscillateur harmonique : le pendule simple, oscillateur masse-ressort, circuit LC, atomes dans un solide,...
+
+==**Mouvement du pendule simple pour les très petits angles**== : (Application 2 page 79)
+![[figure37.png]]
+On a $m\overrightarrow{a} = m\overrightarrow{g} + \overrightarrow{T}$ signifie $T\overrightarrow{e}_r = \frac{mv^{2}}{L_0}\overrightarrow{e}_r + mg\cos\theta\overrightarrow{e}_r$ 
+Si $\theta$ est petit, on n'a plus de mouvement significatif sur $Oz$, donc $z = L_0$, $z' = 0$, $z'' = 0$ et $\cos\theta = 1 - \frac{\theta^{2}}{2} = 1$
+De plus d'après la conservation de l'énergie mécanique, $\frac{v^{2}}{L_0} = 2g(\cos\theta - \cos\theta_m) = g(\theta_{m}^{2} - \theta^{2}) \ll g$ donc $T \simeq mg$
+La force $\overrightarrow{T}$ s'exprime comme suit dans les coordonnées de la base mobile : $-T\frac{\overrightarrow{r}}{\lVert \overrightarrow{r} \rVert} = -T\frac{x}{L_0}\overrightarrow{e_x} - T\frac{y}{L_0}\overrightarrow{e_y} - T\frac{z}{L_0}\overrightarrow{e_z}$ 
+Alors $x'' = -\frac{T}{m} \frac{x}{L_0} \simeq -g\frac{x}{L_0} = -\omega_{0}^{2}x$, $x'' = -\frac{T}{m} \frac{y}{L_0} \simeq -g\frac{y}{L_0} = -\omega_{0}^{2}y$  et $z'' \simeq 0$ en posant $\omega_{0}^{2} = g/L_0$.
+> [!warning]
+> Je n'ai pas compris pourquoi on exprime dans les coordonnées de la base mobile que la force et pas l'accélération.
+ 
