@@ -160,6 +160,4 @@ Si $\theta$ est petit, on n'a plus de mouvement significatif sur $Oz$, donc $z =
 De plus d'après la conservation de l'énergie mécanique, $\frac{v^{2}}{L_0} = 2g(\cos\theta - \cos\theta_m) = g(\theta_{m}^{2} - \theta^{2}) \ll g$ donc $T \simeq mg$
 La force $\overrightarrow{T}$ s'exprime comme suit dans les coordonnées de la base mobile : $-T\frac{\overrightarrow{r}}{\lVert \overrightarrow{r} \rVert} = -T\frac{x}{L_0}\overrightarrow{e_x} - T\frac{y}{L_0}\overrightarrow{e_y} - T\frac{z}{L_0}\overrightarrow{e_z}$ 
 Alors $x'' = -\frac{T}{m} \frac{x}{L_0} \simeq -g\frac{x}{L_0} = -\omega_{0}^{2}x$, $x'' = -\frac{T}{m} \frac{y}{L_0} \simeq -g\frac{y}{L_0} = -\omega_{0}^{2}y$  et $z'' \simeq 0$ en posant $\omega_{0}^{2} = g/L_0$.
-> [!warning]
-> Je n'ai pas compris pourquoi on exprime dans les coordonnées de la base mobile que la force et pas l'accélération.
  
