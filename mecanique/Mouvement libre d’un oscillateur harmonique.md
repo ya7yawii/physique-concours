@@ -78,7 +78,7 @@ Partant des conditions initiales $x(t = 0) = x_0$ et $x(t = 0) = 0$, il existe u
 Ce temps $t_p$ correspond souvent à un temps de mesure ou de réponse pour un système physique ; nous cherchons alors à le minimiser.
 Ce temps $t_p$, fonction du facteur d'amortissement $2\alpha$ pour un $\omega_0$ donné, admet un minimum pour une valeur particulière $2\alpha_p$ de ce facteur. Il est possible d'obtenir, par des méthodes numériques ou expérimentales, cette valeur de $\alpha_p$ en fonction de p.
 > [!note]
-> Souvent une « précision » de 5 % est suffisante ; ainsi si nous voulons que $t_0\!05$ soit minimal $(p = 0,05)$, il faut que $\alpha = 0,\!7\omega_0$ (régime pseudo-périodique). Mais si nous désirons une précision supérieure $(p \approx 0)$, il faut tendre vers le régime critique $(\alpha = \omega_0)$.
+> Souvent une « précision » de 5 % est suffisante ; ainsi si nous voulons que $t_{0,05}$ soit minimal $(p = 0,05)$, il faut que $\alpha = 0,\!7\omega_0$ (régime pseudo-périodique) [[#^note]]. Mais si nous désirons une précision supérieure $(p \approx 0)$, il faut tendre vers le régime critique $(\alpha = \omega_0)$.
 # Diagrammes
 
 # Graphiques
@@ -160,4 +160,9 @@ Si $\theta$ est petit, on n'a plus de mouvement significatif sur $Oz$, donc $z =
 De plus d'après la conservation de l'énergie mécanique, $\frac{v^{2}}{L_0} = 2g(\cos\theta - \cos\theta_m) = g(\theta_{m}^{2} - \theta^{2}) \ll g$ donc $T \simeq mg$
 La force $\overrightarrow{T}$ s'exprime comme suit dans les coordonnées de la base mobile : $-T\frac{\overrightarrow{r}}{\lVert \overrightarrow{r} \rVert} = -T\frac{x}{L_0}\overrightarrow{e_x} - T\frac{y}{L_0}\overrightarrow{e_y} - T\frac{z}{L_0}\overrightarrow{e_z}$ 
 Alors $x'' = -\frac{T}{m} \frac{x}{L_0} \simeq -g\frac{x}{L_0} = -\omega_{0}^{2}x$, $x'' = -\frac{T}{m} \frac{y}{L_0} \simeq -g\frac{y}{L_0} = -\omega_{0}^{2}y$  et $z'' \simeq 0$ en posant $\omega_{0}^{2} = g/L_0$.
- 
+
+> [!warning] Pourquoi pour que le temps de réponse soit minimal, il faut que $\alpha = 0,\!7\omega_0$^note
+> Avant tout on appelle un temps de réponse (généralement pour un oscillateur forcé), le temps pour lequel la position x de l'oscillateur atteint son amplitude maximale à l'intérieur d'un intervalle d'erreur donné (la largeur de la bande d'erreur peut-être 5% ou 2%) et reste à l'intérieur de cet intervalle.
+> J'ai rien trouvé sur la minimisation du temps de réponse pour l'oscillateur harmonique amorti libre, tout ce qui existe ce sont des formules pour l'oscillateur forcé et en plus pas de minimisation juste un simple calcul de temps de réponse.
+> Par exemple pour un oscillateur forcé en échelon voir ce [lien](https://tttapa.github.io/Pages/Arduino/Audio-and-Signal-Processing/VU-Meters/Damped-Harmonic-Oscillator.html).
+
