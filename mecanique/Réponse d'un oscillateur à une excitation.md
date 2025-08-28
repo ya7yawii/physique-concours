@@ -30,6 +30,13 @@ crée: 27-08-2025, 09:31
 > La valeur du facteur de qualité $\mathcal{Q}$ nous indique si la limite sera atteinte après  un régime transitoire pseudo-périodique, critique, ou apériodique, comme nous pouvons l'observer sur la [[#^figure3]].
 > Déplacer l'extrémité revient à décaler la position d'équilibre de l'oscillateur. Dans le plan de phase ([[#^figure4]]), nous pouvons observer la modification de la position du centre attracteur : l'oscillateur qui était au repos se déplace pour rejoindre la nouvelle position d'équilibre représentée par le nouvel attracteur $A(X_0, 0)$.
 
+> [!note] Réponse à une excitation sinusoïdale
+> L'équation du mouvement s'écrit : $\dfrac{d^{2}x(t)}{dt^{2}} + \frac{\omega_0}{\mathcal{Q}}\dfrac{dx(t)}{dt} + \omega_{0}^{2}x(t) = \omega_{0}^{2}x_{A_m}\cos(\omega t)$
+> La meilleure méthode pour résoudre cette équation est celle de la variable complexe qui suit ces étapes :
+> - l'équation différentielle s'écrit en notation complexe : $\dfrac{d^{2}\underline{x}(t)}{dt^{2}} + \frac{\omega_0}{\mathcal{Q}}\dfrac{d\underline{x}(t)}{dt} + \omega_{0}^{2}\underline{x}(t) = \omega_{0}^{2}x_{A_m}e^{j\omega t}$
+> - on note $\underline{x}(t) = \underline{X}e^{j\omega t} \Rightarrow \dfrac{d\underline{x}(t)}{dt} = j\omega\underline{X}e^{j\omega t} = j\omega\underline{x} \Rightarrow \dfrac{d^{2}\underline{x}(t)}{dt^{2}} = -\omega^{2}\underline{X}e^{j\omega t} = -\omega^{2}\underline{x}$
+> - l'équation différentielle se transforme ensuite : $-\omega^{2}\underline{x}(t) + j\omega\frac{\omega_0}{\mathcal{Q}}\underline{x}(t) + \omega_{0}^{2}\underline{x}(t) = \omega_{0}^{2}x_{A_m}e^{j\omega t}$
+> - qui nous donne l'amplitude complexe $\underline{X} = \frac{\omega_{0}^{2}x_{A_m}}{\omega_{0}^{2} + j\omega\frac{\omega_0}{\mathcal{Q}} - \omega^{2}}$ 
 
 # Définitions
 
