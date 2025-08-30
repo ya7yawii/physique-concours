@@ -52,9 +52,14 @@ crée: 27-08-2025, 09:31
 > Déphasage de la réponse en élongation : $\phi(\omega) = arg(\underline{X}) = -\frac{\pi}{2} + \arctan\left(\frac{1 - u^{2}}{\frac{u}{\mathcal{Q}}}\right)$
 > Pour trouver l'allure de $\phi(\omega)$ ([[#^figure6]]), on étudie d'abord les comportement asymptotiques de $\tan(\phi)$ qui peut être déduite de l'expression de $\underline{X}$ sans calculer $arg(\underline{X})$.
 
+> [!note] Réponse harmonique en vitesse
+> Amplitude de la réponse en vitesse : dans la mesure où $\underline{v} = j\omega\underline{x}$, nous avons : $v_m = \mathcal{Q}\omega_0x_{A_m}\frac{1}{\sqrt{1 + \mathcal{Q}^{2}\left(u -\frac{1}{u}\right)^{2}}}$ avec $u = \frac{\omega}{\omega_0}$.
+> Celle-ci tend vers zéro à très basse ou très haute fréquence, et passe par un maximum en $u = 1$. Pour la réponse en vitesse, l’oscillateur harmonique amorti effectue un filtrage passe-bande ([[#^figure7]]), avec une résonance lorsque la fréquence excitatrice coïncide avec la fréquence propre de l’oscillateur.  À la résonance, pour $\omega = \omega_0$ , la valeur maximale $v_{m,r} = \mathcal{Q}\omega_0x_{A_m}$ peut devenir très importante, associée à une résonance aiguë, lorsque l’amortissement est faible.
+> Déphasage de la réponse en vitesse : considérant la relation $\underline{v} = j\omega\underline{x}$, nous obtenons : $\psi(\omega) = \frac{\pi}{2} + \phi(\omega) = \arctan\left[\mathcal{Q}\left(\frac{1}{u} - u\right)\right]$ dont le graphe est représenté sur la [[#^figure8]].
 
 # Définitions
-
+==**Analyse harmonique**== :
+Faire l’analyse harmonique du système, c’est étudier sa réponse fréquentielle, autrement dit analyser les variations de l’amplitude $A(w)$ et du déphasage $\phi(w)$ avec la pulsation $\omega$ ($\omega = 2\pi f$, où $f$ est la fréquence de l’excitation).
 # Diagrammes
 Modèle d'oscillateur mécanique linéaire amorti soumis à une excitation $x_A(t)$ :
 ![[figure38.png]]^figure1
@@ -74,6 +79,12 @@ Variation de l’amplitude normalisée de la réponse en élongation en fonction
 
 Variation de déphasage de la réponse en élongation par rapport à l’excitation pour différents amortissements:
 ![[figure43.png]]^figure6
+
+Variation de l’amplitude de la réponse en vitesse en fonction de la pulsation normalisée de l’excitation, pour différents amortissements :
+![[figure44.png]]^figure7
+
+Variation de $\psi$ en fonction de pulsation normalisée, pour différents amortissements :
+![[figure45.png]]^figure8
 # Expériences
 
 # Autres notes
