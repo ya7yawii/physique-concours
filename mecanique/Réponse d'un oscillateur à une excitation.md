@@ -56,6 +56,16 @@ crée: 27-08-2025, 09:31
 > Amplitude de la réponse en vitesse : dans la mesure où $\underline{v} = j\omega\underline{x}$, nous avons : $v_m = \mathcal{Q}\omega_0x_{A_m}\frac{1}{\sqrt{1 + \mathcal{Q}^{2}\left(u -\frac{1}{u}\right)^{2}}}$ avec $u = \frac{\omega}{\omega_0}$.
 > Celle-ci tend vers zéro à très basse ou très haute fréquence, et passe par un maximum en $u = 1$. Pour la réponse en vitesse, l’oscillateur harmonique amorti effectue un filtrage passe-bande ([[#^figure7]]), avec une résonance lorsque la fréquence excitatrice coïncide avec la fréquence propre de l’oscillateur.  À la résonance, pour $\omega = \omega_0$ , la valeur maximale $v_{m,r} = \mathcal{Q}\omega_0x_{A_m}$ peut devenir très importante, associée à une résonance aiguë, lorsque l’amortissement est faible.
 > Déphasage de la réponse en vitesse : considérant la relation $\underline{v} = j\omega\underline{x}$, nous obtenons : $\psi(\omega) = \frac{\pi}{2} + \phi(\omega) = \arctan\left[\mathcal{Q}\left(\frac{1}{u} - u\right)\right]$ dont le graphe est représenté sur la [[#^figure8]].
+
+Série de Fourier du signal excitateur : $\displaystyle x_A(t) = \sum_{n = 0}^{\infty} c_n\cos[\omega_n t + \alpha_n]$.
+Série de Fourier de la réponse $x(t) = x_1(t)$ en régime établi : $\displaystyle x(t) = \sum_{n = 0}^{\infty} A(\omega_n)c_n\cos[\omega_n t + \alpha_n + \phi(\omega_n)]$.
+> [!note] Analyse de Fourier
+> Pour un signal physique non périodique, il faudrait remplacer cette sommation discrète par une sommation continue, l’intégrale de Fourier.
+> Nous admettrons qu’un signal physique périodique, de période T, peut être écrit comme la superposition d’un ensemble de termes sinusoïdaux dont les fréquences sont des multiples entiers de la pulsion fondamentale $\omega_1 = \frac{2\pi}{T}$. Ainsi, $\omega_n = n \omega_1$.
+> Dans la décomposition de Fourier d’un signal, les parties lentement variables sont associées aux termes de basse fréquence de la série de Fourier, tandis que les parties rapides (à l’extrême : une discontinuité de valeur) correspondent à des termes de haute fréquence.
+> Qualitativement, ce résultat permet de prévoir sans calcul certaines réponses du système.
+> Si, par exemple, $A(\omega)$ devient très faible au-delà d’une certaine fréquence $f_c$, la réponse du système sera pratiquement assimilable à la réponse aux termes « lents », c’est-à-dire associés à des fréquences inférieures à $f_c$ , contenus dans le signal d’excitation.
+> De même, si nous sommes intéressés par la production d’un mouvement physique de « belle » amplitude, nous voyons qu’il est peu utile d’envoyer au système des signaux qui ne sont pas compatibles avec sa bande passante : nous faisons beaucoup d’efforts pour un résultat médiocre.
 
 # Définitions
 ==**Analyse harmonique**== :
@@ -88,3 +98,10 @@ Variation de $\psi$ en fonction de pulsation normalisée, pour différents amort
 # Expériences
 
 # Autres notes
+> [!note] Application 4 p 107 : pourquoi $\phi_v$ est dans le sens horaire?
+> On a $2\alpha\underline{V} + j\left(\omega - \frac{\omega_{0}^{2}}{\omega}\right)\underline{V} = \frac{\underline{F}}{m}$
+> .......
+> Pour plus d'information sur la construction de Fresnel, on peut visiter ce site web [lien](https://www.electronics-tutorials.ws/accircuits/phasors.html)
+
+
+
