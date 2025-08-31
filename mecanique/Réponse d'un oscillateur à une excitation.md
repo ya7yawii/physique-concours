@@ -1,7 +1,9 @@
 ---
 titre: "[[Réponse d'un oscillateur à une excitation]]"
 tags:
-aliases:
+  - forcé
+  - amplitude
+  - déphasage
 crée: 27-08-2025, 09:31
 ---
 # Formules
@@ -66,10 +68,27 @@ Série de Fourier de la réponse $x(t) = x_1(t)$ en régime établi : $\displays
 > Qualitativement, ce résultat permet de prévoir sans calcul certaines réponses du système.
 > Si, par exemple, $A(\omega)$ devient très faible au-delà d’une certaine fréquence $f_c$, la réponse du système sera pratiquement assimilable à la réponse aux termes « lents », c’est-à-dire associés à des fréquences inférieures à $f_c$ , contenus dans le signal d’excitation.
 > De même, si nous sommes intéressés par la production d’un mouvement physique de « belle » amplitude, nous voyons qu’il est peu utile d’envoyer au système des signaux qui ne sont pas compatibles avec sa bande passante : nous faisons beaucoup d’efforts pour un résultat médiocre.
+
+Impédance mécanique : $\displaystyle \underline{Z} = \frac{\underline{F}}{\underline{V}}$
 
 # Définitions
 ==**Analyse harmonique**== :
 Faire l’analyse harmonique du système, c’est étudier sa réponse fréquentielle, autrement dit analyser les variations de l’amplitude $A(w)$ et du déphasage $\phi(w)$ avec la pulsation $\omega$ ($\omega = 2\pi f$, où $f$ est la fréquence de l’excitation).
+
+==**Analogies électromécaniques**== :
+On dit que deux systèmes physiques sont analogues quand ils réalisent deux représentations physiques d’un même système d’équations différentielles. Suivant la nature des systèmes considérés, on parle d’analogies électromécaniques, électro-acoustiques, électrothermiques, etc.
+En utilisant ces analogies, il sera possible, par exemple, de représenter la totalité du système par un réseau électrique au comportement équivalent, plus commode à étudier et dont les paramètres seront plus faciles à ajuster. Il est plus aisé de modifier la valeur d’une capacité que celle de la raideur d’un ressort et il est plus facile de mesurer l’intensité d’un courant que la vitesse d’un organe mécanique, etc.
+
+Tableau des analogies électromécaniques :
+
+| mécanique                   | électricité                          |
+| :-------------------------- | ------------------------------------ |
+| élongation x                | charge q                             |
+| vitesse v                   | intensité i                          |
+| force $f$                   | tension u                            |
+| masse m                     | inductance L                         |
+| coefficient de frottement h | résistance R                         |
+| raideur k                   | inverse de la capacité $\frac{1}{C}$ |
 # Diagrammes
 Modèle d'oscillateur mécanique linéaire amorti soumis à une excitation $x_A(t)$ :
 ![[figure38.png]]^figure1
@@ -99,9 +118,7 @@ Variation de $\psi$ en fonction de pulsation normalisée, pour différents amort
 
 # Autres notes
 > [!note] Application 4 p 107 : pourquoi $\phi_v$ est dans le sens horaire?
-> On a $2\alpha\underline{V} + j\left(\omega - \frac{\omega_{0}^{2}}{\omega}\right)\underline{V} = \frac{\underline{F}}{m}$
-> .......
+> ![[figure46.png]]
+> On a $\displaystyle 2\alpha\underline{V} + j\left(\omega - \frac{\omega_{0}^{2}}{\omega}\right)\underline{V} = \frac{\underline{F}}{m}$ avec $\displaystyle \underline{V} = V_me^{j\varphi_v}$ et $\underline{F} = F_me^{j\psi}$
+>  À mon avis, $\displaystyle \phi_v = \arctan\left(\frac{\omega - \frac{\omega_{0}^{2}}{\omega}}{2\alpha}\right) \Rightarrow \varphi_v + \phi_v = \psi$. En effet, je pense que les choix de sens horaire et $\phi_v < 0$ soit arbitraire puisque je ne trouve aucune autre explication.
 > Pour plus d'information sur la construction de Fresnel, on peut visiter ce site web [lien](https://www.electronics-tutorials.ws/accircuits/phasors.html)
-
-
-
