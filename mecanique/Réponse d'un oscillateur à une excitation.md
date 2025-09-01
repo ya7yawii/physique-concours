@@ -117,17 +117,31 @@ Variation de $\psi$ en fonction de pulsation normalisée, pour différents amort
 # Expériences
 ## Oscillations libres et forcées. Pendule de Pohl
 > [!warning]
-> Il faut choisir à partir de ces liens : [lien](https://www.ummto.dz/fs/wp-content/uploads/2021/03/TO-VO-L2-1.pdf)page 7, [lien](https://elearning.esgee-oran.dz/pluginfile.php/16193/mod_page/content/68/Poly%20phys%20S3%20Khelloufi.pdf)page 12, [lien](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 40.
-> Ce TP n'est pas dans le livre mais se trouve.
+> Ce TP n'est pas dans le livre mais se trouve dans les liens suivants : [lien 1](https://www.ummto.dz/fs/wp-content/uploads/2021/03/TO-VO-L2-1.pdf)page 7, [lien 2](https://elearning.esgee-oran.dz/pluginfile.php/16193/mod_page/content/68/Poly%20phys%20S3%20Khelloufi.pdf)page 12, [lien 3](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 40 et [lien 4](https://www.epfl.ch/schools/sb/sph/wp-content/uploads/A4-Oscillations.pdf).
 
+![[figure47.png]]
+
+### Etude du régime libre amorti
+Le moteur d’excitation étant à l’arrêt et le frein à courant de Foucault non alimenté $(I_F = 0 A)$. Écarter le pendule jusqu'à ce qu’il vienne en butée et lâcher sans vitesse initiale.
+- Mesurer la période T des oscillations. (on recommande de mesurer la durée 5 à 10 T de 5 à 10 oscillations).
+- Relever l’amplitude A des oscillations toutes les 10 périodes.
+- Dresser un tableau de mesure et tracer la courbe A = f(t).
+- Déduire la constante d’atténuation $\alpha$ et le décrément logarithmique $\delta$.
+Refaire la même manipulation en actionnant le frein à courant de Foucault : $I_F = 0,25A$ ; $0,40A$ ; $0,55A$ et $0,90A$. On recommande d’augmenter la fréquence de relevé de la valeur de l’amplitude afin d’avoir suffisamment de points expérimentaux.
+- Conclure
+### Etude du régime forcé. Visualisation de la résonance
+Le pendule de torsion étant au repos et le frein à courant de Foucault étant non alimenté $(I_F = 0 A)$. Allumer le moteur lié au ressort avec une tension de 15 V. Laisser le système se stabilise, ensuite diminuer graduellement la vitesse du moteur jusqu’à l’apparition de la résonance (mouvement oscillatoire à amplitude maximale).
+- Relever alors la période $T_a$ des oscillations (vitesse du moteur) et ainsi que l’amplitude maximale $\theta_a$.
+Refaire la même manipulation en régime amorti, c’est à dire à $I_F = 0,25A$, $0,40A$, $0,55A$ et $0,90A$.
+- Relever de nouveau la période $T_a$ des oscillations (vitesse du moteur) et ainsi que l’amplitude maximale $\theta_a$.
+- Dresser un tableau de mesure et comparer $T_a$ et T (période des oscillations en régime libre).
+- Tracer le graphe des oscillations forcées–amorties et déterminer la fréquence de résonance.
+- Conclure.
 ## Système masse ressort amortisseur en oscillations libres et forcées
 > [!warning]
 > Il faut choisir à partir de ces liens : [lien](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 3, [lien](https://gmp.iut-troyes.univ-reims.fr/wp-content/uploads/2014/01/TP02V.pdf)page 1, [lien](https://lesia.obspm.fr/perso/raphael-galicher/images/OV4_2019_FusionTP.pdf)page 3.
 > Ce TP n'est pas dans le livre mais se trouve.
 
-## Oscillations libres et forcées
-> [!warning]
-> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.epfl.ch/schools/sb/sph/wp-content/uploads/A4-Oscillations.pdf).
 # Autres notes
 > [!note] Application 4 p 107 : pourquoi $\phi_v$ est dans le sens horaire?
 > ![[figure46.png]]
