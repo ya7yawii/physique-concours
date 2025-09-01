@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "b8d728aac7091525",
+            "id": "df6949b9799c383c",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -196,10 +196,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "b8d728aac7091525",
+  "active": "df6949b9799c383c",
   "lastOpenFiles": [
     "mecanique/Mouvement libre d’un oscillateur harmonique.md",
     "mecanique/Réponse d'un oscillateur à une excitation.md",
+    "().md",
     "mecanique/attachments/figure46.png",
     "templates/chapitre.md",
     "templates/livre.md",

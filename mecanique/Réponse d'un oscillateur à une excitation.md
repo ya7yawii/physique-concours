@@ -115,12 +115,19 @@ Variation de l’amplitude de la réponse en vitesse en fonction de la pulsation
 Variation de $\psi$ en fonction de pulsation normalisée, pour différents amortissements :
 ![[figure45.png]]^figure8
 # Expériences
-==Choisir à partir ces liens== :
-- [lien](https://www.ummto.dz/fs/wp-content/uploads/2021/03/TO-VO-L2-1.pdf)
-- [lien](https://www.epfl.ch/schools/sb/sph/wp-content/uploads/A4-Oscillations.pdf)
-- [lien](https://gmp.iut-troyes.univ-reims.fr/wp-content/uploads/2014/01/TP02V.pdf)
-- [lien](https://lesia.obspm.fr/perso/raphael-galicher/images/OV4_2019_FusionTP.pdf)
+## Oscillations libres et forcées. Pendule de Pohl
+> [!warning]
+> Il faut choisir à partir de ces liens : [lien](https://www.ummto.dz/fs/wp-content/uploads/2021/03/TO-VO-L2-1.pdf)page 7, [lien](https://elearning.esgee-oran.dz/pluginfile.php/16193/mod_page/content/68/Poly%20phys%20S3%20Khelloufi.pdf)page 12, [lien](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 40.
+> Ce TP n'est pas dans le livre mais se trouve.
 
+## Système masse ressort amortisseur en oscillations libres et forcées
+> [!warning]
+> Il faut choisir à partir de ces liens : [lien](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 3, [lien](https://gmp.iut-troyes.univ-reims.fr/wp-content/uploads/2014/01/TP02V.pdf)page 1, [lien](https://lesia.obspm.fr/perso/raphael-galicher/images/OV4_2019_FusionTP.pdf)page 3.
+> Ce TP n'est pas dans le livre mais se trouve.
+
+## Oscillations libres et forcées
+> [!warning]
+> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.epfl.ch/schools/sb/sph/wp-content/uploads/A4-Oscillations.pdf).
 # Autres notes
 > [!note] Application 4 p 107 : pourquoi $\phi_v$ est dans le sens horaire?
 > ![[figure46.png]]
