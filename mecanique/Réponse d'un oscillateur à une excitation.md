@@ -120,7 +120,6 @@ Variation de $\psi$ en fonction de pulsation normalisée, pour différents amort
 > Ce TP n'est pas dans le livre mais se trouve dans les liens suivants : [lien 1](https://www.ummto.dz/fs/wp-content/uploads/2021/03/TO-VO-L2-1.pdf)page 7, [lien 2](https://elearning.esgee-oran.dz/pluginfile.php/16193/mod_page/content/68/Poly%20phys%20S3%20Khelloufi.pdf)page 12, [lien 3](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 40 et [lien 4](https://www.epfl.ch/schools/sb/sph/wp-content/uploads/A4-Oscillations.pdf).
 
 ![[figure47.png]]
-
 ### Etude du régime libre amorti
 Le moteur d’excitation étant à l’arrêt et le frein à courant de Foucault non alimenté $(I_F = 0 A)$. Écarter le pendule jusqu'à ce qu’il vienne en butée et lâcher sans vitesse initiale.
 - Mesurer la période T des oscillations. (on recommande de mesurer la durée 5 à 10 T de 5 à 10 oscillations).
@@ -139,9 +138,34 @@ Refaire la même manipulation en régime amorti, c’est à dire à $I_F = 0,25A
 - Conclure.
 ## Système masse ressort amortisseur en oscillations libres et forcées
 > [!warning]
-> Il faut choisir à partir de ces liens : [lien](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 3, [lien](https://gmp.iut-troyes.univ-reims.fr/wp-content/uploads/2014/01/TP02V.pdf)page 1, [lien](https://lesia.obspm.fr/perso/raphael-galicher/images/OV4_2019_FusionTP.pdf)page 3.
-> Ce TP n'est pas dans le livre mais se trouve.
+>Ce TP n'est pas dans le livre mais se trouve dans les liens suivants :  [lien 1](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 3, [lien 2](https://gmp.iut-troyes.univ-reims.fr/wp-content/uploads/2014/01/TP02V.pdf), [lien 3](https://lesia.obspm.fr/perso/raphael-galicher/images/OV4_2019_FusionTP.pdf)page 3.
 
+![[figure48.png]]
+### Etude du système libre non amortie
+- Calculer la raideur k du ressort en utilisant le principe fondamental à l'équilibre $mg - k\Delta l = 0$.
+- Tirer la masse m de sa position d'équilibre et lâcher la sans vitesse initiale.
+- Chronométrer la période d'oscillation $T_0$ (moyenne sur 2 oscillations).
+- Ecrire la valeur de la période mesurée avec l'incertitude.
+- Comparer cette valeur à la valeur théorique de la période.
+- Commenter les résultats obtenus.
+### Etude du système libre amortie ^1d4993
+- En considérant la poussée d'Archimède sur les masses immergées, écrire l'équation d'équilibre statique du système avec le cylindre pesant plongée dans l'eau.
+- Ecrire dans ce cas l'équation différentielle de mouvement du système non amorti équivalent. Montrer que la poussée d'Archimède n'intervient pas dans la définition de la pulsation propre du système?
+- Tirer la masse m de sa position d'équilibre et lâcher la sans vitesse initiale.
+- Déterminer les masses appropriées pour avoir les trois régimes des oscillations libres amorties.
+- Choisir deux masses différentes correspondants au régime pseudopériodique et faire des essais pour la mesure de la période d'oscillation. Commenter les résultats.
+- Calculer pour chaque masse le décrément logarithmique correspondant puis le coefficient d'amortissement correspondant.
+- Calculer le nombre de périodes au bout desquels le système aura perdu 95% de son amplitude initiale. Vérifier le résultat sur la maquette.
+> [!note]
+> Calcul du nombre d'oscillations pour le système atteigne une amplitude égale à 5% de l'amplitude initiale : $\delta = \frac{1}{N} \ln\left(\frac{x(t)}{x(t + N.T)}\right) = \frac{1}{N} \ln\left(\frac{X_0}{0,05X_0}\right)$ où N est le nombre d'oscillations qu'on veut déterminer.
+### Etude du système forcé amortie
+- Quelle est la valeur de l'amplitude statique de l'excitation.
+- Relever l'amplitude de vibration, par rapport à la position d'équilibre, pour différentes valeurs de vitesse angulaire du moteur (faire suffisamment de mesures surtout au voisinage de la résonance).
+- Observer le déphasage entre l'excitation et la réponse notamment à basses et hautes pulsations.
+- Tracer la courbe représentant variation de l'amplitude en fonction de la pulsation d'excitation. Refaire le tracé en fonction de $\frac{\omega}{\omega_0}$.
+- En déduire la valeur expérimentale du facteur de qualité.
+- En déduire la valeur du coefficient d'amortissement. Comparer avec celle obtenue en [[#^1d4993]]. Conclure.
+- Calculer la pulsation de résonance et la comparer avec celle de la courbe.
 # Autres notes
 > [!note] Application 4 p 107 : pourquoi $\phi_v$ est dans le sens horaire?
 > ![[figure46.png]]
