@@ -46,38 +46,38 @@ crée: 27-08-2025, 09:31
 
 > [!note] Réponse harmonique en élongation
 > Amplitude de la réponse en élongation : $x_m(u) = x_{A_m} \frac{1}{\sqrt{(1 - u^{2})^{2} + \left(\frac{u}{\mathcal{Q}}\right)^{2}}}$ avec $u = \frac{\omega}{\omega_0}$.
-> En étudiant les comportements asymptotiques (à très basses et très hautes fréquences), on déduit que l’oscillateur harmonique amorti effectue un filtrage passe-bas ([[#^figure5]]).
+> En étudiant les comportements asymptotiques (à très basses et très hautes fréquences), on déduit que l'oscillateur harmonique amorti effectue un filtrage passe-bas ([[#^figure5]]).
 > Pour détailler ce qui se produit entre les deux comportements limites précédents, on calcule la dérivée de $x_m$ par rapport à $u$ :
-> - Si $\mathcal{Q} \leqslant \frac{1}{\sqrt{2}}$, l’élongation est strictement décroissante.
-> - En revanche, pour $\mathcal{Q} > \frac{1}{\sqrt{2}}$, elle passe par un maximum. L’oscillateur présente alors une résonance en élongation. Celle-ci survient à une pulsation $\omega_r$ un peu inférieure à la pulsation propre $\omega_0$ de l’oscillateur. Si $\mathcal{Q} \gg 1 : x_m = \mathcal{Q} x_{A_m}$. Cette amplitude peut devenir très grande et causer la détérioration du résonateur. Pour de fortes amplitudes, le modèle du rappel linéaire serait aussi remis en cause.
+> - Si $\mathcal{Q} \leqslant \frac{1}{\sqrt{2}}$, l'élongation est strictement décroissante.
+> - En revanche, pour $\mathcal{Q} > \frac{1}{\sqrt{2}}$, elle passe par un maximum. L'oscillateur présente alors une résonance en élongation. Celle-ci survient à une pulsation $\omega_r$ un peu inférieure à la pulsation propre $\omega_0$ de l'oscillateur. Si $\mathcal{Q} \gg 1 : x_m = \mathcal{Q} x_{A_m}$. Cette amplitude peut devenir très grande et causer la détérioration du résonateur. Pour de fortes amplitudes, le modèle du rappel linéaire serait aussi remis en cause.
 > 
 > Déphasage de la réponse en élongation : $\phi(\omega) = arg(\underline{X}) = -\frac{\pi}{2} + \arctan\left(\frac{1 - u^{2}}{\frac{u}{\mathcal{Q}}}\right)$
 > Pour trouver l'allure de $\phi(\omega)$ ([[#^figure6]]), on étudie d'abord les comportement asymptotiques de $\tan(\phi)$ qui peut être déduite de l'expression de $\underline{X}$ sans calculer $arg(\underline{X})$.
 
 > [!note] Réponse harmonique en vitesse
 > Amplitude de la réponse en vitesse : dans la mesure où $\underline{v} = j\omega\underline{x}$, nous avons : $v_m = \mathcal{Q}\omega_0x_{A_m}\frac{1}{\sqrt{1 + \mathcal{Q}^{2}\left(u -\frac{1}{u}\right)^{2}}}$ avec $u = \frac{\omega}{\omega_0}$.
-> Celle-ci tend vers zéro à très basse ou très haute fréquence, et passe par un maximum en $u = 1$. Pour la réponse en vitesse, l’oscillateur harmonique amorti effectue un filtrage passe-bande ([[#^figure7]]), avec une résonance lorsque la fréquence excitatrice coïncide avec la fréquence propre de l’oscillateur.  À la résonance, pour $\omega = \omega_0$ , la valeur maximale $v_{m,r} = \mathcal{Q}\omega_0x_{A_m}$ peut devenir très importante, associée à une résonance aiguë, lorsque l’amortissement est faible.
+> Celle-ci tend vers zéro à très basse ou très haute fréquence, et passe par un maximum en $u = 1$. Pour la réponse en vitesse, l'oscillateur harmonique amorti effectue un filtrage passe-bande ([[#^figure7]]), avec une résonance lorsque la fréquence excitatrice coïncide avec la fréquence propre de l'oscillateur.  À la résonance, pour $\omega = \omega_0$ , la valeur maximale $v_{m,r} = \mathcal{Q}\omega_0x_{A_m}$ peut devenir très importante, associée à une résonance aiguë, lorsque l'amortissement est faible.
 > Déphasage de la réponse en vitesse : considérant la relation $\underline{v} = j\omega\underline{x}$, nous obtenons : $\psi(\omega) = \frac{\pi}{2} + \phi(\omega) = \arctan\left[\mathcal{Q}\left(\frac{1}{u} - u\right)\right]$ dont le graphe est représenté sur la [[#^figure8]].
 
 Série de Fourier du signal excitateur : $\displaystyle x_A(t) = \sum_{n = 0}^{\infty} c_n\cos[\omega_n t + \alpha_n]$.
 Série de Fourier de la réponse $x(t) = x_1(t)$ en régime établi : $\displaystyle x(t) = \sum_{n = 0}^{\infty} A(\omega_n)c_n\cos[\omega_n t + \alpha_n + \phi(\omega_n)]$.
 > [!note] Analyse de Fourier
-> Pour un signal physique non périodique, il faudrait remplacer cette sommation discrète par une sommation continue, l’intégrale de Fourier.
-> Nous admettrons qu’un signal physique périodique, de période T, peut être écrit comme la superposition d’un ensemble de termes sinusoïdaux dont les fréquences sont des multiples entiers de la pulsion fondamentale $\omega_1 = \frac{2\pi}{T}$. Ainsi, $\omega_n = n \omega_1$.
-> Dans la décomposition de Fourier d’un signal, les parties lentement variables sont associées aux termes de basse fréquence de la série de Fourier, tandis que les parties rapides (à l’extrême : une discontinuité de valeur) correspondent à des termes de haute fréquence.
+> Pour un signal physique non périodique, il faudrait remplacer cette sommation discrète par une sommation continue, l'intégrale de Fourier.
+> Nous admettrons qu'un signal physique périodique, de période T, peut être écrit comme la superposition d'un ensemble de termes sinusoïdaux dont les fréquences sont des multiples entiers de la pulsion fondamentale $\omega_1 = \frac{2\pi}{T}$. Ainsi, $\omega_n = n \omega_1$.
+> Dans la décomposition de Fourier d'un signal, les parties lentement variables sont associées aux termes de basse fréquence de la série de Fourier, tandis que les parties rapides (à l'extrême : une discontinuité de valeur) correspondent à des termes de haute fréquence.
 > Qualitativement, ce résultat permet de prévoir sans calcul certaines réponses du système.
-> Si, par exemple, $A(\omega)$ devient très faible au-delà d’une certaine fréquence $f_c$, la réponse du système sera pratiquement assimilable à la réponse aux termes « lents », c’est-à-dire associés à des fréquences inférieures à $f_c$ , contenus dans le signal d’excitation.
-> De même, si nous sommes intéressés par la production d’un mouvement physique de « belle » amplitude, nous voyons qu’il est peu utile d’envoyer au système des signaux qui ne sont pas compatibles avec sa bande passante : nous faisons beaucoup d’efforts pour un résultat médiocre.
+> Si, par exemple, $A(\omega)$ devient très faible au-delà d'une certaine fréquence $f_c$, la réponse du système sera pratiquement assimilable à la réponse aux termes « lents », c'est-à-dire associés à des fréquences inférieures à $f_c$ , contenus dans le signal d'excitation.
+> De même, si nous sommes intéressés par la production d'un mouvement physique de « belle » amplitude, nous voyons qu'il est peu utile d'envoyer au système des signaux qui ne sont pas compatibles avec sa bande passante : nous faisons beaucoup d'efforts pour un résultat médiocre.
 
 Impédance mécanique : $\displaystyle \underline{Z} = \frac{\underline{F}}{\underline{V}}$
 
 # Définitions
 ==**Analyse harmonique**== :
-Faire l’analyse harmonique du système, c’est étudier sa réponse fréquentielle, autrement dit analyser les variations de l’amplitude $A(w)$ et du déphasage $\phi(w)$ avec la pulsation $\omega$ ($\omega = 2\pi f$, où $f$ est la fréquence de l’excitation).
+Faire l'analyse harmonique du système, c'est étudier sa réponse fréquentielle, autrement dit analyser les variations de l'amplitude $A(w)$ et du déphasage $\phi(w)$ avec la pulsation $\omega$ ($\omega = 2\pi f$, où $f$ est la fréquence de l'excitation).
 
 ==**Analogies électromécaniques**== :
-On dit que deux systèmes physiques sont analogues quand ils réalisent deux représentations physiques d’un même système d’équations différentielles. Suivant la nature des systèmes considérés, on parle d’analogies électromécaniques, électro-acoustiques, électrothermiques, etc.
-En utilisant ces analogies, il sera possible, par exemple, de représenter la totalité du système par un réseau électrique au comportement équivalent, plus commode à étudier et dont les paramètres seront plus faciles à ajuster. Il est plus aisé de modifier la valeur d’une capacité que celle de la raideur d’un ressort et il est plus facile de mesurer l’intensité d’un courant que la vitesse d’un organe mécanique, etc.
+On dit que deux systèmes physiques sont analogues quand ils réalisent deux représentations physiques d'un même système d'équations différentielles. Suivant la nature des systèmes considérés, on parle d'analogies électromécaniques, électro-acoustiques, électrothermiques, etc.
+En utilisant ces analogies, il sera possible, par exemple, de représenter la totalité du système par un réseau électrique au comportement équivalent, plus commode à étudier et dont les paramètres seront plus faciles à ajuster. Il est plus aisé de modifier la valeur d'une capacité que celle de la raideur d'un ressort et il est plus facile de mesurer l'intensité d'un courant que la vitesse d'un organe mécanique, etc.
 
 Tableau des analogies électromécaniques :
 
@@ -103,13 +103,13 @@ Régimes transitoires d'un oscillateur en réponse à une excitation en échelon
 Régimes transitoires d'un oscillateur en réponse à une excitation en échelon (Trajectoires de phase):
 ![[figure41.png]]^figure4
 
-Variation de l’amplitude normalisée de la réponse en élongation en fonction de u pulsation normalisée de l’excitation pour différents amortissements:
+Variation de l'amplitude normalisée de la réponse en élongation en fonction de u pulsation normalisée de l'excitation pour différents amortissements:
 ![[figure42.png]]^figure5
 
-Variation de déphasage de la réponse en élongation par rapport à l’excitation pour différents amortissements:
+Variation de déphasage de la réponse en élongation par rapport à l'excitation pour différents amortissements:
 ![[figure43.png]]^figure6
 
-Variation de l’amplitude de la réponse en vitesse en fonction de la pulsation normalisée de l’excitation, pour différents amortissements :
+Variation de l'amplitude de la réponse en vitesse en fonction de la pulsation normalisée de l'excitation, pour différents amortissements :
 ![[figure44.png]]^figure7
 
 Variation de $\psi$ en fonction de pulsation normalisée, pour différents amortissements :
@@ -121,18 +121,18 @@ Variation de $\psi$ en fonction de pulsation normalisée, pour différents amort
 
 ![[figure47.png]]
 ### Etude du régime libre amorti
-Le moteur d’excitation étant à l’arrêt et le frein à courant de Foucault non alimenté $(I_F = 0 A)$. Écarter le pendule jusqu'à ce qu’il vienne en butée et lâcher sans vitesse initiale.
+Le moteur d'excitation étant à l'arrêt et le frein à courant de Foucault non alimenté $(I_F = 0 A)$. Écarter le pendule jusqu'à ce qu'il vienne en butée et lâcher sans vitesse initiale.
 - Mesurer la période T des oscillations. (on recommande de mesurer la durée 5 à 10 T de 5 à 10 oscillations).
-- Relever l’amplitude A des oscillations toutes les 10 périodes.
+- Relever l'amplitude A des oscillations toutes les 10 périodes.
 - Dresser un tableau de mesure et tracer la courbe A = f(t).
-- Déduire la constante d’atténuation $\alpha$ et le décrément logarithmique $\delta$.
-Refaire la même manipulation en actionnant le frein à courant de Foucault : $I_F = 0,25A$ ; $0,40A$ ; $0,55A$ et $0,90A$. On recommande d’augmenter la fréquence de relevé de la valeur de l’amplitude afin d’avoir suffisamment de points expérimentaux.
+- Déduire la constante d'atténuation $\alpha$ et le décrément logarithmique $\delta$.
+Refaire la même manipulation en actionnant le frein à courant de Foucault : $I_F = 0,25A$ ; $0,40A$ ; $0,55A$ et $0,90A$. On recommande d'augmenter la fréquence de relevé de la valeur de l'amplitude afin d'avoir suffisamment de points expérimentaux.
 - Conclure
 ### Etude du régime forcé. Visualisation de la résonance
-Le pendule de torsion étant au repos et le frein à courant de Foucault étant non alimenté $(I_F = 0 A)$. Allumer le moteur lié au ressort avec une tension de 15 V. Laisser le système se stabilise, ensuite diminuer graduellement la vitesse du moteur jusqu’à l’apparition de la résonance (mouvement oscillatoire à amplitude maximale).
-- Relever alors la période $T_a$ des oscillations (vitesse du moteur) et ainsi que l’amplitude maximale $\theta_a$.
-Refaire la même manipulation en régime amorti, c’est à dire à $I_F = 0,25A$, $0,40A$, $0,55A$ et $0,90A$.
-- Relever de nouveau la période $T_a$ des oscillations (vitesse du moteur) et ainsi que l’amplitude maximale $\theta_a$.
+Le pendule de torsion étant au repos et le frein à courant de Foucault étant non alimenté $(I_F = 0 A)$. Allumer le moteur lié au ressort avec une tension de 15 V. Laisser le système se stabilise, ensuite diminuer graduellement la vitesse du moteur jusqu'à l'apparition de la résonance (mouvement oscillatoire à amplitude maximale).
+- Relever alors la période $T_a$ des oscillations (vitesse du moteur) et ainsi que l'amplitude maximale $\theta_a$.
+Refaire la même manipulation en régime amorti, c'est à dire à $I_F = 0,25A$, $0,40A$, $0,55A$ et $0,90A$.
+- Relever de nouveau la période $T_a$ des oscillations (vitesse du moteur) et ainsi que l'amplitude maximale $\theta_a$.
 - Dresser un tableau de mesure et comparer $T_a$ et T (période des oscillations en régime libre).
 - Tracer le graphe des oscillations forcées–amorties et déterminer la fréquence de résonance.
 - Conclure.
