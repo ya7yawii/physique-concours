@@ -1,7 +1,9 @@
 ---
 titre: "[[Théorème du moment cinétique]]"
 tags:
-aliases:
+  - moment
+  - cinétique
+  - centrale
 crée: 04-09-2025, 10:15
 ---
 # Formules
@@ -33,8 +35,17 @@ Moment cinétique en un point : $\overrightarrow{L_O}(M)_{/\mathcal{R}} = \overr
 Théorème du moment cinétique en un point fixe O : $\overrightarrow{\mathcal{M}_O} = \left(\dfrac{d\overrightarrow{L_O}(M)_{/\mathcal{R}_g}}{dt}\right)_{\hspace{-0.7em}/\mathcal{R}_g}$, dans le référentiel galiléen $\mathcal{R}_g$.
 
 Théorème du moment cinétique en en projection sur l’axe fixe $\Delta$ : $\mathcal{M}_\Delta = \left(\dfrac{dL_\Delta(M)_{/\mathcal{R}_g}}{dt}\right)_{\hspace{-0.7em}/\mathcal{R}_g}$, dans le référentiel galiléen $\mathcal{R}_g$.
-# Définitions
 
+Loi des aires : $\dfrac{d\mathcal{A}}{dt} = \frac{1}{2}r^{2}\dot{\theta} = \frac{C}{2}$ avec $\dfrac{d\mathcal{A}}{dt}$  appelée vitesse aréolaire, est constante pour un mouvement à force centrale.
+> [!note]
+> Cette loi vient de faite que La conservation de $\overrightarrow{L_O}$ se traduit par : $r^{2}\dot{\theta} = C$ et que l’aire $d\mathcal{A}$ « balayée par le rayon OM » est équivalente à celle du secteur circulaire de rayon r et d’angle $d\theta$ : $d\mathcal{A} = \frac{1}{2}r^{2}d\theta$ (voir [[#^demo1]]).
+# Définitions
+==**Force centrale**== :
+Soit O un point fixe d'un référentiel galiléen $\mathcal{R}_g$. Le point matériel M est soumis à un champ de force centrale de centre O si, à chaque instant, la force $\overrightarrow{F}$ qui lui est appliquée est colinéaire à $\overrightarrow{OM}$.
+
+==**Conservation du moment cinétique**== :
+Pour un mouvement à force centrale, le moment cinétique $\overrightarrow{L_O}$ est conservé. La trajectoire du point matériel est contenue dans le plan contenant O et perpendiculaire à $\overrightarrow{L_O}$.
+Si le moment cinétique est nul, la trajectoire est rectiligne, placée sur une droite passant par le point O.
 # Diagrammes
 Moment par rapport à un axe :
 ![[figure49.png]]^figure1
@@ -42,7 +53,13 @@ Moment par rapport à un axe :
 Moment cinétique en O pour un mouvement circulaire :
 ![[figure50.png]]^figure2
 # Graphiques
-
+Démonstration géométrique de l'aire du secteur circulaire :
+![[figure51.png]]^figure3
 # Expériences
 
 # Autres notes
+> [!note] Démonstration géométrique de l'aire du secteur circulaire ^demo1
+> On évalue l'aire du secteur OMM', qui se confond avec l'aire du triangle OMM' ([[#^figure3]]) et qui est égale à un demi fois la base fois la hauteur.
+> $OMM' =dA =\frac{1}{2}.OM.OM'.\sin(\widehat{MOM'})$.
+> c'est-à-dire : $dA = \frac{1}{2}r(r + dr)\sin(d\theta)$.
+> On peut négliger l'infiniment petit dr devant la quantité finie r, et confondre le sinus avec l'angle infiniment petit $d\theta$. On obtient donc : $dA = \frac{1}{2}r^{2}d\theta$. 
