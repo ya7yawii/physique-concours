@@ -1,5 +1,5 @@
 ---
-titre: "[[Dynamique du point matériel]]"
+titre: "[[02-Dynamique du point matériel]]"
 tags:
   - inertie
   - force
@@ -116,7 +116,7 @@ Il faut procéder comme suit :
 - Refaire les mêmes mesures en utilisant un pendule de longueur $l_2 = 75 \ cm$, puis un pendule de longueur $l_3 = 50 \ cm$.
 - Compléter le tableau suivant en utilisant la formule $g = 4\pi^{2}\frac{1}{T^{2}}$ et en faisant un calcul d’erreurs sur g.
 >[!warning]
->La formule de g est obtenue à l'aide de théorème du moment cinétique à voir dans la note [[Théorème du moment cinétique]].
+>La formule de g est obtenue à l'aide de théorème du moment cinétique à voir dans la note [[06-Théorème du moment cinétique]].
 
 ![[figure16.png]]
 

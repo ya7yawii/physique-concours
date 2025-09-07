@@ -33,7 +33,7 @@ L'énergie mécanique de l'oscillateur spatial : $\mathcal{E}_M = \mathcal{E}_K 
 
 La force de rappel d'un oscillateur isotrope : $\overrightarrow{F} = -k\overrightarrow{r}$.
 > [!note]
-> Nous pouvons remarquer que la force de rappel est colinéaire au vecteur position : c'est une force centrale (voir chapitre [[Force centrale conservative. Mouvement newtonien]]).
+> Nous pouvons remarquer que la force de rappel est colinéaire au vecteur position : c'est une force centrale (voir chapitre [[07-Force centrale conservative. Mouvement newtonien]]).
 
 L'équation du mouvement d'un oscillateur isotrope : $\dfrac{d^{2}\overrightarrow{r}}{dt^{2}} + \omega_{0}^{2}\overrightarrow{r} = \overrightarrow{0}$.
 

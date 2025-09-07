@@ -1,5 +1,5 @@
 ---
-titre: "[[Cinématique]]"
+titre: "[[01-Cinématique]]"
 tags:
   - position
   - vitesse
@@ -144,3 +144,12 @@ Les limites de la mécanique classique :
 
 ==**portrait de phase**== :
 L’ensemble des trajectoires de phase (pour différentes conditions initiales du mouvement) constitue le portrait de phase.
+
+> [!warning] Coordonnées sphériques
+> Ce n'est pas obligatoire de retenir par cœur l'expression de l'accélération en coordonnées sphériques mais il faut savoir celle de la vitesse et comment passer des coordonnées sphériques au coordonnées cartésiennes.
+> On a $\overrightarrow{OM} = r\overrightarrow{e_{r}} \Rightarrow \overrightarrow{v} = \dot{r}\overrightarrow{e_{r}} + r\dot{\overrightarrow{e_{r}}}$
+> Or $\overrightarrow{e_{r}} = \sin\theta\cos\varphi \overrightarrow{e_{x}} + \sin\theta\sin\varphi\overrightarrow{e_{y}} + \cos\theta\overrightarrow{e_{z}}$
+> Alors $\dot{\overrightarrow{e_{r}}} = \dot{\varphi}\sin\theta(-\sin\varphi\overrightarrow{e_{x}} + \cos\varphi\overrightarrow{e_{y}}) + \dot{\theta}(\cos\theta\cos\varphi\overrightarrow{e_{x}} + \cos\theta\sin\varphi\overrightarrow{e_{y}} - \sin\theta\overrightarrow{e_{z}})$
+> D'où $\dot{\overrightarrow{e_{r}}} = \dot{\varphi}\sin\theta\overrightarrow{e_{\varphi}} + \dot{\theta}\overrightarrow{e_{\theta}}$
+> Enfin ==**$\overrightarrow{v} = \dot{r}\overrightarrow{e_{r}} + r\dot{\theta}\overrightarrow{e_{\theta}} + r\dot{\varphi}\sin\theta\overrightarrow{e_{\varphi}}$**==
+> Voici quelques liens sur le sujet : [lien 1](https://mathworld.wolfram.com/SphericalCoordinates.html), [lien 2](http://gerald.philippe.free.fr/files/2010/MECPTQ_01%20Vitesse%20et%20acceleration%20en%20coordonnees%20spheriques.pdf), [lien 3](https://en.wikipedia.org/wiki/Spherical_coordinate_system#cite_note-Cameron2019-9)

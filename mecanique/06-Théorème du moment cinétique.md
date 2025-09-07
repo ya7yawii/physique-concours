@@ -1,5 +1,5 @@
 ---
-titre: "[[Théorème du moment cinétique]]"
+titre: "[[06-Théorème du moment cinétique]]"
 tags:
   - moment
   - cinétique

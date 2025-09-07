@@ -1,5 +1,5 @@
 ---
-titre: "[[Réponse d'un oscillateur à une excitation]]"
+titre: "[[05-Réponse d'un oscillateur à une excitation]]"
 tags:
   - forcé
   - amplitude
