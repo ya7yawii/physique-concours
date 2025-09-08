@@ -29,9 +29,22 @@ Champ de force centrale newtonien : $\displaystyle\overrightarrow{F} = -\alpha\f
 > [!note] Mouvement à force centrale conservative
 > Nous savons que lors d’un mouvement où il est soumis à un champ de force centrale, de centre O fixe, dans un référentiel galiléen, la trajectoire d’un point matériel est en général dans un plan (passant par O et perpendiculaire au moment cinétique constant $\overrightarrow{L_O}$).
 > Pour repérer le mouvement du point matériel dans ce plan, il nous suffit de deux coordonnées. La force étant constamment radiale, nous ferons le choix des coordonnées polaires $(r, \theta)$ de centre O ([[#^figure1]]).
-> L’obtention d’une expression exacte des coordonnées polaires $r(t)$ et $\theta(t)$, dans le plan de la trajectoire d’un point matériel soumis à un champ de force centrale est un problème en général complexe, qui nécessite la résolution d’un système d’équations différentielles non linéaires couplées.
-> L’utilisation de la loi des aires permet de ramener le problème à une seule équation différentielle en $r(t)$, d’ordre deux, et encore non linéaire.
-> L’utilisation de la conservation de l’énergie permet d’obtenir une équation différentielle non linéaire d’ordre un en $r(t)$.
+> En écrivant la relation fondamentale de la dynamique, en projection sur les deux vecteurs de la base locale, nous obtenons donc :
+>$$  
+\begin{cases}  
+\displaystyle \ddot{r} - r\dot{\theta}^{2} = \frac{F(r)}{m} = -\frac{1}{m}\dfrac{d\mathcal{E}_P(r)}{dr} & \text{équation radiale}\\  
+\displaystyle 2\dot{r}\dot{\theta} + r\ddot{\theta} = 0 & \text{équation orthoradiale}
+\end{cases}  
+>$$ 
+> En remarquant que : $\displaystyle 2\dot{r}\dot{\theta} + r\ddot{\theta} = \frac{1}{r}\dfrac{d}{dt}(r^{2}\dot{\theta}$). En utilisant la loi des aires, nous pouvons ramener le système précédent aux équations suivantes :
+>$$  
+\begin{cases}  
+\displaystyle \ddot{r} - \frac{C^{2}}{r^{3}} = \frac{F(r)}{m} = -\frac{1}{m}\dfrac{d\mathcal{E}_P(r)}{dr} \\  
+\displaystyle \dot{\theta} = \frac{C}{r^{2}} 
+\end{cases}  
+>$$
+>En multipliant les deux membres de l'équation radiale par $\dot{r}$, ce qui nous donne : $\displaystyle \dfrac{d}{dt}\left(\frac{1}{2}\dot{r}^{2} + \frac{1}{2}\frac{C^{2}}{r^{2}}\right) = \dfrac{d}{dt}\left(-\frac{1}{m}\mathcal{E}_P(r)\right)$ qui s’intègre par rapport au temps en : $\displaystyle \frac{1}{2}m\left(\dot{r}^{2} + \frac{C^{2}}{r^{2}}\right) + \mathcal{E}_P(r) = cte$ qui n’est rien d’autre que la traduction de la conservation de l’énergie mécanique $\mathcal{E}_M$ du mobile donc : $\displaystyle \dot{r} = \pm \sqrt{\mathcal{E}_M - \frac{mC^{2}}{2r^{2}} - \mathcal{E}_P(r)}$.
+>Cette expression fait apparaître une équation différentielle d’ordre un, qui peut se prêter assez aisément à un calcul numérique (en utilisant la méthode de résolution d’Euler, par exemple). Ensuite, il suffirait de reporter $r(t)$ dans la seconde équation pour obtenir $\theta(t)$ par intégration par rapport au temps.
  
 # Définitions
 

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique/02-Dynamique du point matériel.md",
+                "file": "mecanique/06-Théorème du moment cinétique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-Dynamique du point matériel"
+              "title": "06-Théorème du moment cinétique"
             }
           },
           {
@@ -198,14 +198,14 @@
   },
   "active": "a25fdac25d515b21",
   "lastOpenFiles": [
-    "mecanique/attachments/figure52.png",
-    "mecanique/02-Dynamique du point matériel.md",
-    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
-    "mecanique/03-Puissance et énergie en référentiel galiléen.md",
-    "mecanique/04-Mouvement libre d'un oscillateur harmonique.md",
-    "mecanique/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique/06-Théorème du moment cinétique.md",
+    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
+    "mecanique/05-Réponse d'un oscillateur à une excitation.md",
+    "mecanique/04-Mouvement libre d'un oscillateur harmonique.md",
+    "mecanique/03-Puissance et énergie en référentiel galiléen.md",
+    "mecanique/02-Dynamique du point matériel.md",
     "mecanique/01-Cinématique.md",
+    "mecanique/attachments/figure52.png",
     "mecanique/00-Mécanique.md",
     "mecanique/10-Système de deux points matériels.md",
     "mecanique/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
@@ -222,7 +222,6 @@
     "mecanique/attachments/figure45.png",
     "mecanique/attachments/figure44.png",
     "mecanique/attachments/figure43.png",
-    "mecanique/attachments/figure42.png",
     "mecanique/css style.md",
     "CSS style/style.css",
     "CSS style",
