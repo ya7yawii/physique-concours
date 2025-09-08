@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique/01-Cinématique.md",
+                "file": "mecanique/02-Dynamique du point matériel.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-Cinématique"
+              "title": "02-Dynamique du point matériel"
             }
           },
           {
@@ -35,7 +35,8 @@
               "title": "07-Force centrale conservative. Mouvement newtonien"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,19 +196,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "df6949b9799c383c",
+  "active": "a25fdac25d515b21",
   "lastOpenFiles": [
+    "mecanique/attachments/figure52.png",
+    "mecanique/02-Dynamique du point matériel.md",
     "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
+    "mecanique/03-Puissance et énergie en référentiel galiléen.md",
+    "mecanique/04-Mouvement libre d'un oscillateur harmonique.md",
+    "mecanique/05-Réponse d'un oscillateur à une excitation.md",
+    "mecanique/06-Théorème du moment cinétique.md",
     "mecanique/01-Cinématique.md",
     "mecanique/00-Mécanique.md",
-    "mecanique/04-Mouvement libre d’un oscillateur harmonique.md",
-    "mecanique/02-Dynamique du point matériel.md",
     "mecanique/10-Système de deux points matériels.md",
     "mecanique/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
     "mecanique/08-Changements de référentiels. Mécanique non galiléenne.md",
-    "mecanique/06-Théorème du moment cinétique.md",
-    "mecanique/05-Réponse d'un oscillateur à une excitation.md",
-    "mecanique/03-Puissance et énergie en référentiel galiléen.md",
     "mecanique/attachments/figure51.png",
     "().md",
     "mecanique/attachments/figure50.png",

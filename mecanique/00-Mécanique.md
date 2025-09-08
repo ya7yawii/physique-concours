@@ -13,7 +13,7 @@ crée: 08-08-2025, 16:56
 1. [[01-Cinématique]]
 2. [[02-Dynamique du point matériel]]
 3. [[03-Puissance et énergie en référentiel galiléen]]
-4. [[04-Mouvement libre d’un oscillateur harmonique]]
+4. [[04-Mouvement libre d'un oscillateur harmonique]]
 5. [[05-Réponse d'un oscillateur à une excitation]]
 6. [[06-Théorème du moment cinétique]]
 7. [[07-Force centrale conservative. Mouvement newtonien]]

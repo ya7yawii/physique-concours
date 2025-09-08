@@ -1,5 +1,5 @@
 ---
-titre: "[[Mouvement libre d'un oscillateur harmonique]]"
+titre: "[[04-Mouvement libre d'un oscillateur harmonique]]"
 tags:
   - oscillateur
   - harmonique
