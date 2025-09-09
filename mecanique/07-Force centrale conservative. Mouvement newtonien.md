@@ -45,14 +45,59 @@ Champ de force centrale newtonien : $\displaystyle\overrightarrow{F} = -\alpha\f
 >$$
 >En multipliant les deux membres de l'équation radiale par $\dot{r}$, ce qui nous donne : $\displaystyle \dfrac{d}{dt}\left(\frac{1}{2}\dot{r}^{2} + \frac{1}{2}\frac{C^{2}}{r^{2}}\right) = \dfrac{d}{dt}\left(-\frac{1}{m}\mathcal{E}_P(r)\right)$ qui s’intègre par rapport au temps en : $\displaystyle \frac{1}{2}m\left(\dot{r}^{2} + \frac{C^{2}}{r^{2}}\right) + \mathcal{E}_P(r) = cte$ qui n’est rien d’autre que la traduction de la conservation de l’énergie mécanique $\mathcal{E}_M$ du mobile donc : $\displaystyle \dot{r} = \pm \sqrt{\mathcal{E}_M - \frac{mC^{2}}{2r^{2}} - \mathcal{E}_P(r)}$.
 >Cette expression fait apparaître une équation différentielle d’ordre un, qui peut se prêter assez aisément à un calcul numérique (en utilisant la méthode de résolution d’Euler, par exemple). Ensuite, il suffirait de reporter $r(t)$ dans la seconde équation pour obtenir $\theta(t)$ par intégration par rapport au temps.
+>Énergie potentielle effective : $\displaystyle \mathcal{E}_{P_{eff}}(r) = \frac{mC^{2}}{2r^{2}} - \mathcal{E}_P(r)$
+>Domaine accessible à la trajectoire : $\mathcal{E}_{P_{eff}}(r) \leqslant \mathcal{E}_M$
+>Pour le mouvement à force centrale, l’énergie cinétique ne peut s’annuler car la composante orthoradiale $\displaystyle \frac{mC^{2}}{2r^{2}}$ ne s’annule pas puisque la constante des aires n’est, en général, pas nulle.
+>Considérons une énergie potentielle d’expression simple, par exemple : $\displaystyle \mathcal{E}_P(r) = -\frac{K}{r^{n}}$, soit $\displaystyle F(r) = -\frac{nK}{r^{n+1}}$. Le champ de forces est attracteur si nK est positif, répulsif le cas échéant.
+>Cas d’un champ répulsif (n et K de signes opposées) : On peut trouver le graphe de $\mathcal{E}_{P_{eff}}(r)$ dans la [[#^figure2]]. Dans tous les cas, il est clair que nous avons affaire à un état de diffusion, le point matériel finissant toujours par s’éloigner indéfiniment du centre O ([[#^figure3]]).
+>Cas d’un champ attractif (n et K de même signe) :
+>- Cas n° 1 : $n < 0$ (et $K < 0$) : On peut trouver le graphe de $\mathcal{E}_{P_{eff}}(r)$ dans la [[#^figure4]]. La simulation du mouvement fait apparaître une trajectoire qui n’est en général pas fermée, pour laquelle la distance au centre de force O oscille entre $r_{min}$ et $r_{max}$ ([[#^figure5]]). Le cas $n = -2$ est particulier, puisqu’il s’agit alors d’un oscillateur harmonique spatial et nous savons que dans ce cas la trajectoire est fermée : c’est une ellipse.
+>- Cas n° 2 : $0 < n < 2$ (et $K > 0$) : On peut trouver le graphe de $\mathcal{E}_{P_{eff}}(r)$ dans la [[#^figure6]]. Nous pouvons alors observer un état lié si $\mathcal{E}_M < 0$ ([[#^figure7]]), ou un état de diffusion si $\mathcal{E}_M > 0$ ([[#^figure8]]). Le cas du champ newtonien correspond ici à n = 1. Nous verrons plus loin que pour ce champ très particulier, les trajectoires des états liés sont fermées : ce sont des ellipses.
+>- Cas n° 3 : $n > 2$ (et $K > 0$) : On peut trouver le graphe de $\mathcal{E}_{P_{eff}}(r)$ dans la [[#^figure9]]. Pour $\mathcal{E}_M = \mathcal{E}_{M_a}$ (sur la [[#^figure9]]), nous pouvons observer un état de diffusion (cas de l’état a.1.), pour lequel la distance r ne peut descendre en deçà d’un minimum $r_{min}$ ([[#^figure10]]). Pour une même valeur de l’énergie mécanique, nous pouvons aussi rencontrer un cas (état a.2.) où la distance r possède une borne supérieure $r_{max}$ , mais pas de borne inférieure non nulle : concrètement, cela signifie que la force attractive est trop forte à courte distance, et que le point matériel vient s’écraser sur le centre attracteur O ! Pour l'état b. sur la [[#^figure9]], cette collision survient encore si le point matériel se dirige initialement vers le centre de force O ([[#^figure11]]).
+
+Énergie mécanique dans un mouvement dans un champ newtonien : $\displaystyle \mathcal{E}_M= \frac{1}{2}mv^{2} + \mathcal{E}_P(r) = \frac{1}{2}m\dot{r}^{2} + \frac{mC^{2}}{2r^{2}} - \frac{\alpha}{r} = cte$ avec $\alpha = GmM$ quand l’interaction newtonienne correspond à l’attraction gravitationnelle subie par un satellite de masse m évoluant dans le champ de gravitation d’un astre de masse M.
  
 # Définitions
+==**Mouvement keplerien**== :
+Un mouvement est dit keplerien lorsqu’il s’effectue sous l’action d’une force centrale en $\displaystyle \frac{1}{r^{2}}$, de centre de force fixe dans le référentiel galiléen d’étude, c’est-à-dire dans un champ de forces newtonien.
 
+==**Satellites**== :
+Les satellites correspondent à des mobiles en état lié évoluant dans le champ de gravitation, attractif, de l’astre autour duquel ils gravitent : leur énergie mécanique est négative.
 # Diagrammes
 
 # Graphiques
 Coordonnées polaires dans le plan de la trajectoire :
 ![[figure52.png]]^figure1
+
+Énergie potentielle effective dans un cas répulsif $(n = 1, k < 0)$ :
+![[figure53.png]]^figure2
+
+État de diffusion, avec passage par la distance d’approche minimale $r_{min}$ :
+![[figure54.png]]^figure3
+
+Énergie potentielle effective pour $n < 0$ (ici n = –1,2) et $k < 0$ :
+![[figure55.png]]^figure4
+
+Mouvement pour $n < 0$ (ici n = –1,5), oscillations de la distance au centre de force :
+![[figure56.png]]^figure5
+
+Énergie potentielle effective pour $0 < n < 2$ ici (n = 1,2) :
+![[figure57.png]]^figure6
+
+État lié (n = 1,2) :
+![[figure58.png]]^figure7
+
+État de diffusion (n = 1,2) :
+![[figure59.png]]^figure8
+
+Énergie potentielle effective pour $n > 2$ ici $(n = 3)$ :
+![[figure60.png]]^figure9
+
+Le point matériel s’échappe ! :
+![[figure61.png]]^figure10
+
+Il va s’écraser sur le centre attracteur :
+![[figure62.png]]^figure11
 # Expériences
 
 # Autres notes
