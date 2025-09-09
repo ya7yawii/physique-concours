@@ -12,7 +12,7 @@ Champ de forces centrales : $\overrightarrow{F} = F\overrightarrow{e_r}$  ; le s
 > La force est attractive lorsqu’elle est dirigée vers O, soit :$F(r) < 0$. L’énergie potentielle est alors une fonction croissante de la distance r au centre de force O.
 > Elle est au contraire répulsive si $F(r) > 0$, donc lorsque l’énergie potentielle est une  fonction décroissante de la distance.
 
-Loi de gravitation : $\displaystyle \overrightarrow{F}_{M_1\rightarrow M_2} = -G\frac{m_1m_2}{r^{2}}\overrightarrow{e_{12}}$ avec $\overrightarrow{F}_{M_1\rightarrow M_2}$ force de gravitation qui est attractive, $G = 6,\!672\hspace{0.3em} . 10^{-11} N . m^{2} . kg^{-2}$ est une constante universelle et $\overrightarrow{e_{12}}$  est le vecteur unitaire de l’axe $M_1M_2$ orienté de $M_1$ vers $M_2$.
+Loi de gravitation : $\displaystyle \overrightarrow{F}_{M_1 \rightarrow M_2} = -G\frac{m_1m_2}{r^{2}}\overrightarrow{e_{12}}$ avec $\overrightarrow{F}_{M_1\rightarrow M_2}$ force de gravitation qui est attractive, $G = 6,\!672\hspace{0.3em} . 10^{-11} N . m^{2} . kg^{-2}$ est une constante universelle et $\overrightarrow{e_{12}}$  est le vecteur unitaire de l’axe $M_1M_2$ orienté de $M_1$ vers $M_2$.
 > [!note]
 > Cette loi, dite de gravitation universelle, a été formulée par Newton pour expliquer les orbites planétaires.
 > La <mark style="color: red">masse pesante</mark> qui intervient dans l’expression de la force de gravitation est identique à la <mark style="color: red">masse inerte</mark> de la relation fondamentale de la dynamique. Il s’agit là d’un postulat supplémentaire, dont la validité est confirmée par toutes les expériences.
@@ -56,13 +56,30 @@ Champ de force centrale newtonien : $\displaystyle\overrightarrow{F} = -\alpha\f
 >- Cas n° 3 : $n > 2$ (et $K > 0$) : On peut trouver le graphe de $\mathcal{E}_{P_{eff}}(r)$ dans la [[#^figure9]]. Pour $\mathcal{E}_M = \mathcal{E}_{M_a}$ (sur la [[#^figure9]]), nous pouvons observer un état de diffusion (cas de l’état a.1.), pour lequel la distance r ne peut descendre en deçà d’un minimum $r_{min}$ ([[#^figure10]]). Pour une même valeur de l’énergie mécanique, nous pouvons aussi rencontrer un cas (état a.2.) où la distance r possède une borne supérieure $r_{max}$ , mais pas de borne inférieure non nulle : concrètement, cela signifie que la force attractive est trop forte à courte distance, et que le point matériel vient s’écraser sur le centre attracteur O ! Pour l'état b. sur la [[#^figure9]], cette collision survient encore si le point matériel se dirige initialement vers le centre de force O ([[#^figure11]]).
 
 Énergie mécanique dans un mouvement dans un champ newtonien : $\displaystyle \mathcal{E}_M= \frac{1}{2}mv^{2} + \mathcal{E}_P(r) = \frac{1}{2}m\dot{r}^{2} + \frac{mC^{2}}{2r^{2}} - \frac{\alpha}{r} = cte$ avec $\alpha = GmM$ quand l’interaction newtonienne correspond à l’attraction gravitationnelle subie par un satellite de masse m évoluant dans le champ de gravitation d’un astre de masse M.
- 
+
+Vitesse d’un satellite en trajectoire circulaire de rayon $r_c$ : $\displaystyle v_c = \sqrt{\frac{\alpha}{mr_c}} = \sqrt{\frac{GM}{r_c}}$ où M est la masse de l'astre.
+
+Énergie associée à une trajectoire circulaire de rayon $r_c$ : $\displaystyle \mathcal{E}_M = -\frac{\alpha}{2r_c}$ 
+> [!note] Troisième loi de Kepler
+> Dans le système solaire, les planètes de masse $M_{\odot}$ en trajectoire circulaire autour du Soleil ont une période liée à leur rayon de giration par : $\displaystyle \frac{T^{2}}{r_{c}^{3}} = \frac{4\pi^{2}}{GM_{\odot}}$
+> Pour une trajectoire elliptique, il faut remplacer le rayon $r_c$ de la trajectoire circulaire par le demi-grand axe a de l’ellipse dans ce résultat.
+
+> [!note]
+> Un mouvement newtonien est un mouvement à force centrale, où la force est conservative, et proportionnelle à $\frac{1}{r^{2}}$ : $\displaystyle \overrightarrow{F}_{M \rightarrow m} = -\frac{\alpha}{r^{2}}\overrightarrow{e_r}$ ; le moment cinétique : $\overrightarrow{L_O} = mr^{2}\dot{\theta}\overrightarrow{e_z} = mC\overrightarrow{e_z}$, l’énergie : $\displaystyle \mathcal{E}_M = \frac{1}{2}m\dot{r}^{2} + \frac{mC^{2}}{2r^{2}} - \frac{\alpha}{r}$, et le vecteur de Runge-Lenz : $\displaystyle \overrightarrow{A} = \frac{\overrightarrow{v} \wedge \overrightarrow{L_O}}{\alpha} - \overrightarrow{e_r}$ sont des constantes du mouvement.
+
 # Définitions
 ==**Mouvement keplerien**== :
 Un mouvement est dit keplerien lorsqu’il s’effectue sous l’action d’une force centrale en $\displaystyle \frac{1}{r^{2}}$, de centre de force fixe dans le référentiel galiléen d’étude, c’est-à-dire dans un champ de forces newtonien.
 
 ==**Satellites**== :
 Les satellites correspondent à des mobiles en état lié évoluant dans le champ de gravitation, attractif, de l’astre autour duquel ils gravitent : leur énergie mécanique est négative.
+
+==**Première vitesse cosmique**== :
+Dans le cas d’un satellite terrestre, $M = M_T$ masse de la Terre, et la vitesse minimale correspond au cas $r = R_T$. Cette vitesse est la vitesse en orbite circulaire basse, encore appelée première vitesse cosmique : $v_1 \approx 7,\!92 \hspace{0.3em} km \hspace{0.3em}.\hspace{0.1em} s^{-1}$.
+
+==**Deuxième vitesse cosmique**== :
+Le satellite pourrait totalement échapper à l’attraction terrestre si son énergie mécanique devenait juste nulle : la distance r peut devenir infinie.
+La vitesse nécessaire $v_2$, deuxième vitesse cosmique, est donnée par : $\displaystyle \mathcal{E}_M = -\frac{1}{2}mv_{2}^{2} - \frac{GmM}{R_T} = 0$ soit $v_2 \approx 11,\!2 \hspace{0.3em} km \hspace{0.3em}.\hspace{0.1em} s^{-1}$.  
 # Diagrammes
 
 # Graphiques
