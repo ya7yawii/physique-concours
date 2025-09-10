@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique/06-Théorème du moment cinétique.md",
+                "file": "mecanique/01-Cinématique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06-Théorème du moment cinétique"
+              "title": "01-Cinématique"
             }
           },
           {
@@ -198,24 +198,23 @@
   },
   "active": "a25fdac25d515b21",
   "lastOpenFiles": [
+    "mecanique/attachments/figure68.png",
+    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
+    "mecanique/01-Cinématique.md",
+    "mecanique/06-Théorème du moment cinétique.md",
     "mecanique/attachments/figure67.png",
     "mecanique/attachments/figure66.png",
     "mecanique/attachments/figure65.png",
     "mecanique/attachments/figure64.png",
     "mecanique/attachments/figure63.png",
     "mecanique/attachments/Pasted image 20250910093527.png",
-    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
-    "mecanique/06-Théorème du moment cinétique.md",
     "mecanique/attachments/figure62.png",
     "mecanique/attachments/figure61.png",
     "mecanique/attachments/figure60.png",
-    "mecanique/attachments/figure59.png",
-    "mecanique/attachments/figure58.png",
     "mecanique/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique/04-Mouvement libre d'un oscillateur harmonique.md",
     "mecanique/03-Puissance et énergie en référentiel galiléen.md",
     "mecanique/02-Dynamique du point matériel.md",
-    "mecanique/01-Cinématique.md",
     "mecanique/00-Mécanique.md",
     "mecanique/10-Système de deux points matériels.md",
     "mecanique/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",

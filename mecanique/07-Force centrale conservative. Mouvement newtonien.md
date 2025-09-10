@@ -152,5 +152,7 @@ Mouvement parabolique :
 Branche d’hyperbole du mouvement attractif :
 ![[figure67.png]]^figure16
 # Expériences
-
+## Mobiles autoporteurs sur coussin d’air
+> [!warning]
+> Ce TP n'est pas dans le livre mais se trouve [en ligne](https://perso.ens-lyon.fr/nicolas.barros/agreg/MP/Polys/Divers.pdf) et le schéma de l'expérience se trouve dans ce [lien](https://books.google.tn/books?redir_esc=y&hl=fr&id=iKEnXengxq4C&q=Mobiles+autoporteurs+sur+coussin+d%E2%80%99air#v=onepage&q=Mobiles%20autoporteurs%20sur%20coussin%20d%E2%80%99air&f=true). Pour faire ce TP, on est besoin de logiciel Latis-Pro donc ce n'est pas l'exemple des travaux pratique qui est possible de faire dans les universités tunisiennes.
 # Autres notes
