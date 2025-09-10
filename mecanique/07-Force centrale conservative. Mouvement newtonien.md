@@ -1,7 +1,10 @@
 ---
 titre: "[[07-Force centrale conservative. Mouvement newtonien]]"
 tags:
-aliases:
+  - centrale
+  - newtonien
+  - gravitation
+  - kepler
 crée: 07-09-2025, 17:04
 ---
 # Formules
@@ -67,6 +70,24 @@ Vitesse d’un satellite en trajectoire circulaire de rayon $r_c$ : $\displaysty
 > [!note]
 > Un mouvement newtonien est un mouvement à force centrale, où la force est conservative, et proportionnelle à $\frac{1}{r^{2}}$ : $\displaystyle \overrightarrow{F}_{M \rightarrow m} = -\frac{\alpha}{r^{2}}\overrightarrow{e_r}$ ; le moment cinétique : $\overrightarrow{L_O} = mr^{2}\dot{\theta}\overrightarrow{e_z} = mC\overrightarrow{e_z}$, l’énergie : $\displaystyle \mathcal{E}_M = \frac{1}{2}m\dot{r}^{2} + \frac{mC^{2}}{2r^{2}} - \frac{\alpha}{r}$, et le vecteur de Runge-Lenz : $\displaystyle \overrightarrow{A} = \frac{\overrightarrow{v} \wedge \overrightarrow{L_O}}{\alpha} - \overrightarrow{e_r}$ sont des constantes du mouvement.
 
+> [!note] Les trajectoires sont des coniques
+> En exprimant les composantes du vecteur de Runge-Lenz dans la base locale des coordonnées polaires, on obtient : $\displaystyle \overrightarrow{A} = \left(\frac{mC^{2}}{\alpha r} - 1\right)\overrightarrow{e_r} - \frac{mC}{\alpha}\dot{r}\overrightarrow{e_{\theta}}$ en particulier, on a : $\displaystyle \overrightarrow{A} \hspace{0.2em} . \overrightarrow{r} = \frac{mC^{2}}{\alpha} - r$ et $\overrightarrow{A} \hspace{0.2em} . \overrightarrow{r} = \left\Vert\overrightarrow{A}\right\Vert r\cos\theta = er\cos\theta$ et en comparant ces deux expressions, on identifie l’équation polaire de la trajectoire : $\displaystyle r(\theta) = \frac{p}{1 + e\cos\theta}$. Il s’agit de l’équation d’une courbe conique, d'excentricité $e = \left\Vert\overrightarrow{A}\right\Vert$ et de paramètre $\displaystyle p = \frac{mC^{2}}{\alpha}$. On déduit ainsi :
+> - une trajectoire elliptique, si l’excentricité est inférieure à 1 (un cercle, si e = 0) ;
+> - une trajectoire parabolique, si l’excentricité vaut 1 ;
+> - une trajectoire hyperbolique, si l’excentricité est plus grande que 1.
+> 
+> A partir de calcul de la norme de $\overrightarrow{A}$ au carré, on peut conclure que : $\displaystyle \mathcal{E}_M = \frac{\alpha}{2mC^{2}}(e^{2} - 1)$. On voit qu'on peut encore classer la nature des trajectoires à l’aide du signe de l’énergie :
+> - la trajectoire est elliptique si l’énergie est négative (c’est le cas pour les trajectoires circulaires) ;
+> - la trajectoire est parabolique si l’énergie est nulle ;
+> - la trajectoire est hyperbolique si l’énergie est positive.
+
+> [!note] Représentation du mouvement newtonien
+> Domaine accessible aux variations de r : $\displaystyle \mathcal{E}_{P_{eff}}(r) = \frac{mC^{2}}{2r^{2}} - \frac{\alpha}{r} \leqslant \mathcal{E}_M$.
+> Force newtonienne répulsive : états de diffusion $(\alpha < 0)$ : On peut trouver le graphe de $\mathcal{E}_{P_{eff}}(r)$ dans la [[#^figure2]]. La trajectoire est hyperbolique : la distance $r_{min}$ est atteinte au sommet S de la branche d’hyperbole décrite par le point matériel. En ce point, la dérivée $\dot{r}$ est nulle et le vecteur de Lenz est colinéaire au rayon vecteur ([[#^figure12]]).
+> Force newtonienne attractive : états liés et états de diffusion $(\alpha > 0)$ : On peut trouver le graphe de $\mathcal{E}_{P_{eff}}(r)$ dans la [[#^figure13]] :
+> - Si l’énergie est négative ($e < 1$, trajectoire elliptique) : La distance r évolue entre une valeur maximale $r_{max}$ et une valeur minimale $r_{min}$ : nous avons affaire à un état lié. Ces distances correspondent respectivement à l’apogée A et au périgée P de la trajectoire elliptique ([[#^figure14]]).
+> - Si l’énergie est nulle ($e = 1$, trajectoire parabolique) : L’apogée de la trajectoire est renvoyé à l’infini ([[#^figure15]]).
+> - Si l’énergie est positive ($e > 1$, trajectoire hyperbolique) : Comme dans le cas répulsif, nous obtenons un état de diffusion. Attention cependant, car la branche d’hyperbole décrite par le point matériel diffère dans les deux cas : pour une force répulsive, nous avons observé une trajectoire où le point matériel fuyait le centre de force ([[#^figure12]]). Ici, il est attiré vers O, mais finit quand même par s’échapper ([[#^figure16]]).
 # Définitions
 ==**Mouvement keplerien**== :
 Un mouvement est dit keplerien lorsqu’il s’effectue sous l’action d’une force centrale en $\displaystyle \frac{1}{r^{2}}$, de centre de force fixe dans le référentiel galiléen d’étude, c’est-à-dire dans un champ de forces newtonien.
@@ -115,6 +136,21 @@ Le point matériel s’échappe ! :
 
 Il va s’écraser sur le centre attracteur :
 ![[figure62.png]]^figure11
+
+Branche d’hyperbole du mouvement répulsif :
+![[figure63.png]]^figure12
+
+Énergie potentielle effective du cas attractif :
+![[figure64.png]]^figure13
+
+Mouvement elliptique :
+![[figure65.png]]^figure14
+
+Mouvement parabolique :
+![[figure66.png]]^figure15
+
+Branche d’hyperbole du mouvement attractif :
+![[figure67.png]]^figure16
 # Expériences
 
 # Autres notes
