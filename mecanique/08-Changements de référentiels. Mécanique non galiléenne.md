@@ -53,8 +53,22 @@ Accélération d’entraînement : $\overrightarrow{a_e}(M) = \left(\dfrac{d^{2}
 > [!note] Accélération de Coriolis
 > $\overrightarrow{a}(M)_{/\mathcal{R_1}} = \overrightarrow{a}(M)_{/\mathcal{R_2}} + \overrightarrow{a_e}(M) + 2\overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1} \wedge \overrightarrow{v}(M)_{/\mathcal{R}_2}$ avec $\overrightarrow{a_C}(M) = 2\overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1} \wedge \overrightarrow{v}(M)_{/\mathcal{R}_2}$ est appelé accélération de Coriolis.
 
-# Définitions
+> [!note] Cas où $\mathcal{R}_2$ est en translation par rapport à $\mathcal{R}_1$
+> - Les champs de vitesse d’entraînement et d’accélération d’entraînement sont uniformes : $\overrightarrow{v_e}(M) = \overrightarrow{v}(O_2)_{/\mathcal{R}_1}$ et $\overrightarrow{a_e}(M) = \overrightarrow{a}(O_2)_{/\mathcal{R}_1}$ ne dépendent pas du point M ;
+> - il n’y a pas d’accélération de Coriolis.
 
+> [!note] Cas où $\mathcal{R}_2$ est en rotation autour d’un axe fixe $(\Delta)$ de $\mathcal{R}_1$
+> Comme précédemment (pour la vitesse), on suppose que la rotation se fait autour de l’axe commun $(\Delta) = (O_1z_1) = (O_2z_2)$ avec la vitesse angulaire $\overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1} = \dot{\theta}\overrightarrow{e_z}$  ([[#^figure3]]).
+> L’accélération d’entraînement du point M (de projection H sur $(\Delta)$) est : $\overrightarrow{a_e}(M) = \dfrac{d\overrightarrow{\Omega}}{dt} \wedge \overrightarrow{HM} - \overrightarrow{\Omega}^{2}\overrightarrow{HM}$.
+> Si la rotation est uniforme, l’accélération d’entraînement est radiale et centripète : $\overrightarrow{a_e}(M) = - \overrightarrow{\Omega}^{2}\overrightarrow{HM}$
+
+
+# Définitions
+==**Référentiel galiléen**== :
+Un référentiel est galiléen si l’application de la relation fondamentale de la dynamique à un point matériel permet de prévoir une évolution confirmée par l’expérience.
+
+==**Classe des référentiels galiléens**== :
+L’ensemble des référentiels galiléens est constitué par tous les référentiels en translation rectiligne et uniforme par rapport à l’un d’entre eux.
 # Diagrammes
 
 # Graphiques
