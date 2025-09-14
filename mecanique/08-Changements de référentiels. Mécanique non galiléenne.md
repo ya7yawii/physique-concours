@@ -46,8 +46,13 @@ crée: 13-09-2025, 11:28
 
 Accélération relative : $\overrightarrow{a}(M)_{/\mathcal{R_2}} = \left(\dfrac{d^{2}\overrightarrow{O_2M}}{dt^{2}}\right)_{\hspace{-0.6em}/\mathcal{R}_2}$.
 Accélération d’entraînement : $\overrightarrow{a_e}(M) = \left(\dfrac{d^{2}\overrightarrow{O_1O_2}}{dt^{2}}\right)_{\hspace{-0.6em}/\mathcal{R}_1}  + \dfrac{d\overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1}}{dt} \wedge \overrightarrow{O_2M} + \overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1} \wedge \left\{ \overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1} \wedge \overrightarrow{O_2M}\right\}$.
+> [!warning]
+> Il est inutile de vouloir retenir l’expression de $\overrightarrow{a_e}(M)$.
+
+
 > [!note] Accélération de Coriolis
 > $\overrightarrow{a}(M)_{/\mathcal{R_1}} = \overrightarrow{a}(M)_{/\mathcal{R_2}} + \overrightarrow{a_e}(M) + 2\overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1} \wedge \overrightarrow{v}(M)_{/\mathcal{R}_2}$ avec $\overrightarrow{a_C}(M) = 2\overrightarrow{\Omega}_{\mathcal{R}_2/\mathcal{R}_1} \wedge \overrightarrow{v}(M)_{/\mathcal{R}_2}$ est appelé accélération de Coriolis.
+
 # Définitions
 
 # Diagrammes
