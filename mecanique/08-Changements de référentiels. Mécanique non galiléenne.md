@@ -101,5 +101,7 @@ $\mathcal{R}_2$ est en rotation autour de l’axe $(Oz_1)$ dans $\mathcal{R}_1$ 
 Rotation autour d’un axe fixe, trajectoire circulaire du point coïncident :
 ![[figure70.png]]^figure3
 # Expériences
-
+## Force Centrifuge
+> [!warning]
+> Ce TP n'est pas dans le livre mais se trouve dans les liens suivants :[lien 1](https://ilm-perso.univ-lyon1.fr/~oramos/documents/TPMechanics/fasciculeTP.pdf), [lien 2](https://fr.scribd.com/document/814469940/TP-ENSAM), [lien 3](https://fr.scribd.com/document/377710851/Tp-Force-Centrifuge).
 # Autres notes
