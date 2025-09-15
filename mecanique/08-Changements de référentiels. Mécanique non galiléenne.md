@@ -62,13 +62,33 @@ Accélération d’entraînement : $\overrightarrow{a_e}(M) = \left(\dfrac{d^{2}
 > L’accélération d’entraînement du point M (de projection H sur $(\Delta)$) est : $\overrightarrow{a_e}(M) = \dfrac{d\overrightarrow{\Omega}}{dt} \wedge \overrightarrow{HM} - \overrightarrow{\Omega}^{2}\overrightarrow{HM}$.
 > Si la rotation est uniforme, l’accélération d’entraînement est radiale et centripète : $\overrightarrow{a_e}(M) = - \overrightarrow{\Omega}^{2}\overrightarrow{HM}$
 
+Relation fondamentale de la dynamique en référentiel non galiléen : $\overrightarrow{F} + \overrightarrow{F_{i_e}} + \overrightarrow{F_{i_C}} = m\overrightarrow{a}(M)_{/\mathcal{R}}$ où $\mathcal{R}$ est un référentiel en mouvement accéléré par rapport à un référentiel galiléen, $\overrightarrow{F_{i_e}} = -m\overrightarrow{a_e}(M)$ est la force d’inertie d'entraînement et $\overrightarrow{F_{i_C}} = -m\overrightarrow{a_C}(M)$ est la force d’inertie de Coriolis.
 
+> [!note] Exemple d’un mouvement de translation accéléré de $\mathcal{R}$ dans $\mathcal{R_g}$
+> Les forces d’inertie se réduisent à la seule force d’inertie d’entraînement : $\overrightarrow{F_{i_e}} = -m\overrightarrow{a_e}$ où l’accélération d’entraînement $\overrightarrow{a_e}$ est indépendante de la position du point M.
+
+> [!note] Exemple d’une rotation de $\mathcal{R}$ autour d’un axe fixe de $\mathcal{R_g}$
+> Il faut tenir compte des forces d’inertie mais si la rotation est uniforme à vitesse $\omega\overrightarrow{e_z} = \overrightarrow{cte}$ :
+> - la force d’inertie d’entraînement est centrifuge : $\overrightarrow{F_{i_e}} = +m\omega^{2}\overrightarrow{HM}$ ;
+> - la force d’inertie de Coriolis n’est en général pas nulle.
+
+> [!note] Théorème du moment cinétique dans $\mathcal{R}$ non galiléen
+> Le théorème du moment cinétique reste valable en référentiel non galiléen, en remplaçant la force galiléenne $\overrightarrow{F}$ par $\overrightarrow{F} + \overrightarrow{F_{i_e}} + \overrightarrow{F_{i_C}}$.
+
+Théorème de l’énergie cinétique en référentiel non galiléen : $\Delta\mathcal{E}_K = \mathcal{T}(\overrightarrow{F}) + \mathcal{T}(\overrightarrow{F_{i_e}})$ avec le travail de la force d’inertie de Coriolis est nul.
+
+> [!note]
+> La force d’inertie d’entraînement travaille, mais n’est en général pas conservative. Cependant, il existe parfois des cas où la force d’inertie d’entraînement est conservative, par exemple :
+> - Dans un référentiel $\mathcal{R}$ tournant à vitesse angulaire constante $\overrightarrow{\Omega}_{\mathcal{R}/\mathcal{R}_g} = \omega\overrightarrow{e_z}$ autour de l’axe $(Oz)$ fixe dans $\mathcal{R}_g$, la force d’inertie d’entraînement $\overrightarrow{F_{i_e}} = mr\omega^{2}\overrightarrow{e_r}$ dérive de l'énergie potentielle : $\mathcal{E}_{Pi_e} = -\frac{1}{2}mr^{2}\omega^{2}$ (coordonnées cylindriques d’axe $(Oz)$).
 # Définitions
 ==**Référentiel galiléen**== :
 Un référentiel est galiléen si l’application de la relation fondamentale de la dynamique à un point matériel permet de prévoir une évolution confirmée par l’expérience.
 
 ==**Classe des référentiels galiléens**== :
 L’ensemble des référentiels galiléens est constitué par tous les référentiels en translation rectiligne et uniforme par rapport à l’un d’entre eux.
+
+==**« Pseudo-forces »**== :
+Les forces d’inertie ne traduisent pas une interaction, mais le caractère non galiléen du référentiel d’étude. Les effets de ces « pseudo-forces » sont cependant bien réels dans le référentiel non galiléen.
 # Diagrammes
 
 # Graphiques
