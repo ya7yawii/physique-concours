@@ -7,6 +7,24 @@ crée: 18-09-2025, 17:23
 # Formules
 > [!note] Relation fondamentale de la dynamique dans $\mathcal{R}_O$
 > $m\overrightarrow{a}(M)_{/\mathcal{R}_O} = \overrightarrow{F_a} + m[\overrightarrow{\mathcal{G_T}}(M) + \overrightarrow{\mathcal{G_L}}(M) + \overrightarrow{\mathcal{G_S}}(M) + \cdots \,] - m\overrightarrow{a}(O)_{/\mathcal{R}_C}$ où le terme $m[\overrightarrow{\mathcal{G_T}}(M) + \overrightarrow{\mathcal{G_L}}(M) + \overrightarrow{\mathcal{G_S}}(M) + \cdots \,]$ traduit les forces gravitationnelles exercées par la Terre, la Lune, le Soleil, les autres planètes, le terme $- m\overrightarrow{a}(O)_{/\mathcal{R}_C}$ est la force d’inertie d’entraînement puisque le référentiel $\mathcal{R}_O$ est en translation dans $\mathcal{R}_C$ et $\overrightarrow{F_a}$ représente d’éventuelles forces appliquées résultant d’autres interactions matérielles avec le point M.
+> Le mouvement du centre d’inertie O de la Terre peut être étudié dans le référentiel galiléen $\mathcal{R}_C$ en l’assimilant à un point matériel de masse $M_T$, soit : $M_T\overrightarrow{a}(O)_{/\mathcal{R}_C} = M_T[\overrightarrow{\mathcal{G_L}}(O) + \overrightarrow{\mathcal{G_S}}(O) + \cdots \,]$. En reportant dans l’équation du mouvement de la masse m, nous obtenons : $m\overrightarrow{a}(M)_{/\mathcal{R}_C} = \overrightarrow{F_a} + m\overrightarrow{\mathcal{G_T}}(M) + [(\overrightarrow{\mathcal{G_L}}(M) - \overrightarrow{\mathcal{G_L}}(O)) + (\overrightarrow{\mathcal{G_S}}(M) - \overrightarrow{\mathcal{G_S}}(O)) + \cdots \,]$. On nomme le terme $m[\overrightarrow{\mathcal{G}}_{autres \, astres}(M) - \overrightarrow{\mathcal{G}}_{autres \, astres}(O)]$ le terme différentiel (ou terme de marée). Le terme d’accélération différentielle dû à un astre A est défini par : $\overrightarrow{\gamma_A} = \overrightarrow{\mathcal{G_A}}(M) - \overrightarrow{\mathcal{G_A}}(O)$.
+> Dans le domaine terrestre, le référentiel géocentrique $\mathcal{R}_O$ est remarquablement galiléen, si on néglige le terme différentiel de marée ; le seul champ gravitationnel à considérer est alors celui créé par la Terre (voir la [[#^demo1]]).
+
+> [!note] Effet d’accélération différentielle
+> Imaginons un vaisseau spatial « tombant en chute libre » (mouvement de translation) dans le champ gravitationnel de la Terre, en négligeant toute autre attraction.
+> C désignant le centre d’inertie du vaisseau, la relation fondamentale de la dynamique appliquée à ce point matériel particulier dans le repère géocentrique de cet astre supposé galiléen donne : $\overrightarrow{a}(C) = \overrightarrow{\mathcal{G_T}}(C)$
+> Dans le référentiel $\mathcal{R}_v$ lié au vaisseau, dont l’accélération d’entraînement est $\overrightarrow{a}(C)$, la relation fondamentale de la dynamique appliquée à un point-matériel s’écrit : $m\overrightarrow{a}(M)_{/\mathcal{R}_v} = \overrightarrow{F_a} + m\overrightarrow{\mathcal{G_T}}(M) - m\overrightarrow{\mathcal{G_T}}(C) = \overrightarrow{F_a} + \overrightarrow{\gamma_v}(M)$. Le terme $\overrightarrow{\gamma_v}(M)$ est le terme différentiel relatif à notre problème.
+> Négligeant ici l’effet directionnel et posant $\overrightarrow{\mathcal{G_T}}(C) = -\mathcal{G}_0\overrightarrow{e_z}$ nous voyons que :
+> $$
+> \begin{align*}
+> \overrightarrow{e_z}.\overrightarrow{\gamma_v}(M) &= \overrightarrow{e_z}.[\overrightarrow{\mathcal{G_T}}(M) - \overrightarrow{\mathcal{G_T}}(C)]\\
+> &= GM_T\left(\frac{1}{OC^{2}} - \frac{1}{OM^{2}}\right)\\
+> &= \frac{GM_T}{OC^{2}}\left(1 - \frac{OC^{2}}{OM^{2}}\right)\\
+> &= \frac{GM_T}{OC^{2}}\left(1 - \frac{OC^{2}}{OC^{2}-2OC\times CM + CM^{2}}\right)\\
+> &= \frac{GM_T}{OC^{2}}\left(1 - \frac{1}{1 - 2 \frac{z}{OC} + \frac{z^{2}}{OC^{2}}}\right) \approx \frac{2GM_T}{OC^{2}}\frac{z}{OC}
+> \end{align*}
+> $$
+> Ainsi le terme différentiel agit comme précisé sur la [[#^figure1]] : un point matériel plus éloigné de O que ne l’est C est repoussé vers le « haut » tandis qu’un objet plus proche est attiré vers le « bas » de la cabine.
 
 # Définitions
 ==**Référentiel de Copernic $\mathcal{R}_C$**== :
@@ -20,7 +38,8 @@ Un repère spatial lié au référentiel géocentrique $\mathcal{R}_O$ a son ori
 # Diagrammes
 
 # Graphiques
-
+Vaisseau spatial en chute libre :
+![[figure76.png]]^figure1
 # Expériences
 
 # Autres notes
@@ -29,3 +48,10 @@ Le jour solaire est l’intervalle de temps entre deux passages consécutifs du 
 
 ==**Jour sidéral**== :
 Le jour sidéral est l’intervalle de temps entre deux passages consécutifs d’une étoile lointaine « fixe » au méridien d’un lieu. C’est donc la période de rotation de la Terre dans le référentiel géocentrique. Un jour sidéral vaut exactement 86 164 secondes, correspond à une rotation complète de la Terre sur elle-même.
+
+> [!warning] Pourquoi néglige-t-on généralement le terme de marée dans $\mathcal{R}_O$? ^demo1
+> La démonstration dans le livre n'est pas détaillé donc voici la démonstration complète dans ces captures d'écran extraites de ce [lien](https://webetab.ac-bordeaux.fr/Etablissement/BDBorn/sections/postbac/prepasciences/physique/telech/docs20089/M11_2008-2009_RefGeoTer.pdf).
+> ![[figure72.png]]
+> ![[figure73.png]]
+> ![[figure74.png]]
+> ![[figure75.png]]
