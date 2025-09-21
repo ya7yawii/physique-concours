@@ -35,8 +35,7 @@
               "title": "09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,12 +195,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2ddfe295259736c2",
+  "active": "87236b2e27d7de94",
   "lastOpenFiles": [
-    "mecanique/attachments/figure76.png",
+    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
     "mecanique/08-Changements de référentiels. Mécanique non galiléenne.md",
     "mecanique/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
-    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
+    "mecanique/attachments/figure76.png",
     "mecanique/attachments/figure75.png",
     "mecanique/attachments/figure74.png",
     "mecanique/attachments/figure73.png",
@@ -218,7 +217,6 @@
     "mecanique/02-Dynamique du point matériel.md",
     "mecanique/00-Mécanique.md",
     "mecanique/attachments/figure68.png",
-    "mecanique/attachments/figure67.png",
     "mecanique/10-Système de deux points matériels.md",
     "().md",
     "templates/chapitre.md",
