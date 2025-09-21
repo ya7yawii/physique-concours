@@ -61,6 +61,9 @@ II s’agit du référentiel $\mathcal{R}_T$ lié à la Terre, en rotation à vi
 # Graphiques
 Vaisseau spatial en chute libre :
 ![[figure76.png]]^figure1
+
+Pendule de Foucault : 
+![[figure77.png]]^figure2
 # Expériences
 
 # Autres notes
@@ -79,3 +82,8 @@ Le jour sidéral est l’intervalle de temps entre deux passages consécutifs d�
 
 ==**Marée**== :
 La marée est la variation du niveau de la mer due à l'action gravitationnelle de la lune et du soleil. A cause de l’influence de la présence de la Lune, il existe deux marées hautes et deux marées basses par jour (par exemple marées hautes espacées de 12 heures, la hauteur des marées étant plus importante à l’équateur). Le Soleil apporte une contribution non négligeable au phénomène de marées. Donc, Aux pleine Lune et nouvelle Lune, les marées sont les plus importantes possibles ; nous parlons de marées de vives eaux. Aux premier quartier et dernier quartier, les marées sont d’amplitude les plus faibles possible, nous parlons alors de marées de mortes eaux.
+
+> [!warning] 4.7. Analyse du mouvement du pendule de Foucault : page 215
+> Voici quelques points qui nécessite une clarification :
+> - $\ddot{z} \approx 0$ parce que à petits oscillations la pendule oscille dans le plan x-y donc on peut négliger la composante verticale de l'accélération.
+> - Pour expliquer les expressions de $T_x$, $T_y$ et $T_z$, il faut se rendre à la [[#^figure2]] : d'après la figure, $T_x = -T\sin\theta\sin\alpha$, $T_y = -T\sin\theta\cos\alpha$, $T_z = T\cos\theta$, $\sin\theta = \frac{\sqrt{x^{2} + y^{2}}}{l}$, $\cos\alpha = \frac{y}{\sqrt{x^{2} + y^{2}}}$ et $\sin\alpha = \frac{x}{\sqrt{x^{2} + y^{2}}}$; on sait en tenant compte du point précédent que $T_z \approx mg$ or à petits oscillations, $T_z \approx T \approx mg$ donc $T_x \approx -\frac{mg}{l}x$ et $T_y \approx -\frac{mg}{l}y$. 
