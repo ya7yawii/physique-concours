@@ -35,8 +35,7 @@
               "title": "09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -196,15 +195,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2ddfe295259736c2",
+  "active": "87236b2e27d7de94",
   "lastOpenFiles": [
+    "mecanique/01-Cinématique.md",
+    "mecanique/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
+    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
+    "mecanique/08-Changements de référentiels. Mécanique non galiléenne.md",
     "mecanique/attachments/figure81.png",
     "mecanique/attachments/figure80.png",
     "mecanique/attachments/figure79.png",
     "mecanique/attachments/figure78.png",
-    "mecanique/08-Changements de référentiels. Mécanique non galiléenne.md",
-    "mecanique/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
-    "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
     "mecanique/attachments/figure77.png",
     "mecanique/attachments/figure76.png",
     "mecanique/attachments/figure75.png",
@@ -214,9 +214,7 @@
     "mecanique/04-Mouvement libre d'un oscillateur harmonique.md",
     "mecanique/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique/06-Théorème du moment cinétique.md",
-    "mecanique/01-Cinématique.md",
     "mecanique/03-Puissance et énergie en référentiel galiléen.md",
-    "mecanique/attachments/figure71.png",
     "mecanique/02-Dynamique du point matériel.md",
     "mecanique/00-Mécanique.md",
     "mecanique/10-Système de deux points matériels.md",
