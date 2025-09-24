@@ -11,6 +11,33 @@ crée: 24-09-2025, 11:01
 > Ils peuvent aussi être décrits par la position de leur barycentre et leur position relative : $\displaystyle \overrightarrow{r_G} = \frac{m_1\overrightarrow{r_1} + m_2\overrightarrow{r_2}}{m_1 + m_2}$ et $\overrightarrow{r} = \overrightarrow{r_2} - \overrightarrow{r_1} = \overrightarrow{M_1M_2}$ ;
 > leur position barycentrique se déduit de leur position relative par simple homothétie : $\displaystyle \overrightarrow{r_1}^{*} = \frac{-m_2}{m_1 + m_2}\overrightarrow{r}$ et $\displaystyle \overrightarrow{r_2}^{*} = \frac{m_1}{m_1 + m_2}\overrightarrow{r}$.
 
+Quantité de mouvement (ou résultante cinétique) : $\overrightarrow{p} = M\overrightarrow{v_G}$ avec $M = m_1 + m_2$.
+
+Moment cinétique en un point O : $\overrightarrow{L_O} = m_1\overrightarrow{OM_1} \wedge \overrightarrow{v_1} + m_2\overrightarrow{OM_2} \wedge \overrightarrow{v_2} = \overrightarrow{r_1} \wedge \overrightarrow{p_1} + \overrightarrow{r_2} \wedge \overrightarrow{p_2}$
+
+Moment cinétique par rapport à un axe $\Delta = (O, \overrightarrow{e_{\Delta}})$ : $L_{\Delta} = \overrightarrow{L_O} . \overrightarrow{e_{\Delta}}$
+
+Composition du moment cinétique : $\overrightarrow{L_{O'}} = \overrightarrow{L_O} + \overrightarrow{p} \wedge \overrightarrow{OO'}$.
+
+Énergie cinétique : $\mathcal{E}_K = \frac{1}{2}m_1v_{1}^{2} + \frac{1}{2}m_2v_{2}^{2}$.
+
+Champs de vitesse d’entraînement dans le référentiel barycentrique $\mathcal{R}^*$ : $\overrightarrow{v_e}^*(M) = \overrightarrow{v_G}$.
+
+Champs d'accélération d’entraînement dans $\mathcal{R}^*$ : $\overrightarrow{a_e}^*(M) = \overrightarrow{a_G}$.
+
+> [!warning]
+> il n’y a pas d’accélération de Coriolis dans le référentiel barycentrique $\mathcal{R}^*$.
+
+Moment cinétique barycentrique : $\overrightarrow{L_O}^* = \overrightarrow{L_{O'}}^* = \overrightarrow{L}^*$, le même en tout point de $\mathcal{R}^*$.
+
+> [!note] Mobile fictif d’un système à deux corps dans $\mathcal{R}^*$
+> Le moment cinétique et l’énergie cinétique barycentriques du système de deux points matériels (de masse $m_1$ et $m_2$) s’identifient à ceux qu’aurait le mobile fictif M en mouvement dans le référentiel barycentrique : $\overrightarrow{L}^* = \mu\overrightarrow{r} \wedge \dot{\overrightarrow{r}}$ et $\mathcal{E}_{K}^{*} = \frac{1}{2}\mu\dot{\overrightarrow{r}}^{2}$ avec $\overrightarrow{r} = \overrightarrow{GM}$ et la masse réduite $\mu = \frac{m_1m_2}{m_1 + m_2}$.
+
+> [!note] Théorèmes de Kœnig
+> 1. Le moment cinétique du système au point G est égal à son moment cinétique barycentrique : $\overrightarrow{L_G} = \overrightarrow{L}^*$.
+> 2. Premier théorème de Kœnig : Le moment cinétique en O du système S de masse M est la somme du moment cinétique barycentrique et du moment cinétique en O du point G affecté de toute la masse : $\overrightarrow{L_O} = \overrightarrow{L}^* + \overrightarrow{OG} \wedge M\overrightarrow{v_G}$.
+> 3. 
+
 
 # Définitions
 ==**Cinématique d’un système constitué de deux points matériels**== :
@@ -18,6 +45,11 @@ Décrite en terme de position barycentrique $\overrightarrow{r_G}$ et position r
 - une translation d’ensemble associée au mouvement du point G ;
 - une évolution de l’orientation de la position relative $\overrightarrow{r}$ : le système tourbillonne autour de son barycentre ;
 - une évolution de la distance $r = \left\Vert\overrightarrow{r}\right\Vert$ : le système peut se dilater (ou se contracter).
+
+==**Référentiel barycentrique (ou référentiel du centre de masse)**== :
+$\mathcal{R}$ étant le référentiel d’étude (souvent galiléen (ou approximativement...)), le référentiel barycentrique $\mathcal{R}^*$ est le référentiel en translation à vitesse $\overrightarrow{v_G}$ par rapport à $\mathcal{R}$ dans lequel la résultante cinétique du système est nulle : $\overrightarrow{p}_{/\mathcal{R}^*} = \overrightarrow{p}^* = \overrightarrow{0}$, autrement dit le point G est fixe dans le référentiel barycentrique. Il faut noter que le mouvement de translation de $\mathcal{R}^*$ par rapport à $\mathcal{R}$ n’est pas nécessairement rectiligne uniforme.
+
+
 # Diagrammes
 
 # Graphiques
