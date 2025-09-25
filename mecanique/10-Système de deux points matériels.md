@@ -35,8 +35,28 @@ Moment cinétique barycentrique : $\overrightarrow{L_O}^* = \overrightarrow{L_{O
 
 > [!note] Théorèmes de Kœnig
 > 1. Le moment cinétique du système au point G est égal à son moment cinétique barycentrique : $\overrightarrow{L_G} = \overrightarrow{L}^*$.
-> 2. Premier théorème de Kœnig : Le moment cinétique en O du système S de masse M est la somme du moment cinétique barycentrique et du moment cinétique en O du point G affecté de toute la masse : $\overrightarrow{L_O} = \overrightarrow{L}^* + \overrightarrow{OG} \wedge M\overrightarrow{v_G}$.
-> 3. 
+> 2. Premier théorème de Kœnig : le moment cinétique en O du système S de masse M est la somme du moment cinétique barycentrique et du moment cinétique en O du point G affecté de toute la masse : $\overrightarrow{L_O} = \overrightarrow{L}^* + \overrightarrow{OG} \wedge M\overrightarrow{v_G}$.
+> 3. Second théorème de Kœnig : l’énergie cinétique du système S est la somme de son énergie cinétique barycentrique et de l’énergie cinétique du point G affecté de toute la masse : $\mathcal{E}_K = \mathcal{E}_{K}^{*} + \frac{1}{2}Mv_{G}^{2}$.
+
+Résultante des actions extérieures : $\displaystyle \overrightarrow{R} = \sum_{i} \overrightarrow{F}_{ext \rightarrow M_i} = \overrightarrow{R_{ext}} \quad (\overrightarrow{R_{int}} = \overrightarrow{0})$.
+Moment des actions extérieures : $\displaystyle \overrightarrow{\mathcal{M}_O} = \sum_{i} \overrightarrow{OM_i} \wedge \overrightarrow{F}_{ext \rightarrow M_i} = \overrightarrow{\mathcal{M}_{ext \, O}} \quad (\overrightarrow{\mathcal{M}_{int \, O}} = \overrightarrow{0})$.
+Loi de composition des moments : $\overrightarrow{\mathcal{M}_{O'}} = \overrightarrow{\mathcal{M}_O} + \overrightarrow{R} \wedge \overrightarrow{OO'}$.
+
+> [!note] Cas des forces de pesanteur
+> L’action de la pesanteur sur un système est équivalente à une force égale au poids total et appliquée au barycentre : le poids total est $\overrightarrow{P} = M \overrightarrow{g}$, le moment résultant en O des forces de pesanteur est $\overrightarrow{\mathcal{M}_O} = \overrightarrow{OG} \wedge \overrightarrow{P}$.
+> Affirmer que « le poids s’applique en G » est un abus de langage, car le poids est une force répartie.
+> Cette propriété n’est vraie que parce que le champ de pesanteur $\overrightarrow{g}$ est uniforme. Il faut bien se garder d’appliquer systématiquement en G toutes les forces réparties.
+
+Théorème de la résultante cinétique (ou quantité de mouvement) : $\dfrac{d\overrightarrow{p}}{dt} = M\dfrac{d\overrightarrow{v_G}}{dt} = \overrightarrow{R_{ext}}$.
+
+Théorème du moment cinétique en un point O fixe : $\dfrac{d\overrightarrow{L_O}}{dt} = \overrightarrow{\mathcal{M}}_{O_{ext}}$.
+
+> [!note] Théorème du moment cinétique barycentrique
+> $\dfrac{d\overrightarrow{L}^*}{dt} = \overrightarrow{\mathcal{M}}_{G_{ext}}$, nous pouvons lire ce résultat de deux façons qui sont assez surprenantes :
+> - nous pouvons appliquer le théorème du moment cinétique dans le référentiel galiléen $\mathcal{R}$, comme si le point G était fixe... ce qui n’est pourtant pas le cas en général !
+> - dans le référentiel barycentrique $\mathcal{R}^*$, le théorème du moment cinétique s’applique au point fixe G, comme si $\mathcal{R}^*$ était galiléen... ce qui n’est pourtant pas le cas en général !
+
+Théorème scalaire du moment cinétique : $\dfrac{d\overrightarrow{L_{\Delta}}}{dt} = \overrightarrow{\mathcal{M}}_{\Delta_{ext}}$.
 
 
 # Définitions
@@ -58,3 +78,8 @@ Barycentre, positions barycentriques :
 # Expériences
 
 # Autres notes
+> [!warning] Application 3 page 235 : Machine d'Atwood
+> Expliquer pourquoi $\dot{z_1} + \dot{z_2} = 0$ à partir de la figure suivante :
+> ![[figure83.png]]
+> On $d_1 + d_2 + d_0 = l$ avec $d_0$ est la longueur de la partie de fil tangente au poulie et l la longueur totale du fil. Or $z_1 - z_0 = d_1$ et $z_2 - z_0 = d_2$ donc $z_1 + z_2 = d_1 + d_2 + 2z_0$ et enfin $z_1 + z_2 = l - d_0 + 2z_0 = cte$ ce qui répond à notre question.
+

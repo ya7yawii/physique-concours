@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique/01-Cinématique.md",
+                "file": "mecanique/08-Changements de référentiels. Mécanique non galiléenne.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-Cinématique"
+              "title": "08-Changements de référentiels. Mécanique non galiléenne"
             }
           },
           {
@@ -198,11 +198,12 @@
   },
   "active": "6ce7e4e06cf6a3ca",
   "lastOpenFiles": [
+    "mecanique/attachments/figure83.png",
+    "mecanique/08-Changements de référentiels. Mécanique non galiléenne.md",
     "mecanique/01-Cinématique.md",
+    "mecanique/10-Système de deux points matériels.md",
     "mecanique/00-Mécanique.md",
     "mecanique/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
-    "mecanique/10-Système de deux points matériels.md",
-    "mecanique/08-Changements de référentiels. Mécanique non galiléenne.md",
     "mecanique/07-Force centrale conservative. Mouvement newtonien.md",
     "mecanique/06-Théorème du moment cinétique.md",
     "mecanique/05-Réponse d'un oscillateur à une excitation.md",
