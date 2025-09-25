@@ -58,6 +58,14 @@ Théorème du moment cinétique en un point O fixe : $\dfrac{d\overrightarrow{L_
 
 Théorème scalaire du moment cinétique : $\dfrac{d\overrightarrow{L_{\Delta}}}{dt} = \overrightarrow{\mathcal{M}}_{\Delta_{ext}}$.
 
+> [!note] Cas d’un référentiel non galiléen
+> Dans un référentiel non galiléen, les résultats précédents sont applicables, à condition de comptabiliser les forces d’inertie agissant sur les points matériels comme des forces extérieures supplémentaires.
+
+> [!note] Lois de conservation
+> Si le système de points matériels est isolé, la résultante et le moment des actions extérieures sont nuls.
+> Dans ces conditions, la quantité de mouvement totale $\overrightarrow{p} = M\overrightarrow{v_G}$ et le moment cinétique barycentrique $\overrightarrow{L}^*$  sont des constantes du mouvement.
+> Le moment cinétique $\overrightarrow{L_O}$ en un point fixe du référentiel galiléen est lui aussi conservé.
+
 
 # Définitions
 ==**Cinématique d’un système constitué de deux points matériels**== :
@@ -69,7 +77,9 @@ Décrite en terme de position barycentrique $\overrightarrow{r_G}$ et position r
 ==**Référentiel barycentrique (ou référentiel du centre de masse)**== :
 $\mathcal{R}$ étant le référentiel d’étude (souvent galiléen (ou approximativement...)), le référentiel barycentrique $\mathcal{R}^*$ est le référentiel en translation à vitesse $\overrightarrow{v_G}$ par rapport à $\mathcal{R}$ dans lequel la résultante cinétique du système est nulle : $\overrightarrow{p}_{/\mathcal{R}^*} = \overrightarrow{p}^* = \overrightarrow{0}$, autrement dit le point G est fixe dans le référentiel barycentrique. Il faut noter que le mouvement de translation de $\mathcal{R}^*$ par rapport à $\mathcal{R}$ n’est pas nécessairement rectiligne uniforme.
 
-
+==**Système isolé ou pseudo-isolé**== :
+Le système de points matériels est isolé si chacun de ses éléments n’est soumis à aucune force extérieure.
+C’est un cas théoriquement inaccessible à l’expérience (il est, par exemple, impossible d’éliminer les forces de gravitation). Il est moins irréaliste d’envisager un système pseudo-isolé tel que les forces extérieures s’annulent pour chacun de ses éléments.
 # Diagrammes
 
 # Graphiques
@@ -82,4 +92,9 @@ Barycentre, positions barycentriques :
 > Expliquer pourquoi $\dot{z_1} + \dot{z_2} = 0$ à partir de la figure suivante :
 > ![[figure83.png]]
 > On $d_1 + d_2 + d_0 = l$ avec $d_0$ est la longueur de la partie de fil tangente au poulie et l la longueur totale du fil. Or $z_1 - z_0 = d_1$ et $z_2 - z_0 = d_2$ donc $z_1 + z_2 = d_1 + d_2 + 2z_0$ et enfin $z_1 + z_2 = l - d_0 + 2z_0 = cte$ ce qui répond à notre question.
+
+> [!warning] Application 4 page 236 : Glissades
+> Expliquer comment trouver les expressions des $x_{2}^*$, $y_{2}^*$, $x_{2}$ et $y_{2}$ :
+> On a $\dot{\theta} = \frac{v_0}{l} \Rightarrow \theta = \frac{v_0}{l}t + \frac{\pi}{2}$ or $x_{2}^* = -\frac{l}{2}\sin\theta$ et $y_{2}^* = -\frac{l}{2}\cos\theta$ alors $x_{2}^* = -\frac{l}{2}\cos\left(\frac{v_0 t}{l}\right)$ et $y_{2}^* = \frac{l}{2}\sin\left(\frac{v_0 t}{l}\right)$.
+> Les expressions de $x_{2}$ et $y_{2}$ se déduisent de faite que $x_{2} = x_{2}^* + x_G$ et $y_{2} = y_{2}^* + y_G$.
 
