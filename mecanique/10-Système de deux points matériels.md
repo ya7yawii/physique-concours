@@ -66,6 +66,22 @@ Théorème scalaire du moment cinétique : $\dfrac{d\overrightarrow{L_{\Delta}}}
 > Dans ces conditions, la quantité de mouvement totale $\overrightarrow{p} = M\overrightarrow{v_G}$ et le moment cinétique barycentrique $\overrightarrow{L}^*$  sont des constantes du mouvement.
 > Le moment cinétique $\overrightarrow{L_O}$ en un point fixe du référentiel galiléen est lui aussi conservé.
 
+> [!note] Puissance des forces intérieures
+> La puissance des forces intérieures au système est : $\mathcal{P} = F_{1 \rightarrow 2}\dfrac{dr}{dt}$ en notant $\overrightarrow{M_1M_2} = r\overrightarrow{e_r}$ et $\overrightarrow{F_{1 \rightarrow 2}} = F_{1 \rightarrow 2}\overrightarrow{e_r}$. Nous savons que la résultante et le moment des actions intérieures sont nuls, mais la puissance des forces intérieures est en général non nulle si le système est déformable. En revanche, elle l’est pour un système rigide : $r = cte$.
+> La puissance des forces intérieures au système ne dépend pas du référentiel.
+
+> [!note] Théorèmes de la puissance et de l’énergie cinétique
+> - Pour le système de points matériels, le théorème de la puissance cinétique s’écrit : $\dfrac{d\mathcal{E}_K}{dt} = \mathcal{P}_{ext} + \mathcal{P}_{int}$. Le travail des forces extérieures dépend, comme l’énergie cinétique, du référentiel. Pour un système rigide, on a $\mathcal{P}_{int} = 0$.
+> - Le théorème de l’énergie cinétique s’écrit $\Delta\mathcal{E}_K = \mathcal{T}_{ext} + \mathcal{T}_{int}$ et fait intervenir le travail de toutes les forces entre l’état initial et l’état final du système. Comme la puissance, le travail des forces intérieures est indépendant du référentiel. Il est nul pour un système rigide.
+
+> [!note] Énergie potentielle
+> Nous avons discuté au [[07-Force centrale conservative. Mouvement newtonien|chapitre 7]] le caractère conservatif d’une force centrale. De même ici, la force d’interaction entre les points $M_1$ et $M_2$ est conservative lorsque : $\overrightarrow{F_{1 \rightarrow 2}} = F_{1 \rightarrow 2}(r)\overrightarrow{e_r} = -\dfrac{d\mathcal{E}_{P_{int}}(r)}{dr}\overrightarrow{e_r}$.
+> L'énergie potentielle totale est $\mathcal{E}_P = \mathcal{E}_{P_{int}} + \mathcal{E}_{P_{ext}}$. Le travail de toutes les forces agissant sur le système s’écrit alors : $\mathcal{T} = -\Delta\mathcal{E}_P + \mathcal{T}_{NC}$ où $\mathcal{T}_{NC}$ désigne le travail des forces non conservatives, tant intérieures qu’extérieures (des forces de frottement visqueux, par exemple).
+
+> [!note] Énergie mécanique
+> L’énergie mécanique du système est la somme de son énergie cinétique et de son énergie potentielle : $\mathcal{E}_M = \mathcal{E}_K + \mathcal{E}_P = \mathcal{E}_K \mathcal{E}_{P_{int}} + \mathcal{E}_{P_{ext}}$.
+> Le théorème de l’énergie s’écrit alors : $\Delta\mathcal{E}_M = \mathcal{T}_{NC}$. Pour un système conservatif, l’énergie mécanique est une constante du mouvement. Donc l’équation $\mathcal{E}_M = cte$, appelée intégrale première de l’énergie, peut alors être utilisée pour obtenir l’évolution du système s’il possède un unique degré de liberté.
+
 
 # Définitions
 ==**Cinématique d’un système constitué de deux points matériels**== :
