@@ -96,11 +96,23 @@ Théorème scalaire du moment cinétique : $\dfrac{d\overrightarrow{L_{\Delta}}}
 > [!note] Intervention d'un champ de force extérieur
 > Nous sommes ici dans le cas de l'intervention d'(au moins) un troisième corps qui vient perturber le système à deux corps auquel nous nous étions limités.
 > La simplicité de la résolution du problème à deux corps vient du découplage des mouvements d'ensemble (barycentre) et relatif (mobile fictif). Mais le problème se complique dès qu'intervient (au moins) un troisième corps : on ne peut plus découpler les équations du mouvement par un changement de variable adéquat. On peut alors faire appel à des méthodes numériques, ou envisager des solutions approchées lorsque l'influence du troisième corps intervient sous la forme d'une petite perturbation de l'évolution du système binaire.
-> Nous nous limiterons, dans ce que suit, à discuter de façon élémentaire l'influence d'un champ de gravitation extérieur
-
-
-
-> Lorsque le système est soumis à un champ de gravitation externe uniforme, le mouvement du barycentre G est un mouvement de chute libre dans ce champ de gravitation, tandis que le mouvement relatif n'est pas affecté par le champ extérieur.
+> Nous prenons comme exemple, l'influence d'un champ de gravitation extérieur uniforme :
+> Notons $\overrightarrow{\mathcal{G}}(M_1) = \overrightarrow{\mathcal{G}}(M_2) = \overrightarrow{\mathcal{G}_0}$ le champ uniforme, les équations d'évolution sont ici :
+> $$
+> \begin{cases}
+> m_1\dfrac{d^{2}\overrightarrow{r_1}}{dt^{2}} = \overrightarrow{F}_{ext \rightarrow 1} + \overrightarrow{F}_{2 \rightarrow 1} = m_1\overrightarrow{\mathcal{G}_0} + \overrightarrow{F}_{2 \rightarrow 1}\\
+> m_2\dfrac{d^{2}\overrightarrow{r_2}}{dt^{2}} = \overrightarrow{F}_{ext \rightarrow 2} + \overrightarrow{F}_{1 \rightarrow 2} = m_2\overrightarrow{\mathcal{G}_0} + \overrightarrow{F}_{1 \rightarrow 2}
+> \end{cases}
+> $$
+> La somme de ces équations nous donne le mouvement du barycentre : $M\dfrac{d\overrightarrow{v_G}}{dt} = \overrightarrow{R}_{ext} = M\overrightarrow{\mathcal{G}_0}$. Le mouvement du barycentre est donc un mouvement accéléré ($\mathcal{R}^*$ n'est plus galiléen) correspondant à une chute libre dans le champ de gravitation extérieur.
+> Faisons maintenant apparaître l'évolution du mobile fictif :
+> $$
+> \begin{align*}
+> \dfrac{d^{2}\overrightarrow{r}}{dt^{2}} &= \frac{\overrightarrow{F}_{ext \rightarrow 2}}{m_2} - \frac{\overrightarrow{F}_{ext \rightarrow 1}}{m_1} + \frac{1}{m}\overrightarrow{F}_{1 \rightarrow 2}\\
+> &= \frac{m_2\overrightarrow{\mathcal{G}_0}}{m_2} - \frac{m_1\overrightarrow{\mathcal{G}_0}}{m_1} + \frac{1}{m}\overrightarrow{F}_{1 \rightarrow 2} = \frac{1}{m}\overrightarrow{F}_{1 \rightarrow 2}
+> \end{align*}
+> $$
+> Le champ de gravitation uniforme est donc sans influence sur le mouvement relatif : nous sommes ramenés à l'étude du mouvement du mobile fictif, comme si le système était isolé.
 # Définitions
 ==**Cinématique d'un système constitué de deux points matériels**== :
 Décrite en terme de position barycentrique $\overrightarrow{r_G}$ et position relative $\overrightarrow{r}$ la cinématique du système fait apparaître :
