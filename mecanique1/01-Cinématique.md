@@ -86,12 +86,12 @@ La trajectoire de phase est constituée par l'ensemble des des positions success
 > [!note]
 > Une trajectoire de phase fermée est la signature d'un mouvement périodique (elle est décrite en tournant dans le sens des aiguilles d'une montre).
 # Diagrammes
-![[figure1.png]]
+![[mecanique1/attachments-mecanique1/figure1.png]]
 > [!note]
 > Pratiquement, retenons qu'une base orthonormée est directe s'il est possible de superposer les vecteurs $e_{1}$ , $e_{2}$ et $e_{3}$ respectivement au pouce, à l'index et au majeur de la main droite.
 # Graphiques
 Coordonnées cylindriques :
-![[figure2.png]] ^figure2
+![[mecanique1/attachments-mecanique1/figure2.png]] ^figure2
 
 Coordonnées sphériques :
 ![[figure3.png]]^figure3

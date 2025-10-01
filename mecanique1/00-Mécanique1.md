@@ -7,7 +7,7 @@ auteurs: Jean-Marie BRÉBEC, Thierry DESMARAIS, Marc MÉNÉTRIER, Bruno NOËL, R
 classe: 1re année MPSI-PCSI-PTSI
 crée: 08-08-2025, 16:56
 ---
-# Mécanique
+# Mécanique 1
 
 ## Sommaire
 1. [[01-Cinématique]]
