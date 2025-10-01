@@ -1,7 +1,10 @@
 ---
 titre: "[[01-Le centre de masse des systèmes matériels]]"
 tags:
-aliases:
+  - système
+  - centre
+  - guldin
+  - symétrie
 crée: 01-10-2025, 10:14
 ---
 # Formules
@@ -32,7 +35,9 @@ Coordonnées du centre de masse : $\overrightarrow{OG} = x_G\overrightarrow{e_x}
 > La masse totale s’exprime alors par : $M = \iiint_{V} d m$ et le centre de masse G est défini par : $\displaystyle \overrightarrow{OG} = \frac{1}{M} \iiint_{V} \overrightarrow{OP} d m = \frac{1}{M} \iiint_{V} \rho(P)\overrightarrow{OP} d V$.
 > De même, les coordonnées de G s’obtiennent en projetant cette expression vectorielle sur une base cartésienne telle que les coordonnées du point P soient $(x, y, z)$ : $x_G = \frac{1}{M} \iiint_{V} \rho(P)x d V$, $y_G = \frac{1}{M} \iiint_{V} \rho(P)y d V$ et $z_G = \frac{1}{M} \iiint_{V} \rho(P)z d V$.
 
-
+> [!note] Théorèmes de Guldin
+> - Premier théorème de Guldin : Soit $(\mathscr{C})$ une courbe plane, de masse linéique $\lambda$ uniforme, de longueur L, de centre de masse G ([[#^figure3]]). Soit $\Delta$ un axe ==ne coupant pas== $(\mathscr{C})$. La rotation de $(\mathscr{C})$ autour de $\Delta$ engendre une surface $(\Sigma)$ d’aire S. Alors la distance d de G à l’axe $\Delta$ est $d = \frac{S}{2\pi L}$.
+> - Second théorème de Guldin : Soit $(\mathscr{S})$ une surface plane, de masse surfacique $\sigma$ uniforme, d’aire S, de centre de masse G ([[#^figure4]]). Soit $\Delta$ un axe ne coupant pas $(\mathscr{S})$. La rotation de $(\mathscr{S})$ autour de $\Delta$ engendre un volume V. Alors la distance d de G à l'axe $\Delta$ est $d = \frac{V}{2\pi S}$.
 # Définitions
 > [!warning]
 > Dans un référentiel galiléen, le centre de masse d’un système isolé a un mouvement rectiligne et uniforme, alors que ce n’est généralement pas le cas d’un point quelconque du système.
@@ -48,10 +53,50 @@ La masse est une grandeur physique qui, en physique newtonienne, a les propriét
 Le point matériel est le système physique le plus simple, c’est-à-dire celui dont l’état complet est décrit avec le plus petit nombre de paramètres. Ce nombre se réduit à trois variables réelles, les trois coordonnées de position dans l’espace ($(x, y, z)$ dans une base cartésienne ou $(r, θ, z)$ dans une base cylindrique par exemple).
 Il ne faut pas confondre un point matériel avec un système ponctuel. Ce dernier peut posséder d’autres paramètres d’état qui en font un système plus complexe qu’un point matériel.
 Par exemple, un dipôle électrostatique ponctuel possède, en plus de sa position et de sa masse, un vecteur moment dipolaire électrique. L’état complet du dipôle nécessite de connaître l’orientation de son moment dipolaire.
+
+==**Enveloppe convexe (ou minimale) d’un système de points**== :
+- Dans le cas d’un système plan, l’enveloppe minimale du système est la courbe de plus petite longueur contenant tous les points ([[#^figure5]]).
+- Dans le cas d’un système à trois dimensions, l’enveloppe minimale est la surface de plus petite aire contenant tous les points.
+Le centre de masse G d’un système matériel $(S)$ se trouve à l’intérieur de l’enveloppe minimale de $(S)$.
+On montre mathématiquement que cette enveloppe est convexe, c’est-à-dire qu’elle contient tous les points du segment reliant deux points quelconques à l’intérieur de l’enveloppe.
+
+==**Invariance d’un système**== :
+on dit que le système $(S)$ est invariant par une transformation T si pour tout point M de $(S)$ d’image $M' = T[M]$, $\rho(M') = \rho(M)$.
+**Autrement dit, on ne peut pas distinguer le système après la transformation du système avant l’opération.**
+La transformation T laissant le système $(S)$ invariant est aussi appelée ==**symétrie**== du système $(S)$.
+Couramment, les symétries des systèmes matériels sont constituées par, outre l’élément neutre, les opérations suivantes :
+- les translations ;
+- les rotations ;
+- les symétries planes (opération miroir) et ponctuelles (inversion).
+
+> [!warning]
+> Il ne faut pas confondre « élément de symétrie » (un point, une droite ou un plan) d’un système et les opérations « symétrie ponctuelle » ou « symétrie plane ».
+> L’ensemble des symétries d’un système forme un groupe. L’opération identité, qui correspond à une symétrie pour tous les systèmes, constitue l’élément neutre du groupe de symétrie d’un système.
+
+==**Points invariants**== :
+un point P d’un système $(S)$ est dit invariant par une transformation T si $P = T[P]$.
+Exemples :
+- l’opération identité : tous les points sont invariants ;
+- les translations : aucun point n’est invariant ;
+- les rotations : l’ensemble des points invariants constitue l’axe de rotation ;
+- les symétries planes (opération miroir) : l’ensemble des points invariants constitue le plan de symétrie ;
+- les symétries ponctuelles (inversion) : le point invariant est le point de symétrie.
+**Il s’agit de déterminer les invariances de $\rho(P)$ par ces transformations.**
+
+> [!note] Symétries et centre de masse
+> Le centre de masse G d’un système matériel $(S)$ est un point invariant des opérations de symétrie du système.
+> En d’autres termes, si le système $(S)$ possède une symétrie T, son centre de masse est invariant par cette transformation : $T[G] = G$.
+> Le centre de masse est un des points du système invariant par l’ensemble des éléments de symétrie du système. Si on peut montrer que les symétries ne préservent qu’un seul point, le centre de masse est alors entièrement déterminé, et l’on évite ainsi de longs calculs.
 # Diagrammes
 ![[mecanique2/attachments-mecanique2/figure1.png]]^figure1
 
 ![[mecanique2/attachments-mecanique2/figure2.png]]^figure2
+
+![[mecanique2/attachments-mecanique2/figure3.png]]^figure3
+
+![[mecanique2/attachments-mecanique2/figure4.png]]^figure4
+
+![[mecanique2/attachments-mecanique2/figure5.png]]^figure5
 # Graphiques
 
 # Expériences

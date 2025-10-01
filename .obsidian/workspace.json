@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:thème/xyz",
+                "query": "tag:barycentre",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -198,9 +198,12 @@
   },
   "active": "0689a4e8a343f207",
   "lastOpenFiles": [
-    "mecanique2/attachments-mecanique2/figure2.png",
     "mecanique1/01-Cinématique.md",
     "mecanique2/01-Le centre de masse des systèmes matériels.md",
+    "mecanique2/attachments-mecanique2/figure4.png",
+    "mecanique2/attachments-mecanique2/figure5.png",
+    "mecanique2/attachments-mecanique2/figure3.png",
+    "mecanique2/attachments-mecanique2/figure2.png",
     "mecanique2/attachments-mecanique2/figure1.png",
     "mecanique2/00-Mécanique2.md",
     "mecanique1/00-Mécanique1.md",
@@ -221,10 +224,6 @@
     "mecanique1/attachments-mecanique1/figure82.png",
     "mecanique1/attachments-mecanique1/figure81.png",
     "mecanique1/attachments-mecanique1/figure80.png",
-    "mecanique1/attachments-mecanique1/figure79.png",
-    "mecanique1/attachments-mecanique1/figure78.png",
-    "mecanique1/attachments-mecanique1/figure77.png",
-    "mecanique1/attachments-mecanique1/figure76.png",
     "().md",
     "templates/chapitre.md",
     "templates/livre.md",

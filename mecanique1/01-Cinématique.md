@@ -27,7 +27,7 @@ crée: 08-08-2025, 17:08
 > [!note]
 > La dérivée d'un vecteur de norme constante est orthogonale à ce vecteur ou nulle. C'est le cas des vecteurs unitaires.
 
-En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\theta$ : $\left(\dfrac{d\overrightarrow{e_r}}{d\theta}\right)_{\hspace{-0.5em}/\mathcal{R}} = \overrightarrow{e_\theta}$ et $\left(\dfrac{d\overrightarrow{e_\theta}}{d\theta}\right)_{\hspace{-0.5em}/\mathcal{R}} = -\overrightarrow{e_r}$
+En coordonnées cylindriques, les vecteurs de la base locale dépendent de $\theta$ : $\displaystyle \left(\dfrac{d\overrightarrow{e_r}}{d\theta}\right)_{\hspace{-0.5em}/\mathcal{R}} = \overrightarrow{e_\theta}$ et $\left(\dfrac{d\overrightarrow{e_\theta}}{d\theta}\right)_{\hspace{-0.5em}/\mathcal{R}} = -\overrightarrow{e_r}$
 
 **Vecteur vitesse en coordonnées cartésiennes** : $\overrightarrow{v}(M)_{\mathcal{R}} = \dot{x}\overrightarrow{e_{x}} + \dot{y}\overrightarrow{e_{y}} + \dot{z}\overrightarrow{e_{z}}$
 
@@ -94,13 +94,13 @@ Coordonnées cylindriques :
 ![[mecanique1/attachments-mecanique1/figure2.png]] ^figure2
 
 Coordonnées sphériques :
-![[figure3.png]]^figure3
+![[mecanique1/attachments-mecanique1/figure3.png]]^figure3
 
 Trajectoire dans l'espace des positions :
-![[figure4.png]]^figure4
+![[mecanique1/attachments-mecanique1/figure4.png]]^figure4
 
 Hodographe dans l'espace des vitesses $\overrightarrow{ON}_{i} = \overrightarrow{v}_{i}$ :
-![[figure5.png]]^figure5
+![[mecanique1/attachments-mecanique1/figure5.png]]^figure5
 
 Orientation des trajectoires dans le plan de phase :
 ![[figure6.png]]^figure6
