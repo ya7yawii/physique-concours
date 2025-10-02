@@ -118,5 +118,11 @@ Exemples :
 > Le seul point invariant est le centre du cube.
 > - Le cylindre est invariant par toute rotation autour de l'axe de révolution ainsi que par la symétrie plane par rapport au plan qui le coupe en deux parties égales. On en déduit que le centre de masse est l'intersection de l'axe de révolution et de ce plan.
 
-> [!warning]
+> [!warning] Méthodes pour la détermination de la position du centre de masse
+> 1. Méthode utilisant les théorèmes de Guldin : voir la correction des questions 3 et 4 du section savoir appliquer le cours pages 20 et 21.
+> 2. Méthode de la masse négative : voir la correction de la question 5 du section savoir appliquer le cours page 21.
+> 3. Méthode intégrale : voir la correction de la question 6 de section savoir appliquer le cours pages 21 et 22. Consulter aussi l'exercice de la section savoir résoudre les exercices page 15.
 > Lorsque les symétries ne suffisent pas à déterminer entièrement la position du centre de masse, il faut utiliser la méthode intégrale.
+
+> [!warning] Qu'est-ce qu'une équation de l'hypoténuse dans la question savoir résoudre les exercices?
+> En fait, il s'agit de l'équation de la droite $y = -\frac{b}{a}x + b$ qui passe par l'hypoténuse. Alors pour retrouver la borne maximale de l'intégrale en x qui est en fonction de y, il suffit juste de remplacer x par $x_max$ dans l'équation de la droite.
