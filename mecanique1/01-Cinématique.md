@@ -103,25 +103,25 @@ Hodographe dans l'espace des vitesses $\overrightarrow{ON}_{i} = \overrightarrow
 ![[mecanique1/attachments-mecanique1/figure5.png]]^figure5
 
 Orientation des trajectoires dans le plan de phase :
-![[figure6.png]]^figure6
+![[mecanique1/attachments-mecanique1/figure6.png]]^figure6
 Dans le demi-plan de phase $v_{x} > 0$ , l'abscisse x augmente lorsque le temps t croît, et dans le demi-plan $v_{x} < 0$, celle-ci diminue. Ceci nous permet de prévoir une orientation qualitative simple des trajectoires de phase dans ces deux demi-plans.
 
 Trajectoires de phase pour des mouvements uniformément accélérés :
-![[figure7.png]]^figure7
+![[mecanique1/attachments-mecanique1/figure7.png]]^figure7
 Ces trajectoires de phase, qui  décrivent une branche de parabole, sont obtenues pour les conditions initiales suivantes : $x_{0} = 0$ et $v_{0} = 0$ dans le cas ➀, $v_{0} = 0$ mais $x_{0} > 0$ pour le cas ➁, $x_{0} > 0$ et $v_{0} > 0$ pour le cas ➂, et enfin $x_{0} < 0$ et $x_{0} < 0$ dans le cas ➃.
 
 Portrait de phase d'un oscillateur harmonique :
-![[figure8.png]]^figure8
+![[mecanique1/attachments-mecanique1/figure8.png]]^figure8
 # Expériences
 ## Etude d'un mouvement rectiligne
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf). 
 
-![[figure9.png]]
+![[mecanique1/attachments-mecanique1/figure9.png]]
 Il faut procéder comme suit :
 - faites coulisser la bande de papier à l'intérieur de l'enregistreur sous le marteau et attachez-la au chariot à l'aide du ruban adhésif ;
 - placez le chariot maintenu immobile prés de l'enregistreur ; mettez en marche l'enregistreur en le branchant à la source, puis lâchez le chariot (un étudiant du binôme doit se tenir prêt à recueillir le chariot en fin de parcours pour éviter sa chute). Le mouvement de chariot est ainsi enregistré ;
-- tracer d'abord le graphe x(t) de la position du mobile par rapport à la position initiale en fonction du temps ;![[figure10.png]]
+- tracer d'abord le graphe x(t) de la position du mobile par rapport à la position initiale en fonction du temps ;![[mecanique1/attachments-mecanique1/figure10.png]]
 - pour déterminer la vitesse en fonction du temps :
 	- soit mesurer la pente de la tangente au graphe x(t) à chaque instant;
 	- soit mesurer la vitesse moyenne $V_{m} = \Delta x / \Delta t$ sur un certain intervalle de temps, puis l'assimiler à la vitesse instantanée au centre de l'intervalle.

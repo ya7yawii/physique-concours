@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique1/01-Cinématique.md",
+                "file": "mecanique2/01-Le centre de masse des systèmes matériels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-Cinématique"
+              "title": "01-Le centre de masse des systèmes matériels"
             }
           },
           {
@@ -198,10 +198,15 @@
   },
   "active": "0689a4e8a343f207",
   "lastOpenFiles": [
+    "mecanique2/attachments-mecanique2/figure10.png",
+    "mecanique2/attachments-mecanique2/figure9.png",
+    "mecanique2/attachments-mecanique2/figure8.png",
+    "mecanique2/attachments-mecanique2/figure7.png",
+    "mecanique2/attachments-mecanique2/figure6.png",
+    "mecanique2/01-Le centre de masse des systèmes matériels.md",
     "mecanique1/01-Cinématique.md",
     "mecanique2/02-Cinématique du solide.md",
     "mecanique2/00-Mécanique2.md",
-    "mecanique2/01-Le centre de masse des systèmes matériels.md",
     "mecanique2/attachments-mecanique2/figure4.png",
     "mecanique2/attachments-mecanique2/figure5.png",
     "mecanique2/attachments-mecanique2/figure3.png",
@@ -218,13 +223,9 @@
     "mecanique1/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
     "Untitled.base",
     "mecanique1/attachments-mecanique1/figure84.png",
-    "mecanique1/attachments-mecanique1/figure83.png",
     "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
     "mecanique1/03-Puissance et énergie en référentiel galiléen.md",
     "mecanique1/02-Dynamique du point matériel.md",
-    "mecanique1/attachments-mecanique1/figure82.png",
-    "mecanique1/attachments-mecanique1/figure81.png",
-    "mecanique1/attachments-mecanique1/figure80.png",
     "().md",
     "templates/chapitre.md",
     "templates/livre.md",

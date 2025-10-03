@@ -125,4 +125,4 @@ Exemples :
 > Lorsque les symétries ne suffisent pas à déterminer entièrement la position du centre de masse, il faut utiliser la méthode intégrale.
 
 > [!warning] Qu'est-ce qu'une équation de l'hypoténuse dans la question savoir résoudre les exercices?
-> En fait, il s'agit de l'équation de la droite $y = -\frac{b}{a}x + b$ qui passe par l'hypoténuse. Alors pour retrouver la borne maximale de l'intégrale en x qui est en fonction de y, il suffit juste de remplacer x par $x_max$ dans l'équation de la droite.
+> En fait, il s'agit de l'équation de la droite $y = -\frac{b}{a}x + b$ qui passe par l'hypoténuse sous la forme symétrique (pour plus d'info sur les formes d'équation d'une droite voir ce [lien](https://www.alloprof.qc.ca/fr/eleves/bv/mathematiques/les-formes-d-equations-d-une-droite-m1320)). Alors pour retrouver la borne maximale de l'intégrale en x qui est en fonction de y, il suffit juste de remplacer x par $x_{max}$ dans l'équation de la droite.
