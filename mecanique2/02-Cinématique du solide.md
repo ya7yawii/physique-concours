@@ -103,6 +103,8 @@ Les questions posées dans le TP sont les suivantes :
 3. Mesurer les valeurs de R et L directement sur le système bielle manivelle dont vous disposez, et les remplacer dans l'expression de la question précédente.
 4. Sur le système bielle manivelle, faire varier $\beta$ de 0 à 360° avec un pas de 20°, relever à chaque fois la valeur de X théorique et compléter le tableau suivant : ![[mecanique2/attachments-mecanique2/figure14.png]]
 5. Tracer sur le même papier millimétré les deux courbes (théorique et expérimentale) de $X = f(\beta)$. Commenter.
-6. Si la manivelle (1) tourne à une vitesse $\overrightarrow{\Omega} = \dot{\beta}\hspace{0.3em}\overrightarrow{z}$, déterminer le torseur cinématique de la manivelle réduit au point C. $\{v_{1/0}\} = \overunderset{}{C}{\Bigg\lbrace}\begin{align*} \overrightarrow{\Omega}(S/R)\\ \overrightarrow{V}(C \in S/R) \end{align*}\Bigg\rbrace$
-7. 
+6. Si la manivelle (1) tourne à une vitesse $\overrightarrow{\Omega} = \dot{\beta}\hspace{0.3em}\overrightarrow{z}$, déterminer le torseur cinématique de la manivelle réduit au point C. $\{v_{1/0}\} = \prescript{}{C}{\left.\begin{cases} \overrightarrow{\Omega}(S/R)\\ \overrightarrow{V}(C \in S/R) \end{cases}\right\}}$. En déduire la vitesse linéaire du point B : $(\overrightarrow{V}_{B \in 1/0})$.
+7. Déterminer l'expression de la vitesse linéaire $(\overrightarrow{V}_{A \in 2/0})$.
+8. Pour $\dot{\beta} = 2\pi \, rad/s$, compléter le tableau suivant par les valeurs théoriques de $\overrightarrow{V}_{A \in 3/0}$. ![[mecanique2/attachments-mecanique2/figure15.png]]
+9. Comparer ce système à celui du système à coulisse.
 # Autres notes

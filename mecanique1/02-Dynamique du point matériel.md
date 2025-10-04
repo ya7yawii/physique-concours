@@ -109,7 +109,7 @@ Sens de parcours sur la trajectoire de phase :
 > Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf).
 
 ### Détermination de g à partir de la période du pendule simple
-![[figure15.png]]
+![[mecanique1/attachments-mecanique1/figure15.png]]
 Il faut procéder comme suit :
 - Écarter le pendule simple de sa position d'équilibre (quelques degrés).
 - A l'aide du chronomètre, déterminer la durée $t_1$ de 20 oscillations pour longueur du fil $l_1 = 100 \ cm$.
