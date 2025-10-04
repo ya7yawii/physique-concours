@@ -132,10 +132,10 @@ Il faut procéder comme suit :
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve [en ligne](https://fr.scribd.com/document/323990738/Polycopie-TP-Mecanique). 
 
-![[figure11.png]]
+![[mecanique1/attachments-mecanique1/figure11.png]]
 La manipulation à faire est la suivante :
 - un mobile se déplaçant sur une table horizontale à coussin d'air pour minimiser les frottements. Il est maintenu par un fil inextensible à un point fixe puis lancé perpendiculairement au rayon joignant l'origine au centre. L'enregistrement du mouvement de ce mobile peut se faire par l'enregistrement d'une vidéo avec une camera (webcam) placée en haut en aplomb de la table pour ensuite en tirer les positions avec un logiciel spécialisé à intervalles de temps réguliers $\Delta t$ ;
-- à partir des positions, on doit tracer les vecteurs déplacements et déduire les vitesses puis tracer les vecteurs vitesses correspondants en un point sur deux ($M_{1}$, $M_{3}$,...) avec un choix de l'échelle. A partir de ces vecteurs vitesses, on doit ensuite tracer les vecteurs accélérations avec la même procédure basée sur l'approximation centrale, voir figure ci-dessous pour la construction géométrique ;![[figure12.png]]
+- à partir des positions, on doit tracer les vecteurs déplacements et déduire les vitesses puis tracer les vecteurs vitesses correspondants en un point sur deux ($M_{1}$, $M_{3}$,...) avec un choix de l'échelle. A partir de ces vecteurs vitesses, on doit ensuite tracer les vecteurs accélérations avec la même procédure basée sur l'approximation centrale, voir figure ci-dessous pour la construction géométrique ;![[mecanique1/attachments-mecanique1/figure12.png]]
 - mesurer les angles $\theta(t)$ et la dérivée $\frac{d\theta}{dt}$.
 # Autres notes
 Les limites de la mécanique classique : 

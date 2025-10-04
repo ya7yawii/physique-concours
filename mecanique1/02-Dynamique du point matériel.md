@@ -95,14 +95,14 @@ Pour un système autonome, la nature des trajectoires de phase est donc une cara
 > Pour un système autonome, deux trajectoires de phase ne se coupent jamais.
 # Diagrammes
 Force de tension :
-![[figure13.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure13.png]]^figure1
 > [!note]
 > Un fil souple tendu se sépare en deux parties $S_{1}$ et $S_{2}$ s'il est coupé en un point P. Il existe donc une force qui assure en chaque point la cohésion du fil.
 > Si le fil est tendu, la tension T est positive.
 > La tension T est relative à un point et, dans le cas général, varie le long du fil.
 # Graphiques
 Sens de parcours sur la trajectoire de phase :
-![[figure14.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure14.png]]^figure2
 # Expériences
 ## Détermination de l'accélération terrestre
 > [!warning]
