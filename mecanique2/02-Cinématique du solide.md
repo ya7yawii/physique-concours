@@ -10,7 +10,7 @@ crée: 02-10-2025, 16:56
 # Formules
 > [!note] Formule de Varignon
 > Si M et N sont deux points qui appartiennent <mark style="color: red">au même solide</mark>, alors leurs vitesses au même instant t sont liées par la formule de Varignon : $\overrightarrow{V}(N, t) = \overrightarrow{V}(M, t) + \overrightarrow{NM} \wedge \overrightarrow{\Omega}(t)$ qui s'écrit aussi $\overrightarrow{V}(N, t) = \overrightarrow{V}(M, t) + \overrightarrow{\Omega}(t) \wedge \overrightarrow{MN}$ avec $\overrightarrow{\Omega}(t)$ est le <mark style="color: red">vecteur rotation instantané</mark>, aussi appelé vecteur vitesse angulaire instantané.
-> Le champ des vitesses d'un solide est ainsi décrit par un torseur dont les éléments de réduction sont le vecteur rotation instantané et la vitesse en un point du solide. La formule de Varignon n'est en fait rien d'autre qu'une relation de transport caractéristique des torseurs. Ainsi, l'hypothèse d'indéformabilité d'un solide impose une relation entre les vitesses au même instant de deux points appartenant au solide.
+> Le champ des vitesses d'un solide est ainsi décrit par un [[#^info|torseur]] dont les éléments de réduction sont le vecteur rotation instantané et la vitesse en un point du solide. La formule de Varignon n'est en fait rien d'autre qu'une relation de transport caractéristique des torseurs. Ainsi, l'hypothèse d'indéformabilité d'un solide impose une relation entre les vitesses au même instant de deux points appartenant au solide.
 > À chaque instant, le mouvement d'un solide $(S)$ est déterminé par les deux vecteurs correspondant aux éléments de réduction du torseur cinématique. Il s'agit donc de 6 scalaires. On dit que le solide est un système à 6 degrés de liberté. Ces degrés de liberté sont répartis de la façon suivante :
 > - 3 degrés de liberté de translation, associés aux trois coordonnées d'un point du solide ;
 > - 3 degrés de liberté d'orientation, associés aux rotations d'axes liés au solide.
@@ -111,3 +111,4 @@ Les questions posées dans le TP sont les suivantes :
 > [!warning] Torseur cinématique
 > Cette notion n'est pas abordée dans le cours ni dans les exercices mais pour le curieux on peut consulter le livre intitulé "Mécanique fondements et applications" de l'auteur José-Philippe PÉREZ (Chapitre 1 page 27) .
 > Pour une définition plus "pratique", on peut visiter les liens suivants : [lien 1](https://sciencesindustrielles.com/Fiches/FICHE%20-%20Cin%C3%A9matique.pdf) et [lien 2](https://rtc.ma/pdfs/TSI/sup-crs/gm/Cineamtique%20Torseur%20Cinematique.pdf).
+^info
