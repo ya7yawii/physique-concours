@@ -108,3 +108,6 @@ Les questions posées dans le TP sont les suivantes :
 8. Pour $\dot{\beta} = 2\pi \, rad/s$, compléter le tableau suivant par les valeurs théoriques de $\overrightarrow{V}_{A \in 3/0}$. ![[mecanique2/attachments-mecanique2/figure15.png]]
 9. Comparer ce système à celui du système à coulisse.
 # Autres notes
+> [!warning] Torseur cinématique
+> Cette notion n'est pas abordée dans le cours ni dans les exercices mais pour le curieux on peut consulter le livre intitulé "Mécanique fondements et applications" de l'auteur José-Philippe PÉREZ (Chapitre 1 page 27) .
+> Pour une définition plus "pratique", on peut visiter les liens suivants : [lien 1](https://sciencesindustrielles.com/Fiches/FICHE%20-%20Cin%C3%A9matique.pdf) et [lien 2](https://rtc.ma/pdfs/TSI/sup-crs/gm/Cineamtique%20Torseur%20Cinematique.pdf).
