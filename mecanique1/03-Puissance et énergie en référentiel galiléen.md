@@ -104,7 +104,7 @@ Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d'équilibre dans le p
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve [en ligne](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf).
 
-![[figure21.png]]
+![[mecanique1/attachments-mecanique1/figure21.png]]
 
 ### Détermination du moment d'inertie de la roue de Maxwell
 Afin de déterminer le moment d'inertie de la roue de Maxwell, on étudie le chemin parcouru par le centre de gravité de la roue de Maxwell en fonction du temps. Pour ce faire, on varie la hauteur de chute séparant le point de départ de la roue du faisceau lumineux de la barrière lumineuse à fourchette, en déplaçant la barrière sur la tige (la hauteur est lue sur la règle graduée).
