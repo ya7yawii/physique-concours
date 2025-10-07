@@ -69,10 +69,10 @@ Pour l'exemple étudié ([[#^figure1]]), Les abscisses $x_0$ et $x_1$ correspond
 
 # Graphiques
 Graphe des variations de l'énergie potentielle $\mathcal{E}_P(x)$ :
-![[figure18.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure18.png]]^figure1
 
 Évolution du mobile pour quelques valeurs significatives de son énergie mécanique :
-![[figure19.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure19.png]]^figure2
 - Cas ➀: état d'énergie mécanique $0 \leqslant \mathcal{E}_{M_1} \leqslant \mathcal{E}_{P_{0}}(x)$ : le point matériel ne peut s'échapper de la cuvette d'énergie potentielle, à proximité de l'abscisse d'équilibre $x_0$ : c'est un ==état lié==.
 - Cas ➁: état d'énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_2} \leqslant 0$ : C'est encore un ==état lié==.
 - Cas ➂: état d'énergie mécanique $\mathcal{E}_{P_{1}} \leqslant \mathcal{E}_{M_3} \leqslant 0$ : initialement, la particule est en dehors de la cuvette d'énergie potentielle. Le point matériel peut atteindre ici une abscisse minimale (point $A_3$). S'il est envoyé initialement vers $A_3$, nous voyons qu'il ne peut pas franchir la barrière de potentiel : après avoir atteint $A_3$, où il "rebondit", le point matériel repart à l'infini : c'est un ==état de diffusion==.
@@ -82,7 +82,7 @@ Graphe des variations de l'énergie potentielle $\mathcal{E}_P(x)$ :
 > Dans le livre, les inégalités sont inversées et je pense que c'est faux. 
 
 Trajectoire de phase d'états liés et d'états de diffusion :
-![[figure20.png]]^figure3
+![[mecanique1/attachments-mecanique1/figure20.png]]^figure3
 Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d'équilibre dans le plan de phase.
 - État lié ➀ : La trajectoire de phase est fermée, ce qui caractérise une évolution périodique du mobile qui oscille entre deux abscisses extrêmes accessibles (points $A_1$ et $B_1$). Notons encore que cette trajectoire de phase ressemble à une ellipse, comme pour un oscillateur harmonique.
 >[!note]

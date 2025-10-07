@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique2/02-Cinématique du solide.md",
+                "file": "mecanique2/03-La résultante et le moment cinétiques.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "02-Cinématique du solide"
+              "title": "03-La résultante et le moment cinétiques"
             }
           },
           {
@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique2/03-La résultante et le moment cinétiques.md",
+                "file": "mecanique2/04-Moment cinétique d'un solide.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "03-La résultante et le moment cinétiques"
+              "title": "04-Moment cinétique d'un solide"
             }
           }
         ],
@@ -198,12 +198,18 @@
   },
   "active": "d6e095a44cf0fe73",
   "lastOpenFiles": [
+    "mecanique2/attachments-mecanique2/figure20.png",
+    "mecanique2/attachments-mecanique2/figure19.png",
+    "mecanique2/attachments-mecanique2/figure18.png",
+    "mecanique2/attachments-mecanique2/figure17.png",
+    "mecanique2/attachments-mecanique2/figure16.png",
+    "mecanique2/03-La résultante et le moment cinétiques.md",
     "mecanique2/02-Cinématique du solide.md",
+    "mecanique2/04-Moment cinétique d'un solide.md",
+    "mecanique2/00-Mécanique2.md",
     "mecanique1/02-Dynamique du point matériel.md",
     "mecanique1/01-Cinématique.md",
     "mecanique1/06-Théorème du moment cinétique.md",
-    "mecanique2/03-La résultante et le moment cinétiques.md",
-    "mecanique2/00-Mécanique2.md",
     "mecanique2/attachments-mecanique2/figure15.png",
     "mecanique2/attachments-mecanique2/figure14.png",
     "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
@@ -212,10 +218,6 @@
     "mecanique2/attachments-mecanique2/figure12.png",
     "mecanique2/attachments-mecanique2/figure11.png",
     "mecanique2/attachments-mecanique2/figure10.png",
-    "mecanique2/attachments-mecanique2/figure9.png",
-    "mecanique2/attachments-mecanique2/figure8.png",
-    "mecanique2/attachments-mecanique2/figure7.png",
-    "mecanique2/attachments-mecanique2/figure6.png",
     "mecanique1/00-Mécanique1.md",
     "mecanique2/attachments-mecanique2",
     "mecanique2",

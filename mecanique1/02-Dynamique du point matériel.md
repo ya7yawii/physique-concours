@@ -118,10 +118,10 @@ Il faut procéder comme suit :
 >[!warning]
 >La formule de g est obtenue à l'aide de théorème du moment cinétique à voir dans la note [[06-Théorème du moment cinétique]].
 
-![[figure16.png]]
+![[mecanique1/attachments-mecanique1/figure16.png]]
 
 ### Détermination de g à partir de la chute libre
-![[figure17.png]]
+![[mecanique1/attachments-mecanique1/figure17.png]]
 Ce dispositif permet de mesurer le temps de chute d'une bille emprisonnée puis libérée par un déclencheur. Cette mesure du temps est effectuée à l'aide d'un compteur digital relié au déclencheur (qui l'actionne au départ de la bille) et au réceptacle, qui arrête le compteur dés que la bille tombe sur l'assiette du réceptacle.
 Il faut procéder comme suit :
 - Pour différentes hauteurs du déclencheur supportant la bille métallique (à faire varier de 60 cm à 20 cm, par pas de 5 cm), déterminer le temps de chute donné par le compteur digital électronique.
