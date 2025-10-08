@@ -109,7 +109,7 @@ Les points $P_0(x_0, 0)$ et $P_1(x_1, 0)$ sont les points d'équilibre dans le p
 ### Détermination du moment d'inertie de la roue de Maxwell
 Afin de déterminer le moment d'inertie de la roue de Maxwell, on étudie le chemin parcouru par le centre de gravité de la roue de Maxwell en fonction du temps. Pour ce faire, on varie la hauteur de chute séparant le point de départ de la roue du faisceau lumineux de la barrière lumineuse à fourchette, en déplaçant la barrière sur la tige (la hauteur est lue sur la règle graduée).
 Il faut procéder comme suit :
-- Remplir le tableau suivant : ![[figure22.png]]
+- Remplir le tableau suivant : ![[mecanique1/attachments-mecanique1/figure22.png]]
 - Tracer le graphe $z = f(t)$ et le graphe $z = g(t^{2})$
 - A partir de ce $2^{ème}$ graphe et en utilisant la relation $z(t) = \frac{1}{2}\frac{mg}{m + \frac{J}{r^{2}}}t^{2}$, déterminer le moment d'inertie de la roue de Maxwell.
 > [!warning]
@@ -123,10 +123,10 @@ En utilisant le tableau ci-dessus, tracer le graphe donnant l'énergie potentiel
 ### Vitesse instantanée de la roue de Maxwell
 Pour déterminer la vitesse instantanée de la roue, il suffit de brancher le compteur en porte électronique.
 La vitesse est obtenue en faisant : $v(t + \frac{\Delta t}{2}) = \frac{\Delta z}{\Delta t}$ où $\Delta z$ est le diamètre de l'axe de la roue et $\Delta t$ (temps d'obscurcissement) le temps de séjour de l'axe de la roue dans le rayon lumineux (voir figure ci-dessous).
-![[figure23.png]]
+![[mecanique1/attachments-mecanique1/figure23.png]]
 
 Il faut procéder comme suit :
-- Remplir le tableau suivant : ![[figure24.png]]
+- Remplir le tableau suivant : ![[mecanique1/attachments-mecanique1/figure24.png]]
 - Tracer le graphe $v = f(t)$
 
 ### Énergie cinétique de translation
