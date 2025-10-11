@@ -83,7 +83,7 @@ Ce temps $t_p$, fonction du facteur d'amortissement $2\alpha$ pour un $\omega_0$
 
 # Graphiques
 Trajectoires de  phase de l'oscillateur réel :
-![[figure25.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure25.png]]^figure1
 
 Mouvement de l'oscillateur harmonique spatial :
 ![[figure26.png]]

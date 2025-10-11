@@ -22,7 +22,7 @@
             }
           },
           {
-            "id": "086a2e136364984d",
+            "id": "56e923bef4508efe",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -196,12 +196,14 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "086a2e136364984d",
+  "active": "56e923bef4508efe",
   "lastOpenFiles": [
     "mecanique2/04-Moment cinétique d'un solide.md",
-    "mecanique2/05-Les actions sur un système.md",
-    "mecanique2/00-Mécanique2.md",
     "mecanique2/03-La résultante et le moment cinétiques.md",
+    "mecanique2/05-Les actions sur un système.md",
+    "mecanique2/attachments-mecanique2/figure25.png",
+    "def1.md",
+    "mecanique2/00-Mécanique2.md",
     "mecanique2/02-Cinématique du solide.md",
     "mecanique1/06-Théorème du moment cinétique.md",
     "mecanique1/07-Force centrale conservative. Mouvement newtonien.md",
@@ -219,7 +221,6 @@
     "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
     "mecanique2/attachments-mecanique2/figure21.png",
-    "mecanique2/attachments-mecanique2/figure20.png",
     "mecanique1/01-Cinématique.md",
     "mecanique2/01-Le centre de masse des systèmes matériels.md",
     "mecanique2/attachments-mecanique2",
