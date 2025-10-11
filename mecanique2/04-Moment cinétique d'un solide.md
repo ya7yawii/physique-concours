@@ -79,7 +79,9 @@ Moment cinétique d'un solide par rapport à un axe de rotation fixe : $\sigma_{
 ^info1
 
 > [!warning] Double produit vectoriel
+> Les formules suivantes sont à connaître :
 > $\overrightarrow{A} \wedge (\overrightarrow{B} \wedge \overrightarrow{C}) = (\overrightarrow{A} . \overrightarrow{C})\overrightarrow{B} - (\overrightarrow{A} . \overrightarrow{B})\overrightarrow{C}$
+> $\overrightarrow{A} \wedge (\overrightarrow{B} \wedge \overrightarrow{C}) = (\overrightarrow{A} . \overrightarrow{C})\overrightarrow{B} - (\overrightarrow{B} . \overrightarrow{C})\overrightarrow{A}$
 ^info2
 
 > [!note] moment d'inertie
@@ -87,3 +89,6 @@ Moment cinétique d'un solide par rapport à un axe de rotation fixe : $\sigma_{
 
 > [!note] Cas général de l'expression du moment d'inertie
 > L'expression de $J_{\Delta}$ dans ce chapitre est pour un système discret de points matériels. Alors on peut visiter le [lien suivant](https://rtc.ma/pdfs/TSI/spe-crs/gm/Grandeurs%20inertielles.pdf) pour apprendre comment trouver l'expression développée du moment d'inertie pour un système continu.
+
+> [!warning] Exercice 2 question 8 de section savoir résoudre les exercices page 74
+> Pour une force centrale newtonienne, on a utilisé la deuxième formule de Binet (rencontrée dans le [[07-Force centrale conservative. Mouvement newtonien|chapitre 7]] du livre intitulé "Mécanique") afin de démontrer que la trajectoire du mobile est une conique.
