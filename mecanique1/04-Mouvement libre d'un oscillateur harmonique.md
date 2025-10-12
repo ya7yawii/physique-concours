@@ -86,7 +86,7 @@ Trajectoires de  phase de l'oscillateur réel :
 ![[mecanique1/attachments-mecanique1/figure25.png]]^figure1
 
 Mouvement de l'oscillateur harmonique spatial :
-![[figure26.png]]
+![[mecanique1/attachments-mecanique1/figure26.png]]
 <ol style="list-style-type: lower-alpha">
 <li>Anisotrope, à trajectoire ouverte.</li>
 <li>Anisotrope, à trajectoire fermée. Les trois pulsations sont dans des rapports rationnels.</li>
@@ -94,14 +94,14 @@ Mouvement de l'oscillateur harmonique spatial :
 </ol>
 
 L'évolution en régime pseudo-périodique :
-![[figure27.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure27.png]]^figure2
 Le mobile est lâché en $x = x_0$ avec une vitesse $v_0$ positive, nulle ou négative pour les trois cas apparaissant sur la figure.
 > [!note]
 > Le signal oscille entre les deux enveloppes exponentielles $±Ce^{-\alpha t}$. Notons que les dates des extrema de x ne coïncident pas vraiment avec les dates de contact avec l'enveloppe.
 
 
 Portrait de phase d'un oscillateur en régime pseudo-périodique $(\mathcal{Q} = 3)$ :
-![[figure28.png]]
+![[mecanique1/attachments-mecanique1/figure28.png]]
 Le mobile est lâché sans vitesse initiale, pour diverses valeurs de $x_0$.
 > [!note]
 > Contrairement au cas de l'oscillateur sans frottement, les trajectoires obtenues ne sont pas symétriques par rapport à l'axe $(Ox)$. Cette dissymétrie correspond à un changement de signe du coefficient de la vitesse lors d'un renversement du temps. Du fait de la présence de ce terme de frottement fluide, l'équation du mouvement n'est plus invariante vis-à-vis du changement de variable t → – t : le processus n'est pas réversible.

@@ -28,6 +28,49 @@ Résultante des [[#^9ef48c|forces d'interaction]] ==**sur le point $P_i$**== : $
 > La résultante des forces intérieures à un système est nulle : $\overrightarrow{F}_{int} = \overrightarrow{0}$.
 > Une conséquence de ce théorème est importante : la résultante des actions $\overrightarrow{F}$ s’exprime uniquement à partir des actions extérieures : $\overrightarrow{F} = \overrightarrow{F}_{ext}$.
 
+> [!note] Principe des actions réciproques relatif à la résultante
+> Soient à présent deux systèmes $(S_1)$ et $(S_2)$, formés respectivement de $N_1$ points notés $P_i$, $i = 1, \,\ldots, N_1$ et $N_2$ points notés $M_j$, $j = 1, \,\ldots, N_2$.
+> Soient $\displaystyle \overrightarrow{F}_{1\rightarrow 2} = \sum_{i=1}^{N_1}\sum_{j=1}^{N_2} \overrightarrow{f}_{P_i\rightarrow M_j}$ la résultante des actions de $(S_1)$ sur $(S_2)$ et $\displaystyle \overrightarrow{F}_{2\rightarrow 1} = \sum_{i=1}^{N_1}\sum_{j=1}^{N_2} \overrightarrow{f}_{M_j\rightarrow P_i}$ la résultante des actions de $(S_2)$ sur $(S_1)$. Alors $\overrightarrow{F}_{1\rightarrow 2} = -\overrightarrow{F}_{2\rightarrow 1}$.
+> Il s'agit d’une conséquence du principe fondamental de la dynamique énoncé en termes d’égalité de deux torseurs, respectivement [[#^info1|dynamique]] et des actions extérieures.
+
+Moment des actions : $\displaystyle \overrightarrow{\Gamma}_A = \sum_{i=1}^{N} \overrightarrow{AP_i} \wedge \overrightarrow{f}_i$. On a aussi $\overrightarrow{\Gamma}_A = \overrightarrow{\Gamma}_{A\,ext} + \overrightarrow{\Gamma}_{A\,int}$ avec $\displaystyle \overrightarrow{\Gamma}_{A\,ext} = \sum_{i=1}^{N} \overrightarrow{AP_i} \wedge \overrightarrow{f}_{i\,ext}$ et $\displaystyle \overrightarrow{\Gamma}_{A\,int} = \sum_{i=1}^{N} \overrightarrow{AP_i} \wedge \overrightarrow{f}_{i\,int}$. A est appelé point de réduction et les dimensions du moment sont : $kg.m^{2}.s^{-2}$ ou $N.m$.
+> [!note]
+> Le moment des actions intérieures est nul : $\overrightarrow{\Gamma}_{A\,int} = \overrightarrow{0}$.
+> Conséquence : le moment des actions sur un système est égal au moment des actions extérieures : $\overrightarrow{\Gamma}_{A} = \overrightarrow{\Gamma}_{A\,ext}$.
+
+Relation de transport : $\overrightarrow{\Gamma}_B = \overrightarrow{\Gamma}_A + \overrightarrow{BA} \wedge \overrightarrow{F}$.
+> [!note] Relation de transport
+> On peut remarquer que ce théorème de transport est analogue à celui qu’on a établi pour le moment cinétique et pour le champ des vitesses d’un solide.
+> La forme mathématique de cette relation est dans les trois cas rencontrés : $\overrightarrow{Moment}_B = \overrightarrow{Moment}_A + \overrightarrow{BA} \wedge \overrightarrow{Résultante}$. Cette relation décrit la propriété des champs de vecteur appelés « torseurs ». Par exemple, la vitesse d’un point d’un solide est un « moment » et le vecteur vitesse angulaire une « résultante » d’un torseur, appelé <mark style="color: red">torseur cinématique</mark> du solide.
+
+> [!note] Équivalence entre un champ d’actions et une force
+> Pour calculer le moment des actions, il faut en général connaître la répartition des actions individuelles sur les points matériels.
+> En revanche, dans certains cas, il existe un point P tel que le moment des actions en un point A quelconque et la résultante vérifient : $\overrightarrow{\Gamma}_A = \overrightarrow{AP} \wedge \overrightarrow{F}$. On dit que les actions sont <mark style="color: red">réductibles à une force $\overrightarrow{F}$ appliquée en P</mark>. On montre que les conditions nécessaires et suffisantes sont les suivantes : $\overrightarrow{F} \neq \overrightarrow{0}$ et $\overrightarrow{F} . \overrightarrow{\Gamma}_A = 0$.
+
+Principe des actions réciproques relatif au moment : $\overrightarrow{\Gamma}_{A\,1\rightarrow 2} = -\overrightarrow{\Gamma}_{A\,2\rightarrow 1}$. Il s'agit d’une conséquence du principe fondamental de la dynamique énoncé en termes d’égalité de deux torseurs, respectivement [[#^info1|dynamique]] et des actions extérieures.
+
+> [!note] Couple de forces
+> Les actions sur un système constituent un couple lorsque la résultante est nulle et le moment non nul ; $\overrightarrow{F} = \overrightarrow{0}$ et $\overrightarrow{\Gamma}_A \neq \overrightarrow{0}$. Le moment d’un couple ne dépend pas du point de réduction.
+> Comme son nom l’indique, un couple peut se décrire par deux forces opposées appliquées en deux points différents ([[#^figure2|fig. 2]]). C’est l’ensemble de forces le plus simple qui puisse donner un couple.
+
+Champ de pesanteur uniforme : $\displaystyle \overrightarrow{F} = \sum_{i=1}^{N} m_i\overrightarrow{g} = M\overrightarrow{g}$ et $\displaystyle \overrightarrow{\Gamma}_A = \sum_{i=1}^{N} \overrightarrow{AP_i} \wedge m_i\overrightarrow{g} = \left(\sum_{i=1}^{N} \overrightarrow{AP_i}\right) \wedge \overrightarrow{g} = M\overrightarrow{AG} \wedge \overrightarrow{g} = \overrightarrow{AG} \wedge M\overrightarrow{g}$ avec G est le centre de masse.
+
+> [!note] Liaison rotule
+> Un solide est lié à un support par une liaison rotule si dans le référentiel du support le solide possède un seul point de vitesse constamment nulle. On note ici ce point O. Le schéma de la liaison est donné sur la [[#^figure3|figure 3]].
+> - La liaison permet un mouvement de rotation quelconque autour de O ;
+> - La liaison maintient le point O fixe par rapport au support.
+> 
+> Le support définit un référentiel $(R_S)$. Dans ce référentiel, la vitesse du point O appartenant au solide est nulle : $\overrightarrow{v}(O)_{(R_S)} = \overrightarrow{0}$. En revanche, le vecteur vitesse angulaire instantané du solide $\overrightarrow{\Omega}_{(R_S)}$ est quelconque.
+> Un solide lié à un support fixe par une liaison rotule subit de la part du support des actions de liaisons. Soit $d\Sigma$ un élément de la surface de contact $(\Sigma)$ entre l’axe du solide et le support ([[#^figure4|fig. 4]]). Ces actions se décrivent par une densité surfacique $\overrightarrow{f}_s(P)$ pour les points P de la surface de contact $(\Sigma)$. Soient $\overrightarrow{F}_{rotule}$ la résultante des actions de liaison et $\overrightarrow{\Gamma}_{rotule}$ le moment des actions de liaison en O. On a :
+> $$
+> \begin{cases}
+> \displaystyle\overrightarrow{F}_{rotule} = \iint_{(\Sigma)} \overrightarrow{f}_s(P) d\Sigma\\
+> \displaystyle\overrightarrow{\Gamma}_{O\,rotule} = \iint_{(\Sigma)} \overrightarrow{OP} \wedge \overrightarrow{f}_s(P) d\Sigma
+> \end{cases}
+> $$
+> Modèle de la liaison rotule parfaite : La liaison rotule est parfaite s’il n’y a aucun frottement entre le support et le solide. Ainsi $\text{Liaison rotule parfaite} \Leftrightarrow \overrightarrow{\Gamma}_{O\,rotule} = \overrightarrow{0}$. En revanche, on ne peut rien dire de la résultante $\overrightarrow{F}_{rotule}$ qui reste une inconnue dynamique du système. Donc, les actions d’une liaison rotule parfaite sont équivalentes à une force $\overrightarrow{F}_{rotule}$ s’appliquant en O. On peut noter la correspondance entre les résultantes et moments dans $(R_S)$ : $\{\overrightarrow{\Omega} \, \text{quelconque} \,;\, \overrightarrow{v}(O) = \overrightarrow{0}\}$ et $\{\overrightarrow{F} \, \text{quelconque} \,;\, \overrightarrow{\Gamma}_{O} = \overrightarrow{0}\}$.
+
+
 # Définitions
 ==**Actions extérieures**== :
 Dans un référentiel galiléen, une force est dite ==**extérieure**== à un système si elle est exercée par un système matériel $(S')$ situé à l’extérieur de $(S)$. Il s’agit dans ce cas d’une force d’interaction entre les deux systèmes : $\overrightarrow{f}_{(S')\rightarrow i}$.
@@ -41,8 +84,18 @@ Cette force peut être une force d’interaction à courte portée (Van der Waal
 
 # Diagrammes
 ![[mecanique2/attachments-mecanique2/figure25.png]]^figure1
+
+![[mecanique2/attachments-mecanique2/figure26.png]]^figure2
+
+![[mecanique2/attachments-mecanique2/figure27.png]]^figure3
+
+![[mecanique2/attachments-mecanique2/figure28.png]]^figure4
 # Graphiques
 
 # Expériences
 
 # Autres notes
+> [!note] Torseur dynamique
+> Cette notion de torseur dynamique n'est pas abordée dans le cours ainsi que sa relation avec le principe fondamental de la dynamique. Pour plus d'information sur le sujet, on peut visiter ce [lien](https://cahier-de-prepa.fr/psi-arago/download?id=1589).
+^info1
+
