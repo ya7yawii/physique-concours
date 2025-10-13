@@ -108,15 +108,15 @@ Le mobile est lâché sans vitesse initiale, pour diverses valeurs de $x_0$.
 
 
 L'évolution en régime critique :
-![[figure29.png]]^figure3
+![[mecanique1/attachments-mecanique1/figure29.png]]^figure3
 Les conditions initiales sont les mêmes que celles du mouvement pseudo-périodique ([[#^figure2]]).
 
 Portrait de phase d'un oscillateur en régime critique $(\mathcal{Q} = \frac{1}{2})$ :
-![[figure30.png]]
+![[mecanique1/attachments-mecanique1/figure30.png]]
 Le système tente encore de contourner l'origine (point attracteur) dans le sens horaire, mais ne peut y parvenir : il échoue rapidement au point $O$.
 
 L'évolution en régime apériodique :
-![[figure31.png]]^figure4
+![[mecanique1/attachments-mecanique1/figure31.png]]^figure4
 Suivant les conditions initiales, l'élongation passe par un extremum ou tend uniformément vers zéro.
 
 Portrait de phase d'un oscillateur en régime apériodique $(\mathcal{Q} = 0,\!2)$ :
