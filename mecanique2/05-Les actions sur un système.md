@@ -129,3 +129,8 @@ Cette force peut être une force d'interaction à courte portée (Van der Waals,
 > Cette notion de torseur dynamique n'est pas abordée dans le cours ainsi que sa relation avec le principe fondamental de la dynamique. Pour plus d'information sur le sujet, on peut visiter ce [lien](https://cahier-de-prepa.fr/psi-arago/download?id=1589).
 ^info1
 
+> [!note] Expression de la résultante des actions $\overrightarrow{F}$ sur des systèmes continus
+> - A une dimension : $\displaystyle \overrightarrow{F} = \int_{C} \overrightarrow{f}_{\lambda}(P)dl$ avec $\overrightarrow{f}_{\lambda}$ est la densité de force linéique.
+> - A deux dimensions : $\displaystyle \overrightarrow{F} = \iint_{S} \overrightarrow{f}_{s}(P)dS$ avec $\overrightarrow{f}_{s}$ est la densité de force surfacique.
+> - A trois dimensions : $\displaystyle \overrightarrow{F} = \iiint_{V} \overrightarrow{f}_{v}(P)d\tau$ avec $\overrightarrow{f}_{v}$ est la densité de force volumique.
+
