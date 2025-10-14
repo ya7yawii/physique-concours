@@ -134,3 +134,5 @@ Cette force peut être une force d'interaction à courte portée (Van der Waals,
 > - A deux dimensions : $\displaystyle \overrightarrow{F} = \iint_{S} \overrightarrow{f}_{s}(P)dS$ avec $\overrightarrow{f}_{s}$ est la densité de force surfacique.
 > - A trois dimensions : $\displaystyle \overrightarrow{F} = \iiint_{V} \overrightarrow{f}_{v}(P)d\tau$ avec $\overrightarrow{f}_{v}$ est la densité de force volumique.
 
+> [!warning] Exercice 3 question 1 de section savoir appliquer le cours page 101
+> Le champ de pesanteur peut s’exprimer à partir du théorème de Gauss. Ce théorème s’applique au champ gravitationnel car ce dernier obéit à la même loi mathématique que le champ électrostatique créé par une charge. Alors on a : $\displaystyle \iint_{\Sigma} \overrightarrow{g}.d\overrightarrow{\Sigma} = -4\pi GM_{intérieure}$ où $\Sigma$ est une surface fermée contenant la masse $M_{intérieure}$.
