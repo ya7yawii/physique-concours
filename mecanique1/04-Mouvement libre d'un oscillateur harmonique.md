@@ -120,14 +120,14 @@ L'évolution en régime apériodique :
 Suivant les conditions initiales, l'élongation passe par un extremum ou tend uniformément vers zéro.
 
 Portrait de phase d'un oscillateur en régime apériodique $(\mathcal{Q} = 0,\!2)$ :
-![[figure32.png]]
+![[mecanique1/attachments-mecanique1/figure32.png]]
 Les trajectoires de phase montrent un retour sans oscillation vers le point attracteur à l'origine.
 # Expériences
 ## Etude du pendule pesant ou pendule simple
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve [en ligne](https://prepanouar.wordpress.com/wp-content/uploads/2020/03/pendule-simple.pdf).
 
-![[figure33.png]]
+![[mecanique1/attachments-mecanique1/figure33.png]]
 On mesurera la durée de 10 oscillations et on enclenchera le chronomètre lorsque le pendule passera par sa position d'équilibre.
 
 ### Influence de l'amplitude
