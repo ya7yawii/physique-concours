@@ -69,3 +69,6 @@ Dans le cas où le référentiel est lié à la liaison, cette dernière est par
 
 > [!warning]
 > La puissance des actions sur un solide dépend du référentiel d'étude alors que la puissance des actions intérieures est indépendante du référentiel. On peut trouver la preuve dans la section "tester ses connaissances" question 1 page 162.
+
+> [!note] Énergie potentielle de pesanteur
+> Pour un champ de pesanteur uniforme : $E_p = -M\overrightarrow{g} . \overrightarrow{AG}$ avec $A$ est un point fixe quelconque et $G$ est le centre de masse.
