@@ -2,8 +2,8 @@
 titre: "[[06-Théorème du moment cinétique]]"
 tags:
   - moment
-  - cinétique
-  - centrale
+  - moment-cinétique
+  - force-centrale
 crée: 04-09-2025, 10:15
 ---
 # Formules

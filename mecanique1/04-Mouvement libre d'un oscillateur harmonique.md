@@ -1,9 +1,8 @@
 ---
 titre: "[[04-Mouvement libre d'un oscillateur harmonique]]"
 tags:
-  - oscillateur
-  - harmonique
-  - amorti
+  - oscillateur-harmonique
+  - oscillateur-amorti
 crée: 20-08-2025, 10:43
 ---
 # Formules

@@ -1,9 +1,10 @@
 ---
 titre: "[[05-Réponse d'un oscillateur à une excitation]]"
 tags:
-  - forcé
+  - régime-forcé
   - amplitude
   - déphasage
+  - oscillateur
 crée: 27-08-2025, 09:31
 ---
 # Formules

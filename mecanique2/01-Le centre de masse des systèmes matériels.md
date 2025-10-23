@@ -1,9 +1,8 @@
 ---
 titre: "[[01-Le centre de masse des systèmes matériels]]"
 tags:
-  - système
-  - centre
-  - guldin
+  - centre-de-masse
+  - théorème-de-Guldin
   - symétrie
 crée: 01-10-2025, 10:14
 ---

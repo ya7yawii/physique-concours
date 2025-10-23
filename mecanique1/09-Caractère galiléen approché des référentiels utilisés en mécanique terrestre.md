@@ -1,8 +1,8 @@
 ---
 titre: "[[09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre]]"
 tags:
-  - géocentrique
-  - terrestre
+  - référentiel-géocentrique
+  - référentiel-terrestre
   - marée
 crée: 18-09-2025, 17:23
 ---

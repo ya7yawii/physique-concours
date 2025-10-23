@@ -1,7 +1,7 @@
 ---
 tags:
   - type/livre
-  - thème/mécanique
+  - thème/mécanique2
 titre: Mécanique du solide et des systèmes
 auteurs: Jean-Claude Hulot, Marc Venturi
 classe: 2ème année PC-MP-PT

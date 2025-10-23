@@ -1,6 +1,10 @@
 ---
 titre: "[[08-Théorème de la résultante cinétique]]"
 tags:
+  - théorème-de-la-résultante-cinétique
+  - centre-de-masse
+  - système-isolé
+  - système-pseudo-isolé
 aliases:
   - Théorème du centre de masse
 crée: 22-10-2025, 16:01
@@ -38,7 +42,7 @@ Conséquence : la résultante cinétique est constante, puisque la résultante d
 ^def1
 
 > [!note] Intégrale première du mouvement
-> On appelle intégrale première toute fonction $f(q_i, q'_i, t)$ qui reste constante au cours du mouvement en vertu des équations déduites du principe fondamental exprimé sous l'une des formes suivantes : théorèmes généraux, théorème de l'énergie-puissance et équations de Lagrange.
-> Autre définition : On appelle intégrale première du mouvement toute quantité ne faisant intervenir que des dérivées premières par rapport au temps qui se conserve au cours du temps.
-> Quelques exemples de ces quantités : énergie mécanique, résultante cinétique et moment cinétique.
+> Par définition une intégrale première du mouvement est une équation différentielle du premier ordre de la forme $f(q_i(t), \dot{q}_i(t)) = 0$, obtenue par intégration d'une équation du mouvement (en intégrant une fois le principe fondamental de la dynamique).
+> Autrement dit, on appelle intégrale première du mouvement toute quantité qui se conserve au cours du mouvement et qui n'est fonction que de la position et de ses dérivées premières par rapport au temps.
+> Ici la résultante cinétique est une intégrale première du mouvement mais il existe d'autres quantités physiques qui peuvent être des intégrales premières du mouvement comme l'énergie mécanique et le moment cinétique.
 ^def2

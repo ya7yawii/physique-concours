@@ -1,10 +1,10 @@
 ---
 titre: "[[02-Dynamique du point matériel]]"
 tags:
-  - inertie
+  - principe-d-inertie
+  - relation-fondamentale-de-la-dynamique
+  - principe-de-l-action-et-de-la-réaction
   - force
-  - action
-  - réaction
 crée: 11-08-2025, 11:17
 ---
 # Formules

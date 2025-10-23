@@ -1,10 +1,9 @@
 ---
 titre: "[[04-Moment cinétique d'un solide]]"
 tags:
-  - moment
-  - cinétique
-  - inertie
-  - Huygens
+  - moment-cinétique
+  - moment-d-inertie
+  - théorème-d-Huygens
 crée: 07-10-2025, 10:28
 ---
 # Formules

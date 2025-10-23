@@ -1,9 +1,8 @@
 ---
 titre: "[[06-Énergie cinétique d'un système matériel]]"
 tags:
-  - énergie
-  - cinétique
-  - Kœnig
+  - énergie-cinétique
+  - théorème-de-Kœnig
 crée: 17-10-2025, 15:55
 ---
 # Formules

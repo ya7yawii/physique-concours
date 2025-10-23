@@ -4,9 +4,9 @@ tags:
   - actions
   - résultante
   - moment
-  - couple
-  - pivot
-  - rotule
+  - couple-de-forces
+  - liaison-pivot
+  - liaison-rotule
   - tension
 crée: 11-10-2025, 11:12
 ---

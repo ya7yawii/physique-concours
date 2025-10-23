@@ -1,10 +1,9 @@
 ---
 titre: "[[03-La résultante et le moment cinétiques]]"
 tags:
-  - résultante
-  - moment
-  - cinétique
-  - Kœnig
+  - résultante-cinétique
+  - moment-cinétique
+  - théorème-de-Kœnig
 crée: 06-10-2025, 08:30
 ---
 # Formules

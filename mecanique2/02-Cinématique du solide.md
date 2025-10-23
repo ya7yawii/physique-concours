@@ -1,7 +1,7 @@
 ---
 titre: "[[02-Cinématique du solide]]"
 tags:
-  - Varignon
+  - formule-de-Varignon
   - glissement
   - roulement
   - pivotement

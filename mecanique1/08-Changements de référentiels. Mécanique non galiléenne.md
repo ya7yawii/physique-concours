@@ -1,7 +1,7 @@
 ---
 titre: "[[08-Changements de référentiels. Mécanique non galiléenne]]"
 tags:
-  - galiléen
+  - référentiel-galiléen
   - entraînement
   - coriolis
 crée: 13-09-2025, 11:28

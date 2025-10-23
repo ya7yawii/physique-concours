@@ -2,8 +2,8 @@
 titre: "[[10-Système de deux points matériels]]"
 tags:
   - barycentre
-  - fictif
-  - Kœnig
+  - mobile-fictif
+  - théorème-de-Kœnig
 crée: 24-09-2025, 11:01
 ---
 # Formules

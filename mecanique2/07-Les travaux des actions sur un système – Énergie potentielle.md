@@ -3,8 +3,7 @@ titre: "[[07-Les travaux des actions sur un système – Énergie potentielle]]"
 tags:
   - puissance
   - travail
-  - énergie
-  - potentielle
+  - énergie-potentielle
 crée: 19-10-2025, 10:54
 ---
 # Formules
