@@ -46,3 +46,7 @@ Conséquence : la résultante cinétique est constante, puisque la résultante d
 > Autrement dit, on appelle intégrale première du mouvement toute quantité qui se conserve au cours du mouvement et qui n'est fonction que de la position et de ses dérivées premières par rapport au temps.
 > Ici la résultante cinétique est une intégrale première du mouvement mais il existe d'autres quantités physiques qui peuvent être des intégrales premières du mouvement comme l'énergie mécanique et le moment cinétique.
 ^def2
+
+> [!warning] Force de friction statique et les automobiles
+> Les forces de frottement sont dirigées vers l'avant sur les roues motrices lors d'une phase d'accélération. Elles peuvent être dirigées vers l'arrière sur les roues non motrices mais leur résultante est bien dirigée dans le sens de l'accélération.
+> Pour plus des détails sur le sujet, consulter ce [lien](https://physique.merici.ca/mecanique/chap5mec.pdf).
