@@ -49,4 +49,4 @@ Conséquence : la résultante cinétique est constante, puisque la résultante d
 
 > [!warning] Force de friction statique et les automobiles
 > Les forces de frottement sont dirigées vers l'avant sur les roues motrices lors d'une phase d'accélération. Elles peuvent être dirigées vers l'arrière sur les roues non motrices mais leur résultante est bien dirigée dans le sens de l'accélération.
-> Pour plus des détails sur le sujet, consulter ce [lien](https://physique.merici.ca/mecanique/chap5mec.pdf).
+> Pour plus des détails sur le sujet, consulter le [lien 1](https://physique.merici.ca/mecanique/chap5mec.pdf) ou le [lien 2](https://doi.org/10.1119/1.5051145).
