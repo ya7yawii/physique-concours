@@ -11,15 +11,15 @@ Théorème du moment cinétique en un point mobile appliqué à un point matéri
 
 Théorème du moment cinétique par rapport à un axe fixe $\Delta$ appliqué à un point matériel : $\dfrac{d\sigma_{\Delta}}{dt} = \Gamma_{\Delta}$.
 
-Théorème du moment cinétique des systèmes matériels en un point fixe : $\dfrac{d\overrightarrow{\sigma}_A}{dt} = \overrightarrow{\Gamma}_A$.
+Théorème du moment cinétique des systèmes matériels en un point fixe : $\dfrac{d\overrightarrow{\sigma}_A}{dt} = \overrightarrow{\Gamma}_{ext,\,A}$.
 
-Théorème du moment cinétique des systèmes matériels en un point mobile : $\dfrac{d\overrightarrow{\sigma}_A}{dt} = \overrightarrow{\Gamma}_A + m\overrightarrow{v}_G \wedge \overrightarrow{v}_A$.
+Théorème du moment cinétique des systèmes matériels en un point mobile : $\dfrac{d\overrightarrow{\sigma}_A}{dt} = \overrightarrow{\Gamma}_{ext,\,A} + m\overrightarrow{v}_G \wedge \overrightarrow{v}_A$.
 
-Théorème du moment cinétique des systèmes matériels au centre d'inertie : $\dfrac{d\overrightarrow{\sigma}_G}{dt} = \overrightarrow{\Gamma}_G$.
+Théorème du moment cinétique des systèmes matériels au centre d'inertie : $\dfrac{d\overrightarrow{\sigma}_G}{dt} = \overrightarrow{\Gamma}_{ext,\,G}$.
 
-Théorème du moment cinétique des systèmes matériels dans le référentiel barycentrique : $\dfrac{d\overrightarrow{\sigma}^{*}}{dt} = \overrightarrow{\Gamma}_G$ où $\overrightarrow{\sigma}^{*}$ désigne le moment cinétique barycentrique.
+Théorème du moment cinétique des systèmes matériels dans le référentiel barycentrique : $\dfrac{d\overrightarrow{\sigma}^{*}}{dt} = \overrightarrow{\Gamma}_{ext,\,G}$ où $\overrightarrow{\sigma}^{*}$ désigne le moment cinétique barycentrique. Dans le cas de référentiel barycentrique non galiléen, les actions de Coriolis y sont nulles par définition de référentiel et ainsi leurs moments, de plus, les moments des actions d'inertie d’entraînement sont aussi nulles. Du coup, on ne prend en compte que le moment des actions extérieures (« réelles »).
 
-Théorème du moment cinétique scalaire des systèmes matériels par rapport à un axe fixe $\Delta$ : $\dfrac{d\sigma_{\Delta}}{dt} = \Gamma_{\Delta}$.
+Théorème du moment cinétique scalaire des systèmes matériels par rapport à un axe fixe $\Delta$ : $\dfrac{d\sigma_{\Delta}}{dt} = \Gamma_{ext,\,\Delta}$.
 
 > [!note] Théorème du moment cinétique scalaire des systèmes matériels par rapport à un axe de direction fixe
 > Un système matériel est en rotation autour d'un axe ∆ de direction fixe dans le référentiel d'étude supposé galiléen. Il en résulte que, dans le référentiel barycentrique, le système matériel est en rotation autour d'un [[#^def1|axe fixe]] passant par son centre d'inertie. On peut ainsi appliquer le théorème du moment cinétique en G, dans le référentiel barycentrique, afin d'en déduire l'équation du mouvement de rotation autour de cet axe. De plus, le mouvement de translation de G dans le référentiel d'étude peut être déterminé en appliquant le théorème de la résultante cinétique.
