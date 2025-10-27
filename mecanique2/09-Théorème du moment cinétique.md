@@ -17,7 +17,7 @@ Théorème du moment cinétique des systèmes matériels en un point mobile : $\
 
 Théorème du moment cinétique des systèmes matériels au centre d'inertie : $\dfrac{d\overrightarrow{\sigma}_G}{dt} = \overrightarrow{\Gamma}_{ext,\,G}$.
 
-Théorème du moment cinétique des systèmes matériels dans le référentiel barycentrique : $\dfrac{d\overrightarrow{\sigma}^{*}}{dt} = \overrightarrow{\Gamma}_{ext,\,G}$ où $\overrightarrow{\sigma}^{*}$ désigne le moment cinétique barycentrique. Dans le cas de référentiel barycentrique non galiléen, les actions de Coriolis y sont nulles par définition de référentiel et ainsi leurs moments, de plus, les moments des actions d'inertie d’entraînement sont aussi nulles. Du coup, on ne prend en compte que le moment des actions extérieures (« réelles »).
+Théorème du moment cinétique des systèmes matériels dans le référentiel barycentrique : $\dfrac{d\overrightarrow{\sigma}^{*}}{dt} = \overrightarrow{\Gamma}_{ext,\,G}$ où $\overrightarrow{\sigma}^{*}$ désigne le moment cinétique barycentrique. Dans le cas de référentiel barycentrique non galiléen, les actions de Coriolis y sont nulles par définition de référentiel et ainsi leurs moments, de plus, les moments des actions d'inertie d'entraînement sont aussi nulles. Du coup, on ne prend en compte que le moment des actions extérieures (« réelles »).
 
 Théorème du moment cinétique scalaire des systèmes matériels par rapport à un axe fixe $\Delta$ : $\dfrac{d\sigma_{\Delta}}{dt} = \Gamma_{ext,\,\Delta}$.
 
@@ -41,3 +41,11 @@ Une liaison pivot est dite parfaite si le moment des actions de contact par rapp
 > [!warning] Différence entre axe fixe et axe de direction fixe
 > L'axe de rotation fixe est immobile à la fois en position et en direction dans un référentiel donné, tandis que l'axe de rotation de direction fixe n'a qu'une direction constante et n'est pas nécessairement dans une position fixe.
 ^def1
+
+> [!warning] Résolution d'un exercice de mécanique
+> La résolution d'un exercice de mécanique est parfois guidée. Elle ne l'est cependant pas toujours. Il faut donc adopter une démarche rigoureuse :
+> 1. Définir les grandeurs cinématiques.
+> 2. Chercher les relations de liaison entre ces paramètres afin d'en diminuer le nombre au maximum.
+> 3. Faire un bilan des actions, ici extérieures, car on applique les théorèmes de la dynamique.
+> 4. Exprimer les moments des actions et les moments cinétiques.
+> 5. Écrire les équations de la dynamique.
