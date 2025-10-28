@@ -131,7 +131,7 @@ On mesurera la durée de 10 oscillations et on enclenchera le chronomètre lorsq
 
 ### Influence de l'amplitude
 - Déterminer la période T pour des différentes amplitudes initiales en remplissant le tableau suivant : 
-![[figure34.png]]
+![[mecanique1/attachments-mecanique1/figure34.png]]
 - Conclure et donner le nom du phénomène ainsi observé.
 - pour $\theta_0 \geq 40^\circ$ vérifier la formule de Borda $T =T_0 \left(1 + \frac{\theta_{0}^{2}}{16}\right)$ qui est obtenue en utilisant un développement limité de la fonction sinus dans l'équation de mouvement.
 

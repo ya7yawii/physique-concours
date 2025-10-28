@@ -23,6 +23,30 @@ Théorème de la puissance cinétique pour un système fermé de points matérie
 > Lorsque le solide de centre d’inertie $G$ est en translation, la puissance des actions extérieures a pour expression : $P_{ext} = \overrightarrow{F}\,.\overrightarrow{v}(G)$.
 > Considérons un solide en rotation. Soit $A$ un point de l’axe $\Delta$ autour duquel le solide est en rotation. La puissance des actions extérieures est égale à : $P_{ext} = \overrightarrow{\Gamma}_A\,.\overrightarrow{\Omega} = \Gamma_{\Delta}\Omega$.
 
+> [!note] Application du théorème de l’énergie cinétique pour un système de solides
+> Alors que le théorème des actions réciproques indique que la somme des actions mécaniques entre les différents solides d’un système de solides est nulle, la puissance des actions mécaniques intérieures peut a priori être non nulle.
+> La variation par unité de temps de l’énergie cinétique d’un <mark style="color: red">système de solides</mark> est égale à la somme de la puissance des actions extérieures et de celle des actions intérieures : $\displaystyle \dfrac{dE_c}{dt} = P_{ext} + \sum_{i=1}^{N} \sum_{\substack{j=1\\j \neq i}}^{N} P_{int[i \rightarrow j]}$ où $P_{int[i \rightarrow j]}$ est la puissance des actions mécaniques (intérieures) exercées par le solide $i$ sur le solide $j$.
+
+> [!note] Glissement d’un solide sur un autre
+> Un solide glisse sur une surface plane immobile dans le référentiel galiléen d’étude. Tous les points du solide ont la même vitesse que $G$, son centre d’inertie. Comme nous le verrons dans [[11-Actions de contact|le chapitre consacré aux actions de contact]], ces dernières sont décrites par un torseur de résultante $\overrightarrow{T} + \overrightarrow{N}$. La puissance des actions de contact exercées par le support sur le solide est égale à $\overrightarrow{T} ⋅ \overrightarrow{v}(G)$. Celle des actions de contact du solide sur le support, fixe, est nulle. La puissance des actions intérieures du système { solide + support } vaut ainsi $\overrightarrow{T} ⋅ \overrightarrow{v}(G)$ : elle est non nulle. D’après les lois de Coulomb, que nous énoncerons dans un  [[11-Actions de contact|chapitre ultérieur]], cette puissance est négative.
+
+> [!note] Roulement d'un solide sur un autre
+> Considérons deux solides $\Sigma_1$ sur $\Sigma_2$ en contact au point $I$. Les actions de contact se réduisent à un glisseur de moment nul en $I$. La puissance des actions de contact est égale au produit scalaire de la résultante des actions de contact et de la vitesse de glissement : $P_{contact} = \overrightarrow{T} . \overrightarrow{v}_g$.
+> En cas de glissement, cette puissance est négative.
+> <mark style="color: red">En l’absence de glissement, la puissance des actions de contact est nulle.</mark>.
+
+> [!note] Définition énergétique d’une liaison parfaite
+> <mark style="color: red">La puissance des actions de contact d’une liaison surfacique parfaite (il n’y a aucun frottement) est nulle</mark>. Considérons trois liaisons particulières :![[mecanique2/attachments-mecanique2/figure34.png]]
+> Pour mettre à profit une hypothèse de liaison pivot parfaite, il est utile d’inclure l’axe dans le système dont on réalise l’étude énergétique.
+
+> [!note] Action mécanique conservative et énergie potentielle
+> Un solide est soumis à des actions mécaniques extérieures de résultante $\overrightarrow{F}$ et de moment $\overrightarrow{\Gamma}_O$ en $O$. Le travail fourni pour un déplacement élémentaire de translation $d\overrightarrow{G}$ et de rotation $d\theta\overrightarrow{e}_z$ est égal à : $\delta W = \overrightarrow{F} . d\overrightarrow{G} + \overrightarrow{\Gamma}_O . d\theta\overrightarrow{e}_z$.
+> Si le travail entre deux points quelconques $A$ et $B$ est indépendant du chemin suivi, on peut définir une énergie potentielle dont dérivent les actions extérieures. On a alors pour tout déplacement élémentaire : $\delta W = -dE_p$.
+> Une action mécanique est <mark style="color: red">conservative</mark> si elle dérive d’une énergie potentielle.
+> Ainsi, dans un champ de pesanteur uniforme, le poids d’un système matériel de masse $M$ dérive d’une énergie potentielle de pesanteur $E_p = Mgz_G$ où $z_G$ désigne la position sur un axe vertical ascendant du centre d’inertie du système.
+> Considérons un solide relié à un fil de torsion exerçant un couple $\Gamma \overrightarrow{e}_z$. La position du solide est repérée par un angle $\theta$. On suppose que le couple a un moment $\Gamma = – C\theta$ (couple de rappel). Cette action extérieure dérive alors de l’énergie potentielle : $E_p = \frac{1}{2}C\theta^{2}$.
+> Il faut noter qu'une énergie potentielle est définie à une constante additive près.
+
 # Définitions
 
 # Diagrammes
