@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "4e0fecede93f6a06",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mecanique2/04-Moment cinétique d'un solide.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "04-Moment cinétique d'un solide"
-            }
-          },
-          {
             "id": "f7473c4db94c8ad4",
             "type": "leaf",
             "state": {
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "09-Théorème du moment cinétique"
+            }
+          },
+          {
+            "id": "0fa51bb2e0c592c0",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mecanique2/10-Théorème de l'énergie cinétique.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "10-Théorème de l'énergie cinétique"
             }
           }
         ],
@@ -196,29 +196,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f7473c4db94c8ad4",
+  "active": "0fa51bb2e0c592c0",
   "lastOpenFiles": [
-    "mecanique2/04-Moment cinétique d'un solide.md",
+    "mecanique2/07-Les travaux des actions sur un système – Énergie potentielle.md",
+    "mecanique2/05-Les actions sur un système.md",
+    "mecanique2/10-Théorème de l'énergie cinétique.md",
+    "mecanique2/06-Énergie cinétique d'un système matériel.md",
+    "mecanique2/00-Mécanique2.md",
     "mecanique2/09-Théorème du moment cinétique.md",
     "mecanique2/03-La résultante et le moment cinétiques.md",
+    "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
+    "mecanique1/06-Théorème du moment cinétique.md",
+    "mecanique2/04-Moment cinétique d'un solide.md",
     "mecanique2/01-Le centre de masse des systèmes matériels.md",
     "mecanique2/02-Cinématique du solide.md",
     "mecanique1/07-Force centrale conservative. Mouvement newtonien.md",
     "mecanique1/08-Changements de référentiels. Mécanique non galiléenne.md",
     "mecanique1/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
     "mecanique1/10-Système de deux points matériels.md",
-    "mecanique2/05-Les actions sur un système.md",
-    "mecanique2/06-Énergie cinétique d'un système matériel.md",
-    "mecanique2/07-Les travaux des actions sur un système – Énergie potentielle.md",
     "mecanique2/08-Théorème de la résultante cinétique.md",
-    "mecanique2/00-Mécanique2.md",
     "mecanique1/00-Mécanique1.md",
     "mecanique1/01-Cinématique.md",
     "mecanique1/02-Dynamique du point matériel.md",
     "mecanique1/03-Puissance et énergie en référentiel galiléen.md",
-    "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
     "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
-    "mecanique1/06-Théorème du moment cinétique.md",
     "intégrales premières du mouvement.md",
     "mecanique2/attachments-mecanique2/figure33.png",
     "mecanique2/attachments-mecanique2/figure32.png",
@@ -242,7 +243,6 @@
     "mecanique2/attachments-mecanique2/figure31.odg",
     "def1.md",
     "().md",
-    "templates/chapitre.md",
-    "templates/livre.md"
+    "templates/chapitre.md"
   ]
 }
