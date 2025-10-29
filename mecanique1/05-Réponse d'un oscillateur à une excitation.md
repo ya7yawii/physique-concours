@@ -92,7 +92,7 @@ Tableau des analogies électromécaniques :
 | raideur k                   | inverse de la capacité $\frac{1}{C}$ |
 # Diagrammes
 Modèle d'oscillateur mécanique linéaire amorti soumis à une excitation $x_A(t)$ :
-![[figure38.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure38.png]]^figure1
 En agitant l'extrémité A du ressort, nous pouvons exciter le mouvement de cet oscillateur amorti. Ce fait est traduit par le second membre, non nul et pouvant dépendre du temps, de l'équation d'évolution.
 # Graphiques
 Fonction échelon (ou de Heaviside) :

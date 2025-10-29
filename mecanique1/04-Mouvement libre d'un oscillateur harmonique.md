@@ -137,12 +137,12 @@ On mesurera la durée de 10 oscillations et on enclenchera le chronomètre lorsq
 
 ### Influence de la masse
 - Déterminer la période T pour des différentes masses en remplissant le tableau suivant :
-![[figure35.png]]
+![[mecanique1/attachments-mecanique1/figure35.png]]
 - Conclure.
 
 ### Influence de la longueur du fil L
 - Déterminer la période T pour des différentes longueurs en remplissant le tableau suivant :
-![[figure36.png]]
+![[mecanique1/attachments-mecanique1/figure36.png]]
 - Tracer le graphe représentant T en fonction de L puis faire modéliser.
 - Conclure
 
@@ -153,7 +153,7 @@ On mesurera la durée de 10 oscillations et on enclenchera le chronomètre lorsq
 On appelle oscillateur harmonique tout système dont l'évolution (de la position, de la vitesse ou de l'accélération) est fonction sinusoïdale du temps (sinus ou cosinus). on peut citer les exemples suivants à titre non exhaustif de l'oscillateur harmonique : le pendule simple, oscillateur masse-ressort, circuit LC, atomes dans un solide,...
 
 ==**Mouvement du pendule simple pour les très petits angles**== : (Application 2 page 79)
-![[figure37.png]]
+![[mecanique1/attachments-mecanique1/figure37.png]]
 On a $m\overrightarrow{a} = m\overrightarrow{g} + \overrightarrow{T}$ signifie $T\overrightarrow{e}_r = \frac{mv^{2}}{L_0}\overrightarrow{e}_r + mg\cos\theta\overrightarrow{e}_r$ 
 Si $\theta$ est petit, on n'a plus de mouvement significatif sur $Oz$, donc $z = L_0$, $z' = 0$, $z'' = 0$ et $\cos\theta = 1 - \frac{\theta^{2}}{2} = 1$
 De plus d'après la conservation de l'énergie mécanique, $\frac{v^{2}}{L_0} = 2g(\cos\theta - \cos\theta_m) = g(\theta_{m}^{2} - \theta^{2}) \ll g$ donc $T \simeq mg$
