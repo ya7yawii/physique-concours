@@ -35,7 +35,8 @@
               "title": "10-Théorème de l'énergie cinétique"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,8 +196,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "376a7b4ad5b2f687",
+  "active": "0fa51bb2e0c592c0",
   "lastOpenFiles": [
+    "mecanique2/07-Les travaux des actions sur un système – Énergie potentielle.md",
     "mecanique2/10-Théorème de l'énergie cinétique.md",
     "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique1/02-Dynamique du point matériel.md",
@@ -211,7 +213,6 @@
     "mecanique1/10-Système de deux points matériels.md",
     "mecanique1/01-Cinématique.md",
     "mecanique2/06-Énergie cinétique d'un système matériel.md",
-    "mecanique2/07-Les travaux des actions sur un système – Énergie potentielle.md",
     "mecanique2/09-Théorème du moment cinétique.md",
     "mecanique2/attachments-mecanique2/figure34.png",
     "mecanique2/08-Théorème de la résultante cinétique.md",

@@ -70,7 +70,7 @@ Théorème de la puissance cinétique pour un système fermé de points matérie
 # Expériences
 ## Étude du volant de Maxwell
 > [!warning]
-> Ce TP n'est pas dans le livre mais se trouve dans les liens suivants : [lien 1](http://www.fsr.ac.ma/DOC/Cours_en_ligne/Printemp/LICENCES/LF/SMA/S4/Physique%206:%20M%C3%A9canique%20Du%20Solide/TP/Polycope%20Mec%206-12-20.pdf)page 26, [lien 2](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf)page 36.
+> Ce TP n'est pas dans le livre mais se trouve dans les liens suivants : [lien 1](http://www.fsr.ac.ma/DOC/Cours_en_ligne/Printemp/LICENCES/LF/SMA/S4/Physique%206:%20M%C3%A9canique%20Du%20Solide/TP/Polycope%20Mec%206-12-20.pdf) page 26, [lien 2](https://www.ummto.dz/fs/wp-content/uploads/2019/09/Ouvrir-Ici-.pdf) page 36.
 
 ![[mecanique2/attachments-mecanique2/figure35.png]]
 ### Détermination du moment d'inertie de la roue de Maxwell
