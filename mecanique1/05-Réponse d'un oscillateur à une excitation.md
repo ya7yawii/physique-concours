@@ -96,13 +96,13 @@ Modèle d'oscillateur mécanique linéaire amorti soumis à une excitation $x_A(
 En agitant l'extrémité A du ressort, nous pouvons exciter le mouvement de cet oscillateur amorti. Ce fait est traduit par le second membre, non nul et pouvant dépendre du temps, de l'équation d'évolution.
 # Graphiques
 Fonction échelon (ou de Heaviside) :
-![[figure39.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure39.png]]^figure2
 
 Régimes transitoires d'un oscillateur en réponse à une excitation en échelon (Évolutions temporelles):
-![[figure40.png]]^figure3
+![[mecanique1/attachments-mecanique1/figure40.png]]^figure3
 
 Régimes transitoires d'un oscillateur en réponse à une excitation en échelon (Trajectoires de phase):
-![[figure41.png]]^figure4
+![[mecanique1/attachments-mecanique1/figure41.png]]^figure4
 
 Variation de l'amplitude normalisée de la réponse en élongation en fonction de u pulsation normalisée de l'excitation pour différents amortissements:
 ![[figure42.png]]^figure5
