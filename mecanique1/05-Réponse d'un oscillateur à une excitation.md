@@ -105,16 +105,16 @@ Régimes transitoires d'un oscillateur en réponse à une excitation en échelon
 ![[mecanique1/attachments-mecanique1/figure41.png]]^figure4
 
 Variation de l'amplitude normalisée de la réponse en élongation en fonction de u pulsation normalisée de l'excitation pour différents amortissements:
-![[figure42.png]]^figure5
+![[mecanique1/attachments-mecanique1/figure42.png]]^figure5
 
 Variation de déphasage de la réponse en élongation par rapport à l'excitation pour différents amortissements:
-![[figure43.png]]^figure6
+![[mecanique1/attachments-mecanique1/figure43.png]]^figure6
 
 Variation de l'amplitude de la réponse en vitesse en fonction de la pulsation normalisée de l'excitation, pour différents amortissements :
-![[figure44.png]]^figure7
+![[mecanique1/attachments-mecanique1/figure44.png]]^figure7
 
 Variation de $\psi$ en fonction de pulsation normalisée, pour différents amortissements :
-![[figure45.png]]^figure8
+![[mecanique1/attachments-mecanique1/figure45.png]]^figure8
 # Expériences
 ## Oscillations libres et forcées. Pendule de Pohl
 > [!warning]
