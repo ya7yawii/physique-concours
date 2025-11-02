@@ -72,3 +72,9 @@ La force de frottement est due aux interactions entre les couches atomiques en c
 # Expériences
 
 # Autres notes
+> [!warning] Un mouvement de roulement sans glissement est-elle toujours non dissipatif?
+> Un mouvement de roulement sans glissement est non dissipatif dans le cas où le contact est ponctuel et le système roulant indéformable.
+> Il est dissipatif dans les autres cas. Par exemple, la déformation des pneus sur la chaussée est une cause de dissipation d’énergie cinétique et d’échauffement des pneus. De même, pour un contact étendu, le moment des actions de contact travaille et participe à la dissipation d’énergie.
+
+> [!warning] Les lois de Coulomb du frottement sont-ils des lois fondamentales et exactes?
+> Les lois de Coulomb sont des lois approchées, valables pour certains types de mouvement, pour des vitesses de glissement faibles.
