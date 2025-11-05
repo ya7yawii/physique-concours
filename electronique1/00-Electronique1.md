@@ -10,7 +10,7 @@ crée: 05-11-2025, 16:22
 # Électronique/Électrocinétique
 
 ## Sommaire
-1. [[01-Électrocinétique : Cadre et concepts de base]]
+1. [[01-Électrocinétique. Cadre et concepts de base]]
 2. [[02-Modélisation linéaire des composants usuels]]
 3. [[03-Théorèmes généraux relatifs aux réseaux linéaires]]
 4. [[04-Principe des appareils de mesure]]
