@@ -30,7 +30,8 @@ crée: 06-11-2025, 13:31
 
 > [!note] Éléments dipolaires passifs
 > - Résistor ou conducteur (ohmique) : Un résistor suit à tout instant la loi d’Ohm : $u(t) = Ri(t)$ en convention récepteur avec $R$ est la résistance du résistor s'exprime en ohm ($\Omega$), et $G = \frac{1}{R}$ est sa conductance en siemens (S). La caractéristique statique d’un résistor et ses caractéristiques dynamiques sont confondues en une droite passant par l’origine. La puissance instantanée reçue par un résistor est toujours positive : $\mathcal{P}(t) = Ri^{2}(t)$. Le résistor absorbe donc de l’énergie, mais n’en restitue jamais au circuit ([[#^figure5|fig. 5]]) : en recevant de l’énergie, l’élément tend à s’échauffer, et transfère de la puissance thermique au milieu environnant. Cet effet est recherché dans le fonctionnement d’un radiateur électrique.
-> - Bobine idéale :
+> - Bobine idéale : La représentation symbolique figure sur la [[#^figure6|figure 6]]. Le fonctionnement de cet élément est basé sur le phénomène d’induction électromagnétique : les variations du courant dans la bobine créent une tension aux bornes de l’élément : $u(t) = L\dfrac{di(t)}{dt}$ où $L$ est l'inductance de la bobine en henry (H). En régime statique $i = I$ et $u = 0$, la caractéristique statique est donc confondue avec l’axe vertical $(O, I)$. <mark style="color: red">En régime constant ou statique (permanent, indépendant du temps) une bobine idéale se comporte comme un simple fil</mark>. La puissance instantanée reçue par une bobine idéale est : $\mathcal{P}(t) = \dfrac{d}{dt}\left(\frac{Li^{2}(t)}{2}\right)$. La bobine accumule donc de l’énergie $\mathcal{E}(t) = \frac{1}{2}Li^{2}(t)$ lorsque le courant $i$ augmente, et peut la restituer si celui-ci diminue : la bobine est un élément de stockage d’énergie. <mark style="color: red">Le courant à travers une bobine idéale, ne peut pas subir de discontinuité</mark>.
+> - Condensateur idéal : La représentation symbolique d’un condensateur parfait est donnée sur la [[#^figure7|figure 7]]. Le courant $i(t)$ qui traverse un condensateur idéal est, à tout instant, proportionnel à la dérivée de la tension $u(t)$ appliquée à ses bornes : $i(t) = \dfrac{dq(t)}{dt} = C\dfrac{du(t)}{dt}$ avec $C$ est la capacité du condensateur en farad (F). En régime statique, $u = U$ et $i = 0$, la caractéristique statique est donc confondue avec l’axe horizontal $(O, U)$. <mark style="color: red">En régime constant ou statique, un condensateur idéal se comporte comme un interrupteur ouvert</mark>. Une énergie $\mathcal{E}(t) = \frac{1}{2}Cu^{2}(t)$est emmagasinée dans le condensateur et sa valeur instantanée est déterminée par la valeur de la tension $u(t)$ à ses bornes. <mark style="color: red">La tension u(t) aux bornes d’un condensateur idéal, ainsi que sa charge q(t), ne peuvent pas subir de discontinuité</mark>.
 
 
 # Définitions
@@ -60,8 +61,29 @@ Les éléments que nous décrivons ici permettent de réaliser quelques opérati
 En les associant, nous obtiendrons des circuits linéaires dont les équations d’évolution permettent :
 - de réaliser des fonctions particulières ;
 - de modéliser (et observer) la réponse d’un système (pas uniquement électronique) régi par la même équation d’évolution.
-# Diagrammes
 
+==**Éléments dipolaires actifs**== :
+- Sources indépendantes : ==**Une source indépendante de tension**== est caractérisée par sa force électromotrice (f.e.m.) $e(t)$ telle que $u = e$, quel que soit le courant traversant la source. La caractéristique tension-courant d’une source de tension est donnée par [[#^figure8|figure 8]]. ==**Une source indépendante de courant**== est caractérisée par son courant électromoteur (c.e.m.) $\eta(t)$ tel que $i = \eta$, quelle que soit la tension aux bornes de la source. La caractéristique tension-courant d’une source de courant est donnée [[#^figure9|figure 9]].
+- Sources commandées : Une source commandée ou liée est une source de tension (ou de courant) dont la (f.e.m.) (ou le c.e.m.) a une valeur déterminée par une grandeur électrique $u'(t)$ ou $i'(t)$, associée à un autre élément du réseau ([[#^figure10|fig. 10]]).
+
+==**Amplificateur opérationnel idéal en régime linéaire**== :
+Un A.O. idéal est un composant actif dont la représentation symbolique est donnée par la [[#^figure11|figure 11]].
+Les intensités $i_+$ et $i_-$ arrivant sur les entrés + et – sont nulles. En régime linéaire, il est caractérisé par : $\epsilon = V_+ - V_- = 0$. La tension $v_s$ est fixée par le reste du circuit compte tenu des relations $i_+ = 0$, $i_- = 0$ et $\epsilon = 0$.
+# Diagrammes
+En convention générateur, $u(t) = -Ri(t)$ . La puissance reçue $\mathcal{P} = -u(t)i(t) = +Ri^{2}(t)$ est toujours positive
+![[electronique1/attachments-electronique1/figure26.png]]^figure5
+
+Représentation d’une bobine idéale
+![[electronique1/attachments-electronique1/figure27.png]]^figure6
+
+Représentation symbolique d’un condensateur idéal
+![[electronique1/attachments-electronique1/figure28.png]]^figure7
+
+Source de tension commandée en tension
+![[electronique1/attachments-electronique1/figure31.png]]^figure10
+
+Amplificateur opérationnel idéal
+![[electronique1/attachments-electronique1/figure32.png]]^figure11
 # Graphiques
 Caractéristique statique d’un composant dipolaire
 ![[electronique1/attachments-electronique1/figure21.png]]^figure1
@@ -78,8 +100,11 @@ Exemple de caractéristique dynamique d’un dipôle linéaires soumis à une ex
 Caractéristique d’une diode (élément non linéaire) à fréquence élevée
 ![[electronique1/attachments-electronique1/figure25.png]]^figure4b
 
-En convention générateur, $u(t) = -Ri(t)$ . La puissance reçue $\mathcal{P} = -u(t)i(t) = +Ri^{2}(t)$ est toujours positive
-![[electronique1/attachments-electronique1/figure26.png]]^figure5
+Caractéristique courant-tension d’une source de f.e.m. $e(t)$ en convention générateur
+![[electronique1/attachments-electronique1/figure29.png]]^figure8
+
+Caractéristique tension-courant et représentation symbolique d’une source de c.e.m. $\eta(t)$
+![[electronique1/attachments-electronique1/figure30.png]]^figure9
 # Expériences
 
 # Autres notes
