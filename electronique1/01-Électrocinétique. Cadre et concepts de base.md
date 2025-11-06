@@ -160,7 +160,7 @@ Convention récepteur
 
 # Expériences
 > [!warning]
-> Voici quelques fascicules de travaux pratiques sur le sujet de l'électrocinétique : le [lien 1](https://fss.rnu.tn/useruploads/files/D%C3%A9partement%20Physique/2022-2023/Fascule%20electrocin%C3%A9tique%20finale(1).pdf).
+> Voici quelques fascicules de travaux pratiques sur le sujet de l'électrocinétique : le [lien 1](https://fss.rnu.tn/useruploads/files/D%C3%A9partement%20Physique/2022-2023/Fascule%20electrocin%C3%A9tique%20finale(1).pdf), le [lien 2](https://prepanouar.wordpress.com/tp-electronique-sup/), le [lien 3](http://remy.duperray.free.fr/downloads-5/downloads-2/index.html), le [lien 4](https://1281e2ae-6d34-41a5-97f9-4aa5720a7ab1.filesusr.com/ugd/cb5e03_1762a791c05749058db343619e5a1689.pdf), le [lien 5](https://www.studocu.com/fr/document/universite-de-franche-comte/electrocinetique-1/tp1-electrocinetique-rayan-ben-hamida-louis-ruffieux/97664209), le [lien 6](https://www.studocu.com/row/document/universite-sidi-mohamed-ben-abdellah-de-fes/annees-preparatoires/tp-electrocinetique-tp-electricite/94080695).
 # Autres notes
 > [!warning] Ordre de grandeur à connaître
 > Le nombre d'atomes de cuivre par mètre cube de métal est $n \approx 10^{29}\, atomes\, . m^{-3}$.

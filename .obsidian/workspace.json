@@ -22,20 +22,21 @@
             }
           },
           {
-            "id": "9245dbcac8f69c36",
+            "id": "2c697472b360b4f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mecanique2/09-Théorème du moment cinétique.md",
+                "file": "electronique1/02-Modélisation linéaire des composants usuels.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09-Théorème du moment cinétique"
+              "title": "02-Modélisation linéaire des composants usuels"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -195,30 +196,30 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "68a9c2192930cdbf",
+  "active": "2c697472b360b4f9",
   "lastOpenFiles": [
+    "electronique1/01-Électrocinétique. Cadre et concepts de base.md",
+    "electronique1/02-Modélisation linéaire des composants usuels.md",
+    "electronique1/attachments-electronique1/figure25.png",
+    "electronique1/attachments-electronique1/figure24.png",
+    "electronique1/attachments-electronique1/figure23.png",
+    "electronique1/attachments-electronique1/figure22.png",
+    "mecanique2/11-Actions de contact.md",
+    "electronique1/attachments-electronique1/figure21.png",
+    "electronique1/00-Electronique1.md",
     "mecanique2/09-Théorème du moment cinétique.md",
     "mecanique2/10-Théorème de l'énergie cinétique.md",
-    "mecanique2/11-Actions de contact.md",
-    "electronique1/01-Électrocinétique. Cadre et concepts de base.md",
     "electronique1/attachments-electronique1/figure20.png",
     "electronique1/attachments-electronique1/figure19.png",
     "electronique1/attachments-electronique1/figure18.png",
     "electronique1/attachments-electronique1/figure17.png",
     "electronique1/attachments-electronique1/figure16.png",
-    "electronique1/attachments-electronique1/figure15.png",
-    "electronique1/attachments-electronique1/figure14.png",
-    "electronique1/attachments-electronique1/figure13.png",
-    "electronique1/attachments-electronique1/figure12.png",
-    "electronique1/attachments-electronique1/figure11.png",
-    "electronique1/00-Electronique1.md",
     "mecanique2/01-Le centre de masse des systèmes matériels.md",
     "mecanique1/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
     "mecanique1/03-Puissance et énergie en référentiel galiléen.md",
     "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
     "mecanique1/01-Cinématique.md",
-    "02-Modélisation linéaire des composants usuels.md",
     "mecanique1/00-Mécanique1.md",
     "electronique1/attachments-electronique1",
     "electronique1.md",
@@ -234,7 +235,6 @@
     "mecanique1/02-Dynamique du point matériel.md",
     "mecanique1/06-Théorème du moment cinétique.md",
     "mecanique1/07-Force centrale conservative. Mouvement newtonien.md",
-    "mecanique1/10-Système de deux points matériels.md",
     "mecanique2/attachments-mecanique2/lu28814ykh.tmp",
     "mecanique2/attachments-mecanique2/lu28814ykg.tmp",
     "mecanique2/attachments-mecanique2/lu28814ykf.tmp",
