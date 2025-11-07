@@ -33,6 +33,12 @@ crée: 06-11-2025, 13:31
 > - Bobine idéale : La représentation symbolique figure sur la [[#^figure6|figure 6]]. Le fonctionnement de cet élément est basé sur le phénomène d’induction électromagnétique : les variations du courant dans la bobine créent une tension aux bornes de l’élément : $u(t) = L\dfrac{di(t)}{dt}$ où $L$ est l'inductance de la bobine en henry (H). En régime statique $i = I$ et $u = 0$, la caractéristique statique est donc confondue avec l’axe vertical $(O, I)$. <mark style="color: red">En régime constant ou statique (permanent, indépendant du temps) une bobine idéale se comporte comme un simple fil</mark>. La puissance instantanée reçue par une bobine idéale est : $\mathcal{P}(t) = \dfrac{d}{dt}\left(\frac{Li^{2}(t)}{2}\right)$. La bobine accumule donc de l’énergie $\mathcal{E}(t) = \frac{1}{2}Li^{2}(t)$ lorsque le courant $i$ augmente, et peut la restituer si celui-ci diminue : la bobine est un élément de stockage d’énergie. <mark style="color: red">Le courant à travers une bobine idéale, ne peut pas subir de discontinuité</mark>.
 > - Condensateur idéal : La représentation symbolique d’un condensateur parfait est donnée sur la [[#^figure7|figure 7]]. Le courant $i(t)$ qui traverse un condensateur idéal est, à tout instant, proportionnel à la dérivée de la tension $u(t)$ appliquée à ses bornes : $i(t) = \dfrac{dq(t)}{dt} = C\dfrac{du(t)}{dt}$ avec $C$ est la capacité du condensateur en farad (F). En régime statique, $u = U$ et $i = 0$, la caractéristique statique est donc confondue avec l’axe horizontal $(O, U)$. <mark style="color: red">En régime constant ou statique, un condensateur idéal se comporte comme un interrupteur ouvert</mark>. Une énergie $\mathcal{E}(t) = \frac{1}{2}Cu^{2}(t)$est emmagasinée dans le condensateur et sa valeur instantanée est déterminée par la valeur de la tension $u(t)$ à ses bornes. <mark style="color: red">La tension u(t) aux bornes d’un condensateur idéal, ainsi que sa charge q(t), ne peuvent pas subir de discontinuité</mark>.
 
+Résistance d’un fil de section constante : $R = \frac{\rho L}{S} = \frac{L}{\gamma S}$ avec $\rho$ $(\text{en}\,\Omega . m)$ est résistivité du matériau et $\gamma = \frac{1}{\rho}$ $(\text{en}\,S . m^{-1})$ est sa conductivité.
+
+> [!note] Modélisation des électromoteurs
+> La modélisation des électromoteurs s’effectue en linéarisant (éventuellement par morceaux) leurs caractéristiques. La relation entre l’intensité $i$ du courant à travers l’électromoteur et la tension $u$ entre ses bornes ([[#^figure14|fig. 14]]) est de la forme : $\frac{u}{U_0} + \frac{i}{I_0} = 1$.
+> Il est possible de reproduire une telle caractéristique affine par deux sortes d’associations de dipôles idéaux :
+> - Modélisation de Thévenin : La caractéristique de l’électromoteur peut s’expliciter en : $u = U_0 - \frac{U_0}{I_0}i$. Cette caractéristique est identique à celle de l’association d’une source idéale de tension de f.e.m. $e = U_0$ en série avec un résistor de résistance $r = \frac{U_0}{I_0}$ ([[#^figure15|fig. 15]]).
 
 # Définitions
 ==**Point de fonctionnement**== :
@@ -69,6 +75,47 @@ En les associant, nous obtiendrons des circuits linéaires dont les équations d
 ==**Amplificateur opérationnel idéal en régime linéaire**== :
 Un A.O. idéal est un composant actif dont la représentation symbolique est donnée par la [[#^figure11|figure 11]].
 Les intensités $i_+$ et $i_-$ arrivant sur les entrés + et – sont nulles. En régime linéaire, il est caractérisé par : $\epsilon = V_+ - V_- = 0$. La tension $v_s$ est fixée par le reste du circuit compte tenu des relations $i_+ = 0$, $i_- = 0$ et $\epsilon = 0$.
+
+==**Différents types de résistances**== :
+- Résistances non bobinées : Elles peuvent être soit agglomérées, soit à couche.
+- Résistances bobinées.
+
+==**Caractéristiques nominales d’une résistance**== :
+- Valeur nominale : C’est la valeur $R_n$ pour laquelle le composant a été fabriqué.
+- Tolérance : C’est la valeur maximale de l’écart relatif $\left|\frac{R - R_n}{R_n}\right|$ entre la valeur réelle $R$ de la résistance et sa valeur $R_n$.
+- Puissance nominale : C’est la puissance que le composant peut dissiper en régime continu à la température nominale de service.
+
+==**Caractéristiques tension-courant d’une résistance**== :
+Lorsqu’une résistance est correctement utilisée, sa caractéristique statique est une droite passant par l’origine. Il en est de même pour les caractéristiques dynamiques si la fréquence d’utilisation n’est pas trop élevée. Dans ces conditions, ces composants ont une résistance dynamique égale à leur résistance statique.
+Lorsque la fréquence s’élève, des effets inductifs et capacitifs se manifestent et peuvent modifier de façon sensible la valeur nominale des résistances. Pour des valeurs élevées de la fréquence, les caractéristiques dynamiques ne sont plus des droites.
+
+==**Différents types de condensateurs**== :
+- Condensateurs enroulés.
+- Condensateurs multicouches.
+- Condensateurs électrolytiques.
+
+==**Caractéristiques nominales d’un condensateur**== :
+- Valeur nominale : C’est la valeur $C_n$ de la capacité pour laquelle le condensateur a été fabriqué.
+- Tolérance : C’est la valeur maximale de l’écart relatif $\left|\frac{C - C_n}{C_n}\right|$ entre la valeur réelle $C$ de la capacité et sa valeur nominale $C_n$.
+- Tension maximale d’utilisation : C’est la tension maximale $V_m$ au-dessus de laquelle il y a risque de détérioration du diélectrique (phénomène de « claquage »).
+- Résistance d’isolement ou résistance de fuite : C’est la résistance $R_i$ qu’oppose le diélectrique au passage du courant entre les deux armatures du condensateur.
+- Tenue en fréquence : Les pertes d’énergie dans les isolants augmentent avec la fréquence et limitent l’emploi des condensateurs en H.F.
+
+==**Modélisation large bande d’un condensateur**== :
+La représentation d’un condensateur par un élément idéal n’est donc pas toujours suffisante, à très basse fréquence ou à très haute fréquence. On approche mieux le condensateur réel en associant des dipôles idéaux selon le schéma de la [[#^figure12|figure 12]].
+
+==**Structures des bobines**== :
+- Bobines linéaires.
+- Bobines non linéaires.
+
+==**Modélisation d’une bobine**== :
+Il faut tenir compte de la résistance non nulle du bobinage ainsi que les effets capacitifs entre les spires du bobinage à haute fréquence. On obtient une approximation en ajoutant une résistance en série, une faible capacité et une grande résistance en parallèle ([[#^figure13|fig. 13]]).
+
+==**Électromoteur**== :
+Un électromoteur est un composant dipolaire non symétrique dont les bornes sont repérées par les symboles $\oplus$ (borne positive) et $\ominus$ (borne négative). La fonction d’un électromoteur est de réaliser des conversions d’énergie.
+
+==**Caractéristique statique d'un électromoteur**== :
+Les caractéristiques statiques des électromoteurs ne passent pas par l’origine. Cette particularité confère aux électromoteurs la propriété de posséder une tension $U_0$ en circuit ouvert non nulle et un courant $I_0$ de court-circuit non nul : un électromoteur est un dipôle actif.
 # Diagrammes
 En convention générateur, $u(t) = -Ri(t)$ . La puissance reçue $\mathcal{P} = -u(t)i(t) = +Ri^{2}(t)$ est toujours positive
 ![[electronique1/attachments-electronique1/figure26.png]]^figure5
@@ -84,6 +131,15 @@ Source de tension commandée en tension
 
 Amplificateur opérationnel idéal
 ![[electronique1/attachments-electronique1/figure32.png]]^figure11
+
+Modélisation large bande d'un condensateur
+![[electronique1/attachments-electronique1/figure33.png]]^figure12
+
+Modélisation d’une bobine réelle en large bande
+![[electronique1/attachments-electronique1/figure34.png]]^figure13
+
+Modélisation d’un électromoteur linéaire par un électromoteur de Thévenin $u = e - ri$
+![[electronique1/attachments-electronique1/figure36.png]]^figure15
 # Graphiques
 Caractéristique statique d’un composant dipolaire
 ![[electronique1/attachments-electronique1/figure21.png]]^figure1
@@ -105,6 +161,9 @@ Caractéristique courant-tension d’une source de f.e.m. $e(t)$ en convention g
 
 Caractéristique tension-courant et représentation symbolique d’une source de c.e.m. $\eta(t)$
 ![[electronique1/attachments-electronique1/figure30.png]]^figure9
+
+Caractéristique tension-courant d’un électromoteur linéaire avec une convention générateur
+![[electronique1/attachments-electronique1/figure35.png]]^figure14
 # Expériences
 
 # Autres notes
