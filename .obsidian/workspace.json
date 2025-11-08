@@ -198,12 +198,16 @@
   },
   "active": "cdb27b10930b9d7a",
   "lastOpenFiles": [
+    "electronique1/02-Modélisation linéaire des composants usuels.md",
+    "electronique1/03-Théorèmes généraux relatifs aux réseaux linéaires.md",
+    "electronique1/attachments-electronique1/figure56.png",
+    "electronique1/attachments-electronique1/figure55.png",
+    "document 40a.md",
+    "electronique1/attachments-electronique1/figure54.png",
     "electronique1/attachments-electronique1/figure53.png",
     "electronique1/attachments-electronique1/figure52.png",
     "electronique1/attachments-electronique1/figure51.png",
     "electronique1/attachments-electronique1/figure50.png",
-    "electronique1/02-Modélisation linéaire des composants usuels.md",
-    "electronique1/03-Théorèmes généraux relatifs aux réseaux linéaires.md",
     "electronique1/attachments-electronique1/lu80695ewtf.tmp",
     "electronique1/attachments-electronique1/figure50-1.png",
     "electronique1/attachments-electronique1/lu666343lza.tmp",
@@ -214,11 +218,7 @@
     "electronique1/attachments-electronique1/lu666343lhv.tmp",
     "mecanique2/attachments-mecanique2/figure501.png",
     "mecanique2/attachments-mecanique2/lu666343lfk.tmp",
-    "electronique1/attachments-electronique1/figure49.png",
-    "electronique1/attachments-electronique1/figure48.png",
-    "electronique1/attachments-electronique1/figure47.png",
     "electronique1/01-Électrocinétique. Cadre et concepts de base.md",
-    "electronique1/attachments-electronique1/figure46.png",
     "electronique1/00-Electronique1.md",
     "mecanique2/11-Actions de contact.md",
     "mecanique2/09-Théorème du moment cinétique.md",
@@ -242,7 +242,6 @@
     "mecanique2/06-Énergie cinétique d'un système matériel.md",
     "mecanique1/08-Changements de référentiels. Mécanique non galiléenne.md",
     "mecanique1/02-Dynamique du point matériel.md",
-    "mecanique1/06-Théorème du moment cinétique.md",
     "mecanique2/attachments-mecanique2/lu28814ykh.tmp"
   ]
 }

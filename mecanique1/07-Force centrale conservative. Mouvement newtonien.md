@@ -116,13 +116,13 @@ Coordonnées polaires dans le plan de la trajectoire :
 ![[mecanique1/attachments-mecanique1/figure53.png]]^figure2
 
 État de diffusion, avec passage par la distance d'approche minimale $r_{min}$ :
-![[figure54.png]]^figure3
+![[mecanique1/attachments-mecanique1/figure54.png]]^figure3
 
 Énergie potentielle effective pour $n < 0$ (ici n = –1,2) et $k < 0$ :
-![[figure55.png]]^figure4
+![[mecanique1/attachments-mecanique1/figure55.png]]^figure4
 
 Mouvement pour $n < 0$ (ici n = –1,5), oscillations de la distance au centre de force :
-![[figure56.png]]^figure5
+![[mecanique1/attachments-mecanique1/figure56.png]]^figure5
 
 Énergie potentielle effective pour $0 < n < 2$ ici (n = 1,2) :
 ![[figure57.png]]^figure6
