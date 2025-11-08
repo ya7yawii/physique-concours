@@ -48,13 +48,13 @@ Pour un mouvement à force centrale, le moment cinétique $\overrightarrow{L_O}$
 Si le moment cinétique est nul, la trajectoire est rectiligne, placée sur une droite passant par le point O.
 # Diagrammes
 Moment par rapport à un axe :
-![[figure49.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure49.png]]^figure1
 
 Moment cinétique en O pour un mouvement circulaire :
-![[figure50.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure50.png]]^figure2
 # Graphiques
 Démonstration géométrique de l'aire du secteur circulaire :
-![[figure51.png]]^figure3
+![[mecanique1/attachments-mecanique1/figure51.png]]^figure3
 # Expériences
 
 # Autres notes

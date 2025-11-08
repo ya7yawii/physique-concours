@@ -110,10 +110,10 @@ La vitesse nécessaire $v_2$, deuxième vitesse cosmique, est donnée par : $\di
 
 # Graphiques
 Coordonnées polaires dans le plan de la trajectoire :
-![[figure52.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure52.png]]^figure1
 
 Énergie potentielle effective dans un cas répulsif $(n = 1, k < 0)$ :
-![[figure53.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure53.png]]^figure2
 
 État de diffusion, avec passage par la distance d'approche minimale $r_{min}$ :
 ![[figure54.png]]^figure3

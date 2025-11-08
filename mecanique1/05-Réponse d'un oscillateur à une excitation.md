@@ -120,7 +120,7 @@ Variation de $\psi$ en fonction de pulsation normalisée, pour différents amort
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve dans les liens suivants : [lien 1](https://www.ummto.dz/fs/wp-content/uploads/2021/03/TO-VO-L2-1.pdf)page 7, [lien 2](https://elearning.esgee-oran.dz/pluginfile.php/16193/mod_page/content/68/Poly%20phys%20S3%20Khelloufi.pdf)page 12, [lien 3](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 40 et [lien 4](https://www.epfl.ch/schools/sb/sph/wp-content/uploads/A4-Oscillations.pdf).
 
-![[figure47.png]]
+![[mecanique1/attachments-mecanique1/figure47.png]]
 ### Etude du régime libre amorti
 Le moteur d'excitation étant à l'arrêt et le frein à courant de Foucault non alimenté $(I_F = 0 A)$. Écarter le pendule jusqu'à ce qu'il vienne en butée et lâcher sans vitesse initiale.
 - Mesurer la période T des oscillations. (on recommande de mesurer la durée 5 à 10 T de 5 à 10 oscillations).
@@ -141,7 +141,7 @@ Refaire la même manipulation en régime amorti, c'est à dire à $I_F = 0,25A$,
 > [!warning]
 >Ce TP n'est pas dans le livre mais se trouve dans les liens suivants :  [lien 1](https://old.univ-skikda.dz/doc_site/coursenligne/Technologie/TPONDESETVIBRATIONS.pdf)page 3, [lien 2](https://gmp.iut-troyes.univ-reims.fr/wp-content/uploads/2014/01/TP02V.pdf), [lien 3](https://lesia.obspm.fr/perso/raphael-galicher/images/OV4_2019_FusionTP.pdf)page 3.
 
-![[figure48.png]]
+![[mecanique1/attachments-mecanique1/figure48.png]]
 ### Etude du système libre non amortie
 - Calculer la raideur k du ressort en utilisant le principe fondamental à l'équilibre $mg - k\Delta l = 0$.
 - Tirer la masse m de sa position d'équilibre et lâcher la sans vitesse initiale.
@@ -169,7 +169,7 @@ Refaire la même manipulation en régime amorti, c'est à dire à $I_F = 0,25A$,
 - Calculer la pulsation de résonance et la comparer avec celle de la courbe.
 # Autres notes
 > [!note] Application 4 p 107 : pourquoi $\phi_v$ est dans le sens horaire?
-> ![[figure46.png]]
+> ![[mecanique1/attachments-mecanique1/figure46.png]]
 > On a $\displaystyle 2\alpha\underline{V} + j\left(\omega - \frac{\omega_{0}^{2}}{\omega}\right)\underline{V} = \frac{\underline{F}}{m}$ avec $\displaystyle \underline{V} = V_me^{j\varphi_v}$ et $\underline{F} = F_me^{j\psi}$
 >  À mon avis, $\displaystyle \phi_v = \arctan\left(\frac{\omega - \frac{\omega_{0}^{2}}{\omega}}{2\alpha}\right) \Rightarrow \varphi_v + \phi_v = \psi$. En effet, je pense que les choix de sens horaire et $\phi_v < 0$ soit arbitraire puisque je ne trouve aucune autre explication.
 > Pour plus d'information sur la construction de Fresnel, on peut visiter ce site web [lien](https://www.electronics-tutorials.ws/accircuits/phasors.html)
