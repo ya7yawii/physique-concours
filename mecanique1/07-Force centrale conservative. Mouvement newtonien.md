@@ -149,13 +149,13 @@ Branche d'hyperbole du mouvement répulsif :
 ![[mecanique1/attachments-mecanique1/figure64.png]]^figure13
 
 Mouvement elliptique :
-![[figure65.png]]^figure14
+![[mecanique1/attachments-mecanique1/figure65.png]]^figure14
 
 Mouvement parabolique :
-![[figure66.png]]^figure15
+![[mecanique1/attachments-mecanique1/figure66.png]]^figure15
 
 Branche d'hyperbole du mouvement attractif :
-![[figure67.png]]^figure16
+![[mecanique1/attachments-mecanique1/figure67.png]]^figure16
 # Expériences
 ## Mobiles autoporteurs sur coussin d'air
 > [!warning]

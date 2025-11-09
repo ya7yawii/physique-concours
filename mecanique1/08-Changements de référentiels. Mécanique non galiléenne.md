@@ -95,7 +95,7 @@ Les forces d'inertie ne traduisent pas une interaction, mais le caractère non g
 
 # Graphiques
 $\mathcal{R}_2$ est en translation circulaire par rapport à $\mathcal{R}_1$ :
-![[figure68.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure68.png]]^figure1
 
 $\mathcal{R}_2$ est en rotation autour de l'axe $(Oz_1)$ dans $\mathcal{R}_1$ :
 ![[figure69.png]]^figure2

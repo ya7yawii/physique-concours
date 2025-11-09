@@ -51,6 +51,47 @@ Un appareil de mesure est dit « analogique » lorsque la grandeur à mesurer es
 Un voltmètre à aiguille est un appareil analogique : le déplacement de l’aiguille est une fonction continue de la tension.
 Par opposition, un appareil numérique convertit la grandeur à mesurer en un nombre qui est stocké dans une mémoire numérique.
 L’élément principal d’un oscilloscope analogique est le tube cathodique, dans lequel la déviation électrostatique des électrons est réalisée par deux paires de plaques : les plaques de déviation horizontale et verticale ([[#^figure4|fig. 4]]).
+
+> [!note] Utilisation d'un oscilloscope : Signaux d'entrée
+> Le signal d’entrée (voie 1 ou 2) est calibré par un amplificateur (de 5 mV à 20 V par division) d’impédance d’entrée souvent équivalente à une résistance de 1 MΩ en parallèle avec un condensateur de 30 à 50 pF.
+> Le branchement d’un oscilloscope pour mesurer une différence de potentiel perturbe le circuit de la même façon qu’un multimètre utilisé en voltmètre. Cette perturbation doit être prise en compte dans certains montages.
+> Remarque : La composante continue d’un signal peut masquer sa composante variable. Que dire d’un signal variable d’amplitude 10 mV « noyé » sous une composante continue de 10 V ?
+> La touche AC/DC de la voie étudiée permet de résoudre ce type de problème ; la composante continue du signal est éliminée en mode AC. Attention, en mode AC le signal est filtré par un filtre passe-haut, dont la fréquence de coupure est d’une dizaine de hertz. <mark style="color: red">Ce mode ne doit être utilisé qu’exceptionnellement</mark>.
+> Remarque : Le bouton de positionnement de la voie ajoute une composante continue à la valeur appliquée aux plaques de déviation. Lors des mesures, la position du zéro de la voie doit être connue. Pour la visualiser, il suffit d’utiliser la touche GRND (ground ou masse) de la voie (une tension nulle est alors appliquée).
+
+> [!note] Utilisation d'un oscilloscope : Base de temps et synchronisation
+> Dans le mode balayage, une tension en dents de scie est appliquée sur les plaques de déviation horizontale. Le spot se déplace à vitesse constante de la gauche vers la droite. Cette vitesse est choisie en utilisant le bouton « base de temps » qui permet le contrôle de la vitesse de balayage en seconde par division. Pendant son retour (rapide), le faisceau électronique est éteint.
+> Un signal périodique ne peut être visualisé de façon stable que si la période de la dent de scie est asservie à celle du signal. C’est le but de la synchronisation. Le spot attend que le signal servant à la synchronisation passe par zéro ou par une valeur fixée par le réglage du seuil avec une pente déterminée positive ou négative (bouton +/– de la base de temps) pour effectuer son trajet de gauche à droite ([[#^figure5a|figs. 5a]] et [[#^figure5b|b]]).
+> Plusieurs modes de synchronisation existent. En voici quelques-uns :
+> - mode DC (direct current) : le signal est prélevé, puis directement mis en forme pour la synchronisation ;
+> - mode AC (alternative current) : seule la composante variable du signal est conservée ;
+> - mode LF (low frequency) ou basse fréquence : seule la composante basse fréquence du signal est conservée ;
+> - mode HF (high frequency) ou haute fréquence : seule la composante haute fréquence est conservée.
+> 
+> Dans la plupart des montages utilisés le mode LF donne les meilleurs résultats.
+> Le signal servant à la synchronisation peut être soit :
+> - le signal de la voie 1 ;
+> - le signal de la voie 2 ;
+> - un signal extérieur.
+> 
+> <mark style="color: red">Si nous utilisons le mode balayage, nous devons synchroniser la base de temps sur le signal de plus grande amplitude.</mark>
+> En particulier, il est souvent intéressant de se placer en mode synchronisation extérieure avec comme signal celui de la sortie « synchro » du générateur basse fréquence.
+
+> [!note] Utilisation d'un oscilloscope : Fonctionnement bicourbe d’un oscilloscope
+> Seuls les oscilloscopes bicourbes haut de gamme possèdent un double canon à électrons et un double système de déviation. Les oscilloscopes classiques utilisent deux méthodes pour tracer « simultanément » deux courbes ([[#^figure6|fig. 6]]).
+> - Le mode alterné : Après chaque retour de balayage, la voie tracée à l’écran est changée. Ce mode n’est possible que si la durée du balayage est petite (moins de 0,1 s) pour éviter le clignotement. Le signal 1 est décrit, puis 2, puis 1, etc. mais trop lentement et l’œil perçoit ces basculements de l’un à l’autre.
+> - Le mode découpé (chopped) : Le changement de voie se fait plusieurs fois par période de balayage à une fréquence de 500 kHz environ. Ce mode n’est possible que si la période du signal est grande devant celle de découpage.
+> 
+> L’oscilloscope choisit souvent automatiquement le mode en fonction de la base de temps.
+
+> [!note] Utilisation d'un oscilloscope : Mesures en mode balayage
+> Le mode balayage permet d’observer et de mesurer l’amplitude et la fréquence d’un signal périodique en utilisant les calibres de la voie et de la base de temps.
+> Le mode bicourbe permet aussi de mesurer le déphasage entre deux signaux ([[#^figure7|fig. 7]]). Si $L$ est la longueur correspondant à une période et $l$ celle qui correspond au déphasage $\varphi$, alors $\varphi = 360\frac{l}{L}$ en degré ou $\varphi = 2\pi\frac{l}{L}$ en radian. Cette mesure peut être améliorée dans le cas des petits déphasages en utilisant une demi-période.
+> Remarque : En pratique, il est commode de jouer sur la calibration de la base de temps de façon à amener la longueur d’une demi-période à 9 carreaux.
+> De cette façon on mesure directement un déphasage de 20° par carreau de décalage entre ces deux signaux.
+> Cette méthode n’est applicable que si la base de temps est réglable de manière continue, ce qui n’est pas le cas pour tous les appareils, en particulier les numériques. Dans ce cas, le déphasage est directement affiché à l’écran.
+
+
 # Diagrammes
 Montage courte dérivation
 ![[electronique1/attachments-electronique1/figure62.png]]^figure3a
@@ -70,6 +111,18 @@ Signal $u(t)$ de valeur moyenne non nulle
 
 Tube cathodique
 ![[electronique1/attachments-electronique1/figure64.png]]^figure4
+
+Synchronisation de la base de temps
+![[electronique1/attachments-electronique1/figure65.png]]^figure5a
+
+Aspect du signal observé sur l’écran
+![[electronique1/attachments-electronique1/figure66.png]]^figure5b
+
+Affichage de deux courbes simultanément
+![[electronique1/attachments-electronique1/figure67.png]]^figure6
+
+Mesure d’un déphasage en mode base de temps. $l \approx 0,8\, div$, $L \approx 4,5\, div$ et $\varphi = 65\degree$ (retard de 2 par rapport à 1)
+![[electronique1/attachments-electronique1/figure68.png]]^figure7
 # Expériences
 
 # Autres notes
