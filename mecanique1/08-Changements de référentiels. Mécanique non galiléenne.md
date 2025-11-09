@@ -98,16 +98,16 @@ $\mathcal{R}_2$ est en translation circulaire par rapport à $\mathcal{R}_1$ :
 ![[mecanique1/attachments-mecanique1/figure68.png]]^figure1
 
 $\mathcal{R}_2$ est en rotation autour de l'axe $(Oz_1)$ dans $\mathcal{R}_1$ :
-![[figure69.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure69.png]]^figure2
 
 Rotation autour d'un axe fixe, trajectoire circulaire du point coïncident :
-![[figure70.png]]^figure3
+![[mecanique1/attachments-mecanique1/figure70.png]]^figure3
 # Expériences
 ## Force Centrifuge
 > [!warning]
 > Ce TP n'est pas dans le livre mais se trouve dans les liens suivants :[lien 1](https://ilm-perso.univ-lyon1.fr/~oramos/documents/TPMechanics/fasciculeTP.pdf), [lien 2](https://fr.scribd.com/document/814469940/TP-ENSAM), [lien 3](https://fr.scribd.com/document/377710851/Tp-Force-Centrifuge).
 
-![[figure71.png]]
+![[mecanique1/attachments-mecanique1/figure71.png]]
 
 ### Détermination de la force centrifuge en fonction de la masse du corps (rayon et vitesse angulaire constants)
 - Choisir une vitesse de rotation adéquate et le rayon de rotation qui place le chariot au début du bras en rotation. Noter ces valeurs.

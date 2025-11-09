@@ -77,8 +77,8 @@ Le jour sidéral est l'intervalle de temps entre deux passages consécutifs d'un
 
 > [!warning] Pourquoi néglige-t-on généralement le terme de marée dans $\mathcal{R}_O$? ^demo1
 > La démonstration dans le livre n'est pas détaillé donc voici la démonstration complète dans ces captures d'écran extraites de ce [lien](https://webetab.ac-bordeaux.fr/Etablissement/BDBorn/sections/postbac/prepasciences/physique/telech/docs20089/M11_2008-2009_RefGeoTer.pdf).
-> ![[figure72.png]]
-> ![[figure73.png]]
+> ![[mecanique1/attachments-mecanique1/figure72.png]]
+> ![[mecanique1/attachments-mecanique1/figure73.png]]
 > ![[figure74.png]]
 > ![[figure75.png]]
 
