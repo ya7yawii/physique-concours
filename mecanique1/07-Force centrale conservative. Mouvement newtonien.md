@@ -125,28 +125,28 @@ Mouvement pour $n < 0$ (ici n = –1,5), oscillations de la distance au centre d
 ![[mecanique1/attachments-mecanique1/figure56.png]]^figure5
 
 Énergie potentielle effective pour $0 < n < 2$ ici (n = 1,2) :
-![[figure57.png]]^figure6
+![[mecanique1/attachments-mecanique1/figure57.png]]^figure6
 
 État lié (n = 1,2) :
-![[figure58.png]]^figure7
+![[mecanique1/attachments-mecanique1/figure58.png]]^figure7
 
 État de diffusion (n = 1,2) :
-![[figure59.png]]^figure8
+![[mecanique1/attachments-mecanique1/figure59.png]]^figure8
 
 Énergie potentielle effective pour $n > 2$ ici $(n = 3)$ :
-![[figure60.png]]^figure9
+![[mecanique1/attachments-mecanique1/figure60.png]]^figure9
 
 Le point matériel s'échappe ! :
-![[figure61.png]]^figure10
+![[mecanique1/attachments-mecanique1/figure61.png]]^figure10
 
 Il va s'écraser sur le centre attracteur :
-![[figure62.png]]^figure11
+![[mecanique1/attachments-mecanique1/figure62.png]]^figure11
 
 Branche d'hyperbole du mouvement répulsif :
-![[figure63.png]]^figure12
+![[mecanique1/attachments-mecanique1/figure63.png]]^figure12
 
 Énergie potentielle effective du cas attractif :
-![[figure64.png]]^figure13
+![[mecanique1/attachments-mecanique1/figure64.png]]^figure13
 
 Mouvement elliptique :
 ![[figure65.png]]^figure14
