@@ -62,10 +62,10 @@ II s'agit du référentiel $\mathcal{R}_T$ lié à la Terre, en rotation à vite
 
 # Graphiques
 Vaisseau spatial en chute libre :
-![[figure76.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure76.png]]^figure1
 
 Pendule de Foucault : 
-![[figure77.png]]^figure2
+![[mecanique1/attachments-mecanique1/figure77.png]]^figure2
 # Expériences
 
 # Autres notes
@@ -79,8 +79,8 @@ Le jour sidéral est l'intervalle de temps entre deux passages consécutifs d'un
 > La démonstration dans le livre n'est pas détaillé donc voici la démonstration complète dans ces captures d'écran extraites de ce [lien](https://webetab.ac-bordeaux.fr/Etablissement/BDBorn/sections/postbac/prepasciences/physique/telech/docs20089/M11_2008-2009_RefGeoTer.pdf).
 > ![[mecanique1/attachments-mecanique1/figure72.png]]
 > ![[mecanique1/attachments-mecanique1/figure73.png]]
-> ![[figure74.png]]
-> ![[figure75.png]]
+> ![[mecanique1/attachments-mecanique1/figure74.png]]
+> ![[mecanique1/attachments-mecanique1/figure75.png]]
 
 ==**Marée**== :
 La marée est la variation du niveau de la mer due à l'action gravitationnelle de la lune et du soleil. A cause de l'influence de la présence de la Lune, il existe deux marées hautes et deux marées basses par jour (par exemple marées hautes espacées de 12 heures, la hauteur des marées étant plus importante à l'équateur). Le Soleil apporte une contribution non négligeable au phénomène de marées. Donc, Aux pleine Lune et nouvelle Lune, les marées sont les plus importantes possibles ; nous parlons de marées de vives eaux. Aux premier quartier et dernier quartier, les marées sont d'amplitude les plus faibles possible, nous parlons alors de marées de mortes eaux.
@@ -92,9 +92,9 @@ La marée est la variation du niveau de la mer due à l'action gravitationnelle 
 > - Pour obtenir le premier système d'équations dans le paragraphe 4.7.3., il faut tenir compte que $\overrightarrow{\omega_T} = \omega_T\cos\lambda\overrightarrow{e_y} + \omega_T\sin\lambda\overrightarrow{e_z}$.
 > - Dans le paragraphe 4.7.3., on pose que la vitesse du pendule est de l'ordre de $x_0\Omega$. A mon avis, $\Omega$ n'est autre que $\omega_0$ et l'approximation de la vitesse $x_0\Omega$ n'est autre que l'amplitude de $\dot{x}$ lorsqu'on oublie la force de Coriolis.
 >
->![[figure78.png]]
->![[figure79.png]]
->![[figure80.png]]
+>![[mecanique1/attachments-mecanique1/figure78.png]]
+>![[mecanique1/attachments-mecanique1/figure79.png]]
+>![[mecanique1/attachments-mecanique1/figure80.png]]
 >![[figure81.png]]
 
 > [!warning] Un projectile est lancé vers le haut dans le référentiel terrestre. Lorsqu'il retombe à l'altitude initiale, il a dévié vers l'Est.
