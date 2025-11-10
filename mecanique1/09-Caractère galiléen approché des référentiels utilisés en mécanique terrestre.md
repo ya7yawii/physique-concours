@@ -95,7 +95,7 @@ La marée est la variation du niveau de la mer due à l'action gravitationnelle 
 >![[mecanique1/attachments-mecanique1/figure78.png]]
 >![[mecanique1/attachments-mecanique1/figure79.png]]
 >![[mecanique1/attachments-mecanique1/figure80.png]]
->![[figure81.png]]
+>![[mecanique1/attachments-mecanique1/figure81.png]]
 
 > [!warning] Un projectile est lancé vers le haut dans le référentiel terrestre. Lorsqu'il retombe à l'altitude initiale, il a dévié vers l'Est.
 > La vitesse de projectile est pratiquement verticale, la force de Coriolis $F_c = -2m\overrightarrow{\omega_T} \wedge \overrightarrow{v}$ est donc dirigée vers l'Est (faire le produit vectoriel par la méthode de la main droite : la vitesse de projectile est selon le pouce (chute : haut vers bas), l'axe Nord-Sud de la Terre selon l'index, la "force de Coriolis", selon le majeur, est bien vers l'Est). C'est cette force qui dévie légèrement v vers l'Est.

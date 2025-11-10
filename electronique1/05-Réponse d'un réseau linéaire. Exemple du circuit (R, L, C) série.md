@@ -58,7 +58,35 @@ Dans ce chapitre, nous assimilerons les condensateurs et les bobines à leurs mo
 > Résolvons l'équation différentielle en $q(t)$. Nous savons que sauf cas particulier, la solution de cette équation différentielle est de la forme $q(t) = A_1e^{r_1t} + A_2e^{r_2t}$, où $A_1$ et $A_2$ sont des constantes pouvant être complexes et $r_1$ et $r_2$ sont les racines de l'équation caractéristique associée à l'équation différentielle $r^{2} + \frac{\omega_0}{Q}r + \omega_{0}^{2} = 0$.
 > Dans le cas particulier où $r_1 = r_2 = r$, la solution est de la forme : $q(t) = (At + B)e^{rt}$. Les constantes réelles $A$ et $B$ sont fixées par les deux conditions initiales.
 > Nous pouvons donc envisager trois cas suivant le signe du discriminant réduit de l’équation caractéristique $\Delta' = \omega_{0}^{2}\left(\frac{1}{4Q^{2}} - 1\right)$ :
-> - $\Delta > 0$ ou $Q < 1/2$ : régime apériodique :
+> - $\Delta > 0$ ou $Q < 1/2$ : régime apériodique : Les deux racines $r_1$ et $r_2$ sont réelles négatives. Une étude mathématique de la solution donnerait les résultats suivants ([[#^figure8|fig. 8]]) :
+> 	- $q(t)$ ne peut pas s’annuler plus d’une fois ;
+> 	- $q(t)$ ne peut pas prendre plus de deux fois la même valeur et ne présente qu’un extremum au plus ;
+> 	- quand $t$ tend vers l’infini, $q(t)$ tend vers 0.
+> 	Il en est de même pour les grandeurs $i(t)$, $u_L(t)$, $u_C(t)$ et $u_R(t)$.
+> Nous remarquons que la « durée » du régime apériodique (temps pendant lequel $q$ prend des valeurs non négligeables) est d’autant plus grande que $Q$ est proche de 0 ([[#^figure8|fig. 8]] et [[#^figure9|9]]).
+> - $\Delta = 0$ ou $Q = 1/2$ : régime critique : Dans ce cas purement théorique (physiquement il est impossible de fixer $Q$ exactement à la valeur 0,5), la solution de l’équation différentielle est de la forme : $q(t) = (At + B)e^{-\omega_0 t}$. $q(t)$ tend vers 0 quand $t$ tend vers l’infini avec une constante de temps $\tau = \frac{1}{\omega_0}$. Le régime critique correspond au régime apériodique de « durée » minimale. L’allure des courbes correspondant à ce régime est voisine de celle des régimes apériodiques ([[#^figure8|fig. 8]]).
+> - $\Delta < 0$ ou $Q > 1/2$ : régime pseudo-périodique : Les racines de l’équation caractéristique sont complexes et conjuguées. La solution générale de l’équation différentielle peut s'écrire sous les formes suivantes : $q(t) = e^{-\frac{t}{\tau}}(\alpha e^{i\omega t} + \beta e^{-i\omega t})$, $q(t) = e^{-\frac{t}{\tau}}(A\cos\omega t + B\sin\omega t)$ ou $q(t) = ae^{-\frac{t}{\tau}}\cos(\omega t + \varphi)$. $q(t)$ se présente donc sous la forme d’une fonction oscillante modulée par une enveloppe exponentielle décroissante ([[#^figure10|fig. 10]] et [[#^figure11|11]]). Le régime libre est un régime transitoire de temps caractéristique $\tau = \frac{2Q}{\omega_0}$. Il en est de même pour les grandeurs $i(t)$, $u_L(t)$, $u_C(t)$ et $u_R(t)$. La période $T = \frac{2\pi}{\omega} = \frac{2\pi}{\omega_0 \sqrt{1 - \frac{1}{4Q^{2}}}}$ de la fonction sinusoïdale est appelée pseudo-période du régime libre. Elle est telle que $q(t + T) = q(t)e^{-\frac{T}{\tau}}$.
+> Remarque : Le rapport $\frac{q(t + T)}{q(t)}$ est constant et nous appellerons décrément logarithmique la quantité : $\delta = \ln\left(\frac{q(t)}{q(t + T)}\right) = \frac{T}{\tau} = \frac{2\pi}{\sqrt{4Q^{2} - 1}}$. La mesure de cette grandeur permet de calculer le coefficient de qualité du circuit.
+> Nous remarquons sur les tracés ([[#^figure12|fig. 12]] et [[#^figure13|13]])que le retour vers l’état d’équilibre $q = 0$ est d’autant plus lent que $Q$ est grand et que la pseudo-période diminue quand $Q$ augmente.
+> Dès que $Q > 4$, elle est voisine de $\frac{2\pi}{\omega_0}$ avec un écart relatif de moins de 1 %.
+> 
+> En conclusion, nous pouvons affirmer que : Le régime libre est un régime transitoire dont le temps caractéristique est minimal pour le régime critique $\left(Q = \frac{1}{2}\right)$ et est très grand pour des circuits très amortis $(Q \approx 0)$ ou des circuits peu amortis $(Q \gg 1)$.
+
+> [!note] Étude énergétique du régime libre du circuit (R, L, C)
+> Si nous multiplions par i l’équation différentielle vérifiée par $q(t)$ , nous obtenons : $\dfrac{d}{dt}\left(\frac{1}{2}Li^{2} + \frac{1}{2}\frac{q^{2}}{C}\right) = -Ri^{2}$. Nous pouvons interpréter cette relation de la façon suivante : $\mathcal{E} = \frac{1}{2}Li^{2} + \frac{1}{2}\frac{q^{2}}{C}$ représente l’énergie emmagasinée dans la bobine et le condensateur, et constitue une fonction positive décroissante du temps. Cette énergie est dissipée par effet Joule dans le résistor et le bilan énergétique du circuit s’écrit $\dfrac{d\mathcal{E}}{dt} = -P_{Joule}$.
+> - Cas du régime non amorti : L’équation différentielle vérifiée par $q(t)$ est alors : $\dfrac{d^{2}q}{dt^{2}} + \omega_{0}^{2}q = 0$. La solution générale est : $q(t) = q_0\cos(\omega_0 t + \varphi)$ et $i(t) = -\omega_0q_0\sin(\omega_0 t + \varphi)$. L’énergie emmagasinée dans le condensateur vaut $\mathcal{E}_C = \frac{1}{2}\frac{q_{0}^{2}}{C}\cos^{2}(\omega_0 t + \varphi)$ et celle dans la bobine $\mathcal{E}_L = \frac{1}{2}\frac{q_{0}^{2}}{C}\sin^{2}(\omega_0 t + \varphi)$. Nous remarquons que $\mathcal{E}_C + \mathcal{E}_L$ est constante et que l’énergie « oscille » entre le condensateur et la bobine, sans pertes.
+> - Cas du régime pseudo-périodique faiblement amorti : Pour un circuit peu amorti $(Q \gg 1)$ : $\omega \approx \omega_0$ et $\frac{1}{\tau} \ll \omega_0$. On a alors $q(t) \approx ae^{-\frac{t}{\tau}}\cos(\omega_0 t + \varphi)$ et $i(t) \approx ae^{-\frac{t}{\tau}}\omega_0\sin(\omega_0 t + \varphi)$. L’énergie emmagasinée dans le condensateur et dans la bobine vaut : $\mathcal{E}(t) \approx \frac{1}{2}\frac{a^{2}}{C}e^{-\frac{2t}{\tau}}$. En une pseudo-période $T$, l’énergie décroît de la quantité : $\Delta\mathcal{E} = \frac{1}{2}\frac{a^{2}}{C}e^{-\frac{2t}{\tau}}\left(1 - e^{-\frac{2T}{\tau}}\right)$, soit, comme $T \approx \frac{2\pi}{\omega_0} \ll \tau$, $\frac{\Delta\mathcal{E}}{\mathcal{E}} \approx \frac{2T}{\tau} = \frac{2\pi}{Q}$, ou encore $Q = 2\pi\frac{\mathcal{E}}{\Delta\mathcal{E}}$.
+> Nous en déduisons une interprétation énergétique du facteur de qualité $Q$ (quand il est grand devant 1). Le facteur de qualité est égal à $2\pi$ fois l’énergie emmagasinée dans le circuit divisée par l’énergie dissipée pendant une pseudo-période : cette définition peut s’appliquer à tout système physique (oscillateur mécanique, cavité résonante...).
+> Sur les courbes tracées ([[#figure14|fig. 14]] et [[#^figure15|15]]), nous remarquons que pour $Q = 10$, l’énergie a une décroissance sensiblement exponentielle, ce qui n’est pas le cas pour $Q = 2$.
+
+> [!note] Réponse à un échelon de tension
+> Nous supposons dans ce paragraphe que le générateur du circuit délivre une f.e.m. de valeur nulle pour les temps négatifs et de valeur non nulle et égale à $e_0$ pour les temps positifs. Il délivre un échelon de tension ([[#^figure16|fig. 16]]).
+> Un échelon de tension peut être réalisé à l’aide d’une source de tension constante et d’un interrupteur à deux positions que l’on bascule à l’instant $t = 0$ ([[#^figure17|fig. 17]]).
+> - Charge d’un condensateur : L’application de la loi des mailles dans le circuit de la [[#^figure18|figure 18]] donne : $u(t) + RC\dfrac{du}{dt} = e(t)$. La solution générale de l’équation est alors $u(t) = e_0 + Ae^{-\frac{t}{RC}}$ pour $t > 0$. Nous savons que la différence de potentiel aux bornes d’un condensateur est continue. Donc si initialement le condensateur est non chargé, $u(0_+) = 0$. Nous en déduisons : $u(t) = 0$ pour $t < 0$ ; $u(t) = e_0\left(1 - e^{-\frac{t}{RC}}\right)$ pour $t \geqslant 0$ ([[#^figure19|fig. 19]]). Du coup, $i(t) = 0$ pour $t < 0$ et $i(t) = \frac{e_0}{R}e^{-\frac{t}{RC}}$ pour $t \geqslant 0$ ([[#^figure20|fig. 20]]).
+> Nous remarquons qu’après un temps de l’ordre de quelques $\tau = RC$ , la tension aux bornes de $C$ est pratiquement constante et correspond à la valeur du régime établi (le condensateur est un circuit ouvert en régime indépendant du temps). Corrélativement, le courant dans le circuit décroît et s’annule.
+> <mark style="color: red">Après un régime transitoire d’une durée de l’ordre de $\tau$, l’état du circuit correspond au régime établi indépendant du temps. La durée du régime transitoire chiffre le retard à l’établissement de la différence de potentiel aux bornes de la capacité.</mark>
+> Reprenons l’équation d’évolution sous la forme : $e(t) = Ri(t) + \frac{q(t)}{C}$ et multiplions-la membre à membre par $i(t)$ où nous pouvons identifier : $\mathcal{P}_{\begin{subarray}{l} \text{fournie par } \\ \text{le générateur}\end{subarray}} = \mathcal{P}_{\begin{subarray}{l} \text{dissipée dans} \\ \text{la résistance} \\ \text{par effet Joule}\end{subarray}} + \mathcal{P}_{\begin{subarray}{l} \text{emmagasinée} \\ \text{dans le condensateur}\end{subarray}}$. Dans le cas de la charge envisagée, l’énergie totale fournie par le générateur est : $\displaystyle \mathcal{E}_{gén} = \int_{0}^{\infty} \mathcal{P}_{gén} dt = e_0 \int_{0}^{\infty} i dt = e_0 . q_{finale} = Ce_{0}^{2}$. C’est le double de l’énergie accumulée dans le condensateur. La moitié de l’énergie fournie par le générateur est donc dissipée par effet Joule dans la résistance.
+> - Établissement du courant dans un circuit inductif : 
 
 
 # Définitions
@@ -78,12 +106,51 @@ Circuit R, L, C
 
 Schéma équivalent pour $t < 0$
 ![[electronique1/attachments-electronique1/figure80.png]]^figure7
+
+Réalisation d’un échelon de tension
+![[figure90.png]]^figure17
+
+Circuit d’étude de la charge d’un condensateur à travers une résistance
+![[figure91.png]]^figure18
 # Graphiques
 Différence de potentiel aux bornes du condensateur
 ![[electronique1/attachments-electronique1/figure75.png]]^figure2
 
 Intensité dans le circuit
 ![[electronique1/attachments-electronique1/figure76.png]]^figure3
+
+Régimes apériodique $(Q < 0,5)$ et critique $(Q = 0,5)$
+![[electronique1/attachments-electronique1/figure81.png]]^figure8
+
+d.d.p. aux bornes des trois dipôles : régimes apériodiques $Q = 0,4$
+![[electronique1/attachments-electronique1/figure82.png]]^figure9
+
+Régime pseudo-périodique. $Q = 10$ ; $q(0) = q_0$ et $i(0) = 0$
+![[electronique1/attachments-electronique1/figure83.png]]^figure10
+
+Régime pseudo-périodique. $Q = 10$ ; $q(0) = 0$ et $i(0) = i_0$
+![[electronique1/attachments-electronique1/figure84.png]]^figure11
+
+Régimes pseudo-périodique et critique. Condensateur initialement chargé $i(0) = 0$
+![[electronique1/attachments-electronique1/figure85.png]]^figure12
+
+Régimes pseudo-périodique et critique. Intensité initiale $i_0$ dans le circuit
+![[electronique1/attachments-electronique1/figure86.png]]^figure13
+
+Énergie dans le circuit (R, L, C) $Q = 2$, $q(0) = q_0$, $i(0) = 0$, $\mathcal{E}_0 = \frac{1}{2}\frac{q_{0}^{2}}{C}$
+![[electronique1/attachments-electronique1/figure87.png]]^figure14
+
+Énergie dans le circuit (R , L , C) $Q = 10$, $Q = 2$, $q(0) = q_0$, $i(0) = 0$, $\mathcal{E}_0 = \frac{1}{2}\frac{q_{0}^{2}}{C}$
+![[electronique1/attachments-electronique1/figure88.png]]^figure15
+
+Échelon de tension débutant à $t = 0$
+![[figure89.png]]^figure16
+
+Différence de potentiel aux bornes de C
+![[figure92.png]]^figure19
+
+Intensité dans le circuit
+![[figure93.png]]^figure20
 # Expériences
 
 # Autres notes

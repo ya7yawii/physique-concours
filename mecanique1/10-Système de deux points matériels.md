@@ -130,13 +130,13 @@ C'est un cas théoriquement inaccessible à l'expérience (il est, par exemple, 
 
 # Graphiques
 Barycentre, positions barycentriques :
-![[figure82.png]]^figure1
+![[mecanique1/attachments-mecanique1/figure82.png]]^figure1
 # Expériences
 
 # Autres notes
 > [!warning] Application 3 page 235 : Machine d'Atwood
 > Expliquer pourquoi $\dot{z_1} + \dot{z_2} = 0$ à partir de la figure suivante :
-> ![[figure83.png]]
+> ![[mecanique1/attachments-mecanique1/figure83.png]]
 > On $d_1 + d_2 + d_0 = l$ avec $d_0$ est la longueur de la partie de fil tangente au poulie et l la longueur totale du fil. Or $z_1 - z_0 = d_1$ et $z_2 - z_0 = d_2$ donc $z_1 + z_2 = d_1 + d_2 + 2z_0$ et enfin $z_1 + z_2 = l - d_0 + 2z_0 = cte$ ce qui répond à notre question.
 
 > [!warning] Application 4 page 236 : Glissades
@@ -149,5 +149,5 @@ Barycentre, positions barycentriques :
 
 > [!note] mobile fictif
 > On appelle mobile fictif (ou mobile équivalent ou mobile réduit) un point matériel qui serait situé au point M tel que $\overrightarrow{GM} = \overrightarrow{M_1M_2} = \overrightarrow{r}$ et dont la masse serait égale à la masse réduite $\mu$.
-> ![[figure84.png]]
+> ![[mecanique1/attachments-mecanique1/figure84.png]]
 > La méthode du mobile réduit ramène l'étude du problème à deux corps à celle du problème à un corps. On dit que l'on a procédé à la réduction canonique du problème à deux corps.
