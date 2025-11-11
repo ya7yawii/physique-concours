@@ -26,17 +26,56 @@ crée: 11-11-2025, 09:50
 > [!note] Détermination du régime permanent sinusoïdal
 > Lorsque nous observons les signaux électriques d’un circuit (R, L, C ) alimenté par une tension excitatrice sinusoïdale $e(t) = e_m\cos(\omega t)$, nous ne voyons pas apparaître le régime transitoire, qui a disparu depuis longtemps ; nous ne nous intéresserons donc ici qu’au signal $i_1(t)$ qui seul subsiste : il est sinusoïdal, de même pulsation que l’excitation : $i_1(t) = i_{1m}\cos(\omega t + \phi)$. Cherchons à déterminer les paramètres de ce signal.
 > - Une méthode fastidieuse (à proscrire) : Reportons l'expression de $i_1(t)$ dans l'équation d’évolution du courant, ce qui donne : $(-\omega^{2} + \omega_{0}^{2})i_{1m}\cos(\omega t +\phi) - \frac{\omega\omega_0}{Q}i_{1m}\sin(\omega t +\phi) = \frac{-\omega e_m}{L}\sin(\omega t)$. Développons cette expression de façon à ne garder que des termes en $\cos(\omega t)$ et $\sin (\omega t)$ : $\left[(-\omega^{2} + \omega_{0}^{2})\cos\phi - \frac{\omega\omega_0}{Q}\sin\phi\right]\cos(\omega t) + \left[(\omega^{2} - \omega_{0}^{2})\sin\phi - \frac{\omega\omega_0}{Q}\cos\phi\right]\sin(\omega t) = \frac{-\omega e_m}{Li_{1m}}\sin(\omega t)$. En identifiant les termes en $\cos(\omega t)$ et en $\sin(\omega t)$, on obtient un système d'équation en $\cos\phi$ et $\sin\phi$. En résolvant ce système, on trouve les expressions de $\cos\phi$ et $\sin\phi$ en fonction de $i_{1m}$. Donc, pour éliminer $\phi$ et trouver l'expression de l'amplitude $i_{1m}$, écrivons que $\cos^{2}\phi + \sin^{2}\phi = 1$. Enfin la réponse $i_1(t)$ est déterminée après avoir trouver l'expression de l'amplitude et la phase.
-> - Obtention de la solution particulière avec la notation complexe :
+> - Obtention de la solution particulière avec la notation complexe : La tension excitatrice et la solution sinusoïdale recherchée s'écrivent en notation complexe : $\underline{e}(t) = e_me^{j\omega t}$ et $\underline{i}_1(t) = \underline{i}_{1m}e^{j\omega t}$ avec $\underline{i}_{1m} = {i}_{1m}e^{j\phi}$. Les fonctions $\underline{e}(t)$ et $\underline{i}_1(t)$ sont liées par l’équation différentielle : $L\dfrac{d^{2}\underline{i}_1(t)}{dt^{2}} + R\dfrac{d\underline{i}_1(t)}{dt} + \frac{\underline{i}_1(t)}{C} = \dfrac{d\underline{e}(t)}{dt}$. La dérivation temporelle se résume ici à la multiplication par $j\omega$, donc : $\left(-L\omega^{2} + j\omega R + \frac{1}{C}\right)\underline{i}_{1m}e^{j\omega t} = j\omega \underline{e}_{m}e^{j\omega t}$. À partir de cette expression (en introduisant $\omega_0$ et $Q$), nous retrouvons les valeurs $i_{1m}$ et $\phi$ précédentes : la solution particulière $i_1(t)$ est identifiée.
 
+> [!note] Réponses en courant et charge du circuit (R, L, C )
+> - la réponse en charge, indiquée par la tension $u_C(t) = \frac{q(t)}{C}$ aux bornes du condensateur ([[#^figure3a|fig. 3a]]) ;
+> - la réponse en courant, indiquée par la tension $u_R(t) = Ri(t)$ aux bornes de la résistance ([[#^figure3b|fig. 3b]]).
+> 
+> Reportons l'expression de $\underline{q}(t)$ dans l'équation d’évolution de la charge, nous identifions les paramètres de signal de $\underline{q}(t)$. Dans la mesure où $\underline{i}(t) = j\omega\underline{q}(t)$, nous retrouvons tout aussi rapidement les paramètres de signal de $\underline{i}(t)$.
+> - Étude de la réponse en courant : Notons $x = \frac{\omega}{\omega_0}$ la pulsation réduite, l'amplitude du courant peut s'écrire : $\displaystyle i_m = \frac{QC\omega_0e_m}{\sqrt{1 + Q^{2}\left(x - \frac{1}{x}\right)^{2}}}$.
+> 	- Elle est nulle en $x = 0$ (limite basse fréquence) : le condensateur bloque le courant en régime continu. À fréquence nulle, il se comporte comme un interrupteur ouvert ([[#^figure4a|fig. 4a]]).
+> 	- Elle est nulle pour $x \rightarrow \infty$ (limite haute fréquence) : l’inductance s’oppose aux variations très rapides du courant, elle se comporte à son tour comme un interrupteur ouvert ([[#^figure4b|fig. 4b]]).
+> 	Elle passe par un maximum pour $x = 1$ : le circuit (R, L, C) série présente une résonance en courant lorsque la pulsation coïncide avec sa pulsation propre $\omega_0$ ([[#^figure5|fig. 5]]).
+> À la résonance, l’amplitude maximale est : $i_{m,\,max} = i_m(\omega_0) = \frac{e_m}{R}$. Nous définirons la bande passante de la réponse par la plage de pulsations $[\omega_1, \omega_2]$ dans laquelle l'amplitude vérifie : $i_m \geqslant \frac{i_{m,\,max}}{\sqrt{2}}$. En résolvant cette inégalité, nous obtenons les valeurs de $\omega_1$ et $\omega_2$. Donc la bande passante en courant a une largeur $\Delta\omega = \frac{\omega_0}{Q}$. Elle est d’autant plus étroite que le facteur de qualité $Q$ du circuit est grand.
+> La phase $\phi$ du courant est définie par : $\phi = -\arctan[Q(x - \frac{1}{x})]$. La rotation de phase au voisinage de $x = 1$ est d’autant plus rapide que le facteur de qualité $Q$ est élevé ([[#^figure6|fig. 6]]).
+> Dans le circuit (R, L , C ) série (pulsation propre $\omega_0$, facteur de qualité $Q$), le courant est nul à très haute $(\omega \gg \omega_0)$ et très basse $(\omega \ll \omega_0)$ fréquence. Une résonance en courant est observée lorsque le circuit est excité exactement à sa pulsation propre $\omega_0$. Le courant est alors en phase avec la tension excitatrice. L’acuité de la résonance augmente avec le facteur de qualité du circuit.
+> - Étude de la réponse en charge : L'amplitude de la charge peut s'écrire : $\displaystyle q_m = \frac{Ce_m}{\sqrt{\frac{x^{2}}{Q^{2}} + (1 - x^{2})^{2}}}$. Elle est non nulle en $x = 0$ : le condensateur est chargé en régime continu avec $q_m(0) = Ce_m$. Elle est nulle pour $x \rightarrow \infty$. Pour $x = 1$, nous obtenons $u_C = Qe_m$ : si $Q$ est supérieur à l’unité il y a une surtension aux bornes de la capacité ([[#^figure7|fig. 7]]). Un éventuel maximum de $q_m$ correspond au minimum de : $f(x) = x^{2} + Q^{2}(1 - x^{2})^{2} = g(X)$, où $X = x^{2}$. La dérivée $\dfrac{dg(X)}{dX} = 1 - 2Q^{2}(1 - X)$ s'annule en $X = 1 - \frac{1}{2Q^{2}}$. Cette solution est positive si $Q > \frac{1}{\sqrt{2}}$. Une résonance en tension est donc observable si cette condition est vérifiée. La pulsation de résonance, lorsqu'elle existe correspond à : $\omega_r = \omega_0\sqrt{1 - \frac{1}{2Q^{2}}}$.
+> Dans un circuit (R, L, C) série (pulsation propre $\omega_0$, facteur de qualité $Q$) excité par un générateur sinusoïdal de tension, l’amplitude de la tension aux bornes de la capacité passe par un maximum si $Q > \frac{1}{\sqrt{2}}$. Dans ce cas, la résonance est obtenue pour une pulsation $\omega_r$ inférieure à $\omega_0$. Si $Q \gg 1$, $\omega_r$ est voisin de $\omega_0$.
+> Sachant que $\underline{q}_m = \frac{\underline{i}_m}{j\omega}$, nous en déduisons que la phase de la charge du condensateur vaut : $\varphi = -\frac{\pi}{2} - \arctan[Q(x - \frac{1}{x})]$. Lorsque le circuit est excité à sa pulsation propre, la charge du condensateur est en phase avec la tension excitatrice. La rotation de phase au voisinage de $x = 1$ est ici encore accélérée pour les valeurs plus élevées de $Q$ ([[#^figure8|fig. 8]]).
 
 # Définitions
 
 # Diagrammes
 Étude d’un circuit (R, L, C) série
 ![[figure111.png]]^figure2
+
+Réponse en charge
+![[figure112.png]]^figure3a
+
+Réponse en courant
+![[figure113.png]]^figure3b
+
+Équivalent basse fréquence
+![[figure114.png]]^figure4a
+
+Équivalent haute fréquence
+![[figure115.png]]^figure4b
 # Graphiques
 Représentation de Fresnel de la grandeur sinusoïdale $s(t) = s_m\cos(\omega t + \phi)$
 ![[figure110.png]]^figure1
+
+Variations de $\frac{i_m(x)}{e_m/R}$ en fonction de $x$ pour $Q = \frac{1}{2}$, $Q = 1$ et $Q = 5$
+![[figure116.png]]^figure5
+
+Variations du déphasage $\phi(x)$ de la réponse $i(t)$ par rapport à l’excitation $e(t)$ en fonction de $x$ pour $Q = \frac{1}{2}$, $Q = 1$ et $Q = 5$
+![[figure117.png]]^figure6
+
+Variations de $\frac{u_{C_m}}{e_m}$ en fonction de $x$ pour $Q = \frac{1}{2}$, $1$ et $5$
+![[figure118.png]]^figure7
+
+Variations du déphasage $\varphi(x)$ et $u_c(t)$ par rapport à $e(t)$ en fonction de $Q = \frac{1}{2}$, $1$ et $5$
+![[figure119.png]]^figure8
 # Expériences
 
 # Autres notes
@@ -47,3 +86,10 @@ Représentation de Fresnel de la grandeur sinusoïdale $s(t) = s_m\cos(\omega t 
 > - $\underline{s}_1\underline{s}_2 = s_{1m}s_{2m}e^{j(2\omega t + \phi_1 + \phi_2)}$.
 > 
 > Il est clair que : $\mathcal{R}e(\underline{s}_1\underline{s}_2) \neq s_1(t)s_2(t)$.
+
+> [!warning] Détermination de la phase
+> De façon générale, la donnée de $\sin\phi$ ou $\cos\phi$ ou $\tan\phi$ ne suffit pas à déterminer $\phi$ entre $-\pi$ et $+\pi$.
+> Il faut préciser le signe d’une seconde fonction trigonométrique de $\phi$ ou indiquer un domaine plus restreint.
+> En particulier ici :
+> - Si $\tan\phi = X$ et $\cos\phi > 0$, alors : $\phi = \arctan X$ ;
+> - Si $\tan\phi = X$ et $\cos\phi < 0$, alors : $\phi = \arctan X \pm \pi$.
