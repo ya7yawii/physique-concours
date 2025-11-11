@@ -231,5 +231,8 @@ Réponse du circuit (R , L, C). Balayage horizontal : 0,2 ms/div ; voie $Y_1$ : 
 Réponse du circuit (R , L, C) en mode XY. Balayage horizontal : 0,2 ms/div ; voie $Y_1$ : 5 V/div ; voie $Y_2$ : 0,5 V/div ; mode : XY ; synchronisation LF
 ![[figure109.png]]^figure31b
 # Expériences
-
+> [!warning]
+> Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://cahier-de-prepa.fr/pcsi-vernet/download?id=2283), le [lien 2](http://prepa.blois.free.fr/SITEMPSI/PhyMPSI/wa_files/EnonceTP14.pdf), le [lien 3](https://massena834.wordpress.com/wp-content/uploads/2014/07/tp-rc3a9gimes-transitoires-du-circuit-rlc-sc3a9rie.pdf), le [lien 4](https://elearning.esgee-oran.dz/pluginfile.php/16193/mod_page/content/68/Polycopi%C3%A9%20de%20tp%20ELN.pdf), le [lien 5](http://olivier.granier.free.fr/PC-Montesquieu445072/cariboost_files/Elec1-transi-rlc.pdf), le [lien 6](https://fr.scribd.com/document/540647984/TP-Circuit-RLC-1), le [lien 7](http://gserwar.free.fr/uploads/physique%20terminaleS/TPp%205%20%20Oscillations%20electriques.pdf), le [lien 8](https://fss.rnu.tn/useruploads/files/D%C3%A9partement%20Physique/2022-2023/Fascule%20electrocin%C3%A9tique%20finale(1).pdf), le [lien 9](https://cahier-de-prepa.fr/mp2i-fermat/download?id=2975), le [lien 10](https://ft.univ-tlemcen.dz/assets/uploads/pdf/departement/gee/Manuel-TP-ELN-L2-ST-S4-Electricite.pdf).
 # Autres notes
+> [!warning] Point mathématique
+> Pour transformer l'expression $A\cos\omega t + B\sin\omega t$ en $a\cos(\omega t + \varphi)$, on a besoin des formules suivantes : $a = \sqrt{A^{2} + B^{2}}$ et $\tan \varphi = -\frac{A}{B}$. Dans le cas contraire, on a besoin des formules suivantes : $A = a\cos\varphi$ et $B = -a\sin\varphi$.
