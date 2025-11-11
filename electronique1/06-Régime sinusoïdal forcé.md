@@ -2,6 +2,9 @@
 titre: "[[06-Régime sinusoïdal forcé]]"
 tags:
 aliases:
+  - régime sinusoïdal permanent
+  - régime sinusoïdal établi
+  - régime harmonique
 crée: 11-11-2025, 09:50
 ---
 # Formules
@@ -44,8 +47,31 @@ crée: 11-11-2025, 09:50
 > Dans un circuit (R, L, C) série (pulsation propre $\omega_0$, facteur de qualité $Q$) excité par un générateur sinusoïdal de tension, l’amplitude de la tension aux bornes de la capacité passe par un maximum si $Q > \frac{1}{\sqrt{2}}$. Dans ce cas, la résonance est obtenue pour une pulsation $\omega_r$ inférieure à $\omega_0$. Si $Q \gg 1$, $\omega_r$ est voisin de $\omega_0$.
 > Sachant que $\underline{q}_m = \frac{\underline{i}_m}{j\omega}$, nous en déduisons que la phase de la charge du condensateur vaut : $\varphi = -\frac{\pi}{2} - \arctan[Q(x - \frac{1}{x})]$. Lorsque le circuit est excité à sa pulsation propre, la charge du condensateur est en phase avec la tension excitatrice. La rotation de phase au voisinage de $x = 1$ est ici encore accélérée pour les valeurs plus élevées de $Q$ ([[#^figure8|fig. 8]]).
 
-# Définitions
+> [!note] Étude du régime sinusoïdal forcé
+> Chaque branche du circuit est régie par une équation d’évolution qui est une équation différentielle linéaire à coefficients constants. Pour étudier le régime sinusoïdal permanent établi, nous savons qu’il est très commode d’utiliser la notation complexe. L’équation différentielle se ramène alors à une relation entre amplitudes complexes où interviennent des polynômes de la variable $(j\omega)$. Par exemple, pour un circuit dont l’évolution est régie par l’équation ([[#^figure9|fig. 9]]) : $D_2\dfrac{d^{2}s(t)}{dt^{2}} + D_1\dfrac{ds(t)}{dt} + D_0s(t) = N_2\dfrac{d^{2}e(t)}{dt^{2}} + N_1\dfrac{de(t)}{dt} + N_0e(t)$ liant sa réponse $s(t)$ à l’excitation $e(t)$, nous obtenons immédiatement le rapport des amplitudes complexes de l’excitation et de la réponse sous la forme d’un rapport de deux polynômes de la variable $(j\omega)$. Nous trouvons ensuite l'amplitude et la phase de la réponse $s(t)$.
+> Faire l’analyse harmonique du comportement du circuit, c’est étudier l’évolution de l’amplitude complexe (c’est-à-dire de l’amplitude et de la phase des oscillations sinusoïdales réelles) des grandeurs physiques (intensité, tension) dans le circuit en fonction de la pulsation de l’excitation.
+> Comme pour le circuit (R, L, C) série, nous pourrons, par exemple, observer une (ou plusieurs) résonance(s) du circuit en faisant varier la fréquence d’utilisation.
 
+> [!note] Lois de Kirchhoff en notation complexe
+> - en un noeud du circuit : $\displaystyle \sum_{k}\epsilon_k\underline{i}_k = 0$ ;
+> - sur une maille : $\displaystyle \sum_{k}\epsilon_k\underline{u}_k = 0$.
+
+> [!note] Définition d'une impédance complexe
+> L’impédance complexe du dipôle est la grandeur complexe : $\displaystyle\underline{Z}(j\omega) = \frac{\underline{u}_m}{\underline{i}_m}$.
+> Le module de l'impédance complexe est l'impédance du dipôle. Les impédances se mesurent en ohm (symbole : Ω). Son argument $\varphi(\omega) = \phi_u - \phi_i$ est le déphasage de la tension par rapport au courant.
+> La partie réelle de l'impédance complexe d'un dipôle est la résistance de ce dipôle et la partie imaginaire en est la réactance et les deux se mesurent en ohm.
+> L’admittance complexe du dipôle est l’inverse de son impédance complexe. Le module de l’admittance complexe d’un dipôle est son admittance ; elle se mesure en siemens (symbole : S).
+> La partie réelle de l'admittance complexe est la conductance du dipôle et la partie imaginaire en est la susceptance et les deux se mesurent en siemens.
+
+> [!note] Exemples d’impédances
+> - Conducteur ohmique : En régime harmonique l’impédance complexe du conducteur ohmique est : $\underline{Z} = R$. Pour un conducteur ohmique donné, son impédance est réelle et constante ([[#^figure10|fig. 10]]) : la tension et le courant sont en phase ([[#^figure11|fig. 11]]).
+> - Inductance : L’impédance complexe $\underline{Z}(j\omega) = jL\omega$ d'une inductance est imaginaire pure ([[#^figure12|fig. 12]]). Le module $L\omega$ de cette impédance est d’autant plus élevé que la fréquence est élevée. Une inductance s’oppose aux variations de l’intensité. En haute fréquence, elle se comporte comme un interrupteur ouvert. En revanche, en très basse fréquence, elle se comporte comme un interrupteur fermé. La tension est en avance de $\frac{\pi}{2}$ sur le courant ([[#^figure13|fig. 13]]).
+> - Capacité : L’impédance complexe $\underline{Z}(j\omega) = \frac{1}{jC\omega}$ d'une capacité est imaginaire pure ([[#^figure14|fig. 14]]). Le module $\frac{1}{C\omega}$ de cette impédance est d’autant plus faible que la fréquence est élevée : la coupure du circuit par un condensateur est d’autant moins marquée que la fréquence est élevée. À haute fréquence, une capacité se comporte comme un interrupteur fermé. En revanche, à très basse fréquence elle se comporte comme un interrupteur ouvert. La tension est en retard de $\frac{\pi}{2}$ par rapport à l'intensité ([[#^figure15|fig. 15]]).
+# Définitions
+==**Régime transitoire et régime permanent sinusoïdal**== :
+L’étude effectuée pour le circuit (R, L, C) série peut être généralisée aux réseaux linéaires, lorsqu’ils sont soumis à une excitation sinusoïdale : la réponse du circuit à une excitation sinusoïdale est la superposition de la réponse permanente sinusoïdale (qui ne dépend pas des conditions initiales) et d’un régime transitoire (déterminé par les conditions initiales).
+Nous supposerons que le régime libre du circuit est caractérisé par un régime transitoire qui tend vers zéro au cours du temps : le circuit est supposé stable, suffisamment amorti.
+==**Pour un réseau linéaire stable, soumis à une excitation sinusoïdale, un régime permanent sinusoïdal s’établit après un régime transitoire qui tend vers zéro. En régime sinusoïdal forcé, tous les courants et tensions du circuit de même pulsation, seront caractérisés par leurs amplitude et phase.**==
 # Diagrammes
 Étude d’un circuit (R, L, C) série
 ![[figure111.png]]^figure2
@@ -61,6 +87,9 @@ Réponse en courant
 
 Équivalent haute fréquence
 ![[figure115.png]]^figure4b
+
+Soumis à l’excitation $e(t)$, le dipôle linéaire délivre la réponse $s(t)$
+![[figure120.png]]^figure9
 # Graphiques
 Représentation de Fresnel de la grandeur sinusoïdale $s(t) = s_m\cos(\omega t + \phi)$
 ![[figure110.png]]^figure1
@@ -76,6 +105,24 @@ Variations de $\frac{u_{C_m}}{e_m}$ en fonction de $x$ pour $Q = \frac{1}{2}$, $
 
 Variations du déphasage $\varphi(x)$ et $u_c(t)$ par rapport à $e(t)$ en fonction de $Q = \frac{1}{2}$, $1$ et $5$
 ![[figure119.png]]^figure8
+
+L’impédance complexe $Z = R$ d’un conducteur ohmique est réelle et constante
+![[figure121.png]]^figure10
+
+La tension $u(t)$ aux bornes d’un conducteur ohmique est en phase avec l’intensité $i(t)$ qui le traverse
+![[figure122.png]]^figure11
+
+L’impédance complexe $\underline{Z} = jL\omega$ d’une inductance est imaginaire pure
+![[figure123.png]]^figure12
+
+La tension $u(t)$ aux bornes d’une inductance est en avance de $\frac{\pi}{2}$ sur l’intensité $i(t)$ qui la traverse
+![[figure124.png]]^figure13
+
+L’impédance complexe $\underline{Z} = \frac{1}{jC\omega}$ d’une capacité est imaginaire pure
+![[figure125.png]]^figure14
+
+La tension $u(t)$ aux bornes d’une capacité est en retard de $\frac{\pi}{2}$ sur le courant $i(t)$ qui la traverse
+![[figure126.png]]^figure15
 # Expériences
 
 # Autres notes
