@@ -16,7 +16,7 @@ crée: 05-11-2025, 16:22
 4. [[04-Principe des appareils de mesure]]
 5. [[05-Réponse d'un réseau linéaire. Exemple du circuit (R, L, C) série]]
 6. [[06-Régime sinusoïdal forcé]]
-7. [[07-L'amplificateur opérationnel : Le modèle idéal]]
+7. [[07-L'amplificateur opérationnel. Le modèle idéal]]
 8. [[08-Fonctions de transfert des réseaux linéaires]]
 9. [[09-Filtres du deuxième ordre]]
 10. [[10-Amplificateur opérationnel : Bande passante, stabilité des montages bouclés et comparateurs]]
