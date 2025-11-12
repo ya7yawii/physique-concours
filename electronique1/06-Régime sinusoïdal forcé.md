@@ -67,11 +67,48 @@ crée: 11-11-2025, 09:50
 > - Conducteur ohmique : En régime harmonique l’impédance complexe du conducteur ohmique est : $\underline{Z} = R$. Pour un conducteur ohmique donné, son impédance est réelle et constante ([[#^figure10|fig. 10]]) : la tension et le courant sont en phase ([[#^figure11|fig. 11]]).
 > - Inductance : L’impédance complexe $\underline{Z}(j\omega) = jL\omega$ d'une inductance est imaginaire pure ([[#^figure12|fig. 12]]). Le module $L\omega$ de cette impédance est d’autant plus élevé que la fréquence est élevée. Une inductance s’oppose aux variations de l’intensité. En haute fréquence, elle se comporte comme un interrupteur ouvert. En revanche, en très basse fréquence, elle se comporte comme un interrupteur fermé. La tension est en avance de $\frac{\pi}{2}$ sur le courant ([[#^figure13|fig. 13]]).
 > - Capacité : L’impédance complexe $\underline{Z}(j\omega) = \frac{1}{jC\omega}$ d'une capacité est imaginaire pure ([[#^figure14|fig. 14]]). Le module $\frac{1}{C\omega}$ de cette impédance est d’autant plus faible que la fréquence est élevée : la coupure du circuit par un condensateur est d’autant moins marquée que la fréquence est élevée. À haute fréquence, une capacité se comporte comme un interrupteur fermé. En revanche, à très basse fréquence elle se comporte comme un interrupteur ouvert. La tension est en retard de $\frac{\pi}{2}$ par rapport à l'intensité ([[#^figure15|fig. 15]]).
+
+> [!note] Associations d’impédances en notation complexe
+> - en série : $\displaystyle \underline{Z} = \sum_{k} \underline{Z}_k$ ;
+> - en parallèle : $\displaystyle \underline{Y} = \sum_{k} \underline{Y}_k$.
+
+> [!note] Diviseurs de tension et de courant
+> - Pour le diviseur de tension : $\displaystyle \underline{u}_{2m} = \frac{\underline{Z}_2}{\underline{Z}_1 + \underline{Z}_2}\underline{u}_m$ ;
+> - Pour le diviseur de courant : $\displaystyle \underline{i}_{2m} = \frac{\underline{Y}_2}{\underline{Y}_1 + \underline{Y}_2}\underline{i}_m = \frac{\underline{Z}_1}{\underline{Z}_1 + \underline{Z}_2}\underline{i}_m$.
+
+> [!note] Représentation de Thévenin et Norton des électromoteurs
+> En régime harmonique, un électromoteur (le plus souvent un générateur) peut se représenter par deux modèles dont les effets sont équivalents pour le circuit extérieur : modèle de Thévenin $(\underline{e}, \underline{Z}_i)$ ou modèle de Norton $(\underline{\eta}, \underline{Z}_i)$.
+> L’impédance interne $\underline{Z}_i$ de l’électromoteur a la même valeur pour les deux modèles qui sont liés par : $\underline{e}_m = \underline{Z}_i\underline{\eta}$ ([[#^figure16|fig. 16]]).
+
+> [!note] Loi des nœuds en termes de potentiels
+> En régime sinusoïdal forcé, les branches qui aboutissent à un nœud $A$ peuvent être classées en deux catégories ([[#^figure17|fig. 17]]) :
+> - celles qui contiennent des générateurs de courant imposant des courants de branche de valeur complexe $\underline{\eta}_j$ ;
+> - celles d’admittance $\underline{Y}_k$, sans générateur de courant, dont le potentiel à leur extrémité $B_k$ a une valeur complexe $\underline{v}_k$.
+> 
+> La loi des nœuds, exprimée en termes de potentiel, appliquée en $A$ s’écrit : $\displaystyle \sum_{j}\epsilon_j\underline{\eta}_j + \sum_{k}\underline{Y}_k(\underline{v}_k - \underline{v}_A) = 0$. En l’absence de générateurs de courant, la loi des nœuds prend la forme simple mais usuelle (relation de Milleman) : $\underline{v}_A = \frac{\displaystyle\sum_{k}\underline{Y}_k\underline{v}_k}{\displaystyle\sum_{k}\underline{Y}_k}$.
+
+> [!note] Théorème de superposition
+> Dans un réseau linéaire contenant des sources sinusoïdales indépendantes, la valeur complexe $s(t)$ d’une grandeur quelconque (courant ou tension) est égale à la somme des valeurs complexes de cette même grandeur obtenues lorsque toutes les sources sont éteintes à l’exception d’une seule.
 # Définitions
 ==**Régime transitoire et régime permanent sinusoïdal**== :
 L’étude effectuée pour le circuit (R, L, C) série peut être généralisée aux réseaux linéaires, lorsqu’ils sont soumis à une excitation sinusoïdale : la réponse du circuit à une excitation sinusoïdale est la superposition de la réponse permanente sinusoïdale (qui ne dépend pas des conditions initiales) et d’un régime transitoire (déterminé par les conditions initiales).
 Nous supposerons que le régime libre du circuit est caractérisé par un régime transitoire qui tend vers zéro au cours du temps : le circuit est supposé stable, suffisamment amorti.
 ==**Pour un réseau linéaire stable, soumis à une excitation sinusoïdale, un régime permanent sinusoïdal s’établit après un régime transitoire qui tend vers zéro. En régime sinusoïdal forcé, tous les courants et tensions du circuit de même pulsation, seront caractérisés par leurs amplitude et phase.**==
+
+==**Représentations des éléments du circuit en régime permanent sinusoïdal**== :
+Dans le cas d’un réseau linéaire en régime harmonique permanent (ou régime sinusoïdal forcé), nous pouvons transposer les lois et modèles développés en régime constant, et utiliser :
+- les lois de Kirchhoff ;
+	- la loi des nœuds pour les intensités complexes ;
+	- la loi des mailles pour les tensions complexes ;
+- la décomposition du réseau en dipôles élémentaires :
+	- dipôles passifs caractérisés par leur impédance complexe ($\underline{u} = \underline{Z}\,\underline{i}$ en convention récepteur) ;
+	- générateurs de tension sinusoïdale de f.e.m complexe $\underline{e} = \underline{e}_m . e^{j\omega t}$, de courant sinusoïdal de c.e.m. $\underline{\eta} = \underline{\eta}_m . e^{j\omega t}$ d’impédance interne $\underline{Z}_i$ s’ils ne sont pas idéaux.
+
+==**Intérêt de l’analyse harmonique**== :
+La place particulière accordée aux régimes harmoniques a plusieurs justifications :
+- Si l’excitation est harmonique, la réponse forcée l’est également. Le régime harmonique forcé est aisément calculable, en utilisant la notation complexe.
+- Les sources sont assez souvent sinusoïdales : tension du secteur, tension délivrée par un alternateur, tensions délivrées par les générateurs utilisés en TP.
+- On peut montrer que tout signal physiquement réalisable peut se mettre sous la forme d’une somme infinie de signaux sinusoïdaux (décomposition de Fourier) : la réponse du circuit linéaire au signal complet est la superposition des réponses à chaque terme de la décomposition pris individuellement.
 # Diagrammes
 Étude d’un circuit (R, L, C) série
 ![[figure111.png]]^figure2
@@ -90,6 +127,12 @@ Réponse en courant
 
 Soumis à l’excitation $e(t)$, le dipôle linéaire délivre la réponse $s(t)$
 ![[figure120.png]]^figure9
+
+Représentations de Thévenin et de Norton d’un générateur sinusoïdal en notation complexe
+![[figure127.png]]^figure16
+
+Nœud $A$ avec les deux types de branches qui y aboutissent
+![[figure128.png]]^figure17
 # Graphiques
 Représentation de Fresnel de la grandeur sinusoïdale $s(t) = s_m\cos(\omega t + \phi)$
 ![[figure110.png]]^figure1
