@@ -119,6 +119,37 @@ crée: 14-11-2025, 14:38
 > 
 > ==**Un filtre joue le rôle de dérivateur en basse fréquence si son diagramme de Bode présente une asymptote basse fréquence de pente +20 dB/décade et si le déphasage correspondant est de $\frac{\pi}{2}$ (ou $-\frac{\pi}{2}$ s’il y a inversion de signe).**==
 
+> [!note] Produit de deux fonctions de transfert
+> Étudions le circuit représenté sur la [[#^figure34|figure 34]].
+> Nous reconnaissons deux filtres passe-bas séparés par un suiveur. Le suiveur permet d’assurer l’égalité $u_2 = u_3$ avec un courant $i_2$ nul.
+> Comme le courant $i_2$ [[#^info2|est nul]] : $\underline{H}_1(j\omega) = \frac{\underline{u}_{2m}}{\underline{u}_{1m}} = \frac{1}{1 + j\frac{\omega}{\omega_1}}$ avec $\omega_1 = \frac{1}{R_1C_1}$.
+> Comme la sortie est ouverte $(i_4 = 0)$ : $\underline{H}_2(j\omega) = \frac{\underline{u}_{4m}}{\underline{u}_{3m}} = \frac{1}{1 + j\frac{\omega}{\omega_2}}$ avec $\omega_2 = \frac{1}{R_2C_2}$.
+> Nous en déduisons la fonction de transfert $\underline{H}(j\omega) = \frac{\underline{u}_{4m}}{\underline{u}_{1m}}$ du système complet : $\underline{H}(j\omega) = \underline{H}_1(j\omega)\underline{H}_2(j\omega) = \frac{1}{1 - \frac{\omega^{2}}{\omega_1\omega_2} + j\left(\frac{\omega}{\omega_1} + \frac{\omega}{\omega_2}\right)}$. Nous obtenons une fonction de transfert du second ordre.
+> <mark style="color: red">Plus généralement : la fonction de transfert d’une association de deux filtres en cascade est égale au produit des fonctions de transfert.</mark>
+> Construction du diagramme de Bode :
+> - Diagramme de gain : La relation $\underline{H}(j\omega) = \underline{H}_1(j\omega)\underline{H}_2(j\omega)$ implique $20\log[H(\omega)] = 20\log[H_1(\omega)] + 20\log[H_2(\omega)]$ soit : $G_{dB} = G_{1\,dB} + G_{2\,dB}$.
+> Il suffit donc d’additionner les deux courbes de gain. En particulier, nous déterminons très facilement les asymptotes ([[#^figure35|fig. 35]]).
+> Le diagramme de gain nous indique que ce système est un filtre passe-bas d’ordre deux.
+> - Diagramme de phase : La relation $\underline{H}(j\omega)$ implique également : $\arg[\underline{H}(j\omega)] = \arg[\underline{H}_1(j\omega)] + \arg[\underline{H}_2(j\omega)]$ soit : $\varphi = \varphi_1 +\varphi_2$. Il suffit donc d’additionner les deux courbes de phase, ce qui est particulièrement simple pour le diagramme asymptotique ([[#^figure35|fig. 35]]).
+
+> [!note] Correspondance entre fonction de transfert et équation différentielle
+> La fonction de transfert permet de déterminer $u_2(t)$ à partir de $u_1(t)$ en régime harmonique. Elle n’est en fait que la traduction pour le régime harmonique de l’équation différentielle qui relie les deux tensions.
+> Inversement, nous pouvons en général retrouver cette équation différentielle à partir de la fonction de transfert en remplaçant $j\omega$ par une dérivation par rapport au temps.
+> Pour un filtre du premier ordre : $\underline{H}(j\omega) = \frac{A + Bj\omega}{C + Dj\omega} \Rightarrow (C + Dj\omega)\underline{u}_{2} = (A + Bj\omega)\underline{u}_{1}$ d’où l’équation différentielle : $Cu_2 + D\dfrac{du_2}{dt} = Au_1 + B\dfrac{du_1}{dt}$.
+> ==**Lorsqu’elles sont du même ordre, l’équation différentielle qui relie $u_2$ et $u_1$ et la fonction de transfert contiennent l’une et l’autre toutes les informations concernant le quadripôle. Les deux représentations sont équivalentes et on passe de l’une à l’autre par l’équivalence : $j\omega \rightarrow \dfrac{d}{dt}$.**==
+
+> [!note] Stabilité d'un circuit
+> Étudions la stabilité d’un filtre d’ordre un, de fonction de transfert : $\underline{H}(j\omega) = \frac{A + Bj\omega}{C + Dj\omega}$.
+> - Condition concernant le régime libre : Le régime libre $u_{20}(t)$ est solution de l’équation homogène : $Cu_2 + D\frac{du_2}{dt} = 0$. Si $D = 0$ : $u_{20} = 0$. Si $C = 0$ : $\frac{du_{20}}{dt} = 0 \Rightarrow u_{20} = cte$. Si $C$ et $D$ non nuls : $u_{20} = U_0e^{-\frac{C}{D}t}$. Cette solution est bornée si $C$ et $D$ sont de même signe. La condition de stabilité qui résume ces trois cas est donc : $CD \geqslant 0$.
+> Plutôt que d’appliquer mécaniquement un tel critère, il est préférable de retenir une formulation plus générale : <mark style="color: red">Le régime libre d’un système est stable si celui-ci converge vers 0.</mark>
+> Le régime libre d’un système passif est généralement stable.
+> Si le régime libre d’un système actif est instable, la sortie diverge et tend vers la saturation des amplificateurs. Cela se produit toujours, en raison des parasites aléatoires qui écartent le système de sa valeur d’équilibre.
+> Remarque : L’étude du gain d’un filtre de fonction de transfert $\underline{H}(j\omega) = \frac{A_0}{1 - jx}$ devrait nous amener à la conclusion qu’il s’agit aussi d’un passe-bas d’ordre un. Mais son régime libre est instable (solution en $e^{+\omega_0 t}$) et il n’est pas utilisable en filtre ; il est donc inutile d’étudier le diagramme de Bode de cette fonction de transfert.
+> - Condition concernant le régime forcé : Un système est instable en régime forcé s’il est possible de trouver une excitation $u_1(t)$ qui conduit à une réponse forcée $u_2(t)$ divergente.
+> Pour les systèmes simples du premier ordre il est possible de raisonner directement en trouvant, lorsqu’elle existe, une excitation $u_1(t)$ qui conduit à une réponse $u_2(t)$ non bornée.
+> En régime harmonique, la réponse est non bornée si le module $H(\omega)$ de la fonction de transfert est lui-même non borné. Nous admettrons la généralisation à tous les régimes forcés.
+> ==**Un système est stable en régime forcé si le module $H(\omega)$ de la fonction de transfert est borné à toutes les fréquences (en particulier pour $\omega \rightarrow 0$ et pour $\omega \rightarrow \infty$).**==
+
 
 # Définitions
 > [!note] Quadripôle
@@ -130,6 +161,14 @@ crée: 14-11-2025, 14:38
 
 ==**Filtre passif et filtre actif**==
 Un filtre est passif s’il n’est constitué que de dipôles passifs (résistances, bobines et condensateurs). Il est actif s’il contient un amplificateur alimenté par une source extérieure au circuit.
+
+==**Réponse temporelle et réponse fréquentielle**== :
+L’analyse temporelle d’un circuit est l’étude de sa réponse effectuée à partir de son équation différentielle et des conditions initiales. L’analyse fréquentielle en est l’étude effectuée à partir de sa fonction de transfert $\underline{H}(j\omega)$.
+Les caractères instantanés de la réponse sont dégagés lors de l’analyse temporelle, tandis que les caractères permanents le sont lors de l’analyse fréquentielle.
+Ces deux analyses d’un même phénomène physique (la réponse du circuit) sont intimement liées.
+
+==**Définition de la stabilité**== :
+Dans la théorie des circuits, le concept de stabilité est aussi fondamental que celui de linéarité. Nous conviendrons qu’un système est stable si sa réponse à toute excitation bornée, et quelles que soient les conditions initiales, reste bornée à tout instant.
 # Diagrammes
 Filtre (R, C)
 ![[figure172.png]]^figure1
@@ -163,6 +202,9 @@ Passe-haut (R, C) d’ordre un
 
 Le suiveur impose au filtre passe-haut (R, C) une impédance de charge infinie quelle que soit $R_u$
 ![[figure202.png]]^figure30
+
+Deux filtres d’ordre un en cascade
+![[figure206.png]]^figure34
 # Graphiques
 Diagramme de Bode : a. courbe de réponse en gain ; b. courbe de réponse en phase
 ![[figure174.png]]^figure3
@@ -232,6 +274,9 @@ Réponse du passe-haut de $RC = 10^{-4} s$ à une excitation triangulaire de pé
 
 Diagramme de Bode du passe-haut (R, C) d’ordre un
 ![[figure205.png]]^figure33
+
+Diagrammes asymptotiques pour le gain et pour la phase
+![[figure207.png]]^figure35
 # Expériences
 
 # Autres notes
@@ -244,3 +289,7 @@ Diagramme de Bode du passe-haut (R, C) d’ordre un
 > - $\log 3 = 0,48 \approx 0,5$ (à rapprocher de $3^{2} \approx 10$)
 > - Diviser $H$ par $\sqrt{2}$ revient à retrancher 3 dB au gain : $20\log\frac{H}{\sqrt{2}} = 20\log(H) - 10\log2$
 > - Diviser $H$ par 10 revient à retrancher 20 dB au gain : $20\log\frac{H}{10} = 20\log(H) - 20\log10$.
+
+> [!warning]
+> Nous n’avons pu écrire $\underline{H}_1(j\omega) = \frac{\underline{u}_{2m}}{\underline{u}_{1m}} = \frac{1}{1 + j\frac{\omega}{\omega_1}}$ que parce que $i_2$ est nul. Si nous n’avions pas intercalé de suiveur, le second filtre aurait « chargé » le premier et sa fonction de transfert en aurait été modifiée.
+^info2
