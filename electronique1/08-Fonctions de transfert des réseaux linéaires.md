@@ -33,6 +33,92 @@ crée: 14-11-2025, 14:38
 > - Courbe de réponse en phase : Le déphasage de la tension de sortie par rapport à celle d’entrée est : $\varphi(x) = -\arctan(x)$, soit $-\frac{\pi}{2} < \varphi(x) < 0$ car $x > 0$. Si $X \rightarrow -\infty$ $(x \rightarrow 0)$, la valeur asymptotique du déphasage en basse fréquence est $\varphi = 0$ ([[#^figure6|fig. 6]]). La courbe de réponse en phase admet une asymptote d’équation $\varphi = 0$ en basse fréquence. Si $X \rightarrow +\infty$ $(x \rightarrow \infty)$, la valeur asymptotique du déphasage en haute fréquence est $\varphi = -\frac{\pi}{2}$.
 > 	- Diagramme asymptotique : Le diagramme asymptotique formé des deux asymptotes $\varphi = 0$ et $\varphi = -\frac{\pi}{2}$ est insuffisant pour décrire les variations du déphasage$\varphi(\omega)$ lorsque la pulsation varie de zéro à l’infini. Il est généralement complété par le segment $A_1AA_2$ décrivant le déphasage qui s’effectue, pour l’essentiel, au voisinage de $X = 0$ ([[#^figure7|fig. 7]]). Dans un tel diagramme, la rotation de phase s’effectue sur deux décades autour de $X = 0$, avec une valeur de $-\frac{\pi}{4}$ rad/décade. L’écart maximal entre ce diagramme asymptotique et la réponse en phase est $|\Delta\varphi| < 6\degree$. Cette erreur est négligeable dans la pratique.
 
+> [!note] Filtre intégrateur
+> Nous cherchons un quadripôle qui réalise l’opération : $\displaystyle u_2(t) = u_2(0) + \frac{1}{\tau}\int_{0}^{\tau}u_1(\theta)d\theta$, ou, ce qui est équivalent : $u_1(t) = \tau\dfrac{du_2}{dt}$. En régime harmonique et en notation complexe : $\underline{u}_{1m} = j\omega\tau\underline{u}_{2m}$ soit : $\underline{H}(j\omega) = \frac{1}{j\omega\tau}$. Un intégrateur est donc un filtre du premier ordre.
+> Diagramme de Bode : Nous définissons la pulsation réduite $x$ par : $x = \tau\omega$.
+> - Courbe de réponse en gain : Le gain a pour expression : $G_{dB} = -20\log(x)$. La courbe de réponse en gain est donc une droite passant par l’origine et de pente égale à -20 dB/décade ([[#^figure9|fig. 9]]).
+> - Courbe de réponse en phase : Le déphasage $\varphi$ de la tension de sortie par rapport à la tension d’entrée est : $\varphi = -\frac{\pi}{2}$.
+
+> [!note] Réalisation d’un intégrateur
+> Étudions le montage théorique de la [[#^figure10|figure 10a]].
+> La loi des nœuds au niveau de l’entrée inverseuse de l’amplificateur opérationnel s’écrit : $\frac{v_e - v_-}{R} + C\dfrac{d(v_s - v_-)}{dt} = 0$. En régime linéaire, $v-$ est nulle, soit $\dfrac{dv_s}{dt} = -\frac{v_e}{RC}$. Le montage réalise bien une intégration quel que soit le signal d’entrée.
+> - Réalisation du montage théorique : Réalisons le montage de la [[#^figure10|figure 10b]].
+> L’interrupteur a été placé de façon à pouvoir décharger le condensateur. Prenons $v_e$ nul (entrée court-circuitée) et ouvrons l’interrupteur à l’instant $t = 0$. Nous observons soit une croissance linéaire de $v_s$ avec le temps jusqu’à la tension de saturation de l’A.O. $v_s = V_{sat}$, soit une décroissante linéaire jusqu’à $-V_{sat}$ .
+> Cette dérive de la tension de sortie du montage est due aux défauts de l’amplificateur opérationnel.
+> Ce montage théorique n’est pas utilisable dans la pratique. Un amplificateur opérationnel réel présente de petits défauts par rapport au modèle théorique appelés dérives : en régime linéaire, la tension $\epsilon = u_+ - u_-$ et le courant d’entrée ne sont pas rigoureusement nuls. Ces défauts, pratiquement sans incidence dans les montages amplificateurs étudiés au chapitre précédent, perturbent totalement le montage intégrateur qui n’est donc pas utilisable sous cette forme dans la pratique.
+> - Montage amélioré : Pour éliminer le phénomène de dérive, il faudrait décharger régulièrement le condensateur. Remplaçons l’interrupteur par une résistance $R'$ ([[#^figure11|fig. 11]]).
+> La fonction de transfert de ce nouveau montage se détermine simplement en appliquant la loi des nœuds en termes de potentiels à l’entrée inverseuse de l’amplificateur : $\underline{u} = 0 = \frac{\underline{u}_e}{R} + \underline{u}_s\left(\frac{1}{R'} + jC\omega\right)$ d'où $\underline{H} = -\frac{R'/R}{1 + jR'C\omega}$.
+> Nous distinguons deux domaines de fonctionnement :
+> 	- $R'C\omega \gg 1$ : Dans ce domaine de fréquence, le filtre se comporte comme un intégrateur de constante de temps $\tau = RC$.
+> 	- $R'C\omega \ll 1$ : Alors $\underline{H} \approx -\frac{R'}{R}$. Admettons que les dérives sont équivalentes à une tension continue $e_d$ de l’ordre du millivolt ajoutée à la tension d’entrée. En régime forcé, une tension continue correspond au cas limite de la fréquence nulle.
+> 	Si $u_e = 0$, les dérives seules créent, en régime forcé, une tension de sortie $u_{2}^{'} = -\frac{R'}{R}e_d$.
+> 	Si les dérives sont nulles, la tension d’entrée sinusoïdale $u_1(t)$ crée en régime forcé une tension de sortie $u_{2}^{''}(t)$ telle que $\underline{u}_{2}^{''} = \underline{H}(j\omega)\underline{u}_{1}$.
+> 	D’après le théorème de superposition : $u_{2}(t) = u_{2}^{'} + u_{2}^{''}(t)$.
+> 
+> 	Nous voulons fabriquer un circuit qui élimine les effets des dérives tout en se comportant comme un intégrateur acceptable pour $u_1(t)$. L’étude précédente nous fixe donc deux conditions :
+> 	- Si nous nous fixons arbitrairement une valeur maximale de 0,1 V pour l’influence de ces dérives en sortie, nous en déduisons : $R' < 100R$ (environ) ;
+> 	- Si nous considérons (arbitrairement) que le filtre se comporte comme un intégrateur pour $R'C\omega > 100$, nous obtenons : $R' > \frac{100}{C\omega}$ ou $R > \frac{1}{C\omega}$.
+> 
+> Remarques : 
+> Expérimentalement, pour savoir si un intégrateur est perturbé par les dérives, il suffit de faire $u_1 = 0$ (en mettant l’entrée à la masse) et d’observer la sortie.
+> Pour tester un intégrateur, il est recommandé d’utiliser à l’entrée une fonction en créneaux : l’intégrale d’une telle fonction est une fonction triangle facilement identifiable.
+
+> [!note] Filtre passe-bas du premier ordre
+> Nous avons vu un exemple de filtre passe-bas d’ordre un avec le circuit (R, C). Plus généralement : Un filtre est passe-bas d’ordre un si sa fonction de transfert est de la forme : $\displaystyle\underline{H}(j\omega) = \frac{A_0}{1 + j\frac{\omega}{\omega_0}} = \frac{A_0}{1 + jx}$ avec $A_0$ réel, $\omega_0$ est la pulsation propre ou pulsation de coupure et $x$ est la pulsation réduite.
+> Le montage « intégrateur amélioré » vu précédemment est un exemple de passe-bas d’ordre un avec $A_0 = -\frac{R'}{R}$ et $\omega_0 = \frac{1}{R'C}$.
+> Le diagramme de Bode est identique à celui du circuit ( R, C ), à une translation près, due à la constante $A_0$ ([[#^figure12|fig. 12]]).
+> Remarque : Si $A_0 < 0$, il faut ajouter $\pi$ à l'expression de la phase $\varphi(\omega)$, car $e^{j\pi} = -1$.
+> - Caractère pseudo-intégrateur : Réalisons le montage ([[#^figure13|fig. 13]]), avec une constante de temps $RC = 10^{-4} s$. Observons les courbes obtenues en régime forcé pour un signal d’entrée de type créneau d’amplitude $v_0 = 1 V$ et de période $T$.
+> Si la période du signal est grande devant $RC$ $(T = 0,1 s)$, le signal de sortie est un créneau de même amplitude 1 V ([[#^figure14|fig. 14]]).
+> Si la période du signal est petite devant $RC$ $(T = 10^{-5} s)$, le signal de sortie est un signal triangulaire d’amplitude 25 mV ([[#^figure18|fig. 18]]).
+> Pour des valeurs intermédiaires de la période, le signal de sortie évolue d’une forme proche d’un créneau à une forme proche d’un triangle (fig. [[#^figure15|15]], [[#^figure16|16]] et [[#^figure17|17]]).
+> Un signal créneau d’amplitude $v_0$ de période $T$ peut être décomposé en ses harmoniques, signaux sinusoïdaux de période $T$, $\frac{T}{3}$, $\frac{T}{5}$, $\frac{T}{7}$, $\ldots$, $\frac{T}{(2n + 1)}$ (le signal créneau ne contient que des harmoniques impairs) d’amplitudes : $a$, $\frac{a}{3}$, $\frac{a}{5}$, $\frac{a}{7}$, $\ldots$, $\frac{a}{(2n + 1)}$ avec $a = \frac{4v_0}{\pi}$ ([[#^figure19|fig. 19]]).
+> Dans le cas où $T = 0,1 s$, les harmoniques d’amplitude importante vérifient $T \gg RC$ (ou $RC\omega \ll 1$). Le passe-bas (R, C) transmet sans déformation les harmoniques principaux : le signal de sortie est donc quasi identique au signal d’entrée. Dans le cas où $T = 10^{-5} s$ , tous les harmoniques vérifient $T \ll RC$ (ou $RC\omega \gg 1$). Le passe-bas atténue et intègre les harmoniques principaux : le signal de sortie est alors une primitive du signal d’entrée, donc un ensemble de segments de droite de pente $\pm\frac{v_0}{RC}$.
+> En un quart de période, sa valeur passe de 0 à sa valeur extrémale : son amplitude est donc $\frac{v_0T}{4RC}$, soit 25 mV pour $\frac{T}{RC} = 10^{-1}$ et $v_0 = 1 V$.
+> Dans les cas intermédiaires, seule une partie des harmoniques d’amplitude importante vérifie $T \gg RC$ ou $T \ll RC$. Nous ne pouvons rien déduire sur le signal de sortie.
+> - Valeur moyenne d’une fonction périodique : Prenons l’exemple d’un signal : $u_1(t) = U_0 + U_1\cos(\omega t + \phi)$ envoyé à l'entrée d'un filtre passe-bas (R, C) tel que $\omega_0 = \frac{1}{RC} < \frac{\omega}{100}$ (soit $x = RC\omega > 100$).
+> 	- Le filtre passe-bas laisse intégralement passer la fonction constante.
+> 	- Le filtre passe-bas est utilisé dans sa zone asymptotique pour la partie variable. Son amplitude est divisée par 100 et elle est déphasée de $-\frac{\pi}{2}$.
+> 	- En superposant les régimes forcés, nous obtenons : $u_2(t) = U_0 + \frac{U_1}{100}\sin(\omega t)$.
+> 	Le signal de sortie est donc pratiquement égal à la valeur moyenne du signal d’entrée. Il ne subsiste qu’une faible ondulation, 100 fois plus faible que celle du signal d’entrée.
+> 	Ce résultat est applicable à tout signal périodique de valeur moyenne non nulle.
+> 
+> ==**Un filtre passe-bas se comporte comme un opérateur « valeur moyenne » s’il est appliqué à un signal périodique de valeur moyenne non nulle et de fréquence $f \gg f_0$.**==
+
+> [!note] Filtre dérivateur
+> Nous cherchons un quadripôle qui réalise l’opération : $u_2(t) = \tau\dfrac{du_1}{dt}$. En régime harmonique et en notation complexe nous obtenons une fonction de transfert d’ordre un : $\underline{u}_{2m} = j\omega\tau\underline{u}_{1m}$ soit : $\underline{H}(j\omega) = j\omega\tau = jx$.
+> La fonction de transfert est inverse de celle de l’intégrateur. Pour une même valeur de $x$, le gain en décibels et le déphasage sont donc opposés. Nous en déduisons le diagramme de Bode du dérivateur idéal ([[#^figure20|fig. 20]]).
+
+> [!note] Réalisation d’un dérivateur
+> Étudions le montage théorique de la [[#^figure21|figure 21]].
+> Écrivons la loi des nœuds au niveau de l’entrée inverseuse de l’amplificateur opérationnel : $\frac{v_s - v_-}{R} + C\dfrac{d(v_e - v_-)}{dt} = 0$, soit en régime linéaire $(v_- = 0)$ : $v_s = -RC\dfrac{dv_e}{dt} = -\tau\dfrac{dv_e}{dt}$. Le montage réalise bien une dérivation quel que soit le signal d’entrée. Sa fonction de transfert est $\underline{H}(j\omega) = - jRC\omega$. Dans ce cas, nous avons $\varphi = -\frac{\pi}{2}$.
+> - Réalisation à l’aide d’un amplificateur opérationnel réel :
+> 	- Réalisation du montage théorique : Réalisons le montage théorique à l’aide d’un amplificateur opérationnel 741 avec $R = 10 kΩ$ et $C = 100 nF$ $(RC = 10^{-3} s)$. En choisissant comme signal d’entrée, un signal triangulaire d’amplitude 0,1 V, nous obtenons les résultats des figures [[#^figure22|22a]] et [[#^figure22|b]].
+> 	Le montage présente un phénomène d’oscillations semblable à celui observé pour l’intensité dans un circuit (R, L, C). Il y a résonance.
+> 	Le tracé du diagramme de Bode correspondant nous indique une résonance très aiguë pour une fréquence $f_c$ d'environ 13 kHz.
+> 	Cette résonance est due à l’amplificateur opérationnel réel non idéal.
+> 	Interprétons, à l’aide de la notion d’harmoniques, le fait que le montage ne soit pas dérivateur à basse fréquence.
+> 	Sur la [[#^figure23|figure 23]] (signal d’entrée triangulaire de fréquence 100 Hz), nous remarquons que les harmoniques de rang 120 à 140 du signal de sortie ont une amplitude très grande. Leur fréquence est comprise entre 12 et 14 kHz , cela correspond au pic de résonance du montage. Cette amplification trop importante des harmoniques 120 à 140 explique les oscillations à une fréquence voisine de 13 kHz du signal de sortie. Le caractère dérivateur du montage est alors masqué par le phénomène de résonance.
+> 	- Montage amélioré : L’idée est de diminuer l’acuité de la résonance du montage et donc de diminuer son facteur de qualité. Pour un circuit (R, L, C), il suffit d’augmenter $R$. Ici, nous ajouterons une résistance $R'$ en série avec le condensateur ([[#^figure24|fig. 24]]). La réponse est représentée sur les figures [[#^figure25a|25a]] et [[#^figure25b|b]].
+>  - Étude expérimentale : Le montage expérimental est réalisé à l’aide d’une résistance $R'$ variable ([[#^figure26|fig. 26]]).
+>  Nous choisissons un signal de sortie du générateur basse fréquence de type triangulaire de fréquence de l’ordre de 100 Hz et nous ajustons $R'$, de façon à obtenir en sortie de l’amplificateur opérationnel un signal aussi proche que possible du créneau (attention à la saturation en tension).
+>  Réalisons l’expérience avec un générateur basse fréquence dont l’impédance de sortie est de 600 Ω. Nous trouvons une valeur optimale de $R'$ non nulle, de l’ordre de quelques centaines d’ohms.
+
+> [!note] Filtre passe-haut d'ordre un
+> Nous pouvons voir un exemple de filtre passe-haut d’ordre un avec le circuit (R, C), qui s'obtient en permutant dans le passe-bas (R, C) la position de $R$ et $C$. Nous obtenons le quadripôle représenté sur la [[#^figure27|figure 27]]. Sa fonction de transfert s'écrit : $\underline{H}(j\omega) = \frac{jx}{1 + jx}$. En déterminant les asymptotes de la courbe de réponse en gain ([[#^figure28|fig. 28]]), nous remarquons qu'aux très basses fréquences, la capacité $C$ se comporte comme un interrupteur ouvert. Alors qu'aux très hautes fréquences, la capacité $C$ se comporte comme un court-circuit. Nous observons que la courbe de réponse en phase d’un passe-haut d’ordre un, ainsi que son diagramme asymptotique ([[#^figure29|fig. 29]]) se déduisent de ceux d’un passe-bas du même ordre par une translation de $\frac{\pi}{2}$ le long de l’axe des déphasages. En fait la déphasage s'écrit : $\varphi(x) = \frac{\pi}{2} - \arctan(x)$, avec $0 < \varphi(x) < \frac{\pi}{2}$.
+> Plus généralement : Un filtre est passe-haut d’ordre un si sa fonction de transfert est de la forme : $\displaystyle\underline{H}(j\omega) = \frac{jA_0\frac{\omega}{\omega_0}}{1 + j\frac{\omega}{\omega_0}} = A_0\frac{jx}{1 + jx} = A_0\frac{1}{1 - \frac{j}{x}}$ avec $A_0$ réel. Le diagramme de Bode est identique à celui du circuit (R, C) à une translation près, due à la constante $A_0$.
+> 
+> Caractère pseudo-dérivateur : Réalisons le montage de la [[#^figure30|figure 30]].
+> Observons les courbes obtenues en régime forcé pour un signal d’entrée triangulaire d’amplitude $v_0 = 1 V$ réalisé avec une constante de temps $RC = 10_{-4} s$.
+> Nous remarquons que si la période du signal est $T = 0,1 s$, donc grande devant $RC$, le signal de sortie est un signal créneau d’amplitude 4 mV ([[#^figure31|fig. 31]]).
+> Si la période du signal est petite devant $RC(T = 10^{-5} s)$, le signal de sortie est un signal triangulaire d’amplitude 1 V ([[#^figure32|fig. 32]]).
+> Pour des valeurs intermédiaires de la période, le signal de sortie évolue d’une forme proche d’un créneau à une forme proche d’un triangle.
+> Nous dirons que ce montage est un pseudo-dérivateur, car le signal de sortie est la dérivée du signal d’entrée seulement quand ce dernier est périodique de période grande devant la constante de temps $RC$.
+> La courbe de gain est alors confondue avec son asymptote basse fréquence de pente +20 dB/décade et sa réponse en phase a la valeur asymptotique $\frac{\pi}{2}$ ([[#^figure33|fig. 33]]).
+> Nous pouvons généraliser ce résultat.
+> 
+> ==**Un filtre joue le rôle de dérivateur en basse fréquence si son diagramme de Bode présente une asymptote basse fréquence de pente +20 dB/décade et si le déphasage correspondant est de $\frac{\pi}{2}$ (ou $-\frac{\pi}{2}$ s’il y a inversion de signe).**==
+
 
 # Définitions
 > [!note] Quadripôle
@@ -53,6 +139,30 @@ Quadripôle : $u_1$ est la tension d’entrée ; $u_2$ est la tension de sortie 
 
 Le courant $i_+$ étant nul la fonction de transfert du filtre est égale à $\frac{1}{1 + jRC\omega}$ quelque soit la valeur de $R_0$
 ![[figure179.png]]^figure8
+
+ Intégrateurs à A.O. : montages théoriques
+ ![[figure181.png]]^figure10
+
+Intégrateur à A.O. : montage amélioré
+![[figure182.png]]^figure11
+
+Le suiveur impose au filtre (R, C) une impédance de charge infinie quelle que soit $R_u$
+![[figure184.png]]^figure13
+
+Dérivateur à A.O. : montage théorique
+![[figure192.png]]^figure21
+
+Dérivateur à A.O. : montage amélioré
+![[figure195.png]]^figure24
+
+Montage expérimental d’étude du dérivateur à A.O
+![[figure198.png]]^figure26
+
+Passe-haut (R, C) d’ordre un
+![[figure199.png]]^figure27
+
+Le suiveur impose au filtre passe-haut (R, C) une impédance de charge infinie quelle que soit $R_u$
+![[figure202.png]]^figure30
 # Graphiques
 Diagramme de Bode : a. courbe de réponse en gain ; b. courbe de réponse en phase
 ![[figure174.png]]^figure3
@@ -68,6 +178,60 @@ Le diagramme asymptotique formé des deux asymptotes $\varphi = 0$ et $\varphi =
 
 Diagramme asymptotique de la courbe de réponse en phase d’un passe-bas d’ordre un
 ![[figure178.png]]^figure7
+
+Diagramme de Bode d’un intégrateur théorique
+![[figure180.png]]^figure9
+
+Diagramme de Bode d’un filtre passe-bas d’ordre 1
+![[figure183.png]]^figure12
+
+Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-1} s$
+![[figure185.png]]^figure14
+
+Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-2} s$
+![[figure186.png]]^figure15
+
+Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-3} s$
+![[figure187.png]]^figure16
+
+Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-4} s$
+![[figure188.png]]^figure17
+
+Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-5} s$
+![[figure189.png]]^figure18
+
+Harmoniques d’un signal créneau d’amplitude unité
+![[figure190.png]]^figure19
+
+Diagramme de Bode d’un dérivateur théorique
+![[figure191.png]]^figure20
+
+En basse fréquence, le montage n’a pas le caractère dérivateur attendu
+![[figure193.png]]^figure22
+
+Mise en évidence, dans le spectre de fréquence, d’une résonance de $v_s(t)$ au voisinage de 13 kHz
+![[figure194.png]]^figure23
+
+Réponse du dérivateur amélioré à un signal triangulaire
+![[figure196.png]]^figure25a
+
+Détail de la réponse précédente
+![[figure197.png]]^figure25b
+
+Courbe de réponse en gain et diagramme asymptotique d’un passe-haut d’ordre un
+![[figure200.png]]^figure28
+
+Courbe de réponse en phase et diagramme asymptotique d’un passe-haut d’ordre un
+![[figure201.png]]^figure29
+
+Réponse du passe-haut de $RC = 10^{-4} s$ à une excitation triangulaire de période $T = 10^{-1} s$
+![[figure203.png]]^figure31
+
+Réponse du passe-haut de $RC = 10^{-4} s$ à une excitation triangulaire de période $T = 10^{-5} s$
+![[figure204.png]]^figure32
+
+Diagramme de Bode du passe-haut (R, C) d’ordre un
+![[figure205.png]]^figure33
 # Expériences
 
 # Autres notes
