@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "52802c0f8a981473",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "electronique1/07-L'amplificateur opérationnel. Le modèle idéal.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "07-L'amplificateur opérationnel. Le modèle idéal"
-            }
-          },
-          {
             "id": "3c86e2d21e647bec",
             "type": "leaf",
             "state": {
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "08-Fonctions de transfert des réseaux linéaires"
+            }
+          },
+          {
+            "id": "6ec496e65478025b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "electronique1/09-Filtres du deuxième ordre.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "09-Filtres du deuxième ordre"
             }
           }
         ],
@@ -196,25 +196,36 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "3c86e2d21e647bec",
+  "active": "6ec496e65478025b",
   "lastOpenFiles": [
-    "electronique1/attachments-electronique1/figure207.png",
-    "electronique1/attachments-electronique1/figure206.png",
-    "$i_2$ est nul.md",
-    "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
-    "electronique1/attachments-electronique1/figure205.png",
-    "electronique1/attachments-electronique1/figure204.png",
-    "electronique1/attachments-electronique1/figure203.png",
-    "electronique1/attachments-electronique1/figure202.png",
-    "electronique1/attachments-electronique1/figure201.png",
-    "electronique1/attachments-electronique1/figure200.png",
-    "electronique1/attachments-electronique1/figure199.png",
-    "electronique1/attachments-electronique1/figure198.png",
-    "electronique1/attachments-electronique1/figure197.png",
-    "electronique1/07-L'amplificateur opérationnel. Le modèle idéal.md",
-    "electronique1/00-Electronique1.md",
-    "electronique1/04-Principe des appareils de mesure.md",
+    "electronique1/attachments-electronique1/figure221.png",
+    "electronique1/attachments-electronique1/figure220.png",
+    "electronique1/attachments-electronique1/figure219.png",
+    "electronique1/attachments-electronique1/figure218.png",
+    "electronique1/attachments-electronique1/figure217.png",
+    "electronique1/attachments-electronique1/figure216.png",
     "electronique1/06-Régime sinusoïdal forcé.md",
+    "electronique1/09-Filtres du deuxième ordre.md",
+    "electronique1/attachments-electronique1/figure215.png",
+    "electronique1/attachments-electronique1/figure214.png",
+    "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
+    "electronique1/04-Principe des appareils de mesure.md",
+    "electronique1/07-L'amplificateur opérationnel. Le modèle idéal.md",
+    "electronique1/01-Électrocinétique. Cadre et concepts de base.md",
+    "electronique1/00-Electronique1.md",
+    "electronique1/attachments-electronique1/figure213.png",
+    "electronique1/attachments-electronique1/figure212.png",
+    "electronique1/attachments-electronique1/figure211.png",
+    "mecanique1/10-Système de deux points matériels.md",
+    "mecanique1/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
+    "mecanique1/08-Changements de référentiels. Mécanique non galiléenne.md",
+    "mecanique1/02-Dynamique du point matériel.md",
+    "mecanique1/07-Force centrale conservative. Mouvement newtonien.md",
+    "mecanique1/06-Théorème du moment cinétique.md",
+    "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
+    "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
+    "mecanique1/03-Puissance et énergie en référentiel galiléen.md",
+    "$i_2$ est nul.md",
     "electronique1/05-Réponse d'un réseau linéaire. Exemple du circuit (R, L, C) série.md",
     "electronique1/03-Théorèmes généraux relatifs aux réseaux linéaires.md",
     "attachments-electronique1",
@@ -227,22 +238,11 @@
     "electronique1/attachments-electronique1/lu666343lly.tmp",
     "electronique1/attachments-electronique1/lu666343lhv.tmp",
     "mecanique2/attachments-mecanique2/lu666343lfk.tmp",
-    "electronique1/01-Électrocinétique. Cadre et concepts de base.md",
     "mecanique2/11-Actions de contact.md",
     "mecanique2/09-Théorème du moment cinétique.md",
     "mecanique2/10-Théorème de l'énergie cinétique.md",
     "mecanique2/01-Le centre de masse des systèmes matériels.md",
-    "mecanique1/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
-    "mecanique1/03-Puissance et énergie en référentiel galiléen.md",
-    "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
-    "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
-    "mecanique1/01-Cinématique.md",
-    "mecanique1/00-Mécanique1.md",
     "electronique1/attachments-electronique1",
-    "electronique1.md",
-    "electronique1",
-    "mecanique2/05-Les actions sur un système.md",
-    "mecanique2/03-La résultante et le moment cinétiques.md",
-    "mecanique2/04-Moment cinétique d'un solide.md"
+    "electronique1"
   ]
 }
