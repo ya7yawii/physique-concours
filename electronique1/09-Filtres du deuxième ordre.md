@@ -40,7 +40,23 @@ crée: 16-11-2025, 13:38
 > Remarques :
 > - Si le facteur $A_0$ n’est pas réel positif, cela revient simplement à ajouter un déphasage constant au signal de sortie correspondant à ces écritures ;
 > - On notera qu’il faut deux paramètres ($A_0$ et $\omega_0$) pour définir complètement un passe-bas d’ordre un et qu’il en faut trois ($A_0$, $Q$ et $\omega_0$) pour définir un passe-bas d’ordre deux.
+> 
+> Comportement à haute fréquence : À haute fréquence, c’est-à-dire lorsque la courbe de réponse en gain se confond avec l’asymptote haute fréquence, la partie principale du dénominateur est $- \frac{\omega^{2}}{\omega_{0}^{2}}$ et la fonction de transfert est équivalente à : $\underline{H}(j\omega) \approx A_0\omega_{0}^{2}\left(\frac{1}{j\omega}\right)^{2}$. Or, en notation complexe, multiplier par $\left(\frac{1}{j\omega}\right)^{2}$ revient à intégrer deux fois.
+> <mark style="color: red">Lorsque la courbe de réponse en gain se confond avec l’asymptote haute fréquence, l’effet du filtre est pratiquement équivalent à une double intégration du signal d’entrée.</mark>
+> Lorsque l’on affirme qu’un filtre est intégrateur, il est sous-entendu qu’en régime forcé, la tension de sortie $u_2(t)$ est proportionnelle à la primitive de $u_1(t)$ <mark style="color: red">dont la valeur moyenne est nulle</mark>. La tension de sortie est, en effet, égale à la somme de fonctions sinusoïdales de valeur moyenne nulle.
 
+> [!note] Filtre passe-haut d'ordre deux
+> - Exemple : Comme pour l’ordre un, le filtre passe-haut d’ordre deux est complémentaire du filtre passe-bas du même ordre. Le filtre réalisé est représenté sur la [[#^figure9|figure 9]]. Avec le même raisonnement que celui du passe-bas d'ordre 2, on obtient la fonction de transfert suivante : $\underline{H} = \frac{(jx)^{2}}{1 + 2\sigma(jx) + (jx)^{2}}$. La fonction de transfert $\underline{H}$, d’ordre deux, peut être considérée comme le produit de la fonction de transfert d’un double dérivateur $\underline{H}_1 = (jx)^{2}$ par celle d'un passe-bas d'ordre deux : $\underline{H}_2 = \frac{1}{1 + 2\sigma(jx) + (jx)^{2}}$. Il en résulte que son diagramme asymptotique de gain et de phase est la somme des diagrammes asymptotiques correspondant de $\underline{H}_1$ et de $\underline{H}_2$ comme il est indiqué ([[#^figure10|fig. 10]]) et que son diagramme de Bode est la somme des diagrammes de Bode de $\underline{H}_1$ et de $\underline{H}_2$ ([[#^figure11|fig. 11]]).
+> L’examen du diagramme asymptotique de gain montre que le filtre étudié est un passe-haut. Par ailleurs, il est possible de démontrer que la courbe de réponse en gain du passe-haut réalisé est symétrique, par rapport à l’axe des gains, de celle du passe-bas de même facteur d’amortissement $2\sigma$.
+> - Généralisation : La fonction de transfert d’un filtre passe-haut d’ordre deux peut se mettre sous la forme : $\displaystyle\underline{H}(j\omega) = \frac{-A_0\frac{\omega^{2}}{\omega_{0}^{2}}}{1 - \frac{\omega^{2}}{\omega_{0}^{2}} + \frac{j\omega}{Q\omega_0}} = +A_0\frac{-x^{2}}{1 - x^{2} + j\frac{x}{Q}}$. Son diagramme de Bode, symétrique de celui du filtre passe-haut se caractérise par :
+> 	- une asymptote haute fréquence d’ordonnée égale à $20\log A_0$ ;
+> 	- une asymptote basse fréquence de pente 40 dB/décade ;
+> 	- l’intersection des asymptotes pour $\omega = \omega_0$ ;
+> 	- une résonance pour $\omega > \omega_0$ si $Q > \frac{1}{\sqrt{2}}$ ;
+> 	- $\underline{H}(j\omega_0) = jQA_0$.
+> - Comportement à basse fréquence : À basse fréquence, c’est-à-dire lorsque la courbe de réponse en gain se confond avec l’asymptote basse fréquence la fonction de transfert est équivalente à : $\underline{H}(j\omega) \approx \frac{A_0}{\omega_{0}^{2}}(j\omega)^{2}$. Or, en notation complexe, multiplier par $(j\omega)^{2}$ revient à dériver deux fois.
+> <mark style="color: red">Lorsque la courbe de réponse en gain se confond avec l’asymptote basse fréquence, l’effet du filtre est pratiquement équivalent à une double dérivation du signal d’entrée.</mark>
+> La dérivation pose en général plus de problèmes que l’intégration. Si le signal d’entrée n’est pas sinusoïdal, il possède des harmoniques dont la fréquence est voisine de la fréquence caractéristique. Si le filtre est résonant $(Q > 1)$, ceux-ci sont amplifiés et la dérivation n’est plus observée.
 
 # Définitions
 
@@ -50,6 +66,9 @@ Deux filtres d’ordre un en cascade
 
 Filtre (R, L, C) passe-bas d’ordre deux
 ![[figure216.png]]^figure3
+
+Filtre (R, L, C) passe-haut d’ordre deux
+![[figure222.png]]^figure9
 # Graphiques
 Tracé asymptotique de la courbe de gain
 ![[figure215.png]]^figure2
@@ -68,6 +87,12 @@ Diagramme asymptotique de la réponse en phase d’un passe-bas d’ordre deux
 
 La rotation de phase est d’autant plus rapide que $Q$ est grand (ou $\sigma$ petit)
 ![[figure221.png]]^figure8
+
+Diagrammes asymptotiques de gain a. et de phase b. d’un passe-haut d’ordre deux
+![[figure223.png]]^figure10
+
+Diagramme de Bode d’un passe-haut d’ordre deux
+![[figure224.png]]^figure11
 # Expériences
 
 # Autres notes
