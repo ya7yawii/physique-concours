@@ -4,9 +4,10 @@ tags:
   - passe-bas
   - passe-haut
   - filtre-intégrateur
-  - filtre-sérivateur
+  - filtre-dérivateur
   - fonction-de-transfert
   - diagramme-de-Bode
+  - ordre-un
 crée: 14-11-2025, 14:38
 ---
 # Formules
