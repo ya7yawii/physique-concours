@@ -25,7 +25,7 @@ crée: 20-11-2025, 11:09
 > - Lorsque la fonction périodique $s(t)$ est impaire, son développement en série de Fourier est aussi impair, ce qui entraîne $A_n = 0$ quel que soit $n$, d’où : $\displaystyle s(t) = \sum_{n = 1}^{\infty}B_n\sin(n\omega t)$.
 
 > [!note] Quelques séries de Fourier
-> Notre but n’est pas de nous concentrer sur la technique de calcul des coefficients $A_n$ et $B_n$, mais sur l’utilisation de cette notion riche en application. Mais, il est conseillé de vérifier à titre d'entraînement les développements de signaux fréquemment rencontrés comme :
+> Notre but n’est pas de nous concentrer sur la technique de calcul des coefficients $A_n$ et $B_n$, mais sur l’utilisation de cette notion riche en application. Mais, il est conseillé de déterminer à titre d'entraînement les développements de signaux fréquemment rencontrés comme :
 > - Signal en créneau impair et de rapport cyclique $\frac{1}{2}$ : Le rapport cyclique est égal au rapport de la durée de la partie positive et de la période ([[#^figure1|fig. 1]]) ;
 > - Signal en créneau pair et de rapport cyclique $\frac{1}{2}$ : Le développement se déduit du précédent par un changement de l’origine des temps ([[#^figure2|fig. 2]]) ;
 > - Signal en triangle, pair et de rapport cyclique $\frac{1}{2}$ : Pour le signal triangulaire ([[#^figure3|fig. 3]]), nous définissons le rapport cyclique comme le rapport entre l’intervalle de temps sur lequel le signal est croissant et sa période. Nous pouvons remarquer que si nous dérivons tous les termes, nous obtenons le développement d’une fonction en créneau, c'est-à-dire la dérivée de la fonction $s(t)$ ;
@@ -52,10 +52,31 @@ crée: 20-11-2025, 11:09
 > Ainsi, le fondamental du signal de sortie correspond à l’amplification linéaire et les autres harmoniques sont dus à la non-linéarité.
 > Il en résulte que la linéarité d’un amplificateur peut s’apprécier avec le taux de distorsion harmonique $\delta_h$, rapport de la valeur efficace $S_h$ des harmoniques $(n > 1)$ créés par la distorsion à la valeur efficace $S_f$ du fondamental : $\displaystyle \delta_h = \frac{S_h}{S_f} = \frac{\displaystyle\sqrt{\sum_{n=2}^{\infty}C_{n}^{2}}}{C_1}$.
 > Un amplificateur est d’autant plus linéaire que son taux de distorsion harmonique est voisin de zéro.
+
+> [!note] Calcul de la tension de sortie pour un filtre linéaire
+> Étudions comme exemple l’effet d’un filtre passe-bas d’ordre un de fréquence caractéristique $f_0$ sur un signal créneau pair, de rapport cyclique $\frac{1}{2}$, de fréquence $f = \frac{1}{2}f_0$ et d’amplitude $V_0$ ([[#^figure10|fig. 10]] et [[#^figure11|11]]).
+> - Détermination de $v_s(t)$ par décomposition en série de Fourier : Déterminons tout d’abord l’effet du filtre sur un signal harmonique de fréquence quelconque $f = \frac{\omega}{2\pi}$ : $\underline{H}(j\omega) = H(\omega)e^{j\varphi}$ avec $H(\omega) = \frac{1}{\sqrt{1 + \left(\frac{f}{f_0}\right)^{2}}}$ et $\varphi(\omega) = -\arctan\frac{f}{f_0}$.
+> Si $v_e(t) = v_{e_m}\cos\frac{2\pi t}{f}$ alors en régime permanent : $v_s(t) = \frac{v_{e_m}}{\sqrt{1 + \left(\frac{f}{f_0}\right)^{2}}}\cos\left(2\pi ft - \arctan\frac{f}{f_0}\right)$.
+> Décomposons le signal d’entrée en série de Fourier : $\displaystyle v_e(t) = \frac{4V_0}{\pi}\sum_{p=0}^{\infty}\frac{\sin[(2p+1)2\pi ft]}{2p+1}$ avec $p \in \mathbb{N}$. Comme $f = \frac{1}{2} f_0$ et le filtre étant linéaire, nous pouvons appliquer la superposition des régimes forcés. La réponse à la somme des $u_{en}(t)$ est égale à la somme des $u_{sn}(t)$ : $\displaystyle v_s(t) = \frac{4V_0}{\pi}\sum_{p=0}^{\infty}\frac{1}{\sqrt{1 + \left(\frac{2p+1}{2}\right)^{2}}}\frac{\sin\left[(2p+1)2\pi f_0t - \arctan\frac{(2p+1)}{2}\right]}{2p+1}$ avec $p \in \mathbb{N}$.
+> L’expression de $v_s(t)$ n’est pas particulièrement simple, mais un logiciel de calcul peut en donner une valeur approchée en calculant la somme d’un nombre fini d’harmoniques : $\displaystyle v_s(t) \approx \sum_{p=0}^{p_{max}} v_{sn}(t)$ ([[#^figure12|fig. 12]] et [[#^figure13|13]]).
+> L’approximation est d’autant meilleure que $p_{max}$ est grand. Dans le cas étudié, on constate que la courbe donnée par le logiciel de calcul n’évolue pratiquement plus à partir de $p_{max} = 20$. Nous pouvons donc restituer le signal de façon satisfaisante en sommant une vingtaine d’harmoniques.
+> - Vérification par une autre méthode : Dans ce cas simple, nous pouvons déterminer une expression exacte de $u_s(t)$ en régime forcé. Fixons l’origine des temps à l’instant où $v_e$ bascule de $-V_0$ à $+V_0$ ([[#^figure11|fig. 11]]).
+> Lorsque $v_e = +V_0$, $v_s(t)$ est solution de l’équation différentielle du premier ordre à coefficients constants : $\dfrac{dv_s}{dt} + \omega_0v_s = \omega_0V_0$ dont la solution générale est : $v_s(t) = V_0 + Ae^{-\omega_0t}$.
+> Lorsque $v_e = -V_0$, en changeant le second membre de l'équation précédente, la solution générale devient : $v_s(t) = -V_0 + Be^{-\omega_0t}$.
+> La continuité de $v_s(t)$ à l'instant $t = \frac{T}{2}$ implique : $V_0 + Ae^{-\frac{\omega_0T}{2}} = -V_0 + Be^{-\frac{\omega_0T}{2}}$ (eq. 1).
+> En régime établi, nous avons aussi : $v_s(0) = v_s(T)$, soit $V_0 + A = -V_0 + Be^{-\omega_0T}$ (eq. 2).
+> D'après les équations eq. 1 et eq. 2, nous obtenons un système d'équations en A et B, que nous pouvons résoudre pour trouver les expressions de A et B, tout en sachant que $\omega_0T = 4\pi$ (puisque $f = \frac{1}{2}f_0$).
+> 
+> La première méthode est applicable à tout signal périodique et tout filtre linéaire. Elle est récapitulée dans le tableau de [[#^figure14|figure 14]].
+> Dans les figures [[#^figure15|15]] et [[#^figure16|16]], nous visualisons la réponse pour un signal triangulaire et un signal en créneaux pour trois fréquences différentes. Dans les figures [[#^figure17|17]] et [[#^figure18|18]], nous avons plus des détails comme le spectre des fréquences et la courbe de réponse en gain. 
 # Définitions
 
 # Diagrammes
+Filtre passe-bas d’ordre un
+![[figure307.png]]^figure10
 
+Détermination du signal de sortie d’un filtre linéaire
+![[figure311.png]]^figure14
 # Graphiques
 Créneau impair et de rapport cyclique $\frac{1}{2}$
 ![[figure298.png]]^figure1
@@ -83,6 +104,27 @@ Synthèse d’un signal redressé simple alternance
 
 Mise en évidence du phénomène de Gibbs sur une rampe périodique
 ![[figure306.png]]^figure9
+
+$u_e(t)$
+![[figure308.png]]^figure11
+
+Valeur approchée de $v_s(t)$ pour $p_{max} = 5$
+![[figure309.png]]^figure12
+
+Valeur approchée de $v_s(t)$ pour $p_{max} = 20$
+![[figure310.png]]^figure13
+
+Filtre passe-bas du premier ordre. Réponse d’un signal triangulaire d’amplitude crête-crête 1 V, de fréquence $f$ égale à $\frac{f_H}{20}$, $f_H$ et $20f_H$, superposé à une composante continue de 0,1 V
+![[figure312.png]]^figure15
+
+Filtre passe-bas du premier ordre. Réponse d’un signal en créneaux d’amplitude crête-crête 1 V, de fréquence $f$ égale à $\frac{f_H}{20}$, $f_H$ et $20f_H$, superposé à une composante continue de 0,1 V
+![[figure313.png]]^figure16
+
+Filtre passe-bas du premier ordre. Réponse d’un signal en créneaux d’amplitude crête-crête 1 V, de fréquence $f_H$, superposé à une composante continue de 0,1 V
+![[figure314.png]]^figure17
+
+Filtre passe-bas du premier ordre. Réponse d’un signal en créneaux d’amplitude crête-crête 1 V, de fréquence $f = 20f_H$, superposé à une composante continue de 0,1 V
+![[figure315.png]]^figure18
 # Expériences
 
 # Autres notes
