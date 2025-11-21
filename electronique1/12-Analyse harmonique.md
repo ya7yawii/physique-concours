@@ -214,5 +214,6 @@ Filtre passe-bande de coefficient de qualité $Q = 10$. Réponse d'un signal tri
 Filtre passe-bande de coefficient de qualité $Q = 10$. Réponse d'un signal en créneau d'amplitude crête-crête 1 V, de fréquence $\frac{f_0}{20}$, $f_0$ et $20f_0$, superposé à une composante continue de 0,1 V
 ![[figure321.png]]^figure24
 # Expériences
-
+> [!warning]
+> Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://ressources.unisciel.fr/sillages/physique/electronique_2a_pc/res/TP_Analyse_de_Fourier.pdf), le [lien 2](https://www.physagreg.fr/tp/TP4_filtres.pdf), le [lien 3](https://fr.scribd.com/document/833271293/TP1-Analyseur-de-spectre-correction), le [lien 4](https://chamilo.grenoble-inp.fr/courses/PHELMA3PMKTET0/document/Docs_site/sujets-TP-Techniques-experimentales-et-mesures/TP4-Associations_d_etages.pdf), le [lien 5](http://www.seigne.free.fr/TP/TPOscilloFilt2.pdf), le [lien 6](https://fr.scribd.com/document/148515491/TP-Analyse-de-Fourier), le [lien 7](https://www.lias-lab.fr/perso/fredericlaunay/Cours/T1/T1_TP1&2_Fourier.pdf).
 # Autres notes
