@@ -92,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -196,6 +197,8 @@
   },
   "active": "ceb7d887312e405e",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure3.png",
+    "electronique2/attachments-electronique2/figure2.png",
     "electronique2/attachments-electronique2/figure1.png",
     "electronique2/attachments-electronique2",
     "electronique2/00-Electronique2.md",
@@ -213,8 +216,6 @@
     "electronique1/attachments-electronique1/figure316.png",
     "electronique1/attachments-electronique1/figure315.png",
     "electronique1/attachments-electronique1/figure314.png",
-    "electronique1/attachments-electronique1/figure313.png",
-    "electronique1/attachments-electronique1/figure312.png",
     "electronique1/09-Filtres du deuxième ordre.md",
     "attachments-electronique1",
     "electronique1/10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs.md",
