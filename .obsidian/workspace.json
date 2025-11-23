@@ -35,8 +35,7 @@
               "title": "02-Étude fréquentielle des systèmes linéaires"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -93,7 +92,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -195,15 +195,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dda6ad95632e62d2",
+  "active": "ceb7d887312e405e",
   "lastOpenFiles": [
-    "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
+    "electronique1/12-Analyse harmonique.md",
     "electronique2/02-Étude fréquentielle des systèmes linéaires.md",
     "electronique2/01-Systèmes linéaires.md",
+    "electronique2/attachments-electronique2/figure9.png",
+    "electronique2/attachments-electronique2/figure8.png",
+    "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
     "electronique2/00-Electronique2.md",
     "02-\fÉtude fréquentielle des systèmes linéaires.md",
     "electronique2/attachments-electronique2/figure7.png",
-    "electronique1/12-Analyse harmonique.md",
     "electronique2/attachments-electronique2/figure6.png",
     "electronique2/attachments-electronique2/figure5.png",
     "electronique1/00-Electronique1.md",
@@ -216,8 +218,6 @@
     "().md",
     "electronique1/11-Redressement et lissage.md",
     "electronique1/attachments-electronique1/figure321.png",
-    "electronique1/attachments-electronique1/figure320.png",
-    "electronique1/attachments-electronique1/figure319.png",
     "electronique1/09-Filtres du deuxième ordre.md",
     "attachments-electronique1",
     "electronique1/10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs.md",
@@ -235,7 +235,6 @@
     "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
     "mecanique1/03-Puissance et énergie en référentiel galiléen.md",
-    "$i_2$ est nul.md",
     "electronique1/attachments-electronique1/lu80695ewtf.tmp",
     "electronique1/attachments-electronique1/lu666343lza.tmp",
     "electronique1/attachments-electronique1/lu666343lm2.tmp",

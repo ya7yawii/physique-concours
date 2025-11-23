@@ -15,6 +15,9 @@ crée: 23-11-2025, 14:22
 
 > [!note] Caractéristiques des fonctions de transfert harmoniques
 > Pour réviser les notions de module et argument d'une fonction de transfert et le diagramme de Bode, on pourra se reporter à l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année, [[08-Fonctions de transfert des réseaux linéaires|chapitre 8]].
+
+> [!note] Filtrage : Méthode générale d'étude
+> Pour réviser cette méthode, on pourra se reporter à l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année, [[12-Analyse harmonique|chapitre 12]]. Elle est résumée sur la [[figure311.png|figure 3]].
 # Définitions
 ==**Notion de filtre**== :
 De façon générale, un filtre (de gain) est un système dont le module de la fonction de transfert dépend, en régime harmonique, de la fréquence.
@@ -22,17 +25,25 @@ Nous élargirons la notion de filtre aux montages qui présentent un module de f
 
 ==**Filtres parfaits**== :
 Un filtre parfait est un système dont la fonction de transfert permet :
-- de transmettre, avec un retard mais sans déformation, les composantes sinusoïdales d’un signal dans certains domaines de fréquences constituant sa bande passante ; • d’éliminer les composantes sinusoïdales situées dans sa bande coupée, c’est-à-dire à l’extérieur de sa bande passante (doc. 4).
-
-Limitons-nous au cas d’un retard nul et d’une transmission sans atténuation et sans inversion de signe dans la bande passante. Ces conditions sont vérifiées si : • le module de la fonction de transfert est 1 (donc de gain nul) dans sa bande passante et 0 dans la bande coupée ; • le déphasage introduit est nul dans la bande passante.
-
+- de transmettre, avec un retard mais sans déformation, les composantes sinusoïdales d’un signal dans certains domaines de fréquences constituant sa bande passante ;
+- d’éliminer les composantes sinusoïdales situées dans sa bande coupée, c’est-à-dire à l’extérieur de sa bande passante ([[#^figure1|fig. 1]]).
+Limitons-nous au cas d’un retard nul et d’une transmission sans atténuation et sans inversion de signe dans la bande passante. Ces conditions sont vérifiées si :
+- le module de la fonction de transfert est 1 (donc de gain nul) dans sa bande passante et 0 dans la bande coupée ;
+- le déphasage introduit est nul dans la bande passante.
 Ces conditions ne peuvent pas être réalisées en pratique. Cependant, plus l’ordre d’un filtre est grand, plus ses caractéristiques pourront se rapprocher de celles d’un filtre idéal.
-
-Les quatre types de filtres parfaits (doc. 5) sont : • passe-bas : filtre de bande passante [0 ; fHfH​] (doc. 5a) ; • passe-haut : filtre de bande passante [fBfB​ ; +∞+∞] (doc. 5b) ; • passe-bande : filtre de bande passante [fBfB​ ; fHfH​] (fH>fB>0fH​>fB​>0) (doc. 5c) ; • coupe-bande : filtre de bande coupée [fBfB​ ; fHfH​] (fH>fB>0fH​>fB​>0) (doc. 5d)
+Les quatre types de filtres parfaits (fig. 2) sont :
+- passe-bas : filtre de bande passante $[0 ; f_H​]$ ([[#^figure2|fig. 2a]]) ;
+- passe-haut : filtre de bande passante $[f_B ; +\infty]$ ([[#^figure2|fig. 2b]]) ;
+- passe-bande : filtre de bande passante $[f_B​ ; f_H​]$ $(f_H > f_B > 0)$ ([[#^figure2|fig. 2c]]) ;
+- coupe-bande : filtre de bande coupée $[f_B​ ; f_H​]$ $(f_H > f_B > 0)$ ([[#^figure2|fig. 2d]]).
 # Diagrammes
 
 # Graphiques
+Traitement d'un signal périodique par un filtre idéal
+![[electronique2/attachments-electronique2/figure8.png]]^figure1
 
+Définition et représentation fonctionnelle des filtres parfaits
+![[electronique2/attachments-electronique2/figure9.png]]^figure2
 # Expériences
 
 # Autres notes
