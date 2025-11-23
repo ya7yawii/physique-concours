@@ -12,7 +12,7 @@ crée: 22-11-2025, 12:50
 
 ## Sommaire
 1. [[01-Systèmes linéaires]]
-2. [[02-Étude fréquentielle des systèmes linéaires]]
+2. [[02-Étude fréquentielle des systèmes linéaires]]
 3. [[03-Étude temporelle des systèmes linéaires]]
 4. [[04-Un exemple de système électronique. L'amplificateur opérationnel]]
 5. [[05-Systèmes linéaires en boucle fermée]]
