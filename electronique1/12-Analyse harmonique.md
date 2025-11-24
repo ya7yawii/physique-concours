@@ -89,7 +89,7 @@ crée: 20-11-2025, 11:09
 > Dans le cas où $f$ est de l'ordre de $f_H$, les signaux transmis sont très déformés.
 > Si $f$ est grand devant $f_H$, l'amplitude du signal variable est très faible.
 > - Interprétation : Un signal périodique peut être décomposé en série de Fourier en une composante continue représentant sa valeur moyenne et des harmoniques de fréquence $nf$ ($n$ entier). Un filtre passe-bas n'atténue pas la composante continue et les signaux sinusoïdaux de fréquence inférieure à $f_H$.
-> 	- Si $f \ll f_H$, une grande partie des harmoniques du signal est transmise sans modification. Le signal de sortie est voisin du signal d'entrée. La déformation du signal de sortie au niveau des discontinuités provient de l'élimination des harmoniques de rang élevé $\left(n > \frac{f_H}{f}\right).
+> 	- Si $f \ll f_H$, une grande partie des harmoniques du signal est transmise sans modification. Le signal de sortie est voisin du signal d'entrée. La déformation du signal de sortie au niveau des discontinuités provient de l'élimination des harmoniques de rang élevé $\left(n > \frac{f_H}{f}\right)$.
 > 	- Si $f$ est de l'ordre de $f_H$, le fondamental et quelques harmoniques sont transmis, les autres harmoniques sont éliminés ([[#^figure17|fig. 17]]). Le signal de sortie ne ressemble pas au signal d'entrée.
 > 	- Si $f \gg f_H$, seule la composante continue du signal est transmise sans atténuation. Les différents harmoniques sont très atténués ([[#^figure18|fig. 18]]).
 > 

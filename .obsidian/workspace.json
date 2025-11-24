@@ -35,7 +35,8 @@
               "title": "02-Étude fréquentielle des systèmes linéaires"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -92,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -195,14 +195,20 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ceb7d887312e405e",
+  "active": "4525cafdbcaf783d",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure14.png",
+    "electronique2/attachments-electronique2/figure13.png",
     "electronique1/12-Analyse harmonique.md",
+    "electronique1/09-Filtres du deuxième ordre.md",
     "electronique2/02-Étude fréquentielle des systèmes linéaires.md",
     "electronique2/01-Systèmes linéaires.md",
+    "electronique2/attachments-electronique2/figure12.png",
+    "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
+    "electronique2/attachments-electronique2/figure11.png",
+    "electronique2/attachments-electronique2/figure10.png",
     "electronique2/attachments-electronique2/figure9.png",
     "electronique2/attachments-electronique2/figure8.png",
-    "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
     "electronique2/00-Electronique2.md",
     "02-\fÉtude fréquentielle des systèmes linéaires.md",
     "electronique2/attachments-electronique2/figure7.png",
@@ -210,15 +216,10 @@
     "electronique2/attachments-electronique2/figure5.png",
     "electronique1/00-Electronique1.md",
     "electronique2/attachments-electronique2/figure4.png",
-    "electronique2/attachments-electronique2/figure3.png",
-    "electronique2/attachments-electronique2/figure2.png",
-    "electronique2/attachments-electronique2/figure1.png",
     "electronique2/attachments-electronique2",
     "electronique2",
     "().md",
     "electronique1/11-Redressement et lissage.md",
-    "electronique1/attachments-electronique1/figure321.png",
-    "electronique1/09-Filtres du deuxième ordre.md",
     "attachments-electronique1",
     "electronique1/10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs.md",
     "electronique1/03-Théorèmes généraux relatifs aux réseaux linéaires.md",
