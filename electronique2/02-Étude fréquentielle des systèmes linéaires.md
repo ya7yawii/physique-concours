@@ -92,6 +92,37 @@ crée: 23-11-2025, 14:22
 > 	 - haute fréquence : le signal de sortie est négligeable, car rien ne passe ;
 > 	 - basse fréquence : le signal de sortie peut faire apparaître des oscillations amorties de fréquence $f_0$​.
 
+> [!note] Coupe-bande d'ordre 2
+> Le système étudié étant défini par la fonction de transfert : $\displaystyle H(p) = \frac{(1 + \tau^{2}p^{2})}{1 + 2\sigma\tau p + \tau^{2}p^{2}}$ ([[#^figure8|fig. 8]]). notons $\tau = \frac{1}{\omega_0}$ et $x = \frac{\omega}{\omega_0}$ la pulsation réduite. Il vient $\displaystyle \underline{H}(j\omega_0 x) = \frac{1 + (jx)^{2}}{1 + 2\sigma(jx) + (jx)^{2}}$.
+> - Courbe de réponse en gain : il apparaît que la courbe de réponse en gain admet, en axes de Bode, l’axe des gains comme axe de symétrie et asymptote, puisque $G$ tend vers $-\infty$ quand $x$ tend vers 1.
+> Enfin, quand $X$ tend vers $\pm \infty$, le gain tend asymptotiquement vers zéro : les asymptotes basse fréquence et haute fréquence sont respectivement les demi-axes des pulsations négatives et positives.
+> Le tracé des courbes de réponse ([[#^figure8|fig. 8]]) montre que le système étudié est un coupe-bande d’ordre 2.
+> ==**Ce coupe-bande est un réjecteur, car la pulsation centrale $\omega_0$ n'est pas transmise.**==
+> - Courbe de réponse en phase : Décomposons la fonction de transfert sous la forme : $\displaystyle \underline{H}(j\omega_0 x) = \frac{1}{1 + 2\sigma(jx) + (jx)^{2}}(1 - x^{2}) = \underline{H}_1(j\omega_0 x)\underline{H}_2(j\omega_0 x)$. Nontons par $\phi_1(x)$ le déphasage introduit par le passe-bas d'ordre 2 et par $\phi_2(x)$ celui introduit par la fonction de transfert $\underline{H}_2(j\omega_0 x) = 1 - x^{2}$ :
+> $$
+> \phi_2(x) =
+> \begin{cases}
+> 0 & si & x < 1\\
+> \pi & si & x > 1
+> \end{cases}
+> $$
+> Le déphasage $\phi(x)$ introduit par le coupe-bande est égal à : $\phi(x) = \phi_1(x) + \phi_2(x)$.
+> ==**Les courbes de réponse en phase du coupe-bande présentent une discontinuité de phase $\pi$ en $x = 1$**== ([[#^figure9|fig. 9]]).
+
+> [!note] Déphaseur d'ordre 2
+> Ces circuits ont des fonctions de transfert de la forme : $\displaystyle H(p) = \frac{1 - 2\sigma\tau p + \tau^{2}p^{2}}{1 + 2\sigma\tau p + \tau^{2}p^{2}}$ avec un numérateur conjugué du dénominateur.
+> Nous pouvons le réaliser en branchant en cascade deux déphaseurs d'ordre 1 à A.O. dont le schéma est donné sur la [[#^figure10|figure 10]]. Dans ce cas, nous obtenons $\sigma = 1$.
+> En régime harmonique, notons $x = \frac{\omega}{\omega_0}$ la pulsation réduite ; il vient $\displaystyle \underline{H}(j\omega_0 x) = \frac{(1 - x^{2}) - 2\sigma jx}{(1 - x^{2}) + 2\sigma jx}$. Le déphasage $\phi(x)$ introduit par le déphaseur est : $\phi(x) = 2\left[-\frac{\pi}{2} + \arctan\left(\frac{1 - x^{2}}{2\sigma x}\right)\right]$. La courbe de réponse en phase d'un déphaseur d'ordre 2 est donnée sur la [[#^figure11|figure 11]].
+> ==**La rotation totale de phase, lorsque la fréquence varie de zéro à l'infini, est $\Delta\phi = -2\pi$.**==
+
+> [!note] Systèmes linéaires d'ordre quelconque
+> Considérons un systéme linéaire d’ordre quelconque dont la fonction de transfert est $H(p)$. Son diagramme de Bode se trace en procédant comme suit :
+> - décomposons la fonction de transfert $H(p)$ en facteurs élémentaires d’ordre 1 et 2 dont nous connaissons le diagramme de Bode : $\displaystyle H(p) = \prod_{k}H_k(p)$ ;
+> - traçons ensuite, dans les mêmes axes de Bode, les diagrammes asymptotiques $G_{A_k}$ des courbes $G_k = 20\log|H_k(p)|$ pour chacun de ces facteurs élémentaires ;
+> - additionnons les diagrammes asymptotiques $G_{A_k}$, pour obtenir le diagramme asymptotique $G_A$ de la courbe de réponse en gain du systéme : $\displaystyle G_A = \sum_{k}G_{A_k}$.
+> Connaissant le diagramme asymptotique de la réponse en gain, nous traçons cette dernière ;
+> - nous procédons, selon la même méthode, pour le tracé du diagramme asymptotique $\phi_A$, de la courbe de réponse en phase : $\displaystyle \phi_A = \sum_{k}\phi_{A_k}$ et pour celui de la courbe de réponse en phase.
+
 
 # Définitions
 ==**Notion de filtre**== :
@@ -112,7 +143,8 @@ Les quatre types de filtres parfaits (fig. 2) sont :
 - passe-bande : filtre de bande passante $[f_B​ ; f_H​]$ $(f_H > f_B > 0)$ ([[#^figure2|fig. 2c]]) ;
 - coupe-bande : filtre de bande coupée $[f_B​ ; f_H​]$ $(f_H > f_B > 0)$ ([[#^figure2|fig. 2d]]).
 # Diagrammes
-
+Exemple de déphaseur d'ordre 1 à A.O.
+![[electronique2/attachments-electronique2/figure17.png]]^figure10
 # Graphiques
 Traitement d'un signal périodique par un filtre idéal
 ![[electronique2/attachments-electronique2/figure8.png]]^figure1
@@ -134,6 +166,15 @@ a. $f = \frac{f_0}{20}$ : signal hors dans la bande passante. Le signal n'est pa
 
 ![[electronique2/attachments-electronique2/figure14.png]]
 a. $f = \frac{f_0}{20}$ : signal hors dans la bande passante. Le signal n'est pas transmis. Il ne reste que des oscillations de faible d'amplitude semblables à celles du régime pseudo-périodique amorti dans le cas du créneau. b. $f = f_0$ : signal dans la bande passante. Le signal de sortie est sinusoïdal de fréquence $f_0$. c. $f = 20f_0$ : signal hors de la bande passante. Le signal de sortie est quasiment nul. ^figure7
+
+Courbes de réponse en gain d'un coupe-bande d'ordre 2 pour différentes valeurs de $\sigma$ ( $< 1$)
+![[electronique2/attachments-electronique2/figure15.png]]^figure8
+
+Courbes de réponse en phase d'un coupe-bande d'ordre 2 et leurs diagrammes asymptotiques pour différentes valeurs de $\sigma$ ( $< 1$)
+![[electronique2/attachments-electronique2/figure16.png]]^figure9
+
+Courbes de réponse en phase et diagrammes asymptotiques d'un déphaseur d'ordre 2 $(\sigma < 1)$
+![[electronique2/attachments-electronique2/figure18.png]]^figure11
 # Expériences
 
 # Autres notes
