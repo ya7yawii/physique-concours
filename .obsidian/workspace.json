@@ -195,10 +195,13 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4525cafdbcaf783d",
+  "active": "5439d51110346f12",
   "lastOpenFiles": [
-    "electronique2/attachments-electronique2/figure29.png",
+    "electronique2/attachments-electronique2/figure32.png",
+    "electronique2/attachments-electronique2/figure31.png",
+    "electronique2/01-Systèmes linéaires.md",
     "electronique2/03-Étude temporelle des systèmes linéaires.md",
+    "electronique2/attachments-electronique2/figure29.png",
     "electronique2/attachments-electronique2/figure30.png",
     "electronique2/attachments-electronique2/figure28.png",
     "electronique2/attachments-electronique2/figure27.png",
@@ -208,12 +211,10 @@
     "electronique1/12-Analyse harmonique.md",
     "electronique1/09-Filtres du deuxième ordre.md",
     "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
-    "electronique2/01-Systèmes linéaires.md",
     "electronique2/attachments-electronique2/figure25.png",
     "electronique2/attachments-electronique2/figure24.png",
     "electronique2/attachments-electronique2/figure23.png",
     "electronique2/attachments-electronique2/figure22.png",
-    "electronique2/attachments-electronique2/figure21.png",
     "02-\fÉtude fréquentielle des systèmes linéaires.md",
     "electronique1/00-Electronique1.md",
     "electronique2/attachments-electronique2",
