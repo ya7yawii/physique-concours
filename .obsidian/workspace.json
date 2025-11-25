@@ -8,21 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ceb7d887312e405e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "electronique2/01-Systèmes linéaires.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "01-Systèmes linéaires"
-            }
-          },
-          {
-            "id": "dda6ad95632e62d2",
+            "id": "7f56d7d0c7164d6e",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "02-Étude fréquentielle des systèmes linéaires"
+            }
+          },
+          {
+            "id": "5439d51110346f12",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "electronique2/03-Étude temporelle des systèmes linéaires.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03-Étude temporelle des systèmes linéaires"
             }
           }
         ],
@@ -195,25 +195,25 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dda6ad95632e62d2",
+  "active": "4525cafdbcaf783d",
   "lastOpenFiles": [
-    "electronique2/attachments-electronique2/figure18.png",
-    "electronique2/attachments-electronique2/figure17.png",
-    "electronique2/attachments-electronique2/figure16.png",
-    "electronique2/attachments-electronique2/figure15.png",
-    "electronique2/attachments-electronique2/figure14.png",
-    "electronique2/attachments-electronique2/figure13.png",
+    "electronique2/attachments-electronique2/figure29.png",
+    "electronique2/03-Étude temporelle des systèmes linéaires.md",
+    "electronique2/attachments-electronique2/figure30.png",
+    "electronique2/attachments-electronique2/figure28.png",
+    "electronique2/attachments-electronique2/figure27.png",
+    "electronique2/attachments-electronique2/figure26.png",
+    "electronique2/02-Étude fréquentielle des systèmes linéaires.md",
+    "electronique2/00-Electronique2.md",
     "electronique1/12-Analyse harmonique.md",
     "electronique1/09-Filtres du deuxième ordre.md",
-    "electronique2/02-Étude fréquentielle des systèmes linéaires.md",
-    "electronique2/01-Systèmes linéaires.md",
-    "electronique2/attachments-electronique2/figure12.png",
     "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
-    "electronique2/attachments-electronique2/figure11.png",
-    "electronique2/attachments-electronique2/figure10.png",
-    "electronique2/attachments-electronique2/figure9.png",
-    "electronique2/attachments-electronique2/figure8.png",
-    "electronique2/00-Electronique2.md",
+    "electronique2/01-Systèmes linéaires.md",
+    "electronique2/attachments-electronique2/figure25.png",
+    "electronique2/attachments-electronique2/figure24.png",
+    "electronique2/attachments-electronique2/figure23.png",
+    "electronique2/attachments-electronique2/figure22.png",
+    "electronique2/attachments-electronique2/figure21.png",
     "02-\fÉtude fréquentielle des systèmes linéaires.md",
     "electronique1/00-Electronique1.md",
     "electronique2/attachments-electronique2",
@@ -235,7 +235,6 @@
     "mecanique1/06-Théorème du moment cinétique.md",
     "mecanique1/05-Réponse d'un oscillateur à une excitation.md",
     "mecanique1/04-Mouvement libre d'un oscillateur harmonique.md",
-    "mecanique1/03-Puissance et énergie en référentiel galiléen.md",
     "electronique1/attachments-electronique1/lu80695ewtf.tmp",
     "electronique1/attachments-electronique1/lu666343lza.tmp",
     "electronique1/attachments-electronique1/lu666343lm2.tmp",
