@@ -15,8 +15,8 @@ crée: 12-11-2025, 19:41
 
 > [!note] Étude théorique d'un amplificateur inverseur
 > Considérons le montage de la [[#^figure25|figure 25]] où l'amplificateur opérationnel est supposé idéal.
-> Comme $i_+$ est nulle, $v_+$ est nulle. En régime linéaire $\epsilon = 0$, donc $v_- = 0$. En outre,$ i_-$ est nulle ; il en résulte que $v_e = R_1i_e$ et $v_s = -R_2i_e$. Nous obtenons : $v_s = -\frac{R_2}{R_1}v_e$.
-> Ce montage est un amplificateur de tension inverseur ([[#^figure26|fig. 26]]) ($vs$ et $ve$ sont de signes opposés) d'amplification $H = -\frac{R_2}{R_1}$.
+> Comme $i_+$ est nulle, $v_+$ est nulle. En régime linéaire $\epsilon = 0$, donc $v_- = 0$. En outre, $i_-$ est nulle ; il en résulte que $v_e = R_1i_e$ et $v_s = -R_2i_e$. Nous obtenons : $v_s = -\frac{R_2}{R_1}v_e$.
+> Ce montage est un amplificateur de tension inverseur ([[#^figure26|fig. 26]]) ($v_s$ et $v_e$ sont de signes opposés) d'amplification $H = -\frac{R_2}{R_1}$.
 > Son impédance d'entrée est $R_1$ et son impédance de sortie est nulle ($v_s$ est indépendante de $i_s$).
 ^theo2
 

@@ -60,12 +60,128 @@ La caractéristique de transfert d’un amplificateur opérationnel idéal est r
 Remarques :
 - Le terme « linéaire » vient du fait que nous pourrons appliquer les lois de l'électrocinétique linéaire à un circuit ne contenant que des composants linéaires et des amplificateurs opérationnels idéaux en régime linéaire.
 - Les alimentations continues $+V_{cc}$ et $-V_{cc}$ de l'amplificateur opérationnel ne sont généralement pas représentées : des courants non visibles sur les schémas arrivent et partent de la masse. Il est impossible d’écrire la loi des nœuds en ce dernier point avec les courants figurant sur ces schémas.
+
+==**Limitations non linéaires**== :
+Le modèle linéaire à bande passante limitée est une très bonne approximation des caractéristiques de l’A.O. à condition que le signal de sortie reste dans ces limites bien définies.
+- Saturation en tension : Cet aspect a déjà été traité : la tension de sortie est comprise entre $-V_{sat}$ et $+V_{sat}$.
+- Saturation en courant : Une surintensité en sortie détériorerait l'amplificateur. Pour l’éviter, le courant de sortie est limité par construction : $|i_s| < I_{sat}$ avec $I_{sat}$ de l'ordre de 20 mA. Cet effet non linéaire se manifeste lorsque l’impédance de la charge est faible.
+- Vitesse de balayage : Les effets capacitifs internes a l’amplificateur opérationnel imposent à la tension de sortie $v_s(t)$ une vitesse maximale d’évolution appelée vitesse de balayage (ou slewrate) notée $\sigma$. $\left(\dfrac{dv_s(t)}{dt}\right) \leqslant \sigma$. Le système sort donc de son mode de fonctionnement linéaire dés que la dérivée de la tension de sortie $v_s(t)$ atteint cette valeur. Cet effet non linéaire se manifeste principalement à haute fréquence : on peut dire qu’alors le composant ne « suit » plus le signal d’entrée.
+
+==**Dérives**== :
+Du fait du fonctionnement interne de l’amplificateur en régime linéaire, les courants d’entrée et la tension différentielle ne sont pas rigoureusement nuls. Pour rendre compte de ces perturbations (négligeables dans la plupart des applications), nous ajoutons des sources fictives de courant et de tension au modèle linéaire.
+Un modèle de l’A.O. est donné sur la [[#^figure6|figure 6]].
+La tension de décalage $V_d$ vérifie $|V_d| < V_{10}$ avec $V_{10}$ est la tension de décalage à l'entrée (input offset voltage). Elle peut être diminuée en utilisant le réglage d’« offset » ([[#^figure7|fig. 7]]).
+Le courant de polarisation est défini par $I_{IB} = \frac{|i_0 + i_1|}{2}$ et le courant de décalage par $I_{10} = \frac{|i_0 - i_1|}{2}$.
+
+> [!note] Amplification
+> Un montage amplificateur réalise pour tous les types de signaux l'opération $v_s = kv_e$ avec $k$ constante réelle. Il est dit non inverseur si $k$ est positive et inverseur si $k$ est négative.
+> - Amplificateur non inverseur : Tous ce qui est dit dans ce chapitre sur son montage théorique, sa réalisation expérimentale et sa comparaison au modèle théorique ont été résumé dans les chapitres [[07-L'amplificateur opérationnel. Le modèle idéal|7]] et [[10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs|10]] de l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année.
+> - Suiveur : Le montage suiveur correspond au cas particulier $R_1$ infinie et $R_2$ nulle du montage de non inverseur ([[#^figure8|fig. 8]]) donc $H_0 = 1$ et $f_H = f_0$.
+> Nous avons alors $v_s \approx v_e$ dans la bande passante $[0 ; f_0]$ du suiveur, c’est-à-dire jusqu'à la fréquence de gain nul de l’A.O. (soit $f < 1$ MHz pour le 741 par exemple), à condition que son fonctionnement soit linéaire.
+> Ce montage est un adaptateur d’impédance : son impédance d’entrée est quasiment infinie et son impédance de sortie est nulle.
+> Nous l’utiliserons dans tous les montages nécessitant une grande impédance de charge. C’est aussi un amplificateur de courant donc de puissance.
+> - Amplificateur inverseur :
+> Étude théorique : Considérons le montage de la [[#^figure9|figure 9]] où l'amplificateur opérationnel est supposé idéal. Comme $i_+$ est nulle, $v_+$ est nulle, la résistance $R$ n'intervient pas quand l'A.O. est idéal. En théorie $R$ est quelconque et peut être nulle. Une étude plus complète montre que les défauts liés aux courants de polarisation de l'A.O. sont minimisés si $R = R_1 \parallel R_2 = \frac{R_1R_2}{R_1 + R_2}$. En régime linéaire $\epsilon = 0$, donc $v_- = 0$. En outre, $i_-$ est nulle ; il en résulte que $v_e = R_1i_e$ et $v_s = -R_2i_e$. Nous obtenons : $v_s = -\frac{R_2}{R_1}v_e$.
+> Ce montage est un amplificateur de tension inverseur ($v_s$ et $v_e$ sont de signes opposés) d'amplification $H = -\frac{R_2}{R_1}$.
+> Son impédance d'entrée est $R_1$ et son impédance de sortie est nulle ($v_s$ est indépendante de $i_s$).
+> Réalisation expérimentale : Les résultats de l’étude fréquentielle pour différentes valeurs de $R_2$ sont donnés sur les figures [[#^figure10|10]] et [[#^figure11|11]] : le montage est un filtre passe-bas. Le déphasage $\varphi$ qu’il introduit varie de 180° (montage inverseur) à 90°. Les asymptotes haute fréquence de la réponse en gain sont voisines mais distinctes de l’asymptote haute fréquence du montage non inverseur : $G = -\log\frac{f}{f_0}$.
+> Le [[#^demo1|produit]] « gain x bande passante » n’est pas constant pour l’amplificateur inverseur.
+> 
+> Conclusion : A.O. réel et A.O. idéal : Nous pouvons déduire deux résultats des études précédentes, que nous généraliserons à la majorité des montages à amplificateur opérationnel.
+> - La « boucle de réaction (ou de rétroaction) » doit être reliée à l'entrée inverseuse pour que le montage soit stable.
+> - Les limitations dues au gain fini de l’A.O. réel sont visibles si le gain théorique du montage n’est pas petit devant celui $(20\log|\mu(j\omega)|)$ de l’A.O. en boucle ouverte. 
+
+> [!note] Addition et soustraction
+> - Sommateur : Tous ce qui est dit dans ce chapitre sur ce montage a été résumé dans le chapitre [[07-L'amplificateur opérationnel. Le modèle idéal|7]] de l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année.
+> - Amplificateur différentiel : Comment obtenir la différence de deux tensions ?
+> Il suffit d’utiliser simultanément un amplificateur opérationnel en amplificateur inverseur et non inverseur.
+> Le montage le plus simple qui réalise cette opération est donné sur la [[#^figure12|figure 12]].
+> Utilisons le théorème de superposition :
+> 	- si la source $v_1$ est éteinte, le montage est équivalent à un amplificateur inverseur d'amplification $-\frac{R_2}{R_1}$ : $v_s = -\frac{R_2}{R_1}v_2$ ;
+> 	- si la source $v_2$ est éteinte, le montage est équivalent à un pont diviseur de tension de rapport $\frac{R_4}{R_3 + R_4}$ suivi d’un amplificateur non inverseur d’amplification $\frac{R_2 + R_1}{R_1}$ : $v_s = \frac{R_4}{R_3 + R_4}\frac{R_2 + R_1}{R_1}v_1$,
+> 
+> 	d'où : $v_s = \frac{R_4}{R_3 + R_4}\frac{R_2 + R_1}{R_1}v_1 - \frac{R_2}{R_1}v_2$ Si $R_1R_4 = R_2R_3$, alors $vs = \frac{R_2}{R_1}(v_1 - v_2)$.
+> 	Le montage de la [[#^figure12|figure 12]] présente l'inconvénient d’avoir des impédances d'entrées finies et dissymétriques. On peut y remédier en intercalant des suiveurs.
+
+> [!note] Intégration et dérivation
+> Nous avons constaté au [[02-Étude fréquentielle des systèmes linéaires|chapitre 2]] qu'un filtre du premier ordre peut, dans un certain domaine de fréquences, se comporter approximativement comme un dérivateur ou comme un intégrateur. Les systèmes présentés ci-dessous sont plus performants et, contrairement aux systèmes passifs, ont des caractéristiques qui ne dépendent pratiquement pas de la charge.
+> 
+> - Exemple de montage intégrateur performant :
+> 
+> Montage théorique : Étudions le montage théorique de [[#^figure13|figure 13]].
+> Écrivons la loi des nœuds au niveau de l'entrée inverseuse de l'A.O. : $\frac{v_e - v_-}{R} + C\dfrac{d(v_s - v_-)}{dt} = 0$. En régime linéaire, $v_-$ est nulle, soit $\dfrac{dv_s}{dt} = -\frac{v_e}{RC}$.
+> Le montage réalise bien une intégration quel que soit le signal d'entrée et pour toute charge branchée en sortie.
+> 
+> Réalisation à l'aide d’un amplificateur opérationnel réel : Réalisons le montage de [[#^figure14a|figure 14a]].
+> L'interrupteur a été placé de façon à pouvoir décharger le condensateur.
+> Prenons $v_e$ nulle (entrée court-circuitée) et ouvrons l’interrupteur à l’instant $t = 0$. Nous observons que $v_s$ varie linéairement au cours du temps pendant quelques secondes jusqu’à atteindre $v_s = \pm V_{sat}$, tension de saturation de l’amplificateur opérationnel ([[#^figure14b|fig. 14b]]).
+> Cette dérive de la tension de sortie du montage est due aux défauts de l’A.O. : tension de décalage et courants de polarisation. Ce montage théorique n’est pas utilisable dans la pratique.
+> Pour éliminer le phénomène de dérive, il faudrait décharger régulièrement le condensateur. Remplaçons l'interrupteur par une résistance $R'$ ([[#^figure15|fig. 15]]) et cherchons la fonction de transfert du montage en considérant l'amplificateur opérationnel comme idéal.
+> La loi des nœuds appliquée a l’entrée inverseuse donne : $v_s(p)\left(Cp + \frac{1}{R'}\right) + \frac{v_e(p)}{R} = 0$, d'où la fonction de transfert $H(p) = \frac{-\frac{R'}{R}}{1 + R'Cp}$.
+> Le filtre est un passe-bas du premier ordre de pulsation de coupure $\frac{1}{R'C}$ et d’asymptote haute fréquence $G_{dB} = -20\log(RC\omega)$ et $\varphi = \frac{\pi}{2}$.
+> Donc pour un signal d’entrée périodique de période $T' \ll R'C$, le signal de sortie vaut $v_s = -\frac{1}{RC}\int v_edt$ (la constante d’intégration est telle que le signal est de valeur moyenne nulle). La partie continue du signal subit une amplification égale à $-\frac{R'}{R}$.
+> 
+> - Exemple de montage dérivateur performant :
+> Le montage pseudo-dérivateur $RC$ présente des inconvénients semblables à ceux du pseudo-intégrateur $RC$ : limitation aux basses fréquences, amplitude de signal faible et perturbation par la charge.
+> Étudions un montage à amplificateur opérationnel éliminant ces défauts.
+> 
+> Montage théorique : Étudions le montage théorique de [[#^figure16|figure 16]].
+> Écrivons la loi des nœuds au niveau de l’entrée inverseuse de l’A.O. : $\frac{v_s - v_-}{R} + C\dfrac{d(v_e - v_-)}{dt} = 0$, soit en régime linéaire : $v_s = -RC\dfrac{dv_e}{dt}$.
+> Le montage réalise bien une dérivation quel que soit le signal d’entrée. Sa fonction de transfert est $H(p) = RCp$ pour toute charge.
+> 
+> Réalisation à l'aide d'un amplificateur opérationnel réel : Réalisons le montage théorique à l'aide d'un amplificateur opérationnel "741" avec $R = 10 k\Omega$ et $C = 100 nF$.
+> En choisissant comme signal d'entrée, un signal triangulaire d'amplitude 1 V, nous obtenons les résultats de [[#^figure17|figure 17]].
+> Le montage présente un phénomène d'oscillations semblable à celui observé pour le filtre passe-bande de coefficient de qualité important. Il y a résonance. Le tracé du diagramme de Bode correspondant nous indique une résonance très aiguë pour une fréquence $f_0$ d’environ 13 kHz ([[#^figure18|fig. 18]]).
+> Cette résonance est due à la bande passante limitée de l’A.O.
+> Le caractère dérivateur du montage est alors masqué par le phénomène de résonance.
+> Il faut diminuer l’acuité de la résonance du montage et donc diminuer le facteur de qualité du circuit.
+> Pour un circuit (R, L, C), il suffit d’augmenter $R$. Ici, nous ajoutons une résistance en série avec le condensateur ([[#^figure19|fig. 19]]).
+> Le choix optimal peut être réalisé en observant la réponse à un signal triangulaire. Il se fait en ajustant la valeur de $R'$ ([[#^figure20|fig. 20]]) : la réponse la plus proche du créneau est obtenue pour $250 \Omega$ dans le cas des valeurs de $R$ et $C$ choisies pour un $\mu A741$.
+
+> [!note] Comparateur : Comparateur simple
+> La définition et la réalisation données dans ce chapitre est la même que celles résumées dans le chapitre [[07-L'amplificateur opérationnel. Le modèle idéal|7]] de l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année.
+> 
+> Écarts entre les caractéristiques réelles et idéales : Les comparateurs à amplificateurs opérationnels réels possèdent des caractéristiques qui différent notablement de celles données dans la définition et la réalisation.
+> Mettons en évidence les influences des divers « défauts » d’un A.O. réel, à savoir : son gain fini, sa fréquence de coupure en boucle ouverte finie, sa vitesse de balayage finie et sa tension de décalage éventuelle, en supposant, pour chacun des cas considérés, que c’est le défaut étudié qui est le seul présent.
+
+> [!note] Comparateur : Comparateur simple : Conséquence d'un gain statique fini
+
 # Diagrammes
 Quadripôle passif
 ![[electronique2/attachments-electronique2/figure43.png]]^figure1
 
 Représentation de l'amplificateur opérationnel idéal. Les bornes d'alimentation $+V_{cc}$ et $-V_{cc}$ ne sont pas représentés
 ![[electronique2/attachments-electronique2/figure44.png]]^figure2
+
+Schéma équivalent d'un A.O. $i_0$ et $i_1$ sont positifs pour un 741 et négatifs pour un TL 081
+![[electronique2/attachments-electronique2/figure48.png]]^figure6
+
+Réglage de la tension de décalage pour un "741" en boîtier huit broches. 1 : réglage offset ; 2 : entrée - ; 3 : entrée + ; 4 : $-V_{cc}$ ; 5 : réglage offset ; 6 : sortie ; 7 : $+V_{cc}$
+![[electronique2/attachments-electronique2/figure49.png]]^figure7
+
+Montage suiveur à amplificateur
+![[electronique2/attachments-electronique2/figure50.png]]^figure8
+
+Montage amplificateur inverseur
+![[electronique2/attachments-electronique2/figure51.png]]^figure9
+
+Amplificateur différentiel à A.O.
+![[electronique2/attachments-electronique2/figure56.png]]^figure12
+
+Intégrateur à A.O.
+![[electronique2/attachments-electronique2/figure57.png]]^figure13
+
+Montage intégrateur à A.O. réel avec interrupteur pour décharge $C$
+![[electronique2/attachments-electronique2/figure58.png]]^figure14a
+
+Intégrateur à A.O. ne présentant pas de dérive
+![[electronique2/attachments-electronique2/figure60.png]]^figure15
+
+Dérivateur à A.O.
+![[electronique2/attachments-electronique2/figure61.png]]^figure16
+
+Dérivateur à A.O. corrigé. La résistance $R'$ sert à diminuer l'acuité à la résonance due à la bande passante limitée de l'A.O. ($R = 10 k\Omega$, $C = 100 nF$ et $R' = 250 \Omega$)
+![[electronique2/attachments-electronique2/figure64.png]]^figure19
 # Graphiques
 Caractéristique de transfert de l'amplificateur opérationnel idéal
 ![[electronique2/attachments-electronique2/figure45.png]]^figure3
@@ -75,6 +191,28 @@ Caractéristique de transfert statique
 
 Gain et déphasage du $\mu A741$ en fonction de la fréquence. Dans le domaine de fréquences usuelles (0 MHz à 1 MHz), le 741 se comporte comme un passe-bas du premier ordre
 ![[electronique2/attachments-electronique2/figure47.png]]^figure5
+
+Diagramme de Bode pour différentes valeurs de $R_2$ $(R_1 = 10 k\Omega)$ ; les asymptotes haute fréquence ont toutes la même pente de -20 dB par décade mais ne sont pas confondues
+![[electronique2/attachments-electronique2/figure52.png]]^figure10
+
+Phase mesurée pour $R_2$ variant de $10 k\Omega$ à $100 k\Omega$
+![[electronique2/attachments-electronique2/figure53.png]]^figure11
+
+Tension de sortie pour $v_e = 0$
+![[electronique2/attachments-electronique2/figure59.png]]^figure14b
+
+Réponse du montage dérivateur à A.O. à un signal triangulaire de fréquence 100 Hz
+![[electronique2/attachments-electronique2/figure62.png]]^figure17
+
+Diagramme de Bode du montage dérivateur
+![[electronique2/attachments-electronique2/figure63.png]]^figure18
+
+Réponse du dérivateur à A.O. à un signal triangulaire de fréquence 100 Hz d'amplitude 1 V pour $R' = 50\, \Omega$, $250\, \Omega$ et $450\, \Omega$. La réponse la plus proche du créneau correspond à $R' = 250\, \Omega$ pour l'A.O. $\mu A741$
+![[electronique2/attachments-electronique2/figure65.png]]^figure20
 # Expériences
 
 # Autres notes
+> [!warning] Application 1 page 118
+> Le document 18 dans l'énoncé correspond à la [[#^figure9|figure 9]] ici.
+> ![[electronique2/attachments-electronique2/figure54.png]] ![[electronique2/attachments-electronique2/figure55.png]]
+^demo1
