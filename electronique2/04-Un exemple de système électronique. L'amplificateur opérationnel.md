@@ -20,8 +20,6 @@ crée: 26-11-2025, 15:28
 > La fréquence de gain nul est la fréquence $f_0 \approx \frac{\mu_0}{2\pi\tau}$, car $\mu_0 \gg 1$.
 > Au-delà de $f_0$, l’affaiblissement n’est plus de -20 dB par décade et le déphasage n’est plus de $-\frac{\pi}{2}$ : le modèle « à bande passante limitée » n’est pas valable au-delà de $f_0$ : une modélisation par une fonction de transfert d’ordre supérieur serait nécessaire.
 > La fréquence $f_H$ est trés faible (de l'ordre de 10 Hz). Pour des signaux de fréquence supérieure à 100 Hz, la fonction de transfert peut être approchée par sa valeur asymptotique $\mu(p) \approx \frac{\mu_0}{\tau p}$. La grandeur la plus importante pour l’utilisateur est donc $\frac{\mu_0}{\tau}$ ou $f_0$. Cette dernière fréquence est celle donnée par le constructeur sous le nom de « Unity Gain Bandwith ».
-
-
 # Définitions
 ==**Système actif et système passif**== :
 Un système actif est un système dont le fonctionnement nécessite une source d’énergie. Par opposition, un système passif ne reçoit de l'énergie que par l'intermédiaire de son signal d’entrée ou de sortie.
@@ -145,6 +143,35 @@ Le courant de polarisation est défini par $I_{IB} = \frac{|i_0 + i_1|}{2}$ et l
 > Mettons en évidence les influences des divers « défauts » d’un A.O. réel, à savoir : son gain fini, sa fréquence de coupure en boucle ouverte finie, sa vitesse de balayage finie et sa tension de décalage éventuelle, en supposant, pour chacun des cas considérés, que c’est le défaut étudié qui est le seul présent.
 
 > [!note] Comparateur : Comparateur simple : Conséquence d'un gain statique fini
+> En statique, l'amplification en tension $A_0$ d’un A.O. réel en boucle ouverte est finie. La caractéristique du comparateur ([[#^figure21|fig. 21]]) possède un flanc incliné à la différence de celle d’un comparateur à A.O. idéal qui possède un flanc vertical (de pente infinie). L’amplificateur opérationnel ne sera saturé que si : $|v_{de}| = |v_e - V_{ref}| \geqslant \frac{V_{sat}}{A_0}$.
+> Il en résulte que la tension d’entrée doit varier de $\delta v_e = \frac{2V_{sat}}{A_0}$, entre : $v_{e1} = V_{ref} - \frac{V_{sat}}{A_0}$ et $v_{e2} = V_{ref} + \frac{V_{sat}}{A_0}$, pour que la tension de sortie $v_s$ bascule de $-V_{sat}$ à $+V_{sat}$.
+> Cet intervalle $\delta v_e = \frac{2V_{sat}}{A_0} = v_{e2} - v_{e1}$ est l'intervalle de résolution du comparateur (0,28 mV pour un type 741).
+> La [[#^figure22|figure 22]] représente l’évolution des tensions d’entrée $v_e(t)$ (nous avons choisi un signal d’entrée sinusoïdal basse fréquence) et de sortie $v_s(t)$.
+> Les signaux $v_s(t)$ et $v_e(t)$ s’annulent simultanément $(V_{ref} = 0)$ en ne considérant que ce défaut de l’amplificateur.
+
+> [!note] Comparateur : Comparateur simple : Conséquence d'une fréquence de coupure en boucle ouverte finie
+> Considérons un comparateur non inverseur réalisé avec un A.O. dont l’équation différentielle d’évolution en régime linéaire est donnée par : $\tau\dfrac{dv_s}{dt} + v_s = A_0v_{de}$ avec $v_{de} = v_e(t)$, $\tau = 10^{-2} s$ et $A_0 = 10^{5}$.
+> Remarquons que nous sortons du régime linéaire dès que la solution $v_s(t)$ de l’équation précédente est telle que $|v_s(t)| \geqslant V_{sat}$.
+> Les stimulations des solutions $v_s(t)$ ([[#^figure23|fig. 23]]), lorsque $v_e(t)$ est sinusoïdal $(v_e(t) = v_{em}\sin(2\pi ft))$, en ne considérant que ce « défaut », nous montrent une augmentation significative de l’intervalle de résolution avec la fréquence $f$ et l'amplitude $v_{em}$ du signal $v_e(t)$.
+> L'intervalle de résolution, faible en « statique » (de l'ordre de 0,30 mV avec un A.O.) augmente avec la fréquence du signal. Cet intervalle de résolution peut être très gênant si la tension de commande est voisine de la tension de référence dans le cas où il existe un bruit, dont l’amplitude est de l’ordre de cet intervalle.
+
+> [!note] Comparateur : Comparateur simple : Conséquence d'une vitesse de balayage finie
+> Rappelons que la vitesse d'évolution de la tension de sortie est limitée : $\left|\dfrac{dv_s(t)}{dt}\right| \leqslant \sigma$.
+> Soit un comparateur non inverseur dont l’amplificateur opérationnel a pour unique défaut la valeur finie de sa vitesse de balayage. Choisissons $V_{ref} = 0$ et appliquons à l'entrée du comparateur un signal sinusoïdal $v_e(t)$.
+> A $t = t_0$ la tension d’entrée s’annule et à $t > t_0$, elle est négative ([[#^figure24|fig. 24]]).
+> Pour un comparateur parfait, un basculement de $V_{sat}$ à $-V_{sat}$ se produirait à $t = t_0$.
+> Pour le comparateur étudié, $v_s(t)$ ne s’annule qu’à $t = t_{0}^{'}$ tel que : $t_{0}^{'} - t_0 = \frac{V_{sat}}{\sigma}$, c’est-à-dire que nous observons un décalage temporel $\Delta t = t_{0}^{'} - t_0$ qui est le temps nécessaire à $v_s(t)$ pour passer de $V_{sat}$ à zéro.
+> A $t_{0}^{''}$, tel que $t_{0}^{''} - t_{0}^{'} = \frac{V_{sat}}{\sigma}$, la tension $v_s(t)$ atteint sa valeur de saturation $-V_{sat}$ et la tension $v_e(t)$ prend alors la valeur $-\frac{\Delta V_e}{2}$ ([[#^figure24|fig. 24]]).
+> Lorsqu’à $t = t_1$, la tension d’entrée s'annule par valeurs croissantes, nous observerons le même décalage temporel entre $v_e$ et $v_s$. La tension de sortie s'annule à $t_{1}^{'}$ tel que $t_{1}^{'} = t_1 + \frac{V_{sat}}{\sigma}$, et elle prend sa valeur de saturation à $t_{1}^{''} = t_1 + \frac{V_{sat}}{\sigma}$ lorsque $v_e$ à la valeur $\frac{\Delta V_e}{2}$.
+> La caractéristique $v_s = f(v_e)$ à cette fréquence est donnée sur la [[#^figure25|figure 25]]. Elle possède des flancs obliques et fait apparaître un phénomène d'hystérésis, c’est-à-dire que le point figuratif de l’état du comparateur ne suit pas le même chemin suivant que $v_e$ croît ou décroît. La largeur du cycle d’hystérésis est $\Delta V_e$. Lorsque la fréquence croît, la vitesse de balayage déforme la caractéristique du circuit ([[#^figure26|fig. 26]]) jusqu’à le rendre inutilisable en comparateur.
+> 
+> ==**La valeur finie de la vitesse de balayage est le plus important facteur de limitation des performances d'un comparateur simple à A.O.**==
+
+> [!note] Comparateur : Comparateur simple : Conclusion
+> Les caractéristiques de commutation d’un comparateur simple à A.O. sont médiocres. Ce type de comparateur doit être réservé pour les traitements de signaux en basse fréquence (inférieures à 1 kHz pour les $\mu A 741$ et inférieures à 10 kHz pour le TL 801), au-delà il est nécessaire d’utiliser des circuits intégrés spécialisés. Parmi les applications des comparateurs simples, signalons :
+> - la détection d’un niveau de tension de référence $V_{ref}$ ;
+> - la transformation d’un signal analogique variable en un signal numérique à deux niveaux $v_H = V_{sat}$ et $v_B = -V_{sat}$, permettant son traitement logique.
+
 
 # Diagrammes
 Quadripôle passif
@@ -209,6 +236,24 @@ Diagramme de Bode du montage dérivateur
 
 Réponse du dérivateur à A.O. à un signal triangulaire de fréquence 100 Hz d'amplitude 1 V pour $R' = 50\, \Omega$, $250\, \Omega$ et $450\, \Omega$. La réponse la plus proche du créneau correspond à $R' = 250\, \Omega$ pour l'A.O. $\mu A741$
 ![[electronique2/attachments-electronique2/figure65.png]]^figure20
+
+Caractéristique d'un comparateur simple ayant pour unique défaut un gain statique
+![[electronique2/attachments-electronique2/figure66.png]]^figure21
+
+Le comparateur bascule d'un état de saturation à l'autre dès que : $|v_e(t)| = \frac{V_{sat}}{A_0}$
+![[electronique2/attachments-electronique2/figure67.png]]^figure22
+
+Évolution de l'intervalle de résolution $\delta v_e$ pour diverses fréquences et diverses amplitudes du signal d'entrée. a. $V_{em} = 5 V$ ; $f = 100 Hz$ ; $dv_e = 236 mV$. b. $V_{em} = 5 V$ ; $f = 10000 Hz$ ; $dv_e = 2627 mV$. c. $V_{em} = 10 V$ ; $f = 10000 Hz$ ; $dv_e = 3730 mV$
+![[electronique2/attachments-electronique2/figure68.png]]^figure23
+
+Réponse d'un comparateur simple non inverseur à A.O. (type 741) soumis à une commande sinusoïdale de fréquence $f = 1 kHz$
+![[electronique2/attachments-electronique2/figure69.png]]^figure24
+
+Caractéristique d'un comparateur simple non inverseur à A.O. (type 741) soumis à un signal triangulaire de fréquence $f = 1 kHz$
+![[electronique2/attachments-electronique2/figure70.png]]^figure25
+
+Caractéristique d'un comparateur simple non inverseur à A.O. (type 741) soumis à un signal sinusoïdal de fréquence $f = 5 kHz$
+![[electronique2/attachments-electronique2/figure71.png]]^figure26
 # Expériences
 
 # Autres notes
