@@ -63,7 +63,7 @@ crée: 17-11-2025, 20:23
 > En revanche, lorsque l'amplificateur opérationnel est saturé négativement, nous avons : $v_s = -V_{sat}$ et $v_{de} < 0$. D'où, en remplaçant $v_s$ par $-V_{sat}$ dans l'expression précédente de $v_{de}$ : $v_e > \frac{R_2}{R_1 + R_2}V_{ref} - \frac{R_1}{R_1 + R_2}V_{sat} = V_{e_1}$.
 > Le basculement de $v_s = -V_{sat}$ à $v_s = +V_{sat}$ s'effectue à la tension de seuil $v_e = V_{e_1}$ au point de fonctionnement $B'$.
 > Ces résultats permettent de tracer la caractéristique de transfert du [[#^figure9|figure 9]]. Le cycle d'hystérésis est centré en $V_{e_0} = \frac{R_2}{R_1 + R_2}V_{ref}$ et sa largeur est $\Delta V_e = 2\frac{R_1}{R_1 + R_2}V_{sat}$.
-> Remarque : La résistance d'entrée de ce comparateur est très grande. C'est une qualité que ne possède pas son homologue non inverseur.
+> Remarque : La résistance d'entrée de ce comparateur est très grande est son attaque par le générateur délivrant $v_e(t)$ se fait automatiquement en tension. C'est une qualité que ne possède pas son homologue non inverseur dont l'impédance d'entrée est $R_1$ et pour lequel il faut utiliser un générateur d'impédance interne faible devant $R_1$.
 
 > [!note] Multivibrateur astable : Principe
 > Le montage est constitué de deux éléments : un comparateur à hystérésis et un intégrateur, dont le rôle est de faire glisser le point de fonctionnement M du comparateur vers ses points de basculement B et B' ([[#^figure13|fig. 13]] et [[#^figure14|14]]).
@@ -84,9 +84,10 @@ crée: 17-11-2025, 20:23
 
 > [!note] Multivibrateur astable : Contrôle de la période et du rapport cyclique
 > La période est proportionnelle à la constante de temps $\tau = RC$. Nous pouvons contrôler la période en utilisant une résistance $R$ variable ou un condensateur $C$ variable. Nous utiliserons un condensateur $C$ variable, réservant la résistance $R$ pour le contrôle du rapport cyclique.
-> Pour modifier le rapport cyclique sans modifier la fréquence, il suffit de faire varier de la même quantité et en sens opposé les deux constantes de temps $t_1$ et $t_2$ associées aux deux durées $t_1$ et $t_2$. Le montage réalisé est indiqué [[#^figure17|figure 17]]. Les résistances $r$ sont des résistances de protection lorsque $x$ prend une de ses valeurs extrêmes 0 ou 1. Pendant la durée $t_2$ de l'état de saturation positive de l'A.O., la diode $D_1$ est bloquée tandis que la diode $D_2$ conduit. La constante de temps de charge du condensateur est : $\tau_2 = (xR + r)C$.
+> Pour modifier le rapport cyclique sans modifier la fréquence, il suffit de faire varier de la même quantité et en sens opposé les deux constantes de temps $\tau_1$ et $\tau_2$ associées aux deux durées $t_1$ et $t_2$. Le montage réalisé est indiqué [[#^figure17|figure 17]]. Les résistances $r$ sont des résistances de protection lorsque $x$ prend une de ses valeurs extrêmes 0 ou 1. En fait, le courant maximum pouvant passer dans les diodes correspond au courant de saturation de l'amplificateur opérationnel (20 mA). Si les diodes supportent une intensité de l'ordre de 20 mA, il est inutile de mettre des résistances r de protection.
+> Pendant la durée $t_2$ de l'état de saturation positive de l'A.O., la diode $D_1$ est bloquée tandis que la diode $D_2$ conduit. La constante de temps de charge du condensateur est : $\tau_2 = (xR + r)C$.
 > En revanche, pendant la durée $t_1$ de l'état de saturation négative de l'A.O., c'est la diode $D_2$ qui est bloquée tandis que la diode $D_1$ conduit. La nouvelle constante de temps de charge du condensateur est : $\tau_1 = [(1 - x)R + r]C$. D'où l'expression de la période $T$ de l'astable : $T = t_1 + t_2 = (\tau_1 + \tau_2)\ln\left(\frac{1 + k}{1 - k}\right) = (R + 2r)C\ln\left(\frac{1 + k}{1 - k}\right)$, qui est indépendant de x.
-> En revanche, la nouvelle expression du rapport cyclique $\delta = \frac{xR + 2}{R + 2r}$ est une fonction affine de x, ce qui permet son contrôle.
+> En revanche, la nouvelle expression du rapport cyclique $\delta = \frac{xR + r}{R + 2r}$ est une fonction affine de x, ce qui permet son contrôle.
 ^par3
 
 > [!note] Principe des générateurs de fonctions : Système oscillateur

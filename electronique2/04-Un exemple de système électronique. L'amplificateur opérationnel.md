@@ -172,7 +172,21 @@ Le courant de polarisation est défini par $I_{IB} = \frac{|i_0 + i_1|}{2}$ et l
 > - la détection d’un niveau de tension de référence $V_{ref}$ ;
 > - la transformation d’un signal analogique variable en un signal numérique à deux niveaux $v_H = V_{sat}$ et $v_B = -V_{sat}$, permettant son traitement logique.
 
+> [!note] Comparateurs à hystérésis
+> - Nécessité et principe des comparateurs à hystérésis :
+> Les comparateurs simples sont sensibles au bruit. En effet, lorsque la tension d’entrée $v_e$ est voisine de la tension de référence $V_{ref}$, une tension de bruit peut provoquer intempestivement et aléatoirement le basculement du comparateur d'une saturation à l’autre. La [[#^figure27|figure 27]] illustre ce phénomène. Pour palier ce défaut, il est nécessaire de disposer de comparateurs à cycle d’hystérésis permanent et de largeur suffisante pour neutraliser cette sensibilité au bruit. En outre, il est souhaitable que les caractéristiques soient indépendantes de la fréquence et que les fronts de commutation soient verticaux. Une solution consiste à munir l’amplificateur opérationnel utilisé d’une boucle de rétroaction positive.
+> Un comparateur hystérésis est réalisé à l'aide d’un amplificateur opérationnel possédant une boucle de rétroaction aboutissant sur l’entrée non inverseuse.
+> Comme pour les comparateurs simples, il existe deux types de comparateurs à hystérésis selon que le signal d’entrée est introduit sur l’entrée non inverseuse (comparateur non inverseur à hystérésis) ([[#^figure28|fig. 28a]]) ou sur l’entrée inverseuse (comparateur inverseur à hystérésis) ([[#^figure28|fig. 28b]]).
+> ==**Comme pour les comparateurs simples, c’est la vitesse de balayage qui limite les performances des comparateurs à hystérésis.**==
+> - Caractéristiques d'un comparateur à hystérésis :
+> 	- Comparateur non inverseur : Tout ce qui est donné dans ce chapitre est le même que celui résumé dans le chapitre [[10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs|10]] de l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année.
+> 	- Comparateur inverseur : Tout ce qui est donné dans ce chapitre est le même que celui résumé dans le chapitre [[10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs|10]] de l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année.
+> 	- Influence de la fréquence : En régime dynamique se manifestent les limitations liées à la vitesse de balayage $\sigma$ finie et au temps de désaturation non nul des A.O. Ces effets s’observent sur les deux types de comparateurs (inverseurs et non inverseurs) et sont d’autant plus marqués que l’A.O. est moins performant : pour un $\mu A 741$ ([[#^figure29|fig. 29]]) et pour un TL 081.
 
+> [!note] Générateur d'oscillations périodiques
+> L'association en boucle fermée de deux opérateurs permet d'obtenir des oscillations périodiques réglables en fréquence. Nous étudions ici les oscillations de relaxation obtenus en associant un comparateur à hystérésis et un intégrateur.
+> - Multivibrateur astable : Son principe, le calcul et le contrôle de sa période et du son rapport cyclique et son vérification expérimentale, qui sont donnés dans ce chapitre, sont les mêmes que ceux résumés dans le chapitre [[10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs|10]] de l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année.
+> - Principe du générateur de fonction :
 # Diagrammes
 Quadripôle passif
 ![[electronique2/attachments-electronique2/figure43.png]]^figure1
@@ -209,6 +223,9 @@ Dérivateur à A.O.
 
 Dérivateur à A.O. corrigé. La résistance $R'$ sert à diminuer l'acuité à la résonance due à la bande passante limitée de l'A.O. ($R = 10 k\Omega$, $C = 100 nF$ et $R' = 250 \Omega$)
 ![[electronique2/attachments-electronique2/figure64.png]]^figure19
+
+Comparateur à hystérésis : a. non inverseur ; b. inverseur
+![[electronique2/attachments-electronique2/figure73.png]]^figure28
 # Graphiques
 Caractéristique de transfert de l'amplificateur opérationnel idéal
 ![[electronique2/attachments-electronique2/figure45.png]]^figure3
@@ -254,6 +271,12 @@ Caractéristique d'un comparateur simple non inverseur à A.O. (type 741) soumis
 
 Caractéristique d'un comparateur simple non inverseur à A.O. (type 741) soumis à un signal sinusoïdal de fréquence $f = 5 kHz$
 ![[electronique2/attachments-electronique2/figure71.png]]^figure26
+
+a. Signal bruité. b. Réponse d'un comparateur simple à ce signal
+![[electronique2/attachments-electronique2/figure72.png]]^figure27
+
+Caractéristiques d'un comparateur inverseur à A.O. du type $\mu A 741$ soumis à un signal sinusoïdal d'amplitude $v_{em} = 10 V$. a. $f = 1 kHz$. b. $f = 5 kHz$
+![[electronique2/attachments-electronique2/figure74.png]]^figure29
 # Expériences
 
 # Autres notes
