@@ -5,6 +5,25 @@ aliases:
 crée: 29-11-2025, 10:49
 ---
 # Formules
+> [!note] Fonctions de transfert d'un système bouclé : Fonction d'asservissement
+> - Fonction de transfert : Considérons le système représenté par le schéma fonctionnel de [[#^figure6|figure 6]]. La fonction de transfert relative à l'entrée principale est : $H(p) = \frac{S(p)}{E(p)} = \frac{G(p)}{1 + G(p)F(p)}$ où $G(p) = \frac{S(p)}{\epsilon(p)}$ correspond à la transmittance de la chaîne d'action et $F(p) = \frac{R(p)}{S(p)}$ à la transmittance de la chaîne de rétroaction.
+> La fonction de transfert en boucle ouverte $T(p)$ est le produit des fonctions de transfert de la chaîne d'action $G(p)$ et de la chaîne de rétroaction $F(p)$ : $T(p) = \frac{R(p)}{\epsilon(p)} = G(p)F(p)$.
+> Un système est à retour unitaire si $F(p) = 1$. $F(p)$ et $G(p)$ sont alors sans dimension. La fonction de transfert en boucle fermée d'un système à retour unitaire est ([[#^figure7|fig. 7]]) : $H(p) = \frac{S(p)}{E(p)} = \frac{G(p)}{1 + G(p)}$.
+> - Cas d’une chaîne directe à grand gain : Dans la bande de pulsations (donc de fréquences) pour laquelle la fonction de transfert en boucle ouverte $T(j\omega)$ d’un système bouclé satisfait à l'inégalité  $|T(j\omega)| \gg 1$, nous avons : $\underline{H}(j\omega) = \frac{\underline{S}(j\omega)}{\underline{E}(j\omega)} = \frac{\underline{G}(j\omega)}{1 + \underline{G}(j\omega)\underline{F}(j\omega)} \approx \frac{1}{\underline{F}(j\omega)}$.
+> Le système bouclé se comporte alors comme un système en chaîne ouverte dont la fonction de transfert ne dépend que des caractéristiques de sa chaîne de rétroaction.
+> Ces dernières peuvent être fixées avec précision, ce qui n’est pas le cas des caractéristiques de la chaîne d’action qui dépendent généralement du point de fonctionnement, de la température, de la fréquence, etc.
+> Les défauts de la chaîne d’action (décalages, dérives des composants, etc.) n’affectent plus de comportement du système bouclé.
+> Cette propriété remarquable, qui conjugue stabilité de fonctionnement et insensibilité aux variabilités, est largement utilisée lors de la réalisation des systèmes asservis.
+> - Condition de stabilité : Un système de fonction de transfert $H(p) = \frac{N(p)}{D(p)}$ est stable (cf. [[03-Étude temporelle des systèmes linéaires|chapitre 3]]), si :
+> 	- le degré du polynôme $N(p)$ est au plus égal à celui du polynôme $D(p)$ ;
+> 	- les pôles de $H(p)$, c’est-à-dire les zéros de $D(p)$, sont à partie réelle strictement négative. Pour qu’un système bouclé soit stable il est nécessaire que les zéros de $1 + T(p)$ soient à partie réelle strictement négative.
+> - Précision : La précision $\epsilon_s(t)$ d’un système asservi est égale à la différence entre la valeur désirée $s_d(t)$ et la valeur réelle $s(t)$ de la grandeur de sortie : $\epsilon_s(t) = s_d(t) - s(t)$.
+> La précision statique est égale la valeur prise par $\epsilon_s(t)$ en régime permanent. Pour préciser cette notion étudions un système où la grandeur d’entrée est égale à la valeur souhaitée de la grandeur de sortie et notons $G_0$ et $F_0$ les valeurs de $G(p)$ et $F(p)$ en régime permanent (soit $p = j\omega = 0$).
+> La fonction de transfert en régime statique est : $H_0 = \frac{G_0}{1 + G_0F_0} = \frac{s}{s_d}$.
+> La précision statique est donc : $\epsilon_{s,\,0} = s_d\frac{1 + G_0(F_0 - 1)}{1 + G_0F_0}$.
+> Si, par exemple, la chaîne de rétroaction est unitaire $(F_0 = 1)$, la précision statique est d’autant plus grande que le gain statique de la chaîne d’action est grand.
+> La précision dynamique $\epsilon_s(t)$, qui est plus délicate à étudier, dépend de la forme du signal envoyé en entrée.
+
 
 # Définitions
 ==**Système en boucle fermée**== :
@@ -54,6 +73,12 @@ Schéma fonctionnel d'un système bouclé en présence de perturbations
 
 Schéma fonctionnel régulation d'un système bouclé
 ![[electronique2/attachments-electronique2/figure84.png]]^figure5
+
+Schéma fonctionnel asservissement du système bouclé étudié
+![[electronique2/attachments-electronique2/figure85.png]]^figure6
+
+Système bouclé à retour unitaire
+![[electronique2/attachments-electronique2/figure86.png]]^figure7
 # Graphiques
 
 # Expériences
@@ -61,3 +86,6 @@ Schéma fonctionnel régulation d'un système bouclé
 # Autres notes
 > [!warning] Un exemple de rétroaction linéaire : Application 1 page 152
 > ![[electronique2/attachments-electronique2/figure79.png]]![[electronique2/attachments-electronique2/figure80.png]]
+
+> [!warning] Application 2 page 156
+> ![[electronique2/attachments-electronique2/figure87.png]]![[electronique2/attachments-electronique2/figure88.png]]

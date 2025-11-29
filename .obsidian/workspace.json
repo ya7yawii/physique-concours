@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -197,6 +198,10 @@
   },
   "active": "ada24987132e00ac",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure88.png",
+    "electronique2/attachments-electronique2/figure87.png",
+    "electronique2/attachments-electronique2/figure86.png",
+    "electronique2/attachments-electronique2/figure85.png",
     "electronique2/attachments-electronique2/figure84.png",
     "electronique2/attachments-electronique2/figure83.png",
     "electronique2/attachments-electronique2/figure82.png",
@@ -212,10 +217,6 @@
     "electronique2/02-Étude fréquentielle des systèmes linéaires.md",
     "electronique2/03-Étude temporelle des systèmes linéaires.md",
     "electronique2/01-Systèmes linéaires.md",
-    "electronique2/attachments-electronique2/figure77.png",
-    "electronique2/attachments-electronique2/figure76.png",
-    "electronique2/attachments-electronique2/figure75.png",
-    "electronique2/attachments-electronique2/figure74.png",
     "electronique1/12-Analyse harmonique.md",
     "electronique1/09-Filtres du deuxième ordre.md",
     "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
