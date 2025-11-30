@@ -24,6 +24,92 @@ crée: 29-11-2025, 10:49
 > Si, par exemple, la chaîne de rétroaction est unitaire $(F_0 = 1)$, la précision statique est d’autant plus grande que le gain statique de la chaîne d’action est grand.
 > La précision dynamique $\epsilon_s(t)$, qui est plus délicate à étudier, dépend de la forme du signal envoyé en entrée.
 
+> [!note] Fonctions de transfert d'un système bouclé : Fonction régulation
+> L'entrée principale $e(t)$ étant nulle ([[#^figure8|fig. 8]]), la fonction de transfert relative à la perturbation $e_p(t)$ est : $H_p(p) = \frac{S(p)}{E_p(p)} = \frac{G_2(p)}{1 + G(p)F(p)}$ avec $G(p) = G_1(p)G_2(p)$ la transmittance de la chaîne d'action.
+> Pour une fonction $G_2(p)$ imposée, l'influence d'une perturbation de pulsation $\omega$ est donc d'autant plus faible que le module $|T(j\omega)| = |G(j\omega)F(j\omega)|$ de la fonction de transfert en boucle ouverte est grand.
+
+> [!note] Fonctions de transfert d'un système bouclé : Améliorations apportées par la rétroaction
+> En boucle ouverte, la valeur de la grandeur de sortie dépend évidemment de la fonction de transfert $G(p)$. Analysons, pour un système en boucle fermée, les influences d’une modification des fonctions de transfert $H(p)$ et $G(p)$.
+> Le système bouclé considéré est maintenant celui de [[#^figure9|figure 9]] : $S(p) = \frac{G(p)}{1 + G(p)F(p)}E(p)$ (1).
+> - Sensibilité du système vis-a-vis des variations de $G(p)$ : Différentions l’expression (1) avec $E(p)$ et $F(p)$ constantes, nous obtenons : $\frac{\Delta S(p)}{S(p)} = \frac{\Delta G(p)}{G(p)} - \frac{F(p)\Delta G(p)}{1 + G(p)F(p)} = \frac{1}{1 + G(p)F(p)}\frac{\Delta G(p)}{G(p)}$. L'influence des variations de $G(p)$ sur la grandeur commandée $S(p)$ est réduite dans toute la bande de fréquences où $|G(j\omega)F(j\omega)| \gg 1$, c’est-à-dire, généralement, dans une très large bande de fréquences.
+> Dans la bande de fréquences où $|T(j\omega)| = |G(j\omega)F(j\omega)| \gg 1$, les variations de $G(p)$ sont sans effet sur la grandeur commandée $S(p)$.
+> Dans ce cas particulier, la courbe de réponse du système ne dépend que des éléments de la chaîne de rétroaction. Il est possible, par exemple, de remplacer l’élément amplificateur par un autre (de caractéristiques voisines) sans qu’il y ait de modifications perceptibles de la courbe de réponse.
+> Cette propriété est très appréciée dans la pratique (construction en grande série et maintenance de systèmes à caractéristiques définies, etc.).
+> - Sensibilité du système vis-à-vis des variations de $E(p)$ : Différentions l’expression (1) avec $E(p)$ et $G(p)$ constantes. Il vient : $\frac{\Delta S(p)}{S(p)} = -\frac{G(p)\Delta F(p)}{1 + G(p)F(p)} = -\frac{G(p)F(p)}{1 + G(p)F(p)}\frac{\Delta F(p)}{F(p)}$. La grandeur commandée $S(p)$ est très sensible aux variations de $F(p)$, et dans la bande de fréquences où $|T(j\omega)| \gg 1$, nous avons : $\frac{\Delta S(p)}{S(p)} = -\frac{\Delta F(p)}{F(p)}$.
+> - Conclusion : ==**La grandeur de sortie d’un systéme bouclé est généralement peu sensible aux variations de la transmittance de chaîne d’action. En revanche, elle est très sensible aux variations de la transmittance de la chaîne de rétroaction.**==
+> La chaîne d’action est une chaîne de puissance dont le rôle est de transmettre de la puissance, tandis que la chaîne de rétroaction est une chaîne de précision dont le rôle est de contrôler ce transfert de puissance.
+
+> [!note] Circuits électroniques à rétroaction négative : Structure et nomenclature
+> Pour les circuits électriques, la soustraction est opérée par une simple application des lois de Kirchhoff. La transcription du schéma fonctionnel unifilaire et du schéma bifilaire dépend de la nature des grandeurs d’entrée et de sortie de la chaîne d'action et de la chaîne de rétroaction.
+> - Grandeurs d’entrée : ==**En entrée, l’association en série des chaînes d’action et de rétroaction réalise une soustraction de tension et l'association en parallèle une soustraction de courant.**==
+> Lors d’une association en série, la grandeur d’entrée $\epsilon(t)$ de la chaîne d’action et celle de sortie $r(t)$ de la chaîne de rétroaction sont des **tensions** ([[#^figure10|fig. 10]]) : $\epsilon(t) = u_{\epsilon}(t)$ et $r(t) = u_{r}(t)$.
+> En revanche, lors d’une association en parallèle, la grandeur d’entrée $\epsilon(t)$ de la chaîne d’action et celle de sortie $r(t)$ de la chaîne de rétroaction sont alors des courants ([[#^figure11|fig. 11]]) : $\epsilon(t) = i_{\epsilon}(t)$ et $r(t) = i_{r}(t)$.
+> ==**La grandeur d’entrée est la grandeur qui est modifiée par l’association, en entrée, des quadripôles d’action et de rétroaction.**==
+> - Grandeurs de sortie : ==**En sortie, le prélèvement d'une tension se fait en parallèle et celui d'un courant se fait en série.**==
+> Lorsqu'en sortie les chaînes d'action et de rétroaction sont associées en parallèle ([[#^figure12|fig. 12]]), la grandeur de sortie est la tension $s(t) = u_s(t)$ et lorsqu'elles sont associées en série ([[#^figure13|fig. 13]]), la grandeur de sortie est le courant : $s(t) = i_s(t)$.
+> ==**La grandeur de sortie est la grandeur qui est commune, en sortie, aux deux quadripôles d'action et de rétroaction.**==
+> - Nomenclatures : Entre deux chaînes quadripolaires, quatre types d’association sont possibles ([[#^figure14|fig. 14]]). A chacune de ces associations correspond un type de circuit à rétroaction qu’il convient de nommer. Parmi les nomenclatures utilisées ([[#^figure15|fig. 15]]), nous ne retiendrons que les deux suivantes :
+> 	- la nomenclature indiquant le type d’association en entrée et en sortie ;
+> 	- la nomenclature indiquant la nature de la rétroaction, c’est-à-dire la grandeur $s(t)$ prélevée en sortie et la grandeur $e(t)$ réinjectée en entrée.
+
+> [!note] Effets d'une rétroaction négative idéale
+> - Définition : Une rétroaction est modélisée par un convertisseur qui transforme la grandeur de sortie $S(p)$ en grandeur réinjectée $R(p)$. Ce convertisseur est idéal :
+> 	- s'il ne perturbe pas la grandeur de sortie $S(p)$ ;
+> 	- si $R(p) = \alpha S(p)$, avec $\alpha$ constante indépendante des conditions d'utilisation.
+> - Modification de l'impédance d'entrée : Nous étudions le cas d'une association série en entrée. Le circuit bouclé peut être modélisé comme indiqué sur la [[#^figure16|figure 16]]. La transmittance de la chaîne d'action est $G(p) = \frac{S(p)}{U_{\epsilon}(p)}$ et celle de la chaîne de rétroaction est $F(p) = \frac{U_r(p)}{S(p)} = \alpha$.
+> L'association en série des chaînes en entrée nous permet d'écrire : $U_e(p) = U_{\epsilon}(p) + U_r(p) = U_{\epsilon}(p)[1 + F(p)G(p)]$, soit encore en divisant par $I_e(p)$, courant d'entrée commun aux deux chaînes : $Z_{e}^{'}(p) = Z_{e}(p)[1 + F(p)G(p)]$, où $Z_{e}^{'}(p)$ et $Z_{e}(p)$ sont respectivement l'impédance du circuit asservi et celle de la chaîne d'action.
+> ==**Dans la bande de fréquences où $[1 + \underline{T}(j\omega)| = |1 + \underline{F}(j\omega)\underline{G}(j\omega)| > 1$, l'association en série, en entrée, des chaînes d’action et de rétroaction augmente l’impédance d’entrée : l’impédance d’entrée du circuit asservi est supérieure à celle de la chaîne d’action.**==
+> Une étude similaire montre que :
+> ==**Dans la bande de fréquences où $[1 + T(j\omega)| = |1 + F(j\omega)G(j\omega)| > 1$, l'association en parallèle, en entrée, des chaînes d’action et de rétroaction diminue l’impédance d’entrée ; l’impédance d’entrée du circuit asservi est inférieure à celle de la chaîne d'action.**==
+> - Modification de l'impédance de sortie : Nous étudions le cas d'une association parallèle en sortie. Le circuit bouclé est alors modélisé comme indiqué sur la [[#^figure17|figure 17a]]. La transmittance de la chaîne d'action est $G(p) = \frac{U_s(p)}{\epsilon(p)} = \frac{\mu(p)}{Y_s(p) + Y_u(p)}$ et celle de la chaîne de rétroaction est $F(p) = \frac{R(p)}{U_s(p)} = \alpha$.
+> Pour calculer l'impédance de sortie, supprimons le signal d'entrée $(E(p) = 0)$ et appliquons, en sortie, la tension $U_s(p)$ après avoir débranché la charge ([[#^figure17|fig. 17b]]).
+> Le comparateur délivre alors le signal $\epsilon(p) = -R(p) = -\alpha U_s(p)$ et la chaîne d'action le signal : $I_s(p) = Y_s(p)U_s(p) - \mu(p)\epsilon(p) = U_s(p)[Y_s(p) + \alpha\mu(p)]$. En divisant par la tension de sortie $U_s(p)$, il vient : $Y_{s}^{'}(p) = Y_{s}(p)\left[1 + \frac{\alpha\mu(p)}{Y_{s}(p)}\right] = Y_{s}(p)[1 + F(p)G(p)_{Y_u = 0}]$, où $Y_{s}^{'}(p)$ est l'admittance de sortie du circuit asservi.
+> ==**Dans la bande de fréquence où : $[1 + \underline{T}(j\omega)| = |1 + \underline{F}(j\omega)\underline{G}(j\omega)_{Y_u = 0}| > 1$, l'association en parallèle, en sortie, des chaînes d'action et de rétroaction diminue l'impédance de sortie.**==
+> Une étude similaire montre que :
+> ==**Dans la bande de fréquence où : $[1 + \underline{T}(j\omega)| = |1 + \underline{F}(j\omega)\underline{G}(j\omega)_{Z_u = 0}| > 1$, l'association en série, en sortie, des chaînes d'action et de rétroaction augmente l'impédance de sortie.**==
+
+> [!note] Effets d'une rétroaction négative idéale : Élargissement de la bande passante
+> Considérons le système en boucle fermée de [[#^figure9|figure 9]] où la transmittance de la chaîne de retour $F(p) = \frac{R(p)}{\epsilon(p)}$ est constante et réelle. Supposons que la transmittance de la chaîne directe soit d’ordre 1 : $G(p) = \frac{S(p)}{\epsilon(p)} = \frac{G_0}{1 + \tau_0p}$ et calculons celle de la chaîne en boucle fermée $H(p) = \frac{S(p)}{E(p)}$.
+> L'application de la relation fondamentale des systèmes bouclés donne : $H(p) = \frac{G(p)}{1 + FG(p)} = \frac{G_0}{1 + FG(p) + \tau_0p}$, soit encore : $H(p) = \frac{H_0}{1 + \tau p}$ avec $H_0 = \frac{G_0}{1 + FG_0}$ et $\tau = \frac{\tau_0}{1 + FG_0}$.
+> Les diagrammes asymptotiques des courbes de réponse en gain de la chaîne directe et de la chaîne en boucle fermée sont donnés sur la [[#^figure18|figure 18]].
+> La chaîne bouclée possède :
+> - une transmittance $H_0$, en bande passante, plus faible que celle $G_0$ de la chaîne directe, puisqu’elle est divisée par $[1 + FG_0]$ ;
+> - une bande passante $\left[0\, ; \omega_H = \frac{1}{\tau} = \frac{1 + FG_0}{\tau_0}\right]$ plus large que celle de la chaîne d’action $\left[0\, ; \omega_G = \frac{1}{\tau_0}\right]$ puisqu'elle est multipliée par $[1 + FG_0]$.
+> 
+> Cependant, le facteur de mérite du système, à savoir le produit $G_0\omega_G = H_0\omega_H$ de sa transmittance en bande passante par la largeur de sa bande passante, est conservé.
+> Ce résultat est très général en électronique.
+
+> [!note] Effets d'une rétroaction négative idéale : Conclusion
+> Un quadripôle est idéal vis-a-vis de son entrée s’il ne perturbe pas le système en amont, ce qui équivaut à une puissance nulle en entrée.
+> - Si la grandeur d’entrée est une tension, le courant d’entrée doit être nul, ce qui nécessite une impédance d’entrée infinie.
+> - Si la grandeur d’entrée est un courant, la tension d’entrée doit être nulle, ce qui nécessite une impédance d’entrée nulle.
+> 
+> Pour ce qui est de la sortie, un quadripôle est idéal si sa grandeur de sortie est indépendante de la charge.
+> - Si la grandeur de sortie est une tension, l’impédance de sortie doit être nulle.
+> - Si la grandeur de sortie est un courant, l’impédance de sortie doit être infinie.
+> 
+> L’étude précédente nous montre donc qu’une rétroaction idéale peut améliorer les caractéristiques d’entrée et de sortie du système bouclé.
+
+> [!note] Oscillateurs quasi sinusoïdaux : Principe d'un oscillateur à réaction
+> Illustrons la notion d’oscillateur à réaction (ou à rétroaction) par un exemple connu. Lorsqu’un microphone est placé au voisinage d’une enceinte acoustique, un sifflement est émis. C’est l’effet de Larsen ([[#^figure19|fig. 19]]). Analysons ce phénomène. L’enceinte émet un sifflement, qui est filtré, c’est-à-dire atténué et déformé, lors de sa propagation dans l'air et lors de sa conversion en tension par le microphone. Le signal délivré par ce dernier est amplifié, puis appliqué à nouveau à l’enceinte. Le sifflement est ainsi entretenu et la chaîne acoustique fonctionne en oscillateur à réaction.
+> Les oscillateurs à réaction sont utilisés dans de très nombreux domaines de la physique : lasers, magnétrons des fours à micro-ondes, oscillateurs électriques, etc.
+> - Structure d’un oscillateur à réaction : Le principe d’un oscillateur à réaction est donné sur la [[#^figure20|figure 20]] et son schéma fonctionnel sur la [[#^figure21|figure 21]]. Un oscillateur à réaction s’analyse en :
+> 	- une chaîne d’action (ou directe) de transmittance $G(p)$. C’est une chaîne de puissance constituée d’amplificateurs ;
+> 	- une chaîne de réaction (de rétroaction ou de retour) de transmittance $F(p)$. C’est une chaîne de précision réalisée avec un filtre.
+> 	
+> 	Dans un oscillateur à réaction, le soustracteur du schéma fonctionnel effectue une comparaison à zéro. Il est souvent avantageux d’attribuer à l'association chaîne de réaction-soustracteur, une transmittance $F'(p) = -F(p)$ comme indiqué sur la [[#^figure22|figure 22]].
+
+> [!note] Oscillateurs quasi sinusoïdaux : Conditions théoriques d'oscillation sinusoïdales ou harmoniques
+> A quelles conditions le circuit de [[#^figure22|figure 22]] peut-il être le siège d'oscillations sinusoïdales ?
+> Supposons, qu'à l'instant t, le signal $s(t)$ délivré par la chaîne d'action soit sinusoïdal. Utilisons la notation complexe : $\underline{s}(t) = s_m e^{j\omega_0 t}$. Ce signal est filtré par la chaîne de réaction qui délivre : $\underline{r}^{'}(t) = \underline{F}^{'}(j\omega_0)\underline{s}(t) = |\underline{F}^{'}(j\omega_0)|s_m e^{j(\omega_0 t + \phi_r)}$, où $\phi_r = \arg[\underline{F}^{'}(j\omega_0)]$ est le déphasage apporté par la chaîne de retour.
+> Le signal $\underline{r}^{'}(t)$ est ensuite amplifié par la chaîne d'action qui fournit le signal $\underline{s}^{'}(t)$ : $\underline{s}^{'}(t) = \underline{G}(j\omega_0)\underline{r}^{'}(t) = |\underline{G}(j\omega_0)||\underline{F}^{'}(j\omega_0)|s_m e^{j(\omega_0 t + \phi_r + \phi_a)}$, avec $\phi_a = \arg[\underline{G}(j\omega_0)]$.
+> L'entretien des oscillations, qui se traduit par $\underline{s}^{'}(t) = \underline{s}(t)$, impose les deux conditions suivantes :
+> - $|\underline{G}(j\omega_0)||\underline{F}^{'}(j\omega_0)| = 1$ ;
+> - $\arg[\underline{G}(j\omega_0)] + \arg[\underline{F}^{'}(j\omega_0)] = n2\pi$ avec n entier.
+> 
+> De façon plus concise, avec les notations de [[#^figure22|figure 22]], ces conditions s’écrivent $\underline{G}(j\omega_0)\underline{F}^{'}(j\omega_0) = 1$ et avec celles de [[#^figure21|figure 21]] : $-\underline{G}(j\omega_0)\underline{F}(j\omega_0) = 1$.
+> L'entretien des oscillations sinusoïdales à la fréquence $f_0$ exige que la boucle formée par la chaîne d'action, la chaîne de rétroaction et le soustracteur ait, à cette fréquence $f_0$, un gain nul et un déphasage multiple de $2\pi$.
+
 
 # Définitions
 ==**Système en boucle fermée**== :
@@ -56,8 +142,6 @@ Le schéma étudié ne comporte qu’une seule boucle de rétroaction qui permet
 Lorsque les perturbations ne sont pas négligées, le schéma fonctionnel du système est donné sur la [[#^figure4|figure 4]].
 Signalons que la difficulté pour l’établissement d’un tel schéma tient généralement à la détermination du point d’application de la perturbation.
 Si l'objet de l’étude est la fonction de régulation (c’est-à-dire l’influence des perturbations sur la grandeur de sortie) d’un système bouclé, alors l'entrée principale est nulle $E(p) = 0$ et le schéma fonctionnel utilisé peut être simplifié ([[#^figure5|fig. 5]]). Nous remarquerons que le signal $\epsilon(p) = -R_p(p)$ a été changé en $\epsilon(p) = +R_p(p)$ et corrélativement l'additionneur, placé au point d’entrée de la perturbation, est devenu un comparateur. Un tel schéma est appelé schéma fonctionnel régulation.
-
-
 # Diagrammes
 Schéma fonctionnel du principe des systèmes en boucle fermée
 ![[electronique2/attachments-electronique2/figure78.png]]^figure1
@@ -79,8 +163,51 @@ Schéma fonctionnel asservissement du système bouclé étudié
 
 Système bouclé à retour unitaire
 ![[electronique2/attachments-electronique2/figure86.png]]^figure7
-# Graphiques
 
+Schéma fonctionnel régulation d'un système bouclé
+![[electronique2/attachments-electronique2/figure89.png]]^figure8
+
+Système en boucle fermée
+![[electronique2/attachments-electronique2/figure90.png]]^figure9
+
+En entrée, une association en série réalise une soustraction de tension
+![[electronique2/attachments-electronique2/figure91.png]]^figure10
+
+En entrée, une association en parallèle réalise une soustraction de courant
+![[electronique2/attachments-electronique2/figure92.png]]^figure11
+
+En sortie, un prélèvement de tension s'effectue en parallèle
+![[electronique2/attachments-electronique2/figure93.png]]^figure12
+
+En sortie, un prélèvement de courant s'effectue en série
+![[electronique2/attachments-electronique2/figure94.png]]^figure13
+
+Les quatre types d'association : a. association en série-parallèle ; b. association en parallèle-parallèle ; c. association en parallèle-série ; d. association en série-série
+![[electronique2/attachments-electronique2/figure95.png]]^figure14
+
+Nomenclatures : A mon avis pour parallèle-parallèle correspond courant-tension et pour série-série correspond tension-courant
+![[electronique2/attachments-electronique2/figure96.png]]^figure15
+
+Association en série, en entrée, des chaînes d'action et de rétroaction
+![[electronique2/attachments-electronique2/figure97.png]]^figure16
+
+a. Association en parallèle, en sortie, des chaînes d'action et de rétroaction. b. Pour calculer l'impédance de sortie, nous annulons $E(p)$, nous débranchons la charge et nous la remplaçons par un générateur de tension $U_s(p)$
+![[electronique2/attachments-electronique2/figure98.png]]^figure17
+
+Effet Larsen
+![[electronique2/attachments-electronique2/figure100.png]]^figure19
+
+Structure d'un oscillateur à réaction
+![[electronique2/attachments-electronique2/figure101.png]]^figure20
+
+Schéma fonctionnel d'un circuit linéaire bouclé
+![[electronique2/attachments-electronique2/figure102.png]]^figure21
+
+L'association de la chaîne de réaction et du soustracteur délivre un signal $R'(p) = -R(p)$
+![[electronique2/attachments-electronique2/figure103.png]]^figure22
+# Graphiques
+Diagrammes asymptotiques des courbes de réponse en gain de la chaîne en boucle fermée
+![[electronique2/attachments-electronique2/figure99.png]]^figure18
 # Expériences
 
 # Autres notes

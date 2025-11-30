@@ -139,13 +139,13 @@ Schéma équivalent pour $t < 0$
 ![[electronique1/attachments-electronique1/figure80.png]]^figure7
 
 Réalisation d'un échelon de tension
-![[figure90.png]]^figure17
+![[electronique1/attachments-electronique1/figure90.png]]^figure17
 
 Circuit d'étude de la charge d'un condensateur à travers une résistance
-![[figure91.png]]^figure18
+![[electronique1/attachments-electronique1/figure91.png]]^figure18
 
 Circuit d'étude de l'établissement du courant à travers une bobine
-![[figure94.png]]^figure21
+![[electronique1/attachments-electronique1/figure94.png]]^figure21
 
 Montage d'étude du circuit (R , C)
 ![[figure104.png]]^figure27
@@ -187,40 +187,40 @@ Régimes pseudo-périodique et critique. Intensité initiale $i_0$ dans le circu
 ![[electronique1/attachments-electronique1/figure88.png]]^figure15
 
 Échelon de tension débutant à $t = 0$
-![[figure89.png]]^figure16
+![[electronique1/attachments-electronique1/figure89.png]]^figure16
 
 Différence de potentiel aux bornes de C
-![[figure92.png]]^figure19
+![[electronique1/attachments-electronique1/figure92.png]]^figure19
 
 Intensité dans le circuit
-![[figure93.png]]^figure20
+![[electronique1/attachments-electronique1/figure93.png]]^figure20
 
 Intensité dans le circuit
-![[figure95.png]]^figure22
+![[electronique1/attachments-electronique1/figure95.png]]^figure22
 
 Différence de potentiel aux bornes de la bobine
-![[figure96.png]]^figure23
+![[electronique1/attachments-electronique1/figure96.png]]^figure23
 
 Réponse à un échelon de tension. Régimes apériodiques
-![[figure97.png]]^figure24a
+![[electronique1/attachments-electronique1/figure97.png]]^figure24a
 
 Réponse à un échelon de tension. Régimes apériodiques très amortis
-![[figure98.png]]^figure24b
+![[electronique1/attachments-electronique1/figure98.png]]^figure24b
 
 Réponse à un échelon de tension. $Q = 0,3$
-![[figure99.png]]^figure24c
+![[electronique1/attachments-electronique1/figure99.png]]^figure24c
 
 Réponse à un échelon de tension. Régimes pseudo-périodiques
-![[figure100.png]]^figure25a
+![[electronique1/attachments-electronique1/figure100.png]]^figure25a
 
 Réponse à un échelon de tension. Régimes pseudo-périodiques peu amortis
-![[figure101.png]]^figure25b
+![[electronique1/attachments-electronique1/figure101.png]]^figure25b
 
 Réponse à un échelon de tension. $Q = 2$
-![[figure102.png]]^figure25c
+![[electronique1/attachments-electronique1/figure102.png]]^figure25c
 
 Réponse du circuit (R , C). Balayage horizontal : 2 ms/div ; voie $Y_1$ : 5 V/div ; voie $Y_2$ : 10 V/div
-![[figure103.png]]^figure26
+![[electronique1/attachments-electronique1/figure103.png]]^figure26
 
 Réponse du circuit (R , L). Balayage horizontal : 0,5 ms/div ; voie $Y_1$ : 5 V/div ; voie $Y_2$ : 10 V/div
 ![[figure105.png]]^figure28

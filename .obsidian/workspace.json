@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -198,17 +197,17 @@
   },
   "active": "ada24987132e00ac",
   "lastOpenFiles": [
-    "electronique2/attachments-electronique2/figure88.png",
-    "electronique2/attachments-electronique2/figure87.png",
-    "electronique2/attachments-electronique2/figure86.png",
-    "electronique2/attachments-electronique2/figure85.png",
-    "electronique2/attachments-electronique2/figure84.png",
-    "electronique2/attachments-electronique2/figure83.png",
-    "electronique2/attachments-electronique2/figure82.png",
-    "electronique2/attachments-electronique2/figure81.png",
-    "electronique2/attachments-electronique2/figure80.png",
-    "electronique2/attachments-electronique2/figure79.png",
-    "electronique2/attachments-electronique2/figure78.png",
+    "electronique2/attachments-electronique2/figure103.png",
+    "electronique2/attachments-electronique2/figure102.png",
+    "electronique2/attachments-electronique2/figure101.png",
+    "electronique2/attachments-electronique2/figure100.png",
+    "electronique2/attachments-electronique2/figure99.png",
+    "electronique2/attachments-electronique2/figure98.png",
+    "electronique2/attachments-electronique2/figure97.png",
+    "electronique2/attachments-electronique2/figure96.png",
+    "electronique2/attachments-electronique2/figure95.png",
+    "electronique2/attachments-electronique2/figure94.png",
+    "electronique2/attachments-electronique2/figure93.png",
     "electronique2/00-Electronique2.md",
     "electronique2/05-Systèmes linéaires en boucle fermée.md",
     "electronique2/04-Un exemple de système électronique. L'amplificateur opérationnel.md",
