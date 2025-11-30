@@ -245,13 +245,13 @@ L'association de la chaîne de réaction et du soustracteur délivre un signal $
 ![[electronique2/attachments-electronique2/figure103.png]]^figure22
 
 Microtension de bruit analysée comme une perturbation injectée dans un circuit sans bruit
-![[Pasted image 20251130194842.png]]^figure23
+![[electronique2/attachments-electronique2/figure104.png]]^figure23
 # Graphiques
 Diagrammes asymptotiques des courbes de réponse en gain de la chaîne en boucle fermée
 ![[electronique2/attachments-electronique2/figure99.png]]^figure18
 
 Réponse d'un système à une perturbation éphémère : a. système stable ; b. système instable, à état stable dans son domaine non linéaire ; c. système instable, sans état stable dans son domaine non linéaire
-![[Pasted image 20251130195808.png]]^figure24
+![[electronique2/attachments-electronique2/figure105.png]]^figure24
 # Expériences
 
 # Autres notes

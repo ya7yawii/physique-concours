@@ -148,7 +148,7 @@ Circuit d'étude de l'établissement du courant à travers une bobine
 ![[electronique1/attachments-electronique1/figure94.png]]^figure21
 
 Montage d'étude du circuit (R , C)
-![[figure104.png]]^figure27
+![[electronique1/attachments-electronique1/figure104.png]]^figure27
 
 Montage d'étude du circuit (R , L)
 ![[figure106.png]]^figure29
@@ -223,7 +223,7 @@ Réponse du circuit (R , C). Balayage horizontal : 2 ms/div ; voie $Y_1$ : 5 V/d
 ![[electronique1/attachments-electronique1/figure103.png]]^figure26
 
 Réponse du circuit (R , L). Balayage horizontal : 0,5 ms/div ; voie $Y_1$ : 5 V/div ; voie $Y_2$ : 10 V/div
-![[figure105.png]]^figure28
+![[electronique1/attachments-electronique1/figure105.png]]^figure28
 
 Réponse du circuit (R , L, C). Balayage horizontal : 0,2 ms/div ; voie $Y_1$ : 5 V/div ; voie $Y_2$ : 0,5 V/div ; mode : alt-CH2 ; synchronisation LF
 ![[figure108.png]]^figure31a
