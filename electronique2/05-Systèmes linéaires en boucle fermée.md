@@ -109,6 +109,44 @@ crée: 29-11-2025, 10:49
 > 
 > De façon plus concise, avec les notations de [[#^figure22|figure 22]], ces conditions s’écrivent $\underline{G}(j\omega_0)\underline{F}^{'}(j\omega_0) = 1$ et avec celles de [[#^figure21|figure 21]] : $-\underline{G}(j\omega_0)\underline{F}(j\omega_0) = 1$.
 > L'entretien des oscillations sinusoïdales à la fréquence $f_0$ exige que la boucle formée par la chaîne d'action, la chaîne de rétroaction et le soustracteur ait, à cette fréquence $f_0$, un gain nul et un déphasage multiple de $2\pi$.
+^par1
+
+> [!note] Oscillateurs quasi sinusoïdaux : Conditions d'oscillations
+> Les conditions précédentes sont trop strictes pour être réalisables et, en outre, elles n’assurent pas l’apparition du signal.
+> Examinons le mécanisme de formation du signal dans un oscillateur à rétroaction. Inéluctablement à cause du bruit, à un instant donné, une microtension éphémère apparaît dans le circuit. Modélisons cet effet sous la forme d’une perturbation $(E(p))$ injectée, à cet instant, dans le circuit étudié supposé sans bruit ([[#^figure23|fig. 23]]).
+> Si le système est stable, le régime libre est transitoire et le microsignal disparaît : le régime permanent d’un tel système, en l’absence de commande, est le repos ([[#^figure24|fig. 24a]]).
+> Pour qu’un signal non nul, oscillant ou non, existe dans le circuit, le système doit donc être instable et sa fonction de transfert : $H(p) = \frac{S(p)}{E(p)} = \frac{G(p)}{1 + F(p)G(p)} = \frac{G(p)}{1 - F'(p)G(p)}$ doit comporter au moins un pôle à partie réelle positive.
+> Le système étant instable, deux situations peuvent se présenter :
+> - le système évolue vers un état stable dans son domaine non linéaire. On observe alors une saturation permanente sans oscillation ([[#^figure24|fig. 24b]]) ;
+> - le système évolue vers son domaine non linéaire sans état stable. Alors, dans ce cas, le système oscille ([[#^figure24|fig. 24c]]) et la condition précédente est satisfaite.
+> 
+> Un circuit bouclé fonctionne en oscillateur si :
+> - les racines de $F'(p)G(p) = 1$ comportent des pôles à parties réelles positives ;
+> - il n’existe pas d’état stable dans le domaine de fonctionnement non linéaire.
+
+> [!note] Oscillateurs quasi sinusoïdaux : Oscillations quasi sinusoïdales
+> Considérons un circuit dont la chaîne d'action est un amplificateur de transmittance constante $G(p) = G_0$, et dont la chaîne de retour est un passe-bande : $F'(p) = \frac{A_0}{1 + Q\left(\frac{p}{\omega_0} + \frac{\omega_0}{p}\right)}$.
+> Examinons les critères d'oscillation du circuit.
+> - Le passe-bande rejette le continu $F'(0) = 0$, donc un état saturé ne peut être stable.
+> - La première condition ($F'(p)G(p) = 1$ comporte des pôles à parties réelles positives) implique que l'équation : $\left(\frac{p}{\omega_0}\right)^{2} + \frac{1 - G_0A_0}{Q}\left(\frac{p}{\omega_0}\right) + 1 = 0$ doit avoir ses racines à parties réelles positives. Le signe de la partie réelle des racines étant celui de $G_0A_0 - 1$, la condition examinée s'écrit : $G_0A_0 > 1$.
+> - A quelle condition le signal est-il sinusoïdal ?
+> En régime linéaire, nous pouvons utiliser la relation fondamentale des systèmes bouclés : $[1 - F'(p)G(p)]S(p) = G(p)E(p)$ qui s'écrit après la disparition de la perturbation $(E(p) = 0)$ : $[1 - F'(p)G(p)]S(p) = 0$.
+> Cette dernière relation est équivalente à l'équation différentielle : $\frac{1}{\omega_{0}^{2}}\dfrac{d^{2}s(t)}{dt^{2}} + \frac{1 - G_0A_0}{Q\omega_0}\dfrac{ds(t)}{dt} + s(t) = 0$ dont la solution est de la forme $s(t) = \alpha_1e^{p_1t} + \alpha_2e^{p_2t}$ avec $p_1$ et $p_2$ racines de l'équation caractéristique : $\left(\frac{p}{\omega_0}\right)^{2} + \frac{1 - G_0A_0}{Q}\left(\frac{p}{\omega_0}\right) + 1 = 0$.
+> Le signal $s(t)$ sera quasi sinusoïdal si la partie réelle des racines est positive et très proche de zéro. pour qu’ il en soit ainsi, il faut que $Q$ soit élevé et que $G_0A_0$ soit voisin de 1 (par valeur supérieure). Dans ces conditions : $p_1 = p_2 \approx j\omega_0$.
+> 
+> $G_0$ est l'amplification de la chaîne directe, $A_0$ l’amplification maximale du passe-bande et $Q$ son facteur de qualité alors :
+> - la condition d’oscillation est $G_0A_0 > 1$ ;
+> - la condition d’oscillation sinusoïdale est $G_0A_0 \approx 1$ avec $Q \gg 1$.
+> 
+> La fréquence $f_0$ des oscillations est celle de résonance du filtre.
+> Remarques :
+> - Les conditions théoriques du [[#^par1|paragraphe précédent]] sont vérifiées à la fréquence de résonance du filtre.
+> - Ce sont les non-linéarités de la chaîne directe qui limitent l’amplitude du signal de sortie.
+ 
+
+ 
+
+
 
 
 # Définitions
@@ -205,9 +243,15 @@ Schéma fonctionnel d'un circuit linéaire bouclé
 
 L'association de la chaîne de réaction et du soustracteur délivre un signal $R'(p) = -R(p)$
 ![[electronique2/attachments-electronique2/figure103.png]]^figure22
+
+Microtension de bruit analysée comme une perturbation injectée dans un circuit sans bruit
+![[Pasted image 20251130194842.png]]^figure23
 # Graphiques
 Diagrammes asymptotiques des courbes de réponse en gain de la chaîne en boucle fermée
 ![[electronique2/attachments-electronique2/figure99.png]]^figure18
+
+Réponse d'un système à une perturbation éphémère : a. système stable ; b. système instable, à état stable dans son domaine non linéaire ; c. système instable, sans état stable dans son domaine non linéaire
+![[Pasted image 20251130195808.png]]^figure24
 # Expériences
 
 # Autres notes
