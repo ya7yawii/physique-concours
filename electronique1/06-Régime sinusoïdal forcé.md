@@ -143,67 +143,67 @@ La place particulière accordée aux régimes harmoniques a plusieurs justificat
 - On peut montrer que tout signal physiquement réalisable peut se mettre sous la forme d'une somme infinie de signaux sinusoïdaux (décomposition de Fourier) : la réponse du circuit linéaire au signal complet est la superposition des réponses à chaque terme de la décomposition pris individuellement.
 # Diagrammes
 Étude d'un circuit (R, L, C) série
-![[figure111.png]]^figure2
+![[electronique1/attachments-electronique1/figure111.png]]^figure2
 
 Réponse en charge
-![[figure112.png]]^figure3a
+![[electronique1/attachments-electronique1/figure112.png]]^figure3a
 
 Réponse en courant
-![[figure113.png]]^figure3b
+![[electronique1/attachments-electronique1/figure113.png]]^figure3b
 
 Équivalent basse fréquence
-![[figure114.png]]^figure4a
+![[electronique1/attachments-electronique1/figure114.png]]^figure4a
 
 Équivalent haute fréquence
-![[figure115.png]]^figure4b
+![[electronique1/attachments-electronique1/figure115.png]]^figure4b
 
 Soumis à l'excitation $e(t)$, le dipôle linéaire délivre la réponse $s(t)$
-![[figure120.png]]^figure9
+![[electronique1/attachments-electronique1/figure120.png]]^figure9
 
 Représentations de Thévenin et de Norton d'un générateur sinusoïdal en notation complexe
-![[figure127.png]]^figure16
+![[electronique1/attachments-electronique1/figure127.png]]^figure16
 
 Nœud $A$ avec les deux types de branches qui y aboutissent
-![[figure128.png]]^figure17
+![[electronique1/attachments-electronique1/figure128.png]]^figure17
 
 La puissance transmise par le générateur à l'utilisation est maximale lorsque $\underline{Z}_u = \underline{Z}_g^*$
-![[figure129.png]]^figure18
+![[electronique1/attachments-electronique1/figure129.png]]^figure18
 
 Le quadripôle $Q$ adapte les impédances du générateur et de la charge pour une transmission maximale de la puissance moyenne
-![[figure130.png]]^figure19
+![[electronique1/attachments-electronique1/figure130.png]]^figure19
 # Graphiques
 Représentation de Fresnel de la grandeur sinusoïdale $s(t) = s_m\cos(\omega t + \phi)$
-![[figure110.png]]^figure1
+![[electronique1/attachments-electronique1/figure110.png]]^figure1
 
 Variations de $\frac{i_m(x)}{e_m/R}$ en fonction de $x$ pour $Q = \frac{1}{2}$, $Q = 1$ et $Q = 5$
-![[figure116.png]]^figure5
+![[electronique1/attachments-electronique1/figure116.png]]^figure5
 
 Variations du déphasage $\phi(x)$ de la réponse $i(t)$ par rapport à l'excitation $e(t)$ en fonction de $x$ pour $Q = \frac{1}{2}$, $Q = 1$ et $Q = 5$
-![[figure117.png]]^figure6
+![[electronique1/attachments-electronique1/figure117.png]]^figure6
 
 Variations de $\frac{u_{C_m}}{e_m}$ en fonction de $x$ pour $Q = \frac{1}{2}$, $1$ et $5$
-![[figure118.png]]^figure7
+![[electronique1/attachments-electronique1/figure118.png]]^figure7
 
 Variations du déphasage $\varphi(x)$ et $u_c(t)$ par rapport à $e(t)$ en fonction de $Q = \frac{1}{2}$, $1$ et $5$
-![[figure119.png]]^figure8
+![[electronique1/attachments-electronique1/figure119.png]]^figure8
 
 L'impédance complexe $Z = R$ d'un conducteur ohmique est réelle et constante
-![[figure121.png]]^figure10
+![[electronique1/attachments-electronique1/figure121.png]]^figure10
 
 La tension $u(t)$ aux bornes d'un conducteur ohmique est en phase avec l'intensité $i(t)$ qui le traverse
-![[figure122.png]]^figure11
+![[electronique1/attachments-electronique1/figure122.png]]^figure11
 
 L'impédance complexe $\underline{Z} = jL\omega$ d'une inductance est imaginaire pure
-![[figure123.png]]^figure12
+![[electronique1/attachments-electronique1/figure123.png]]^figure12
 
 La tension $u(t)$ aux bornes d'une inductance est en avance de $\frac{\pi}{2}$ sur l'intensité $i(t)$ qui la traverse
-![[figure124.png]]^figure13
+![[electronique1/attachments-electronique1/figure124.png]]^figure13
 
 L'impédance complexe $\underline{Z} = \frac{1}{jC\omega}$ d'une capacité est imaginaire pure
-![[figure125.png]]^figure14
+![[electronique1/attachments-electronique1/figure125.png]]^figure14
 
 La tension $u(t)$ aux bornes d'une capacité est en retard de $\frac{\pi}{2}$ sur le courant $i(t)$ qui la traverse
-![[figure126.png]]^figure15
+![[electronique1/attachments-electronique1/figure126.png]]^figure15
 # Expériences
 > [!warning]
 > Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://www.romainplanques.fr/TP/TP12_circuitRLC_force.pdf), le [lien 2](http://prepa.blois.free.fr/SITEMPSI/PhyMPSI/wa_files/EnonceTP15.pdf), le [lien 3](https://drive.google.com/file/d/1aAOOKnAfIe40M_2iZbtqpViXAy_iM8HV/view).

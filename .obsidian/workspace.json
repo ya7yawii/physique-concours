@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "electronique2/04-Un exemple de système électronique. L'amplificateur opérationnel.md",
+                "file": "electronique2/03-Étude temporelle des systèmes linéaires.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04-Un exemple de système électronique. L'amplificateur opérationnel"
+              "title": "03-Étude temporelle des systèmes linéaires"
             }
           },
           {
@@ -68,7 +68,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:éléctromoteur",
+                "query": "tag:oscillateur-à-pont-de-Wien",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -198,24 +197,23 @@
   },
   "active": "ada24987132e00ac",
   "lastOpenFiles": [
-    "electronique2/attachments-electronique2/figure105.png",
-    "electronique2/attachments-electronique2/figure104.png",
+    "electronique2/03-Étude temporelle des systèmes linéaires.md",
     "electronique2/04-Un exemple de système électronique. L'amplificateur opérationnel.md",
     "electronique2/05-Systèmes linéaires en boucle fermée.md",
-    "electronique2/attachments-electronique2/figure103.png",
-    "electronique2/attachments-electronique2/figure102.png",
-    "electronique2/attachments-electronique2/figure101.png",
-    "electronique2/attachments-electronique2/figure100.png",
-    "electronique2/attachments-electronique2/figure99.png",
-    "electronique2/attachments-electronique2/figure98.png",
-    "electronique2/attachments-electronique2/figure97.png",
-    "electronique2/attachments-electronique2/figure96.png",
-    "electronique2/attachments-electronique2/figure95.png",
+    "electronique2/attachments-electronique2/figure130.png",
+    "electronique2/attachments-electronique2/figure129.png",
+    "electronique2/attachments-electronique2/figure128.png",
+    "electronique2/attachments-electronique2/figure127.png",
+    "electronique2/attachments-electronique2/figure126.png",
+    "electronique2/attachments-electronique2/figure125.png",
+    "electronique2/attachments-electronique2/figure124.png",
+    "electronique2/attachments-electronique2/figure123.png",
+    "electronique2/attachments-electronique2/figure122.png",
+    "electronique2/attachments-electronique2/figure121.png",
     "electronique2/00-Electronique2.md",
     "electronique1/10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs.md",
     "electronique1/07-L'amplificateur opérationnel. Le modèle idéal.md",
     "electronique2/02-Étude fréquentielle des systèmes linéaires.md",
-    "electronique2/03-Étude temporelle des systèmes linéaires.md",
     "electronique2/01-Systèmes linéaires.md",
     "electronique1/12-Analyse harmonique.md",
     "electronique1/09-Filtres du deuxième ordre.md",
