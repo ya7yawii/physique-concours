@@ -168,23 +168,23 @@ Parce que la tension de sortie $v_s$ d'un comparateur ne dépend que du signe de
 > Les caractéristiques de commutation d'un comparateur simple à A.O. sont médiocres. Ce type de comparateur doit être réservé pour les traitements de signaux en basse fréquence, au-delà il est nécessaire d'utiliser des circuits intégrés spécialisés.
 # Diagrammes
 Représentation symbolique d'un amplificateur opérationnel idéal
-![[figure131.png]]^figure1
+![[electronique1/attachments-electronique1/figure131.png]]^figure1
 
 Identification des broches d'un amplificateur opérationnel réel (TL081 ou μA741)
-![[figure133.png]]^figure3
+![[electronique1/attachments-electronique1/figure133.png]]^figure3
 
 Modélisation d'un amplificateur de tension
-![[figure134.png]]^figure4
+![[electronique1/attachments-electronique1/figure134.png]]^figure4
 
 Amplificateur de tension idéal
-![[figure135.png]]^figure5
+![[electronique1/attachments-electronique1/figure135.png]]^figure5
 
 Amplificateur non inverseur
-![[figure136.png]]
+![[electronique1/attachments-electronique1/figure136.png]]
 Le symbole (triangle avec ∞) sur la figure signifie que l'amplificateur opérationnel est considéré comme idéal. La tension de sortie $v_s$ étant non nulle pour une tension d'entrée $\epsilon$ nulle, le gain $H$ d'un tel amplificateur est bien infini. ^figure6
 
 Circuit d'étude d'un amplificateur non inverseur $(R_c \approx \infty)$
-![[figure137.png]]
+![[electronique1/attachments-electronique1/figure137.png]]
 ==**Les tensions d'alimentation (+15 V et –15 V) sont définies par rapport à la masse.**== Concrètement, l'alimentation stabilisée comporte trois bornes :
 - Une borne 15 V à relier à la broche 7.
 - Une borne 0 V à relier à la masse de l'oscilloscope, et donc à celle du G.B.F.
@@ -192,14 +192,14 @@ Circuit d'étude d'un amplificateur non inverseur $(R_c \approx \infty)$
 ==**Attention, il n'y a pas de bornes de masse sur un amplificateur opérationnel.**== ^figure7
 
  Principe de la mesure de l'impédance d'entrée d'un amplificateur non inverseur
- ![[figure148.png]]
+ ![[electronique1/attachments-electronique1/figure148.png]]
  ^figure18
 
 Montage à proscrire
-![[figure149.png]]^figure19
+![[electronique1/attachments-electronique1/figure149.png]]^figure19
 
 Principe de la mesure de l'impédance de sortie d'un amplificateur non inverseur
-![[figure150.png]]^figure20
+![[electronique1/attachments-electronique1/figure150.png]]^figure20
 
 Les entrées + et – ont été permutées par rapport à la [[#^figure7|figure 7]]
 ![[figure152.png]]^figure22
@@ -235,40 +235,40 @@ Montage d'étude d'un comparateur simple non inverseur
 ![[figure167.png]]^figure37
 # Graphiques
 Caractéristique d'un amplificateur opérationnel idéal. Lorsque $\epsilon = 0$, $v_s$ est imposée par le circuit extérieur
-![[figure132.png]]^figure2
+![[electronique1/attachments-electronique1/figure132.png]]^figure2
 
 Fréquence de travail $f = 500 Hz$, tension en entrée $v_e = 0,5 V$ et oscillographe en mode DC bicourbe
-![[figure138.png]]^figure8
+![[electronique1/attachments-electronique1/figure138.png]]^figure8
 
 Fréquence de travail $f = 500 Hz$, tension en entrée $v_e = 0,5 V$ et oscillographe en mode $XY$
-![[figure139.png]]^figure9
+![[electronique1/attachments-electronique1/figure139.png]]^figure9
 
 Fréquence de travail $f = 500 Hz$, tension en entrée $v_e = 2 V$ et oscillographe en mode DC bicourbe
-![[figure140.png]]^figure10
+![[electronique1/attachments-electronique1/figure140.png]]^figure10
 
 Fréquence de travail $f = 500 Hz$, tension en entrée $v_e = 2 V$ et oscillographe en mode $XY$
-![[figure141.png]]^figure11
+![[electronique1/attachments-electronique1/figure141.png]]^figure11
 
 Fréquence de travail $f = 10 kHz$, tension en entrée $v_e = 0,5 V$ et oscillographe en mode DC bicourbe
-![[figure142.png]]^figure12
+![[electronique1/attachments-electronique1/figure142.png]]^figure12
 
 Fréquence de travail $f = 10 kHz$, tension en entrée $v_e = 0,5 V$ et oscillographe en mode $XY$
-![[figure143.png]]^figure13
+![[electronique1/attachments-electronique1/figure143.png]]^figure13
 
 Fréquence de travail $f = 100 kHz$, tension en entrée $v_e = 0,5 V$ et oscillographe en mode DC bicourbe
-![[figure144.png]]^figure14
+![[electronique1/attachments-electronique1/figure144.png]]^figure14
 
 Fréquence de travail $f = 100 kHz$, tension en entrée $v_e = 0,5 V$ et oscillographe en mode $XY$
-![[figure145.png]]^figure15
+![[electronique1/attachments-electronique1/figure145.png]]^figure15
 
 Montage non inverseur. Caractéristique de transfert statique
-![[figure146.png]]^figure16
+![[electronique1/attachments-electronique1/figure146.png]]^figure16
 
 Mise en évidence de la tension de décalage en entrée d'un amplificateur non inverseur
-![[figure147.png]]^figure17
+![[electronique1/attachments-electronique1/figure147.png]]^figure17
 
 Montage non inverseur. Influence de la résistance de charge. Signal d'entrée (0,5 V, 500 Hz)
-![[figure151.png]]^figure21
+![[electronique1/attachments-electronique1/figure151.png]]^figure21
 
 Le montage de la [[#^figure22|fig. 22]] est instable. Signal d'entrée (5 V, 500 Hz), entrées + et – inversées
 ![[figure153.png]]^figure23
