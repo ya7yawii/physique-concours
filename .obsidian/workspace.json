@@ -34,6 +34,20 @@
               "icon": "lucide-file",
               "title": "06-Multiplication de signaux"
             }
+          },
+          {
+            "id": "4586b98b4e714e71",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mecanique1/08-Changements de référentiels. Mécanique non galiléenne.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "08-Changements de référentiels. Mécanique non galiléenne"
+            }
           }
         ],
         "currentTab": 1
@@ -68,7 +82,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:oscillateur-à-pont-de-Wien",
+                "query": "multline",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -197,6 +211,10 @@
   },
   "active": "ba960785081246e7",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure153.png",
+    "electronique2/attachments-electronique2/figure152.png",
+    "mecanique1/08-Changements de référentiels. Mécanique non galiléenne.md",
+    "electronique2/06-Multiplication de signaux.md",
     "electronique2/attachments-electronique2/figure151.png",
     "electronique2/attachments-electronique2/figure150.png",
     "electronique2/attachments-electronique2/figure149.png",
@@ -206,10 +224,7 @@
     "electronique2/attachments-electronique2/figure145.png",
     "electronique2/attachments-electronique2/figure144.png",
     "electronique2/attachments-electronique2/figure143.png",
-    "electronique2/attachments-electronique2/figure142.png",
-    "electronique2/attachments-electronique2/figure141.png",
     "electronique2/00-Electronique2.md",
-    "electronique2/06-Multiplication de signaux.md",
     "electronique2/05-Systèmes linéaires en boucle fermée.md",
     "electronique2/03-Étude temporelle des systèmes linéaires.md",
     "electronique2/04-Un exemple de système électronique. L'amplificateur opérationnel.md",
@@ -233,7 +248,6 @@
     "electronique1/01-Électrocinétique. Cadre et concepts de base.md",
     "mecanique1/10-Système de deux points matériels.md",
     "mecanique1/09-Caractère galiléen approché des référentiels utilisés en mécanique terrestre.md",
-    "mecanique1/08-Changements de référentiels. Mécanique non galiléenne.md",
     "mecanique1/02-Dynamique du point matériel.md",
     "mecanique1/07-Force centrale conservative. Mouvement newtonien.md",
     "electronique1/attachments-electronique1/lu80695ewtf.tmp",

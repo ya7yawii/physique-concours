@@ -97,6 +97,23 @@ crée: 01-12-2025, 20:42
 > 
 > Ce type de modulation B.L.U est utilisé, entre autre, par les radioamateurs.
 
+> [!note] Détection synchrone
+> La démodulation d'un signal consiste à reconstituer le signal modulant à partir du signal modulé.
+> - Principe de la détection synchrone : Comment récupérer le signal modulant $s(t)$ quel que soit le taux de modulation m ? Supposons que nous disposons d'un signal synchrone avec la porteuse : $p(t) = p_m\cos(2\pi f_pt)$ et du signal modulé sinusoïdalement en amplitude : $s(t) = s_0[1 + m\cos(2\pi f_st)]\cos(2\pi f_pt)$. Le produit de deux signaux s'écrit après linéarisation : 
+> $$
+> \begin{multline*}
+> p(t)s(t) = p_ms_0\\
+> \left[\frac{1}{2} + \frac{1}{2}\cos(4\pi f_pt) + \frac{m}{2}\cos(2\pi f_st) + \frac{m}{4}\cos(2\pi(2f_p + f_s)t) + \frac{m}{4}\cos(2\pi(2f_p - f_s)t)\right].
+> \end{multline*}
+> $$
+> Son spectre comprend une composante continue, une raie de fréquence $2f_p$ et les raies de fréquences $f_s$, $2f_p - f_s$, $2f_p + f_s$, d’amplitude proportionnelle à m.
+> Ce résultat peut être généralisé à un signal modulant dont le spectre est limité à des fréquences inférieures à $f_p$.
+> Nous observons une composante continue, une composante de fréquence $2f_p$ et trois spectres : l’un identique à celui du signal modulant, l'autre identique mais translaté de $2f_p$ et le troisième miroir du précédent par rapport à $2f_p$ ([[#^figure22|fig. 22]]).
+> Revenons au signal $p(t)s(t)$. Il suffit de le filtrer avec un filtre passe-bas de fréquence de coupure $f_H$, très supérieure à $f_s$ et très inférieure à ($2f_p - f_s$) pour éliminer la porteuse et les deux spectres inutiles. Un passe-haut de fréquence très inférieure à $f_s$, élimine ensuite la composante continue pour récupérer le signal modulant.
+> Un exemple de réalisation expérimentale est donné sur la [[#^figure23|figure 23]].
+> Le produit d’un signal modulé par un signal synchrone de la porteuse donne un signal proportionnel au signal modulant après un filtrage passe-bas : $(f_s \ll f_H \ll 2f_p - f_s)$ et élimination de la composante continue.
+> - Boucle à verrouillage de phase :
+
 
 # Définitions
 
@@ -115,6 +132,9 @@ La valeur moyenne de $u_2(t)$ s'obtient par filtrage passe-bas
 
 Montage réalisant le produit de deux signaux
 ![[electronique2/attachments-electronique2/figure143.png]]^figure13
+
+Exemple de réalisation d'un détecteur synchrone
+![[electronique2/attachments-electronique2/figure153.png]]^figure23
 # Graphiques
 Réponses temporelles du multiplieur utilisé avec des tensions d'entrée $U_1$ constantes
 ![[electronique2/attachments-electronique2/figure133.png]]^figure3
@@ -163,6 +183,9 @@ L'information contenue dans le spectre somme est redondante avec celle contenue 
 
 Principe de la modulation B.L.U.
 ![[electronique2/attachments-electronique2/figure151.png]]^figure21
+
+Spectre du signal produit porteuse-signal modulé en amplitude
+![[electronique2/attachments-electronique2/figure152.png]]^figure22
 # Expériences
 
 # Autres notes

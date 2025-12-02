@@ -202,7 +202,7 @@ Principe de la mesure de l'impédance de sortie d'un amplificateur non inverseur
 ![[electronique1/attachments-electronique1/figure150.png]]^figure20
 
 Les entrées + et – ont été permutées par rapport à la [[#^figure7|figure 7]]
-![[figure152.png]]^figure22
+![[electronique1/attachments-electronique1/figure152.png]]^figure22
 
 Montage suiveur
 ![[figure154.png]]^figure24
@@ -271,7 +271,7 @@ Montage non inverseur. Influence de la résistance de charge. Signal d'entrée (
 ![[electronique1/attachments-electronique1/figure151.png]]^figure21
 
 Le montage de la [[#^figure22|fig. 22]] est instable. Signal d'entrée (5 V, 500 Hz), entrées + et – inversées
-![[figure153.png]]^figure23
+![[electronique1/attachments-electronique1/figure153.png]]^figure23
 
 Montage inverseur. Caractéristique de transfert statique
 ![[figure156.png]]^figure26
