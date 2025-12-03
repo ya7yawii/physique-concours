@@ -226,10 +226,10 @@ Le générateur alimente une résistance négative : $u = R_ei$ avec $R_e < 0$
 ![[electronique1/attachments-electronique1/figure162.png]]^figure32
 
 Représentation symbolique d'un comparateur
-![[figure163.png]]^figure33
+![[electronique1/attachments-electronique1/figure163.png]]^figure33
 
 Les deux types de comparateurs simples à A.O. idéal. a. Comparateur non inverseur. b. Comparateur inverseur.
-![[figure164.png]]^figure34
+![[electronique1/attachments-electronique1/figure164.png]]^figure34
 
 Montage d'étude d'un comparateur simple non inverseur
 ![[figure167.png]]^figure37
@@ -280,10 +280,10 @@ Montage sommateur inverseur, somme d'un signal d'amplitude 1 V de fréquence 510
 ![[electronique1/attachments-electronique1/figure161.png]]^figure31
 
 Caractéristiques des deux types de comparateurs simples à A.O. idéal. a. Comparateur non inverseur. b. Comparateur inverseur.
-![[figure165.png]]^figure35
+![[electronique1/attachments-electronique1/figure165.png]]^figure35
 
 Réponse $v_s(t)$ d'un comparateur simple à A.O. idéal à une excitation sinusoïdale $v_e(t)$
-![[figure166.png]]^figure36
+![[electronique1/attachments-electronique1/figure166.png]]^figure36
 
 L'amplitude de la tension d'entrée $v_e(t)$ est insuffisante pour provoquer le basculement du comparateur
 ![[figure168.png]]^figure38
