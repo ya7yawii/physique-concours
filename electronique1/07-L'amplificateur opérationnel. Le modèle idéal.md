@@ -205,25 +205,25 @@ Les entrées + et – ont été permutées par rapport à la [[#^figure7|figure 
 ![[electronique1/attachments-electronique1/figure152.png]]^figure22
 
 Montage suiveur
-![[figure154.png]]^figure24
+![[electronique1/attachments-electronique1/figure154.png]]^figure24
 
 Amplificateur inverseur
-![[figure155.png]]^figure25
+![[electronique1/attachments-electronique1/figure155.png]]^figure25
 
 Montage d'étude de l'amplificateur inverseur
-![[figure157.png]]^figure27
+![[electronique1/attachments-electronique1/figure157.png]]^figure27
 
 Sommateur pondéré de tensions
-![[figure158.png]]^figure28
+![[electronique1/attachments-electronique1/figure158.png]]^figure28
 
 Sommateur à impédances d'entrée infinies et à impédance de sortie nulle
-![[figure159.png]]^figure29
+![[electronique1/attachments-electronique1/figure159.png]]^figure29
 
 Réalisation expérimentale d'un sommateur de tensions
-![[figure160.png]]^figure30
+![[electronique1/attachments-electronique1/figure160.png]]^figure30
 
 Le générateur alimente une résistance négative : $u = R_ei$ avec $R_e < 0$
-![[figure162.png]]^figure32
+![[electronique1/attachments-electronique1/figure162.png]]^figure32
 
 Représentation symbolique d'un comparateur
 ![[figure163.png]]^figure33
@@ -274,10 +274,10 @@ Le montage de la [[#^figure22|fig. 22]] est instable. Signal d'entrée (5 V, 500
 ![[electronique1/attachments-electronique1/figure153.png]]^figure23
 
 Montage inverseur. Caractéristique de transfert statique
-![[figure156.png]]^figure26
+![[electronique1/attachments-electronique1/figure156.png]]^figure26
 
 Montage sommateur inverseur, somme d'un signal d'amplitude 1 V de fréquence 510 Hz et d'un signal d'amplitude 1,5 V et de fréquence 500 Hz. Remarquons un phénomène de battements de fréquence 10 Hz
-![[figure161.png]]^figure31
+![[electronique1/attachments-electronique1/figure161.png]]^figure31
 
 Caractéristiques des deux types de comparateurs simples à A.O. idéal. a. Comparateur non inverseur. b. Comparateur inverseur.
 ![[figure165.png]]^figure35
