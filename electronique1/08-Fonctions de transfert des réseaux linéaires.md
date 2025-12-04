@@ -199,10 +199,10 @@ Ces deux analyses d'un même phénomène physique (la réponse du circuit) sont 
 Dans la théorie des circuits, le concept de stabilité est aussi fondamental que celui de linéarité. Nous conviendrons qu'un système est stable si sa réponse à toute excitation bornée, et quelles que soient les conditions initiales, reste bornée à tout instant.
 # Diagrammes
 Filtre (R, C)
-![[figure172.png]]^figure1
+![[electronique1/attachments-electronique1/figure172.png]]^figure1
 
 Quadripôle : $u_1$ est la tension d'entrée ; $u_2$ est la tension de sortie ; $i_1$ est le courant d'entrée ; $i_2$ est le courant de sortie
-![[figure173.png]]^figure2
+![[electronique1/attachments-electronique1/figure173.png]]^figure2
 
 Le courant $i_+$ étant nul la fonction de transfert du filtre est égale à $\frac{1}{1 + jRC\omega}$ quelque soit la valeur de $R_0$
 ![[figure179.png]]^figure8
@@ -247,16 +247,16 @@ Filtre universel d'ordre un
 ![[figure213.png]]^figure41
 # Graphiques
 Diagramme de Bode : a. courbe de réponse en gain ; b. courbe de réponse en phase
-![[figure174.png]]^figure3
+![[electronique1/attachments-electronique1/figure174.png]]^figure3
 
 Principe d'une échelle logarithmique
-![[figure175.png]]^figure4
+![[electronique1/attachments-electronique1/figure175.png]]^figure4
 
 Courbe de réponse en gain (en bleu) et diagramme asymptotique (en noir) d'un passe-bas d'ordre un
-![[figure176.png]]^figure5
+![[electronique1/attachments-electronique1/figure176.png]]^figure5
 
 Le diagramme asymptotique formé des deux asymptotes $\varphi = 0$ et $\varphi = -\frac{\pi}{2}$ est insuffisant pour décrire la rotation de phase
-![[figure177.png]]^figure6
+![[electronique1/attachments-electronique1/figure177.png]]^figure6
 
 Diagramme asymptotique de la courbe de réponse en phase d'un passe-bas d'ordre un
 ![[figure178.png]]^figure7

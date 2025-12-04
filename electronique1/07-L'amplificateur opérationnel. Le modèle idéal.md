@@ -232,7 +232,7 @@ Les deux types de comparateurs simples à A.O. idéal. a. Comparateur non invers
 ![[electronique1/attachments-electronique1/figure164.png]]^figure34
 
 Montage d'étude d'un comparateur simple non inverseur
-![[figure167.png]]^figure37
+![[electronique1/attachments-electronique1/figure167.png]]^figure37
 # Graphiques
 Caractéristique d'un amplificateur opérationnel idéal. Lorsque $\epsilon = 0$, $v_s$ est imposée par le circuit extérieur
 ![[electronique1/attachments-electronique1/figure132.png]]^figure2
@@ -286,16 +286,16 @@ Réponse $v_s(t)$ d'un comparateur simple à A.O. idéal à une excitation sinus
 ![[electronique1/attachments-electronique1/figure166.png]]^figure36
 
 L'amplitude de la tension d'entrée $v_e(t)$ est insuffisante pour provoquer le basculement du comparateur
-![[figure168.png]]^figure38
+![[electronique1/attachments-electronique1/figure168.png]]^figure38
 
 Attaqué par une tension sinusoïdale, un comparateur simple non inverseur délivre une tension en créneaux
-![[figure169.png]]^figure39
+![[electronique1/attachments-electronique1/figure169.png]]^figure39
 
 Réponse d'un comparateur simple non inverseur à une excitation sinusoïdale de fréquence 50 Hz et d'amplitude 5 V
-![[figure170.png]]^figure40
+![[electronique1/attachments-electronique1/figure170.png]]^figure40
 
 Réponse d'un comparateur simple non inverseur à une excitation sinusoïdale de fréquence 5 kHz et d'amplitude 5 V
-![[figure171.png]]^figure41
+![[electronique1/attachments-electronique1/figure171.png]]^figure41
 # Expériences
 > [!warning]
 > Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://dpnc.unige.ch/tp/elect/doc/TP4.pdf), le [lien 2](https://www.emse.fr/~dutertre/documents/7_TP_AOp_MCP6022_ismin_1A.pdf), le [lien 3](https://geossc.ma/wp-content/uploads/2021/11/TP1_AOP_AZ.pdf), le [lien 4](https://prepanouar.wordpress.com/wp-content/uploads/2020/03/montages-acc80-a.o-2.pdf), le [lien 5](http://olivier.granier.free.fr/PC-Montesquieu445072/cariboost_files/Elec3-aop-1.pdf), le [lien 6](https://fr.scribd.com/document/857262859/TP-3), le [lien 7](http://physiqueensti.free.fr/IMG/pdf/TP24.pdf), le [lien 8](https://staff.univ-batna2.dz/sites/default/files/benacer-saddok/files/tpn02_eln-app_m1_as-aii.pdf), le [lien 9](http://www.matthieurigaut.net/public/sup/tp/tp07_ao.pdf), le [lien 10](http://elearning.univ-dbkm.dz/pluginfile.php/25487/mod_resource/content/1/TP_EApp_M%201_AII_1-converti.pdf), le [lien 11](http://cdelacourphysique.chez.com/TP/AO%20en%20regime%20lineaire3.pdf), le [lien 12](http://agregation.capes.free.fr/tp/25_Aop_lineaire2006.pdf), le [lien 13](http://compilonet.free.fr/ptsi/Cours%20de%20physique/Relec8.pdf), le [lien 14](https://www.yumpu.com/fr/document/read/27983712/tp-cours-amplificateur-opacrationnel-physique-en-sup-4), le [lien 15](http://stephbill.free.fr/tp%20mpi/tp%20steph/tpn11mpinew.pdf), le [lien 16](https://lycee-champollion.fr/IMG/pdf/tp_no1_et_2_-_montages_non_inverseur-_et_suiveur.pdf).
