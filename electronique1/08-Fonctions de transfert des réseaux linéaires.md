@@ -259,7 +259,7 @@ Le diagramme asymptotique formé des deux asymptotes $\varphi = 0$ et $\varphi =
 ![[electronique1/attachments-electronique1/figure177.png]]^figure6
 
 Diagramme asymptotique de la courbe de réponse en phase d'un passe-bas d'ordre un
-![[figure178.png]]^figure7
+![[electronique1/attachments-electronique1/figure178.png]]^figure7
 
 Diagramme de Bode d'un intégrateur théorique
 ![[figure180.png]]^figure9

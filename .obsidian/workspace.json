@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -197,6 +198,7 @@
   },
   "active": "08132af2f3bde309",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure178.png",
     "electronique2/attachments-electronique2/figure177.png",
     "electronique2/attachments-electronique2/figure176.png",
     "electronique2/attachments-electronique2/figure175.png",
@@ -223,7 +225,6 @@
     "electronique2/attachments-electronique2/figure170.png",
     "electronique2/attachments-electronique2/figure169.png",
     "electronique2/attachments-electronique2/figure168.png",
-    "electronique2/attachments-electronique2/figure167.png",
     "electronique2/06-Multiplication de signaux.md",
     "electronique2/00-Electronique2.md",
     "electronique2/05-Systèmes linéaires en boucle fermée.md",

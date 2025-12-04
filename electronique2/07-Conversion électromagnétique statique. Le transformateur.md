@@ -76,6 +76,7 @@ crée: 03-12-2025, 15:56
 > ==**Nous orienterons, dans cet ouvrage, les intensités dans les deux enroulements en fonction de ce choix : ainsi, la normale aux spires est orientée dans le sens choisi pour l’orientation du circuit magnétique.**==
 > ==**Cette convention permet de définir une paire de bornes homologues du transformateur. Elle est composée de la borne du primaire et de celle du secondaire par où rentre un courant positif avec la convention d’orientation ci-dessus.**==
 > ==**Cette paire homologue est conventionnellement marquée par des joints au niveau des bornes.**==
+^par2
 
 > [!note] Le circuit ferromagnétique : Application du théorème d'Ampère et de la loi de Faraday au circuit magnétique d'un transformateur : Courant magnétisant
 > Dans le cas général d’un circuit magnétique de forme quelconque ([[#^figure11|fig. 11]]) appliquons le théorème d’Ampère sur une ligne de champ quelconque à l’intérieur du circuit ferromagnétique.
@@ -134,6 +135,38 @@ crée: 03-12-2025, 15:56
 > Cette relation n’est valable que si les intensités sont alternatives. N’oublions pas que la tension et l’intensité au secondaire sont dues à des phénomènes d’induction liés aux variations de la tension au primaire.
 
 > [!note] Recherche du transformateur parfait : Relation entre les courants : Conditions de validité
+> A quelle(s) condition(s) le courant magnétisant peut-il être négligé ?
+> D’après le théorème d’Ampère appliqué à une ligne de champ $\Gamma$ : $\displaystyle i_m = \frac{1}{N_1}\oint_{\Gamma}Hdl$.
+> Il y a donc deux façons de faire tendre $i_m$ vers 0 :
+> - augmenter $N_1$ et donc, pour m donné, $N_2$. C’est une des raisons pour lesquelles les transformateurs usuels ont des enroulements de plusieurs centaines de spires ;
+> - faire en sorte que H soit nul.
+> 
+> Nous pouvons obtenir $H = 0$ dans deux cas-limites :
+> - si le secondaire, de résistance nulle, est court-circuité, nous pouvons écrire : $u_2 = 0 = N_2\dfrac{d\Phi_c}{dt}$ soit, en régime alternatif, $\Phi_c = 0$, $B = 0$ et $H = 0$ ;
+> - si le milieu ferromagnétique est linéaire avec $\mu_r \rightarrow \infty$, alors H doit être nul pour conserver des valeurs bornées à B et $\Phi_c$.
+> 
+> ==**La relation $i_2 = -\frac{1}{m}i_1$ qui caractérise un transformateur idéal est rigoureusement vérifiée avec le modèle idéalisé d’un milieu linéaire de perméabilité relative $\mu_r$ tendant vers l'infini.**==
+> ==**Elle est en fait applicable si :**==
+> - ==**le nombre de spires des enroulements est suffisamment grand ;**==
+> - ==**le secondaire, de résistance négligeable, débite sur une charge d'impédance suffisamment faible.**==
+> 
+> ==**Ces conditions sont généralement respectées par un transformateur dans ses [[#^def1|conditions nominales d’utilisation]].**==
+> Remarque : Pour des courants donnés, les champs H et B sont d’autant moins intenses que $N_1$ et $N_2$ sont grands. Pour que la saturation du milieu ferromagnétique ne vienne pas diminuer les performances du transformateur, il faut limiter H et donc utiliser des enroulements comportant un nombre suffisant de spires.
+
+> [!note] Le transformateur parfait : Modèle du transformateur parfait
+> Le modèle du transformateur parfait ([[#^figure16|fig. 16]]) regroupe les hypothèses faites dans les paragraphes précédents : résistances nulles, circuit magnétique sans fuites et courant magnétisant négligeable.
+> Le transformateur parfait est caractérisé uniquement par son rapport de transformation m. Les relations entre tensions et intensités sont : $u_2 = mu_1$ et $i_2 = -\frac{i_1}{m}$ (attention aux signes).
+> Ces relations peuvent aussi s’écrire $u_1 = \frac{1}{m}u_2$ et $i_1 = -mi_2$.
+> Un transformateur parfait est réversible (attention, pas au sens de la thermodynamique) : les rôles des circuits primaire et secondaire peuvent être permutées. Alors le rapport de transformation devient $\frac{1}{m}$.
+> Avec le modèle du transformateur parfait, les équations reliant $u_1$, $u_2$, $i_1$ et $i_2$ sont linéaires ; le modèle est linéaire. Si le reste du circuit est composé d’éléments linéaires, les équations qui le régissent sont linéaires. Le circuit peu donc être étudié avec les techniques utilisées sur les circuits linéaires classiques. En particulier, nous utiliserons le régime sinusoïdal forcé et l’opérateur p.
+> Les équations du transformateur parfait en notation opérationnelle s’écrivent : $U_2(p) = mU_1(p)$ et $I_2(p) = -\frac{I_1(p)}{m}$ et les grandeurs efficaces vérifiant $m = \frac{U_2}{U_1} = \frac{I_1}{I_2}$.
+
+> [!note] Le transformateur parfait
+> - Puissances instantanées : La puissance instantanée électrique reçue par le transformateur (**qu’il soit parfait ou non**) est la somme de la puissance reçue au primaire $u_1i_1$ et au secondaire $u_2i_2$ : $P = u_1i_1 + u_2i_2$ (attention aux signes qui dépendent encore de la convention choisie (cf. [[#^par2|paragraphe 2]])).
+> Comme pour un transformateur parfait $u_2 = mu_1$ et $i_2 = -\frac{i_1}{m}$, cette puissance totale est nulle.
+> ==**La puissance instantanée fournie au primaire du transformateur parfait est intégralement transférée à la charge par le secondaire. Il n’y a ni stockage, ni dissipation d’énergie dans un transformateur parfait.**==
+> - Transfert d'impédance :
+
 
 
 # Diagrammes
@@ -166,6 +199,9 @@ Canalisation des lignes de champ magnétique
 
 Courants et tensions
 ![[electronique2/attachments-electronique2/figure176.png]]^figure14
+
+Représentations symboliques du transformateur parfait
+![[electronique2/attachments-electronique2/figure178.png]]^figure16
 # Graphiques
 a. Transformateur basse tension. b. Transformateur haute tension 400-225 kV à la centrale nucléaire de Civaux
 ![[electronique2/attachments-electronique2/figure165.png]]^figure3
@@ -186,3 +222,7 @@ a. Recherche des bornes homologues avec un oscilloscope. b. Les bornes p et q so
 # Autres notes
 > [!warning] Application 1 page 215
 > ![[electronique2/attachments-electronique2/figure162.png]]
+
+> [!warning] Conditions nominales d'utilisation
+> Les grandeurs nominales correspondent aux valeurs des paramètres (tension, courant, ...) dans les conditions d'utilisation optimales du transformateur, pour lesquelles il a été construit.
+^def1
