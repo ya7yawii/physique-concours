@@ -165,8 +165,38 @@ crée: 03-12-2025, 15:56
 > - Puissances instantanées : La puissance instantanée électrique reçue par le transformateur (**qu’il soit parfait ou non**) est la somme de la puissance reçue au primaire $u_1i_1$ et au secondaire $u_2i_2$ : $P = u_1i_1 + u_2i_2$ (attention aux signes qui dépendent encore de la convention choisie (cf. [[#^par2|paragraphe 2]])).
 > Comme pour un transformateur parfait $u_2 = mu_1$ et $i_2 = -\frac{i_1}{m}$, cette puissance totale est nulle.
 > ==**La puissance instantanée fournie au primaire du transformateur parfait est intégralement transférée à la charge par le secondaire. Il n’y a ni stockage, ni dissipation d’énergie dans un transformateur parfait.**==
-> - Transfert d'impédance :
+> - Transfert d'impédance : Vu du primaire, l’ensemble {transformateur + charge} est équivalent a un dipôle dont les caractéristiques dépendent de la charge et du rapport de transformation. **Remplacer l’ensemble {transformateur + charge} par le dipôle équivalent est appelé transfert des caractéristiques de la charge au primaire.** Comment déterminer les caractéristiques de la charge transférée au primaire ? La caractéristique courant-tension de la charge donne la relation entre $u_2$ et $i_2$. Les équations couplant le primaire et le secondaire permettent de déterminer la relation entre $u_1$ et $i_1$.
+> Plaçons-nous dans le cas d’un régime sinusoïdal forcé de pulsation $\omega$ et d’une charge représentée par un dipôle linéaire d’impédance $Z_c(p)$ ([[#^figure17|fig. 17]]). Les équations $U_2(p) = -Z_c(p)I_2(p)$, $U_2(p) = mU_1(p)$ et $I_1(p) = -mI_2(p)$ imposent la relation : $U_1(p) = \frac{Z_c(p)I_1(p)}{m^{2}}$.
+> ==**L'impédance vue au niveau du primaire du transformateur est $\frac{Z_c(p)}{m^{2}}$, impédance de la charge $Z_c(p)$ (branchée au secondaire) divisée par le carrée du rapport m de transformation.**==
+> L’impédance « vue » au primaire du transformateur parfait a le même argument que l’impédance de la charge. En particulier, une résistance est vue comme une résistance, un condensateur comme un condensateur et une bobine comme une bobine.
 
+> [!note] Le transformateur parfait : Transfert de la source
+> Inversement, vu du secondaire, l'ensemble {transformateur + source} est équivalent à un dipôle dont les caractéristiques dépendent de la source et du rapport de transformation.
+> **Remplacer l’ensemble {transformateur + source} par le dipôle équivalent est appelé transfert des caractéristiques de la source au secondaire.**
+> Plaçons-nous du point de vue de la charge et cherchons le dipôle équivalent au transformateur alimenté par un générateur. La relation entre la tension $u_1$ aux bornes du générateur et son courant de sortie $i_1$ fixe la relation entre $u_2$ et $i_2$.
+> Dans le cas d’un régime sinusoïdal forcé de pulsation $\omega$, modélisons la source par un générateur de Thévenin de f.e.m. $E(p)$ et d’impédance $Z_s(p)$ en notation opérationnelle ([[#^figure18|fig. 18]]).
+> Des relations $U_1(p) = E(p) - Z_s(p)I_1(p)$ définissant le générateur et l’ensemble des relations $U_2(p) = mU_1(p)$ et $I_2(p) = -\frac{I_1(p)}{m}$ caractéristiques du transformateur, nous déduisons : $U_2(p) = mE(p) + m^{2}Z_s(p)I_2(p)$.
+> La source vue à travers le transformateur parfait est équivalente à un générateur de Thévenin de f.e.m. $mE(p)$ et d’impédance $m^{2}Z_s(p)$.
+> ==**La source transférée au secondaire a pour f.e.m. $mE (p)$, et pour impédance $m^{2}Z_s(p)$ :**==
+> - ==**la f.e.m. E(p) de la source (branchée au primaire) est multipliée par le rapport m de transformation ;**==
+> - ==**l'impédance $Z_s(p)$ de cette source est multipliée par le carré du rapport m de transformation.**==
+
+> [!note] Modélisation du transformateur réel
+> Le modèle du transformateur ne rend pas parfaitement compte des caractéristiques du transformateur réel.
+> Nous ne modéliserons que les corrections dues aux fuites magnétiques et à la résistance non nulle des bobinages.
+> En effet, ils sont bien représentés dans un modèle linéaire du transformateur alors que les défauts liés au circuit ferromagnétique sont non linéaires.
+> - Inductances de fuite : Une faible partie de champ magnétique créé par l’enroulement primaire n’est pas parfaitement canalisée par le circuit magnétique ([[#^figure19|fig. 19]]). Ces lignes de champ sont principalement situées à l’extérieur du noyau dans un milieu assimilable au vide. Leur contribution au flux magnétique à travers le primaire est donc bien représentée par une fonction linéaire de l’intensité $L_{f\,1}i_1$, où $L_{f\,1}$ est appelée **inductance de fuite du primaire**.
+> Nous écrivons alors : $\Phi_1 = N_1\Phi_c + L_{f\,1}i_1$.
+> De même, nous pouvons définir une **inductance de fuite $L_{f\,2}$ au niveau du secondaire** et écrire : $\Phi_2 = N_2\Phi_c + L_{f\,2}i_2$.
+> Nous remarquons que le f.e.m. d'inductance au primaire est : $e_1 = -\dfrac{d\Phi_1}{dt} = -N_1\dfrac{d\Phi_c}{dt} - L_{f\,1}\dfrac{di_1}{dt}$ somme de la f.e.m. au primaire du transformateur parfait et de la f.e.m. aux bornes d'une inductance $L_{f\,1}$.
+> ==**Pour modéliser les fuites de champ, il suffit de placer en série une inductance $L_{f\,1}$ (inductance de fuite du primaire) avec le primaire du transformateur parfait et une inductance $L_{f\,2}$ (inductance de fuite du secondaire) avec le secondaire du même transformateur parfait.**==
+> - Résistance des bobinages : La résistance des bobinages provoque les chutes de tension $R_1i_1$ au primaire et $R_2i_2$ au secondaire.
+> La tension aux bornes du primaire s'écrit : $u_1 = N_1\dfrac{d\Phi_c}{dt} + L_{f\,1}\dfrac{di_1}{dt} + R_1i_1$.
+> La résistance des bobinages primaire et secondaire peut être modélisée par une résistance placée en série avec le primaire et le secondaire du transformateur parfait.
+> - Modèles du transformateur réel : A partir du modèle ([[#^figure20|fig. 20]]) mettant en évidence les inductances de fuite et les résistances des bobinages, nous pouvons déterminer deux modèles équivalents en utilisant le transfert d’impédances.
+> Nous obtenons donc les figures [[#^figure21|21]] et [[#^figure22|22]] correspondant à un transfert de toutes les impédances au primaire ou au secondaire du transformateur.
+> Cette modélisation est souvent très insuffisante. Elle peut être améliorée en ajoutant un dipôle en parallèle sur le primaire du transformateur ([[#^figure23|fig. 23]]).
+> Ce dipôle prend en compte les caractéristiques du circuit magnétique. Il ne peut malheureusement pas être modélisé par un élément linéaire. L’étude d’un circuit électrique comprenant des transformateurs nécessite souvent des moyens de calcul lourds.
 
 
 # Diagrammes
@@ -202,6 +232,27 @@ Courants et tensions
 
 Représentations symboliques du transformateur parfait
 ![[electronique2/attachments-electronique2/figure178.png]]^figure16
+
+Transfert d'impédance
+![[electronique2/attachments-electronique2/figure179.png]]^figure17
+
+Transfert de la source
+![[electronique2/attachments-electronique2/figure180.png]]^figure18
+
+Ligne de champ de fuite
+![[electronique2/attachments-electronique2/figure181.png]]^figure19
+
+Modèle du transformateur réel
+![[electronique2/attachments-electronique2/figure182.png]]^figure20
+
+Modèle du transformateur réel avec inductances de fuite et résistances des bobinages ramenées au primaire
+![[electronique2/attachments-electronique2/figure183.png]]^figure21
+
+Modèle du transformateur réel avec inductances de fuite et résistances des bobinages ramenées au secondaire
+![[electronique2/attachments-electronique2/figure184.png]]^figure22
+
+Modèle non linéaire d'un transformateur réel
+![[electronique2/attachments-electronique2/figure185.png]]^figure23
 # Graphiques
 a. Transformateur basse tension. b. Transformateur haute tension 400-225 kV à la centrale nucléaire de Civaux
 ![[electronique2/attachments-electronique2/figure165.png]]^figure3

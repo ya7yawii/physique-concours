@@ -205,16 +205,16 @@ Quadripôle : $u_1$ est la tension d'entrée ; $u_2$ est la tension de sortie ; 
 ![[electronique1/attachments-electronique1/figure173.png]]^figure2
 
 Le courant $i_+$ étant nul la fonction de transfert du filtre est égale à $\frac{1}{1 + jRC\omega}$ quelque soit la valeur de $R_0$
-![[figure179.png]]^figure8
+![[electronique1/attachments-electronique1/figure179.png]]^figure8
 
  Intégrateurs à A.O. : montages théoriques
- ![[figure181.png]]^figure10
+ ![[electronique1/attachments-electronique1/figure181.png]]^figure10
 
 Intégrateur à A.O. : montage amélioré
-![[figure182.png]]^figure11
+![[electronique1/attachments-electronique1/figure182.png]]^figure11
 
 Le suiveur impose au filtre (R, C) une impédance de charge infinie quelle que soit $R_u$
-![[figure184.png]]^figure13
+![[electronique1/attachments-electronique1/figure184.png]]^figure13
 
 Dérivateur à A.O. : montage théorique
 ![[figure192.png]]^figure21
@@ -262,13 +262,13 @@ Diagramme asymptotique de la courbe de réponse en phase d'un passe-bas d'ordre 
 ![[electronique1/attachments-electronique1/figure178.png]]^figure7
 
 Diagramme de Bode d'un intégrateur théorique
-![[figure180.png]]^figure9
+![[electronique1/attachments-electronique1/figure180.png]]^figure9
 
 Diagramme de Bode d'un filtre passe-bas d'ordre 1
-![[figure183.png]]^figure12
+![[electronique1/attachments-electronique1/figure183.png]]^figure12
 
 Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-1} s$
-![[figure185.png]]^figure14
+![[electronique1/attachments-electronique1/figure185.png]]^figure14
 
 Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-2} s$
 ![[figure186.png]]^figure15
