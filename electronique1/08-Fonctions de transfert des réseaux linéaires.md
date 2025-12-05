@@ -217,10 +217,10 @@ Le suiveur impose au filtre (R, C) une impédance de charge infinie quelle que s
 ![[electronique1/attachments-electronique1/figure184.png]]^figure13
 
 Dérivateur à A.O. : montage théorique
-![[figure192.png]]^figure21
+![[electronique1/attachments-electronique1/figure192.png]]^figure21
 
 Dérivateur à A.O. : montage amélioré
-![[figure195.png]]^figure24
+![[electronique1/attachments-electronique1/figure195.png]]^figure24
 
 Montage expérimental d'étude du dérivateur à A.O
 ![[figure198.png]]^figure26
@@ -271,28 +271,28 @@ Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de péri
 ![[electronique1/attachments-electronique1/figure185.png]]^figure14
 
 Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-2} s$
-![[figure186.png]]^figure15
+![[electronique1/attachments-electronique1/figure186.png]]^figure15
 
 Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-3} s$
-![[figure187.png]]^figure16
+![[electronique1/attachments-electronique1/figure187.png]]^figure16
 
 Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-4} s$
-![[figure188.png]]^figure17
+![[electronique1/attachments-electronique1/figure188.png]]^figure17
 
 Réponse du passe-bas de $RC = 10^{-4} s$ à une excitation en créneau de période $T = 10^{-5} s$
-![[figure189.png]]^figure18
+![[electronique1/attachments-electronique1/figure189.png]]^figure18
 
 Harmoniques d'un signal créneau d'amplitude unité
-![[figure190.png]]^figure19
+![[electronique1/attachments-electronique1/figure190.png]]^figure19
 
 Diagramme de Bode d'un dérivateur théorique
-![[figure191.png]]^figure20
+![[electronique1/attachments-electronique1/figure191.png]]^figure20
 
 En basse fréquence, le montage n'a pas le caractère dérivateur attendu
-![[figure193.png]]^figure22
+![[electronique1/attachments-electronique1/figure193.png]]^figure22
 
 Mise en évidence, dans le spectre de fréquence, d'une résonance de $v_s(t)$ au voisinage de 13 kHz
-![[figure194.png]]^figure23
+![[electronique1/attachments-electronique1/figure194.png]]^figure23
 
 Réponse du dérivateur amélioré à un signal triangulaire
 ![[figure196.png]]^figure25a

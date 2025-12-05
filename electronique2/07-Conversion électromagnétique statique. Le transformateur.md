@@ -198,6 +198,34 @@ crée: 03-12-2025, 15:56
 > Cette modélisation est souvent très insuffisante. Elle peut être améliorée en ajoutant un dipôle en parallèle sur le primaire du transformateur ([[#^figure23|fig. 23]]).
 > Ce dipôle prend en compte les caractéristiques du circuit magnétique. Il ne peut malheureusement pas être modélisé par un élément linéaire. L’étude d’un circuit électrique comprenant des transformateurs nécessite souvent des moyens de calcul lourds.
 
+> [!note] Étude expérimentale de l'hystérésis dans un transformateur : Observation du courant et de la tension du primaire
+> Utilisant le montage du [[#^figure24|figure 24]] : observons simultanément l'intensité et la tension du primaire d’un transformateur à l'oscilloscope en l’absence de courant au secondaire (secondaire à vide).
+> Pour des raisons de sécurité, il est nécessaire d’isoler le circuit étudié du secteur : **Il ne faut jamais relier un des fils du secteur 220 V à la masse d’un oscilloscope !**
+> C’est pour ces raisons, que nous utilisons le montage du [[#^figure24|figure 24]], où le transformateur d’isolement isole le montage du secteur.
+> Nous remarquons sur la [[#^figure25|figure 25]], qu’à une tension sinusoïdale correspond une intensité alternative non sinusoïdale et non symétrique.
+> La caractéristique courant-tension du montage est donc non linéaire.
+
+> [!note] Étude expérimentale de l'hystérésis dans un transformateur : Tracé du cycle d'hystérésis
+> Comment pouvons-nous obtenir à partir de cette caractéristique les champs B et H dans la carcasse et tracer le cycle d’hystérésis B(H) ?
+> Le modèle du transformateur torique permet de préciser les relations entre $H$, $B$, $u_2$ et $i_1$. Si $S$ est la section du noyau et $l$ sa longueur moyenne, $N_1$ et $N_2$ le nombre de spires au primaire et au secondaire ([[#^figure26|fig. 26]]), alors : $e_1 = -\dfrac{d\Phi_1}{dt} = -N_1S\dfrac{dB}{dt}$ ; $e_2 = -\dfrac{d\Phi_2}{dt} = -N_2S\dfrac{dB}{dt}$ ; $H = \frac{N_1i_1 + N_2i_2}{l} = \frac{N_1i_m}{l}$.
+> Quand le secondaire est en circuit ouvert, ces expressions se simplifient, car $i_2 = 0$ : $u_2 = -e_2 = \dfrac{d\Phi_2}{dt} = N_2S\dfrac{dB}{dt}$ et $H = \frac{N_1i_1}{l}$.
+> Nous admettons que ces résultats restent valables dans le cas d'un transformateur quelconque.
+> Étudions le montage du [[#^figure27|figure 27]].
+> Le transformateur à secondaire variable (ou un transformateur d’isolement suivi d’un autotransformateur ; figures [[#^figure28|28]] et [[#^figure29|29]]) permet d’isoler le circuit étudié du secteur et permet de choisir différentes amplitudes pour la tension au primaire. La tension aux bornes de la résistance $R_0$ est proportionnelle à l’intensité parcourant le primaire, donc à $H(t)$.
+> Au niveau du secondaire, le pont diviseur $RC$ joue le rôle de pseudo-intégrateur. En effet, l’impédance d’entrée de l'oscilloscope de l'ordre du mégaohm peut être négligée par rapport à R et la constante de temps $RC = 0,22 s$ est grande devant la période (20 ms) du signal à 50 Hz.
+> La tension aux bornes de C est : $U_C(t) \approx \frac{1}{RC}\int u_2 dt = \frac{N_2S}{RC}B(t)$, car la constante d'intégration est nulle (u_C et B(t) sont de valeur moyenne nulle). La tension aux bornes de $C$ est donc proportionnelle à $B(t)$.
+> Il est possible de remplacer ce circuit "RC" par un intégrateur à amplificateur opérationnel, dont l'intérêt est son impédance de sortie quasiment nulle ([[#^figure30|fig. 30]]).
+> Pour quelles raisons, l'utilisation du circuit secondaire pour mesurer B est-elle préférable à celle du primaire ?
+> Nous avons choisi le circuit secondaire et non le primaire du transformateur pour mesurer le champ magnétique, car un courant circule dans le primaire (de l'ordre de l’ampère) et quasiment aucun dans le secondaire.
+> - Ce courant du primaire provoque une chute de tension à cause de la résistance du bobinage.
+> - Les bobinages du transformateur présentent une inductance de fuite. Le flux magnétique à travers le primaire diffère donc de $N_1SB$. En revanche, au secondaire, l’intensité est nulle et donc le flux de fuite l'est aussi.
+> 
+> Pour différentes valeurs de la tension d’alimentation du transformateur, nous obtenons une série de cycles symétriques par rapport à l’origine ([[#^figure31|fig. 31]]).
+> Sauf sur les maquettes spécialement conçues pour le tracé des cycles d’hystérésis, le constructeur ne donne pas le nombre de spires des enroulements d’un transformateur. Les paramètres $S$ et $l$ sont compliqués à mesurer dans le cas d'un transformateur non démontable.
+> Il est donc difficile de trouver les constantes de proportionnalité entre $u_C$ et $B$ et entre $R_0i_0$ et $H$.
+> Pour le montage utilisé sur la [[#^figure31|figure 31]], les coefficients sont environ : $H = 100 A . m^{-1}$ pour $R_0i_1 = 0,5 V$ et $B = 1 T$ pour $u_C = 1 V$.
+> Un transformateur démontable pour lequel ces paramètres sont aisément mesurables présente l’inconvénient de ne pas avoir un circuit magnétique continu ([[#^figure32|fig. 32]]). Cette discontinuité modifie de façon notable le cycle obtenu par la méthode utilisée ici ([[#^figure33|fig. 33]]).
+
 
 # Diagrammes
 Adaptation de la sortie à la charge
@@ -253,6 +281,27 @@ Modèle du transformateur réel avec inductances de fuite et résistances des bo
 
 Modèle non linéaire d'un transformateur réel
 ![[electronique2/attachments-electronique2/figure185.png]]^figure23
+
+Pour visualiser sur un oscilloscope l'intensité et la tension au primaire, il faut relier un transformateur d'isolement
+![[electronique2/attachments-electronique2/figure186.png]]^figure24
+
+Transformateur torique
+![[electronique2/attachments-electronique2/figure188.png]]^figure26
+
+Tracé du cycle d'hystérésis à l'oscilloscope
+![[electronique2/attachments-electronique2/figure189.png]]^figure27
+
+Un transformateur d'isolement et un autotransformateur peuvent remplacer le transformateur à secondaire variable
+![[electronique2/attachments-electronique2/figure190.png]]^figure28
+
+Un autotransformateur : a. Réalisation ; b. Schéma. Le circuit primaire correspond à la totalité des spires entre 1 et 2, et le secondaire aux spires comprises entre le curseur 3 et la borne 2
+![[electronique2/attachments-electronique2/figure191.png]]^figure29
+
+Un intégrateur à A.O. peut remplacer le circuit (R, C). Il présente l'avantage d'une impédance de sortie faible. R' doit être choisie en fonction de la tension au secondaire du transformateur
+![[electronique2/attachments-electronique2/figure192.png]]^figure30
+
+Entrefer dans un transformateur démontable. Les tôles du circuit ne sont pas parfaitement jointives
+![[electronique2/attachments-electronique2/figure194.png]]^figure32
 # Graphiques
 a. Transformateur basse tension. b. Transformateur haute tension 400-225 kV à la centrale nucléaire de Civaux
 ![[electronique2/attachments-electronique2/figure165.png]]^figure3
@@ -268,6 +317,15 @@ Cycle d'hystérésis. Le flux commun est choisi sinusoïdal, ce qui est le cas s
 
 a. Recherche des bornes homologues avec un oscilloscope. b. Les bornes p et q sont homologues. c. Les bornes p et q ne sont pas homologues
 ![[electronique2/attachments-electronique2/figure177.png]]^figure15
+
+Intensité et tension au primaire d'un transformateur
+![[electronique2/attachments-electronique2/figure187.png]]^figure25
+
+Cycles d'hystérésis. $u_C = 1 V$ correspond environ à $B = 1 T$ et $R_0i_1 = 0,5 V$ à $H = 100 A . m^{-1}$
+![[electronique2/attachments-electronique2/figure193.png]]^figure31
+
+Effets d'une modification de l'entrefer. a. Cycle sans entrefer. b. Cycle avec un entrefer de 0,1 mm (soit une feuille de papier)
+![[electronique2/attachments-electronique2/figure195.png]]^figure33
 # Expériences
 
 # Autres notes
