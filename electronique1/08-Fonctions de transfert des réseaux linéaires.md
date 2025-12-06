@@ -223,22 +223,22 @@ Dérivateur à A.O. : montage amélioré
 ![[electronique1/attachments-electronique1/figure195.png]]^figure24
 
 Montage expérimental d'étude du dérivateur à A.O
-![[figure198.png]]^figure26
+![[electronique1/attachments-electronique1/figure198.png]]^figure26
 
 Passe-haut (R, C) d'ordre un
-![[figure199.png]]^figure27
+![[electronique1/attachments-electronique1/figure199.png]]^figure27
 
 Le suiveur impose au filtre passe-haut (R, C) une impédance de charge infinie quelle que soit $R_u$
-![[figure202.png]]^figure30
+![[electronique1/attachments-electronique1/figure202.png]]^figure30
 
 Deux filtres d'ordre un en cascade
-![[figure206.png]]^figure34
+![[electronique1/attachments-electronique1/figure206.png]]^figure34
 
 Principe de la simulation d'une résistance par commutation d'une capacité
-![[figure208.png]]^figure36
+![[electronique1/attachments-electronique1/figure208.png]]^figure36
 
 Représentation d'une résistance à capacité commutée : $u(t) = Ri(t)$
-![[figure211.png]]^figure39
+![[electronique1/attachments-electronique1/figure211.png]]^figure39
 
 Intégrateur inverseur à capacité commutée
 ![[figure212.png]]^figure40
@@ -295,34 +295,34 @@ Mise en évidence, dans le spectre de fréquence, d'une résonance de $v_s(t)$ a
 ![[electronique1/attachments-electronique1/figure194.png]]^figure23
 
 Réponse du dérivateur amélioré à un signal triangulaire
-![[figure196.png]]^figure25a
+![[electronique1/attachments-electronique1/figure196.png]]^figure25a
 
 Détail de la réponse précédente
-![[figure197.png]]^figure25b
+![[electronique1/attachments-electronique1/figure197.png]]^figure25b
 
 Courbe de réponse en gain et diagramme asymptotique d'un passe-haut d'ordre un
-![[figure200.png]]^figure28
+![[electronique1/attachments-electronique1/figure200.png]]^figure28
 
 Courbe de réponse en phase et diagramme asymptotique d'un passe-haut d'ordre un
-![[figure201.png]]^figure29
+![[electronique1/attachments-electronique1/figure201.png]]^figure29
 
 Réponse du passe-haut de $RC = 10^{-4} s$ à une excitation triangulaire de période $T = 10^{-1} s$
-![[figure203.png]]^figure31
+![[electronique1/attachments-electronique1/figure203.png]]^figure31
 
 Réponse du passe-haut de $RC = 10^{-4} s$ à une excitation triangulaire de période $T = 10^{-5} s$
-![[figure204.png]]^figure32
+![[electronique1/attachments-electronique1/figure204.png]]^figure32
 
 Diagramme de Bode du passe-haut (R, C) d'ordre un
-![[figure205.png]]^figure33
+![[electronique1/attachments-electronique1/figure205.png]]^figure33
 
 Diagrammes asymptotiques pour le gain et pour la phase
-![[figure207.png]]^figure35
+![[electronique1/attachments-electronique1/figure207.png]]^figure35
 
 Chronogramme des états du commutateur (K)
-![[figure209.png]]^figure37
+![[electronique1/attachments-electronique1/figure209.png]]^figure37
 
 Variation de $u(t)$ en régime stationnaire établi
-![[figure210.png]]^figure38
+![[electronique1/attachments-electronique1/figure210.png]]^figure38
 # Expériences
 > [!warning]
 > Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://telum.umc.edu.dz/pluginfile.php/235216/mod_resource/content/3/TP_01_papier.pdf), le [lien 2](https://ressources.unisciel.fr/sillages/physique/tp_electrocinetique_1a_pcsi/res/TP9.PDF), le [lien 3](https://www.studocu.com/row/document/universite-de-ain-temouchent-belhadj-bouchaib/comprehension-et-production-orale/tp-n-05-filtres-passifs-it-very-nice/93811369), le [lien 4](http://psi2.nantes.free.fr/TP/ENONCES-ET-CORRIGES-TP/TP-ELECTRONIQUE/ENONCE-TP-ELECTRONIQUE/TP-3-ENONCE.pdf), le [lien 5](https://www.lycee-champollion.fr/IMG/pdf/tp_phys_3_filtres_premier_ordre.pdf), le [lien 6](http://mpstar.lamartin.free.fr/fichiers/matieres-1128-1447320208.pdf), le [lien 7](https://www.f-legrand.fr/scidoc/srcdoc/sciphys/tpelectro/filtreactif/filtreactif-pdf.pdf), le [lien 8](https://ft.univ-tlemcen.dz/assets/uploads/pdf/departement/gee/Manuel-TP-ELN-L2-ST-S4-Electricite.pdf), le [lien 9](https://www.yumpu.com/fr/document/read/6395365/tp-electronique), le [lien 10](https://users.polytech.unice.fr/~pmasson/Enseignement/TP%20Elec%20analogique%20CIP1%202012-2013.pdf).

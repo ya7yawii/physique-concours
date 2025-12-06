@@ -197,6 +197,7 @@ crée: 03-12-2025, 15:56
 > Nous obtenons donc les figures [[#^figure21|21]] et [[#^figure22|22]] correspondant à un transfert de toutes les impédances au primaire ou au secondaire du transformateur.
 > Cette modélisation est souvent très insuffisante. Elle peut être améliorée en ajoutant un dipôle en parallèle sur le primaire du transformateur ([[#^figure23|fig. 23]]).
 > Ce dipôle prend en compte les caractéristiques du circuit magnétique. Il ne peut malheureusement pas être modélisé par un élément linéaire. L’étude d’un circuit électrique comprenant des transformateurs nécessite souvent des moyens de calcul lourds.
+^par4
 
 > [!note] Étude expérimentale de l'hystérésis dans un transformateur : Observation du courant et de la tension du primaire
 > Utilisant le montage du [[#^figure24|figure 24]] : observons simultanément l'intensité et la tension du primaire d’un transformateur à l'oscilloscope en l’absence de courant au secondaire (secondaire à vide).
@@ -225,6 +226,124 @@ crée: 03-12-2025, 15:56
 > Il est donc difficile de trouver les constantes de proportionnalité entre $u_C$ et $B$ et entre $R_0i_0$ et $H$.
 > Pour le montage utilisé sur la [[#^figure31|figure 31]], les coefficients sont environ : $H = 100 A . m^{-1}$ pour $R_0i_1 = 0,5 V$ et $B = 1 T$ pour $u_C = 1 V$.
 > Un transformateur démontable pour lequel ces paramètres sont aisément mesurables présente l’inconvénient de ne pas avoir un circuit magnétique continu ([[#^figure32|fig. 32]]). Cette discontinuité modifie de façon notable le cycle obtenu par la méthode utilisée ici ([[#^figure33|fig. 33]]).
+^par3
+
+> [!note] Étude expérimentale de l'hystérésis dans un transformateur : Interprétation des résultats
+> Interprétons les courbes de [[#^figure31|figure 31]]. Les valeurs dépendent bien entendu du matériau ferromagnétique utilisé.
+> - Caractère ferromagnétique : Un matériau ferromagnétique se caractérise par la grande valeur de son aimantation. La relation $\overrightarrow{B} = \mu_0(\overrightarrow{H} + \overrightarrow{M})$ devient, avec $M \gg H$ : $\overrightarrow{B} = \mu_0\overrightarrow{M}$.
+> D'après la [[#^figure31|figure 31]], pour $B_{max} = 1T$, l'excitation maximale vaut environ $300 A . m^{-1}$ ce qui donne : $B \approx 2500\mu_0H$.
+> L'hypothèse est donc confirmée. Si, pour un calcul approché, nous considérons le matériau comme linéaire, nous choisirons $\mu_r \approx 2500$.
+> - Aimantation à saturation : Utilisons une tension d’alimentation nettement supérieure à la tension nominale du transformateur. Nous obtenons un cycle semblable à celui de [[#^figure34|figure 34]].
+> Le cycle d’hystérésis $B(H)$ présente alors deux domaines (a) et (c) où M a atteint sa valeur maximale (aimantation à saturation) $M_{sat}$.
+> Pour le domaine (a) : $B = \mu_0(H + M_{sat}) \approx \mu_0M_{sat} = B_{sat}$.
+> D’après les mesures, nous trouvons $B_{sat} \approx 1,8 T$ (pour le transformateur étudié).
+> Remarques :
+> 	- Pour cet essai en dehors des conditions normales d’utilisation, il faut veiller à la valeur maximale du courant dans le primaire.
+> 	- Quand l’aimantation atteint sa valeur de saturation, le noyau ferromagnétique canalise moins efficacement les lignes de champ. Le champ magnétique n’est plus uniforme et le protocole expérimental de relevé du cycle d’hystérésis ne donne plus de résultat précis.
+> - Champ rémanent et excitation coercitive : La portion de cycle correspondant à la diminution de H à partir de sa valeur maximale (domaine (b) de [[#^figure34|figure 34]]) possède deux points remarquables :
+> 	- le point $A_r$, pour lequel $H = 0$ et $B = B_r$ (champ rémanent) ;
+> 	- le point $A_c$, pour lequel $B = 0$ et $H = -H_c$ ($H_c$ : excitation coercitive).
+> 
+> 	D’après la [[#^figure31|figure 31]], nous mesurons pour des valeurs suffisamment grandes de $H_{max}$ : $B_r$ de l’ordre de 1 T et $H_c$ de l’ordre de $150 A . m^{-1}$. Ces valeurs dépendent, bien évidemment, du matériau ferromagnétique utilisé.
+> 	Remarque : On appelle souvent $H_c$ « champ coercitif ». Il existe en effet une autre convention, utilisée par les électrotechniciens, pour nommer les grandeurs magnétiques : $\overrightarrow{B}$ est désigné par « induction magnétique » et $\overrightarrow{H}$ par « champ magnétique ».
+
+> [!note] Dissipation d'énergie dans la carcasse
+> - Courants de Foucault : Le matériau ferromagnétique constituant la carcasse du transformateur est en général un bon conducteur ohmique (alliage à base de fer). Comme la carcasse est placée dans un champ magnétique variable, l'équation de Maxwell-Faraday, $rot\overrightarrow{E} = - \dfrac{\partial\overrightarrow{B}}{\partial t}$, impose un champ électrique non nul.
+> Ce champ est la source de courants électriques d’autant plus intenses que la conductivité de la carcasse est grande.
+> ==**Les courants créés par induction dans la masse d’un conducteur sont appelés courants de Foucault. Ils sont la source d’une dissipation d'énergie par effet Joule.**==
+> Les pertes par courant de Foucault sont donc proportionnelles :
+> 	- la conductivité $\gamma$ du milieu ;
+> 	- au carré de la fréquence $f$ ;
+> 	- au carré de la section $S$ des tôles ;
+> 	- au carré de la valeur maximale du champ magnétique $B_0$.
+> 
+> 	Pour minimiser ces pertes dans une masse métallique importante, celle-ci doit être constituée de tôles peu épaisses parallèles au champ magnétique, isolées les unes des autres ([[#^figure35|fig. 35]]).
+> - Pertes dues à l'hystérésis : Reprenons le modèle torique du [[#^par2|paragraphe précédent]], le secondaire étant ouvert. Supposons que les pertes par courant de Foucault et par effet Joule dans le primaire sont négligeables.
+> La puissance $\mathcal{P}_H = u_1i_1$ dissipée dans le transformateur est alors uniquement due aux propriétés ferromagnétiques de la carcasse.
+> D'après l'étude du [[#^par3|paragraphe précédent]], $H = \frac{N_1i_1}{l}$ et $u_1 = -e_1 = \dfrac{d\Phi_1}{dt} = N_1S\dfrac{dB}{dt}$ (en négligeant la résistance ohmique du primaire).
+> Donc $\mathcal{P}_H = SlH\dfrac{dB}{dt}$. Comme le produit $Sl$ représente le volume V de la carcasse magnétique, la puissance $p_H$ dissipée par unité de volume de carcasse vaut $p_H = H\dfrac{dB}{dt}$.
+> Si nous calculons l'énergie $e_H$ dissipée par unité de volume sur une période T : $\displaystyle e_H = \int_{t}^{t+T}H\dfrac{dB}{dt}dt = \oint_{cycle}HdB$. Cette intégrale représente l’aire du cycle d’hystérésis.
+> ==**La densité volumique d’énergie dissipée par période, à cause des propriétés magnétiques de la carcasse, est égale à l’aire du cycle d’hystérésis et la puissance volumique moyenne est donnée par : $\displaystyle \langle p_H \rangle = f\oint_{cycle}HdB$, où $f$ est la fréquence.**==
+> - Pertes fer : Les pertes dues aux courants de Foucault et à l’hystérésis de la carcasse ne dépendent que du champ magnétique à l’intérieur de la carcasse. Si la résistance et l’inductance de fuite du primaire sont faibles, la relation entre ce champ et la différence de potentiel aux bornes du primaire est indépendante du courant qui y circule. En effet, B et $u_1$ sont liés par : $u_1 \approx -e_1 = \dfrac{d\Phi_1}{dt} = N_1S\dfrac{dB}{dt}$.
+> ==**Les pertes fer sont, par définition, la somme des puissances dissipées dans un transformateur à cause des courants de Foucault et de l’hystérésis de la carcasse.**==
+> ==**Pertes fer = pertes par courant de Foucault + pertes par hystérésis.**==
+> ==**En première approximation, ces pertes fer ne dépendent que de la tension d’alimentation du primaire du transformateur (fréquence et amplitude), et non du courant.**==
+
+> [!note] Dissipation d'énergie dans la carcasse : choix du matériau
+> Le matériau choisi pour constituer la carcasse doit être tel que :
+> - les pertes par hystérésis soient minimales : le cycle à hystérésis doit être le plus étroit possible. Il faut choisir un milieu doux ;
+> - les pertes par courant de Foucault soient faibles : la carcasse doit être soit feuilletée (ceci n’est efficace qu’à basse fréquence), soit réalisée dans un matériau isolant ;
+> - l'aimantation à saturation soit grande : le champ magnétique dans le transformateur doit être inférieur à sa valeur à saturation pour un bon fonctionnement. La relation $u_1 \approx -e_1 = \dfrac{d\Phi_1}{dt} = N_1S\dfrac{dB}{dt}$ montre que : $U_{max} = N_1S\omega B_{max}$. Donc plus $B_{max}$ est important, plus le produit $N_1S$ peut être faible. L'encombrement et le prix du transformateur sont alors diminués.
+> 
+> Dans les transformateurs basse fréquence, les courants de Foucault sont limités par le feuilletage de la carcasse. Celle-ci est constituée de tôles en alliages à base de fer, soit :
+> - au silicium, isolées par une oxydation thermique de leur surface ;
+> - au silicium à grains orientés : les cristaux constituant la tôle sont orientés par laminage à froid. L’isolation est due à une couche de silicate de magnésium obtenue par un recuit des tôles ;
+> - au nickel, très sensibles aux chocs.
+> 
+> Dans les transformateurs haute fréquence (transformateurs d’impulsion, transformateurs d’alimentation à découpage, transformateur pour signaux radioélectriques de fréquence allant jusqu’à 1 GHz), le feuilletage de la carcasse est insuffisant. Il est nécessaire d’utiliser des matériaux ferromagnétiques isolants : les ferrites.
+> ==**Les carcasses de transformateurs doivent être réalisées avec des matériaux doux, pour limiter les pertes par hystérésis :**==
+> - ==**pour une utilisation à basse-fréquence avec des tôles de matériaux doux isolées (tôles au silicium et réduire ainsi les pertes fer) ;**==
+> - ==**à haute fréquence avec des ferrites douces.**==
+> 
+> Remarques :
+> - Une ferrite est une céramique de formule $MeFe_2O$, où Me est une combinaison de métaux bivalents le plus couramment manganèse et zinc. Elle est obtenue par mélange de poudres d’oxydes et de carbonates de ces métaux broyés, puis mises en forme à l'aide d’un liant organique et ensuite frittées à 1200 °C environ.
+> - Par rapport aux tôles silicium, les ferrites ont comme avantage leur caractère isolant, comme inconvénients leur aimantation faible, leur perméabilité relative faible, leur fragilité (matériau dur et cassant) et leur prix de revient élevé.
+
+> [!note] Caractéristiques d'un transformateur
+> Les mesures proposées ici utilisent un wattmètre, des ampèremètres et voltmètres efficaces. Le transformateur utilisé sera de préférence de puissance importante (300 VA par exemple) pour effectuer des mesures fiables en particulier lors de l'étude à vide.
+> - Principe et utilisation du wattmètre : Un wattmètre mesure la puissance moyenne consommée par un dipôle par la mesure simultanée de l’intensité qui le traverse et de la tension à ses bornes ([[#^figure38|fig. 38]] et [[#^figure39|39]]).
+> Ces grandeurs peuvent être non sinusoïdales et même non alternatives.
+> En régime sinusoïdal, les mesures de la puissance $\mathcal{P}$, de la tension efficace $U$ et de l’intensité efficace $I$ permettent de calculer le facteur de puissance ou $\cos\varphi$ ($\varphi$ déphasage entre intensité et tension) par la relation $P = UI\cos\varphi$. Le wattmètre comprend deux circuits électriques : un circuit intensité et un circuit tension ([[#^figure37|fig. 37]]).
+> L'utilisation d’un wattmètre électronique ([[#^figure37|fig. 37]]) est simple et pratiquement sans risque pour l’appareil. Il suffit de relier les deux fils provenant de la source et les deux fils allant vers la charge aux bornes prévues à cet effet. Le wattmètre affiche alors la puissance moyenne (ou puissance active) consommée par la charge.
+> L'utilisation des anciens modèles analogiques ([[#^figure36|fig. 36]]) est plus complexe et non exempte de risques pour l'appareil. Il faut, en effet, choisir séparément les calibres tension et intensité (et non un hypothétique calibre puissance). Un éventuel dépassement de calibre (en intensité ou en tension) ne se manifeste pas nécessairement par un blocage de l’aiguille à droite de cadran ; l’utilisateur qui ne prend pas la précaution de contrôler l’intensité et la tension risque de ne pas détecter ce dépassement et de laisser l'appareil en surintensité ou en surtension. La [[#^figure39|figure 39]] donne les deux schémas de branchement pour la mesure de la puissance consommée par un dipôle.
+> 	- Dans le montage amont ([[#^figure39|fig. 39a]]), le wattmètre mesure la somme des tensions aux bornes du dipôle et du circuit intensité. L’erreur introduite est faible dans les cas où la tension est grande et l’intensité faible. Dans les autres cas, on préférera le montage aval.
+> 	- Dans le montage aval ([[#^figure39|fig. 39b]]), le wattmètre mesure la somme des intensités dans le dipôle et dans le circuit tension. L’erreur introduite est en général assez faible.
+
+> [!note] Caractéristiques d'un transformateur : Étude à vide, pertes fer
+> Utilisons le montage de [[#^figure40|figure 40]], sur lequel nous mesurons les tensions $U_{1V}$, $U_{2V}$, l'intensité $I_{1V}$ et la puissance $\mathcal{P}_{1V}$.
+> Remarques :
+> - L’intensité dans le primaire n’étant pas sinusoïdale, seule la valeur donnée par un ampèremètre efficace vrai est significative (RMS). En revanche, le principe du wattmètre lui permet de fonctionner avec des grandeurs non sinusoïdales.
+> - La puissance mesurée par le wattmètre est la somme des pertes par effet Joule dans le primaire du transformateur et des pertes fer. Nous pouvons : négliger les pertes par effet Joule car le courant à vide est faible, et assimiler l'indication du wattmètre aux pertes fer.
+> 
+> Commentons les résultats obtenus lors des mesures ([[#^figure41|fig. 41]]).
+> - Tension au secondaire : La courbe $U_{2V}$ en fonction de $U_{1V}$ est une droite, dont la pente est $m_V$, rapport de transformation à vide. Ceci correspond à la relation entre les tensions pour le transformateur parfait. Cette valeur permet de calculer le rapport du nombre de spires (rarement donné par le constructeur) : $m_V = \frac{N_2}{N_1}$.
+> ==**A vide, un transformateur réel est parfait pour les tensions.**==
+> - Intensité au primaire : La courbe donnant $I_{1V}$ en fonction de $U_{1V}$ n'est pas une droite : le transformateur ne peut pas être assimilé à un dipôle linéaire.
+> - Puissance : La courbe de puissance en fonction du carré de la tension efficace $U_{1V}$ au primaire (ou $U_{2V}$ au secondaire) est proche d'une droite ([[#^figure42|fig. 42]]). Or, la valeur efficace $U_{2V}$ est proportionnelle à la valeur maximale $B_{max}$ du champ magnétique.
+> ==**Les pertes fer sont sensiblement proportionnelles au carré du champ magnétique maximal $(B_{max})$ dans la carcasse ou au carré de la valeur efficace de la tension d'alimentation.**==
+> Remarque : Une étude plus approfondie montrerait que les pertes par courant de Foucault $P_F$ sont en $B_{max}^{2}$ alors que celles par hystérésis $P_H$ en $B_{max}^{\eta}$ où $\eta$ est le coefficient de Steinmetz dont la valeur comprise entre 1,6 (matériaux massifs) et 2 (tôles) dépend de la nature de la carcasse : $\mathcal{P}_F = K_Ff^{2}B_{max}^{2}$ et $\mathcal{P}_H = K_HfB_{max}^{\eta}$.
+
+> [!note] Caractéristiques d'un transformateur : Étude en court-circuit, pertes cuivre
+> Lorsque le secondaire d’un transformateur est court-circuité, la tension appliquée au primaire doit être très inférieure à sa tension nominale d’utilisation. Dans le cas contraire, l’échauffement à l’intérieur des bobinages risque de les détruire.
+> Sur le montage de [[#^figure43|figure 43]], nous alimentons donc le transformateur sous une tension inférieure à 10 % de sa valeur nominale.
+> Nous mesurons simultanément les intensités au primaire $I_{1\,cc}$, au secondaire $I_{2\,cc}$ la tension au primaire $U_{1\,cc}$ et la puissance consommée $\mathcal{P}_{1\,cc}$.
+> L'impédance de l’ampèremètre au secondaire doit être suffisamment faible pour que le fonctionnement du transformateur soit très proche de celui en court-circuit. Le wattmètre est branché en montage aval, car l’intensité mesurée est importante.
+> Commentons les résultats obtenus lors des mesures ([[#^figure44|fig. 44]]).
+> - Intensité au secondaire : La courbe donnant $I_{1\,cc}$ en fonction de $I_{2\,cc}$ est une droite. Le rapport $\frac{I_{1\,cc}}{I_{2\,cc}}$ est sensiblement constant et égal au rapport de transformation à vide $m_v$. Ceci correspond à la relation sur les intensités du transformateur parfait.
+> ==**En court-circuit, un transformateur réel est parfait pour les courants.**==
+> - Tension au primaire : La courbe $U_{1\,cc}$ en fonction de $I_{2\,cc}$ est une droite. La relation entre courant de court-circuit et tension de court-circuit est linéaire : dans ces conditions, le transformateur peut être assimilé à un dipôle linéaire.
+> - Puissance : La courbe donnant la puissance $\mathcal{P}_{1\,cc}$ en fonction du carré de $I_{2\,cc}$ est une droite ([[#^figure45|fig. 45]]).
+> ==**La puissance dissipée par effet Joule dans les enroulements est appelée perte cuivre. Elle est proportionnelle au carré du courant secondaire (ou primaire en court-circuit).**==
+> 
+> Comment pouvons-nous interpréter ces résultats ?
+> La tension au secondaire est nulle, soit $u_2 = 0 = -e_2 + R_2i_2$. La chute de tension $R_2i_2$ est petite, donc la f.e.m. d’induction et le flux magnétique dans le transformateur sont faibles et le courant magnétisant est négligeable devant l’intensité au primaire.
+> Le transformateur peut être considéré comme linéaire et le modèle donné au [[#^par4|paragraphe ci-dessus]] peut être utilisé ([[#^figure46|fig. 46]]).
+
+> [!note] Caractéristiques d'un transformateur : Caractéristique en charge
+> Une étude en charge complète nécessiterait de choisir une charge à caractère inductif ou capacitif ou purement résistif.
+> Nous nous contenterons d’une charge résistive constituée d’un rhéostat. Dans ce cas, la puissance fournie à la charge est simplement $\mathcal{P}_2 = U_2I_2$.
+> Un voltmètre et un ampèremètre placés au secondaire suffisent donc.
+> Nous utilisons le montage de [[#^figure47|figure 47]] permettant de mesurer $I_1$, $U_1$, $\mathcal{P}_1$, $U_2$ et $I_2$ pour différentes valeurs de la résistance de la charge et nous réalisons le tableau suivant ([[#^figure48|fig. 48]]).
+> m représente le rapport des tensions entre secondaire et primaire, x le rapport des intensités, $\eta$ le rendement et $\Delta U_2$ la chute de tension au secondaire (différence entre $U_{2V}$ à vide et $U_2$ en charge).
+> Analysons les différentes courbes obtenues ([[#^figure49|fig. 49]]) pour ce transformateur de puissance nominale 300 VA.
+> - A la puissance nominale, la chute de tension $\Delta U_2$ ne dépasse pas 5 % de la tension secondaire à vide.
+> Le rapport de transformation m diminue faiblement quand l’intensité au secondaire augmente, ceci est dû à l’impédance non nulle des enroulements : $m = \frac{U_2}{U_1} < m_V = \frac{U_{2V}}{U_1} \approx \frac{N_2}{N_1}$.
+> - Si le transformateur était idéal, le rapport des intensités serait égal à l'inverse du rapport des tensions à vide $I_1 = m_VI_2$.
+> Plus l’intensité au secondaire augmente, plus $I_1$ se rapproche de la valeur $m_VI_2$. L'écart entre l’intensité réelle instantanée au primaire et sa valeur théorique correspond au courant magnétisant.
+> Comme il est quasiment constant, l’écart entre la valeur réelle et la valeur théorique décroît quand $I_2$ augmente.
+> Le rapport des intensités diminue pour tendre vers $m_V$ : $x = \frac{I_1}{I_2} > m_V \approx \frac{N_2}{N_1}$.
+> ==**Le comportement du transformateur en charge est proche de celui du transformateur parfait au voisinage de son utilisation nominale.**==
+> - Le rendement du transformateur augmente avec $I_2$ jusqu’au voisinage de la puissance nominale, au-delà il diminuerait. Il est proche de l’unité sauf pour des puissances faibles.
 
 
 # Diagrammes
@@ -302,6 +421,24 @@ Un intégrateur à A.O. peut remplacer le circuit (R, C). Il présente l'avantag
 
 Entrefer dans un transformateur démontable. Les tôles du circuit ne sont pas parfaitement jointives
 ![[electronique2/attachments-electronique2/figure194.png]]^figure32
+
+Représentation symbolique du wattmètre
+![[electronique2/attachments-electronique2/figure198.png]]^figure38
+
+Montages amont et aval. a. Montage amont ou longue dérivation. Le circuit tension est en amont du circuit intensité. b. Montage aval ou courte dérivation. Le circuit tension est en aval du circuit intensité
+![[electronique2/attachments-electronique2/figure199.png]]^figure39
+
+Étude à vide. L'ampèremètre $A_1$ mesure $I_{1V}$, le voltmètre $V_1$ mesure $U_{1V}$, le voltmètre $V_2$ mesure $U_{2V}$ ; le wattmètre mesure $\mathcal{P}_{1V}$
+![[electronique2/attachments-electronique2/figure202.png]]^figure40
+
+Étude en court-circuit. L'ampèremètre $A_1$ mesure $I_{1\,cc}$, l'ampèremètre $A_1$ mesure $I_{1\,cc}$, $A_2$ mesure $I_{2\,cc}$ ; le wattmètre mesure $\mathcal{P}_{1\,cc}$
+![[electronique2/attachments-electronique2/figure205.png]]^figure43
+
+Modèle linéaire du transformateur avec inductances de fuite et résistances des bobinages ramenées au secondaire
+![[electronique2/attachments-electronique2/figure208.png]]^figure46
+
+Étude en charge
+![[electronique2/attachments-electronique2/figure209.png]]^figure47
 # Graphiques
 a. Transformateur basse tension. b. Transformateur haute tension 400-225 kV à la centrale nucléaire de Civaux
 ![[electronique2/attachments-electronique2/figure165.png]]^figure3
@@ -326,6 +463,36 @@ Cycles d'hystérésis. $u_C = 1 V$ correspond environ à $B = 1 T$ et $R_0i_1 = 
 
 Effets d'une modification de l'entrefer. a. Cycle sans entrefer. b. Cycle avec un entrefer de 0,1 mm (soit une feuille de papier)
 ![[electronique2/attachments-electronique2/figure195.png]]^figure33
+
+Saturation. Ici $H_C \approx 150 A . m^{-1}$ ; $B_r \approx 1 T$ et $B_{sat} \approx 1,8 T$. Nous avons toujours : $u_C = 1 V$ qui correspond à environ $B = 1 T$ et $R_0i_1 = 0,5 V$ à $H = 100 A . m^{-1}$
+![[electronique2/attachments-electronique2/figure196.png]]^figure34
+
+Enchevêtrement des tôles de la carcasse. L'enchevêtrement des tôles limite les courants de Foucault sans créer d'entrefer important. L'isolant entre les tôles fait que la section effective du matériau magnétique est différente de la section de la carcasse. Le rapport de ces deux termes est le **foisonnement** du circuit magnétique (de l'ordre de 0,9)
+![[electronique2/attachments-electronique2/figure197.png]]^figure35
+
+Wattmètre analogique
+![[electronique2/attachments-electronique2/figure201.png]]^figure36
+
+Wattmètre électronique
+![[electronique2/attachments-electronique2/figure200.png]]^figure37
+
+Exemples de mesures
+![[electronique2/attachments-electronique2/figure203.png]]^figure41
+
+Puissance à vide en fonction de $U_{1}^{2}$
+![[electronique2/attachments-electronique2/figure204.png]]^figure42
+
+Exemple de mesures
+![[electronique2/attachments-electronique2/figure206.png]]^figure44
+
+Puissance en court-circuit en fonction de $I_{2\,cc}^{2}$
+![[electronique2/attachments-electronique2/figure207.png]]^figure45
+
+Mesure et exploitation de ces mesures
+![[electronique2/attachments-electronique2/figure210.png]]^figure48
+
+Exemple de courbe en fonction de l'intensité au secondaire. a. Tension au secondaire. b. Intensité au primaire. c. Rapports de transformateur : $m = \frac{U_2}{U_1}$ et $x = \frac{I_1}{I_2}$. d. Rendement
+![[electronique2/attachments-electronique2/figure211.png]]^figure49
 # Expériences
 
 # Autres notes
