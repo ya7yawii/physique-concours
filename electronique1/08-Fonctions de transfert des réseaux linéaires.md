@@ -241,7 +241,7 @@ Représentation d'une résistance à capacité commutée : $u(t) = Ri(t)$
 ![[electronique1/attachments-electronique1/figure211.png]]^figure39
 
 Intégrateur inverseur à capacité commutée
-![[figure212.png]]^figure40
+![[electronique1/attachments-electronique1/figure212.png]]^figure40
 
 Filtre universel d'ordre un
 ![[figure213.png]]^figure41
