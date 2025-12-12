@@ -187,10 +187,10 @@ Tracé asymptotique de la courbe de gain
 ![[electronique1/attachments-electronique1/figure215.png]]^figure2
 
 Diagramme asymptotique de la réponse en gain d'un filtre passe-bas d'ordre deux : pente -40 dB/décade
-![[figure217.png]]^figure4
+![[electronique1/attachments-electronique1/figure217.png]]^figure4
 
 Courbes de réponse en gain d'un filtre passe-bas d'ordre deux $\left(Q = 5, 1, \frac{\sqrt{2}}{2}, \frac{1}{2}\right)$
-![[figure218.png]]^figure5
+![[electronique1/attachments-electronique1/figure218.png]]^figure5
 
 Courbes de réponse en phase d'un filtre passe-bas d'ordre deux $\left(Q = 5, 1, \frac{\sqrt{2}}{2}, \frac{1}{2}\right)$
 ![[figure219.png]]^figure6
