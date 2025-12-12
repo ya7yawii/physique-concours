@@ -244,7 +244,7 @@ Intégrateur inverseur à capacité commutée
 ![[electronique1/attachments-electronique1/figure212.png]]^figure40
 
 Filtre universel d'ordre un
-![[figure213.png]]^figure41
+![[electronique1/attachments-electronique1/figure213.png]]^figure41
 # Graphiques
 Diagramme de Bode : a. courbe de réponse en gain ; b. courbe de réponse en phase
 ![[electronique1/attachments-electronique1/figure174.png]]^figure3

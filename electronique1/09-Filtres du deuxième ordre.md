@@ -154,10 +154,10 @@ Un filtre passe-bande est sélectif s'il ne transmet effectivement que des tensi
 > ==**Un filtre sélectif permet d'extraire d'un signal les composantes sinusoïdales de fréquences voisines de sa fréquence de résonance $f_0$.**==
 # Diagrammes
 Deux filtres d'ordre un en cascade
-![[figure214.png]]^figure1
+![[electronique1/attachments-electronique1/figure214.png]]^figure1
 
 Filtre (R, L, C) passe-bas d'ordre deux
-![[figure216.png]]^figure3
+![[electronique1/attachments-electronique1/figure216.png]]^figure3
 
 Filtre (R, L, C) passe-haut d'ordre deux
 ![[figure222.png]]^figure9
@@ -184,7 +184,7 @@ Montage expérimental. $r' = (k - 1)r$ et $r = 10 k\Omega$
 ![[figure237.png]]^figure23
 # Graphiques
 Tracé asymptotique de la courbe de gain
-![[figure215.png]]^figure2
+![[electronique1/attachments-electronique1/figure215.png]]^figure2
 
 Diagramme asymptotique de la réponse en gain d'un filtre passe-bas d'ordre deux : pente -40 dB/décade
 ![[figure217.png]]^figure4
