@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -197,6 +198,9 @@
   },
   "active": "ecc73816dcc9fef7",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure231.png",
+    "electronique2/attachments-electronique2/figure230.png",
+    "electronique2/attachments-electronique2/figure229.png",
     "electronique2/attachments-electronique2/figure228.png",
     "electronique2/attachments-electronique2/figure227.png",
     "electronique2/attachments-electronique2/figure226.png",
@@ -209,9 +213,6 @@
     "electronique2/attachments-electronique2/figure223.png",
     "electronique2/attachments-electronique2/figure222.png",
     "electronique2/attachments-electronique2/figure221.png",
-    "electronique2/attachments-electronique2/figure220.png",
-    "electronique2/attachments-electronique2/figure219.png",
-    "electronique2/attachments-electronique2/figure218.png",
     "electronique2/06-Multiplication de signaux.md",
     "mecanique2/07-Les travaux des actions sur un système – Énergie potentielle.md",
     "electronique2/01-Systèmes linéaires.md",

@@ -166,10 +166,10 @@ Filtre (R, L, C) passe-bande d'ordre deux
 ![[electronique1/attachments-electronique1/figure225.png]]^figure12
 
 Oscillateur à pont de Wien
-![[figure230.png]]^figure17
+![[electronique1/attachments-electronique1/figure230.png]]^figure17
 
 Pont de Wien
-![[figure231.png]]^figure18
+![[electronique1/attachments-electronique1/figure231.png]]^figure18
 
 Filtre passe-bande de Sallen et Key
 ![[figure233.png]]^figure20
@@ -217,7 +217,7 @@ Courbe de réponse en phase d'un passe-bande d'ordre deux
 ![[electronique1/attachments-electronique1/figure228.png]]^figure15
 
 Réponse d'un filtre passe-bande du deuxième ordre à un signal triangulaire de fréquence $\frac{f_0}{20}$ d'amplitude 1 V : a. pour un facteur de qualité de 0,5 ; b. pour un facteur de qualité de 10
-![[figure229.png]]^figure16
+![[electronique1/attachments-electronique1/figure229.png]]^figure16
 
 Régimes libres décrits par $s''(t) + \frac{\omega_0}{Q}s'(t) + \omega_{0}^{2}s(t) = 0$
 ![[figure232.png]]^figure19
