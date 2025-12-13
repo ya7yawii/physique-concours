@@ -160,10 +160,10 @@ Filtre (R, L, C) passe-bas d'ordre deux
 ![[electronique1/attachments-electronique1/figure216.png]]^figure3
 
 Filtre (R, L, C) passe-haut d'ordre deux
-![[figure222.png]]^figure9
+![[electronique1/attachments-electronique1/figure222.png]]^figure9
 
 Filtre (R, L, C) passe-bande d'ordre deux
-![[figure225.png]]^figure12
+![[electronique1/attachments-electronique1/figure225.png]]^figure12
 
 Oscillateur à pont de Wien
 ![[figure230.png]]^figure17
@@ -193,28 +193,28 @@ Courbes de réponse en gain d'un filtre passe-bas d'ordre deux $\left(Q = 5, 1, 
 ![[electronique1/attachments-electronique1/figure218.png]]^figure5
 
 Courbes de réponse en phase d'un filtre passe-bas d'ordre deux $\left(Q = 5, 1, \frac{\sqrt{2}}{2}, \frac{1}{2}\right)$
-![[figure219.png]]^figure6
+![[electronique1/attachments-electronique1/figure219.png]]^figure6
 
 Diagramme asymptotique de la réponse en phase d'un passe-bas d'ordre deux
-![[figure220.png]]^figure7
+![[electronique1/attachments-electronique1/figure220.png]]^figure7
 
 La rotation de phase est d'autant plus rapide que $Q$ est grand (ou $\sigma$ petit)
-![[figure221.png]]^figure8
+![[electronique1/attachments-electronique1/figure221.png]]^figure8
 
 Diagrammes asymptotiques de gain a. et de phase b. d'un passe-haut d'ordre deux
-![[figure223.png]]^figure10
+![[electronique1/attachments-electronique1/figure223.png]]^figure10
 
 Diagramme de Bode d'un passe-haut d'ordre deux
-![[figure224.png]]^figure11
+![[electronique1/attachments-electronique1/figure224.png]]^figure11
 
 Diagrammes asymptotiques de gain a. et de phase b. d'un passe-bande d'ordre deux
-![[figure226.png]]^figure13
+![[electronique1/attachments-electronique1/figure226.png]]^figure13
 
 Courbe de réponse en gain d'un passe-bande d'ordre deux
-![[figure227.png]]^figure14
+![[electronique1/attachments-electronique1/figure227.png]]^figure14
 
 Courbe de réponse en phase d'un passe-bande d'ordre deux
-![[figure228.png]]^figure15
+![[electronique1/attachments-electronique1/figure228.png]]^figure15
 
 Réponse d'un filtre passe-bande du deuxième ordre à un signal triangulaire de fréquence $\frac{f_0}{20}$ d'amplitude 1 V : a. pour un facteur de qualité de 0,5 ; b. pour un facteur de qualité de 10
 ![[figure229.png]]^figure16
