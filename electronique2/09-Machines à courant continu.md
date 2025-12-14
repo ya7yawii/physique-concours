@@ -129,6 +129,33 @@ Ces transformations s’accompagnent inévitablement de pertes sous forme de cha
 > Sur la [[#^figure16|figure 16]] nous avons mis en évidence le passage du courant en cas de fonctionnement « moteur ». Étudions ce qui se passe au cours d’une rotation de l’induit. Nous remarquons qu’avec ce bobinage, le moment des forces de Laplace est toujours moteur ; les variations de ce moment seront d’autant plus atténuées que le nombre N de conducteurs actifs est grand.
 > Remarque : Le bobinage proposé n’est qu’un exemple ; chaque constructeur garde secrètement sa propre méthode de bobinage.
 
+> [!note] Les machines réelles : Notions sur les pertes
+> - Les pertes électriques : Elles se produisent par effet Joule dans les circuits électriques de l’inducteur et de l’induit ainsi qu’au niveau des contacts collecteur-balais.
+> L’échauffement qui en résulte est réduit par ventilation forcée. Dans ces conditions, la résistance des circuits n’augmente que de 15 % à 30 %.
+> - Les pertes fer : Le rotor est en rotation dans le champ magnétique intense de l’inducteur. Le champ magnétique en un point de celui-ci varie au cours du temps à la fréquence de rotation du moteur.
+> Le moteur présente donc des pertes semblables à celles dans la carcasse d’un transformateur, dues aux pertes par hystérésis et par courants de Foucault.
+> On réduit les pertes par hystérésis en utilisant des matériaux à cycle d’hystérésis étroit et celles par courants de Foucault en utilisant des matériaux de forte résistivité (tôles de silicium, ...), feuilletés ([[#^figure2|fig. 2a]]). (cf. H-Prépa, Électromagnétisme, $2^{e}$ année, chapitres 7 et 8).
+> - Les pertes de commutation : Lors de la commutation d’une spire, le courant qui la traverse subit une brusque variation.
+> Une f.e.m. d’induction apparaît dans la spire et provoque une étincelle entre le balai et la lame du collecteur ([[#^figure2|fig. 2b]]) qu’il vient de quitter. Cette étincelle détruit les contacts et dissipe de l’énergie.
+> Ce phénomène est atténué à l’aide de dispositifs de commutation auxiliaire.
+> - Les pertes mécaniques : Elles sont principalement dues au contact des balais sur le collecteur (sensiblement proportionnelles à la vitesse de rotation) et à la liaison rotor-bâti. Le rendement d’une machine réelle à courant continu est de l’ordre de 80 % à 95 %, ce qui est excellent comparativement aux rendements des machines thermiques (de l'ordre de 30 % à 40 % pour une centrale thermique).
+
+> [!note] Moteur à excitation indépendante : Généralités
+> Ce type de moteur nécessite deux alimentations indépendantes ($u_e$, $i_e$) et $(u, i)$ ([[#^figure17|fig. 17]]), Cet inconvénient est compensé par la possibilité de choisir le sens de rotation du moteur en inversant simplement le sens des branchements d’une de ses deux alimentations afin d’inverser l'un des deux courants $i_e$ ou $i$.
+> Pour les autres moteurs (série ou parallèle), l’inversion du sens de rotation nécessite de modifier le sens des connexions entre inducteur et induit ([[#^figure18|fig. 18]]).
+
+> [!note] Moteur à excitation indépendante : Équations d'un moteur à flux constant
+> Le flux inducteur $\Phi$ ne dépend que du courant dans l'inducteur, Pour travailler à flux constant, il suffit de fixer l’intensité $I_e$ dans l’inducteur. Soit $L$ et $R$ respectivement l’inductance et la résistance de l’induit du moteur ([[#^figure19|fig. 19]]).
+> ==**À flux constant, lorsque l’induit est alimenté sous la tension $u(t)$, le courant d’induit $i(t)$ est donné par l’équation électrique : $u(t) = L\dfrac{di(t)}{dt} + Ri(t) + \Phi_0\omega(t)$.**==
+> Notons par $J$ le moment d’inertie du rotor et de la charge mécanique et par $\Gamma_r$ le moment résistant opposé par les frottements et la charge mécanique. Nous considérerons ici que $\Gamma_r$ est une fonction de la seule variable $\omega$ notée $\Gamma_r(\omega)$.
+> ==**La vitesse du rotor est donnée par l'équation mécanique : $J\dfrac{d\omega(t)}{dt} = \Phi_0i(t) - \Gamma_r(\omega)$.**==
+> Éliminons $i(t)$ entre les deux équations précédentes. De l’équation mécanique, il vient : $i(t) = \frac{1}{\Phi_0}\left[J\dfrac{d\omega}{dt} + \Gamma_r(\omega)\right]$, ce qui, porté dans l'équation électrique, donne, après multiplication par $\Phi_0$, l'équation différentielle du moteur : $LJ\dfrac{d^{2}\omega(t)}{dt^{2}} + \left[RJ + L\dfrac{d\Gamma_r(\omega)}{d\omega}\right]\dfrac{d\omega}{dt} + \Phi_{0}^{2}\omega + R\Gamma_r(\omega) = \Phi_0u(t)$.
+> ==**Un moteur à excitation indépendante et à flux constant est un système d'ordre 2.**==
+> Ce système n'est linéaire que si le moment du couple résistant est une fonction affine de la vitesse : $\dfrac{d\Gamma_r(\omega)}{d\omega} = K_r$.
+> Lorsque les phénomènes d'induction propres au circuit d'induit sont négligeables, il est pertinent de négliger l'inductance du circuit d'induit $(L \approx 0)$.
+> L'équation du moteur devient alors : $RJ\dfrac{d\omega}{dt} + \Phi_{0}^{2}\omega + R\Gamma_r(\omega) = \Phi_0u(t)$.
+> ==**Le moteur à excitation indépendante et à flux constant se comporte souvent comme un système linéaire d'ordre 1.**==
+
 
 # Diagrammes
 Conversions électromécaniques réalisées par une machine à courant continu
@@ -171,6 +198,15 @@ Un conducteur actif sur deux est relié aux lames du collecteur
 ![[electronique2/attachments-electronique2/figure240.png]]^figure15
 
 ![[electronique2/attachments-electronique2/figure241.png]]^figure16
+
+Pour inverser le sens de rotation d'un moteur à excitation indépendante, il suffit d'inverser le sens d'une de ses deux alimentations
+![[electronique2/attachments-electronique2/figure242.png]]^figure17
+
+Pour inverser le sens de rotation d'un moteur série, il faut modifier le sens des connexions entre inducteur et induit
+![[electronique2/attachments-electronique2/figure243.png]]^figure18
+
+Schéma équivalent et conventions d'orientation d'un moteur à courant continu vu entre les bornes de l'induit : $u(t) = L\dfrac{di(t)}{dt} + Ri(t) + \Phi_0\omega(t)$
+![[electronique2/attachments-electronique2/figure244.png]]^figure19
 # Graphiques
 ![[electronique2/attachments-electronique2/figure227.png]]
 Moteur à courant continu (moteur 6 volts d’essuie-glace de 2 CV Citroën)

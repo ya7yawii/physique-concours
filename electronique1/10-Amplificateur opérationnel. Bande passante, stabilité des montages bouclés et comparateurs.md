@@ -132,7 +132,7 @@ crée: 17-11-2025, 20:23
 > - On n'observe que la partie de la caractéristique utilisée durant le fonctionnement du comparateur ([[#^figure21|fig. 21]]).
 # Diagrammes
 Amplificateur non inverseur. Un oscilloscope bicourbe mesure simultanément $u_e(t)$ et $u_s(t)$
-![[figure242.png]]^figure1
+![[electronique1/attachments-electronique1/figure242.png]]^figure1
 
 Amplificateur non inverseur
 ![[figure245.png]]^figure4
@@ -165,10 +165,10 @@ Générateur de fonctions avec contrôle de la fréquence et du rapport cyclique
 ![[figure266.png]]^figure26
 # Graphiques
 Diagramme de Bode obtenu pour $R_1 = 1 k\Omega$ et $R_2$ variant de $1 k\Omega$ à $100 k\Omega$
-![[figure243.png]]^figure2
+![[electronique1/attachments-electronique1/figure243.png]]^figure2
 
 Déphasage $\varphi$ de $v_s$ par rapport à $v_e$. Phase mesurée pour $R_1 = 1 k\Omega$ et $R_2$ variant de $1 k\Omega$ à $100 k\Omega$
-![[figure244.png]]^figure3
+![[electronique1/attachments-electronique1/figure244.png]]^figure3
 
 Caractéristique d'un comparateur non inverseur à hystérésis
 ![[figure247.png]]^figure7
