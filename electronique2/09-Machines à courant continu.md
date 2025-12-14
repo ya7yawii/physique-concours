@@ -59,6 +59,75 @@ Ces transformations s’accompagnent inévitablement de pertes sous forme de cha
 > Que cette machine soit utilisée en génératrice ou en moteur, un conducteur actif (de longueur $h$, parallèle aux génératrices du cylindre) se déplace dans cet entrefer en coupant des lignes de champ magnétique, d’où :
 > - il est le siège d’une force électromotrice d’induction (qu’il soit ou non parcouru par un courant) ;
 > - il est soumis à une force (magnétique) de Laplace s’il est parcouru par un courant.
+> 
+> Calculs :
+> - Calcul de la f.e.m. d'induction pour un conducteur actif : Les conducteurs actifs sont des fils parallèles à l’axe $(Oz)$ du rotor et de longueur $h$. Ils se déplacent avec une vitesse $\overrightarrow{v} = \omega R\overrightarrow{e}_{\theta}$ en coupant les lignes de champ magnétique.
+> Orientons, dans le sens de $\overrightarrow{e}_{z}$, les conducteurs actifs situés à gauche de la ligne neutre ($A'B'$ dans la [[#^figure7|figure 7]]), et dans le sens inverse, ceux qui sont situés à droite de la ligne neutre ($AB$ dans la [[#^figure7|figure 7]]).
+> Notons $B(\theta) = -\overrightarrow{B} . \overrightarrow{e}_{r}$ le champ magnétique au niveau d'un conducteur actif. D'après nos conventions, $B(\theta) = +B_0$ à gauche de la ligne neutre et $B(\theta) = -B_0$ à droite.
+> Chaque conducteur actif est le siège d'un champ électromoteur $\overrightarrow{E_m}$ de la forme : $\overrightarrow{E_m} = \overrightarrow{v} \wedge \overrightarrow{B} = \omega RB(\theta)\overrightarrow{e}_{z}$.
+> La f.e.m. d'induction est donc :
+> 	- $\displaystyle e_a = \int_{A'}^{B'}\overrightarrow{E_m} . d\overrightarrow{L} = \omega RhB_0$ à gauche de la ligne neutre ;
+> 	- $\displaystyle e_a = \int_{A}^{B}\overrightarrow{E_m} . d\overrightarrow{L} = \omega RhB_0$ à droite de la ligne neutre.
+> 
+> 	==**Avec nos hypothèses et nos conventions d'orientation, la f.e.m. d'induction a la même valeur $e_a = \omega RhB_0$ pour tous les conducteurs actifs.**==
+> - Calcul de la force de Laplace sur un conducteur actif : Les conducteurs actifs, orientés comme précédemment, sont parcourus par le même courant $I$.
+> La force de Laplace appliquée à un conducteur actif est ([[#^figure8|fig. 8]]) :
+> 	- $\displaystyle \overrightarrow{F} = I\int_{A'}^{B'}d\overrightarrow{L} \wedge \overrightarrow{B} = IB_0\int_{A'}^{B'}\overrightarrow{e}_{z} \wedge (-\overrightarrow{e}_{r})dz = -IB_0h\overrightarrow{e}_{\theta}$ à gauche de la ligne neutre ;
+> 	- $\displaystyle \overrightarrow{F} = I\int_{A}^{B}d\overrightarrow{L} \wedge \overrightarrow{B} = IB_0\int_{A}^{B}(-\overrightarrow{e}_{z}) \wedge \overrightarrow{e}_{r}dz = -IB_0h\overrightarrow{e}_{\theta}$ à droite de la ligne neutre ;
+> 	
+> 	==**Avec nos hypothèses et nos conventions d'orientation, la force de Laplace a la même expression $\overrightarrow{F} = -IB_0h\overrightarrow{e}_{\theta}$ pour tous les conducteurs actifs.**==
+> 
+> Remarque : Nous pouvons vérifier sur cet exemple la relation générale établie au chapitre précédent : $\mathcal{P}_L = \overrightarrow{F} . \overrightarrow{v} = -\omega RIB_0h = -e_a I$.
+^par1
+
+> [!note] Fonctionnement d'une machine idéale : Machine à deux conducteurs actifs
+> Considérons ([[#^figure9|fig. 9]] et [[#^figure10|10]]) une machine bipolaire à $N = 2$ conducteurs actifs en série, c'est-à-dire à une seule spire $MNPQ$. La position du rotor est repérée par l'angle $\theta$.
+> - Dans la situation de [[#^figure9|figure 9]] ($\theta$ compris entre 0 et $\pi$), les deux conducteurs actifs $MN$ et $PQ$ sont orientés selon les conventions du paragraphe précédent. La f.e.m. induite dans la spire est donc : $e_{MNPQ} = 2e_a = 2\omega RhB_0$.
+> Le circuit compris entre les balais $\mathcal{B}_1$ et $\mathcal{B}_2$ a la même orientation que la spire $MNPQ$. Sa f.e.m. (donc celle du moteur) est : $e = e_{MNPQ} = 2\omega RhB_0$.
+> - Lorsque la spire traverse la ligne neutre, les collecteurs changent de balais ([[#^figure11|fig. 11]]). Pour conserver au circuit la même orientation (de $\mathcal{B}_1$ vers $\mathcal{B}_2$), il faut orienter la spire dans le sens $QPNM$. Les fils actifs ont alors toujours une orientation conforme à nos conventions, et la f.e.m. du moteur est : $e = e_{QPNM} = 2\omega RhB_0$.
+> 
+> Grâce à la commutation ([[#^figure2|fig. 2d]]), la f.e.m, entre les balais garde un signe constant. Nous pouvons même supposer qu’elle est constante (pour $\omega$ constant) si nous négligeons les zones de transition, situées près de la ligne neutre où $B(\theta)$ change de signe ([[#^figure12|fig. 12]]).
+> Nous pouvons alors écrire : $e = \Phi_0\omega$ avec $\Phi_0 = 2RhB_0$.
+> La constante $\Phi_0$ est homogène à un flux. Elle peut se mettre sous la forme : $\Phi_0 = k\Phi$ avec $\Phi = \pi RhB_0$ et $k = \frac{2}{\pi}$.
+> $\Phi$, appelé **flux utile sous chacun des pôles**, représente le flux du champ $\overrightarrow{B}$ à travers les pôles de l'inducteur.
+> **Attention** : $\Phi_0$ ne représente pas le flux du champ $\overrightarrow{B}$ à travers le circuit d'induit !
+
+> [!note] Fonctionnement d'une machine idéale : Machine à $N$ conducteurs actifs
+> Dans une machine réelle, le nombre $N$ de conducteurs actifs est élevé (de l'ordre de la centaine). Le choix du nombre de collecteurs et la méthode de branchement des différents conducteurs font que la f.e.m. aux bornes du moteur ne présente plus qu'une légère ondulation.
+> Pour diminuer l’intensité qui les traverse, les conducteurs actifs sont répartis en $2a$ voies d’enroulement identiques assemblées en parallèle. Chaque voie comporte $\frac{N}{2a}$ conducteurs en série dont les f.e.m. s’ajoutent. Pour un courant $i$ débité, l’intensité à travers chaque conducteur vaut $\frac{i}{2a}$.
+> Cela permet à une génératrice de débiter des courants importants sans risque d’échauffement excessif de son circuit d’induit.
+> La f.e.m. de la machine, égale à la f.e.m. totale de chacune des voies, est proportionnelle à la vitesse de déplacement des conducteurs, donc à $\omega$. L’analogie avec le cas simple de la spire unique nous amène à poser $e = \Phi_0\omega$ avec $\Phi_0 = k\Phi$, constante positive homogène à un flux.
+> - $\Phi_0$, *flux utile sous chacun des pôles*, est le flux du champ $\overrightarrow{B}$ à travers chaque pôle de l’inducteur. $k$, constante de construction de la machine, dépend, entre autres, du bobinage des conducteurs actifs.
+> - La constante $\Phi_0$ est par convention positive ; il suffit pour cela de choisir en conséquence le sens positif d’orientation du circuit d’induit ou de la rotation.
+> 
+> ==**La f.e.m. $e$ d’une machine à courant continu est proportionnelle à sa vitesse de rotation : $e = \Phi_0\omega$, avec $\Phi_0 = k\Phi$ constante positive homogène à un flux.**==
+> ==**$\Phi$, flux utile sous chacun des pôles, est proportionnel au champ créé par l’inducteur et k est la constante de construction de la machine.**==
+
+> [!note] Fonctionnement d'une machine idéale : Expression du couple électromagnétique
+> - Conventions d'orientation pour un moteur : L'effet des forces de Laplace sur les conducteurs actifs (cf. [[#^par1|paragraphe précédent]]) se traduit par un couple $\Gamma(t)$ appliqué au rotor, appelé **couple électromagnétique du moteur**. De l’analyse menée au [[#^par1|paragraphe précédent]], nous retenons que, lorsque le couple $\Gamma$ et la vitesse de rotation $\omega$ sont positifs, alors la f.e.m. $e$ est positive et le courant $I$ est négatif. Pour que les grandeurs $\Gamma, \omega, e, i)$ soient toutes positives lors du fonctionnement nominal, nous adoptons, pour les moteurs, une convention d'orientation spécifique où l'orientation du courant $i(t)$ est opposée à celle de la f.e.m. $\Phi_0\omega$. Le schéma équivalent d’un moteur idéal (d’inductance et de résistance négligeables) est représenté sur la [[#^figure13|figure 13]].
+> 	- Bilan de puissance : Pour un conducteur filiforme siège d’une f.e.m. d’induction de déplacement $e_L$ orientée dans le sens du courant $i$ qui le traverse, la puissance des efforts de Laplace est : $\mathcal{P}_L = -e_Li$ (cf. [[08-Conversions électromagnétiques de puissance|chapitre 8]]).
+> 		- Évaluons la puissance $\mathcal{P}_L$ des actions de Laplace pour une machine dont l’induit est constitué de $2a$ voies identiques en parallèle.
+> 		Les $\frac{N}{2a}$ conducteurs d’une même voie, en série, forment un conducteur unique parcouru par un courant d’intensité $\frac{i}{2a}$ ; la f.e.m. totale de la voie (égale à celle du moteur), **orientée dans le sens de i** est, d’après nos conventions d’orientation ([[#^figure13|fig. 13]]) : $e_L = -\Phi_0\omega$. La puissance des efforts de Laplace sur les conducteurs d’une voie est donc égale à $-\frac{e_Li}{2a} = \frac{\Phi_0\omega i}{2a}$.
+> 		Pour les $2a$ voies, la puissance totale est donc : $\mathcal{P}_L = 2a\times\frac{\Phi_0\omega i}{2a} = \Phi_0\omega i$.
+> 		- Les conducteurs, solidaires du rotor, forment un solide en rotation de vitesse angulaire $\omega$ autour de l'axe fixe $(Oz)$. Les actions de Laplace, de moment $\Gamma$ ont donc une puissance $\mathcal{P}_L = \Gamma\omega$.
+> 		- Identifions les deux expressions de $\mathcal{P}_L$, on obtient $\Gamma = \Phi_0 i$.
+> 
+> 	==**Le moment du couple électromagnétique $\Gamma$ d'une machine à courant continu est proportionnel au courant d’induit $i$ : $\Gamma = \Phi_0 i$.**==
+> 	==**La même constante $\Phi_0$ intervient dans les deux termes du couplage électromécanique : $\Gamma = \Phi_0 i$ et $e = \Phi_0\omega$.**==
+
+> [!note] Fonctionnement d'une machine idéale : Modes de fonctionnement de la machine
+> Nous distinguerons alors les trois modes de fonctionnement :
+> - $\Gamma\omega > 0$. La machine reçoit de l’énergie électrique et fournit de l’énergie mécanique : elle fonctionne en moteur ;
+> - $\Gamma\omega < 0$. La machine reçoit de l’énergie mécanique et fournit de l’énergie électrique : elle fonctionne en génératrice ;
+> - $\Gamma\omega = 0$. La machine fonctionne à vide, c’est-à-dire qu’elle n’entraîne aucune charge mécanique : elle n’est ni moteur ni génératrice. Ce mode de fonctionnement n’est possible que si les pertes sont négligées, Dans ces conditions, en régime permanent il n’est pas nécessaire de disposer d’un couple moteur pour maintenir la vitesse constante.
+
+> [!note] Les machines réelles :
+> Le comportement des machines réelles présente des écarts par rapport à celui des machines idéales. Nous allons en examiner succinctement les causes.
+> - Notions sur un câblage de l'induit : La [[#^figure2|figure 2]] permet de visualiser la complexité du câblage de l’induit. Le nombre N de conducteurs actifs est généralement très grand de l’ordre de plusieurs centaines, Ce nombre N est souvent un multiple de 4, ceci afin de pouvoir faire participer le maximum de conducteurs actifs à chaque instant : nous ne justifierons pas cette affirmation.
+> Lors du bobinage, les « spires » ne sont pas rigoureusement planes : supposons qu’il y ait $N = 2k$ encoches ($k$ étant pair), le fil sortant de l’encoche $p$ ne « repartira » pas par l’encoche $p + k$, mais par $p + k + 1$ ([[#^figure14|fig. 14]]).
+> Sur la [[#^figure14|figure 14]], nous avons mis en traits pleins les fils placés devant l’induit, et en pointillé, ceux placés derrière. Un conducteur actif sur deux est relié aux lames du collecteur comme l'indique la [[#^figure15|figure 15]].
+> Sur la [[#^figure16|figure 16]] nous avons mis en évidence le passage du courant en cas de fonctionnement « moteur ». Étudions ce qui se passe au cours d’une rotation de l’induit. Nous remarquons qu’avec ce bobinage, le moment des forces de Laplace est toujours moteur ; les variations de ce moment seront d’autant plus atténuées que le nombre N de conducteurs actifs est grand.
+> Remarque : Le bobinage proposé n’est qu’un exemple ; chaque constructeur garde secrètement sa propre méthode de bobinage.
 
 
 # Diagrammes
@@ -76,6 +145,32 @@ Différents types de machines à courant continu. a. Machine à excitation indé
 
 a. Orientation du champ magnétique dans l'entrefer. b. Champ magnétique dans l'entrefer
 ![[electronique2/attachments-electronique2/figure231.png]]^figure6
+
+Mise en évidence du champ électromoteur de part et d'autre de la ligne neutre
+![[electronique2/attachments-electronique2/figure232.png]]^figure7
+
+Mise en évidence de la force de Laplace
+![[electronique2/attachments-electronique2/figure233.png]]^figure8
+
+Machine bipolaire à une seule spire
+![[electronique2/attachments-electronique2/figure234.png]]^figure9
+
+Vue "de dessus"
+![[electronique2/attachments-electronique2/figure235.png]]^figure10
+
+Situation pour $\theta$ compris entre $\pi$ et $2\pi$
+![[electronique2/attachments-electronique2/figure236.png]]^figure11
+
+Convention d'orientation de la f.e.m. pour une machine idéale à courant continu à caractère moteur
+![[electronique2/attachments-electronique2/figure238.png]]^figure13
+
+Bobinage de l'induit $(N = 12\, ; k = 6)$
+![[electronique2/attachments-electronique2/figure239.png]]^figure14
+
+Un conducteur actif sur deux est relié aux lames du collecteur
+![[electronique2/attachments-electronique2/figure240.png]]^figure15
+
+![[electronique2/attachments-electronique2/figure241.png]]^figure16
 # Graphiques
 ![[electronique2/attachments-electronique2/figure227.png]]
 Moteur à courant continu (moteur 6 volts d’essuie-glace de 2 CV Citroën)
@@ -86,6 +181,9 @@ Les deux charbons ont été écartés pour mieux visualiser l’induit.
 c. Vue sur le circuit électrique de l'inducteur. Le matériau ferromagnétique est feuilleté.
 d. Vue sur le collecteur, avec les différents circuits de l’induit et l’espace du bobinage.
 e. Visualisation du circuit de l’induit (avec le collecteur et les charbons ou balais) et de la forme des pièces polaires. ^figure2
+
+Évolution du champ $B(\theta)$ vu par le fil $MN$ et de la f.e.m. $e$ du moteur
+![[electronique2/attachments-electronique2/figure237.png]]^figure12
 # Expériences
 
 # Autres notes

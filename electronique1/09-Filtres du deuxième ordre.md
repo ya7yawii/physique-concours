@@ -172,16 +172,16 @@ Pont de Wien
 ![[electronique1/attachments-electronique1/figure231.png]]^figure18
 
 Filtre passe-bande de Sallen et Key
-![[figure233.png]]^figure20
+![[electronique1/attachments-electronique1/figure233.png]]^figure20
 
 Schéma équivalent au filtre passe-bande de Sallen et Key en basse fréquence
-![[figure234.png]]^figure21
+![[electronique1/attachments-electronique1/figure234.png]]^figure21
 
 Schéma équivalent au filtre passe-bande de Sallen et Key en haute fréquence
-![[figure235.png]]^figure22
+![[electronique1/attachments-electronique1/figure235.png]]^figure22
 
 Montage expérimental. $r' = (k - 1)r$ et $r = 10 k\Omega$
-![[figure237.png]]^figure23
+![[electronique1/attachments-electronique1/figure237.png]]^figure23
 # Graphiques
 Tracé asymptotique de la courbe de gain
 ![[electronique1/attachments-electronique1/figure215.png]]^figure2
@@ -220,22 +220,22 @@ Réponse d'un filtre passe-bande du deuxième ordre à un signal triangulaire de
 ![[electronique1/attachments-electronique1/figure229.png]]^figure16
 
 Régimes libres décrits par $s''(t) + \frac{\omega_0}{Q}s'(t) + \omega_{0}^{2}s(t) = 0$
-![[figure232.png]]^figure19
+![[electronique1/attachments-electronique1/figure232.png]]^figure19
 
 Simulation de l'influence du non appariement des condensateurs (le rapport des capacités $\frac{C_4}{C_2} = 1 + \epsilon$ varie de 0,90 à 1.10) pour $k = 4,8$
-![[figure236.png]]^figure24
+![[electronique1/attachments-electronique1/figure236.png]]^figure24
 
 Un filtre très sélectif permet d'extraire la composante sinusoïdale de fréquence égale à sa fréquence $f_0$ de résonance contrairement au filtre peu sélectif
-![[figure238.png]]^figure25
+![[electronique1/attachments-electronique1/figure238.png]]^figure25
 
 Valeur efficace du signal de sortie en fonction de la fréquence $(Q = 20)$. Le signal de sortie est approximativement sinusoïdal à chaque maximum
-![[figure239.png]]^figure26
+![[electronique1/attachments-electronique1/figure239.png]]^figure26
 
 Valeur efficace du signal de sortie en fonction de la fréquence $(Q = 7)$. Le signal de sortie est très approximativement sinusoïdal à chaque maximum. Les maxima sont moins marqués que pour $Q = 20$ et ne sont plus séparés à basse fréquence
-![[figure240.png]]^figure27
+![[electronique1/attachments-electronique1/figure240.png]]^figure27
 
 Signal de sortie pour un signal d'entrée 45 Hz. Le signal est encore proche d'une sinusoïde pour $Q = 20$, mais pas pour $Q = 7$
-![[figure241.png]]^figure28
+![[electronique1/attachments-electronique1/figure241.png]]^figure28
 # Expériences
 > [!warning]
 > Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://ressources.unisciel.fr/sillages/physique/tp_electrocinetique_1a_pcsi/res/TP16.PDF), le [lien 2](https://fr.scribd.com/document/800805810/TP1-Filtre-passe-bas-2ordre), le [lien 3](https://ressources.unisciel.fr/sillages/physique/tp_electrocinetique_1a_pcsi/res/TP10.PDF), le [lien 4](https://www.f-legrand.fr/scidoc/srcdoc/sciphys/tpelectro/passebande2/passebande2-pdf.pdf), le [lien 5](http://mp2carnot.free.fr/TP/TP_03_filtre.pdf), le [lien 6](http://remy.duperray.free.fr/downloads-7/files/TP-Filtre-RLC-ordre2.pdf), le [lien 7](http://psi2.nantes.free.fr/TP/ENONCES-ET-CORRIGES-TP/TP-ELECTRONIQUE/ENONCE-TP-ELECTRONIQUE/TP-3-ENONCE.pdf), le [lien 8](https://cahier-de-prepa.fr/mp-charlemagne/download?id=1273), le [lien 9](https://cahier-de-prepa.fr/pc-lavoisier/download?id=1702), le [lien 10](https://www.alloschool.com/assets/documents/course-248/tp-e4-filtres-du-second-ordre.pdf), le [lien 11](https://pcjoffre.fr/Data/tp/TP20_Wien.pdf), le [lien 12](http://talbourdel.yves.free.fr/resources/TP/TP4oscillateurpontdeWien2023.pdf), le [lien 13](http://mpetoilemartiniere.free.fr/wp-content/uploads/tp-oscillateur.pdf), le [lien 14](https://fr.scribd.com/document/732118159/Tp03-Oscillateur-a-Pont-de-Wien-Berrouachedi-n), le [lien 15](http://colinherve.free.fr/Physique_en_PC/TP_files/Oscillateur%20de%20Wien.pdf), le [lien 16](https://fr.scribd.com/document/923751845/TP-2-Oscillateur-A-pont-de-Wien-Ver-2022), le [lien 17](https://ressources.unisciel.fr/sillages/physique/electronique_2a_pc/res/osciquasisinus.pdf), le [lien 18](http://prfphy1.fr/lycee/ATS/TP/TP18Transmissiondinformation_creation_oscillateur_pont_Wien.pdf), le [lien 19](http://mp2carnot.free.fr/TP/TP_08_ALI.pdf), le [lien 20](http://thierryperisse.free.fr/documents/electronique-analogique/cesi/OSCILLATEURS_TP.pdf), le [lien 21](http://leroy.pe.free.fr/psi_new/tp/tp_oscillateurs.pdf), le [lien 22](http://venturi.marc.free.fr/TP/TP_Fascicule_premiere_periode.pdf), le [lien 23](https://fr.scribd.com/document/853086542/TP-elec-4-oscillateurs-quasi-sinusoidaux), le [lien 24](http://psi2.nantes.free.fr/TP/ENONCES-ET-CORRIGES-TP/TP-ELECTRONIQUE/ENONCE-TP-ELECTRONIQUE/TP-6-ENONCE.pdf), le [lien 25](http://psi2.nantes.free.fr/TP/ENONCES-ET-CORRIGES-TP/TP-ELECTRONIQUE/ENONCE-TP-ELECTRONIQUE/TP-6-ENONCE.pdf), le [lien 26](https://www.technologuepro.com/cours-electronique-analogique-2/tp4-les-oscillateurs-sinusoidaux.pdf), le [lien 27](https://www.alloschool.com/assets/documents/course-248/tp-e9-oscillateur-quasi-sinusoidal-a-resistance-negative.pdf), le [lien 28](https://www.etienne-thibierge.fr/tp_2024/tp06_osc-wien.pdf), le [lien 29](http://maths.sup.free.fr/modules/Page/html/TP/16_TPE10_Oscillateurquasisinusoidal.pdf), le [lien 30](https://fr.scribd.com/document/833272236/TP2-Oscillateurs-quasi-sinusuidaux), le [lien 31](https://fr.scribd.com/document/720721286/TP-Wien-1), le [lien 32](https://ressources.unisciel.fr/sillages/physique/electronique_1a_pcsi/res/TP29.PDF), le [lien 33](https://sites.google.com/view/jphoremans/tp), le [lien 34](https://fr.scribd.com/document/802128503/TP-Filtres-passifs).
