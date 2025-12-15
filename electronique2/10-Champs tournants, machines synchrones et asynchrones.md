@@ -24,9 +24,9 @@ crée: 15-12-2025, 14:23
 > 	« Lançons » l’aiguille dans un sens arbitraire : elle « s’accroche » sur la pulsation $\omega_0$, et finit par se mettre à tourner en **synchronisme** avec la composante de $\overrightarrow{B}(t)$ tournant dans le même sens. Arrêtons l'aiguille et lançons-la dans l’autre sens : elle finira alors par tourner en synchronisme avec l’autre composante tournante de $\overrightarrow{B}(t)$.
 > 	
 > 	Retenons, pour conclure :
-> 	==**Des enroulements fixes, régulièrement distribués autour d'un point $O$ et parcourus par un système de courants polyphasés équilibrés produisent en $O$ un champ magnétique tournant.**==
+> 	==**Des enroulements fixes, régulièrement distribués autour d'un point $O$ et parcourus par un système de [[#^demo1|courants polyphasés équilibrés]] produisent en $O$ un champ magnétique tournant.**==
 
-**mettre l'application 1 dans la section autres notes**
+
 # Diagrammes
 L'aimant dans sa rotation crée un champ magnétique tournant qui entraîne l'aiguille à la même vitesse $\omega_0$
 ![[electronique2/attachments-electronique2/figure251.png]]^figure1
@@ -47,3 +47,6 @@ Un champ sinusoïdal $\overrightarrow{B}(t)$ est la résultante de deux champs $
 # Expériences
 
 # Autres notes
+> [!warning] Application 1 page 312
+> ![[electronique2/attachments-electronique2/figure256.png]]![[electronique2/attachments-electronique2/figure257.png]]
+^demo1

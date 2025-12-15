@@ -150,7 +150,7 @@ Multivibrateur astable à A.O
 ![[electronique1/attachments-electronique1/figure255.png]]^figure15
 
 Astable à A.O. avec contrôle de la fréquence et du rapport cyclique. $R_1 = R_2 = 20 k\Omega$ ; $R = 10 k\Omega$ ; $r = 100 \Omega$ et $C$ boîte de condensateurs
-![[figure257.png]]^figure17
+![[electronique1/attachments-electronique1/figure257.png]]^figure17
 
 Montage expérimental pour l'étude d'un multivibrateur astable
 ![[figure258.png]]^figure18
@@ -189,7 +189,7 @@ Pour réaliser un multivibrateur astable, le point de fonctionnement du comparat
 ![[electronique1/attachments-electronique1/figure254.png]]^figure14
 
 Chronogramme d'un multivibrateur astable
-![[figure256.png]]^figure16
+![[electronique1/attachments-electronique1/figure256.png]]^figure16
 
 Multivibrateur astable $C = 1 \mu F$ : les signaux sont conformes à la théorie
 ![[figure259.png]]^figure19
