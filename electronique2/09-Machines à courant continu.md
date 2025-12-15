@@ -1,7 +1,14 @@
 ---
 titre: "[[09-Machines à courant continu]]"
 tags:
-aliases:
+  - machine-à-courant-continu
+  - inducteur
+  - induit
+  - dispositif-de-commutation
+  - conducteur-actif
+  - couple-électromagnétique
+  - moteur-à-excitation-indépendante
+  - génératrice
 crée: 13-12-2025, 14:01
 ---
 # Formules
@@ -156,7 +163,81 @@ Ces transformations s’accompagnent inévitablement de pertes sous forme de cha
 > L'équation du moteur devient alors : $RJ\dfrac{d\omega}{dt} + \Phi_{0}^{2}\omega + R\Gamma_r(\omega) = \Phi_0u(t)$.
 > ==**Le moteur à excitation indépendante et à flux constant se comporte souvent comme un système linéaire d'ordre 1.**==
 
+> [!note] Moteur à excitation indépendante : Démarrage du moteur
+> C'est le terme de moment $\Gamma_r(0)$ qui s'oppose au démarrage du moteur. Pour que ce dernier puisse démarrer, il faut que : $\Phi_0u(0) - R\Gamma_r(0) > 0$, c'est-à-dire qu'à l'instant initial, la relation d'induit doit être supérieure à la tension de démarrage $U_d$ : $u(0) > \frac{R\Gamma_r(0)}{\Phi_0} = U_d$.
+> Le fonctionnement avec une tension d’alimentation au voisinage de la valeur de démarrage est utilisé dans les engins de levage.
+> Si l’induit est alimenté, dès le démarrage, sous sa tension nominale $U_n$ (qui est très supérieure à la tension de démarrage $U_d$), une intensité $i(t)$, très supérieure à la valeur nominale $I_n$ du courant d’induit, traverse le moteur lors de sa mise en vitesse.
+> Cette surintensité provoque un choc mécanique sur le rotor et un échauffement excessif, souvent destructeur, dans le circuit d’induit.
+> ==**La mise en vitesse du moteur doit se faire sous tension d’induit $u(t)$ réduite en limitant le courant $i(t)$ qui le traverse.**==
+> Pour cela, on peut brancher, en série avec le circuit d’induit, un rhéostat dont on diminue ensuite la résistance pour la mise en vitesse du moteur.
+> Ce procédé n’est envisageable que pour des moteurs de faible puissance dont la phase de démarrage est courte. En outre, il est peu économique à cause de la puissance perdue par effet Joule dans le rhéostat.
+> Une solution plus satisfaisante se fait en appliquant à l’induit une tension $u(t)$ croissante en utilisant un générateur de rampe de tension.
 
+> [!note] Moteur à excitation indépendante : Point de fonctionnement du moteur
+> Le point de fonctionnement d’un moteur concerne un régime établi. À flux constant et en régime permanent (tension $u$ d’induit et vitesse $\omega$ du rotor constantes), l’induit est un dipôle linéaire qui satisfait à la relation : $U = E + RI$ avec $E = \Phi_0\omega$ et $\Gamma = \Phi_0I$.
+> Remplaçons $E$ et $I$ dans la première relation : $U = \Phi_0\omega + \frac{R}{\Phi_0}\Gamma$, d'où l'expression du moment des forces magnétiques en fonction de $\omega$ : $\Gamma(\omega) = \frac{\Phi_0}{R}(U - \Phi_0\omega)$ et sa représentation est donnée sur la [[#^figure20|figure 20]].
+> En régime établi, le moment du couple électromagnétique $\Gamma(\omega)$ est opposé à celui du couple résistant $-\Gamma_r(\omega)$ dû à la charge mécanique et aux frottements. La vitesse $\omega$ du moteur est solution de : $\Gamma_r(\omega) = \frac{\Phi_0}{R}(U - \Phi_0\omega)$.
+> ==**Le point de fonctionnement d’un moteur en régime établi se trouve à l'intersection de la caractéristique de son couple électromagnétique $\Gamma(\omega) = \frac{\Phi_0}{R}(U - \Phi_0\omega)$ et celle $\Gamma_r(\omega)$ de sa charge mécanique et des frottements.**==
+> **En charge et en régime établi**, la relation entre le couple résistant $-\Gamma_r$ et la vitesse du moteur peut s'écrire : $\omega = \frac{1}{\Phi_0}\left(U - \frac{R}{\Phi_0}\Gamma_r\right)$.
+> Il apparaît ainsi que :
+> - la vitesse $\omega$ du moteur, en régime établi, est une fonction décroissante du moment $\Gamma_r$ du couple résistant.
+> Lorsque $\Gamma_r$ augmente, la vitesse décroit jusqu’à s’annuler lorsque le moment du couple résistant vaut $\Gamma_{r\,max} = \frac{\Phi_0U}{R}$.
+> Remarquons que la valeur de $\Gamma_{r\,max}$ est celle **du moment du couple de démarrage** $\Gamma_d = \Gamma(0)$. Le moment du couple de démarrage est maximum et égal à $\Gamma_d = \Gamma_{r\,max} = \frac{\Phi_0U}{R}$.
+> ==**La valeur de $\Gamma_{r\,max}$ est celle du moment du couple de démarrage $\Gamma_d$. Un moteur à excitation indépendante peut donc démarrer avec sa charge nominale puisque le moment résistant exercée par celle-ci est nécessairement inférieur à $\Gamma_d$.**==
+> - $U$ et $\Gamma_r$ étant constants, $\omega$ en régime établi dépend de $\Phi_0$ et sa valeur passe par un maximum $\omega_M = \frac{U^{2}}{4R\Gamma_r}$ pour $\Phi_0 = \Phi_{0M} = \frac{2R\Gamma_r}{U}$.
+> En fonction de la puissance mécanique nominale $\mathcal{P}_N = \omega_N\Gamma_r$ : $\frac{\omega_M}{\omega_N} = \frac{U^{2}}{4R\mathcal{P}_N}$.
+> Ce rapport est en général très supérieur à 1.
+> Si, à partir des conditions nominales d'utilisation, nous diminuons le flux inducteur $\Phi$, la vitesse angulaire $\omega$ commence par augmenter et passe par un maximum qui peut être très largement supérieur à la vitesse nominale ([[#^figure21|fig. 21]]).
+> ==**Il ne faut jamais supprimer l'alimentation de l’inducteur lorsque l'induit est sous tension, car le moteur en s’emballant risque d’être détruit.**==
+
+> [!note] Moteur à excitation indépendante : Bilan de puissance
+> Pour l'état de charge considéré, le moteur reçoit la puissance électrique des alimentations de l’inducteur et de l’induit $\mathcal{P}_a = U_eI_e + UI$ et fournit la puissance mécanique $\mathcal{P}_M = \Gamma_M\omega$, où $\Gamma_M$ est le couple utile (ou couple moteur disponible sur l'arbre moteur ([[#^figure22|fig. 22]])).
+> Son rendement est $\eta = \frac{\mathcal{P}_M}{\mathcal{P}_a}$.
+> Les phénomènes d’induction dans l’inducteur peuvent être négligés. Toute la puissance qui lui est fournie est alors dissipée par effet Joule.
+> Les pertes s’analysent en :
+> - pertes par effet Joule dans l’inducteur et dans l’induit: $\mathcal{P}_J = U_eI_e + RI^{2}$, où $R$ est la résistance de l’induit dans les conditions d’utilisation. Ces pertes sont souvent appelées pertes cuivre ;
+> - pertes collectives $\mathcal{P}_c$ de nature magnétique (hystérésis et courants de Foucault dites encore pertes fer) et mécanique (frottements).
+> L'expression de la puissance mécanique du moteur s’établit à : $\mathcal{P}_M = \mathcal{P}_a - \mathcal{P}_J - \mathcal{P}_c = UI - (RI^{2} + \mathcal{P}_c)$ et celle du rendement à $\eta = \frac{\mathcal{P}_M}{\mathcal{P}_a} = \frac{UI - RI^{2} - \mathcal{P}_c}{U_eI_e + UI}$.
+> 
+> Une méthode de mesure utilisée est celle dites des pertes séparées.
+> La puissance des pertes par effet Joule est déterminée à partir de la connaissance de la résistance des circuits et de l’intensité qui les traverse.
+> La puissance des pertes collectives est déterminée par un **essai à vide** (sans charge mécanique) avec les mêmes valeurs de flux $\Phi$ de vitesse $\omega$ que lors du fonctionnement en charge, afin d’avoir les mêmes pertes magnétiques et mécaniques. Lors de cet essai, on démontre que la puissance des pertes collectives est donnée par la relation: $\mathcal{P}_c = U_vI_v$, où $U_v$ et $I_v$ sont respectivement la tension et le courant à vide de l’induit.
+
+> [!note] Modélisation d'un moteur à excitation indépendante
+> Pour étudier le comportement d'un moteur, ainsi que pour l'asservir ou pour le réguler, il est indispensable de le modéliser.
+> Le moteur à excitation indépendante sera analysé comme un opérateur linéaire : $\Omega(p) = f(U(p), \Gamma_m(p))$, où $\Omega(p)$, $U(p)$ et $\Gamma_m(p)$ sont les notations fonctionnelles de sa vitesse, de sa tension d’induit et du couple qu’il exerce sur la charge mécanique.
+> Déterminons le schéma fonctionnel d'un moteur à excitation indépendante pour lequel :
+> - $\Phi_0$ est la constante de couplage électromécanique ;
+> - $R$ la résistance de l’induit, $L$ l'inductance de l'induit ;
+> - $J$ le moment d’inertie du rotor et de la charge mécanique entraînée ;
+> - $\Gamma_f$ le moment du couple résistant dû aux fonctionnements internes au moteur supposé de la forme $\Gamma_f = -h\omega$.
+> 
+> Pour ce faire, notons par $E(p)$ la f.e.m. de l’induit, $I(p)$ son courant et $U(p)$ sa tension d’alimentation. L’équation électrique du moteur est : $U(p) = LpI(p) + RI(p) + E(p)$.
+> Il en résulte que le courant d’induit est : $I(p) = \frac{1}{R + Lp}[U(p) - E(p)] = K_e(p)[U(p) - E(p)]$.
+> Cette relation peut être traduite par un comparateur recevant sur ses entrées inverseuse et non inverseuse respectivement les signaux $E(p)$ et $U(p)$, et un bloc fonctionnel de transmittance $K_e(p) = \frac{1}{R + Lp}$ délivrant le signal $I(p)$ ([[#^figure23|fig. 23]]).
+> $K_e(p)$ correspond à un passe-bas d’ordre 1 de constante de temps $\tau_e = \frac{L}{R}$. Ce courant d’induit crée un moment moteur $\Gamma(p) = \Phi_0I(p)$, d'où le bloc fonctionnel de transmittance $\Phi_0$.
+> L'équation mécanique du moteur est $Jp\Omega(p) = \Gamma(p) - \Gamma_m(p) - h\Omega(p)$.
+> La vitesse du moteur est donnée par : $\Omega(p) = \frac{1}{h + Jp}[\Gamma(p) - \Gamma_m(p)] = K_m(p)[\Gamma(p) - \Gamma_m(p)]$.
+> Cette équation mécanique du moteur se représente à l’aide d’un comparateur et d’un bloc fonctionnel de transmittance $K_m(p) = \frac{1}{h + Jp}$.
+> $K_m(p)$ correspond à un passe-bas d’ordre 1 de constante de temps $\tau_m = \frac{J}{h}$.
+> La vitesse crée une f.e.m. $E(p) = \Phi_0\Omega(p)$ qui est réinjectée sur l’entée inverseuse du comparateur. Cela est représenté par la chaîne de retour de transmittance $\Phi_0$ ([[#^figure23|fig. 23]]).
+> ==**Le moteur est un système électrique passe-bas d'ordre 1, de constante de temps $\tau_e = \frac{L}{R}$, associé à un système mécanique passe-bas d’ordre 1, de constante de temps $\tau_m = \frac{J}{h}$.**==
+> Lorsque les effets d’induction propres au circuit de l’induit sont négligés $(L = 0)$, $\tau_e$ est très inférieur à $\tau_m$.
+> La fonction de transfert $K_e(p) = \frac{I(p)}{U(p) - E(p)} = \frac{1}{R}$ devient constante ([[#^figure24|fig. 24]]).
+
+> [!note] Génératrice
+> - Caractère inversible (ou « réversible ») d’une machine à courant continu : Le caractère réversible d’une machine à courant continu peut être utilisé dans deux cas :
+> 	- le freinage du moteur avec ou sans récupération d'énergie ;
+> 	- l’obtention d’une tension continue à l'aide d’une génératrice.
+> - Freinage d’une machine : Si la tension $u$ devient inférieure à la f.e.m. $e = \Phi_0\omega$, le courant $i$ change de sens. Le couple $\Gamma$ est alors opposé à la vitesse et le moteur se comporte donc comme un frein.
+> Le freinage par inversion du sens du courant dans un moteur est souvent utilisé.
+> En général, le moteur est branché sur une résistance capable de dissiper une forte puissance pendant la phase de freinage (cas des moteurs de machine à laver en fin d’essorage,..., des motrices de T.G.V.).
+> La récupération nécessite que la f.e.m. moteur soit supérieure à la tension du réseau, Ceci peut être obtenu soit en jouant sur le couplage des induits de plusieurs moteurs, soit en utilisant des hacheurs survolteurs pour transmettre de l'énergie au réseau électrique. Elle n’est donc intéressante que si les phases de freinage se reproduisent souvent (cas du métro, mais pas des T.G.V.).
+> - Génératrices tachymétriques : Les génératrices à excitation indépendante ne sont plus guère utilisées, sauf en capteurs linéaires de vitesses angulaires, c’est-à-dire en génératrices tachymétriques. Ces génératrices sont des machines de faible puissance à aimants permanents qui fonctionnent, par construction, à flux constant.
+> Le rotor de la génératrice ([[#^figure25|fig. 25]]) étant entraîné à la vitesse $\omega(t)$, la tension $u(t)$ délivrée par la machine est une image exacte de la vitesse de rotation de son rotor si l’induit est en circuit ouvert $(i(t) = 0)$.
+> En effet, dans ces conditions, on a : $u(t) = e(t) = \Phi_0\omega(t)$.
+> La charge électrique d'une génératrice doit être aussi élevée que possible, sinon infinie. Ce faisant, le couple électromagnétique opposé à la rotation par la génératrice $((\Gamma(t) = \Phi_0i(t)) \approx O)$ est quasiment nul : le capteur ne perturbe que faiblement (uniquement par le couple de ses forces de frottement) le système auquel il est associé.
+> ==**À flux constant et à charge électrique élevée $(i = 0)$, la fonction de transfert d’une génératrice tachymétrique est : $H(p) = \frac{E(p)}{\Omega(p)} = \Phi_0$.**==
 # Diagrammes
 Conversions électromécaniques réalisées par une machine à courant continu
 ![[electronique2/attachments-electronique2/figure226.png]]^figure1
@@ -207,6 +288,18 @@ Pour inverser le sens de rotation d'un moteur série, il faut modifier le sens d
 
 Schéma équivalent et conventions d'orientation d'un moteur à courant continu vu entre les bornes de l'induit : $u(t) = L\dfrac{di(t)}{dt} + Ri(t) + \Phi_0\omega(t)$
 ![[electronique2/attachments-electronique2/figure244.png]]^figure19
+
+Diagramme des puissances dans un moteur
+![[electronique2/attachments-electronique2/figure247.png]]^figure22
+
+Schéma fonctionnel d'un moteur à excitation indépendante
+![[electronique2/attachments-electronique2/figure248.png]]^figure23
+
+Schéma fonctionnel d'un moteur à excitation indépendante dont les effets d'induction propres au circuit de l'induit sont négligés
+![[electronique2/attachments-electronique2/figure249.png]]^figure24
+
+Utilisation d'une machine à courant continu en génératrice et son schéma électrique équivalent
+![[electronique2/attachments-electronique2/figure250.png]]^figure25
 # Graphiques
 ![[electronique2/attachments-electronique2/figure227.png]]
 Moteur à courant continu (moteur 6 volts d’essuie-glace de 2 CV Citroën)
@@ -220,6 +313,13 @@ e. Visualisation du circuit de l’induit (avec le collecteur et les charbons ou
 
 Évolution du champ $B(\theta)$ vu par le fil $MN$ et de la f.e.m. $e$ du moteur
 ![[electronique2/attachments-electronique2/figure237.png]]^figure12
-# Expériences
 
+Caractéristique mécanique d'un moteur à courant continu à flux inducteur constant
+![[electronique2/attachments-electronique2/figure245.png]]^figure20
+
+Vitesse de rotation en fonction du flux $\Phi_0$, à $U$ et $\Gamma_r$ constants. $\omega_M = \frac{U^{2}}{4R\Gamma_r}$ est en général très grand devant $\omega_N$
+![[electronique2/attachments-electronique2/figure246.png]]^figure21
+# Expériences
+> [!warning]
+> Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : [lien 1](https://fr.scribd.com/document/463923841/TP2-1), [lien 2](https://www.espacetechnologue.com/wp-content/uploads/2017/03/tp-electrotechnique.pdf), [lien 3](https://staff.univ-batna2.dz/sites/default/files/rebbouh_sonia/files/tp_ndeg1.pdf), [lien 4](https://lycee-champollion.fr/IMG/pdf/tp_no20_moteur_a_courant_continu.pdf), [lien 5](https://fr.scribd.com/document/435882840/TP-N-5-Moteur-a-exc-independante-GE-Inge-uas), [lien 6](https://www.studocu.com/row/document/universite-batna-2/tp-machines-electriques-approfondies/tp-n03-moteur-a-courant-continu-elm-s5-20-21-1-1/53255893), [lien 7](http://archive.univ-biskra.dz/moodle2023/pluginfile.php/661620/mod_resource/content/1/TP%20generatrice%20%20a%20courant%20continu%20a%20excitation%20separee.pdf), [lien 8](https://fr.scribd.com/document/832698386/tp01elt), [lien 9](https://fr.scribd.com/document/645584111/TP-N-02-GENERATRICE-A-COURANT-CONTINU).
 # Autres notes

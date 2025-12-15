@@ -135,19 +135,19 @@ Amplificateur non inverseur. Un oscilloscope bicourbe mesure simultanément $u_e
 ![[electronique1/attachments-electronique1/figure242.png]]^figure1
 
 Amplificateur non inverseur
-![[figure245.png]]^figure4
+![[electronique1/attachments-electronique1/figure245.png]]^figure4
 
 Comparateur non inverseur à hystérésis
-![[figure246.png]]^figure6
+![[electronique1/attachments-electronique1/figure246.png]]^figure6
 
 Comparateur inverseur à hystérésis
-![[figure248.png]]^figure8
+![[electronique1/attachments-electronique1/figure248.png]]^figure8
 
 Montage expérimental pour l'étude d'un comparateur à hystérésis
-![[figure250.png]]^figure10
+![[electronique1/attachments-electronique1/figure250.png]]^figure10
 
 Multivibrateur astable à A.O
-![[figure255.png]]^figure15
+![[electronique1/attachments-electronique1/figure255.png]]^figure15
 
 Astable à A.O. avec contrôle de la fréquence et du rapport cyclique. $R_1 = R_2 = 20 k\Omega$ ; $R = 10 k\Omega$ ; $r = 100 \Omega$ et $C$ boîte de condensateurs
 ![[figure257.png]]^figure17
@@ -171,22 +171,22 @@ Déphasage $\varphi$ de $v_s$ par rapport à $v_e$. Phase mesurée pour $R_1 = 1
 ![[electronique1/attachments-electronique1/figure244.png]]^figure3
 
 Caractéristique d'un comparateur non inverseur à hystérésis
-![[figure247.png]]^figure7
+![[electronique1/attachments-electronique1/figure247.png]]^figure7
 
 Caractéristique d'un comparateur inverseur à hystérésis
-![[figure249.png]]^figure9
+![[electronique1/attachments-electronique1/figure249.png]]^figure9
 
 Réponse d'un comparateur inverseur à l'hystérésis à une excitation sinusoïdale de fréquence 50 Hz et d'amplitude 5 V
-![[figure251.png]]^figure11
+![[electronique1/attachments-electronique1/figure251.png]]^figure11
 
 Caractéristique d'un comparateur inverseur à hystérésis obtenue avec une excitation sinusoïdale de fréquence 50 Hz et d'amplitude 5 V
-![[figure252.png]]^figure12
+![[electronique1/attachments-electronique1/figure252.png]]^figure12
 
 Pour réaliser un multivibrateur astable, le point de fonctionnement du comparateur non inverseur doit glisser de A vers B, puis de A' vers B'
-![[figure253.png]]^figure13
+![[electronique1/attachments-electronique1/figure253.png]]^figure13
 
 Pour réaliser un multivibrateur astable, le point de fonctionnement du comparateur non inverseur doit glisser de A vers B, puis de A' vers B'
-![[figure254.png]]^figure14
+![[electronique1/attachments-electronique1/figure254.png]]^figure14
 
 Chronogramme d'un multivibrateur astable
 ![[figure256.png]]^figure16
