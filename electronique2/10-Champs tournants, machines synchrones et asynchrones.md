@@ -98,7 +98,34 @@ crée: 15-12-2025, 14:23
 > ==**Dans un alternateur, le moment magnétique $\overrightarrow{M}(t)$ du rotor est en avance sur le champ tournant statorique $\overrightarrow{B}(t)$ qu’il crée et la rotation du rotor est freinée par le couple électromagnétique résistant : $\Gamma(\theta) = M_0B\sin(\theta) < 0$ avec $-\pi < \theta < 0$.**==
 > Dans un alternateur, le rotor est l’inducteur et les bobines du stator constituent l'induit : **l'inducteur est mobile et l’induit est fixe.**
 > **Alternateur** : Un aimant (dipôle de moment magnétique constant en norme) en rotation donne naissance à des courants induits dans les bobines fixes du stator. Dans un alternateur, le rotor est l'inducteur et les bobines du stator constituent l'induit : l'inducteur est mobile et l'induit est fixe.
-> - Performances des alternateurs : La conversion d’énergie mécanique en énergie électrique est majoritairement réalisée à l'aide d’alternateurs : de l’alternateur de bicyclette ([[#^figure15|fig. 15]]) de quelques watts à celui de centrale nucléaire ([[#^figure16|fig. 16]]) de plus d’un gigawatt ! La puissance apparente des machines triphasées les plus performantes atteint 1 500 MVA, avec des tensions efficaces comprises entre $10^{4} kV$ et $2 . 10^{4} kV$, et le rendement des alternateurs les plus modernes est voisin de 99 %.
+> - Performances des alternateurs : La conversion d’énergie mécanique en énergie électrique est majoritairement réalisée à l'aide d’alternateurs : de l’alternateur de bicyclette ([[#^figure15|fig. 15]]) de quelques watts à celui de centrale nucléaire ([[#^figure16|fig. 16]]) de plus d’un gigawatt ! La puissance apparente des machines triphasées les plus performantes atteint 1 500 MVA, avec des tensions efficaces comprises entre $10^{4} kV$ et $2 \,. 10^{4} kV$, et le rendement des alternateurs les plus modernes est voisin de 99 %.
+
+> [!note] Principe des machines asynchrones : Action d'un champ tournant sur un circuit inductif
+> Plaçons dans un champ tournant $\overrightarrow{B}(t)$, non plus un aimant, mais un circuit plan sans source, de vecteur surface $\overrightarrow{S}$, de résistance $R$ et d’inductance $L$. Supposons que ce circuit puisse tourner autour du même axe $(O, \overrightarrow{e_z}$ que le champ tournant $\overrightarrow{B}(t)$. Notons par $\omega_0$ la vitesse de rotation du champ $\overrightarrow{B}(t)$ et par $\omega$ celle du circuit ([[#^figure17|fig. 17]]). Remarquons que nous ne sommes donc plus en présence d'un moment magnétique de module constant en rotation.
+> La loi de Lenz affirme que les effets des phénomènes d’induction s’opposent à leur cause. Nous pouvons en déduire le résultat qualitatif suivant : la spire a tendance à tourner à la même vitesse que le champ magnétique.
+> - Si $\omega < \omega_0$, le couple électromagnétique a tendance à accélérer la spire. Le couple est moteur.
+> - Si $\omega = \omega_0$, il n’y a aucun couple exercé sur la spire.
+> - Si $\omega > \omega_0$, le couple électromagnétique a tendance à freiner la spire. Le couple est résistant.
+> 
+> ==**Dans un champ magnétique tournant à la vitesse $\omega_0$, un circuit sans source est soumis à un couple électromagnétique moteur $(\Gamma > 0)$ ou résistant $(\Gamma < 0)$ selon que sa vitesse $\omega$ de rotation est inférieure ou supérieure à la vitesse de synchronisme $\omega_0$. À la vitesse de synchronisme, ce couple est de valeur nulle.**==
+> ==**Le moteur asynchrone est basé sur ce principe.**==
+
+> [!note] Principe des machines asynchrones : Structure d'une machine asynchrone
+> Une machine *asynchrone* est un convertisseur de puissance utilisant, comme les machines synchrones, l’interaction de deux champs magnétiques. Si le premier champ est, comme dans les machines synchrones, créé par une armature fixe appelée **stator**, le second, quand à lui, est créé par un circuit mobile *sans source* appelé **rotor** (et non plus par un aimant ou un électroaimant).
+> Nous distinguerons encore les machines asynchrones *polyphasées*, dont les enroulements statoriques sont alimentés par un système de courants polyphasés équilibrés créant un *champ tournant*, des machines *monophasés* dont les enroulements sont alimentés par un courant sinusoïdal créant un champ sinusoïdal de direction fixe.
+> Le stator d’une machine asynchrone est analogue à celui d’une machine synchrone. Par opposition avec les moteurs à courants continus et synchrones, le rotor ne nécessite pas d’alimentation. Les courants qui le traversent sont uniquement dus aux phénomènes d’induction.
+> Il en existe deux types.
+> - Rotor en cage d’écureuil : Des barres métalliques parallèles sont reliées à deux anneaux conducteurs ([[#^figure18|fig. 18]]), Les moteurs à cage sont caractérisés par leur simplicité de construction, leur facilité d’entretien, leur robustesse et leur faible coût de revient. Ce sont les moteurs électriques les plus utilisés, mais ils sont de faible puissance (jusqu’à 10 kW).
+> - Rotor bobiné : Les conducteurs, logés dans des encoches du rotor, forment un circuit dont les extrémités sont soudées à des bagues solidaires de l’arbre de rotation. Par l'intermédiaire de balais frottant sur ces bagues, il est possible d’accéder au rotor et de modifier, à l’aide d’un rhéostat, la résistance du circuit rotorique. La représentation symbolique d’un moteur asynchrone est donnée sur la [[#^figure19|figure 19]].
+> 
+> Machine asynchrone : Une machine asynchrone est conçue sur l'interaction entre un champ magnétique tournant et un **circuit fermé sans source**.
+
+> [!note] Principe des machines asynchrones : Propriétés des moteurs asynchrones
+> D’après l'étude de l’[[#^appli1|application ci-dessous]], le couple de démarrage est non nul. Un moteur asynchrone peut démarrer en charge.
+> Lorsque le rotor est bobiné, il est possible de régler, à l'aide d’un rhéostat, la résistance $R$ du circuit rotorique. Après avoir donné à $R$ la valeur $R_{opt} = L\omega_0$ (cf. [[#^appli1|Application ci-dessous]]) pour le démarrage, on diminue la valeur de la résistance pour la mise en vitesse de telle sorte que le moteur soit utilisé au voisinage de son couple et de son rendement maximum.
+> ==**En charge, la vitesse $\omega$ d'un moteur asynchrone est inférieure à celle $\omega_0$ du champ tournant et cette vitesse est d'autant plus faible que la charge est plus importante. Lorsque cette dernière introduit un couple résistant supérieur à $\Gamma_{max} = \frac{\Phi_{0}^{2}}{4L}$ (couple de décrochage), le moteur décroche et s'arrête.**==
+> ==**Le fonctionnement d’un moteur asynchrone est caractérisé par son glissement $g = \frac{\omega_0 - \omega}{\omega_0}$ qui est l’écart relatif entre la vitesse de rotation $\omega_0$ du champ tournant et la vitesse $\omega$ de rotation. Au point de fonctionnement nominal, ce glissement est faible (< 5 % en général).**==
+> Le couple d’une machine asynchrone est moteur $(\Gamma > 0)$ pour $g > 0$. Plus précisément, pour $0 < g < 1$, la machine fonctionne effectivement en moteur, pour $g = 1$ elle est à l’arrêt, et pour $g > 1$ le moteur fonctionne en frein (cf. [[#^appli1|Application ci-dessous]]).
 
 
 # Diagrammes
@@ -134,6 +161,12 @@ Schéma équivalent d'une phase d'une machine synchrone
 
 Alternateur diphasé bipolaire
 ![[electronique2/attachments-electronique2/figure266.png]]^figure14
+
+Positions relatives du circuit et du champ tournant à $t = 0$ et à un instant ultérieur $t$
+![[electronique2/attachments-electronique2/figure269.png]]^figure17
+
+Représentation symbolique des moteurs asynchrones monophasés. a. À rotor bobiné. b. En cage d'écureuil
+![[electronique2/attachments-electronique2/figure271.png]]^figure19
 # Graphiques
 Variation du couple des forces électromagnétiques s'exerçant sur un aimant en fonction de son décalage angulaire $\theta$ par rapport au champ tournant
 ![[electronique2/attachments-electronique2/figure259.png]]^figure7
@@ -149,9 +182,16 @@ Alternateur de bicyclette
 
 Alternateur à pôles saillants des centrales hydrauliques entraîné à faible vitesse par des chutes d'eau
 ![[electronique2/attachments-electronique2/figure268.png]]^figure16
+
+Rotor en cage d'écureuil
+![[electronique2/attachments-electronique2/figure270.png]]^figure18
 # Expériences
 
 # Autres notes
 > [!warning] Application 1 page 312
 > ![[electronique2/attachments-electronique2/figure256.png]]![[electronique2/attachments-electronique2/figure257.png]]
 ^demo1
+
+> [!warning] Application
+> ![[electronique2/attachments-electronique2/figure272.png]]![[electronique2/attachments-electronique2/figure273.png]]![[electronique2/attachments-electronique2/figure274.png]]![[electronique2/attachments-electronique2/figure275.png]]![[electronique2/attachments-electronique2/figure276.png]]
+^appli1

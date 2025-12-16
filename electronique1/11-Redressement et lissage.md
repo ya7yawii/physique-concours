@@ -152,7 +152,7 @@ a. Structure théorique d'une jonction P-N. b. Structure d'une diode à jonction
 ![[electronique1/attachments-electronique1/figure267.png]]^figure1
 
 Redresseur élémentaire simple alternance G.B.F. (2V~, 200 Hz) et $R_u = 10 k\Omega$
-![[figure273.png]]^figure7
+![[electronique1/attachments-electronique1/figure273.png]]^figure7
 
 Redresseur simple alternance sans seuil G.B.F. (2V~, 200 Hz) et $R_u = 10 k\Omega$ et $V_{CC} = 15 V$
 ![[figure277.png]]^figure11
@@ -182,25 +182,25 @@ Caractéristique statique d'une diode à jonction à différentes températures
 ![[electronique1/attachments-electronique1/figure268.png]]^figure2
 
 Modélisation de la caractéristique statique d'une diode avec limitations absolues en courant $I_{d_M}$ et en tension $V_{i_M}$
-![[figure269.png]]^figure3
+![[electronique1/attachments-electronique1/figure269.png]]^figure3
 
 Caractéristique d'une diode idéale
-![[figure270.png]]^figure4
+![[electronique1/attachments-electronique1/figure270.png]]^figure4
 
 Sauf spécification contraire, toutes les diodes considérées dans ce chapitre ont une caractéristique du type de celle représentée ci-dessus
-![[figure271.png]]^figure5
+![[electronique1/attachments-electronique1/figure271.png]]^figure5
 
 Caractéristique de transfert d'un redresseur simple alternance
-![[figure272.png]]^figure6
+![[electronique1/attachments-electronique1/figure272.png]]^figure6
 
 Caractéristique statique d'un redresseur élémentaire simple alternance
-![[figure274.png]]^figure8
+![[electronique1/attachments-electronique1/figure274.png]]^figure8
 
 Variations de tension d'entrée $v_e(t)$ et de sortie $v_s(t)$ d'un redresseur élémentaire simple alternance
-![[figure275.png]]^figure9
+![[electronique1/attachments-electronique1/figure275.png]]^figure9
 
 Tension de sortie d'un redresseur simple alternance pour des signaux d'entrée triangulaires de fréquence 200 Hz
-![[figure276.png]]^figure10
+![[electronique1/attachments-electronique1/figure276.png]]^figure10
 
 Variations de la tension d'entrée $v_e(t)$ et de sortie $v_s(t)$ d'un redresseur simple alternance sans seuil
 ![[figure278.png]]^figure12
