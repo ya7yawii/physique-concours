@@ -153,16 +153,16 @@ Astable à A.O. avec contrôle de la fréquence et du rapport cyclique. $R_1 = R
 ![[electronique1/attachments-electronique1/figure257.png]]^figure17
 
 Montage expérimental pour l'étude d'un multivibrateur astable
-![[figure258.png]]^figure18
+![[electronique1/attachments-electronique1/figure258.png]]^figure18
 
 Principe d'un générateur de fonctions
-![[figure262.png]]^figure22
+![[electronique1/attachments-electronique1/figure262.png]]^figure22
 
 Générateur de fonctions à intégrateur non inverseur à hystérésis
-![[figure264.png]]^figure24
+![[electronique1/attachments-electronique1/figure264.png]]^figure24
 
 Générateur de fonctions avec contrôle de la fréquence et du rapport cyclique
-![[figure266.png]]^figure26
+![[electronique1/attachments-electronique1/figure266.png]]^figure26
 # Graphiques
 Diagramme de Bode obtenu pour $R_1 = 1 k\Omega$ et $R_2$ variant de $1 k\Omega$ à $100 k\Omega$
 ![[electronique1/attachments-electronique1/figure243.png]]^figure2
@@ -192,19 +192,19 @@ Chronogramme d'un multivibrateur astable
 ![[electronique1/attachments-electronique1/figure256.png]]^figure16
 
 Multivibrateur astable $C = 1 \mu F$ : les signaux sont conformes à la théorie
-![[figure259.png]]^figure19
+![[electronique1/attachments-electronique1/figure259.png]]^figure19
 
 Multivibrateur astable $C = 10 nF$ : les signaux sont déformés à cause de la vitesse de balayage de l'A.O
-![[figure260.png]]^figure20
+![[electronique1/attachments-electronique1/figure260.png]]^figure20
 
 Le point de fonctionnement de l'astable décrit le cycle ABA'B'A $(C = 1 \mu F)$
-![[figure261.png]]^figure21
+![[electronique1/attachments-electronique1/figure261.png]]^figure21
 
 Caractéristique d'un comparateur non inverseur à hystérésis. $V_{ref} = 0$ et $V_{e_2} = |V_{e_1}| = \frac{R_1}{R_2}V_{sat}$
-![[figure263.png]]^figure23
+![[electronique1/attachments-electronique1/figure263.png]]^figure23
 
 Chronogrammes d'un générateur de fonctions à comparateur non inverseur à hystérésis
-![[figure265.png]]^figure25
+![[electronique1/attachments-electronique1/figure265.png]]^figure25
 # Expériences
 > [!warning]
 > Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://www.technologuepro.com/cours-electronique-analogique-2/tp3-applications-non-lineaires-un-amplificateur-operationnel.pdf), le [lien 2](https://staff.univ-batna2.dz/sites/default/files/benacer-saddok/files/tpn02_eln-app_m1_as-aii.pdf), le [lien 3](https://www.etienne-thibierge.fr/tp_2025/tp05_comparateurs_eleve.pdf), le [lien 4](https://fr.scribd.com/document/716274662/tp-ali-comparateur-simple-et-hysteresis), le [lien 5](https://chamilo.grenoble-inp.fr/courses/PHELMA3PMKTET0/document/Docs_site/sujets_elec/1-AOP.pdf), le [lien 6](https://pdfcoffee.com/tp-comparateur-pdf-free.html), le [lien 7](https://ressources.unisciel.fr/sillages/physique/electronique_2a_pc/res/TP_sur_le_Multivibrateur_astable.pdf), le [lien 8](http://cr4ckt3am.free.fr/perso/TP%2011%20-%20Sujet%20(2012-05-10%20181941).pdf), le [lien 9](http://www.jeanpaulbiberian.net/Download/TP%20Electronique.pdf), le [lien 10](http://olivier.granier.free.fr/PC-Montesquieu445072/cariboost_files/Elec3-aop-1.pdf), le [lien 11](http://lionel.goub.free.fr/==COURS==/N3/Electronique/TP%20Elec/Osc%20Relax/tp_osc_relax.pdf), le [lien 12](http://benoit.decoux.free.fr/ENSEIGNEMENT/ELEC_P1P2/P1_ao.pdf), le [lien 13](https://fr.scribd.com/document/444638354/TP-les-comparateurs), le [lien 14](http://leroy.pe.free.fr/psi_new/tp/tp_oscillateurs.pdf), le [lien 15](https://www.yumpu.com/fr/document/read/27983712/tp-cours-amplificateur-opacrationnel-physique-en-sup-4), le [lien 16](http://fabrice.sincere.free.fr/cm_electronique/Travaux%20pratiques/tp_generateursignaux_v60/web_TPgenerateur_signaux_v60.pdf), le [lien 17](https://clemdelasalle.fr/media_in_docs/Pr%C3%A9pa+Physique+PT+TPs+%C3%89lectricit%C3%A9+05_Multivibrateur_astable.pdf/), le [lien 18](https://l2ep.univ-lille.fr/pagesperso/francois/files/L2_eni2_tp.pdf), le [lien 19](https://www.etienne-thibierge.fr/tp_2025/tp06_multivibrateur.pdf), le [lien 20](https://staff.univ-batna2.dz/sites/default/files/litim_moussa/files/3algb-tp-eg-06.pdf), le [lien 21](https://fr.scribd.com/document/709053332/TP2-MULTIVIBRATEUR-ASTABLE), le [lien 22](https://www.etienne-thibierge.fr/tp_2024/tp05_multivibrateur.pdf), le [lien 23](http://estelle.vh.free.fr/Physique_PC/Support_files/TP01_Cours_Multivibrateur_astable.pdf), le [lien 24](https://fr.scribd.com/document/815345163/TP03-multivibrateur), le [lien 25](http://elearning.univ-dbkm.dz/pluginfile.php/25487/mod_resource/content/1/TP_EApp_M%201_AII_1-converti.pdf), le [lien 26](http://psi2.nantes.free.fr/TP/ENONCES-ET-CORRIGES-TP/TP-ELECTRONIQUE/ENONCE-TP-ELECTRONIQUE/TP-7-ENONCE.pdf), le [lien 27](https://pdfcoffee.com/tp32020-pdf-free.html), le [lien 28](https://fr.scribd.com/document/722017087/1712443445441-TP5-preparation), le [lien 29](http://venturi.marc.free.fr/TP/TP_Fascicule_premiere_periode.pdf), le [lien 30](https://staff.univ-batna2.dz/sites/default/files/litim_moussa/files/3algb-tp-eg-05.pdf), le [lien 31](https://staff.univ-batna2.dz/sites/default/files/litim_moussa/files/tpn03_eln-app_m1_as-aii.pdf).

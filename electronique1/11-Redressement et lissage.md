@@ -149,7 +149,7 @@ Une diode à jonction est un monocristal de semiconducteur (Si, Ge) dans lequel 
 > En faisant varier $R$ nous notons la valeur qui optimise la fonction de détection d'enveloppe. D'après les photographies de [[#^figure31|figure 31]], la valeur $R = 3 k\Omega$ semble être un bon compromis. On vérifie que si $R$ est trop faible, le signal de sortie conserve une partie des oscillations de la porteuse, et que si $R$ est trop grande, $u_s(t)$ s'écarte de l'enveloppe.
 # Diagrammes
 a. Structure théorique d'une jonction P-N. b. Structure d'une diode à jonction
-![[figure267.png]]^figure1
+![[electronique1/attachments-electronique1/figure267.png]]^figure1
 
 Redresseur élémentaire simple alternance G.B.F. (2V~, 200 Hz) et $R_u = 10 k\Omega$
 ![[figure273.png]]^figure7
@@ -179,7 +179,7 @@ Détection de l'enveloppe de $u(t)$
 ![[figure296.png]]^figure30
 # Graphiques
 Caractéristique statique d'une diode à jonction à différentes températures
-![[figure268.png]]^figure2
+![[electronique1/attachments-electronique1/figure268.png]]^figure2
 
 Modélisation de la caractéristique statique d'une diode avec limitations absolues en courant $I_{d_M}$ et en tension $V_{i_M}$
 ![[figure269.png]]^figure3
