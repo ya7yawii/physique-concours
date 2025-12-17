@@ -25,14 +25,15 @@
             "id": "4194661bc9129c2b",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "electronique2/11-Conversion électronique statique.md",
-                "mode": "source",
-                "source": false
+                "aFile": "electronique1/11-Redressement et lissage.md",
+                "bFile": "electronique1/11-Redressement et lissage.md",
+                "aRef": "HEAD",
+                "bRef": ""
               },
-              "icon": "lucide-file",
-              "title": "11-Conversion électronique statique"
+              "icon": "diff",
+              "title": "Diff: 11-Redressement et lissage"
             }
           }
         ],
@@ -197,20 +198,20 @@
   },
   "active": "4194661bc9129c2b",
   "lastOpenFiles": [
-    "electronique2/09-Machines à courant continu.md",
     "electronique2/11-Conversion électronique statique.md",
+    "electronique2/attachments-electronique2/figure290.png",
+    "electronique2/attachments-electronique2/figure289.png",
+    "electronique2/attachments-electronique2/figure288.png",
+    "electronique2/attachments-electronique2/figure287.png",
+    "electronique2/attachments-electronique2/figure286.png",
+    "electronique2/09-Machines à courant continu.md",
     "electronique2/attachments-electronique2/figure285.png",
     "electronique2/attachments-electronique2/figure284.png",
     "electronique2/attachments-electronique2/figure283.png",
     "electronique2/attachments-electronique2/figure282.png",
     "electronique2/attachments-electronique2/figure281.png",
-    "electronique2/attachments-electronique2/figure280.png",
     "electronique2/00-Electronique2.md",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
-    "electronique2/attachments-electronique2/figure279.png",
-    "electronique2/attachments-electronique2/figure278.png",
-    "electronique2/attachments-electronique2/figure277.png",
-    "electronique2/attachments-electronique2/figure276.png",
     "electronique2/07-Conversion électromagnétique statique. Le transformateur.md",
     "electronique2/08-Conversions électromagnétiques de puissance.md",
     "electronique2/06-Multiplication de signaux.md",

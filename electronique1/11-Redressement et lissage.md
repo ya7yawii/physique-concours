@@ -164,10 +164,10 @@ Le transformateur d'isolement sépare la masse circuit du G.B.F. de celle du red
 ![[electronique1/attachments-electronique1/figure284.png]]^figure18
 
 Soustracteur associé au redresseur monoalternance
-![[figure287.png]]^figure21
+![[electronique1/attachments-electronique1/figure287.png]]^figure21
 
 Redresseur double alternance sans seuil. G.B.F. (2V~, 200 Hz), $R = 10 k\Omega$ et $R_u = 10 k\Omega$
-![[figure288.png]]^figure22
+![[electronique1/attachments-electronique1/figure288.png]]^figure22
 
 Redressement double alternance et lissage de la tension vs par le condensateur C. G.B.F. (5V~, 200 Hz), $R = 47 \Omega$, $C = 10 \mu F$ et $R_u = 1 k\Omega$
 ![[figure291.png]]^figure25
@@ -221,13 +221,13 @@ Variations des tensions $v_e(t)$ et $v_s(t)$ dans un redresseur double alternanc
 ![[electronique1/attachments-electronique1/figure285.png]]^figure19
 
 Caractéristique d'un redresseur double alternance à pont de diodes : il existe un seuil
-![[figure286.png]]^figure20
+![[electronique1/attachments-electronique1/figure286.png]]^figure20
 
 Variations des tensions $v_e(t)$ et $v_s(t)$ aux bornes d'un redresseur double alternance sans seuil
-![[figure289.png]]^figure23
+![[electronique1/attachments-electronique1/figure289.png]]^figure23
 
 Caractéristique du redresseur double alternance sans seuil
-![[figure290.png]]^figure24
+![[electronique1/attachments-electronique1/figure290.png]]^figure24
 
 Courant $i(t)$ délivré par le redresseur bialternance et tension $v_s(t)$ redressée et filtrée par condensateur, en régime établi
 ![[figure292.png]]^figure26

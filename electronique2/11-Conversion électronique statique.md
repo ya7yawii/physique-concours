@@ -48,6 +48,25 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > - alternatif-continu (**redresseurs**) ;
 > - alternatif-alternatif (**gradateurs**).
 
+> [!note] Conversion électronique de puissance : Interrupteurs idéaux
+> Un interrupteur électronique idéal présente une caractéristique $u = 0$ quand il est fermé, et $i= 0$ quand il est ouvert. Son ouverture et sa fermeture peuvent être commandées ou naturelles ([[#^figure6|fig. 6]]).
+> Le fonctionnement dans les quatre quadrants (($i \geqslant 0$, $u \geqslant 0$), ($i \geqslant 0$, $u \leqslant 0$), ($i \leqslant 0$, $u \geqslant 0$), ($i \leqslant 0$, $u \leqslant 0$)) n’est en général pas nécessaire.
+> Un interrupteur, dont la caractéristique est tronquée, est dit unidirectionnel : sa caractéristique quand il est fermé se limite, par exemple, à $u = 0$ et $i > 0$ et quand il est ouvert à $i = 0$ et $u > 0$, soit un fonctionnement limité au domaine ($i \geqslant 0$, $u \geqslant 0$). Le fonctionnement en dehors de ce domaine n’est pas prévu ; s’il est imposé a l’interrupteur, il provoque souvent sa destruction.
+> En majorité, les éléments de commutation sont unidirectionnels de caractéristique limitée à ($i \geqslant 0$, $u \geqslant 0$) ou ($i \geqslant 0$, $u$ quelconque).
+
+> [!note] Conversion électronique de puissance : Interrupteurs usuels
+> Présentons quelques composants usuels dans leur modélisation idéale.
+> - La diode ([[#^figure7|fig. 7]]) :
+> La diode est un interrupteur à commutation naturelle. Le passage de l’état interrupteur fermé à l'état interrupteur ouvert se produit dès que la tension $u_D$ à ses bornes devient négative. Son fonctionnement est limité à $i \geqslant 0$ et $u \leqslant 0$.
+> Les diodes utilisées en commutation peuvent supporter une tension inverse pouvant aller jusqu’à 5000 V et un courant direct d’intensité 5000 A.
+> - Le transistor (utilisé en commutation) ([[#^figure8|fig. 8]]) : C’est un interrupteur commandé à l'ouverture et à la fermeture, dont le fonctionnement est limité à $i \geqslant 0$ et $u \geqslant 0$.
+> Les transistors sont utilisés pour des commutations à puissance relativement faible (inférieures à 10 kW) et à des fréquences pouvant atteindre 100 kHz. Les transistors I.G.B.T. (Insulated Gate Bipolar Transistor) ou transistors bipolaires à grille isolée ont été développés pour un usage en commutation de puissance (commutation allant jusqu’à des courants de 100 A sous 1000 V).
+> - Le thyristor ([[#^figure9|fig. 9]]) : C’est un interrupteur commandé uniquement à la fermeture. L’ouverture se fait naturellement quand la tension à ses bornes devient négative ou l’intensité du courant qui le traverse devient nulle. Son fonctionnement est limité à $i \geqslant 0$, $u$ pouvant prendre un signe quelconque.
+> Les thyristors sont utilisés pour des commutations de puissances élevées (100 kW) mais à des fréquences faibles (1 kHz) (commutation allant jusqu’à des courants de 5000 A sous 5000 V).
+> Pour assurer un double fonctionnement du thyristor, il doit être accompagné d'un circuit assurant son blocage. Des thyristors particuliers, commandés aussi bien à l’ouverture qu’à la fermeture, ont été développés pour éviter cet inconvénient.
+> Nous ne nous préoccuperons pas par la suite du type d’interrupteur commandé utilisé. Nous nous servirons d’un interrupteur unidirectionnel commandé à la fermeture et à l'ouverture utilisable pour $u \geqslant 0$ et $i \geqslant 0$. Son schéma est donné sur la [[#^figure10|figure 10]].
+> La représentation de type diode indique le sens du courant en mode passant et le double trait vertical ou oblique signifie que cet interrupteur est commandé à l'ouverture et à la fermeture (H signifie hacheur).
+
 
 # Diagrammes
 Rhéostat. L'intensité est identique dans le générateur et le récepteur. Le rendement est donc égal au rapport $\frac{V_2}{V_1}$
@@ -66,9 +85,24 @@ Pendant la phase de court-circuit, le générateur ne fournit aucune puissance (
 
 Symbole d'un convertisseur continu-continu
 ![[electronique2/attachments-electronique2/figure285.png]]^figure5
+
+Diode
+![[electronique2/attachments-electronique2/figure287.png]]^figure7
+
+Transistor
+![[electronique2/attachments-electronique2/figure288.png]]^figure8
+
+Thyristor (ouverture naturelle)
+![[electronique2/attachments-electronique2/figure289.png]]^figure9
+
+Schémas d'interrupteurs unidirectionnels commandés
+![[electronique2/attachments-electronique2/figure290.png]]^figure10
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3
+
+Caractéristiques d'interrupteurs. Interrupteur commandé quatre quadrants
+![[electronique2/attachments-electronique2/figure286.png]]^figure6
 # Expériences
 
 # Autres notes
