@@ -155,13 +155,13 @@ Redresseur élémentaire simple alternance G.B.F. (2V~, 200 Hz) et $R_u = 10 k\O
 ![[electronique1/attachments-electronique1/figure273.png]]^figure7
 
 Redresseur simple alternance sans seuil G.B.F. (2V~, 200 Hz) et $R_u = 10 k\Omega$ et $V_{CC} = 15 V$
-![[figure277.png]]^figure11
+![[electronique1/attachments-electronique1/figure277.png]]^figure11
 
 Redresseur double alternance à diodes (pont de Graetz). G.B.F. (2V~, 200 Hz) et $R_u = 10 k\Omega$
-![[figure282.png]]^figure16
+![[electronique1/attachments-electronique1/figure282.png]]^figure16
 
 Le transformateur d'isolement sépare la masse circuit du G.B.F. de celle du redresseur. G.B.F. (2V~, 200 Hz) et $R_u = 10 k\Omega$
-![[figure284.png]]^figure18
+![[electronique1/attachments-electronique1/figure284.png]]^figure18
 
 Soustracteur associé au redresseur monoalternance
 ![[figure287.png]]^figure21
@@ -203,22 +203,22 @@ Tension de sortie d'un redresseur simple alternance pour des signaux d'entrée t
 ![[electronique1/attachments-electronique1/figure276.png]]^figure10
 
 Variations de la tension d'entrée $v_e(t)$ et de sortie $v_s(t)$ d'un redresseur simple alternance sans seuil
-![[figure278.png]]^figure12
+![[electronique1/attachments-electronique1/figure278.png]]^figure12
 
 Variations de la tension d'entrée $v_e(t)$ d'un redresseur simple alternance sans seuil et de la tension de sortie $v_{s_0}(t)$ de son amplificateur opérationnel (en basse fréquence)
-![[figure279.png]]^figure13
+![[electronique1/attachments-electronique1/figure279.png]]^figure13
 
 Caractéristique statique d'un redresseur simple alternance sans seuil
-![[figure280.png]]^figure14
+![[electronique1/attachments-electronique1/figure280.png]]^figure14
 
 Caractéristique d'un redresseur double alternance
-![[figure281.png]]^figure15
+![[electronique1/attachments-electronique1/figure281.png]]^figure15
 
 Variations des tensions dans un redresseur double alternance à diodes
-![[figure283.png]]^figure17
+![[electronique1/attachments-electronique1/figure283.png]]^figure17
 
 Variations des tensions $v_e(t)$ et $v_s(t)$ dans un redresseur double alternance à pont de diodes
-![[figure285.png]]^figure19
+![[electronique1/attachments-electronique1/figure285.png]]^figure19
 
 Caractéristique d'un redresseur double alternance à pont de diodes : il existe un seuil
 ![[figure286.png]]^figure20

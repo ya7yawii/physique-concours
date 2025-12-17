@@ -15,7 +15,7 @@ crée: 13-12-2025, 14:01
 
 # Définitions
 ==**Machine à courant continu**== :
-==**Une machine est dite à courant continu lorsque les grandeurs électriques (potentiels et courants) sont unidirectionnelles.**==
+==**Une machine est dite à courant continu lorsque les grandeurs électriques (potentiels et courants) sont [[#^def1|unidirectionnelles]].**==
 ==**Une machine à courant continu est un convertisseur électromécanique rotatif « réversible » (ou « inversible ») permettant ([[#^figure1|fig. 1]]) :**==
 - ==**une conversion d'énergie électrique en énergie mécanique : fonctionnement moteur ;**==
 - ==**une conversion d'énergie mécanique en énergie électrique : fonctionnement génératrice.**==
@@ -323,3 +323,8 @@ Vitesse de rotation en fonction du flux $\Phi_0$, à $U$ et $\Gamma_r$ constants
 > [!warning]
 > Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : [lien 1](https://fr.scribd.com/document/463923841/TP2-1), [lien 2](https://www.espacetechnologue.com/wp-content/uploads/2017/03/tp-electrotechnique.pdf), [lien 3](https://staff.univ-batna2.dz/sites/default/files/rebbouh_sonia/files/tp_ndeg1.pdf), [lien 4](https://lycee-champollion.fr/IMG/pdf/tp_no20_moteur_a_courant_continu.pdf), [lien 5](https://fr.scribd.com/document/435882840/TP-N-5-Moteur-a-exc-independante-GE-Inge-uas), [lien 6](https://www.studocu.com/row/document/universite-batna-2/tp-machines-electriques-approfondies/tp-n03-moteur-a-courant-continu-elm-s5-20-21-1-1/53255893), [lien 7](http://archive.univ-biskra.dz/moodle2023/pluginfile.php/661620/mod_resource/content/1/TP%20generatrice%20%20a%20courant%20continu%20a%20excitation%20separee.pdf), [lien 8](https://fr.scribd.com/document/832698386/tp01elt), [lien 9](https://fr.scribd.com/document/645584111/TP-N-02-GENERATRICE-A-COURANT-CONTINU).
 # Autres notes
+> [!warning] Signal unidirectionnel
+> Un signal unidirectionnel est un signal qui ne traverse jamais l'axe du temps. Un signal unidirectionnel n'est pas forcément périodique. Par contre, un signal continue est forcément de type unidirectionnel.
+> Par exemple le courant variable unidirectionnel est un courant continu dont l’intensité varie au fil du temps tout en gardant la même direction (même polarité : $> 0$ ou $< 0$).
+> Ce courant est flexible et convient aux applications où les variations d’intensité ne posent pas de problème comme dans certains types de moteurs à courant continu.
+^def1

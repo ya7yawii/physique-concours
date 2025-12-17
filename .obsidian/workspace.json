@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "48c1c73308ea5669",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "electronique2/09-Machines à courant continu.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "09-Machines à courant continu"
-            }
-          },
-          {
             "id": "856326316dd75572",
             "type": "leaf",
             "state": {
@@ -33,6 +19,20 @@
               },
               "icon": "lucide-file",
               "title": "10-Champs tournants, machines synchrones et asynchrones"
+            }
+          },
+          {
+            "id": "4194661bc9129c2b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "electronique2/11-Conversion électronique statique.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "11-Conversion électronique statique"
             }
           }
         ],
@@ -195,24 +195,24 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "856326316dd75572",
+  "active": "4194661bc9129c2b",
   "lastOpenFiles": [
+    "electronique2/09-Machines à courant continu.md",
+    "electronique2/11-Conversion électronique statique.md",
+    "electronique2/attachments-electronique2/figure285.png",
+    "electronique2/attachments-electronique2/figure284.png",
+    "electronique2/attachments-electronique2/figure283.png",
+    "electronique2/attachments-electronique2/figure282.png",
+    "electronique2/attachments-electronique2/figure281.png",
+    "electronique2/attachments-electronique2/figure280.png",
+    "electronique2/00-Electronique2.md",
+    "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
+    "electronique2/attachments-electronique2/figure279.png",
+    "electronique2/attachments-electronique2/figure278.png",
+    "electronique2/attachments-electronique2/figure277.png",
     "electronique2/attachments-electronique2/figure276.png",
-    "electronique2/attachments-electronique2/figure275.png",
-    "electronique2/attachments-electronique2/figure274.png",
-    "electronique2/attachments-electronique2/figure273.png",
-    "electronique2/attachments-electronique2/Pasted image 20251216205439.png",
-    "electronique2/attachments-electronique2/figure272.png",
-    "electronique2/attachments-electronique2/figure271.png",
-    "electronique2/attachments-electronique2/figure270.png",
     "electronique2/07-Conversion électromagnétique statique. Le transformateur.md",
     "electronique2/08-Conversions électromagnétiques de puissance.md",
-    "electronique2/09-Machines à courant continu.md",
-    "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
-    "electronique2/attachments-electronique2/figure269.png",
-    "electronique2/attachments-electronique2/figure268.png",
-    "electronique2/attachments-electronique2/figure267.png",
-    "electronique2/00-Electronique2.md",
     "electronique2/06-Multiplication de signaux.md",
     "mecanique2/07-Les travaux des actions sur un système – Énergie potentielle.md",
     "electronique2/01-Systèmes linéaires.md",
@@ -232,7 +232,6 @@
     "electronique2/05-Systèmes linéaires en boucle fermée.md",
     "mecanique1/08-Changements de référentiels. Mécanique non galiléenne.md",
     "electronique2/04-Un exemple de système électronique. L'amplificateur opérationnel.md",
-    "electronique1/08-Fonctions de transfert des réseaux linéaires.md",
     "electronique2/attachments-electronique2",
     "electronique2",
     "attachments-electronique1",
