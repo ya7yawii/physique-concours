@@ -22,18 +22,17 @@
             }
           },
           {
-            "id": "4194661bc9129c2b",
+            "id": "eb8e1dee73d1f09c",
             "type": "leaf",
             "state": {
-              "type": "split-diff-view",
+              "type": "markdown",
               "state": {
-                "aFile": "electronique1/11-Redressement et lissage.md",
-                "bFile": "electronique1/11-Redressement et lissage.md",
-                "aRef": "HEAD",
-                "bRef": ""
+                "file": "electronique2/11-Conversion électronique statique.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "diff",
-              "title": "Diff: 11-Redressement et lissage"
+              "icon": "lucide-file",
+              "title": "11-Conversion électronique statique"
             }
           }
         ],
@@ -196,8 +195,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4194661bc9129c2b",
+  "active": "eb8e1dee73d1f09c",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure293.png",
+    "electronique2/attachments-electronique2/figure292.png",
+    "electronique2/attachments-electronique2/figure291.png",
     "electronique2/11-Conversion électronique statique.md",
     "electronique2/attachments-electronique2/figure290.png",
     "electronique2/attachments-electronique2/figure289.png",
@@ -208,8 +210,6 @@
     "electronique2/attachments-electronique2/figure285.png",
     "electronique2/attachments-electronique2/figure284.png",
     "electronique2/attachments-electronique2/figure283.png",
-    "electronique2/attachments-electronique2/figure282.png",
-    "electronique2/attachments-electronique2/figure281.png",
     "electronique2/00-Electronique2.md",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
     "electronique2/07-Conversion électromagnétique statique. Le transformateur.md",

@@ -170,7 +170,7 @@ Redresseur double alternance sans seuil. G.B.F. (2V~, 200 Hz), $R = 10 k\Omega$ 
 ![[electronique1/attachments-electronique1/figure288.png]]^figure22
 
 Redressement double alternance et lissage de la tension vs par le condensateur C. G.B.F. (5V~, 200 Hz), $R = 47 \Omega$, $C = 10 \mu F$ et $R_u = 1 k\Omega$
-![[figure291.png]]^figure25
+![[electronique1/attachments-electronique1/figure291.png]]^figure25
 
 Détecteur d'enveloppe
 ![[figure294.png]]^figure28
@@ -230,10 +230,10 @@ Caractéristique du redresseur double alternance sans seuil
 ![[electronique1/attachments-electronique1/figure290.png]]^figure24
 
 Courant $i(t)$ délivré par le redresseur bialternance et tension $v_s(t)$ redressée et filtrée par condensateur, en régime établi
-![[figure292.png]]^figure26
+![[electronique1/attachments-electronique1/figure292.png]]^figure26
 
 Avec une capacité de filtrage suffisante, la tension redressée filtrée est quasi continue
-![[figure293.png]]^figure27
+![[electronique1/attachments-electronique1/figure293.png]]^figure27
 
 Pourquoi choisir $t_0 \gg RC \gg T$ ?
 ![[figure295.png]]^figure29

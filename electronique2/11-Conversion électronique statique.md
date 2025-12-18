@@ -67,6 +67,27 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > Nous ne nous préoccuperons pas par la suite du type d’interrupteur commandé utilisé. Nous nous servirons d’un interrupteur unidirectionnel commandé à la fermeture et à l'ouverture utilisable pour $u \geqslant 0$ et $i \geqslant 0$. Son schéma est donné sur la [[#^figure10|figure 10]].
 > La représentation de type diode indique le sens du courant en mode passant et le double trait vertical ou oblique signifie que cet interrupteur est commandé à l'ouverture et à la fermeture (H signifie hacheur).
 
+> [!note] Source de courant et de tension en régime commuté
+> Nous avons étudié le cas simple de transfert de puissance vers une résistance. Les convertisseurs de puissance sont principalement utilisés sur des moteurs dont le comportement électrocinétique est plus complexe en particulier pendant la commutation des interrupteurs.
+> - Généralisation de la notion de source de tension ou de courant : Le fait d'utiliser les interrupteurs commandés fonctionnant à des fréquences de plusieurs kilohertz impose d’étendre les notions de source de courant ou de tension, car le comportement au niveau des commutations est plus important que celui vis-à-vis du régime continu qui n’est jamais atteint.
+> Envisageons le montage suivant ([[#^figure11|fig. 11]]).
+> Un générateur en créneau de période T et de rapport cyclique $\alpha$, de représentation de Thévenin (f.e.m. $e_g(t) = 0$ ou $E_0$, résistance $R_0$) ou de Norton (c.e.m. $\eta_g(t) = 0$ ou $I_0 = \frac{E_0}{R}$ résistance $R_0$), alimente un dipôle.
+> Étudions la tension $u$ et l’intensité $i$ qui traversent le dipôle suivant son type dans quelques cas particuliers ([[#^figure12a|fig. 12a]] et [[#^figure12b|b]]).
+> 	- Si le dipôle est une source de tension f.e.m. $E$, la tension $u = E$ est continue et l’intensité $i = \frac{e_g - E}{R}$ discontinue.
+> 	- S'il est une source de courant de c.e.m. $\eta$, la tension $u = e_g - R_0\eta$ est discontinue et l’intensité $i = \eta$ continue.
+> 	- Si le dipôle est une bobine d’inductance $L$, le flux et donc l'intensité $i$ sont continus.
+> 	Le temps caractéristique d’évolution du courant est $\frac{L}{R_0}$.
+> 	Si $\frac{L}{R_0} \gg T$, le courant traversant l’inductance est quasiment constant.
+> 	- Si le dipôle est un condensateur de capacité $C$, la charge et donc la tension sont continues. Le temps caractéristique d’évolution de tension est $R_0C$.
+> 	- Si $R_0C \gg T$, la tension aux bornes du condensateur est quasiment constante.
+> 	
+> 	Pour traiter de façon semblable des dipôles aux comportements voisins en régime commuté (inductance et source de courant) (condensateur et source de tension), nous choisissons de nouvelles définitions pour les sources.
+> 	==**En présence de commutations :**==
+> 	- ==**Un dipôle se comporte comme une source de tension si la tension à ses bornes est quasiment constante.**==
+> 	- ==**Un dipôle se comporte comme une source de courant si l’intensité qui le traverse est quasiment constante.**==
+> 	
+> 	==**Une source de tension autorise des variations brusques de courant et, inversement, une source de courant autorise des variations brusques de tension.**==
+
 
 # Diagrammes
 Rhéostat. L'intensité est identique dans le générateur et le récepteur. Le rendement est donc égal au rapport $\frac{V_2}{V_1}$
@@ -97,12 +118,21 @@ Thyristor (ouverture naturelle)
 
 Schémas d'interrupteurs unidirectionnels commandés
 ![[electronique2/attachments-electronique2/figure290.png]]^figure10
+
+a. Schéma de Thévenin du générateur. b. Schéma de Norton du générateur.
+![[electronique2/attachments-electronique2/figure291.png]]^figure11
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3
 
 Caractéristiques d'interrupteurs. Interrupteur commandé quatre quadrants
 ![[electronique2/attachments-electronique2/figure286.png]]^figure6
+
+Comportement de quelques dipôles
+![[electronique2/attachments-electronique2/figure292.png]]^figure12a
+
+Comportement de quelques dipôles
+![[electronique2/attachments-electronique2/figure293.png]]^figure12b
 # Expériences
 
 # Autres notes
