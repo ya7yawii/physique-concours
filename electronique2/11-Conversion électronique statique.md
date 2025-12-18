@@ -88,6 +88,23 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > 	
 > 	==**Une source de tension autorise des variations brusques de courant et, inversement, une source de courant autorise des variations brusques de tension.**==
 
+> [!note] Source de courant et de tension en régime commuté : Lissage de la tension par un condensateur
+> Envisageons la mise en parallèle d’un condensateur sur un dipôle dans un réseau siège d’une commutation périodique de période $T$ et de fréquence $f = \frac{1}{T}$ ([[#^figure13|fig. 13]]).
+> **Quand le régime établi est atteint**, la tension $u(t)$ et les courants sont des fonctions périodiques du temps.
+> - Variation de la tension : Considérons l’amplitude $\Delta u = u_{max} - u_{min}$ de la variation de $u(t)$ au cours d’une période ([[#^figure14|fig. 14]]). Nous pouvons majorer $\Delta u$ : $\Delta u < T\left|\dfrac{du}{dt}\right|_{max}$.
+> Comme $i_C = C\dfrac{du}{dt}$ : $\Delta u < \frac{i_{C\,max}}{C}T$ ou $\Delta u < \frac{i_{C\,max}}{fC}$
+> La valeur de $i_{C\,max}$ dépend du dipôle $D$ et du reste du circuit.
+> ==**En régime commuté établi, un condensateur atténue les variations de tension à ses bornes et tend à se comporter comme une source de tension. Cette propriété est d’autant mieux vérifiée que sa capacité est grande et que la fréquence de commutation est élevée.**==
+> - Intensités : La valeur moyenne de l’intensité dans le condensateur est : $\displaystyle \langle i_C \rangle = \frac{1}{T}\int_{t}^{t+T}i_C(t')dt' = \frac{1}{T}\int_{t}^{t+T}C\dfrac{du}{dt'}dt' = C\frac{u(t+T) - u(t)}{T} = 0$.
+> ==**En régime périodique, l’intensité moyenne entrant dans un condensateur est nulle.**==
+> 	- La valeur moyenne de l’intensité à travers le dipôle $D$ est donc égale à celle de $i(t)$ : $\langle i_D(t) \rangle = \langle i(t) \rangle$.
+> 	- Si le lissage de la tension est suffisant, la tension aux bornes du dipôle $D$ et donc l’intensité $i_D$ qui le traverse, sont pratiquement constantes. Les variations de l’intensité $i(t)$ sont « absorbées » par le condensateur.
+> - Transformation ou amélioration d’une source : Examinons les cas où le dipôle $D$ est une source idéale de courant ([[#^figure15|fig. 15]]) ou une source non idéale de tension ([[#^figure16|fig. 16]]).
+> Si la capacité $C$ et la fréquence de commutation $f$ sont suffisamment élevées, l'ensemble source et condensateur en parallèle peut être considéré comme une source de tension.
+> ==**Si sa capacité est suffisamment grande, un condensateur en parallèle :**==
+> 	- ==**transforme une source de courant en source de tension ;**==
+> 	- ==**améliore une source de tension non idéale.**==
+
 
 # Diagrammes
 Rhéostat. L'intensité est identique dans le générateur et le récepteur. Le rendement est donc égal au rapport $\frac{V_2}{V_1}$
@@ -121,6 +138,15 @@ Schémas d'interrupteurs unidirectionnels commandés
 
 a. Schéma de Thévenin du générateur. b. Schéma de Norton du générateur.
 ![[electronique2/attachments-electronique2/figure291.png]]^figure11
+
+Le condensateur lisse la tension $u(t)$
+![[electronique2/attachments-electronique2/figure294.png]]^figure13
+
+En régime commuté, le condensateur en parallèle sur un générateur de courant le transforme en générateur de tension
+![[electronique2/attachments-electronique2/figure296.png]]^figure15
+
+En régime commuté, le condensateur en parallèle sur une source de tension l'améliore
+![[electronique2/attachments-electronique2/figure297.png]]^figure16
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3
@@ -133,6 +159,9 @@ Comportement de quelques dipôles
 
 Comportement de quelques dipôles
 ![[electronique2/attachments-electronique2/figure293.png]]^figure12b
+
+Variation de $u(t)$
+![[electronique2/attachments-electronique2/figure295.png]]^figure14
 # Expériences
 
 # Autres notes
