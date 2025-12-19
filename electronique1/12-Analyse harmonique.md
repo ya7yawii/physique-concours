@@ -143,7 +143,7 @@ crée: 20-11-2025, 11:09
 > - Si $f = 20f_0$ : Le signal de sortie, très atténué, est une fonction triangle pour une attaque en créneau. On retrouve le caractère intégrateur d'un passe-bande d'ordre deux pour $f \gg f_0$.
 # Diagrammes
 Filtre passe-bas d'ordre un
-![[figure307.png]]^figure10
+![[electronique1/attachments-electronique1/figure307.png]]^figure10
 
 Détermination du signal de sortie d'un filtre linéaire
 ![[figure311.png]]^figure14
@@ -164,19 +164,19 @@ Spectre de fréquence d'un signal périodique
 ![[electronique1/attachments-electronique1/figure302.png]]^figure5
 
 Synthèse d'un signal triangulaire
-![[figure303.png]]^figure6
+![[electronique1/attachments-electronique1/figure303.png]]^figure6
 
 Synthèse d'un signal redressé simple alternance
-![[figure304.png]]^figure7
+![[electronique1/attachments-electronique1/figure304.png]]^figure7
 
  Mise en évidence du phénomène de Gibbs sur un signal carré
- ![[figure305.png]]^figure8
+ ![[electronique1/attachments-electronique1/figure305.png]]^figure8
 
 Mise en évidence du phénomène de Gibbs sur une rampe périodique
-![[figure306.png]]^figure9
+![[electronique1/attachments-electronique1/figure306.png]]^figure9
 
 $u_e(t)$
-![[figure308.png]]^figure11
+![[electronique1/attachments-electronique1/figure308.png]]^figure11
 
 Valeur approchée de $v_s(t)$ pour $p_{max} = 5$
 ![[figure309.png]]^figure12

@@ -130,6 +130,35 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > 
 > ==**La conversion de puissance ne peut se faire directement que d’une source de tension vers une source de courant et réciproquement.**==
 
+> [!note] Alimentation d'un électromoteur : Alimentation d’une source
+> Envisageons, dans un premier temps, le cas de l’alimentation d’une source de courant parfaite de c.e.m. $I$ par une source de tension de f.e.m. $E$ avec le montage de [[#^figure21|figure 21]].
+> Le fait que le circuit électrique soit périodiquement ouvert est incompatible avec la présence de la source de courant. En effet, comment le courant $I$ peut-il parcourir un circuit ouvert ?
+> Dans la réalité, une différence de potentiel très grande apparaît aux bornes de l’interrupteur et le détruit. Il est donc nécessaire de court-circuiter cette source pendant l'ouverture de l’interrupteur commandé.
+> De façon symétrique, un court-circuit du générateur de tension endommagerait le circuit.
+> ==**En régime de commutation établi :**==
+> - ==**une source de tension ne doit jamais être court-circuitée ;**==
+> - ==**une source de courant ne doit jamais être en circuit ouvert.**==
+> 
+> Considérons la structure à deux interrupteurs de [[#^figure22|figure 22]].
+> Quand le premier interrupteur est fermé, le second est ouvert et inversement.
+> De cette façon, la source de tension n’est jamais court-circuitée et la source de courant n’est jamais en circuit ouvert.
+> À partir du chronogramme de [[#^figure23|figure 23]], nous remarquons que la tension moyenne aux bornes de la source de courant est $\langle u \rangle = \alpha E$ et que la puissance moyenne reçue par cette source est $\langle p \rangle = \alpha EI$. Ce dispositif permet donc de fournir une puissance variable à la source de courant en modifiant le rapport cyclique $\alpha$.
+> Le transfert de puissance est réversible : il suffit d’inverser les bornes du générateur de courant pour que $\langle p \rangle$ soit négative. Dans ce cas, la puissance est transférée de la source de courant vers la source de tension.
+
+> [!note] Alimentation d'un électromoteur : Choix des interrupteurs
+> Quels interrupteurs pouvons-nous choisir dans le montage correspondant à l'alimentation d'une source de courant ?
+> Envisageons un transfert de puissance du générateur vers le récepteur $(I > 0)$.
+> Il existe deux points de fonctionnement pour chaque interrupteur ([[#^figure24|fig. 24]]).
+> Les intensités traversant $K_1$ et $K_2$ étant toujours positives ou nulles, les interrupteurs choisis peuvent être unidirectionnels ([[#^figure25|fig. 25]]).
+> Est-il nécessaire de choisir $K_1$ et $K_2$ commandés ?
+> - Supposons que $K_2$ soit une diode orientée comme $i_{K_2}$.
+> Sa conduction se produit dès que l’interrupteur $K_1$ est ouvert, car l’intensité $I$ est dans le sens passant de la diode. Son blocage se produit dès la fermeture de $K_1$, car elle est alors polarisée dans le sens bloqué.
+> - Supposons que $K_1$ soit une diode orientée comme $i_{K_1}$.
+> Si $i_{K_2}$. est fermé, elle est conductrice ; le générateur est en court-circuit et le montage est endommagé.
+> Nous choisirons donc pour $K_1$ un interrupteur commande et pour $K_2$ une diode ([[#^figure26|fig. 26]]).
+> ==**Le montage s’appelle hacheur série, car l'élément commandé est en série avec le générateur.**==
+> ==**La diode est dite diode de roue libre, car elle est conductrice pendant la phase où la source débite une puissance nulle.**==
+
 
 # Diagrammes
 Rhéostat. L'intensité est identique dans le générateur et le récepteur. Le rendement est donc égal au rapport $\frac{V_2}{V_1}$
@@ -187,6 +216,18 @@ Montages impossibles
 
 Transfert de puissance entre deux sources de nature différente
 ![[electronique2/attachments-electronique2/figure302.png]]^figure20
+
+Surtension à l'ouverture d'un interrupteur
+![[electronique2/attachments-electronique2/figure303.png]]^figure21
+
+Cellule à deux interrupteurs
+![[electronique2/attachments-electronique2/figure304.png]]^figure22
+
+Cellule à deux interrupteurs. Caractéristiques des interrupteurs
+![[electronique2/attachments-electronique2/figure307.png]]^figure25
+
+Hacheur série avec la diode de roue libre
+![[electronique2/attachments-electronique2/figure308.png]]^figure26
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3
@@ -202,6 +243,12 @@ Comportement de quelques dipôles
 
 Variation de $u(t)$
 ![[electronique2/attachments-electronique2/figure295.png]]^figure14
+
+Chronogramme
+![[electronique2/attachments-electronique2/figure305.png]]^figure23
+
+Points de fonctionnement des interrupteurs
+![[electronique2/attachments-electronique2/figure306.png]]^figure24
 # Expériences
 
 # Autres notes
