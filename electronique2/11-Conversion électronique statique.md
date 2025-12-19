@@ -92,7 +92,7 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > Envisageons la mise en parallèle d’un condensateur sur un dipôle dans un réseau siège d’une commutation périodique de période $T$ et de fréquence $f = \frac{1}{T}$ ([[#^figure13|fig. 13]]).
 > **Quand le régime établi est atteint**, la tension $u(t)$ et les courants sont des fonctions périodiques du temps.
 > - Variation de la tension : Considérons l’amplitude $\Delta u = u_{max} - u_{min}$ de la variation de $u(t)$ au cours d’une période ([[#^figure14|fig. 14]]). Nous pouvons majorer $\Delta u$ : $\Delta u < T\left|\dfrac{du}{dt}\right|_{max}$.
-> Comme $i_C = C\dfrac{du}{dt}$ : $\Delta u < \frac{i_{C\,max}}{C}T$ ou $\Delta u < \frac{i_{C\,max}}{fC}$
+> Comme $i_C = C\dfrac{du}{dt}$ : $\Delta u < \frac{i_{C\,max}}{C}T$ ou $\Delta u < \frac{i_{C\,max}}{fC}$.
 > La valeur de $i_{C\,max}$ dépend du dipôle $D$ et du reste du circuit.
 > ==**En régime commuté établi, un condensateur atténue les variations de tension à ses bornes et tend à se comporter comme une source de tension. Cette propriété est d’autant mieux vérifiée que sa capacité est grande et que la fréquence de commutation est élevée.**==
 > - Intensités : La valeur moyenne de l’intensité dans le condensateur est : $\displaystyle \langle i_C \rangle = \frac{1}{T}\int_{t}^{t+T}i_C(t')dt' = \frac{1}{T}\int_{t}^{t+T}C\dfrac{du}{dt'}dt' = C\frac{u(t+T) - u(t)}{T} = 0$.
@@ -104,6 +104,31 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > ==**Si sa capacité est suffisamment grande, un condensateur en parallèle :**==
 > 	- ==**transforme une source de courant en source de tension ;**==
 > 	- ==**améliore une source de tension non idéale.**==
+^par2
+
+> [!note] Source de courant et de tension en régime commuté : Lissage du courant par une inductance
+> Étudions maintenant la mise en série d’une inductance avec un dipôle quelconque en régime commuté de période $T$ et de fréquence $f$ ([[#^figure17|fig. 17]]).
+> Quand le régime établi est atteint, les tensions $u(t)$, $u_L(t)$ et $i(t)$ sont des fonctions périodiques du temps. On retrouve des résultats analogues à ceux du [[#^par2|paragraphe précédent]].
+> - Variation de l'intensité : L’amplitude $\Delta i = i_{max} - i_{min}$ de la variation de $i(t)$ au cours d’une période est majorée par: $\Delta i < T\left|\dfrac{di}{dt}\right|_{max}$ avec $u_L = L\dfrac{di}{dt}$, soit : $\Delta i < \frac{u_{L\,max}}{L}T$ ou $\Delta i < \frac{u_{L\,max}}{fL}$.
+> ==**En *régime commuté établi*, une bobine atténue les variations de l'intensité du courant qui la traverse et tend à se comporter comme une source de courant.**==
+> ==**Cette propriété est d’autant mieux vérifiée que son inductance est grande et que la fréquence de commutation est élevée.**==
+> - Tensions : La valeur moyenne de la tension aux bornes de l'inductance (idéale) est : $\langle u_L \rangle = \frac{1}{T}\int_{t}^{t+T}u_L(t')dt' = \frac{1}{T}\int_{t}^{t+T}L\dfrac{di}{dt'}dt' = L\frac{i(t+T) - i(t)}{T} = 0$.
+> ==**En *régime commuté établi*, la tension moyenne aux bornes d'une inductance parfaite est nulle.**==
+> 	- La valeur moyenne de la tension aux bornes du dipôle $D$ est donc égale à celle de $u(t)$ : $\langle u_D(t) \rangle = \langle u(t) \rangle$.
+> 	- Si le lissage du courant est suffisamment efficace, l'intensité $i$ et donc la tension $u_D$ aux bornes du dipôle $D$ sont pratiquement constantes. Les variations de la tension $u(t)$ sont pratiquement « absorbées » par l'inductance.
+> - Transformation ou amélioration d’une source : Examinons les cas où le dipôle $D$ est une source idéale de tension ([[#^figure18a|fig. 18a]]) ou une source non idéale de courant ([[#^figure18b|fig. 18b]]).
+> Si l'inductance $L$ et la fréquence de commutation $f$ sont suffisamment élevées, l'ensemble source et inductance en série peut être considéré comme une source de courant.
+> ==**Si son inductance est suffisamment grande, une bobine en série :**==
+> 	- ==**transforme une source de tension en source de courant ;**==
+> 	- ==**améliore les caractéristiques d’une source de courant non idéale.**==
+
+> [!note] Alimentation d'un électromoteur : Conversion de puissance entre une source idéale et un électromoteur
+> Si nous négligeons la résistance en série d’un moteur à courant continu, celui-ci peut être considéré comme un électromoteur pur de f.e.m. $E'$. Cherchons comment il est possible de l’alimenter à partir d’une source idéale continue.
+> - Le montage de [[#^figure19|figure 19a]] est impossible : à la fermeture de l'interrupteur, la tension à ses bornes, égale à $E - E'$ est non nulle et le courant devient donc infini.
+> - Pour alimenter une source de courant, le montage de [[#^figure19|figure 19b]] est impossible : le courant $I_K$ étant toujours égal à $I + I'$, l'ouverture de l'interrupteur entraînerait sa destruction par surtension.
+> - En revanche, rien n’interdit le montage sans interrupteur représenté sur la [[#^figure20|figure 20]]. Si les deux électromoteurs sont positifs, la source de courant transfère une puissance $\mathcal{P} = E'I$ vers la source de tension.
+> 
+> ==**La conversion de puissance ne peut se faire directement que d’une source de tension vers une source de courant et réciproquement.**==
 
 
 # Diagrammes
@@ -147,6 +172,21 @@ En régime commuté, le condensateur en parallèle sur un générateur de couran
 
 En régime commuté, le condensateur en parallèle sur une source de tension l'améliore
 ![[electronique2/attachments-electronique2/figure297.png]]^figure16
+
+L'inductance lisse le courant qui la traverse
+![[electronique2/attachments-electronique2/figure298.png]]^figure17
+
+En régime commuté, l'inductance en série avec un générateur de tension le transforme en générateur de courant
+![[electronique2/attachments-electronique2/figure299.png]]^figure18a
+
+En régime commuté, l'inductance en série avec un générateur non idéale de courant l'améliore
+![[electronique2/attachments-electronique2/figure300.png]]^figure18b
+
+Montages impossibles
+![[electronique2/attachments-electronique2/figure301.png]]^figure19
+
+Transfert de puissance entre deux sources de nature différente
+![[electronique2/attachments-electronique2/figure302.png]]^figure20
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3

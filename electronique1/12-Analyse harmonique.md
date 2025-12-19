@@ -149,19 +149,19 @@ Détermination du signal de sortie d'un filtre linéaire
 ![[figure311.png]]^figure14
 # Graphiques
 Créneau impair et de rapport cyclique $\frac{1}{2}$
-![[figure298.png]]^figure1
+![[electronique1/attachments-electronique1/figure298.png]]^figure1
 
 Créneau pair et de rapport cyclique $\frac{1}{2}$
-![[figure299.png]]^figure2
+![[electronique1/attachments-electronique1/figure299.png]]^figure2
 
 Triangle pair et de rapport cyclique $\frac{1}{2}$
-![[figure300.png]]^figure3
+![[electronique1/attachments-electronique1/figure300.png]]^figure3
 
 Sinusoïde redressée double alternance
-![[figure301.png]]^figure4
+![[electronique1/attachments-electronique1/figure301.png]]^figure4
 
 Spectre de fréquence d'un signal périodique
-![[figure302.png]]^figure5
+![[electronique1/attachments-electronique1/figure302.png]]^figure5
 
 Synthèse d'un signal triangulaire
 ![[figure303.png]]^figure6
