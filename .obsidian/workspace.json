@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -197,6 +198,8 @@
   },
   "active": "eb8e1dee73d1f09c",
   "lastOpenFiles": [
+    "electronique2/attachments-electronique2/figure322.png",
+    "electronique2/attachments-electronique2/figure321.png",
     "electronique2/attachments-electronique2/figure320.png",
     "electronique2/attachments-electronique2/figure319.png",
     "electronique2/attachments-electronique2/figure318.png",
@@ -206,8 +209,6 @@
     "electronique2/attachments-electronique2/figure314.png",
     "electronique2/attachments-electronique2/figure313.png",
     "electronique2/attachments-electronique2/figure312.png",
-    "electronique2/attachments-electronique2/figure311.png",
-    "electronique2/attachments-electronique2/figure310.png",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
     "electronique2/11-Conversion électronique statique.md",
     "electronique1/12-Analyse harmonique.md",

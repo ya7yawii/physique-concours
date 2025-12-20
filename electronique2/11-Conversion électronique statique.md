@@ -240,6 +240,31 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > 	- $H$ fermé, $D$ bloquée : $i_R = 0$, $i_G = i_L$ et $\dfrac{di_L}{dt} = \frac{E_G}{L}$. En appelant $I_{L_m}$, l’intensité en début de cycle et $t'$ le temps écoulé depuis le début du cycle, $i_L = I_{L_m} + \frac{E_G}{L}t'$ ; et la valeur à l’instant de commutation $t = \alpha T$ de l'intensité $I_{L_M} = I_{L_m} + \frac{E_G}{L}\alpha T$. La bobine emmagasine alors de l'énergie, car $i_L$ croît .
 > 	- $D$ passante, $H$ ouvert : $I_G = 0$, $i_R = i_L$ et $\dfrac{di_L}{dt} = -\frac{E_R}{L}$.
 > 	$i_L = I_{L_M} - \frac{E_R}{L}(t' - \alpha T)$ et la valeur en fin de période $t' = T$ est $I_{L_m}^{'} = I_{L_M} - \frac{E_R}{L}T(1 - \alpha)$. La bobine restitue de l'énergie, car $i_L$ décroît.
+> - Caractéristique de transfert : Quand le régime permanent est établi, les intensités en début et fin de cycle dans la bobine sont égales $I_{L_m} = I_{L_m}^{'}$. En remplaçant $I_{L_M}$ par son expression en fonction de $I_{L_m}$ : $I_{L_m} = I_{L_m} + \frac{E_G}{L}\alpha T - \frac{E_R}{L}T(1 - \alpha)$, soit $\alpha E_G = (1 -\alpha) E_R$. L'intensité moyenne dans le générateur est : $\displaystyle I_G = \frac{1}{T}\int_{0}^{\alpha T}\left(I_{L_m} + \frac{E_G}{L}t\right)dt = \alpha\frac{I_{L_m} + I_{L_M}}{2}$ ;
+> alors que celle dans le récepteur est : $\displaystyle I_R = \frac{1}{T}\int_{\alpha T}^{T}\left(I_{L_M} - \frac{E_R}{L}(t - \alpha T)\right)dt = (1 - \alpha)\frac{I_{L_m} + I_{L_M}}{2}$.
+> Comme dans le cas du hacheur série, l'énergie emmagasinée par la bobine pendant la fermeture de $H$ est restituée pendant son ouverture. La puissance moyenne $\mathcal{P}_R$ fournie au récepteur est égale à celle $\mathcal{P}_G$ fournie par le générateur.
+> ==**Les caractéristiques du montage sont donc : $E_R = \frac{\alpha}{1 - \alpha}E_G$, $I_G = \frac{\alpha}{1 - \alpha}I_R$ et $\mathcal{P}_R = \mathcal{P}_G$.**==
+> ==**Ces relations sont identiques à celles du transformateur en alternatif avec un rapport de transformation de $\frac{\alpha}{1 - \alpha}$.**==
+> Ce montage présente l’intérêt d’être un hacheur dévolteur pour $\alpha < \frac{1}{2}$ et survolteur pour $\alpha > \frac{1}{2}$. Il reste cependant irréversible.
+> Il présente l’inconvénient de courants discontinus dans le générateur et dans le récepteur. Il ne peut donc pas être utilisé pour l’alimentation d’un moteur à cause de l’inductance de ce type de récepteur incompatible avec des discontinuités de courant.
+
+> [!note] Exemples d'applications : Régulation de vitesse d'un moteur
+> Le but de la régulation de vitesse d’un moteur est :
+> - de maintenir celle-ci à une valeur imposée (consigne) indépendamment du couple appliqué à l’axe du moteur ;
+> - de s’assurer que le courant moteur ne dépasse pas une valeur maximale même en cas de couple important, ou au démarrage ;
+> - de permettre un démarrage progressif du moteur pour éviter des efforts mécaniques excessifs.
+> 
+> Commentons le schéma fonctionnel d’un régulateur simple de vitesse d’un moteur à courant continu ([[#^figure39|fig. 39]]).
+> - Le transducteur est une génératrice tachymétrique ou un capteur optoélectronique. Une génératrice délivre une tension proportionnelle à sa vitesse de rotation, alors que le capteur optoélectronique délivre une tension variable de fréquence proportionnelle à la vitesse de rotation. Ce dernier est donc associé à un convertisseur fréquence tension.
+> - L'amplitude de la tension obtenue en sortie du transducteur est adaptée à l’entrée du comparateur par l’adaptateur d’échelle.
+> - Le comparateur bâtit le signal d’erreur différence entre la consigne et le retour de vitesse adapté.
+> - Ce signal mis en forme à l'aide d’un filtre sert à fabriquer le signal de commande du hacheur alimentant le moteur.
+> 
+> Une seconde boucle peut être mise en cascade pour effectuer une régulation en courant avec limitation.
+> Comme la constante de temps électromécanique du moteur est en général grande devant la période du hacheur, le signal alternatif dû au hachage est en dehors de la bande passante du moteur et n’apparaît pas dans sa vitesse de rotation. Tout se passe comme si le moteur était alimenté par la tension moyenne délivrée par le hacheur. L’ensemble circuit de commande-hacheur est alors équivalent à un amplificateur de puissance.
+> Si les éléments de la chaîne sont linéaires, nous retrouvons alors la structure bouclée classique de [[#^figure40|figure 40]].
+
+> [!note] Exemples d'applications : Alimentation ou régulateur à découpage
 
 
 # Diagrammes
@@ -325,6 +350,12 @@ Hacheur réversible en courant
 
 Hacheur inverseur
 ![[electronique2/attachments-electronique2/figure318.png]]^figure36
+
+Régulation d'un moteur
+![[electronique2/attachments-electronique2/figure321.png]]^figure39
+
+Schéma fonctionnel de régulation d'un moteur
+![[figure322.png]]^figure40
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3
