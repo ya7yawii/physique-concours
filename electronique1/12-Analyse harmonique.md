@@ -146,7 +146,7 @@ Filtre passe-bas d'ordre un
 ![[electronique1/attachments-electronique1/figure307.png]]^figure10
 
 Détermination du signal de sortie d'un filtre linéaire
-![[figure311.png]]^figure14
+![[electronique1/attachments-electronique1/figure311.png]]^figure14
 # Graphiques
 Créneau impair et de rapport cyclique $\frac{1}{2}$
 ![[electronique1/attachments-electronique1/figure298.png]]^figure1
@@ -179,37 +179,37 @@ $u_e(t)$
 ![[electronique1/attachments-electronique1/figure308.png]]^figure11
 
 Valeur approchée de $v_s(t)$ pour $p_{max} = 5$
-![[figure309.png]]^figure12
+![[electronique1/attachments-electronique1/figure309.png]]^figure12
 
 Valeur approchée de $v_s(t)$ pour $p_{max} = 20$
-![[figure310.png]]^figure13
+![[electronique1/attachments-electronique1/figure310.png]]^figure13
 
 Filtre passe-bas du premier ordre. Réponse d'un signal triangulaire d'amplitude crête-crête 1 V, de fréquence $f$ égale à $\frac{f_H}{20}$, $f_H$ et $20f_H$, superposé à une composante continue de 0,1 V
-![[figure312.png]]^figure15
+![[electronique1/attachments-electronique1/figure312.png]]^figure15
 
 Filtre passe-bas du premier ordre. Réponse d'un signal en créneaux d'amplitude crête-crête 1 V, de fréquence $f$ égale à $\frac{f_H}{20}$, $f_H$ et $20f_H$, superposé à une composante continue de 0,1 V
-![[figure313.png]]^figure16
+![[electronique1/attachments-electronique1/figure313.png]]^figure16
 
 Filtre passe-bas du premier ordre. Réponse d'un signal en créneaux d'amplitude crête-crête 1 V, de fréquence $f_H$, superposé à une composante continue de 0,1 V
-![[figure314.png]]^figure17
+![[electronique1/attachments-electronique1/figure314.png]]^figure17
 
 Filtre passe-bas du premier ordre. Réponse d'un signal en créneaux d'amplitude crête-crête 1 V, de fréquence $f = 20f_H$, superposé à une composante continue de 0,1 V
-![[figure315.png]]^figure18
+![[electronique1/attachments-electronique1/figure315.png]]^figure18
 
 Filtre passe-haut du premier ordre. Réponse d'un signal triangulaire d'amplitude crête-crête 1 V, de fréquence $\frac{f_B}{20}$, $f_B$ et $20f_B$, superposé à une composante continue de 0,1 V
-![[figure316.png]]^figure19
+![[electronique1/attachments-electronique1/figure316.png]]^figure19
 
 Filtre passe-haut du premier ordre. Réponse d'un signal créneau d'amplitude crête-crête 1 V, de fréquence $\frac{f_B}{20}$, $f_B$ et $20f_B$, superposé à une composante continue de 0,1 V
-![[figure317.png]]^figure20
+![[electronique1/attachments-electronique1/figure317.png]]^figure20
 
 Filtre passe-haut du premier ordre. Réponse d'un signal en créneaux d'amplitude crête-crête 1 V, de fréquence $\frac{f_B}{20}$, superposé à une composante continue de 0,1 V. Analyse des harmoniques du signal d'entrée et du signal de sortie.
-![[figure318.png]]^figure21
+![[electronique1/attachments-electronique1/figure318.png]]^figure21
 
 Filtre passe-haut du premier ordre. Réponse d'un signal en créneaux d'amplitude crête-crête 1 V, de fréquence $f_B$, superposé à une composante continue de 0,1 V. Analyse des harmoniques du signal d'entrée et du signal de sortie.
-![[figure319.png]]^figure22
+![[electronique1/attachments-electronique1/figure319.png]]^figure22
 
 Filtre passe-bande de coefficient de qualité $Q = 10$. Réponse d'un signal triangulaire d'amplitude crête-crête 1 V, de fréquence $\frac{f_0}{20}$, $f_0$ et $20f_0$, superposé à une composante continue de 0,1 V
-![[figure320.png]]^figure23
+![[electronique1/attachments-electronique1/figure320.png]]^figure23
 
 Filtre passe-bande de coefficient de qualité $Q = 10$. Réponse d'un signal en créneau d'amplitude crête-crête 1 V, de fréquence $\frac{f_0}{20}$, $f_0$ et $20f_0$, superposé à une composante continue de 0,1 V
 ![[figure321.png]]^figure24

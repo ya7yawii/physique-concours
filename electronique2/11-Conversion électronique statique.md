@@ -159,6 +159,88 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > ==**Le montage s’appelle hacheur série, car l'élément commandé est en série avec le générateur.**==
 > ==**La diode est dite diode de roue libre, car elle est conductrice pendant la phase où la source débite une puissance nulle.**==
 
+> [!note] Transfert entre deux sources de tension
+> Ainsi que nous l’avons montré au paragraphes précédents ([[#^figure19|fig. 19]]), le transfert direct entre deux sources de même type est impossible.
+> Nous allons étudier successivement, dans ce paragraphe, trois montages permettant le transfert unidirectionnel de puissance entre deux sources de tension.
+> - Soit le récepteur est transformé en générateur de courant : le montage est le hacheur série. C’est le montage le plus utilisé.
+> - Soit le générateur est transformé en générateur de courant : le montage est le hacheur parallèle.
+> - Soit le transfert s’effectue par l’intermédiaire d’un élément de stockage de type source de courant : le montage est appelé hacheur à accumulation.
+
+> [!note] Transfert entre deux sources de tension : Hacheur série
+> Insérons une bobine en série avec le récepteur ([[#^figure27|fig. 27]]). L'ensemble récepteur-bobine est équivalent à une source de courant et peut être alimenté par une source de tension et la cellule à deux interrupteurs.
+> Si le récepteur est un moteur, l’inductance de son circuit électrique peut être suffisante pour supprimer la bobine.
+> - Tension aux bornes de l'ensemble bobine-charge : Nous pouvons résumer le cas, suivant l'état des interrupteurs ([[#^figure28|fig. 28]]). Remarquons d’abord que $i_L$ décroît pendant la phase $D$ passante $\left(\dfrac{di_L}{dt} = \frac{u_L}{L} = -\frac{E_R}{L} < 0\right)$. Comme $i_L$ ne peut pas décroître indéfiniment, $u_L$ doit être positif pendant la phase $D$ bloquée, $H$ fermé. $E_G$ est donc supérieur à $E_R$. Le hacheur est dit **dévolteur** ou **abaisseur**.
+> Dans l’hypothèse où le courant dans l’inductance ne s’annule jamais, le cas $D$ bloquée et $H$ ouvert simultanément ne se produit pas.
+> La tension $-u_D$ aux bornes d’ensemble bobine-charge prend donc uniquement les deux valeurs $E_G$ et $0$.
+> Nous supposons par la suite que le courant ne s’annule pas dans la bobine.
+> ==**Dans le cas usuel où l'intensité dans la bobine ne s’annule pas, la tension aux bornes de l’ensemble bobine-charge est un signal créneau variant entre $E_G$ et $0$, de rapport cyclique $\alpha$.**==
+> ==**Ce résultat est faux si le courant dans la bobine s’annule.**==
+> Nous pouvons alors envisager trois méthodes pour déterminer la tension aux bornes de la charge :
+> 	- remplacer la source et le hacheur par une tension continue $\alpha E_G$ si l'intensité traversant la charge est quasiment constante ;
+> 	- étudier la réponse du système bobine-charge en décomposant du signal créneau en série de Fourier si la charge est un dipôle linéaire ;
+> 	- résoudre directement les équations différentielles du circuit.
+> 
+> 	Nous n’étudierons ici que la troisième méthode.
+
+> [!note] Transfert entre deux sources de tension : Hacheur série
+> - Chronogrammes : Utilisons la relation entre l'intensité et la tension aux bornes de la bobine $u_L = L\dfrac{di_L}{dt}$ ($i_L$ est aussi l'intensité $i_R$ dans le récepteur), et le fait que l'intensité dans une bobine est continue et que l'énergie emmagasinée dans la bobine est $W_L = \frac{1}{2}Li_{L}^{2}$.
+> Nous pouvons bâtir le tableau suivant ([[#^figure29|fig. 29]]), où $t'$ représente la durée écoulée depuis le début de cycle.
+> Comme nous étudions un régime établi de commutations périodiques, les intensités en début et fin de cycle sont égales $I_{L_m} = I_{L_M} - \frac{E_R}{L}(1 - \alpha)T$.
+> En remplaçant $I_{L_M}$ par son expression en fonction de $I_{L_m}$ : $I_{L_m} = I_{L_m} + \frac{E_G - E_R}{L}\alpha T - \frac{E_R}{L}(1 - \alpha)T$, soit $E_R = \alpha E_G$.
+> Nous pouvons alors bâtir le chronogramme de [[#^figure30|figure 30]].
+> $\langle u_L \rangle = 0$ en régime permanent a pour conséquence l'égalité des aires colorées sur le chronogramme de $u_L$ ([[#^figure30|fig. 30]]). Cette égalité permet de retrouver la relation $E_R = \alpha E_G$.
+> - Transferts d'énergie : Pendant la phase de conduction du hacheur, l’énergie de la bobine croît ($i_L$ augmente) et pendant la phase de roue libre, elle décroît ($i_L$ diminue).
+> Cependant l'énergie reçue par la bobine pendant un cycle est : $\Delta W_L = \frac{1}{2}L(i(t + T)^{2} - i(t)^{2}) = 0$, car le régime est périodique établi: $i(t) = i(t + T)$.
+> L’énergie reçue par la bobine pendant la première phase du cycle est égale à celle qu’elle cède pendant la deuxième phase : il y a égalité des aires sur le chronogramme des puissances ([[#^figure30|fig. 30]]).
+> La totalité de l'énergie fournie en un cycle par le générateur est transférée sans pertes au récepteur.
+> La puissance moyenne fournie à la charge est égale celle cédée par le générateur.
+> ==**La bobine est un accumulateur d’énergie fonctionnant sans pertes dans le cas idéal. Elle absorbe une partie de l’énergie fournie par le générateur, qu’elle restitue au récepteur pendant la phase de roue libre.**==
+
+> [!note] Transfert entre deux sources de tension : Hacheur série
+> - Caractéristiques de transfert : L'intensité moyenne dans le générateur est : $\displaystyle I_G = \frac{1}{T}\int_{0}^{\alpha T}\left(I_{L_m} + \frac{E_G - E_R}{L}t\right)dt = \alpha\frac{I_{L_m} + I_{L_M}}{2}$, alors que l'intensité moyenne dans le récepteur est : $\displaystyle I_R = \frac{1}{T}\left[\int_{0}^{\alpha T}\left(I_{L_m} + \frac{E_G - E_R}{L}t\right)dt + \int_{\alpha T}^{T}\left(I_{L_M} - \frac{E_R}{L}(t - \alpha T)\right)dt\right] = \frac{I_{L_m} + I_{L_M}}{2}$.
+> Ces deux résultats s’obtiennent facilement par des calculs d'aires sur les courbes $I_R(t)$ et $I_G(t)$ de [[#^figure30|figure 30]].
+> Nous remarquons que $E_GI_G = E_RI_R$.
+> Ce résultat traduit la conservation de l'énergie. En l’absence d’éléments résistifs, la puissance moyenne $\mathcal{P}_G$ fournie par le générateur doit être égale à la puissance moyenne $\mathcal{P}_R$ reçue par le récepteur. Or, $E_G$ et $E_R$ étant constantes, nous pouvons écrire : $\displaystyle \mathcal{P}_G = \frac{1}{T}\int_{0}^{T}E_Gi_G(t')dt' = E_GI_G$ et $\displaystyle \mathcal{P}_R = \frac{1}{T}\int_{0}^{T}E_Ri_R(t')dt' = E_RI_R$.
+> ==**Les caractéristiques relatives aux grandeurs moyennes du montage sont alors $E_R = \alpha E_G$, $I_G = \alpha I_R$ et $\mathcal{P}_G = \mathcal{P}_R$. Ces relations sont identiques à celles du transformateur en alternatif avec un rapport de transformation de $\alpha$.**==
+> $I_G$ et $I_R$ ne peuvent être déterminées qu’avec la connaissance d’une donnée supplémentaire : la puissance moyenne $\mathcal{P}_R$ fournie à la charge par exemple. Avec des éléments idéaux, cette indétermination est levée dés que l’on tient compte de la résistance du récepteur.
+> - Ondulation en courant : L'ondulation en courant définie par $I_{L_M} - I_{L_m}$ vaut : $\Delta i = \frac{E_G - E_R}{L}\alpha T = \frac{E_G - E_R}{L}\frac{E_R}{E_G}T = \alpha(1 - \alpha)\frac{E_GT}{L}$. Elle est maximale, à $E_G$ donnée, pour $E_R = \frac{E_G}{2}$ et vaut alors : $\frac{E_GT}{4L}$.
+> Pour la minimiser, il faut utiliser des bobines de coefficient d’inductance élevé et des fréquences de commutation élevées. L’utilisation de telles fréquences présente un autre avantage lorsque le récepteur est un moteur : les tôles de son circuit magnétique vibrent à la fréquence de commutation.
+> Une fréquence supérieure à 20 kHz crée des vibrations dans le domaine des ultrasons donc inaudibles et assure un confort sonore appréciable.
+> Remarques :
+> 	- Pour que l'intensité dans la bobine soit toujours positive, il est nécessaire que $I_{L_m}$ soit positive. Comme $I_R = \frac{I_{L_m} + I_{L_M}}{2}$, cette condition est équivalente à $\Delta i < 2I_R$. La valeur de la bobine est donc calculée de telle façon que : $I_R > \frac{\alpha(1 - \alpha)}{2}\frac{E_GT}{L}$.
+> 	- Le courant prélevé au générateur est discontinu. Cela peut être gênant si l'impédance du générateur n’est pas négligeable. Il est alors nécessaire de l'améliorer à l'aide d’un circuit $(L, C)$, permettant le lissage du courant dans le générateur et limitant les surtensions à l’entrée du hacheur lors des commutations ([[#^figure31|fig. 31]]).
+
+> [!note] Transfert entre deux sources de tension : Hacheur parallèle
+> Le hacheur dévolteur ne permet pas le passage de courant du générateur de f.e.m. la plus petite vers la plus grande. Son irréversibilité est due à l’unidirectionnalité des interrupteurs. Pour permettre un passage du courant en sens contraire, les interrupteurs doivent être « inversés ».
+> Nous obtenons donc le montage ([[#^figure32|fig. 32]]) appelé hacheur parallèle, car l’élément commandé est en parallèle avec le générateur.
+> Remarquons que dans ce cas le générateur source de tension est transformé par l’inductance en source de courant.
+> Ce montage est dit **survolteur** ou **élévateur**.
+> - Chronogrammes : Vérifions qu'il permet le transfert de la puissance d'un générateur de tension de f.e.m. $E_G$ vers un récepteur de tension de f.e.m. $E_R$ supérieure à $E_G$.
+> Étudions le chronogramme correspondant aux paramètres du montage.
+> Nous pouvons résumer les cas, suivant l'état des interrupteurs ([[#^figure33|fig. 33]]).
+> Plaçons-nous dans l'hypothèse où le courant dans l'inductance ne s'annule jamais. Le cas $D$ bloquée et $H$ ouvert simultanément ne se produit pas.
+> Le cycle comporte donc deux phases :
+> 	- $H$ fermé, $D$ bloquée : $i_R = 0$, $u_L = E_G > 0$ et $\dfrac{di_L}{dt} = \frac{E_G}{L}$. En appelant $I_{L_m}$, l'intensité en début de cycle et $t'$ le temps écoulé depuis le début du cycle, $i_L = I_{L_m} + \frac{E_G}{L}t'$ et la valeur à l'instant de commutation $t = \alpha T$ de l'intensité est : $I_{L_M} = I_{L_m} + \frac{E_G}{L}\alpha T$. La bobine emmagasine alors de l'énergie, car $i_L$ croît.
+> 	- $D$ passante, $H$ ouvert : $I_R = i_L$, $u_L = E_G - E_R$ et $\dfrac{di_L}{dt} = \frac{E_G - E_R}{L}$. ==**La valeur moyenne de $u_L$ étant nulle en régime établi, $u_L$ est négative durant cette phase. Nous en déduisons que $E_G < E_R$ (caractère élévateur du hacheur).**== $i_L = I_{L_M} + \frac{E_G - E_R}{L}(t' - \alpha T)$ et la valeur en fin de période $t' = T$ est : $I_{L_m}^{'} = I_{L_M} + \frac{E_G - E_R}{L}T(1 - \alpha)$. La bobine restitue de l'énergie, car $i_L$ décroît $(E_G < E_R)$.
+
+> [!note] Transfert entre deux sources de tension : Hacheur parallèle
+> - Caractéristique de transfert : Quand le régime permanent est établi, les intensités en début et fin de cycle dans la bobine sont égales $I_{L_m} = I_{L_m}^{'}$. En remplaçant $I_{L_M}$ par son expression en fonction de $I_{L_m}$ : $I_{L_m} = I_{L_m} + \frac{E_G}{L}\alpha T + \frac{E_G - E_R}{L}T(1 - \alpha)$, soit $E_G = (1 -\alpha) E_R$. L'intensité moyenne dans le générateur est : $\displaystyle I_G = \frac{1}{T}\left[\int_{0}^{\alpha T}\left(I_{L_m} + \frac{E_G}{L}t\right)dt + \int_{\alpha T}^{T}\left(I_{L_M} + \frac{E_G - E_R}{L}(t - \alpha T)\right)dt\right] = \frac{I_{L_m} + I_{L_M}}{2}$, alors que celle dans le récepteur est : $\displaystyle I_R = \frac{1}{T}\int_{\alpha T}^{T}\left(I_{L_M} + \frac{E_G - E_R}{L}(t - \alpha T)\right)dt = (1 - \alpha)\frac{I_{L_m} + I_{L_M}}{2}$.
+> Ces trois résultats s’obtiennent avec un calcul d’aires grâce aux courbes de [[#^figure34|figure 34]].
+> Comme dans le cas du hacheur série, l’énergie emmagasinée par la bobine pendant la fermeture de $H$ est restituée pendant son ouverture. La puissance moyenne $\mathcal{P}_R$ fournie au récepteur est égale à celle $\mathcal{P}_G$ fournie par le générateur.
+> ==**Les caractéristiques du montage sont donc : $E_R = \frac{E_G}{1 - \alpha}$, $I_R = (1 - \alpha)I_G$ et $\mathcal{P}_G = \mathcal{P}_R$.**==
+> ==**Ces relations sont identiques à celles du transformateur en alternatif avec un rapport de transformation de $\frac{1}{1 - \alpha}$.**==
+> L'utilisation simultanée d’un hacheur dévolteur et d’un hacheur survolteur permet d’assurer les phases de traction et de freinage avec récupération d’un moteur ([[#^figure35|fig. 35]]). Il permet le fonctionnement d’un récepteur dans deux quadrants $(E_R > 0, I_R \geqslant 0)$ et $(E_R > 0, I_R \leqslant 0)$.
+
+> [!note] Transfert entre deux sources de tension : Transfert à l'aide d'un élément de stockage
+> Dans ce type de montage, le générateur de f.e.m. $E_G$ puis le récepteur de f.e.m. $E_R$ sont reliés successivement à une bobine qui accumule de l'énergie sous une tension $E_G$ et la restitue sous une tension $-E_R$. Cet élément de stockage est du type source de courant, ce qui est compatible avec une connexion à des sources de tension ([[#^figure36|fig. 36]]).
+> - Chronogramme : Étudions le chronogramme du montage ([[#^figure37|fig. 37]]).
+> Nous pouvons résumer les cas suivant l'état des interrupteurs ([[#^figure38|fig. 38]]).
+> Pendant la phase de stockage, $i_L$ augmente donc $u_L$ est positive, alors que pendant la phase de restitution, $i_L$ diminue donc $u_L$ est négative. Il est donc nécessaire de brancher le générateur et le récepteur en sens inverse l’un de l’autre ; le **hacheur** est dit **inverseur**.
+> Faisons l’hypothèse que le cas $H$ ouvert et $D$ bloquée ne se produit pas. Ceci est équivalent à supposer que l'intensité dans la bobine ne s’annule pas. Le cycle comprend deux phases :
+> 	- $H$ fermé, $D$ bloquée : $i_R = 0$, $i_G = i_L$ et $\dfrac{di_L}{dt} = \frac{E_G}{L}$. En appelant $I_{L_m}$, l’intensité en début de cycle et $t'$ le temps écoulé depuis le début du cycle, $i_L = I_{L_m} + \frac{E_G}{L}t'$ ; et la valeur à l’instant de commutation $t = \alpha T$ de l'intensité $I_{L_M} = I_{L_m} + \frac{E_G}{L}\alpha T$. La bobine emmagasine alors de l'énergie, car $i_L$ croît .
+> 	- $D$ passante, $H$ ouvert : $I_G = 0$, $i_R = i_L$ et $\dfrac{di_L}{dt} = -\frac{E_R}{L}$.
+> 	$i_L = I_{L_M} - \frac{E_R}{L}(t' - \alpha T)$ et la valeur en fin de période $t' = T$ est $I_{L_m}^{'} = I_{L_M} - \frac{E_R}{L}T(1 - \alpha)$. La bobine restitue de l'énergie, car $i_L$ décroît.
+
 
 # Diagrammes
 Rhéostat. L'intensité est identique dans le générateur et le récepteur. Le rendement est donc égal au rapport $\frac{V_2}{V_1}$
@@ -228,6 +310,21 @@ Cellule à deux interrupteurs. Caractéristiques des interrupteurs
 
 Hacheur série avec la diode de roue libre
 ![[electronique2/attachments-electronique2/figure308.png]]^figure26
+
+Hacheur série ou dévolteur
+![[electronique2/attachments-electronique2/figure309.png]]^figure27
+
+Amélioration du générateur. L'inductance en série avec le générateur supprime les discontinuités de l'intensité qui le traverse. Le condensateur limite les surtensions aux bornes du hacheur
+![[electronique2/attachments-electronique2/figure313.png]]^figure31
+
+Montage hacheur parallèle ou survolteur
+![[electronique2/attachments-electronique2/figure314.png]]^figure32
+
+Hacheur réversible en courant
+![[electronique2/attachments-electronique2/figure317.png]]^figure35
+
+Hacheur inverseur
+![[electronique2/attachments-electronique2/figure318.png]]^figure36
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3
@@ -249,6 +346,27 @@ Chronogramme
 
 Points de fonctionnement des interrupteurs
 ![[electronique2/attachments-electronique2/figure306.png]]^figure24
+
+Points de fonctionnement des interrupteurs
+![[electronique2/attachments-electronique2/figure310.png]]^figure28
+
+Chronogrammes ($W_L$ est l'énergie de la bobine)
+![[electronique2/attachments-electronique2/figure311.png]]^figure29
+
+Chronogrammes du dévolteur. Cas où l'intensité ne s'annule pas. a est la puissance reçue par la bobine et b la puissance cédée par la bobine
+![[electronique2/attachments-electronique2/figure312.png]]^figure30
+
+Points de fonctionnement des interrupteurs
+![[electronique2/attachments-electronique2/figure315.png]]^figure33
+
+Chronogrammes du survolteur. a est la puissance reçue par la bobine et b la puissance fournie par la bobine
+![[electronique2/attachments-electronique2/figure316.png]]^figure34
+
+Chronogramme
+![[electronique2/attachments-electronique2/figure319.png]]^figure37
+
+Points de fonctionnement des interrupteurs
+![[electronique2/attachments-electronique2/figure320.png]]^figure38
 # Expériences
 
 # Autres notes

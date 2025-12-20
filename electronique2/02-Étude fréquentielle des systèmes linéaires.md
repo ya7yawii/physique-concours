@@ -25,7 +25,7 @@ crée: 23-11-2025, 14:22
 > Pour réviser les notions de module et argument d'une fonction de transfert et le diagramme de Bode, on pourra se reporter à l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année, [[08-Fonctions de transfert des réseaux linéaires|chapitre 8]].
 
 > [!note] Filtrage : Méthode générale d'étude
-> Pour réviser cette méthode, on pourra se reporter à l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année, [[12-Analyse harmonique|chapitre 12]]. Elle est résumée sur la [[figure311.png|figure 3]].
+> Pour réviser cette méthode, on pourra se reporter à l'ouvrage H-Prépa, Électronique-Électrocinétique, 1re année, [[12-Analyse harmonique|chapitre 12]]. Elle est résumée sur la [[electronique1/attachments-electronique1/figure311.png|figure 3]].
 ^par1
 
 > [!note] Système d'ordre 1
