@@ -1,7 +1,16 @@
 ---
 titre: "[[11-Conversion électronique statique]]"
 tags:
-aliases:
+  - conversion-électronique-de-puissance
+  - interrupteur
+  - source-de-courant
+  - source-de-tension
+  - régime-commuté
+  - électromoteur
+  - hacheur
+  - régulation-de-vitesse-d-un-moteur
+  - alimentation-à-découpage
+  - régulateur-à-découpage
 crée: 17-12-2025, 11:06
 ---
 # Formules
@@ -165,6 +174,7 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > - Soit le récepteur est transformé en générateur de courant : le montage est le hacheur série. C’est le montage le plus utilisé.
 > - Soit le générateur est transformé en générateur de courant : le montage est le hacheur parallèle.
 > - Soit le transfert s’effectue par l’intermédiaire d’un élément de stockage de type source de courant : le montage est appelé hacheur à accumulation.
+^par3
 
 > [!note] Transfert entre deux sources de tension : Hacheur série
 > Insérons une bobine en série avec le récepteur ([[#^figure27|fig. 27]]). L'ensemble récepteur-bobine est équivalent à une source de courant et peut être alimenté par une source de tension et la cellule à deux interrupteurs.
@@ -265,8 +275,13 @@ Un convertisseur statique est un convertisseur utilisant des interrupteurs élec
 > Si les éléments de la chaîne sont linéaires, nous retrouvons alors la structure bouclée classique de [[#^figure40|figure 40]].
 
 > [!note] Exemples d'applications : Alimentation ou régulateur à découpage
-
-
+> Le but d'une alimentation ou régulateur à découpage est de fournir une tension continue régulée à partir d'un générateur de caractéristiques pouvant varier. Ces régulateurs possèdent un très bon rendement par rapport aux régulateurs série classiques utilisant un élément dissipatif (transistor) en série avec la charge pour réguler la tension à ses bornes. Ils permettent d’obtenir des tensions de sortie inférieures, supérieures, de signe opposé à la tension de la source ou même isolées électriquement de celle-ci.
+> Les montages non isolés sont basés sur le montage hacheur série (« step down ») pour abaisser la tension ou parallèle (« step up ») pour l’élever.
+> Leur principe est le suivant ([[#^figure41|fig. 41]]) : l’interrupteur commande est attaqué par le signal créneau provenant d’un modulateur de largeur d’impulsions ( « Pulse Width Modulator » ou P.W.M.). Le rapport cyclique est fonction de la différence entre une tension $V_{ret}$ et une tension de référence $V_{ref}$.
+> Cet interrupteur est placé dans une des cellules étudiées au [[#^par3|paragraphe précédent]].
+> La tension de sortie du hacheur est filtrée à l'aide d’un condensateur de façon à éliminer les harmoniques du signal générés par les commutations.
+> La tension $V_{ret}$ est en général une fraction de la tension de sortie $V_{ret} = kV_{sortie}$. Le système est alors bouclé. Les caractéristiques du circuit sont telles que la tension de sortie vérifie la relation $V_{sortie} = \frac{V_{ref}}{k}$.
+> Les deux montages proposés peuvent être réalisés à l'aide d’un circuit intégré qui rassemble le modulateur d’impulsions, l’interrupteur commandé et la logique d’asservissement ([[#^figure42|fig. 42]] et [[#^figure43|43]]).
 # Diagrammes
 Rhéostat. L'intensité est identique dans le générateur et le récepteur. Le rendement est donc égal au rapport $\frac{V_2}{V_1}$
 ![[electronique2/attachments-electronique2/figure280.png]]^figure1
@@ -356,6 +371,15 @@ Régulation d'un moteur
 
 Schéma fonctionnel de régulation d'un moteur
 ![[figure322.png]]^figure40
+
+Structure à découpage
+![[figure323.png]]^figure41
+
+Alimentation "step down"
+![[figure324.png]]^figure42
+
+Alimentation "step up"
+![[figure325.png]]^figure43
 # Graphiques
 Rapport cyclique $\alpha$
 ![[electronique2/attachments-electronique2/figure283.png]]^figure3
@@ -399,5 +423,6 @@ Chronogramme
 Points de fonctionnement des interrupteurs
 ![[electronique2/attachments-electronique2/figure320.png]]^figure38
 # Expériences
-
+> [!warning]
+> Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : [lien 1](https://www.lycee-champollion.fr/IMG/pdf/tp_no21_hacheur.pdf), [lien 2](https://fr.scribd.com/document/616281988/TP-HACHEUR), [lien 3](http://psi2.nantes.free.fr/TP/ENONCES-ET-CORRIGES-TP/TP-CONVERSION-PUISSANCE/ENONCE-TP-CONVERSION-PUISSANCE/TP-12-ENONCE.pdf), [lien 4](https://fr.scribd.com/document/707359221/TP4-EP), [lien 5](https://fr.scribd.com/document/456864636/Tp-19-Hacheur).
 # Autres notes
