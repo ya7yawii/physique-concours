@@ -4,6 +4,8 @@ tags:
   - thème/electronique1
 titre: Électronique/Électrocinétique
 auteurs: Jean-Marie BRÉBEC, Thierry DESMARAIS, Marc MÉNÉTRIER, Bruno NOËL, Régine NOËL, Claude ORSINI
+Éditeur: Hachette
+Collection: H Prépa
 classe: 1re année MPSI-PCSI-PTSI
 crée: 05-11-2025, 16:22
 ---

@@ -4,6 +4,8 @@ tags:
   - thème/electronique2
 titre: Électronique
 auteurs: Jean-Marie BRÉBEC, Thierry DESMARAIS, Alain FAVIER, Marc MÉNÉTRIER, Bruno NOËL, Régine NOËL, Claude ORSINI, Jean-Marc VANHAECKE
+Éditeur: Hachette
+Collection: H Prépa
 classe: 2ème année PSI-PSI*
 crée: 22-11-2025, 12:50
 ---

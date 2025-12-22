@@ -2,10 +2,12 @@
 tags:
   - type/livre
   - thème/xyz
-aliases: 
+aliases:
 titre:
-auteur: 
-auteurs: 
+auteur:
+auteurs:
+Éditeur:
+Collection:
 classe:
 crée: "{{DATE:DD-MM-YYYY, HH:mm}}"
 ---

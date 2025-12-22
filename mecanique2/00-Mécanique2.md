@@ -4,6 +4,8 @@ tags:
   - thème/mécanique2
 titre: Mécanique du solide et des systèmes
 auteurs: Jean-Claude Hulot, Marc Venturi
+Éditeur: Nathan
+Collection: Classe prépa
 classe: 2ème année PC-MP-PT
 crée: 01-10-2025, 09:55
 ---

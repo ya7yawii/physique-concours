@@ -4,6 +4,8 @@ tags:
   - thème/mécanique1
 titre: Mécanique
 auteurs: Jean-Marie BRÉBEC, Thierry DESMARAIS, Marc MÉNÉTRIER, Bruno NOËL, Régine NOËL, Claude ORSINI
+Éditeur: Hachette
+Collection: H Prépa
 classe: 1re année MPSI-PCSI-PTSI
 crée: 08-08-2025, 16:56
 ---
