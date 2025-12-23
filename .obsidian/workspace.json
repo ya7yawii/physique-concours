@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -182,6 +183,12 @@
   },
   "active": "98454795f26e3648",
   "lastOpenFiles": [
+    "electromagnetisme1/attachments-electromagnetisme1/figure8.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure7.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure6.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure5.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure4.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure3.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure2.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure1.png",
     "electromagnetisme1/attachments-electronique2",
@@ -199,12 +206,6 @@
     "electronique2/attachments-electronique2/figure325.png",
     "electronique2/attachments-electronique2/figure324.png",
     "electronique2/attachments-electronique2/figure323.png",
-    "electronique2/attachments-electronique2/figure322.png",
-    "electronique2/attachments-electronique2/figure321.png",
-    "electronique2/attachments-electronique2/figure320.png",
-    "electronique2/attachments-electronique2/figure319.png",
-    "electronique2/attachments-electronique2/figure318.png",
-    "electronique2/attachments-electronique2/figure317.png",
     "electronique1/12-Analyse harmonique.md",
     "electronique2/09-Machines à courant continu.md",
     "electronique2/07-Conversion électromagnétique statique. Le transformateur.md",
