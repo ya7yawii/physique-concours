@@ -66,6 +66,41 @@ crée: 24-12-2025, 10:58
 L’expérience conduit à postuler que les interactions électrostatiques ont des effets linéaires.
 Par exemple, la force subie par une charge $q$ de la part d’un ensemble de $N$ charges $q_1, q_2, \cdots, q_N$ est la somme des $N$ forces qu’exercent individuellement les charges $q_i\,(i = 1, \cdots, N)$ lorsqu’elles sont mises seules en présence de la charge $q$. Le champ créé par les $N$ charges est donc la somme des $N$ champs créés par chaque charge.
 Nous postulons donc la *linéarité des effets*, ce qui constitue **le principe de superposition**.
+
+==**Utilisation des symétries et antisymétries**== :
+Le calcul du champ à partir des intégrales est souvent assez pénible. Il convient alors d’utiliser les symétries des distributions, quand elles existent, pour le simplifier.
+Certaines simplifications (éliminations de certaines coordonnées du point de calcul $M$, annulation de composantes du champ...) peuvent alors être effectuées sans aucun calcul, à l’aide de considérations de symétries  ; c’est pourquoi nous étudions ici les propriétés de symétrie et d’antisymétrie du champ électrostatique.
+
+> [!note] Propriétés de symétries du champ : Symétries élémentaires
+> - Symétrie plane :
+> ==**Sur un plan-miroir $\Pi$ d’une distribution de charge $\mathcal{D}$, le champ électrostatique créé est parallèle au plan $\Pi$ ([[#^figure8|fig. 8]]).**==
+> ==**Aux points $M$ et $M'$ symétriques par rapport à un plan-miroir $\Pi$ d’une distribution de charges $\mathcal{D}$, les champs électrostatiques $\overrightarrow{E}$ et $\overrightarrow{E'}$ sont symétriques l’un de l’autre ([[#^figure9|fig. 9]]).**==
+> Exemple de plan-miroir $\Pi$ :
+> Sur la [[#^figure11a|figure 11a]], quatre charges ponctuelles sont placées dans le plan $(xOy)$ $-q$ en $(2, 2)$ et $(-2, 2)$, $2q$ en $(1, -1)$ et $(-1, -1)$. Le plan $(yOz)$ est plan-miroir de cette distribution. Quelques lignes de champ ont été tracées sur le plan $(xOy)$.
+> Nous constatons que les lignes de champ qui approchent le plan $(yOz)$ lui sont en général tangentes : sur le plan-miroir, le champ électrostatique est tangent au plan. Notons qu’au point $A$, où se coupent quatre lignes de champ perpendiculaires, deux de ces lignes sont perpendiculaires au plan-miroir. Ceci ne contredit pas l’appartenance du champ à ce plan, car le point $A$ est un point de champ nul. Le point $A'$ est un autre point de champ nul.
+> Comme nous l’avons vu précédemment, en deux points $M$ et $M'$ symétriques par rapport au plan $(yOz)$, les champs électrostatiques $\overrightarrow{E}$ et $\overrightarrow{E'}$ sont symétriques.
+> - Antisymétrie plane :
+> ==**Sur un plan-antimiroir $\Pi^{*}$ d’une distribution $\mathcal{D}$, le champ électrostatique créé est perpendiculaire au plan $\Pi^{*}$ ([[#^figure10|fig. 10a et b]]).**==
+> ==**Au point $M'$ symétrique du point $M$ par rapport au plan-antimiroir $\Pi^{*}$ d’une distribution de charges $\mathcal{D}$, le champ électrostatique $\overrightarrow{E'}$ est l’opposé du symétrique du champ $\overrightarrow{E}$ créé par la distribution en $M$ ([[#^figure10|fig. 10c]]).**==
+> Exemple de plan-antimiroir $\Pi^{*}$ :
+> Sur la [[#^figure11b|figure 11b]], quatre charges ponctuelles sont placées dans le plan $(xOy)$ : $q$ en $(2, 2)$, $-q$ en $(-2, 2)$, $-2q$ en $(1, -1)$ et $2q$ en $(-1, -1)$. Le plan $(yOz)$ est plan-antimiroir de cette distribution. Quelques lignes de champ ont été tracées sur le plan $(xOy)$.
+> Les lignes de champ coupent le plan $(yOz)$ perpendiculairement : sur le plan antimiroir, le champ électrostatique est orthogonal au plan.
+> Notons qu’au point $A$ se coupent quatre lignes de champ non perpendiculaires à $(yOz)$. Le point $A$ est un point de champ nul, et le caractère orthogonal à $(yOz)$ du champ n’est pas mis en défaut.
+> Plus généralement, au point $M'$ symétrique de $M$ par rapport au plan $(yOz)$, le champ électrostatique $\overrightarrow{E'}$ est l’opposé du symétrique du champ $\overrightarrow{E}$ en $M$.
+
+> [!note] Propriétés de symétries du champ : Symétries élémentaires : Invariance par translation ou par rotation
+> Lorsqu’une distribution $\mathcal{D}$ est invariante par une translation de $\Delta z$ parallèlement à l’axe $(Oz)$, un observateur percevra la même distribution s’il est au point de coordonnées cartésiennes $(x, y, z)$ ou en un point translaté du précédent de coordonnées $(x, y, z + n\Delta z)$, où $n$ est un entier. Le champ sera donc identique en ces deux points ([[#^figure12|fig. 12]]).
+> Considérons maintenant une distribution $\mathcal{D}$ invariante par une rotation $\mathcal{R}$ d’angle $\alpha = \frac{2\pi}{n}$ (n entier) autour de l’axe $(Oz)$. Deux observateurs placés aux points $M$ et $M' = \mathcal{R}(M)$ percevront la même distribution (la [[#^figure13|figure 13]] a été tracé avec $n = 6$).
+> Les champs électrostatiques détectés aux points $M$ et $M'$ ont les mêmes composantes dans les systèmes de coordonnées $(Ox, Oy, Oz)$ et $(\mathcal{R}(Ox), \mathcal{R}(Oy), \mathcal{R}(Oz))$ respectivement.
+> Le champ au point $M'$ est ainsi le même qu’au point $M$, à une rotation d’angle $\alpha$ autour du vecteur $\overrightarrow{e}_z$ près.
+
+> [!note] Propriétés de symétries du champ : Symétries élémentaires : Le champ électrostatique est un vecteur polaire
+> Les études précédentes nous amènent à une conclusion simple : lors d’[[#^def1|opérations de symétrie]] (symétrie plane, translation, rotation autour d’un axe) appliquées à la distribution de charges $\mathcal{D}$, le champ électrostatique subit la même opération.
+> Nous appelons *vecteur polaire* un vecteur dont le champ a les mêmes propriétés de symétrie que ses sources.
+> Pour qualifier cette propriété, nous trouvons aussi le terme « *vrai vecteur* », par opposition à « *pseudo-vecteur* ».
+> Nous reviendrons sur cette distinction lors de l’étude du champ magnétique.
+> ==**Le champ électrostatique est un objet tridimensionnel ayant les propriétés de symétrie d’un *vecteur polaire* ou « *vecteur vrai* ».**==
+> ==**Cela signifie qu’il a les mêmes propriétés de symétrie que la distribution des charges qui le créent.**==
 # Diagrammes
 Forces d'interaction électrostatique entre deux charges statiques $(q_1q_2 > 0)$
 ![[electromagnetisme1/attachments-electromagnetisme1/figure9.png]]^figure1
@@ -84,12 +119,43 @@ Tube de champ
 
 En $M$, le champ $\overrightarrow{E}$ est soit nul soit non défini
 ![[electromagnetisme1/attachments-electromagnetisme1/figure15.png]]^figure6
+
+Symétrie plane. a. Contributions élémentaires de $P$ et $P'$. b. Champ total sur le plan-miroir
+![[electromagnetisme1/attachments-electromagnetisme1/figure17.png]]^figure8
+
+Symétrie plane et champ électrostatique
+![[electromagnetisme1/attachments-electromagnetisme1/figure18.png]]^figure9
+
+Antisymétrie plane
+![[electromagnetisme1/attachments-electromagnetisme1/figure19.png]]^figure10
+
+Distribution invariante par translation
+![[electromagnetisme1/attachments-electromagnetisme1/figure22.png]]^figure12
+
+Distribution invariante par rotation
+![[electromagnetisme1/attachments-electromagnetisme1/figure23.png]]^figure13
 # Graphiques
 Lignes de champ d’un système de deux charges ponctuelles $q$ et $Q$. a. $Q = 2q$. b. $Q = -2q$
 ![[electromagnetisme1/attachments-electromagnetisme1/figure16.png]]^figure7
+
+Symétrie des champs électrostatiques $\overrightarrow{E}$ et $\overrightarrow{E'}$ par rapport au plan de symétrie $\Pi = (y, O, z)$
+![[electromagnetisme1/attachments-electromagnetisme1/figure20.png]]^figure11a
+
+Le champ électrostatique $\overrightarrow{E'}$ est l'opposé du symétrique de $\overrightarrow{E}$ par rapport au plan d'antisymétrie $\Pi^{*} = (y, O, z)$
+![[electromagnetisme1/attachments-electromagnetisme1/figure21.png]]^figure11b
 # Expériences
 
 # Autres notes
 > [!warning] Application 2 page 21
 > ![[electromagnetisme1/attachments-electromagnetisme1/figure12.png]]
 ^app1
+
+> [!warning] Application 5 page 27
+> ![[electromagnetisme1/attachments-electromagnetisme1/figure24.png]]
+
+> [!warning] Application 6 page 28
+> ![[electromagnetisme1/attachments-electromagnetisme1/figure25.png]]
+
+> [!warning] Opération de symétrie
+> Le terme « opération de symétrie » désigne ici une **isométrie**, c’est-à-dire un déplacement qui laisse inchangées les distances.
+^def1
