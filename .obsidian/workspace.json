@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "electromagnetisme1/01-Distributions de charges.md",
+                "file": "electromagnetisme1/02-Champ électrostatique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01-Distributions de charges"
+              "title": "02-Champ électrostatique"
             }
           }
         ]
@@ -183,19 +183,23 @@
   },
   "active": "98454795f26e3648",
   "lastOpenFiles": [
+    "electromagnetisme1/attachments-electromagnetisme1/figure16.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure15.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure14.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure13.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure12.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure11.png",
+    "electromagnetisme1/01-Distributions de charges.md",
+    "electromagnetisme1/02-Champ électrostatique.md",
+    "electromagnetisme1/attachments-electromagnetisme1/figure10.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure9.png",
+    "electromagnetisme1/00-Electromagnetisme1.md",
     "electromagnetisme1/attachments-electromagnetisme1/figure8.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure7.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure6.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure5.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure4.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure3.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure2.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure1.png",
     "electromagnetisme1/attachments-electronique2",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
     "electronique2/11-Conversion électronique statique.md",
-    "electromagnetisme1/01-Distributions de charges.md",
-    "electromagnetisme1/00-Electromagnetisme1.md",
     "mecanique2/00-Mécanique2.md",
     "mecanique1/00-Mécanique1.md",
     "electronique1/00-Electronique1.md",
@@ -203,9 +207,6 @@
     "templates/livre.md",
     "electromagnetisme1/attachments-electromagnetisme1",
     "electromagnetisme1",
-    "electronique2/attachments-electronique2/figure325.png",
-    "electronique2/attachments-electronique2/figure324.png",
-    "electronique2/attachments-electronique2/figure323.png",
     "electronique1/12-Analyse harmonique.md",
     "electronique2/09-Machines à courant continu.md",
     "electronique2/07-Conversion électromagnétique statique. Le transformateur.md",
@@ -221,7 +222,6 @@
     "electronique1/06-Régime sinusoïdal forcé.md",
     "electronique1/01-Électrocinétique. Cadre et concepts de base.md",
     "electronique1/09-Filtres du deuxième ordre.md",
-    "electronique1/10-Amplificateur opérationnel. Bande passante, stabilité des montages bouclés et comparateurs.md",
     "electronique2/attachments-electronique2",
     "electronique2",
     "attachments-electronique1",
