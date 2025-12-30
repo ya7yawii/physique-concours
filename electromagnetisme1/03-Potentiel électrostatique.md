@@ -36,13 +36,30 @@ Circulation du champ électrostatique : $\displaystyle C_{AB(\Gamma)} = \int_{A_
 > - Un autre problème de convergence de l’intégrale apparaît, si nous nous intéressons au calcul du potentiel, en un point de la distribution, c’est-à-dire en un point tel que $PM = 0$ lors du calcul de l’intégrale. Dans le cas d’une distribution volumique, l’intégrale converge s’il n’y a pas de charges à l’infini.
 > 
 > Expression du potentiel pour un ensemble de charges ponctuelles : ==**$\displaystyle\sum_{i=1}^{N}\frac{1}{4\pi\epsilon_0}\frac{q_i}{P_iM}$**==.
+
+> [!note] Potentiel d’un disque uniformément chargé sur son axe
+> Déterminons le potentiel $V(M)$ d’un disque, de rayon $R$ uniformément chargé avec la densité $\sigma$, en un point $M$ de son axe ([[#^figure2|fig. 2]]).
+> Notons $(r, \theta)$ les coordonnées polaires d’un point $P$ du disque et $d^{2}S = rdrd\theta$ l’élément de surface associé à ce point. La charge élémentaire $d^{2}q = \sigma rdrd\theta$ (infiniment petit d’ordre deux) localisée en $P$, crée le potentiel élémentaire : $d^{2}V = \frac{1}{4\pi\epsilon_0}\frac{\sigma rdrd\theta}{\rho}$.
+> Une première intégration sur $\theta$ fait apparaître la contribution à $V(M)$ d’une bande circulaire de rayon $r$ et d’épaisseur $dr$ : $\displaystyle dV = \frac{\sigma}{4\pi\epsilon_0}\frac{rdr}{\rho}\int_{0}^{2\pi}d\theta = \frac{\sigma}{2\epsilon_0}\frac{rdr}{\rho}$.
+> Nous devons maintenant intégrer sur $r$. La dépendance de $\rho$ à $r$ ne s’exprimant pas simplement, nous prendrons comme variable d’intégration l’angle $\alpha$ : $r = z \tan\alpha$ et $\rho = \frac{z}{\cos\alpha}$.
+> Après simplification, l’expression à intégrer s’écrit : $dV = \frac{\sigma z}{2\epsilon_0}\frac{\sin\alpha . d\alpha}{\cos^{2}\alpha} = -\frac{\sigma z}{2\epsilon_0}\frac{d(\cos\alpha)}{\cos^{2}\alpha}$.
+> d'où : $V = \frac{\sigma z}{2\epsilon_0}\left(\frac{1}{\cos\alpha_{max}} - 1\right) = \frac{\sigma}{2\epsilon_0}(\rho_{max} - |z|) = \frac{\sigma}{2\epsilon_0}(\sqrt{z^{2} + R^{2}} - |z|)$.
+> À la traversée de la surface chargée, le champ subit une discontinuité alors que le potentiel est continu ([[#^figure3|fig. 3]]). Ce dernier résultat est général et nous l’admettrons.
+> ==**Le potentiel est continu quand il est défini.**==
+> Remarque :
+> Notons que la connaissance de la valeur du potentiel sur l’axe ne permet pas a priori de déterminer le champ sur celui-ci : $V(0, 0, z)$ est connue, et nous ne pouvons que calculer : $E_z(0, 0, z) = \dfrac{\partial V(0, 0, z)}{\partial z}$.
+> Toutefois, l’axe $(Oz)$ étant un axe de révolution de la distribution, nous avons sur celui-ci $E_x = E_y = 0$, ce qui achève la détermination du champ sur l’axe, en accord avec le résultat établi au [[02-Champ électrostatique|chapitre 2]].
 # Définitions
 
 # Diagrammes
 Courbe $\Gamma$ liant deux points $A$ et $B$
 ![[electromagnetisme1/attachments-electromagnetisme1/figure28.png]]^figure1
-# Graphiques
 
+Potentiel d’un disque chargé
+![[electromagnetisme1/attachments-electromagnetisme1/figure30.png]]^figure2
+# Graphiques
+Le potentiel est continu à la traversée d’une surface chargée
+![[electromagnetisme1/attachments-electromagnetisme1/figure31.png]]^figure3
 # Expériences
 
 # Autres notes
