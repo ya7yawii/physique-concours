@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -182,20 +183,20 @@
   },
   "active": "3adbfd5ac975e51e",
   "lastOpenFiles": [
+    "electromagnetisme1/attachments-electromagnetisme1/figure37.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure36.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure35.png",
+    "electromagnetisme1/02-Champ électrostatique.md",
+    "electromagnetisme1/03-Potentiel électrostatique.md",
+    "electromagnetisme1/attachments-electromagnetisme1/figure34.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure33.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure32.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure31.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure30.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure29.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure28.png",
     "electromagnetisme1/00-Electromagnetisme1.md",
-    "electromagnetisme1/03-Potentiel électrostatique.md",
-    "electromagnetisme1/02-Champ électrostatique.md",
     "electromagnetisme1/attachments-electromagnetisme1/figure27.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure26.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure25.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure24.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure23.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure22.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure21.png",
     "electromagnetisme1/01-Distributions de charges.md",
     "electromagnetisme1/attachments-electronique2",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
