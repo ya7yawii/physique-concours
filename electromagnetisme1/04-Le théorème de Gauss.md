@@ -40,6 +40,20 @@ Flux du champ de gravitation à travers une surface fermée ne contenant pas la 
 > ==**Le flux sortant du champ d’une distribution $\mathcal{D}$ de masses à travers une surface fermée $S$ est égal à la masse $M_{int}$ située à l’intérieur de $S$ multipliée par $-4\pi G$ : $\displaystyle \Phi_g = \oiint_{S}\overrightarrow{e}_g.d\overrightarrow{S} = -4\pi GM_{int}$.**==
 > 
 > Remarque : Le caractère remarquable de ce résultat est dû seulement au fait que la dépendance du champ à la distance $r$ d’observation est une loi en $\frac{\overrightarrow{e}_r}{r^{2}}$.
+
+> [!note] Conséquences du théorème de Gauss
+> - Propriétés générales d’un champ électrostatique :
+> Ayant postulé la loi de Coulomb et la linéarité, nous avons montré que le champ électrostatique était :
+> 	- un champ de circulation nulle sur un contour fermé, c’est-à-dire un champ de gradient ;
+> 	- un champ lié à ses sources (les charges) par le théorème de Gauss.
+> 	
+> 	Il est possible de montrer que, réciproquement, ces deux propriétés permettent de retrouver la loi de Coulomb.
+> 	==**Le théorème de Gauss et le caractère conservatif de la circulation permettent une étude complète du champ électrostatique.**==
+> 	L’[[#^app1|application 1 page 65]] illustre l’étude du comportement local du champ à l’aide de ces outils.
+> - Conservation du flux du champ :
+> ==**En l’absence de charges, le flux du champ électrostatique est conservatif : le flux est le même à travers toutes les sections d’un même tube de champ.**==
+> - [[#^demo1|Extrema du potentiel électrostatique]] :
+> ==**Le potentiel électrostatique ne possède pas d’extremum en dehors des charges.**==
 # Définitions
 > [!note] Vecteur surface
 > Considérons une surface élémentaire « plane » $dS$ contenant le point $M$. Elle possède deux faces (l’une d’entre elle sera nommé *face négative* et l’autre *face positive*) et une *orientation* bien définie dans l’espace.
@@ -72,3 +86,10 @@ Le flux de $\overrightarrow{E}$ (créé par $Q_{int} + Q_{ext}$) à travers $(S)
 # Expériences
 
 # Autres notes
+> [!warning] Application 1 page 65
+> ![[electromagnetisme1/attachments-electromagnetisme1/figure45.png]]
+^app1
+
+> [!warning] Existe-t-il des extrema de potentiel dans une zone sans charge ?
+> Imaginons une région vide de charges, où le potentiel électrostatique posséderait un extremum en un point $M$. Supposons qu’il s’agisse, par exemple, d’un maximum (au moins local). Les lignes de champ passant par le point $M$ doivent toutes diverger à partir de celui-ci, car elles sont orientées dans le sens des potentiels décroissants. Le flux du champ électrostatique à travers une petite surface fermée contenant le point est ainsi positif, ce qui contredit l’hypothèse d’absence de charges dans la région du point $M$. Ce raisonnement par l’absurde s’applique, de même, à un cas de potentiel minimal en $M$ et prouve que le potentiel électrostatique ne possède pas d’extremum en dehors des charges.
+^demo1

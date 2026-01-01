@@ -182,6 +182,11 @@
   },
   "active": "a3368d74d91c935e",
   "lastOpenFiles": [
+    "electromagnetisme1/03-Potentiel électrostatique.md",
+    "electromagnetisme1/02-Champ électrostatique.md",
+    "electromagnetisme1/01-Distributions de charges.md",
+    "electromagnetisme1/04-Le théorème de Gauss.md",
+    "electromagnetisme1/attachments-electromagnetisme1/figure45.png",
     "preamble.sty",
     "templates/preamble.sty",
     "latex",
@@ -194,14 +199,9 @@
     "electromagnetisme1/attachments-electromagnetisme1/figure39.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure38.png",
     "electromagnetisme1/00-Electromagnetisme1.md",
-    "electromagnetisme1/04-Le théorème de Gauss.md",
-    "electromagnetisme1/03-Potentiel électrostatique.md",
-    "electromagnetisme1/02-Champ électrostatique.md",
     "electronique1/11-Redressement et lissage.md",
     "electromagnetisme1/attachments-electromagnetisme1/figure37.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure36.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure35.png",
-    "electromagnetisme1/01-Distributions de charges.md",
     "electromagnetisme1/attachments-electronique2",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
     "electronique2/11-Conversion électronique statique.md",
@@ -226,7 +226,6 @@
     "electronique1/07-L'amplificateur opérationnel. Le modèle idéal.md",
     "electronique2/attachments-electronique2",
     "electronique2",
-    "attachments-electronique1",
-    "electronique1/attachments-electronique1/lu80695ewtf.tmp"
+    "attachments-electronique1"
   ]
 }
