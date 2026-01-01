@@ -1,7 +1,11 @@
 ---
 titre: "[[03-Potentiel électrostatique]]"
 tags:
-aliases:
+  - circulation
+  - potentiel-électrostatique
+  - énergie-potentielle-d-interaction-électrostatique
+  - conducteur-en-équilibre-électrostatique
+  - condensateur-plan
 crée: 30-12-2025, 11:06
 ---
 # Formules
@@ -112,6 +116,11 @@ Circulation du champ électrostatique : $\displaystyle C_{AB(\Gamma)} = \int_{A_
 > Cela étant, nous observons que les lignes de champ sont parallèles, ce qui est la caractéristique d’un *champ uniforme* : $\overrightarrow{E} = E_z \overrightarrow{e}_z$ $(E_z = cte)$.
 > En outre, les lignes de champ partent de l’une des armatures pour aboutir sur l’autre, cela signifie que les densités surfaciques des deux faces en regard sont de signes opposés. Comme le champ est uniforme, cela signifie plus précisément que *ces densités surfaciques sont uniformes et opposées*.
 > ==**Les armatures d’un condensateur portent, sur leurs faces en regard, des charges opposées.**==
+> Dans le cas de [[#^figure9|figure 9]], notons $q$ la charge positive de l’armature $A_1$, il vient : $q = \sigma S = \epsilon_0E_zS$.
+> La circulation du champ électrostatique entre les deux plaques, calculée le long d’une ligne de champ, s’écrit : $\displaystyle U = V_1 - V_2 = \int_{M_1}^{M_2}\overrightarrow{E}.d\overrightarrow{l} = E_z\int_{0}^{z}dz = E_z e$.
+> En éliminant $E_z$ entre les deux relations précédentes, il vient : $q = \frac{\epsilon_0S}{e}U$.
+> ==**Les charges $\pm q$ des armatures d’un condensateur sont proportionnelles à la tension U appliquée entre les armatures.**==
+> Le facteur de proportionnalité $C = \frac{\epsilon_0S}{e}$ est appelé **capacité du condensateur plan**. Il s’évalue en farad $(F)$.
 # Définitions
 
 # Diagrammes
@@ -142,7 +151,8 @@ Le potentiel est continu à la traversée d’une surface chargée
 L’équipotentielle de potentiel $V_0$ est un cercle de diamètre $AB$, avec $A(+6)$ et $B(+12)$ 
 ![[electromagnetisme1/attachments-electromagnetisme1/figure34.png]]^figure6
 # Expériences
-
+> [!warning]
+> Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://www.fresnel.fr/perso/soriano/fr/tpSPI401AJ.pdf), le [lien 2](https://fr.scribd.com/document/794459701/TP-7-Champ-Electrostatique-Cree-Par-Un-Condensateur-Plan-Correction), le [lien 3](https://fr.scribd.com/document/925428799/Copy-of-TP-electromagnetisme).
 # Autres notes
 > [!warning] Conservation de la circulation du champ d'une charge ponctuelle
 > ![[electromagnetisme1/attachments-electromagnetisme1/figure29.png]]

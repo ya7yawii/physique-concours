@@ -160,7 +160,8 @@ Le champ électrostatique $\overrightarrow{E'}$ est l'opposé du symétrique de 
 Discontinuités du champ à la traversée d'une distribution surfacique
 ![[electromagnetisme1/attachments-electromagnetisme1/figure26.png]]^figure14
 # Expériences
-
+> [!warning]
+> Voici des exemples de travaux pratiques qui abordent le sujet de ce chapitre : le [lien 1](https://www.fresnel.fr/perso/stout/electromag/TP_Enonce_EM.pdf), le [lien 2](https://fr.scribd.com/document/826109900/Cartographie-champE1), le [lien 3](https://labotp.org/TP1Spe/TPP1-1Spe-Sujet-Electrostatique.pdf), le [lien 4](http://remy.duperray.free.fr/downloads-4/files/TP-E-B.pdf), le [lien 5](https://fr.scribd.com/document/674085630/TP-PhysiqueV-Electrostatique-Magnetostatique-Induction2122), le [lien 6](https://fr.scribd.com/document/717651677/polycopie-TP-electricite-removed).
 # Autres notes
 > [!warning] Application 2 page 21
 > ![[electromagnetisme1/attachments-electromagnetisme1/figure12.png]]
