@@ -86,6 +86,21 @@ Flux du champ de gravitation à travers une surface fermée ne contenant pas la 
 > - Deuxième étape : choix de la surface de Gauss :
 > Une surface $(S)$ cylindrique d’axe $(Oz)$ et de rayon $r$, fermée par deux disques séparés par une hauteur arbitraire $h$ ([[#^figure8|fig. 8]]), constitue une surface de Gauss adaptée à la géométrie du problème. Le flux du champ à travers cette surface fermée s’écrit simplement $\Phi = 2\pi rhE(r)$, puisque ce flux est nul à travers les deux disques.
 > - Troisième étape : application du théorème de Gauss :
+> La charge intérieure à cette surface est : $Q_{int} = \rho\pi r^{2}h$, si $r < R$ et $Q_{int} = \rho\pi R^{2}h$, si $r > R$.
+> Nous en déduisons :
+> 	- $r < R$ : $\overrightarrow{E} = \frac{\rho r}{2\epsilon_0}\overrightarrow{e}_r$ ;
+> 	- $r > R$ : $\overrightarrow{E} = \frac{\rho R^{2}}{2\epsilon_0r}\overrightarrow{e}_r$.
+> 	
+> 	Les inégalités pouvant être étendues au sens large puisque le champ créé par cette distribution volumique est continu.
+> 	*Remarque : Le calcul du champ à l’aide du théorème de Gauss est remarquablement simple. Pour un cylindre chargé de hauteur finie, le théorème de Gauss serait bien entendu applicable, mais malheureusement inutilisable (les plans parallèles à $(xOy)$ ne sont plus des plans de symétrie de la distribution de charges).*
+> 
+> Utilisant $\displaystyle \overrightarrow{E} = -\overrightarrow{grad}V = -\left(\dfrac{\partial V}{\partial r}\right)\overrightarrow{e}_r - \frac{1}{r}\left(\dfrac{\partial V}{\partial \theta}\right)\overrightarrow{e}_{\theta} - \left(\dfrac{\partial V}{\partial z}\right)\overrightarrow{e}_z$, nous obtenons $V(r, \theta, z) = V(r)$, et en raccordant la solution par continuité en $r = R$ :
+> - $r < R$ : $V = \frac{\rho(R^{2} - r^{2})}{2\epsilon_0} + V_0$ ;
+> - $r > R$ : $V = -\left(\frac{\rho R^{2}}{2\epsilon_0}\right)\ln\left(\frac{R}{r}\right) + V_0$.
+> 
+> $V_0$ étant une constante arbitraire (indétermination du potentiel) ; notons qu’il est impossible de fixer $V = 0$ à l’infini car il y a des charges à l’infini.
+> $E(r)$ et $V(r)$ sont représentés sur la [[#^figure9|figure 9]]. Une représentation de $V(r)$ dans l’espace est donnée sur la [[#^figure10|figure 10]].
+^par1
 # Définitions
 > [!note] Vecteur surface
 > Considérons une surface élémentaire « plane » $dS$ contenant le point $M$. Elle possède deux faces (l’une d’entre elle sera nommé *face négative* et l’autre *face positive*) et une *orientation* bien définie dans l’espace.
@@ -136,6 +151,12 @@ Surface de Gauss pour une distribution à symétrie cylindrique
 # Graphiques
 Champ $E$ et potentiel $V$ créés par une couche plane infinie d’épaisseur $e$ et de charge volumique $\rho$ uniforme
 ![[electromagnetisme1/attachments-electromagnetisme1/figure47.png]]^figure7
+
+Champ et potentiel d’un cylindre infini ($V = 0$ pour $r = R$)
+![[electromagnetisme1/attachments-electromagnetisme1/figure49.png]]^figure9
+
+Potentiel créé par un cylindre uniformément chargé en volume. L’équipotentielle $V = 0$ est choisie sur la surface du cylindre
+![[electromagnetisme1/attachments-electromagnetisme1/figure50.png]]^figure10
 # Expériences
 
 # Autres notes
@@ -146,3 +167,10 @@ Champ $E$ et potentiel $V$ créés par une couche plane infinie d’épaisseur $
 > [!warning] Existe-t-il des extrema de potentiel dans une zone sans charge ?
 > Imaginons une région vide de charges, où le potentiel électrostatique posséderait un extremum en un point $M$. Supposons qu’il s’agisse, par exemple, d’un maximum (au moins local). Les lignes de champ passant par le point $M$ doivent toutes diverger à partir de celui-ci, car elles sont orientées dans le sens des potentiels décroissants. Le flux du champ électrostatique à travers une petite surface fermée contenant le point est ainsi positif, ce qui contredit l’hypothèse d’absence de charges dans la région du point $M$. Ce raisonnement par l’absurde s’applique, de même, à un cas de potentiel minimal en $M$ et prouve que le potentiel électrostatique ne possède pas d’extremum en dehors des charges.
 ^demo1
+
+> [!warning] Application 5 page 70
+> L'étude précédente est celle de [[#^par1|paragraphe ci-dessus]].
+> ![[electromagnetisme1/attachments-electromagnetisme1/figure51.png]]
+> Remarques :
+> - Le champ n’est évidemment pas défini sur le fil, car cette distribution linéique correspond à une distribution volumique locale tendant vers l’infini.
+> - Comme précédemment, le théorème de Gauss est valable pour le champ électrostatique créé par un segment uniformément chargé, mais totalement inapplicable pour le calcul de ce champ !
