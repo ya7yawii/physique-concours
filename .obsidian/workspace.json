@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5
+    "width": 298.5,
+    "collapsed": true
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -182,6 +183,9 @@
   },
   "active": "a3368d74d91c935e",
   "lastOpenFiles": [
+    "electromagnetisme1/attachments-electromagnetisme1/figure48.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure47.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure46.png",
     "electromagnetisme1/03-Potentiel électrostatique.md",
     "electromagnetisme1/02-Champ électrostatique.md",
     "electromagnetisme1/01-Distributions de charges.md",
@@ -200,8 +204,6 @@
     "electromagnetisme1/attachments-electromagnetisme1/figure38.png",
     "electromagnetisme1/00-Electromagnetisme1.md",
     "electronique1/11-Redressement et lissage.md",
-    "electromagnetisme1/attachments-electromagnetisme1/figure37.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure36.png",
     "electromagnetisme1/attachments-electronique2",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
     "electronique2/11-Conversion électronique statique.md",

@@ -54,6 +54,38 @@ Flux du champ de gravitation à travers une surface fermée ne contenant pas la 
 > ==**En l’absence de charges, le flux du champ électrostatique est conservatif : le flux est le même à travers toutes les sections d’un même tube de champ.**==
 > - [[#^demo1|Extrema du potentiel électrostatique]] :
 > ==**Le potentiel électrostatique ne possède pas d’extremum en dehors des charges.**==
+
+> [!note] Calcul d'un champ électrostatique à l'aide du théorème de Gauss : Distribution à symétrie plane
+> À titre d’exemple, nous nous intéressons à la détermination du champ créé par une couche plane infinie, d'épaisseur $e$ et de charge volumique $\rho$ uniforme ([[#^figure6|fig. 6]]).
+> - Première étape : utilisation des symétries de la distribution :
+> Celle-ci est invariante par symétrie par rapport aux plans $\Pi_1$ et $\Pi_2$ contenant le point $M$ où nous cherchons à déterminer le champ, donc ([[#^figure6|fig. 6]]) : $\overrightarrow{E}(x, y, z) = E(x, y, z)\overrightarrow{e}_z$.
+> L’invariance du problème par translation parallèlement à $(Ox)$, ou bien $(Oy)$, nous permet la simplification supplémentaire $\overrightarrow{E}(x, y, z) = E(z)\overrightarrow{e}_z$.
+> Notons aussi que le plan $(xOy)$ est un plan de symétrie de la distribution. Au point $M'$, symétrique du point $M$ par rapport à ce plan, le champ $\overrightarrow{E'}$ est symétrique du champ $\overrightarrow{E}$ en $M$ : la fonction $E(z)$ est impaire : $E(-z) = -E(z)$.
+> - Deuxième étape : choix de la « surface de Gauss » :
+> Une surface fermée $(S)$ permettant un calcul aisé du flux doit posséder des parties planes à $z = cte$, le caractère impair de $E(z)$ nous conduisant naturellement au choix de [[#^figure6|figure 6]]. Le flux du champ à travers cette surface fermée est : $\Phi = SE(z) - SE(-z) = 2SE(z)$.
+> - Troisième étape : application du théorème de Gauss :
+> Appliquons le théorème de Gauss à cette surface :
+> 	- cas 1 : $0 \leqslant |z| \leqslant \frac{e}{2}$ : $2SE(z) = \frac{2\rho Sz}{\epsilon_0}$ ;
+> 	- cas 2 : $|z| \geqslant \frac{e}{2}$ : $2SE(z) = \frac{\rho Se}{\epsilon_0}$.
+> 	
+> 	Nous en déduisons :
+> 	- si $0 \leqslant |z| \leqslant \frac{e}{2}$ : $\overrightarrow{E} = \frac{\rho z}{\epsilon_0}\overrightarrow{e}_z$ ;
+> 	- si $|z| \geqslant \frac{e}{2}$ : $\overrightarrow{E} = \frac{\rho e}{2\epsilon_0}\,\text{signe}(z)\,\overrightarrow{e}_z$, c'est-à-dire $E(z > \frac{e}{2}) = \frac{\rho e}{2\epsilon_0}$ et $E(z < -\frac{e}{2}) = -\frac{\rho e}{2\epsilon_0}$.
+> 	
+> Nous pouvons en déduire le potentiel créé, en faisant par exemple le choix $V = 0$ sur le plan $z = 0$. $E_x$ et $E_y$ étant nuls, le potentiel ne dépend que de la variable $z$, avec $\dfrac{dV}{dz} = -E_z$. Raccordant le potentiel par continuité aux extrémités des intervalles caractéristiques, nous avons :
+> - si $0 \leqslant |z| \leqslant \frac{e}{2}$ : $V = -\frac{\rho z^{2}}{2\epsilon_0}$ ;
+> - si $|z| \geqslant \frac{e}{2}$ : $V = -\frac{\rho e(4|z| - e)}{8\epsilon_0}$.
+> 
+> Et la fonction potentiel $V(z)$ est paire ([[#^figure7|fig. 7]]).
+
+> [!note] Calcul d'un champ électrostatique à l'aide du théorème de Gauss : Distribution à symétrie cylindrique
+> L’exemple de distribution à symétrie cylindrique que nous allons traiter correspond à un cylindre d’axe noté $(Oz)$ et de rayon $R$ à l’intérieur duquel se trouve une charge volumique uniformément répartie $\rho$.
+> - Première étape : utilisation des symétries de la distribution :
+> En un point $M$ de l’espace passent deux plans de symétrie de la distribution : $\Pi_1$ qui contient le point $M$ et l’axe $(Oz)$, et $\Pi_2$ perpendiculaire à $(Oz)$ qui contient le point $M$ ([[#^figure8|fig. 8]]). Nous en déduisons, en coordonnées cylindriques d’axe $(Oz)$ : $\overrightarrow{E} = E(r, \theta, z) \overrightarrow{e}_r$.
+> Les invariances du problème par translation parallèlement à $(Oz)$ et par rotation autour de cet axe amènent les simplifications supplémentaires $\overrightarrow{E} = E(r) \overrightarrow{e}_r$.
+> - Deuxième étape : choix de la surface de Gauss :
+> Une surface $(S)$ cylindrique d’axe $(Oz)$ et de rayon $r$, fermée par deux disques séparés par une hauteur arbitraire $h$ ([[#^figure8|fig. 8]]), constitue une surface de Gauss adaptée à la géométrie du problème. Le flux du champ à travers cette surface fermée s’écrit simplement $\Phi = 2\pi rhE(r)$, puisque ce flux est nul à travers les deux disques.
+> - Troisième étape : application du théorème de Gauss :
 # Définitions
 > [!note] Vecteur surface
 > Considérons une surface élémentaire « plane » $dS$ contenant le point $M$. Elle possède deux faces (l’une d’entre elle sera nommé *face négative* et l’autre *face positive*) et une *orientation* bien définie dans l’espace.
@@ -61,6 +93,20 @@ Flux du champ de gravitation à travers une surface fermée ne contenant pas la 
 > Une description plus complète, nous conduit à introduire un *vecteur surface élémentaire* $d\overrightarrow{S}(M) = \overrightarrow{n}(M)dS$, dont la norme est égale à l’aire de chacune des faces de $dS$.
 > Lorsque la surface n’est plus élémentaire, les orientations des éléments de surface $d\overrightarrow{S}(M)$ sont définies par continuité à partir de l’orientation de l’un d’entre eux $d\overrightarrow{S}(M_0)$ ([[#^figure1b|fig. 1b]]).
 > ==**Dans le cas d’une surface fermée ([[#^figure1c|fig. 1c]]), les vecteurs unitaires $\overrightarrow{n}(M)$ sont toujours dirigés vers l’extérieur (normale sortante).**==
+
+> [!note] Calcul d'un champ électrostatique à l'aide du théorème de Gauss : Principe du calcul
+> Le résultat du théorème de Gauss est remarquablement simple dans sa formulation. Pour une distribution de charges connue, on peut penser calculer le flux du champ à travers une surface fermée, puis en déduire l’expression du champ. Cette méthode est séduisante puisqu’elle permet de s’affranchir du calcul du champ (ou du potentiel) à l’aide d’expressions intégrales généralement assez contraignantes. Elle n’est toutefois envisageable que lorsque le lien entre le calcul du flux et le champ reste élémentaire : champ électrostatique d’expression déjà bien simplifiée, surface de géométrie simple..., c’est-à-dire lorsque la distribution de charges possède de bonnes symétries.
+> *Le calcul d’un champ électrostatique à l’aide du théorème de Gauss n’est en général envisageable que dans des cas de distributions de charges à symétries élevées tels que ceux développés ici.*
+> Dans ces conditions, le principe de calcul correspond à la démarche suivante :
+> ==**Le théorème de Gauss constitue un outil de calcul rapide du champ électrostatique créé par une distribution de charges possédant une symétrie élevée : après détermination de la forme du champ, à l’aide de considérations de symétrie, l’application du théorème de Gauss à une surface fermée, *de géométrie adaptée aux symétries du problème*, permet de déterminer l’amplitude du champ.**==
+> - Première étape : considérations de symétries :
+> Il faut obtenir, à l’aide des symétries de la distribution, la forme du champ électrostatique :
+> 	- utilisation de plans de symétrie ou antisymétrie pour déterminer sa direction ;
+> 	- utilisation d’invariance par rotation ou translation pour réduire la dépendance de ses composantes vis-à-vis des coordonnées (un choix de coordonnées adapté à la symétrie du problème est évidemment indispensable).
+> - Deuxième étape : choix de la surface de Gauss :
+> La forme obtenue pour le champ détermine le choix d’une surface de Gauss rendant élémentaire le calcul du flux. Cette surface, dite de Gauss, doit être fermée et elle doit passer par le point $M$ où on veut calculer le champ.
+> - Troisième étape : application du théorème de Gauss :
+> L’application du théorème de Gauss achève la détermination du champ électrostatique.
 # Diagrammes
 Définition du vecteur surface élémentaire $d\overrightarrow{S}(M)$
 ![[electromagnetisme1/attachments-electromagnetisme1/figure38.png]]^figure1a
@@ -81,8 +127,15 @@ La charge $q$ est à l’extérieur de la surface $(S)$ fermée
 
 Le flux de $\overrightarrow{E}$ (créé par $Q_{int} + Q_{ext}$) à travers $(S)$ ne dépend que de $Q_{int}$
 ![[electromagnetisme1/attachments-electromagnetisme1/figure44.png]]^figure5
-# Graphiques
 
+Utilisation des symétries et choix de la « surface de Gauss ». $M'$ est le symétrique de $M$ par rapport au plan $(xOy)$
+![[electromagnetisme1/attachments-electromagnetisme1/figure46.png]]^figure6
+
+Surface de Gauss pour une distribution à symétrie cylindrique
+![[electromagnetisme1/attachments-electromagnetisme1/figure48.png]]^figure8
+# Graphiques
+Champ $E$ et potentiel $V$ créés par une couche plane infinie d’épaisseur $e$ et de charge volumique $\rho$ uniforme
+![[electromagnetisme1/attachments-electromagnetisme1/figure47.png]]^figure7
 # Expériences
 
 # Autres notes
