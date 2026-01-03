@@ -24,7 +24,7 @@ crée: 03-01-2026, 10:51
 > [!note] Potentiel et champ créés par un dipôle : Potentiel du dipôle
 > La distribution considérée (doublet) étant d’extension finie, nous pouvons *choisir le potentiel nul à l’infini*, et l’écrire, avec les notations de [[#^figure5|figure 5]] : $V(M) = \frac{q}{4\pi\epsilon_0}\left(\frac{1}{r_1} - \frac{1}{r_2}\right)$.
 > Utilisant les coordonnées sphériques d’axe $(Oz)$ indiquées sur la [[#^figure5|figure 5]], nous avons $r_1 = \left[r^{2} - dr\cos\theta + \frac{d^{2}}{4}\right]^{\frac{1}{2}}$ et $r_2 = \left[r^{2} + dr\cos\theta + \frac{d^{2}}{4}\right]^{\frac{1}{2}}$.
-> Dans l’approximation dipolaire, nous écrirons à l’ordre un en $\left(\frac{d}{r}\right)$ : $V(M) = \frac{q}{4\pi\epsilon_0 r}((1 + \frac{1}{2}\frac{d}{r}\cos\theta + \cdots) - (1 - \frac{1}{2}\frac{d}{r}\cos\theta + \cdots))$.
+> Dans l’approximation dipolaire, nous écrirons à l’ordre un en $\left(\frac{d}{r}\right)$ : $V(M) = \frac{q}{4\pi\epsilon_0 r}((1 + \frac{1}{2}\frac{d}{r}\cos\theta + \ldots) - (1 - \frac{1}{2}\frac{d}{r}\cos\theta + \ldots))$.
 > *Remarque : Notons que pour ce modèle de dipôle, le second terme non nul est proportionnel à $\displaystyle \frac{1}{r^{4}}$.*
 > La charge totale de ce système étant nulle, le terme en $\frac{1}{r}$ du potentiel s’annule ; le premier terme non nul du développement limité est proportionnel à $\frac{d}{r^{2}}$. Il décroît beaucoup plus vite à grande distance que le potentiel d’une charge seule : $V(M) = \frac{qd\cos\theta}{4\pi\epsilon_0r^{2}} = \frac{1}{4\pi\epsilon_0}\frac{\overrightarrow{p}.\overrightarrow{r}}{r^{3}}$.
 > ==**En utilisant l’expression du moment dipolaire, le *potentiel électrostatique* créé par un dipôle placé au point $O$, à l’ordre le plus bas en puissances de $\frac{d}{r}$, est : $\displaystyle V(M) = \frac{p\cos\theta}{4\pi\epsilon_0r^{2}} = \frac{1}{4\pi\epsilon_0}\frac{\overrightarrow{p}\,.\overrightarrow{r}}{r^{3}}$.**==
@@ -56,7 +56,7 @@ crée: 03-01-2026, 10:51
 > 	- *La seule caractéristique du dipôle qui apparaît dans les expressions du potentiel $V(M)$ et dans celle du champ $\overrightarrow{E}(M)$ est son moment dipolaire $\overrightarrow{p}$.*
 > 	***Un dipôle est entièrement caractérisé par son moment dipolaire.***
 
-> [!note] Topographie de E et V
+> [!note] Potentiel et champ créés par un dipôle : Topographie de E et V
 > - Équation et description qualitative :
 > La distribution de charges d’un dipôle, dont le moment dipolaire $\overrightarrow{p}$ est sur l’axe $(Oz)$, admet cet axe comme *axe de révolution*. De ce fait, l’équation du potentiel $V(M)$ ne dépend pas de la coordonnée $\varphi$ et les surfaces équipotentielles sont de révolution autour de $(Oz)$. Une représentation graphique de leurs traces dans un plan de symétrie $(\varphi = cte)$ contenant l’axe $(Oz)$ est dès lors suffisante ([[#^figure7|fig. 7]]).
 > La ligne équipotentielle $V = V_0$ a pour équation polaire : $r^{2} = \frac{p}{4\pi\epsilon_0V_0}\cos\theta$.
@@ -68,6 +68,25 @@ crée: 03-01-2026, 10:51
 > - Représentation :
 > Sur la [[#^figure8|figure 8]] sont représentées les traces de quelques équipotentielles du système de deux charges dans un plan contenant l’axe $(Oz)$. La [[#^figure9|figure 9]] reprend ce tracé en utilisant la formule du potentiel dipolaire. Nous constatons que les deux figures sont semblables, sauf au voisinage du dipôle où l’approximation dipolaire n’est pas valable : la différence entre le doublet de charges et l’entité idéale apparaît nettement à courte distance.
 > Les figures [[#^figure10|10]] et [[#^figure11|11]] montrent la visualisation du potentiel d'un doublet et du dipôle respectivement.
+
+> [!note] Potentiel et champ créés par un dipôle : Topographie de E et V : Lignes de champ
+> - Équation :
+> Par définition, pour un déplacement élémentaire $d\overrightarrow{r}$ le long d’une ligne de champ, nous aurons $d\overrightarrow{r} \wedge \overrightarrow{E} = \overrightarrow{0}$. Utilisant les coordonnées sphériques du champ et l’expression $d\overrightarrow{r} = dr\,\overrightarrow{e}_r + rd\theta\,\overrightarrow{e}_{\theta} + r\sin\theta d\varphi\,\overrightarrow{e}_{\varphi}$ d’un déplacement élémentaire, nous obtenons : $$ \begin{cases} r\sin\theta d\varphi . E_{\theta} = 0\\ r\sin\theta d\varphi . E_{r} = 0\\ dr . E_{\theta} - rd\theta . E_{r} = 0\,. \end{cases}$$
+> Hors les lignes de champ situées sur l’axe $(Oz)$ ($\theta = 0$ ou $\theta =\pi$), les deux premières équations imposent $\varphi = cte$. En effet, le système est de révolution autour de l’axe $(Oz)$ et les lignes de champ sont tracées dans les *plans de symétrie* passant par cet axe.
+> La dernière équation s’explicite en $\sin\theta . dr = 2r . \cos\theta . d\theta$, ce qui donne, par intégration, l’équation des lignes de champ : $r = \text{cte}\,\sin^{2}\theta$.
+> - Description qualitative et représentation :
+> Les lignes de champ sont donc des courbes planes tracées dans des plans contenant l’axe de révolution $(Oz)$. Elles sont, en outre, symétriques par rapport au plan médiateur $(xOy)$, qui est un *plan d’antisymétrie* qu’elles coupent orthogonalement. Enfin, sur les lignes de champ, la distance au point $O$ est maximale sur le plan médiateur. Les lignes de champ sont tangentes à l’axe $(Oz)$. Cette dernière caractéristique géométrique est sans réalité physique car, au voisinage du point $O$, l’approximation dipolaire n’est plus vérifiée.
+> Sur les figures [[#^figure12|12]] et [[#^figure13|13]], on trouve les cartes des lignes de champ et des lignes équipotentielles respectivement pour un doublet de deux charges opposées et pour un dipôle. On vérifie que les deux cartes sont équivalentes lorsque la distance d’observation est grande devant la taille du dipôle.
+
+> [!note] Potentiel et champ créés par un dipôle : Généralisation
+> Le modèle du dipôle s’applique en fait à toute distribution de charges de charge totale nulle.
+> Considérons un ensemble de $N$ particules chargées, de position $P_i$ et de charges $q_i$ $(i \in (1\ldots N))$ telles que $\displaystyle\sum_{i=1}^{N}q_i = 0$ ([[#^figure14|fig. 14]]).
+> Notons $\overrightarrow{a}_i = \overrightarrow{OP_i}$ le vecteur-position du point $P_i$.
+> $\overrightarrow{OM} = r\overrightarrow{e}_r$ est le vecteur-position du point $M$ et nous effectuons les calculs dans l’approximation dipolaire : $r \gg a_i$ pour tout $i$.
+> Le potentiel en un point $M$ est : $\displaystyle V = \sum_{i=1}^{N}V_i = \frac{1}{4\pi\epsilon_0}\sum_{i=1}^{N}\frac{q_i}{P_iM}$ et $\overrightarrow{P_iM} = r\overrightarrow{e}_r - \overrightarrow{a}_i$ soit : $P_iM^{2} = r^{2} - 2r\overrightarrow{e}_r\,.\,\overrightarrow{a}_i + a_{i}^{2}$ et $\displaystyle\frac{1}{P_iM} = \frac{1}{r}\left[1 + \left(\frac{a_{i}^{2}}{r^{2}} - 2\frac{\overrightarrow{e}_r\,.\,\overrightarrow{a}_i}{r}\right)\right]^{-\frac{1}{2}}$.
+> En se limitant au premier ordre en $\displaystyle\frac{a_{i}}{r}$ : $\displaystyle\frac{1}{r_i} = \frac{1}{r}\left[1 + \frac{\overrightarrow{e}_r\,.\,\overrightarrow{a}_i}{r}\right]$ et $\displaystyle V = \frac{1}{4\pi\epsilon_0}\Bigg[\frac{\sum\limits_{i=1}^{N}q_i}{r} + \frac{\left(\sum\limits_{i=1}^{N}q_i\overrightarrow{a}_i\right).\overrightarrow{e}_r}{r^{2}}\Bigg]$.
+> Si nous définissons le moment dipolaire de la distribution par : $\overrightarrow{p} = \sum\limits_{i=1}^{N}q_i\overrightarrow{OP_i}$, alors, le potentiel en $M$ se met sous la même forme que celui d’un doublet de charges : $\displaystyle V(M) = \frac{\overrightarrow{p}\,.\overrightarrow{e}_r}{4\pi\epsilon_0r^{2}}$.
+> Nous avons montré que le modèle élémentaire du doublet peut en fait s’appliquer à toute distribution globalement neutre et de moment dipolaire $\overrightarrow{p} = \sum\limits_{i=1}^{N}q_i\overrightarrow{OP_i}$ non nul.
 # Définitions
 > [!note] Objets polaires
 > - Molécules polaires :
@@ -101,6 +120,9 @@ Le point $M$ est repéré par son vecteur position $\overrightarrow{r} = \overri
 
 Orientation de $\overrightarrow{E}$ créé un dipôle $\overrightarrow{p}$
 ![[electromagnetisme1/attachments-electromagnetisme1/figure59.png]]^figure6
+
+Distribution de charges
+![[electromagnetisme1/attachments-electromagnetisme1/figure67.png]]^figure14
 # Graphiques
 Équipotentielles $\pm V_0$ du dipôle
 ![[electromagnetisme1/attachments-electromagnetisme1/figure60.png]]^figure7
@@ -116,6 +138,12 @@ Visualisation du potentiel créé par deux charges $-q$ et $+q$ (en noir $V > 0$
 
 Visualisation du potentiel du dipôle dans l’espace (en noir $V > 0$, en bleu $V < 0$)
 ![[electromagnetisme1/attachments-electromagnetisme1/figure64.png]]^figure11
+
+Équipotentielles et lignes de champ d’un doublet
+![[electromagnetisme1/attachments-electromagnetisme1/figure65.png]]^figure12
+
+Équipotentielles et lignes de champ d’un dipôle
+![[electromagnetisme1/attachments-electromagnetisme1/figure66.png]]^figure13
 # Expériences
 
 # Autres notes
