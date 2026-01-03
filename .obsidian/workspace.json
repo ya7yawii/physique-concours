@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "electromagnetisme1/04-Le théorème de Gauss.md",
+                "file": "electromagnetisme1/05-Dipôle électrostatique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "04-Le théorème de Gauss"
+              "title": "05-Dipôle électrostatique"
             }
           }
         ]
@@ -183,26 +183,27 @@
   },
   "active": "a3368d74d91c935e",
   "lastOpenFiles": [
-    "electromagnetisme1/attachments-electromagnetisme1/figure51.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure50.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure49.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure48.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure47.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure46.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure64.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure63.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure62.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure61.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure60.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure59.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure58.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure57.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure56.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure55.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure54.png",
+    "electromagnetisme1/00-Electromagnetisme1.md",
+    "electromagnetisme1/05-Dipôle électrostatique.md",
+    "electromagnetisme1/04-Le théorème de Gauss.md",
     "electromagnetisme1/03-Potentiel électrostatique.md",
     "electromagnetisme1/02-Champ électrostatique.md",
     "electromagnetisme1/01-Distributions de charges.md",
-    "electromagnetisme1/04-Le théorème de Gauss.md",
-    "electromagnetisme1/attachments-electromagnetisme1/figure45.png",
     "preamble.sty",
     "templates/preamble.sty",
     "latex",
     "electromagnetisme1/preamble.sty",
-    "electromagnetisme1/attachments-electromagnetisme1/figure44.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure43.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure42.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure41.png",
-    "electromagnetisme1/00-Electromagnetisme1.md",
     "electronique1/11-Redressement et lissage.md",
     "electromagnetisme1/attachments-electronique2",
     "electronique2/10-Champs tournants, machines synchrones et asynchrones.md",
@@ -225,7 +226,6 @@
     "electronique1/05-Réponse d'un réseau linéaire. Exemple du circuit (R, L, C) série.md",
     "electronique1/04-Principe des appareils de mesure.md",
     "electronique1/03-Théorèmes généraux relatifs aux réseaux linéaires.md",
-    "electronique1/07-L'amplificateur opérationnel. Le modèle idéal.md",
     "electronique2/attachments-electronique2",
     "electronique2",
     "attachments-electronique1"
