@@ -87,6 +87,31 @@ crée: 03-01-2026, 10:51
 > En se limitant au premier ordre en $\displaystyle\frac{a_{i}}{r}$ : $\displaystyle\frac{1}{r_i} = \frac{1}{r}\left[1 + \frac{\overrightarrow{e}_r\,.\,\overrightarrow{a}_i}{r}\right]$ et $\displaystyle V = \frac{1}{4\pi\epsilon_0}\Bigg[\frac{\sum\limits_{i=1}^{N}q_i}{r} + \frac{\left(\sum\limits_{i=1}^{N}q_i\overrightarrow{a}_i\right).\overrightarrow{e}_r}{r^{2}}\Bigg]$.
 > Si nous définissons le moment dipolaire de la distribution par : $\overrightarrow{p} = \sum\limits_{i=1}^{N}q_i\overrightarrow{OP_i}$, alors, le potentiel en $M$ se met sous la même forme que celui d’un doublet de charges : $\displaystyle V(M) = \frac{\overrightarrow{p}\,.\overrightarrow{e}_r}{4\pi\epsilon_0r^{2}}$.
 > Nous avons montré que le modèle élémentaire du doublet peut en fait s’appliquer à toute distribution globalement neutre et de moment dipolaire $\overrightarrow{p} = \sum\limits_{i=1}^{N}q_i\overrightarrow{OP_i}$ non nul.
+
+> [!note] Actions d'un champ électrostatique sur un dipôle
+> Nous supposons dans un premier temps que le dipôle est rigide, c’est-à-dire que la distance $AB$ reste fixe et les charges constantes.
+> Les actions mécaniques exercées sur le dipôle seront caractérisées par leur résultante $\overrightarrow{F}$ et leur moment $\overrightarrow{\Gamma}_O$ calculé par rapport à un point $O$ donné.
+> - Champ uniforme :
+> 
+> Force : Les forces exercées sur les charges $+q$ et $-q$ par le champ uniforme sont opposées. Par conséquent :
+> ==**La résultante des forces qui s’exercent sur un dipôle placé dans un champ uniforme est nulle : $\overrightarrow{F} = \overrightarrow{0}$.**==
+> Le dipôle est donc soumis à un *couple* de forces.
+> 
+> Moment : Calculons par exemple ce moment par rapport au point $O$, milieu des deux charges : $\overrightarrow{\Gamma}_O = \left(\frac{\overrightarrow{d}}{2}\right)\wedge(q\overrightarrow{E}_0) + \left(-\frac{\overrightarrow{d}}{2}\right)\wedge(-q\overrightarrow{E}_0) = q\overrightarrow{d}\wedge\overrightarrow{E}_0$.
+> Pour un couple (force résultante nulle), le moment est indépendant du point où il est évalué. Il vaut donc en tout point $\overrightarrow{\Gamma} = \overrightarrow{p}\wedge\overrightarrow{E}_0$.
+> En observant la [[#^figure15|figure 15]], nous pouvons résumer l’influence du champ appliqué en disant que :
+> ==**Dans un champ uniforme, le dipôle subit un couple de moment $\overrightarrow{\Gamma} = \overrightarrow{p}\wedge\overrightarrow{E}_0$ qui tend à l’aligner parallèlement au champ appliqué dans le même sens que celui-ci.**==
+
+> [!note] Actions d'un champ électrostatique sur un dipôle : Cas d’un champ non uniforme
+> Soit une zone de l’espace où existe un champ électrique $\overrightarrow{E}(M)$ : plaçons dans ce champ un dipôle, et cherchons l’action de ce champ.
+> Le dipôle de moment dipolaire $\overrightarrow{p} = q\overrightarrow{NP}$ est constitué d’une charge $-q$ en $N$ où existe initialement un champ $\overrightarrow{E}(N)$, et une charge $+q$ en $P$ où existe le champ $\overrightarrow{E}(P)$. Appelons $O$ le centre du vecteur $\overrightarrow{NP}$ de composantes $\overrightarrow{NP} = (\delta x, \delta y, \delta z)$ ([[#^figure16|fig. 16]]). Les composantes du moment dipolaire sont donc $\overrightarrow{p} : (q\delta x, q\delta y, q\delta z)$.
+> - Approximation du calcul :
+> Dans le cas d’actions subies par le dipôle, l’approximation dipolaire consiste à supposer la taille $d = \left\Vert\overrightarrow{NP}\right\Vert$ du dipôle faible devant la distance $L_c$, longueur caractéristique de variation du champ électrostatique appliqué ; on supposera, par exemple, que le champ électrostatique varie de $\left\Vert\overrightarrow{E}(M_1)\right\Vert$ à $\left\Vert\overrightarrow{E}(M_2)\right\Vert \approx 2\left\Vert\overrightarrow{E}(M_1)\right\Vert$ sur une distance de l’ordre de $L_c$ ([[#^figure16|fig. 16]]).
+> Calculons ainsi un ordre de grandeur de : $\frac{\left\Vert\overrightarrow{E}(P) - \overrightarrow{E}(N)\right\Vert}{\left\Vert\overrightarrow{E}(O)\right\Vert} = \frac{\left\Vert\delta\overrightarrow{E}\right\Vert}{\left\Vert\overrightarrow{E}(O)\right\Vert}$ ;
+> la composante suivant $x$ de $\delta\overrightarrow{E}$ peut s’écrire : $\delta E_x \approx \left(\dfrac{\partial E_x}{\partial x}\right)_{\!O}\delta x + \left(\dfrac{\partial E_x}{\partial y}\right)_{\!O}\delta y + \left(\dfrac{\partial E_x}{\partial z}\right)_{\!O}\delta z = \overrightarrow{NP} . \overrightarrow{grad_O}(E_x)$.
+> La quantité $\left\Vert\overrightarrow{grad_O}(E_x)\right\Vert$ étant de l'ordre de grandeur de $\left|\frac{E_{O_x}}{L_c}\right|$, nous pouvons écrire :
+> ==**Dans l’approximation dipolaire, les variations relatives du champ extérieur appliqué sur un dipôle sont négligeables, de l’ordre de $\displaystyle\frac{d}{L_c}$, rapport entre la taille du dipôle et la distance caractéristique de variation du champ : $\displaystyle\frac{\left\Vert\overrightarrow{E}(M) - \overrightarrow{E}(O)\right\Vert}{\left\Vert\overrightarrow{E}(O)\right\Vert} \approx \frac{d}{L_c} \ll 1$, pour $\left\Vert\overrightarrow{OM}\right\Vert \approx d$.**==
+> Cherchons les effets de ce champ légèrement non uniforme à l’échelle du dipôle.
 # Définitions
 > [!note] Objets polaires
 > - Molécules polaires :
@@ -123,6 +148,12 @@ Orientation de $\overrightarrow{E}$ créé un dipôle $\overrightarrow{p}$
 
 Distribution de charges
 ![[electromagnetisme1/attachments-electromagnetisme1/figure67.png]]^figure14
+
+Dipôle dans un champ uniforme
+![[electromagnetisme1/attachments-electromagnetisme1/figure68.png]]^figure15
+
+Dans l’approximation dipolaire, $d \ll L_c$
+![[electromagnetisme1/attachments-electromagnetisme1/figure69.png]]^figure16
 # Graphiques
 Équipotentielles $\pm V_0$ du dipôle
 ![[electromagnetisme1/attachments-electromagnetisme1/figure60.png]]^figure7
