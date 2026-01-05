@@ -1,7 +1,11 @@
 ---
 titre: "[[05-Dipôle électrostatique]]"
 tags:
-aliases:
+  - dipôle-électrostatique
+  - moment-dipolaire
+  - potentiel-électrostatique
+  - champ-électrostatique
+  - énergie-potentielle-d-interaction-électrostatique
 crée: 03-01-2026, 10:51
 ---
 # Formules
@@ -228,5 +232,6 @@ Visualisation du potentiel du dipôle dans l'espace (en noir $V > 0$, en bleu $V
 Équipotentielles et lignes de champ d'un dipôle
 ![[electromagnetisme1/attachments-electromagnetisme1/figure66.png]]^figure13
 # Expériences
-
+> [!warning]
+> Voici un exemple de travaux pratiques qui abordent le sujet de ce chapitre : le [lien](https://www.physagreg.fr/tp/TP3_electrostat.pdf).
 # Autres notes
