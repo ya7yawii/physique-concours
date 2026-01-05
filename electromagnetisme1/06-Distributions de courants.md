@@ -83,6 +83,28 @@ crée: 05-01-2026, 09:09
 > 	Notons encore $\overrightarrow{j}$ et $\overrightarrow{j'}$ les vecteurs densité de courant en $M$ et $M'$. Le plan $\Pi^{*}$ est plan d’antisymétrie pour la distribution de courants volumiques ([[#^figure12|fig. 12]]) si $\overrightarrow{j'}$ est égal à l’opposé du symétrique de $\overrightarrow{j}$ par rapport à $\Pi^{*}$, soit ici : $j_{x}^{'} = -j_{x}$ ; $j_{y}^{'} = -j_{y}$ ; $j_{z}^{'} = j_{z}$.
 
 > [!note] Symétries des distributions de courants : Symétries usuelles : Invariance par translation
+> Une distribution est invariante par translation parallèlement à un axe $\Delta$ lorsque le courant en $M$ est identique au courant en tout point $M'$ obtenu par une translation de $M$ parallèlement à cet axe. Il est nécessaire pour cela que la distribution soit illimitée dans la direction de l’axe $\Delta$.
+> - Courants volumiques :
+> Une distribution est invariante par translation le long de l’axe $(Oz)$ si le vecteur densité de courant $\overrightarrow{j}$ ne dépend pas de la coordonnée $z$ : $\overrightarrow{j}(x, y, z) = \overrightarrow{j}(x, y)$.
+> - Courants filiformes :
+> Envisageons deux cas particuliers :
+> 	- Courant parallèles à l’axe $\Delta$ ([[#^figure13|fig. 13]]) :
+> 	Une distribution de courants portés par un ensemble de fils rectilignes infiniment longs et parallèles à l’axe $\Delta$ est invariante par translation ([[#^figure13|fig. 13]]). Rigoureusement, une telle distribution est impossible car incompatible avec la nécessité de fermer les circuits. En revanche, il peut s’agir d’une excellente approximation dans un domaine limité de l’espace, à proximité des fils.
+> 	Notons que tout plan orthogonal à $\Delta$ est un plan anti-miroir pour cette distribution.
+> 	- Courants dans un plan orthogonal à $\Delta$ :
+> 	Considérons le système de spires filiformes identiques et régulièrement espacées représenté sur la [[#^figure14|figure 14]]. Au sens strict, cette distribution n’est pas invariante par translation le long de $\Delta$. Mais si les fils sont fins et très proches les uns des autres, un observateur un peu éloigné peut considérer qu’il s’agit d’une nappe continue, invariante par translation.
+> 	Notons que tout plan orthogonal à $\Delta$ est plan-miroir pour cette distribution.
+
+> [!note] Symétries des distributions de courants : Symétries usuelles : Invariance par rotation
+> - Courants volumiques :
+> Pour une distribution de courants invariante par rotation autour de l’axe $(Oz)$ ([[#^figure15|fig. 15]]), les coordonnées de $\overrightarrow{j}$, dans la base locale $(\overrightarrow{e}_r, \overrightarrow{e}_{\theta}, \overrightarrow{e}_z)$ des coordonnées cylindriques d’axe $(Oz)$, sont indépendantes de l’angle $\theta$ : $\overrightarrow{j}(r, \theta, z) = j_r(r, z)\overrightarrow{e}_r + j_{\theta}(r, z)\overrightarrow{e}_{\theta} + j_z(r, z)\overrightarrow{e}_z$.
+> Notons que pour une distribution de courants invariante par rotation, le passage de $\overrightarrow{j}(M)$ à $\overrightarrow{j'}(M')$ s’obtient par une rotation.
+> - Courants filiformes :
+> Pratiquement, nous trouvons deux cas de distributions filiformes invariantes par rotation :
+> 	- Ensemble de spires circulaires d’axe $(Oz)$ ([[#^figure16|fig. 16]]) :
+> 	Notons que dans ce cas, tout plan contenant l’axe $(Oz)$ est un plan anti-miroir de la distribution de courant : $I(r, \theta, z) = I(r, z)$.
+> 	- Fil confondu avec l’axe $(Oz)$ :
+> 	Dans ce cas, tout plan contenant l’axe $(Oz)$ est plan-miroir
 # Définitions
 ==**Courant électrique**== :
 Étant donné un référentiel $\mathcal{R}$, on appelle *courant électrique* tout mouvement d’ensemble (mouvement ordonné) de particules chargées dans ce référentiel.
@@ -146,6 +168,18 @@ Les courants circulant dans $\mathcal{C}_1$, $\mathcal{C}_{1}^{'}$, $\mathcal{C}
 
 $\Pi^{*}$ est un plan d’antisymétrie pour la distribution de courants
 ![[electromagnetisme1/attachments-electromagnetisme1/figure86.png]]^figure12
+
+Distribution de courants filiformes invariante par translation parallèlement à $\Delta$. $\Pi^{*}$ est un plan anti-miroir
+![[electromagnetisme1/attachments-electromagnetisme1/figure88.png]]^figure13
+
+Distribution invariante par translation dans le cas limite où les fils sont très serrés. ($\Pi$) est un plan miroir
+![[electromagnetisme1/attachments-electromagnetisme1/figure89.png]]^figure14
+
+Invariance par rotation autour de $(Oz)$
+![[electromagnetisme1/attachments-electromagnetisme1/figure90.png]]^figure15
+
+Distribution de courants filiformes invariante par rotation d’axe $(Oz)$
+![[electromagnetisme1/attachments-electromagnetisme1/figure91.png]]^figure16
 # Graphiques
 
 # Expériences

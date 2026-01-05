@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a3368d74d91c935e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "electromagnetisme1/05-Dipôle électrostatique.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "05-Dipôle électrostatique"
-            }
-          },
-          {
             "id": "dcfe6ac0240f43fe",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "06-Distributions de courants"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -198,6 +183,12 @@
   },
   "active": "dcfe6ac0240f43fe",
   "lastOpenFiles": [
+    "electromagnetisme1/attachments-electromagnetisme1/figure91.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure90.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure89.png",
+    "electromagnetisme1/05-Dipôle électrostatique.md",
+    "electromagnetisme1/06-Distributions de courants.md",
+    "electromagnetisme1/attachments-electromagnetisme1/figure88.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure87.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure86.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure85.png",
@@ -205,12 +196,6 @@
     "electromagnetisme1/attachments-electromagnetisme1/figure83.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure82.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure81.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure80.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure79.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure78.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure77.png",
-    "electromagnetisme1/05-Dipôle électrostatique.md",
-    "electromagnetisme1/06-Distributions de courants.md",
     "electromagnetisme1/03-Potentiel électrostatique.md",
     "electromagnetisme1/04-Le théorème de Gauss.md",
     "electromagnetisme1/00-Electromagnetisme1.md",
