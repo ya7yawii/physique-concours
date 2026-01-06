@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "electromagnetisme1/06-Distributions de courants.md",
+                "file": "electromagnetisme1/07-Champ magnétique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "06-Distributions de courants"
+              "title": "07-Champ magnétique"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -183,22 +182,23 @@
   },
   "active": "dcfe6ac0240f43fe",
   "lastOpenFiles": [
-    "electromagnetisme1/attachments-electromagnetisme1/figure91.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure90.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure89.png",
-    "electromagnetisme1/05-Dipôle électrostatique.md",
+    "electromagnetisme1/attachments-electromagnetisme1/figure102.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure101.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure100.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure99.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure98.png",
+    "electromagnetisme1/00-Electromagnetisme1.md",
+    "electromagnetisme1/07-Champ magnétique.md",
     "electromagnetisme1/06-Distributions de courants.md",
-    "electromagnetisme1/attachments-electromagnetisme1/figure88.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure87.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure86.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure85.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure84.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure83.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure82.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure81.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure97.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure96.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure95.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure94.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure93.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure92.png",
+    "electromagnetisme1/05-Dipôle électrostatique.md",
     "electromagnetisme1/03-Potentiel électrostatique.md",
     "electromagnetisme1/04-Le théorème de Gauss.md",
-    "electromagnetisme1/00-Electromagnetisme1.md",
     "electromagnetisme1/02-Champ électrostatique.md",
     "electromagnetisme1/01-Distributions de charges.md",
     "preamble.sty",
@@ -225,7 +225,6 @@
     "electronique2/01-Systèmes linéaires.md",
     "electronique1/02-Modélisation linéaire des composants usuels.md",
     "electronique1/05-Réponse d'un réseau linéaire. Exemple du circuit (R, L, C) série.md",
-    "electronique1/04-Principe des appareils de mesure.md",
     "electronique2/attachments-electronique2",
     "electronique2",
     "attachments-electronique1"
