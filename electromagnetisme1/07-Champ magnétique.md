@@ -43,6 +43,39 @@ crée: 06-01-2026, 13:08
 > - Nous pouvons aussi attribuer un élément de courant à chaque particule chargée en mouvement. Imaginons que sur une longueur $\delta l$ d’un fil conducteur, il y ait $N$ particules mobiles de charge $q$ et de vitesse $v$. Ces $N$ particules traversent une section du fil pendant la durée $\delta t = \frac{\delta l}{v}$, d’où la valeur de l’intensité : $I = \frac{Nqv}{\delta l}$ et donc pour l’élément de fil : $\delta \overrightarrow{C} = N q \overrightarrow{v}$.
 > Nous pouvons associer à chaque particule en mouvement un élément de courant : $\overrightarrow{C} = q \overrightarrow{v}$.
 
+> [!note] Loi de Biot et Savart : Expression du champ magnétique par la loi de Biot et Savart
+> La loi Biot et Savart postule que le champ créé en un point $M$ par une distribution $\mathcal{D}$ ([[#^figure4|fig. 4]]) s’obtient par superposition des contributions élémentaires $d\overrightarrow{B}$ des éléments de courant de la distribution : $\displaystyle\overrightarrow{B}(M) = \int_{\mathcal{D}}\frac{\mu_0}{4\pi}d\overrightarrow{C}\wedge\frac{\overrightarrow{e}_{P\rightarrow M}}{\left\Vert PM \right\Vert^{2}}$.
+> Suivant le type de distribution, nous écrirons ce champ sous l’une des formes suivantes.
+> - Distribution volumique : ==**$\displaystyle\overrightarrow{B}(M) = \frac{\mu_0}{4\pi}\iiint_{\mathcal{D}}\overrightarrow{j}(P)d\tau\wedge\frac{\overrightarrow{e}_{P\rightarrow M}}{PM^{2}}$**==.
+> - Distribution surfacique : ==**$\displaystyle\overrightarrow{B}(M) = \frac{\mu_0}{4\pi}\iint_{\mathcal{D}}\overrightarrow{j}_S(P)dS\wedge\frac{\overrightarrow{e}_{P\rightarrow M}}{PM^{2}}$**==.
+> - Distribution filiforme : ==**$\displaystyle\overrightarrow{B}(M) = \frac{\mu_0}{4\pi}\int_{\mathcal{D}}Id\overrightarrow{P}\wedge\frac{\overrightarrow{e}_{P\rightarrow M}}{PM^{2}}$**==.
+> Le régime permanent imposant au courant d’être « bouclé sur lui-même », cette dernière distribution a la forme d’un contour $C$, et nous pourrons aussi écrire : $\displaystyle\overrightarrow{B}(M) = \frac{\mu_0}{4\pi}\oint_{C}Id\overrightarrow{P}\wedge\frac{\overrightarrow{e}_{P\rightarrow M}}{PM^{2}}$.
+> 
+> *Remarques :*
+> - *L’analogie de ces expressions avec celles donnant le champ électrostatique d’une distribution est remarquable : il suffit de transposer $\frac{1}{4\pi\epsilon_0}$ en $\frac{\mu_0}{4\pi}$ et $[dq_P]$ en $[d\overrightarrow{C}\,\wedge]$ dans les expressions donnant le champ. Les champs électrostatique et magnétique sont deux facettes d’un même objet, le champ électromagnétique.*
+> - *Pour une distribution volumique de courants, l’intégrale de Biot et Savart permet le calcul du champ magnétique en tout point de l’espace.*
+> - *Dans le cas d’une distribution surfacique, cette intégrale n’autorise pas le calcul du champ sur la nappe de courant. (Nous verrons qu’il existe une discontinuité finie de la composante tangentielle de $\overrightarrow{B}$ à la traversée de cette surface.)*
+> - *Pour une schématisation filiforme, il est exclu de calculer le champ magnétique en un point du circuit : l’intégrale y est alors divergente.*
+
+> [!note] Topographie du champ
+> - Lignes de champ :
+> 	- Définition :
+> 	Le champ est continuellement tangent à des courbes appelées *lignes de champ* ([[#^figure5|fig. 5]]). Ces lignes sont orientées dans le sens du champ.
+> 	- Équation d’une ligne de champ :
+> 	Un déplacement élémentaire $d\overrightarrow{M}$ le long d’une ligne de champ est parallèle au champ $\overrightarrow{B}$. L’équation différentielle (vectorielle) d’une ligne de champ est : $d\overrightarrow{M}\wedge\overrightarrow{B} = \overrightarrow{0}$.
+> 	Nous obtiendrons la ligne de champ issue d’un point initial donné par intégration de cette équation différentielle.
+> - Visualisation d’une ligne de champ :
+> 	- Expérimentalement :
+> 	Il est possible de visualiser les lignes de champ d’un système de courants (ou d’aimants) en procédant de la manière suivante.
+> 	Sur une plaque de verre ou de plexiglas, située dans la zone utile du champ magnétique, on saupoudre de la limaille de fer. Les grains de limaille (de forme allongée) sous l’action du champ magnétique se transforment en petits aimants (ou petites boussoles) qui s’orientent alors parallèlement à ce champ magnétique.
+> 	Ces petits aimants s’alignant les uns derrière les autres concrétisent approximativement une ligne de champ ([[#^figure6|fig. 6]]). On obtient ainsi les spectres magnétiques des figures [[#^figure7|7]] et [[#^figure8|8]].
+> 	- Par simulation :
+> 	Lors d’un tracé de ligne de champ par simulation ([[#^figure9|fig. 9]]), l’équation différentielle $d\overrightarrow{M}\wedge\overrightarrow{B} = \overrightarrow{0}$ est résolue en partant d’un point donné de l’espace.
+> - Tube de champ :
+> L’ensemble des lignes de champ s’appuyant sur une courbe fermée (ou contour) $C$ engendre une surface $S$ appelée *tube de champ*, représenté sur la [[#^figure10|figure 10]].
+> - Points de champ nul, points singuliers :
+> Deux lignes de champ ne peuvent pas se couper, comme le suggère la [[#^figure11|figure 11]], en un point $M$ où le champ magnétique est défini et non nul. La direction du champ, donc le champ lui-même, ne serait pas définie en ce point.
+> Si le champ est nul au point $M$, alors $M$ est appelé *point de champ nul* (ou point d’arrêt).
 # Définitions
 
 # Diagrammes
@@ -57,11 +90,36 @@ Tube de courant mésoscopique considéré comme circuit filiforme : $d\overright
 
 Ruban de courant mésoscopique considéré comme circuit filiforme : $d\overrightarrow{C} = \overrightarrow{j_s}dS$
 ![[electromagnetisme1/attachments-electromagnetisme1/figure102.png]]^figure3b
-# Graphiques
 
+Champ magnétique d'une distribution de courants
+![[electromagnetisme1/attachments-electromagnetisme1/figure103.png]]^figure4
+
+Exemple de ligne de champ
+![[electromagnetisme1/attachments-electromagnetisme1/figure105.png]]^figure5
+
+Les éléments de la limaille de fer se comportent comme des petits aimants qui s’orientent parallèlement au champ magnétique
+![[electromagnetisme1/attachments-electromagnetisme1/figure106.png]]^figure6
+
+Tube de champ
+![[electromagnetisme1/attachments-electromagnetisme1/figure110.png]]^figure10
+
+Point de champ nul
+![[electromagnetisme1/attachments-electromagnetisme1/figure111.png]]^figure11
+# Graphiques
+Exemple : spectre magnétique d’un solénoïde (ensemble de spires)
+![[electromagnetisme1/attachments-electromagnetisme1/figure107.png]]^figure7
+
+Exemple : spectre magnétique d’un aimant
+![[electromagnetisme1/attachments-electromagnetisme1/figure108.png]]^figure8
+
+Lignes de champ du vecteur champ magnétique créé par une spire
+![[electromagnetisme1/attachments-electromagnetisme1/figure109.png]]^figure9
 # Expériences
 
 # Autres notes
 > [!warning] Application 1 page 117
 > ![[electromagnetisme1/attachments-electromagnetisme1/figure98.png]]
 ^app1
+
+> [!warning] Application 3 page 121
+> ![[electromagnetisme1/attachments-electromagnetisme1/figure104.png]]
