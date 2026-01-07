@@ -167,7 +167,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5
+    "width": 268.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -183,17 +184,17 @@
   },
   "active": "dcfe6ac0240f43fe",
   "lastOpenFiles": [
+    "electromagnetisme1/attachments-electromagnetisme1/figure134.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure133.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure132.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure131.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure130.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure129.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure128.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure127.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure126.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure125.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure124.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure123.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure122.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure121.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure120.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure119.png",
     "electromagnetisme1/00-Electromagnetisme1.md",
     "electromagnetisme1/07-Champ magnétique.md",
     "electromagnetisme1/06-Distributions de courants.md",
