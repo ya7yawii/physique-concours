@@ -167,8 +167,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 268.5,
-    "collapsed": true
+    "width": 268.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -184,6 +183,8 @@
   },
   "active": "dcfe6ac0240f43fe",
   "lastOpenFiles": [
+    "electromagnetisme1/02-Champ électrostatique.md",
+    "electromagnetisme1/07-Champ magnétique.md",
     "electromagnetisme1/attachments-electromagnetisme1/figure134.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure133.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure132.png",
@@ -194,14 +195,11 @@
     "electromagnetisme1/attachments-electromagnetisme1/figure127.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure126.png",
     "electromagnetisme1/attachments-electromagnetisme1/figure125.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure124.png",
     "electromagnetisme1/00-Electromagnetisme1.md",
-    "electromagnetisme1/07-Champ magnétique.md",
     "electromagnetisme1/06-Distributions de courants.md",
     "electromagnetisme1/05-Dipôle électrostatique.md",
     "electromagnetisme1/03-Potentiel électrostatique.md",
     "electromagnetisme1/04-Le théorème de Gauss.md",
-    "electromagnetisme1/02-Champ électrostatique.md",
     "electromagnetisme1/01-Distributions de charges.md",
     "preamble.sty",
     "templates/preamble.sty",
