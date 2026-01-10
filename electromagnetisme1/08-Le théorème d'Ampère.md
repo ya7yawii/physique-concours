@@ -95,6 +95,22 @@ crée: 10-01-2026, 09:46
 > *Rigoureusement, pour un ensemble de courants filiformes identiques orientés selon $(Oy)$ et distants de $a$, les considérations de symétrie et d’invariance se limitent à la périodicité du champ : $\overrightarrow{B}(x, y, z) = \overrightarrow{B}(x + k\,a, y, z)$.*
 > *Il est alors impossible d’utiliser le théorème d’Ampère pour calculer le champ.*
 > *Une étude numérique montre que, l'écart relatif entre les deux calculs est inférieur à $10^{-3}$ dès que $z$ est supérieur à $1,5a$.*
+
+> [!note] Calcul d'un champ magnétique à l'aide du théorème d'Ampère : Distribution de courants axisymétrique ; le tore
+> Un contour $C$ est dessiné dans un plan contenant l’axe $(Oz)$. Sa rotation complète autour de l’axe $(Oz)$ engendre un tore ([[#^figure10|fig. 10]]). Si $C$ est un cercle, le tore obtenu est à section circulaire ; si $C$ est un rectangle, le tore obtenu est à section rectangulaire.
+> Nous étudions le champ magnétique engendré par $N$ spires enroulées sur un tore et parcourues par un courant d’intensité $I$ (cette situation s’apparente aux circuits primaire et secondaire de certains transformateurs).
+> Pour un bobinage assez serré (spires quasi jointives), cette distribution filiforme peut être assimilée à une distribution surfacique de courants : c’est une opération de nivelage permettant alors d’admettre la symétrie de rotation autour de l’axe $(Oz)$.
+> - Considérations de symétrie :
+> Tout plan contenant l’axe $(Oz)$ est un plan de symétrie ([[#^figure11|fig. 11]]) et l’amplitude du champ magnétique, orthoradial, ne dépend, en coordonnées cylindriques $r$, $\theta$ et $z$, que des variables $r$ et $z$ :  $\overrightarrow{B} = B(r, z)\overrightarrow{e}_{\theta}$.
+> - Choix du « contour d’Ampère » :
+> Sur les lignes de champ, cercles d’axe $(Oz)$, la norme du champ reste constante. Sur un contour d’Ampère coïncidant avec une ligne de champ, la circulation du champ vaut $2\pi rB(r, z)$, quand $\Gamma$ est parcouru dans le sens du champ.
+> - Champ magnétique :
+> Appliquons maintenant le théorème d’Ampère.
+> Pour un contour $\Gamma_1$ à l’intérieur du tore ([[#^figure12|fig. 12]]), la somme des courants enlacés est $NI$. Le champ en un point à l’intérieur du tore est donc : $\overrightarrow{B}_{int} = \frac{\mu_0}{2\pi}\frac{NI}{r}\overrightarrow{e}_{\theta}$.
+> Pour un contour $\Gamma_2$ à l’extérieur du tore, la somme des courants enlacés est nulle (il est toujours possible de trouver une surface s’appuyant sur $\Gamma_2$ sans point commun avec le tore), et le champ extérieur l’est aussi : $\overrightarrow{B}_{ext} = \overrightarrow{0}$.
+> Ces résultats montrent que le tore canalise les lignes de champ magnétique.
+> *Remarque :*
+> *La dépendance de $\overrightarrow{B}$ vis-à-vis de $z$ est masquée mais effective : si $z$ et $r$ sont tels que le point $M$ est intérieur au tore, $\overrightarrow{B}$ est non nul ; il est nul si $M$ est extérieur au tore.*
 # Définitions
 
 # Diagrammes
@@ -123,6 +139,15 @@ La circulation de $\overrightarrow{B}$ sur le contour $\Gamma$ ne dépend que de
 
 Nappe plane infinie
 ![[electromagnetisme1/attachments-electromagnetisme1/figure143.png]]^figure9
+
+Tore à section quelconque
+![[electromagnetisme1/attachments-electromagnetisme1/figure144.png]]^figure10
+
+Mise en évidence d’un plan de symétrie des courants
+![[electromagnetisme1/attachments-electromagnetisme1/figure145.png]]^figure11
+
+Choix du contour d’Ampère
+![[electromagnetisme1/attachments-electromagnetisme1/figure146.png]]^figure12
 # Graphiques
 
 # Expériences
