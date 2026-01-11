@@ -22,8 +22,17 @@ crée: 11-01-2026, 13:29
 > Une boucle de courant crée, en tout point $M$ de l’espace, un champ magnétostatique donné par la loi de Biot et Savart.
 > À grande distance de la boucle ($\frac{a}{r} \ll 1$ pour une spire circulaire de rayon $a$ ([[#^figure4a|fig. 4a]] et [[#^figure4b|b]]), *la norme du champ magnétique décroît en $\frac{1}{r^{3}}$*, comme il est possible de s’en convaincre en considérant l’expression du champ créé par une spire en un point de son axe (cf. [[07-Champ magnétique|chapitre 7]], Application 3) : $\overrightarrow{B}(M) = \frac{\mu_0I}{2R}\sin^{3}\!\alpha\,\overrightarrow{e}_z = \frac{\mu_0I}{2R}\frac{R^{3}}{(R^{2} + z^{2})^{\frac{3}{2}}}\overrightarrow{e}_z$.
 > À grande distance $(z \gg R)$, l’expression précédente se simplifie en : $\overrightarrow{B}(M) = \frac{\mu_0I}{2R}\frac{R^{3}}{|z|^{3}}\,\overrightarrow{e}_z = \frac{\mu_0\overrightarrow{\mathcal{M}}}{2\pi|z|^{3}}\overrightarrow{e}_z$ puisque $\overrightarrow{\mathcal{M}} = I\pi R^{2}\,\overrightarrow{e}_z$.
+> Il est possible de démontrer, qu’à grande distance d’une boucle de courant (approximation dipolaire), le champ magnétique $\overrightarrow{B}(M)$ créé par la boucle ne dépend que de $\overrightarrow{r} = \overrightarrow{OM}$, du moment magnétique $\overrightarrow{\mathcal{M}}$ et de l’angle $\theta = (\overrightarrow{\mathcal{M}}, \overrightarrow{r})$.
+> ==**Dans l’approximation dipolaire, une boucle de courant est entièrement caractérisée par son moment magnétique $\overrightarrow{\mathcal{M}}$.**==
+> De nouveau, cette propriété n’est pas sans rappeler celle du dipôle életrostatique qui est, lui aussi, entièrement caractérisé, pour ses effets à grande distance, par son moment dipolaire $\overrightarrow{p}$.
+> Cette similitude fait souvent nommer une boucle élémentaire de courant, *dipôle magnétique*.
 
-
+> [!note] Champ magnétostatique créé par un dipôle : Analogie avec le dipôle électrostatique
+> Considérons un doublet de charges $-q$ et $+q$ (distantes de $a$) centré en $O$ et de moment dipolaire $\overrightarrow{p} = q\,a\,\overrightarrow{e}_z = p\,\overrightarrow{e}_z$. Tout plan contenant l’axe $(Oz)$ est un plan de symétrie. Les lignes de champ du vecteur $\overrightarrow{E}$, de révolution autour de l’axe $(Oz)$, sont contenues dans de tels plans. Quelques lignes de champ électrostatique sont représentées dans un plan contenant $(Oz)$ sur la [[#^figure5a|figure 5a]].
+> Considérons à présent une spire circulaire de rayon $a$, d’axe $(Oz)$ et de moment dipolaire magnétique $\overrightarrow{\mathcal{M}} = I\pi a^{2}\,\overrightarrow{e}_z = \mathcal{M}\,\overrightarrow{e}_z$. Tout plan contenant l’axe $(Oz)$ est un plan d’antisymétrie. Les lignes de champ du vecteur axial $\overrightarrow{B}$, de révolution autour de l’axe $(Oz)$, sont contenues dans de tels plans. La [[#^figure5b|figure 5b]] représente quelques lignes de champ magnétostatique dans un plan contenant $(Oz)$.
+> L’extension de la zone apparaissant sur ces figures est de l’ordre de $(10a)^{2}$. Les deux cartes de champ obtenues sont clairement distinctes, car les comportements des champs au voisinage de leurs sources sont très différents : le champ électrostatique diverge à partir de ses sources (les charges) alors que le champ magnétostatique tourbillonne autour des siennes (les courants).
+> Si nous observons ces cartes de champ à une échelle beaucoup plus grande (zone de l’ordre de $(100a)^{2}$ nous obtenons dans les deux cas la même configuration des lignes de champ ([[#^figure6|fig. 6]]).
+> ==**Le champ électrostatique d’un dipôle $\overrightarrow{p} = p\,\overrightarrow{e}_z$ et le champ magnétostatique d’un dipôle $\overrightarrow{\mathcal{M}} = \mathcal{M}\,\overrightarrow{e}_z$ ont le même comportement à grande distance $r \gg a$**==.
 # Définitions
 > [!note] Surface associée à un contour
 > Considérons un contour $\Gamma$ (fermé) orienté ([[#^figure1|fig. 1]]) et une surface $\overrightarrow{S}$ s’appuyant sur ce contour. L’orientation de la surface s’effectue en utilisant celle du contour (cf. [[08-Le théorème d'Ampère|chapitre 8]]) : un tire-bouchon tournant dans le sens choisi pour $\Gamma$ traverse $S$ dans le sens de ses vecteurs unitaires normaux $\overrightarrow{n}$.
@@ -50,7 +59,14 @@ Boucle de courant
 Champ $\overrightarrow{B}(M)$ créé par une spire en un point de son axe
 ![[electromagnetisme1/attachments-electromagnetisme1/figure156.png]]^figure4b
 # Graphiques
+Lignes de champ électrostatique d’un doublet $-q$ et $+q$
+![[Pasted image 20260111203051.png]]^figure5a
 
+Lignes de champ magnétostatique d’une spire
+![[Pasted image 20260111203146.png]]^figure5b
+
+Ligne de champ d’un dipôle qu’il soit électrique ou magnétique
+![[Pasted image 20260111203929.png]]^figure6
 # Expériences
 
 # Autres notes
