@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "electromagnetisme1/08-Le théorème d'Ampère.md",
+                "file": "electromagnetisme1/09-Dipôle magnétique.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "08-Le théorème d'Ampère"
+              "title": "09-Dipôle magnétique"
             }
           }
         ],
@@ -93,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 298.5,
-    "collapsed": true
+    "width": 298.5
   },
   "right": {
     "id": "bd191fe96a33d169",
@@ -198,25 +197,25 @@
   },
   "active": "af499a7cce9560b9",
   "lastOpenFiles": [
-    "electromagnetisme1/attachments-electromagnetisme1/figure146.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure145.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure144.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure143.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure142.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure141.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure140.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure139.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure138.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure137.png",
-    "electromagnetisme1/attachments-electromagnetisme1/figure136.png",
-    "electromagnetisme1/03-Potentiel électrostatique.md",
-    "electromagnetisme1/04-Le théorème de Gauss.md",
-    "electromagnetisme1/05-Dipôle électrostatique.md",
+    "electromagnetisme1/07-Champ magnétique.md",
+    "electromagnetisme1/09-Dipôle magnétique.md",
+    "electromagnetisme1/attachments-electromagnetisme1/figure156.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure155.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure154.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure153.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure152.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure151.png",
     "electromagnetisme1/08-Le théorème d'Ampère.md",
     "electromagnetisme1/00-Electromagnetisme1.md",
-    "electromagnetisme1/07-Champ magnétique.md",
     "electromagnetisme1/02-Champ électrostatique.md",
+    "electromagnetisme1/04-Le théorème de Gauss.md",
+    "electromagnetisme1/attachments-electromagnetisme1/figure150.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure149.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure148.png",
+    "electromagnetisme1/attachments-electromagnetisme1/figure147.png",
     "electromagnetisme1/06-Distributions de courants.md",
+    "electromagnetisme1/03-Potentiel électrostatique.md",
+    "electromagnetisme1/05-Dipôle électrostatique.md",
     "electromagnetisme1/01-Distributions de charges.md",
     "preamble.sty",
     "templates/preamble.sty",
@@ -240,7 +239,6 @@
     "electronique2/06-Multiplication de signaux.md",
     "mecanique2/07-Les travaux des actions sur un système – Énergie potentielle.md",
     "electronique2/01-Systèmes linéaires.md",
-    "electronique1/02-Modélisation linéaire des composants usuels.md",
     "electronique2/attachments-electronique2",
     "electronique2",
     "attachments-electronique1"

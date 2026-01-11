@@ -1,0 +1,56 @@
+---
+titre: "[[09-Dipôle magnétique]]"
+tags:
+aliases:
+crée: 11-01-2026, 13:29
+---
+# Formules
+> [!note] Moment dipolaire
+> - Moment magnétique d’un courant filiforme :
+> ==**Le moment magnétique d’une boucle $\Gamma$ de courant d’intensité $I$ (orientée dans le sens du courant) et de vecteur surface $\overrightarrow{S}$ est : $\overrightarrow{\mathcal{M}} = I\overrightarrow{S}$.**==
+> La norme du moment magnétique s’exprime en $A\,.m^{2}$.
+> Dans le cas d’une spire circulaire de rayon $a$, parcourue par un courant d’intensité $I$ ([[#^figure2|fig. 2]]), le moment magnétique est : $\overrightarrow{\mathcal{M}} = I\pi a^{2}\,\overrightarrow{n}$.
+> Sur la [[#^figure3a|figure 3a]], le plan $\Pi_1$ de la spire est un plan de symétrie de la distribution des courants et le moment magnétique $\overrightarrow{\mathcal{M}}$ est perpendiculaire à ce plan. Tout plan $\Pi_2$ contenant l’axe de la spire est un plan d’antisymétrie et le moment magnétique $\overrightarrow{\mathcal{M}}$ est contenu dans ce plan. Nous reconnaissons là deux proriétés caractéristiques des vecteurs axiaux.
+> ==**Le moment magnétique $\overrightarrow{\mathcal{M}}$ d’un circuit filiforme est un vecteur axial.**==
+> *Remarque :*
+> *Nous verrons, plus loin, qu’une boucle élémentaire de courant de moment magnétique $\overrightarrow{\mathcal{M}}$ présente de fortes analogies de comportement avec un dipôle électrostatique de moment dipolaire $\overrightarrow{p}$. Des différences fondamentales distinguent cependant ces deux entités. Montrons ainsi que le moment dipolaire $\overrightarrow{p}$ est un vecteur polaire.*
+> *En effet, tout plan $\Pi_1$ contenant le dipôle ([[#^figure3b|fig. 3b]]) est un plan de symétrie de la distribution de charges et le moment dipolaire $\overrightarrow{p}$ est contenu dans ce plan. Le plan médiateur $\Pi_2$ du dipôle est un plan d’antisymétrie et le moment dipolaire $\overrightarrow{p}$ est normal à ce plan. Nous reconnaissons là deux propriétés caractéristiques des vecteurs polaires.*
+> - Moment magnétique d’une distribution de courants :
+> Dans le cas d’une distribution de courants limités dans l’espace, la définition du moment magnétique sera généralisée en considérant qu’il s’agit d’un ensemble continu de boucles de courant filiformes (tubes de courants élémentaires) : $\displaystyle\overrightarrow{\mathcal{M}} = \int \overrightarrow{d\mathcal{M}}$.
+
+> [!note] Champ magnétostatique créé par un dipôle : Approximation dipolaire
+> Une boucle de courant crée, en tout point $M$ de l’espace, un champ magnétostatique donné par la loi de Biot et Savart.
+> À grande distance de la boucle ($\frac{a}{r} \ll 1$ pour une spire circulaire de rayon $a$ ([[#^figure4a|fig. 4a]] et [[#^figure4b|b]]), *la norme du champ magnétique décroît en $\frac{1}{r^{3}}$*, comme il est possible de s’en convaincre en considérant l’expression du champ créé par une spire en un point de son axe (cf. [[07-Champ magnétique|chapitre 7]], Application 3) : $\overrightarrow{B}(M) = \frac{\mu_0I}{2R}\sin^{3}\!\alpha\,\overrightarrow{e}_z = \frac{\mu_0I}{2R}\frac{R^{3}}{(R^{2} + z^{2})^{\frac{3}{2}}}\overrightarrow{e}_z$.
+> À grande distance $(z \gg R)$, l’expression précédente se simplifie en : $\overrightarrow{B}(M) = \frac{\mu_0I}{2R}\frac{R^{3}}{|z|^{3}}\,\overrightarrow{e}_z = \frac{\mu_0\overrightarrow{\mathcal{M}}}{2\pi|z|^{3}}\overrightarrow{e}_z$ puisque $\overrightarrow{\mathcal{M}} = I\pi R^{2}\,\overrightarrow{e}_z$.
+
+
+# Définitions
+> [!note] Surface associée à un contour
+> Considérons un contour $\Gamma$ (fermé) orienté ([[#^figure1|fig. 1]]) et une surface $\overrightarrow{S}$ s’appuyant sur ce contour. L’orientation de la surface s’effectue en utilisant celle du contour (cf. [[08-Le théorème d'Ampère|chapitre 8]]) : un tire-bouchon tournant dans le sens choisi pour $\Gamma$ traverse $S$ dans le sens de ses vecteurs unitaires normaux $\overrightarrow{n}$.
+> Nous appellerons *vecteur surface* $\overrightarrow{S}$ le vecteur défini par : $\displaystyle\overrightarrow{S} = \iint_S\overrightarrow{n}dS = \iint_Sd\overrightarrow{S}$.
+> Le *vecteur surface* $\overrightarrow{S}$ ne dépend pas du choix de la surface utilisée pour le définir : il ne dépend que du contour $\Gamma$ et de son orientation.
+> Le vecteur surface $\overrightarrow{S}$ est une grandeur caractéristique du contour $\Gamma$ orienté.
+> Par exemple, le vecteur surface du contour circulaire de rayon $a$ de [[#^figure2|figure 2]] est : $\overrightarrow{S} = \pi a^{2}\,\overrightarrow{n}$.
+# Diagrammes
+Surface $S$ s’appuyant sur un contour $\Gamma$ orienté
+![[electromagnetisme1/attachments-electromagnetisme1/figure151.png]]^figure1
+
+Surface orientée d’un contour circulaire
+![[electromagnetisme1/attachments-electromagnetisme1/figure152.png]]^figure2
+
+Étude des symétries sur un dipôle magnétique
+![[electromagnetisme1/attachments-electromagnetisme1/figure153.png]]^figure3a
+
+Étude des symétries pour un dipôle électrostatique
+![[electromagnetisme1/attachments-electromagnetisme1/figure154.png]]^figure3b
+
+Boucle de courant
+![[electromagnetisme1/attachments-electromagnetisme1/figure155.png]]^figure4a
+
+Champ $\overrightarrow{B}(M)$ créé par une spire en un point de son axe
+![[electromagnetisme1/attachments-electromagnetisme1/figure156.png]]^figure4b
+# Graphiques
+
+# Expériences
+
+# Autres notes
