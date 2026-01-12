@@ -56,14 +56,37 @@ crée: 12-01-2026, 11:13
 
 > [!note] Mouvement d'une particule chargée dans les champs $\overrightarrow{E}$ et (ou) $\overrightarrow{B}$ : Champ $\overrightarrow{B}$ seul : Mouvement dans un champ $\overrightarrow{B}$ uniforme et indépendant du temps
 > - Cas général d’une vitesse initiale quelconque :
->                         Il faut inclure le document 3
+> Étudions le mouvement d’une particule $(q, m)$ placée à l’origine $O$ du trièdre trirectangulaire $(O ; x, y, z)$ à l’instant initial $t = 0$ (vitesse initiale $\overrightarrow{v}_0$) dans un champ magnétostatique $\overrightarrow{B} = B\,\overrightarrow{e}_z$ $(B > 0)$ uniforme dans un domaine donné ([[#^figure2|fig. 2]]).
+> Posons $\overrightarrow{v}_0 = v_0(\sin\alpha\, . \overrightarrow{e}_x + \cos\alpha\, . \overrightarrow{e}_z)$.
+> La relation fondamentale de la dynamique appliquée au point matériel donne : $m\dfrac{d\overrightarrow{v}}{dt} = q\,\overrightarrow{v}\wedge B\,\overrightarrow{e}_z$.
+> Posons $q = \epsilon e$ ($\epsilon = +1$ pour un proton, et $\epsilon = -1$ pour un électron).
+> Introduisons la grandeur $\omega_c = \frac{eB}{m}$ homogène à l’inverse d’un temps et que nous appellerons **pulsation cyclotron**.
+> Nous obtenons : $\dfrac{dv_x}{dt} = \epsilon\omega_cv_y$, $\dfrac{dv_y}{dt} = -\epsilon\omega_cv_x$ et $\dfrac{dv_z}{dt} = 0$.
+> 	- Mouvement projeté sur le plan $(xOy)$ :
+> 	En intégrant les deux premières équations par rapport au temps, nous obtenons : $v_x = \epsilon\omega_cy + v_0\sin\alpha$ et $v_y = -\epsilon\omega_cx$. Il est possible de reporter $v_x$ et $v_y$ dans les équations précédentes et d’intégrer à nouveau, mais il est aussi efficace d’introduire la variable $\xi = x + i y$ qui représente *l’affixe* de la projection orthogonale du vecteur $\overrightarrow{OM}$ (vecteur position de la particule) dans le plan $(xOy)$.
+> 	Comme $\dfrac{d\xi}{dt} = v_x + i v_y$, nous avons $\dfrac{d\xi}{dt} = -\epsilon i \omega_c\xi + v_0\sin\alpha$, dont la solution est : $\xi = -i\frac{\epsilon v_0}{\omega_c}\sin\alpha + A\exp(-i\epsilon\omega_ct)$.
+> 	À $t = 0$, $\xi = 0$, donc $A = i\frac{\epsilon v_0}{\omega_c}\sin\alpha$ et $\xi = i\frac{\epsilon v_0}{\omega_c}\sin\alpha[\exp(-i\epsilon\omega_ct) - 1]$.
+> 	Les lois horaires sont donc : $x(t) = -\frac{\epsilon v_0}{\omega_c}\sin\alpha\sin(-\epsilon\omega_ct)$ et $y(t) = -\frac{\epsilon v_0}{\omega_c}\sin\alpha[1 - \cos(-\epsilon\omega_ct)]$.
+> 	$x$ et $y$ vérifient $x^{2} + \left(\frac{\epsilon v_0}{\omega_c}\sin\alpha + y\right)^{2} = \left(\frac{v_0}{\omega_c}\sin\alpha\right)^{2}$ : le mouvement projeté dans le plan $(xOy)$ est un cercle de centre $C$ ($x_C = 0$ et $y_C = -\frac{\epsilon v_0}{\omega_c}\sin\alpha$) et de rayon $\rho = \frac{v_0}{\omega_c}\sin\alpha$ ([[#^figure3|fig. 3a]]). Ce cercle est décrit avec la vitesse angulaire $-\epsilon\omega_c$ égale en valeur absolue à la pulsation cyclotron.
+> 	- Mouvement suivant $(Oz)$ :
+> 	La troisième équation fournit : $v_z = cte = v_0\cos\alpha$, soit $z = v_0\cos\alpha t$ (mouvement uniforme parallèlement à $(Oz)$). La particule décrit donc une hélice circulaire ([[#^figure4|fig. 4]]).
+> 	*Remarque : Le pas de l'hélice ([[#^figure3|fig. 3b et c]]) est $h = v_0\cos\alpha T$, où $T = \frac{2\pi}{\omega_c} = 2\pi\frac{m}{eB}$, donc : $h = 2\pi\frac{mv_0}{eB}\cos\alpha$.*
+> - Le cas particulier d’une vitesse initiale normale au champ magnétique :
+> Si la vitesse initiale $\overrightarrow{v}_0$ de la particule est normale au champ magnétique $\overrightarrow{B}$, $\left(\alpha = \frac{\pi}{2}\right)$, cette particule décrit une trajectoire circulaire dans un plan orthogonal à $\overrightarrow{B}$, et contenant $\overrightarrow{v}_0$. 
 # Définitions
 
 # Diagrammes
 Oscilloscope : ➀ : Fil chauffé. ➁ : Wehnelt. ➂ : Électrode de concentration ou de focalisation. ➃ : Électrode d’accélération. ➄ : Plaques de déviation verticale. ➅ : Plaques de déviation horizontale
 ![[electromagnetisme1/attachments-electromagnetisme1/figure166.png]]^figure1
 # Graphiques
+Mouvement d’une particule dans un champ magnétique
+![[electromagnetisme1/attachments-electromagnetisme1/figure167.png]]^figure2
 
+Projection de la trajectoire sur les plans de coordonnées dans le cas d’un proton
+![[electromagnetisme1/attachments-electromagnetisme1/figure168.png]]^figure3
+
+Trajectoire d’un électron et d’un proton dans un champ $\overrightarrow{B}$ uniforme
+![[electromagnetisme1/attachments-electromagnetisme1/figure169.png]]^figure4
 # Expériences
 
 # Autres notes
