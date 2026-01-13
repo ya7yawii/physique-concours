@@ -153,6 +153,17 @@ crée: 12-01-2026, 11:13
 > ==**Loi d’Ohm locale :**==
 > ==**Le vecteur densité volumique de courants $\overrightarrow{j}$ (s’exprimant en $A\, . m^{-2}$) est proportionnel au champ électrique appliqué au conducteur : $\overrightarrow{j} = \gamma\overrightarrow{E}$, $\gamma$ désigne *la conductivité électrique* du milieu (dit ohmique), dont l’expression est donnée par $\displaystyle\gamma = nq^{2}\frac{\tau}{m}$ ($\tau$ voisin de $10^{-14}\,s$).**==
 > ==**L’inverse de la conductivité $\displaystyle\rho = \frac{1}{\gamma}$ est la résistivité. La conductivité s’évalue en $S\,.m^{-1}$ et la résistivité en $\Omega\, . m$.**==
+
+> [!note] Les électrons de conduction d'un métal : Comportement d’ensemble en présence d’un champ électrique seul : Résistance d’un conducteur filiforme cylindrique
+> Considérons un conducteur filiforme cylindrique, homogène, de section $s$, de longueur $l$ et de conductivité $\gamma$ ([[#^figure6|fig. 6]]). Un courant continu d’intensité $I$ traverse ce conducteur dans le sens de l’axe $(Ox)$ quand une d.d.p. continue $U$ $(U > 0)$ est appliquée entre ses extrémités.
+> Le déplacement des porteurs est « canalisé » par les parois du conducteur. Il s’en suit que le vecteur densité de courant $\overrightarrow{j}$ est en tout point parallèle à $(Ox)$.
+> $\overrightarrow{E} = \frac{1}{\gamma}\overrightarrow{j}$ est un champ électrique dont les lignes de champ sont toutes parallèles à $(Ox)$ dans [[#^info2|une région globalement neutre]]. On en déduit (cf. [[#^app6|Application 9]]) que $\overrightarrow{E}$ et $\overrightarrow{j}$ sont uniformes dans le cylindre : $\overrightarrow{E} = E\,\overrightarrow{e}_x$ et $\overrightarrow{j} = j\,\overrightarrow{e}_x = \gamma E\,\overrightarrow{e}_x$.
+> En régime permanent, l’intensité $I$ a la même valeur à travers toutes les sections du conducteur : $\displaystyle I = \iint_S\overrightarrow{j}\, . d\overrightarrow{S} = \gamma E\,s$.
+> Exprimons $I$ à l’aide du potentiel $V(x)$ associé au champ $\overrightarrow{E}$ : $I = -\gamma s\dfrac{dV}{dx}$.
+> $I$ étant indépendant de $x$, cette équation différentielle s’intègre simplement : $\displaystyle\int_{x_1}^{x_2}dV = -\frac{I}{\gamma s}\int_{x_1}^{x_2}dx$ d’où : $U = V_1 - V_2 = \frac{Il}{\gamma s}$.
+> Nous en déduisons la valeur de la résistance du conducteur : $R = \frac{U}{I} = \frac{l}{\gamma s} = \rho\frac{l}{s}$.
+ 
+
 # Définitions
 
 # Diagrammes
@@ -201,3 +212,13 @@ Trajectoire d’un électron et d’un proton dans un champ $\overrightarrow{B}$
 > Si nous adoptons le modèle des gaz monoatomiques, nous trouvons une vitesse d’agitation de l’ordre de : $u = \sqrt{\frac{3k_BT}{m}} \approx 10^{5} m\, . s^{-1}$.
 > La vitesse de dérive est classiquement de l’ordre de $10^{-3} m\, . s^{-1}$.
 ^info1
+
+> [!warning] Un milieu globalement neutre
+> Un conducteur est un milieu globalement neutre à l’échelle mésoscopique.
+> Pour un conducteur métallique, la charge des électrons de conduction est exactement compensée par la charge opposée des ions positifs immobiles.
+> Pour une solution électrolytique, chaque élément mésoscopique contient des ions positifs et négatifs dont les charges s’équilibrent.
+^info2
+
+> [!warning] Application 9 page 190
+> ![[electromagnetisme1/attachments-electromagnetisme1/figure175.png]]
+^app6
